@@ -31,7 +31,9 @@ http://github.com/todc/css3-github-buttons
     font: bold 0.75em Helvetica, Arial, sans-serif;
 	line-height: 16px;
     color: #6e6e6e;
-    padding: 0.5em 1em;
+    padding: 0.7em 1em;
+	min-width: 42px;
+	text-align: center;
     text-shadow: 0 1px 0 #fff;
     -webkit-transition: border-color .218s;
     -moz-transition: border .218s;
@@ -133,7 +135,7 @@ http://github.com/todc/css3-github-buttons
 .button.icon:before {
     content: "";
     position: relative; 
-    top: 2px; 
+    top: 1px; 
     float: left;
     width: 12px; 
     height: 12px; 
