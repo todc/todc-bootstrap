@@ -1,0 +1,396 @@
+/* ------------------------------------------
+CSS3 GITHUB BUTTONS (Tim O'Donnell)
+Licensed under Unlicense 
+http://github.com/todc/css3-github-buttons
+------------------------------------------ */
+
+
+/* ------------------------------------------------------------------ BUTTON */
+
+.button { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    margin: 0;
+    text-decoration: none; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box; 
+    /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
+    /* IE hacks */
+    zoom: 1; 
+	z-index: 1;
+    *display: inline; 
+    
+    font: bold 0.75em Helvetica, Arial, sans-serif;
+	line-height: 16px;
+    color: #6e6e6e;
+    padding: 0.5em 1em;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background-color: #f3f3f3;
+    background-image: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    background-image: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    border: solid 1px #dcdcdc;
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {    
+    color: #333;
+    border-color: #999;
+    background-color: #F8F8F8;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#F1F1F1));
+    background-image: -webkit-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -moz-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -ms-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -o-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: linear-gradient(top,#F8F8F8,#F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#F1F1F1');
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+}
+
+.button:active,
+.button.active {    
+    background: #f6f6f6;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f6f6f6),to(#F1F1F1));
+    background: -webkit-linear-gradient(top,#f6f6f6,#F1F1F1);
+    background: -moz-linear-gradient(top,#f6f6f6,#F1F1F1);
+    background: -ms-linear-gradient(top,#f6f6f6,#F1F1F1);
+    background: -o-linear-gradient(top,#f6f6f6,#F1F1F1);
+    background: linear-gradient(top,#f6f6f6,#F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f6f6f6',EndColorStr='#F1F1F1');
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button.checked {
+    color: #333;
+    text-shadow: 0 0 0;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    background: #eee;
+    background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
+    background: -webkit-linear-gradient(top,#eee,#e0e0e0);
+    background: -moz-linear-gradient(top,#eee,#e0e0e0);
+    background: -ms-linear-gradient(top,#eee,#e0e0e0);
+    background: -o-linear-gradient(top,#eee,#e0e0e0);
+    background: linear-gradient(top,#eee,#e0e0e0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee',EndColorStr='#e0e0e0');
+}
+
+.button.disabled {
+	color: #B8B8B8;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: white;
+	cursor: default;
+}
+
+.button.disabled:hover,
+.button.disabled:active {
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* .............................................................. Minibutton */
+
+.mini {
+	height: 13px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	padding: 4px 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* ................................................................... Icons */
+
+.button.icon:before {
+    content: "";
+    position: relative; 
+    top: 0; 
+    float:left;
+    width: 12px; 
+    height: 12px; 
+    margin: 0 0.75em 0 -0.25em; 
+    background: url(gh-icons.png) 0 99px no-repeat;
+}
+
+.button.arrowup.icon:before { background-position: 0 0; }
+.button.arrowdown.icon:before { background-position: 0 -12px; }
+.button.arrowleft.icon:before { background-position: 0 -24px; }
+.button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -36px; }
+.button.approve.icon:before { background-position: 0 -48px; }
+.button.add.icon:before { background-position: 0 -288px; }
+.button.remove.icon:before { background-position: 0 -60px; }
+.button.log.icon:before { background-position: 0 -72px; }
+.button.calendar.icon:before { background-position: 0 -84px; }
+.button.chat.icon:before { background-position: 0 -96px; }
+.button.clock.icon:before { background-position: 0 -108px; }
+.button.settings.icon:before { background-position: 0 -120px; }
+.button.comment.icon:before { background-position: 0 -132px; }
+.button.fork.icon:before { background-position: 0 -144px; }
+.button.like.icon:before { background-position: 0 -156px; }
+.button.favorite.icon:before { background-position: 0 -348px; }
+.button.home.icon:before { background-position: 0 -168px; }
+.button.key.icon:before { background-position: 0 -180px; }
+.button.lock.icon:before { background-position: 0 -192px; }
+.button.unlock.icon:before { background-position: 0 -204px; }
+.button.loop.icon:before { background-position: 0 -216px; }
+.button.search.icon:before { background-position: 0 -228px; }
+.button.mail.icon:before { background-position: 0 -240px; }
+.button.move.icon:before { background-position: 0 -252px; }
+.button.edit.icon:before { background-position: 0 -264px; }
+.button.pin.icon:before { background-position: 0 -276px; }
+.button.reload.icon:before { background-position: 0 -300px; }
+.button.rss.icon:before { background-position: 0 -312px; }
+.button.tag.icon:before { background-position: 0 -324px; }
+.button.trash.icon:before { background-position: 0 -336px; }
+.button.user.icon:before { background-position: 0 -360px; }
+
+
+/* ------------------------------------------------------- BUTTON EXTENSIONS */
+
+/* ..................................................................... Red */
+
+.button.red {
+	color: white;
+	text-shadow: 0 0 0;
+	/*border: 1px solid #dd4b39;*/
+	border: 1px solid transparent;
+	border-left-color: #C6322A;
+	background: #d14836;
+	background-image: -moz-linear-gradient(top,#dd4b39,#d14836);
+	background-image: -o-linear-gradient(top,#dd4b39,#d14836);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#d14836));
+}
+
+.button.red:hover,
+.button.red:focus,
+.button.red:active {
+	border: 1px solid #B0281A;
+	border-bottom: 1px solid #AF301F;
+	background: #C53727;
+	background-image: -moz-linear-gradient(top,#dd4b39,#c53727);
+	background-image: -o-linear-gradient(top,#dd4b39,#c53727);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#c53727));
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button.red:active,
+.button.red.active {
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #B0281A;
+	border-bottom: 1px solid #AF301F;
+	background-image: -moz-linear-gradient(top,#dd4b39,#b0281a);
+	background-image: -o-linear-gradient(top,#dd4b39,#b0281a);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#b0281a));
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* .................................................................... Blue */
+
+.button.blue {
+	color: white;
+	text-shadow: 0 0 0;
+	border: 1px solid #3079ED;
+	background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
+}
+
+.button.blue:hover,
+.button.blue:focus,
+.button.blue:active {
+	border: 1px solid #2F5BB7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-image: -moz-linear-gradient(top,#4d90fe,#357AE8);
+	background-image: -o-linear-gradient(top,#4d90fe,#357AE8);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357AE8));
+}
+
+.button.blue:active,
+.button.blue.active {
+	/*background: #4D90FE;*/
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ................................................................... Green */
+
+.button.green {
+    color: #187b0b;
+}
+
+.button.green:hover,
+.button.green:focus,
+.button.green:active {     
+    border-color: #3FB53A;
+    border-bottom-color: #30A02A;
+    color: #fff; 
+    background-color: #5FDC59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#36b725), to(#298c1c));
+    background-image: -moz-linear-gradient(#36b725, #298c1c);
+    background-image: -o-linear-gradient(#36b725, #298c1c);
+    background-image: linear-gradient(#36b725, #298c1c);
+}
+
+.button.green:active,
+.button.green.active {   
+    border-color: #30A02A;
+    border-bottom-color: #3FB53A;
+    background-color: #36B330;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#298c1c), to(#36b725));
+    background-image: -moz-linear-gradient(#298c1c, #36b725);
+    background-image: -o-linear-gradient(#298c1c, #36b725);
+    background-image: linear-gradient(#298c1c, #36b725);
+}
+
+
+
+/* ............................................................... Icon-only */
+
+.button.no-text:before {
+  margin: 0 -0.2em 0 0.1em;
+}
+
+/* .................................................................... Pill */
+
+.button.pill {
+    -webkit-border-radius: 50em; 
+    -moz-border-radius: 50em; 
+    border-radius: 50em; 
+}
+
+/* ..................................................................... Big */
+
+.button.big {
+    font-size: 0.9em;
+	line-height: 1.3em;
+}
+
+.button.big.icon:before { top: 0; }
+
+
+/* ----------------------------------------------------------- BUTTON GROUPS */
+
+/* ................................................................ Standard */
+
+.button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.button + .button,
+.button + .button-group,
+.button-group + .button,
+.button-group + .button-group {
+    margin-left: 15px;
+}
+
+.button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-group .button {
+    float: left;
+    margin-left: -1px; 
+}
+
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) .button { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0; 
+}
+
+.button-group > .button:first-child,
+.button-group li:first-child .button { 
+    margin-left: 0; 
+    -webkit-border-top-right-radius: 0; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.button-group > .button:last-child,
+.button-group li:last-child > .button { 
+    -webkit-border-top-left-radius: 0; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+
+/* ................................................................... Minor */
+
+.button-group.minor-group .button {
+    border: 1px solid #d4d4d4; 
+    text-shadow: none;
+    background-image: none;
+    background-color: #fff;
+}
+
+.button-group.minor-group .button:hover,
+.button-group.minor-group .button:focus {
+    background-color: #599bdc;
+}
+
+.button-group.minor-group .button:active,
+.button-group.minor-group .button.active {
+    background-color: #3072b3;
+}
+
+.button-group.minor-group .button.icon:before {
+    opacity: 0.8;
+}
+
+/* -------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.button-container .button,
+.button-container .button-group {
+    vertical-align: top;
+}
