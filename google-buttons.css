@@ -133,12 +133,12 @@ http://github.com/todc/css3-github-buttons
 .button.icon:before {
     content: "";
     position: relative; 
-    top: 0; 
-    float:left;
+    top: 2px; 
+    float: left;
     width: 12px; 
     height: 12px; 
     margin: 0 0.75em 0 -0.25em; 
-    background: url(gh-icons.png) 0 99px no-repeat;
+    background: url(google-icons.png) 0 99px no-repeat;
 }
 
 .button.arrowup.icon:before { background-position: 0 0; }
