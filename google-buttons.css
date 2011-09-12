@@ -29,7 +29,7 @@ http://github.com/todc/css3-github-buttons
     *display: inline; 
     
     font: bold 0.75em Helvetica, Arial, sans-serif;
-	line-height: 16px;
+	line-height: 12px;
     color: #6e6e6e;
     padding: 0.7em 1em;
 	min-width: 42px;
@@ -66,7 +66,7 @@ http://github.com/todc/css3-github-buttons
 }
 
 .button:active,
-.button.active {    
+.button.active {
     background: #f6f6f6;
     background: -webkit-gradient(linear,left top,left bottom,from(#f6f6f6),to(#F1F1F1));
     background: -webkit-linear-gradient(top,#f6f6f6,#F1F1F1);
@@ -78,6 +78,11 @@ http://github.com/todc/css3-github-buttons
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button:active,
+.button:focus {
+	border-color: #4D90FE;
 }
 
 .button.checked {
@@ -105,10 +110,17 @@ http://github.com/todc/css3-github-buttons
 }
 
 .button.disabled:hover,
-.button.disabled:active {
+.button.disabled:active,
+.button.disabled2:hover,
+.button.disabled2:active {
     -moz-box-shadow: 0 0 0;
     -webkit-box-shadow: 0 0 0;
     box-shadow: 0 0 0;
+}
+.button.disabled2 {
+	opacity: 0.3;
+	cursor: default;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -132,49 +144,32 @@ http://github.com/todc/css3-github-buttons
 
 /* ................................................................... Icons */
 
+.button.icon {
+	min-width: 5px;
+
+}
 .button.icon:before {
     content: "";
     position: relative; 
-    top: 1px; 
+    top: 0px; 
     float: left;
     width: 12px; 
     height: 12px; 
     margin: 0 0.75em 0 -0.25em; 
-    background: url(google-icons.png) 0 99px no-repeat;
+    background: url(iconic-all-black.png) 0 1860px no-repeat;
 }
 
-.button.arrowup.icon:before { background-position: 0 0; }
-.button.arrowdown.icon:before { background-position: 0 -12px; }
-.button.arrowleft.icon:before { background-position: 0 -24px; }
-.button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -36px; }
-.button.approve.icon:before { background-position: 0 -48px; }
-.button.add.icon:before { background-position: 0 -288px; }
-.button.remove.icon:before { background-position: 0 -60px; }
-.button.log.icon:before { background-position: 0 -72px; }
-.button.calendar.icon:before { background-position: 0 -84px; }
-.button.chat.icon:before { background-position: 0 -96px; }
-.button.clock.icon:before { background-position: 0 -108px; }
-.button.settings.icon:before { background-position: 0 -120px; }
-.button.comment.icon:before { background-position: 0 -132px; }
-.button.fork.icon:before { background-position: 0 -144px; }
-.button.like.icon:before { background-position: 0 -156px; }
-.button.favorite.icon:before { background-position: 0 -348px; }
-.button.home.icon:before { background-position: 0 -168px; }
-.button.key.icon:before { background-position: 0 -180px; }
-.button.lock.icon:before { background-position: 0 -192px; }
-.button.unlock.icon:before { background-position: 0 -204px; }
-.button.loop.icon:before { background-position: 0 -216px; }
-.button.search.icon:before { background-position: 0 -228px; }
-.button.mail.icon:before { background-position: 0 -240px; }
-.button.move.icon:before { background-position: 0 -252px; }
-.button.edit.icon:before { background-position: 0 -264px; }
-.button.pin.icon:before { background-position: 0 -276px; }
-.button.reload.icon:before { background-position: 0 -300px; }
-.button.rss.icon:before { background-position: 0 -312px; }
-.button.tag.icon:before { background-position: 0 -324px; }
-.button.trash.icon:before { background-position: 0 -336px; }
-.button.user.icon:before { background-position: 0 -360px; }
-
+.button.arrowleft.icon:before { background-position: 0 -48px; }
+.button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -84px; }
+.button.settings.icon:before { background-position: 0 -480px; }
+.button.search.icon:before { background-position: 0 -1092px; }
+/*.button.play.icon:before { background-position: 0 -1404px; }*/
+.button.play.icon:before { background-position: 0 -1860px; }
+.button.add.icon:before { background-position: 0 -1428px; }
+.button.remove.icon:before { background-position: 0 -1800px; }
+.button.reload.icon:before { background-position: 0 -1836px; left: -1px; }
+.button.return.icon:before { background-position: 0 -1848px; width: 19px; }
+.button.rewind.icon:before { background-position: 0 -1872px; }
 
 /* ------------------------------------------------------- BUTTON EXTENSIONS */
 
@@ -286,6 +281,7 @@ http://github.com/todc/css3-github-buttons
 
 .button.no-text:before {
   margin: 0 -0.2em 0 0.1em;
+  top: 0;
 }
 
 /* .................................................................... Pill */
@@ -295,15 +291,6 @@ http://github.com/todc/css3-github-buttons
     -moz-border-radius: 50em; 
     border-radius: 50em; 
 }
-
-/* ..................................................................... Big */
-
-.button.big {
-    font-size: 0.9em;
-	line-height: 1.3em;
-}
-
-.button.big.icon:before { top: 0; }
 
 
 /* ----------------------------------------------------------- BUTTON GROUPS */

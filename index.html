@@ -3,20 +3,45 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<title>Buttons Demo</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" /> 
+	<style>
+	div.section { padding-bottom: 20px; }
+	
+	table { 
+	    font-family: arial; font-size: 13px; 
+	    border-spacing: 0; 
+	}
+	th {
+	    text-transform: uppercase;
+	    font-size: 11px;
+	    font-weight: bold;
+	    color: #555;
+	    text-align: left;
+	}
+	th.sorted {
+	    color: #DD4B39;
+	}
+	tbody tr:hover td {
+      background-color: #ffffd6;
+      cursor: default;
+    }
+	td, th {
+	    border-bottom: 1px solid #EBEBEB;
+	    height: 33px;
+	    line-height: 33px;
+	}
+	</style>
 </head>
 <body>
 
-
-<!-- **** NOTE: do not put any white space (spaces, line breaks, tabs) between links **** -->
-
-	<div class="buttons" style="padding-bottom:20px;">
+	<div class="section">
 		<a href="#" class="button">Stand Alone</a>
 		<a href="#" class="button disabled">Stand Alone</a>
 	</div>
 	
-	<div class="buttons" style="padding-bottom:20px;">
-    	<div class="button-group">
+	<div class="section">
+    	<div class="button-group" id="select-timeframe">
     		<a href="#" class="button">Day</a>
     		<a href="#" class="button">Week</a>
     		<a href="#" class="button checked">Month</a>
@@ -25,12 +50,12 @@
     	</div>
     </div>
 	
-	<div class="buttons" style="padding-bottom:20px;">
-		<a href="#" class="button big red">CONTACTS</a>
-		<a href="#" class="button big blue">SEARCH</a>
+	<div class="section">
+		<a href="#" class="button red">CONTACTS</a>
+		<a href="#" class="button blue">SEARCH</a>
 	</div>
 
-	<div class="buttons" style="padding-bottom:20px;">
+	<div class="section">
 	    <div class="button-group">
 		    <a href="#" class="button mini">Save</a>
 		    <a href="#" class="button mini">Add Item</a>
@@ -39,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="buttons" style="padding-bottom:20px;">
+	<div class="section">
 		<a href="#" class="button icon search">Search</a>
 		<a href="#" class="button icon add">Add Item</a>
 		<a href="#" class="button icon remove">Remove</a>
@@ -48,12 +73,80 @@
 		<a href="#" class="button icon arrowright">Forward</a>
 	</div>
 	
-	<div class="buttons">
-		<a href="#" class="button big">Save</a>
-		<a href="#" class="button big icon add">Add Item</a>
-		<a href="#" class="button big icon delete">Delete</a>
+	<div class="section">
+	    <a href="#" class="button icon return no-text"></a>
+	    <div class="button-group">
+		    <a href="#" class="button icon rewind no-text"></a>
+		    <a href="#" class="button icon play no-text"></a>
+		</div>
+		<div class="button-group">
+		    <a href="#" class="button icon rewind no-text disabled2"></a>
+		    <a href="#" class="button icon play no-text"></a>
+		</div>
+	</div>
+	
+	<div class="section button-container">
+	    <a href="#" class="button icon return no-text"></a>
+	    <div class="button-group">
+		    <a href="#" class="button">Archive</a>
+		    <a href="#" class="button">Spam</a>
+		    <a href="#" class="button">Delete</a>
+		</div>
+		<a href="#" class="button icon reload no-text"></a>
 	</div>
 
+    <div class="section">
+        
+        <table style="width: 500px">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th class="sorted">Title</th>
+                    <th>Owner</th>
+                    <th>Last Modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>The Great Gatsby</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>War and Peace</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Catcher in the Rye</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+<script type="text/javascript">
+$("#select-timeframe .button").click(function() {
+    $("#select-timeframe .button").removeClass("checked");
+    $(this).addClass("checked");
+});
+</script>
 
 </body>
 </html>
