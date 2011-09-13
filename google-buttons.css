@@ -87,7 +87,7 @@ http://github.com/todc/css3-github-buttons
 
 .button.checked {
     color: #333;
-    text-shadow: 0 0 0;
+    text-shadow: none;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -178,7 +178,7 @@ http://github.com/todc/css3-github-buttons
 
 .button.red {
 	color: white;
-	text-shadow: 0 0 0;
+	text-shadow: none;
 	/*border: 1px solid #dd4b39;*/
 	border: 1px solid transparent;
 	border-left-color: #C6322A;
@@ -219,7 +219,7 @@ http://github.com/todc/css3-github-buttons
 
 .button.blue {
 	color: white;
-	text-shadow: 0 0 0;
+	text-shadow: none;
 	border: 1px solid #3079ED;
 	background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
 	background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
