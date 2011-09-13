@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" /> 
 	<style>
 	div.section { padding-bottom: 20px; }
+	body { font-family: arial; padding: 20px; }
+	
 	
 	table { 
-	    font-family: arial; font-size: 13px; 
 	    border-spacing: 0; 
+		font-size: 13px;
 	}
 	th {
 	    text-transform: uppercase;
@@ -41,7 +43,7 @@
 	</div>
 	
 	<div class="section">
-    	<div class="button-group" id="select-timeframe">
+    	<div class="button-group toggle-buttons">
     		<a href="#" class="button">Day</a>
     		<a href="#" class="button">Week</a>
     		<a href="#" class="button checked">Month</a>
@@ -56,7 +58,7 @@
 	</div>
 
 	<div class="section">
-	    <div class="button-group">
+	    <div class="button-group toggle-buttons">
 		    <a href="#" class="button mini">Save</a>
 		    <a href="#" class="button mini">Add Item</a>
 		    <a href="#" class="button mini checked">Delete</a>
@@ -74,7 +76,6 @@
 	</div>
 	
 	<div class="section">
-	    <a href="#" class="button icon return no-text"></a>
 	    <div class="button-group">
 		    <a href="#" class="button icon rewind no-text"></a>
 		    <a href="#" class="button icon play no-text"></a>
@@ -82,6 +83,10 @@
 		<div class="button-group">
 		    <a href="#" class="button icon rewind no-text disabled2"></a>
 		    <a href="#" class="button icon play no-text"></a>
+		</div>
+		<div class="button-group">
+		    <a href="#" class="button icon rewind no-text"></a>
+		    <a href="#" class="button icon play no-text disabled2"></a>
 		</div>
 	</div>
 	
@@ -141,11 +146,50 @@
         
     </div>
 
+	<div class="section">
+		
+		<ul class="menu">
+		  <li class="has-submenu">
+			<a href="#">Create new</a>
+			<ul class="menu">
+				<li><a href="">Document</a></li>
+				<li><a href="">Presentation</a></li>
+				<li><a href="">Spreadsheet</a></li>
+				<li><a href="">Form</a></li>
+			</ul>
+		  </li>
+		  <li class="divider"></li>
+		  <li class="has-submenu icon share">
+			<a href="#">Share&hellip;</a>
+			<ul class="menu">
+				<li><a href="">Share&hellip;</a></li>
+				<li class="divider"></li>
+				<li><a href="">Email collaborators&hellip;</a></li>
+				<li class="disabled">Email as attachment&hellip;</li>
+			</ul>
+		  </li>
+		  <li class="divider"></li>
+		  <li class="icon star"><a href="#">Add star</a></li>
+		  <li><a href="#">Don't show in home</a></li>
+		  <li><a href="#">Organize&hellip;</a></li>
+		  <li class="disabled">Download&hellip;</li>
+		</ul>
+		
+	<div>
+
 <script type="text/javascript">
-$("#select-timeframe .button").click(function() {
-    $("#select-timeframe .button").removeClass("checked");
+$(".toggle-buttons > .button").click(function() {
+    $(this).siblings(".button").removeClass("checked");
     $(this).addClass("checked");
 });
+
+$(".has-submenu").hover(
+	function() {
+		var elSubMenu = $(this).children(".menu");
+		elSubMenu.show().css({ left: elSubMenu.width(), top: 0 } );
+	},
+	function() { $(this).children(".menu").hide(); }
+);
 </script>
 
 </body>

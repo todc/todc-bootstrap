@@ -159,6 +159,7 @@ http://github.com/todc/css3-github-buttons
     background: url(iconic-all-black.png) 0 1860px no-repeat;
 }
 
+
 .button.arrowleft.icon:before { background-position: 0 -48px; }
 .button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -84px; }
 .button.settings.icon:before { background-position: 0 -480px; }
@@ -169,7 +170,7 @@ http://github.com/todc/css3-github-buttons
 .button.remove.icon:before { background-position: 0 -1800px; }
 .button.reload.icon:before { background-position: 0 -1836px; left: -1px; }
 .button.return.icon:before { background-position: 0 -1848px; width: 19px; }
-.button.rewind.icon:before { background-position: 0 -1872px; }
+.button.rewind.icon:before { background-position: 0 -1872px; left: -1px;}
 
 /* ------------------------------------------------------- BUTTON EXTENSIONS */
 
@@ -382,4 +383,98 @@ http://github.com/todc/css3-github-buttons
 .button-container .button,
 .button-container .button-group {
     vertical-align: top;
+}
+
+
+/* ----------------------------------------------------------- DROPDOWN MENU */
+
+/*
+position: relative; 
+top: 0px; 
+float: left;
+width: 12px; 
+height: 12px; 
+margin: 0 0.75em 0 -0.25em; 
+background: url(iconic-all-black.png) 0 1860px no-repeat;
+
+.button.icon:before {
+    content: "";
+    position: relative; 
+    top: 0px; 
+    float: left;
+    width: 12px; 
+    height: 12px; 
+    margin: 0 0.75em 0 -0.25em; 
+    background: url(iconic-all-black.png) 0 1860px no-repeat;
+}
+*/
+
+ul.menu {
+    font-size: 13px;
+    width: 225px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 0 6px;
+}
+
+ul.menu ul {
+    display:none;
+    background-color: white;
+    z-index: 10;
+}
+ul.menu li.has-submenu:after {
+    content: "";
+    background-image: url(combined_v31_vr.png);
+    background-position: -153px -81px;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 7px;
+    right: 3px;
+}
+
+ul.menu li {
+    cursor: pointer;
+    list-style: none outside none;
+    margin: 0;
+    padding: 6px 7px 6px 30px;
+    white-space: nowrap;
+    position: relative;
+}
+ul.menu li:hover {
+    background-color: #eee;
+}
+ul.menu li a {
+    color: #333;
+    text-decoration: none;
+}
+ul.menu li.icon:before {
+    content: "";
+    background-image: url(icons_24.png);
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 6px;
+    margin-top: -1px;
+}
+ul.menu li.icon.share:before { background-position: -32px 0; }
+ul.menu li.icon.star:before { background-position: -240px 0; }
+ul.menu li.disabled {
+    cursor: default;
+    color: #ccc;
+}
+ul.menu li.disabled:hover {
+    background-color: white;
+}
+ul.menu li.divider {
+    border-top: 1px solid #ebebeb;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding: 0;
+    cursor: default;
+}
+li.has-submenu ul {
+    position: absolute;
 }
