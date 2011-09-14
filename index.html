@@ -99,6 +99,29 @@
 		</div>
 		<a href="#" class="button icon reload no-text"></a>
 	</div>
+	
+	<div class="section button-container" style="position:relative">
+	    <a href="#" data-menu="btn-menu" class="button icon menu">Menu</a>
+		<div class="button-group">
+		    <a href="" data-menu="btn-menu" class="button icon menu">Menu 2</a>
+		    <a href="#" data-menu="btn-menu" class="button icon menu">Menu 3</a>
+		    <a href="#" class="button">Button</a>
+		</div>
+		
+		<ul id="btn-menu" class="menu">
+			<li><a href="">Document</a></li>
+			<li><a href="">Presentation</a></li>
+			<li><a href="">Spreadsheet</a></li>
+			<li><a href="">Form</a></li>
+		</ul>
+	</div>
+	
+	<div class="section button-container">
+		<div class="button-group">
+	    	<a href="#" class="button xs pg bw"></a>
+			<a href="#" class="button xs pg fw"></a>
+		</div>
+	</div>
 
     <div class="section">
         
@@ -148,7 +171,7 @@
 
 	<div class="section">
 		
-		<ul class="menu">
+		<ul class="menu dont-hide" style="display:block;">
 		  <li class="has-submenu">
 			<a href="#">Create new</a>
 			<ul class="menu">
@@ -183,7 +206,7 @@
 		  <li class="disabled">Download&hellip;</li>
 		</ul>
 		
-	<div>
+	</div>
 
 <script type="text/javascript">
 $(".toggle-buttons > .button").click(function() {
@@ -198,6 +221,21 @@ $(".has-submenu").hover(
 	},
 	function() { $(this).children(".menu").hide(); }
 );
+
+$(".button.menu").click(function() {
+	var pos = $(this).position();
+	var menuId = $(this).attr("data-menu");
+	var elMenu = $("#"+menuId);
+	console.log("outerHeight = " + $(this).outerHeight() + "; height = " + $(this).height());
+	console.log("top = " + pos.top);
+	elMenu.show().css({ left: pos.left, top: pos.top + $(this).outerHeight() } );
+	return false;
+});
+
+$("body").bind("click", function (e) {
+	$('ul.menu').hide();
+	$('.dont-hide').show();
+});
 </script>
 
 </body>
