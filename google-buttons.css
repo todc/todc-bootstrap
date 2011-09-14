@@ -1,7 +1,7 @@
 /* ------------------------------------------
-CSS3 GITHUB BUTTONS (Tim O'Donnell)
+CSS3 GOOGLE UI (Tim O'Donnell)
 Licensed under Unlicense 
-http://github.com/todc/css3-github-buttons
+http://github.com/todc/css3-google-buttons
 ------------------------------------------ */
 
 
@@ -283,51 +283,12 @@ http://github.com/todc/css3-github-buttons
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* ................................................................... Green */
-
-.button.green {
-    color: #187b0b;
-}
-
-.button.green:hover,
-.button.green:focus,
-.button.green:active {     
-    border-color: #3FB53A;
-    border-bottom-color: #30A02A;
-    color: #fff; 
-    background-color: #5FDC59;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#36b725), to(#298c1c));
-    background-image: -moz-linear-gradient(#36b725, #298c1c);
-    background-image: -o-linear-gradient(#36b725, #298c1c);
-    background-image: linear-gradient(#36b725, #298c1c);
-}
-
-.button.green:active,
-.button.green.active {   
-    border-color: #30A02A;
-    border-bottom-color: #3FB53A;
-    background-color: #36B330;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#298c1c), to(#36b725));
-    background-image: -moz-linear-gradient(#298c1c, #36b725);
-    background-image: -o-linear-gradient(#298c1c, #36b725);
-    background-image: linear-gradient(#298c1c, #36b725);
-}
-
-
 
 /* ............................................................... Icon-only */
 
 .button.no-text:before {
   margin: 0 -0.2em 0 0.1em;
   top: 0;
-}
-
-/* .................................................................... Pill */
-
-.button.pill {
-    -webkit-border-radius: 50em; 
-    -moz-border-radius: 50em; 
-    border-radius: 50em; 
 }
 
 
@@ -391,29 +352,6 @@ http://github.com/todc/css3-github-buttons
     border-bottom-left-radius: 0; 
 }
 
-/* ................................................................... Minor */
-
-.button-group.minor-group .button {
-    border: 1px solid #d4d4d4; 
-    text-shadow: none;
-    background-image: none;
-    background-color: #fff;
-}
-
-.button-group.minor-group .button:hover,
-.button-group.minor-group .button:focus {
-    background-color: #599bdc;
-}
-
-.button-group.minor-group .button:active,
-.button-group.minor-group .button.active {
-    background-color: #3072b3;
-}
-
-.button-group.minor-group .button.icon:before {
-    opacity: 0.8;
-}
-
 /* -------------------------------------------------------- BUTTON CONTAINER */
 /* For mixing buttons and button groups, e.g., in a navigation bar */
 
@@ -424,27 +362,6 @@ http://github.com/todc/css3-github-buttons
 
 
 /* ----------------------------------------------------------- DROPDOWN MENU */
-
-/*
-position: relative; 
-top: 0px; 
-float: left;
-width: 12px; 
-height: 12px; 
-margin: 0 0.75em 0 -0.25em; 
-background: url(iconic-all-black.png) 0 1860px no-repeat;
-
-.button.icon:before {
-    content: "";
-    position: relative; 
-    top: 0px; 
-    float: left;
-    width: 12px; 
-    height: 12px; 
-    margin: 0 0.75em 0 -0.25em; 
-    background: url(iconic-all-black.png) 0 1860px no-repeat;
-}
-*/
 
 ul.menu {
     font-size: 13px;
