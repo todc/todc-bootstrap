@@ -226,8 +226,6 @@ $(".button.menu").click(function() {
 	var pos = $(this).position();
 	var menuId = $(this).attr("data-menu");
 	var elMenu = $("#"+menuId);
-	console.log("outerHeight = " + $(this).outerHeight() + "; height = " + $(this).height());
-	console.log("top = " + pos.top);
 	elMenu.show().css({ left: pos.left, top: pos.top + $(this).outerHeight() } );
 	return false;
 });
