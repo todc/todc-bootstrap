@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<title>Buttons Demo</title> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="reset.css" type="text/css"  media="screen" />
 	<link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" /> 
 	<style>
 	div.section { padding-bottom: 20px; }
@@ -207,13 +208,27 @@
 		</ul>
 		
 	</div>
+	
+	<div class="section">
+		
+		<ul class="tabs" style="width: 500px">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#">Profile</a></li>
+	        <li><a href="#">Messages</a></li>
+	        <li><a href="#">Settings</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+		
+	</div>
 
 <script type="text/javascript">
+// Implement checkbox-like buttons
 $(".toggle-buttons > .button").click(function() {
     $(this).siblings(".button").removeClass("checked");
     $(this).addClass("checked");
 });
 
+// Implement submenus.
 $(".has-submenu").hover(
 	function() {
 		var elSubMenu = $(this).children(".menu");
@@ -222,6 +237,7 @@ $(".has-submenu").hover(
 	function() { $(this).children(".menu").hide(); }
 );
 
+// Implement buttons with dropdown menus.
 $(".button.menu").click(function() {
 	var pos = $(this).position();
 	var menuId = $(this).attr("data-menu");
@@ -230,9 +246,17 @@ $(".button.menu").click(function() {
 	return false;
 });
 
+// Hide any open menus if we click outside of them.
 $("body").bind("click", function (e) {
 	$('ul.menu').hide();
 	$('.dont-hide').show();
+});
+
+// Implement tab switching.
+$(".tabs li").click(function() {
+	$(this).addClass("active");
+	$(this).siblings("li").removeClass("active");
+	return false;
 });
 </script>
 

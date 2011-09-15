@@ -4,7 +4,6 @@ Licensed under Unlicense
 http://github.com/todc/css3-google-buttons
 ------------------------------------------ */
 
-
 /* ------------------------------------------------------------------ BUTTON */
 
 .button { 
@@ -438,4 +437,59 @@ ul.menu li.divider {
 }
 li.has-submenu ul {
     position: absolute;
+}
+
+/* -------------------------------------------------------------------- Tabs */
+
+.tabs {
+  font-size: 13px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+.tabs:before,
+.tabs:after {
+  display: table;
+  content: "";
+}
+.tabs:after {
+  clear: both;
+}
+.tabs > li {
+  float: left;
+}
+.tabs > li > a {
+  display: block;
+  text-decoration: none;
+}
+.tabs {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.tabs > li {
+  position: relative;
+  top: 1px;
+}
+.tabs > li > a {
+  color: #6e6e6e;
+  margin-right: 2px;
+  padding: 0 15px;
+  line-height: 35px;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.tabs > li > a:hover {
+  color: #333;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+}
+.tabs > li.active > a {
+  background-color: #fff;
+  padding: 0 14px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  color: #000;
 }
