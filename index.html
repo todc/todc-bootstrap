@@ -55,7 +55,9 @@
 	
 	<div class="section">
 		<a href="#" class="button red">CONTACTS</a>
+		<a href="#" class="button red sm">CONTACTS</a>
 		<a href="#" class="button blue">SEARCH</a>
+		<a href="#" class="button blue sm">SEARCH</a>
 	</div>
 
 	<div class="section">
@@ -102,11 +104,11 @@
 	</div>
 	
 	<div class="section button-container" style="position:relative">
-	    <a href="#" data-menu="btn-menu" class="button icon menu">Menu</a>
+	    <a data-menu="btn-menu" class="button icon menu">Menu</a>
 		<div class="button-group">
-		    <a href="" data-menu="btn-menu" class="button icon menu">Menu 2</a>
-		    <a href="#" data-menu="btn-menu" class="button icon menu">Menu 3</a>
-		    <a href="#" class="button">Button</a>
+		    <a data-menu="btn-menu" class="button icon menu">Menu 2</a>
+		    <a data-menu="btn-menu" class="button icon menu">Menu 3</a>
+		    <a class="button">Button</a>
 		</div>
 		
 		<ul id="btn-menu" class="menu">
@@ -238,17 +240,19 @@ $(".has-submenu").hover(
 );
 
 // Implement buttons with dropdown menus.
-$(".button.menu").click(function() {
+$(".button.menu").mousedown(function() {
 	var pos = $(this).position();
 	var menuId = $(this).attr("data-menu");
 	var elMenu = $("#"+menuId);
 	elMenu.show().css({ left: pos.left, top: pos.top + $(this).outerHeight() } );
+	$(this).addClass("checked"); /* show button in depressed state while menu is out */
 	return false;
 });
 
 // Hide any open menus if we click outside of them.
-$("body").bind("click", function (e) {
+$("body").bind("mousedown", function (e) {
 	$('ul.menu').hide();
+	$('.button.menu').removeClass("checked"); /* remove 'checked' state from menu buttons */
 	$('.dont-hide').show();
 });
 

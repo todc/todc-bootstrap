@@ -66,31 +66,31 @@ http://github.com/todc/css3-google-buttons
 
 .button:active,
 .button.active {
-    background: #f6f6f6;
-    background: -webkit-gradient(linear,left top,left bottom,from(#f6f6f6),to(#F1F1F1));
-    background: -webkit-linear-gradient(top,#f6f6f6,#F1F1F1);
-    background: -moz-linear-gradient(top,#f6f6f6,#F1F1F1);
-    background: -ms-linear-gradient(top,#f6f6f6,#F1F1F1);
-    background: -o-linear-gradient(top,#f6f6f6,#F1F1F1);
-    background: linear-gradient(top,#f6f6f6,#F1F1F1);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f6f6f6',EndColorStr='#F1F1F1');
-    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#F1F1F1));
+    background: -webkit-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -moz-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -ms-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -o-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: linear-gradient(top,#f8f8f8,#F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#F1F1F1');
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .button:active,
 .button:focus {
-	border-color: #4D90FE;
+	/*border-color: #4D90FE;*/
 }
 
 .button.checked {
     color: #333;
     text-shadow: none;
     border: 1px solid #ccc;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     background: #eee;
     background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
     background: -webkit-linear-gradient(top,#eee,#e0e0e0);
@@ -129,6 +129,10 @@ http://github.com/todc/css3-google-buttons
 }
 
 /* .............................................................. Minibutton */
+
+.sm {
+	font-size: 11px;
+}
 
 .mini {
 	height: 13px;
