@@ -34,10 +34,10 @@ http://github.com/todc/css3-google-buttons
 	min-width: 42px;
 	text-align: center;
     text-shadow: 0 1px 0 #fff;
-    -webkit-transition: border-color .218s;
+    /*-webkit-transition: border-color .218s;
     -moz-transition: border .218s;
     -o-transition: border-color .218s;
-    transition: border-color .218s;
+    transition: border-color .218s;*/
     background-color: #f3f3f3;
     background-image: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     background-image: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
