@@ -497,3 +497,19 @@ li.has-submenu ul {
   border-bottom: 0;
   color: #000;
 }
+
+.checkbox > input[type="checkbox"] {
+	display: none;
+}
+.checkbox {
+	background-image: url(icons_16.png);
+	background-position: -306px 0;
+	width: 16px;
+	height: 16px;
+	margin-top: 1px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.checkbox.checked {
+	background-position: -322px 0;
+}

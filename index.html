@@ -131,7 +131,11 @@
         <table style="width: 500px">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>
+                        <div class="checkbox" id="check-all">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </th>
                     <th></th>
                     <th class="sorted">Title</th>
                     <th>Owner</th>
@@ -140,28 +144,44 @@
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
                     <td></td>
                     <td>The Great Gatsby</td>
                     <td>me</td>
                     <td>Sep 1</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
                     <td></td>
                     <td>To Kill a Mockingbird</td>
                     <td>me</td>
                     <td>Sep 1</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
                     <td></td>
                     <td>War and Peace</td>
                     <td>me</td>
                     <td>Sep 1</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
                     <td></td>
                     <td>Catcher in the Rye</td>
                     <td>me</td>
@@ -261,6 +281,49 @@ $(".tabs li").click(function() {
 	$(this).addClass("active");
 	$(this).siblings("li").removeClass("active");
 	return false;
+});
+
+// Implement checkboxes in table.
+$(".checkbox").click(function() {
+    $(this).toggleChecked();
+});
+
+$("#check-all").click(function() {
+    if ($(this).hasClass("checked")) {
+        $(".checkbox.cb").toggleChecked(true);
+    } else {
+        $(".checkbox.cb").toggleChecked(false);
+    }
+});
+
+// Helper methods for table checkboxes.
+$.fn.extend({
+  toggleChecked : function(checked) {
+      if (checked != null) {
+          if (checked) {
+              this.addClass("checked");
+              this.children("input[type='checkbox']").attr("checked", "true");
+          } else {
+              this.removeClass("checked");
+              this.children("input[type='checkbox']").removeAttr("checked");
+          }
+      } else {
+          this.toggleClass("checked");
+          this.children("input[type='checkbox']").toggleAttr("checked");
+      }
+      return this;
+  }
+});
+
+$.fn.extend({
+  toggleAttr : function(attrib) {
+    if (this.attr(attrib)) {
+      this.removeAttr(attrib);
+    } else {
+      this.attr(attrib, attrib);
+    }
+    return this;
+  }
 });
 </script>
 
