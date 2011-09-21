@@ -28,11 +28,12 @@ over any of this.
 	z-index: 1;
     *display: inline; 
     
-    font: bold 0.75em Helvetica, Arial, sans-serif;
+    font: bold 12px Helvetica, Arial, sans-serif;
 	line-height: 12px;
     color: #6e6e6e;
-    padding: 0.7em 1em;
+    padding: 8px 12px;
 	min-width: 42px;
+	height: 12px;
 	text-align: center;
     text-shadow: 0 1px 0 #fff;
     background-color: #f3f3f3;
@@ -46,6 +47,7 @@ over any of this.
 .button:active,
 .button.active {    
     color: #333;
+	text-decoration: none;
     border-color: #999;
     background-color: #F8F8F8;
     background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#F1F1F1));
@@ -59,6 +61,7 @@ over any of this.
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	z-index: 100;
+	outline: none;
 }
 
 .button:active,
@@ -287,7 +290,7 @@ over any of this.
 /* ............................................................... Icon-only */
 
 .button.no-text:before {
-  margin: 0 -0.2em 0 0.1em;
+  margin: 0 -0.2em 0 0;
   top: 0;
 }
 
