@@ -117,9 +117,13 @@ over any of this.
     box-shadow: 0 0 0;
 }
 .button.disabled2 {
-	opacity: 0.3;
+	color: #777;
+	opacity: 0.4;
 	cursor: default;
 	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.button.disabled2:hover {
+	color: #777;
 }
 
 /* overrides extra padding on button elements in Firefox */
