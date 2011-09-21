@@ -1,0 +1,515 @@
+/* ------------------------------------------
+CSS3 GOOGLE UI (Tim O'Donnell)
+Licensed under Unlicense 
+http://github.com/todc/css3-google-buttons
+------------------------------------------ */
+
+/* ------------------------------------------------------------------ BUTTON */
+
+.button { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    margin: 0;
+    text-decoration: none; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box; 
+    /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
+    /* IE hacks */
+    zoom: 1; 
+	z-index: 1;
+    *display: inline; 
+    
+    font: bold 0.75em Helvetica, Arial, sans-serif;
+	line-height: 12px;
+    color: #6e6e6e;
+    padding: 0.7em 1em;
+	min-width: 42px;
+	text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    /*-webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;*/
+    background-color: #f3f3f3;
+    background-image: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    background-image: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    border: solid 1px #dcdcdc;
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {    
+    color: #333;
+    border-color: #999;
+    background-color: #F8F8F8;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#F1F1F1));
+    background-image: -webkit-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -moz-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -ms-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: -o-linear-gradient(top,#F8F8F8,#F1F1F1);
+    background-image: linear-gradient(top,#F8F8F8,#F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#F1F1F1');
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+}
+
+.button:active,
+.button.active {
+    background: #f8f8f8;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#F1F1F1));
+    background: -webkit-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -moz-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -ms-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: -o-linear-gradient(top,#f8f8f8,#F1F1F1);
+    background: linear-gradient(top,#f8f8f8,#F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#F1F1F1');
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button:active,
+.button:focus {
+	/*border-color: #4D90FE;*/
+}
+
+.button.checked {
+    color: #333;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    background: #eee;
+    background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
+    background: -webkit-linear-gradient(top,#eee,#e0e0e0);
+    background: -moz-linear-gradient(top,#eee,#e0e0e0);
+    background: -ms-linear-gradient(top,#eee,#e0e0e0);
+    background: -o-linear-gradient(top,#eee,#e0e0e0);
+    background: linear-gradient(top,#eee,#e0e0e0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee',EndColorStr='#e0e0e0');
+}
+
+.button.disabled {
+	color: #B8B8B8;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: white;
+	cursor: default;
+}
+
+.button.disabled:hover,
+.button.disabled:active,
+.button.disabled2:hover,
+.button.disabled2:active {
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.button.disabled2 {
+	opacity: 0.3;
+	cursor: default;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* .............................................................. Minibutton */
+
+.sm {
+	font-size: 11px;
+}
+
+.mini {
+	height: 13px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	padding: 4px 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.xs {
+	height: 9px;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 10px;
+	padding: 4px 2px;
+	min-width: 5px;
+    width: 18px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.xs.pg:before {
+    background-image: url(icons_16.png);
+    content: "";
+    top: 5px;
+    left: 2px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+}
+.xs.pg.fw:before {
+    background-position: -224px 0px;
+}
+.xs.pg.bw:before {
+    background-position: -240px 0px;
+}
+
+/* ................................................................... Icons */
+
+.button.icon {
+	min-width: 5px;
+
+}
+.button.icon:before {
+    content: "";
+    position: relative; 
+    top: 0px; 
+    float: left;
+    width: 12px; 
+    height: 12px; 
+    margin: 0 0.75em 0 -0.25em; 
+    background: url(iconic-all-black.png) 0 1860px no-repeat;
+}
+
+
+.button.arrowleft.icon:before { background-position: 0 -48px; }
+.button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -84px; }
+.button.settings.icon:before { background-position: 0 -480px; }
+.button.search.icon:before { background-position: 0 -1092px; }
+/*.button.play.icon:before { background-position: 0 -1404px; }*/
+.button.play.icon:before { background-position: 0 -1860px; }
+.button.add.icon:before { background-position: 0 -1428px; }
+.button.remove.icon:before { background-position: 0 -1800px; }
+.button.reload.icon:before { background-position: 0 -1836px; left: -1px; }
+.button.return.icon:before { background-position: 0 -1848px; width: 19px; }
+.button.rewind.icon:before { background-position: 0 -1872px; left: -1px;}
+.button.menu.icon:before { 
+    background-image: url(icons_16.png);
+    background-position: -208px 0;
+    top: 2px;
+    float: right;
+    margin: 0 -0.25em 0 0.5em;
+    left: 0;
+}
+
+/* ------------------------------------------------------- BUTTON EXTENSIONS */
+
+/* ..................................................................... Red */
+
+.button.red {
+	color: white;
+	text-shadow: none;
+	/*border: 1px solid #dd4b39;*/
+	border: 1px solid transparent;
+	border-left-color: #C6322A;
+	background: #d14836;
+	background-image: -moz-linear-gradient(top,#dd4b39,#d14836);
+	background-image: -o-linear-gradient(top,#dd4b39,#d14836);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#d14836));
+}
+
+.button.red:hover,
+.button.red:focus,
+.button.red:active {
+	border: 1px solid #B0281A;
+	border-bottom: 1px solid #AF301F;
+	background: #C53727;
+	background-image: -moz-linear-gradient(top,#dd4b39,#c53727);
+	background-image: -o-linear-gradient(top,#dd4b39,#c53727);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#c53727));
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button.red:active,
+.button.red.active {
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #B0281A;
+	border-bottom: 1px solid #AF301F;
+	background-image: -moz-linear-gradient(top,#dd4b39,#b0281a);
+	background-image: -o-linear-gradient(top,#dd4b39,#b0281a);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#b0281a));
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* .................................................................... Blue */
+
+.button.blue {
+	color: white;
+	text-shadow: none;
+	border: 1px solid #3079ED;
+	background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
+}
+
+.button.blue:hover,
+.button.blue:focus,
+.button.blue:active {
+	border: 1px solid #2F5BB7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-image: -moz-linear-gradient(top,#4d90fe,#357AE8);
+	background-image: -o-linear-gradient(top,#4d90fe,#357AE8);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357AE8));
+}
+
+.button.blue:active,
+.button.blue.active {
+	/*background: #4D90FE;*/
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ............................................................... Icon-only */
+
+.button.no-text:before {
+  margin: 0 -0.2em 0 0.1em;
+  top: 0;
+}
+
+
+/* ----------------------------------------------------------- BUTTON GROUPS */
+
+/* ................................................................ Standard */
+
+.button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.button + .button,
+.button + .button-group,
+.button-group + .button,
+.button-group + .button-group {
+    margin-left: 15px;
+}
+
+.button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-group .button {
+    float: left;
+    margin-left: -1px; 
+}
+
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) .button { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0; 
+}
+
+.button-group > .button:first-child,
+.button-group li:first-child .button { 
+    margin-left: 0; 
+    -webkit-border-top-right-radius: 0; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.button-group > .button:last-child,
+.button-group li:last-child > .button { 
+    -webkit-border-top-left-radius: 0; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+
+/* -------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.button-container .button,
+.button-container .button-group {
+    vertical-align: top;
+}
+
+
+/* ----------------------------------------------------------- DROPDOWN MENU */
+
+ul.menu {
+    font-size: 13px;
+    width: 225px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 0 6px;
+    margin: 0 0 0;
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+
+ul.menu ul {
+    display: none;
+}
+ul.menu li.has-submenu:after {
+    content: "";
+    background-image: url(icons_16.png);
+    background-position: -224px 0;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 9px;
+    right: 6px;
+}
+
+ul.menu li {
+    cursor: pointer;
+    list-style: none outside none;
+    margin: 0;
+    white-space: nowrap;
+    position: relative;
+}
+ul.menu li:hover {
+    background-color: #eee;
+}
+ul.menu li a {
+    display: block;
+    width: 195px;
+    padding: 6px 0 6px 30px;
+    color: #333;
+    text-decoration: none;
+}
+ul.menu li.icon:before {
+    content: "";
+    background-image: url(icons_16.png);
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 6px;
+    margin-top: 5px;
+}
+ul.menu li.icon.share:before { background-position: 0 0; }
+ul.menu li.icon.star:before { background-position: -192px 0; }
+ul.menu li.disabled {
+    cursor: default;
+    color: #ccc;
+    width: 195px;
+    padding: 6px 0 6px 30px;
+}
+ul.menu li.disabled:hover {
+    background-color: white;
+}
+ul.menu li.divider {
+    border-top: 1px solid #ebebeb;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding: 0;
+    cursor: default;
+}
+li.has-submenu ul {
+    position: absolute;
+}
+
+/* -------------------------------------------------------------------- Tabs */
+
+.tabs {
+  font-size: 13px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+.tabs:before,
+.tabs:after {
+  display: table;
+  content: "";
+}
+.tabs:after {
+  clear: both;
+}
+.tabs > li {
+  float: left;
+}
+.tabs > li > a {
+  display: block;
+  text-decoration: none;
+}
+.tabs {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.tabs > li {
+  position: relative;
+  top: 1px;
+}
+.tabs > li > a {
+  color: #6e6e6e;
+  margin-right: 2px;
+  padding: 0 15px;
+  line-height: 35px;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.tabs > li > a:hover {
+  color: #333;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+}
+.tabs > li.active > a {
+  background-color: #fff;
+  padding: 0 14px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  color: #000;
+}
+
+.checkbox > input[type="checkbox"] {
+	display: none;
+}
+.checkbox {
+	background-image: url(icons_16.png);
+	background-position: -306px 0;
+	width: 16px;
+	height: 16px;
+	margin-top: 1px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.checkbox.checked {
+	background-position: -322px 0;
+}

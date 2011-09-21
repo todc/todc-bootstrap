@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Buttons Demo</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="reset.css" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" /> 
+	<style>
+	div.section { padding-bottom: 20px; }
+	body { font-family: arial; padding: 20px; }
+	
+	
+	table { 
+	    border-spacing: 0; 
+		font-size: 13px;
+	}
+	th {
+	    text-transform: uppercase;
+	    font-size: 11px;
+	    font-weight: bold;
+	    color: #555;
+	    text-align: left;
+	}
+	th.sorted {
+	    color: #DD4B39;
+	}
+	tbody tr:hover td {
+      background-color: #ffffd6;
+      cursor: default;
+    }
+	td, th {
+	    border-bottom: 1px solid #EBEBEB;
+	    height: 33px;
+	    line-height: 33px;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="section">
+		<a class="button">Stand Alone</a>
+		<a class="button disabled">Stand Alone</a>
+	</div>
+	
+	<div class="section">
+    	<div class="button-group toggle-buttons">
+    		<a class="button">Day</a>
+    		<a class="button">Week</a>
+    		<a class="button checked">Month</a>
+    		<a class="button">4 Days</a>
+    		<a class="button">Agenda</a>
+    	</div>
+    </div>
+	
+	<div class="section">
+		<a class="button red">CONTACTS</a>
+		<a class="button red sm">CONTACTS</a>
+		<a class="button blue">SEARCH</a>
+		<a class="button blue sm">SEARCH</a>
+	</div>
+
+	<div class="section">
+	    <div class="button-group toggle-buttons">
+		    <a class="button mini">Save</a>
+		    <a class="button mini">Add Item</a>
+		    <a class="button mini checked">Delete</a>
+		    <a class="button mini">Flag</a>
+		</div>
+	</div>
+
+	<div class="section">
+		<a class="button icon search">Search</a>
+		<a class="button icon add">Add Item</a>
+		<a class="button icon remove">Remove</a>
+		<a class="button icon settings">Settings</a>
+		<a class="button icon arrowleft">Back</a>
+		<a class="button icon arrowright">Forward</a>
+	</div>
+	
+	<div class="section">
+	    <div class="button-group">
+		    <a class="button icon rewind no-text"></a>
+		    <a class="button icon play no-text"></a>
+		</div>
+		<div class="button-group">
+		    <a class="button icon rewind no-text disabled2"></a>
+		    <a class="button icon play no-text"></a>
+		</div>
+		<div class="button-group">
+		    <a class="button icon rewind no-text"></a>
+		    <a class="button icon play no-text disabled2"></a>
+		</div>
+	</div>
+	
+	<div class="section button-container">
+	    <a class="button icon return no-text"></a>
+	    <div class="button-group">
+		    <a class="button">Archive</a>
+		    <a class="button">Spam</a>
+		    <a class="button">Delete</a>
+		</div>
+		<a class="button icon reload no-text"></a>
+	</div>
+	
+	<div class="section button-container" style="position:relative">
+	    <a data-menu="btn-menu" class="button icon menu">Menu</a>
+		<div class="button-group">
+		    <a data-menu="btn-menu" class="button icon menu">Menu 2</a>
+		    <a data-menu="btn-menu" class="button icon menu">Menu 3</a>
+		    <a class="button">Button</a>
+		</div>
+		
+		<ul id="btn-menu" class="menu">
+			<li><a href="">Document</a></li>
+			<li><a href="">Presentation</a></li>
+			<li><a href="">Spreadsheet</a></li>
+			<li><a href="">Form</a></li>
+		</ul>
+	</div>
+	
+	<div class="section button-container">
+		<div class="button-group">
+	    	<a class="button xs pg bw"></a>
+			<a class="button xs pg fw"></a>
+		</div>
+	</div>
+
+    <div class="section">
+        
+        <table style="width: 500px">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="checkbox" id="check-all">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </th>
+                    <th></th>
+                    <th class="sorted">Title</th>
+                    <th>Owner</th>
+                    <th>Last Modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>The Great Gatsby</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>War and Peace</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox cb">
+                            <input type="checkbox" name="c1" />
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>Catcher in the Rye</td>
+                    <td>me</td>
+                    <td>Sep 1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+	<div class="section">
+		
+		<ul class="menu dont-hide" style="display:block; position: relative">
+		  <li class="has-submenu">
+			<a href="#">Create new</a>
+			<ul class="menu">
+				<li><a href="">Document</a></li>
+				<li><a href="">Presentation</a></li>
+				<li><a href="">Spreadsheet</a></li>
+				<li><a href="">Form</a></li>
+			</ul>
+		  </li>
+		  <li class="divider"></li>
+		  <li class="has-submenu icon share">
+			<a href="#">Share&hellip;</a>
+			<ul class="menu">
+				<li class="has-submenu">
+					<a href="">Share&hellip;</a>
+					<ul class="menu">
+						<li><a href="">Share&hellip;</a></li>
+						<li class="divider"></li>
+						<li><a href="">Email collaborators&hellip;</a></li>
+						<li class="disabled">Email as attachment&hellip;</li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="">Email collaborators&hellip;</a></li>
+				<li class="disabled">Email as attachment&hellip;</li>
+			</ul>
+		  </li>
+		  <li class="divider"></li>
+		  <li class="icon star"><a href="#">Add star</a></li>
+		  <li><a href="#">Don't show in home</a></li>
+		  <li><a href="#">Organize&hellip;</a></li>
+		  <li class="disabled">Download&hellip;</li>
+		</ul>
+		
+	</div>
+	
+	<div class="section">
+		
+		<ul class="tabs" style="width: 500px">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#">Profile</a></li>
+	        <li><a href="#">Messages</a></li>
+	        <li><a href="#">Settings</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+		
+	</div>
+
+<script type="text/javascript">
+// Implement checkbox-like buttons
+$(".toggle-buttons > .button").click(function() {
+    $(this).siblings(".button").removeClass("checked");
+    $(this).addClass("checked");
+});
+
+// Implement submenus.
+$(".has-submenu").hover(
+	function() {
+		var elSubMenu = $(this).children(".menu");
+		elSubMenu.show().css({ left: elSubMenu.width(), top: 0 } );
+	},
+	function() { $(this).children(".menu").hide(); }
+);
+
+// Implement buttons with dropdown menus.
+$(".button.menu").mousedown(function() {
+	var pos = $(this).position();
+	var menuId = $(this).attr("data-menu");
+	var elMenu = $("#"+menuId);
+	elMenu.show().css({ left: pos.left, top: pos.top + $(this).outerHeight() } );
+	$(this).addClass("checked"); /* show button in depressed state while menu is out */
+	return false;
+});
+
+// Hide any open menus if we click outside of them.
+$("body").bind("mousedown", function (e) {
+	$('ul.menu').hide();
+	$('.button.menu').removeClass("checked"); /* remove 'checked' state from menu buttons */
+	$('.dont-hide').show();
+});
+
+// Implement tab switching.
+$(".tabs li").click(function() {
+	$(this).addClass("active");
+	$(this).siblings("li").removeClass("active");
+	return false;
+});
+
+// Implement checkboxes in table.
+$(".checkbox").click(function() {
+    $(this).toggleChecked();
+});
+
+$("#check-all").click(function() {
+    if ($(this).hasClass("checked")) {
+        $(".checkbox.cb").toggleChecked(true);
+    } else {
+        $(".checkbox.cb").toggleChecked(false);
+    }
+});
+
+// Helper methods for table checkboxes.
+$.fn.extend({
+  toggleChecked : function(checked) {
+      if (checked != null) {
+          if (checked) {
+              this.addClass("checked");
+              this.children("input[type='checkbox']").attr("checked", "true");
+          } else {
+              this.removeClass("checked");
+              this.children("input[type='checkbox']").removeAttr("checked");
+          }
+      } else {
+          this.toggleClass("checked");
+          this.children("input[type='checkbox']").toggleAttr("checked");
+      }
+      return this;
+  }
+});
+
+$.fn.extend({
+  toggleAttr : function(attrib) {
+    if (this.attr(attrib)) {
+      this.removeAttr(attrib);
+    } else {
+      this.attr(attrib, attrib);
+    }
+    return this;
+  }
+});
+</script>
+
+</body>
+</html>
