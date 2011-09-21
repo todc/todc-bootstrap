@@ -420,6 +420,7 @@ ul.menu li.icon:before {
 }
 ul.menu li.icon.share:before { background-position: 0 0; }
 ul.menu li.icon.star:before { background-position: -192px 0; }
+ul.menu li.icon.checkmark:before { background-position: -340px 0; margin-top: 9px; }
 ul.menu li.disabled {
     cursor: default;
     color: #ccc;
@@ -441,6 +442,30 @@ li.has-submenu ul {
 }
 
 /* ------------------------------------------------------------------ TABLES */
+
+table { 
+    border-spacing: 0; 
+	font-size: 13px;
+}
+th {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+th.sorted {
+    color: #DD4B39;
+}
+tbody tr:hover td {
+  background-color: #ffffd6;
+  cursor: default;
+}
+td, th {
+    border-bottom: 1px solid #EBEBEB;
+    height: 39px;
+    line-height: 39px;
+}
 
 .checkbox > input[type="checkbox"] {
 	display: none;
