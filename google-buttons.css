@@ -449,25 +449,25 @@ li.has-submenu ul {
 
 /* ------------------------------------------------------------------ TABLES */
 
-table { 
+table.gtable { 
     border-spacing: 0; 
 	font-size: 13px;
 }
-th {
+table.gtable th {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: bold;
     color: #555;
     text-align: left;
 }
-th.sorted {
+table.gtable th.sorted {
     color: #DD4B39;
 }
-tbody tr:hover td {
+table.gtable tbody tr:hover td {
   background-color: #ffffd6;
   cursor: default;
 }
-td, th {
+table.gtable td, table.gtable th {
     border-bottom: 1px solid #EBEBEB;
     height: 39px;
     line-height: 39px;
