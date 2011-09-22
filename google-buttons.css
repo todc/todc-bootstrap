@@ -284,6 +284,7 @@ over any of this.
 .button.blue:active,
 .button.blue.active {
 	/*background: #4D90FE;*/
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -448,10 +449,6 @@ li.has-submenu ul {
 }
 
 /* ------------------------------------------------------------------ TABLES */
-table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
-th { font-weight: bold; }
-th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
-
 table.gtable { 
     border-spacing: 0; 
 	font-size: 13px;
@@ -462,7 +459,6 @@ table.gtable th {
     font-weight: bold;
     color: #555;
     text-align: left;
-	padding: 0;
 }
 table.gtable th.sorted {
     color: #DD4B39;
