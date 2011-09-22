@@ -1,7 +1,8 @@
 /* ------------------------------------------
 CSS3 GOOGLE UI (Tim O'Donnell)
-Licensed under Unlicense 
-http://github.com/todc/css3-google-buttons
+Heavily inspired by css3-github-buttons and,
+of course, Google. I don't claim ownership
+over any of this.
 ------------------------------------------ */
 
 /* ------------------------------------------------------------------ BUTTON */
@@ -27,17 +28,13 @@ http://github.com/todc/css3-google-buttons
 	z-index: 1;
     *display: inline; 
     
-    font: bold 0.75em Helvetica, Arial, sans-serif;
+    font: bold 12px Helvetica, Arial, sans-serif;
 	line-height: 12px;
     color: #6e6e6e;
-    padding: 0.7em 1em;
+    padding: 8px 12px;
 	min-width: 42px;
 	text-align: center;
     text-shadow: 0 1px 0 #fff;
-    /*-webkit-transition: border-color .218s;
-    -moz-transition: border .218s;
-    -o-transition: border-color .218s;
-    transition: border-color .218s;*/
     background-color: #f3f3f3;
     background-image: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     background-image: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
@@ -49,6 +46,7 @@ http://github.com/todc/css3-google-buttons
 .button:active,
 .button.active {    
     color: #333;
+	text-decoration: none;
     border-color: #999;
     background-color: #F8F8F8;
     background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#F1F1F1));
@@ -62,6 +60,7 @@ http://github.com/todc/css3-google-buttons
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	z-index: 100;
+	outline: none;
 }
 
 .button:active,
@@ -81,6 +80,7 @@ http://github.com/todc/css3-google-buttons
 
 .button:active,
 .button:focus {
+	/* Blue border on button press/focus. Not sure if I like it though. */
 	/*border-color: #4D90FE;*/
 }
 
@@ -117,9 +117,13 @@ http://github.com/todc/css3-google-buttons
     box-shadow: 0 0 0;
 }
 .button.disabled2 {
-	opacity: 0.3;
+	color: #777;
+	opacity: 0.4;
 	cursor: default;
 	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.button.disabled2:hover {
+	color: #777;
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -196,7 +200,6 @@ http://github.com/todc/css3-google-buttons
 .button.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -84px; }
 .button.settings.icon:before { background-position: 0 -480px; }
 .button.search.icon:before { background-position: 0 -1092px; }
-/*.button.play.icon:before { background-position: 0 -1404px; }*/
 .button.play.icon:before { background-position: 0 -1860px; }
 .button.add.icon:before { background-position: 0 -1428px; }
 .button.remove.icon:before { background-position: 0 -1800px; }
@@ -290,7 +293,7 @@ http://github.com/todc/css3-google-buttons
 /* ............................................................... Icon-only */
 
 .button.no-text:before {
-  margin: 0 -0.2em 0 0.1em;
+  margin: 0 -0.2em 0 0;
   top: 0;
 }
 
@@ -423,6 +426,7 @@ ul.menu li.icon:before {
 }
 ul.menu li.icon.share:before { background-position: 0 0; }
 ul.menu li.icon.star:before { background-position: -192px 0; }
+ul.menu li.icon.checkmark:before { background-position: -340px 0; margin-top: 9px; }
 ul.menu li.disabled {
     cursor: default;
     color: #ccc;
@@ -443,59 +447,35 @@ li.has-submenu ul {
     position: absolute;
 }
 
-/* -------------------------------------------------------------------- Tabs */
+/* ------------------------------------------------------------------ TABLES */
+table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
+th { font-weight: bold; }
+th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
 
-.tabs {
-  font-size: 13px;
-  margin: 0 0 20px;
-  padding: 0;
-  list-style: none;
-  zoom: 1;
+table.gtable { 
+    border-spacing: 0; 
+	font-size: 13px;
 }
-.tabs:before,
-.tabs:after {
-  display: table;
-  content: "";
+table.gtable th {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+	padding: 0;
 }
-.tabs:after {
-  clear: both;
+table.gtable th.sorted {
+    color: #DD4B39;
 }
-.tabs > li {
-  float: left;
+table.gtable tbody tr:hover td {
+	background-color: #ffffd6;
+	cursor: default;
 }
-.tabs > li > a {
-  display: block;
-  text-decoration: none;
-}
-.tabs {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-}
-.tabs > li {
-  position: relative;
-  top: 1px;
-}
-.tabs > li > a {
-  color: #6e6e6e;
-  margin-right: 2px;
-  padding: 0 15px;
-  line-height: 35px;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-}
-.tabs > li > a:hover {
-  color: #333;
-  background-color: #eee;
-  border-bottom: 1px solid #ddd;
-  text-decoration: none;
-}
-.tabs > li.active > a {
-  background-color: #fff;
-  padding: 0 14px;
-  border: 1px solid #ddd;
-  border-bottom: 0;
-  color: #000;
+table.gtable td, table.gtable th {
+    border-bottom: 1px solid #EBEBEB;
+    height: 39px;
+    line-height: 39px;
+	padding: 0;
 }
 
 .checkbox > input[type="checkbox"] {
