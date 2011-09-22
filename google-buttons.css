@@ -448,6 +448,9 @@ li.has-submenu ul {
 }
 
 /* ------------------------------------------------------------------ TABLES */
+table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
+th { font-weight: bold; }
+th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
 
 table.gtable { 
     border-spacing: 0; 
@@ -459,18 +462,20 @@ table.gtable th {
     font-weight: bold;
     color: #555;
     text-align: left;
+	padding: 0;
 }
 table.gtable th.sorted {
     color: #DD4B39;
 }
 table.gtable tbody tr:hover td {
-  background-color: #ffffd6;
-  cursor: default;
+	background-color: #ffffd6;
+	cursor: default;
 }
 table.gtable td, table.gtable th {
     border-bottom: 1px solid #EBEBEB;
     height: 39px;
     line-height: 39px;
+	padding: 0;
 }
 
 .checkbox > input[type="checkbox"] {
