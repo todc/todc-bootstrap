@@ -78,10 +78,9 @@ over any of this.
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.button:active,
 .button:focus {
-	/* Blue border on button press/focus. Not sure if I like it though. */
-	/*border-color: #4D90FE;*/
+	/* Blue border on button focus. */
+	border-color: #4D90FE;
 }
 
 .button.checked {
@@ -92,12 +91,12 @@ over any of this.
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     background: #eee;
-    background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
-    background: -webkit-linear-gradient(top,#eee,#e0e0e0);
-    background: -moz-linear-gradient(top,#eee,#e0e0e0);
-    background: -ms-linear-gradient(top,#eee,#e0e0e0);
-    background: -o-linear-gradient(top,#eee,#e0e0e0);
-    background: linear-gradient(top,#eee,#e0e0e0);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
+    background-image: -webkit-linear-gradient(top,#eee,#e0e0e0);
+    background-image: -moz-linear-gradient(top,#eee,#e0e0e0);
+    background-image: -ms-linear-gradient(top,#eee,#e0e0e0);
+    background-image: -o-linear-gradient(top,#eee,#e0e0e0);
+    background-image: linear-gradient(top,#eee,#e0e0e0);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee',EndColorStr='#e0e0e0');
 }
 
@@ -222,13 +221,13 @@ over any of this.
 .button.red {
 	color: white;
 	text-shadow: none;
-	/*border: 1px solid #dd4b39;*/
 	border: 1px solid transparent;
 	border-left-color: #C6322A;
 	background: #d14836;
 	background-image: -moz-linear-gradient(top,#dd4b39,#d14836);
 	background-image: -o-linear-gradient(top,#dd4b39,#d14836);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#d14836));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dd4b39',EndColorStr='#d14836');
 }
 
 .button.red:hover,
@@ -240,6 +239,7 @@ over any of this.
 	background-image: -moz-linear-gradient(top,#dd4b39,#c53727);
 	background-image: -o-linear-gradient(top,#dd4b39,#c53727);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#c53727));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dd4b39',EndColorStr='#c53727');
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -253,6 +253,7 @@ over any of this.
 	background-image: -moz-linear-gradient(top,#dd4b39,#b0281a);
 	background-image: -o-linear-gradient(top,#dd4b39,#b0281a);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#b0281a));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dd4b39',EndColorStr='#b0281a');
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -264,9 +265,11 @@ over any of this.
 	color: white;
 	text-shadow: none;
 	border: 1px solid #3079ED;
+	background: #4d90fe;
 	background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
 	background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed');
 }
 
 .button.blue:hover,
@@ -279,11 +282,11 @@ over any of this.
 	background-image: -moz-linear-gradient(top,#4d90fe,#357AE8);
 	background-image: -o-linear-gradient(top,#4d90fe,#357AE8);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357AE8));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#357AE8');
 }
 
 .button.blue:active,
 .button.blue.active {
-	/*background: #4D90FE;*/
 	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -300,16 +303,18 @@ over any of this.
 	background-image: -moz-linear-gradient(top,#35aa47,#35aa47);
 	background-image: -o-linear-gradient(top,#35aa47,#35aa47);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#35aa47));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#35aa47',EndColorStr='#35aa47');
 }
 
 .button.green:hover,
 .button.green:focus,
 .button.green:active {
 	border: 1px solid #508c36;
-	background: #609d47;
+	background: #1D943B;
 	background-image: -moz-linear-gradient(top,#35aa47,#1D943B);
 	background-image: -o-linear-gradient(top,#35aa47,#1D943B);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#1D943B));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#35aa47',EndColorStr='#1D943B');
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -318,13 +323,13 @@ over any of this.
 .button.green.active {
 	color: white;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-	
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 	background-image: -moz-linear-gradient(top,#35aa47,#088728);
 	background-image: -o-linear-gradient(top,#35aa47,#088728);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#088728));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#35aa47',EndColorStr='#088728');
 }
 
 
