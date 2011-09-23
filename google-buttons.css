@@ -290,6 +290,43 @@ over any of this.
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* ................................................................... Green */
+
+.button.green {
+	color: white;
+	text-shadow: none;
+	border: 1px solid #359947;
+	background: #35aa47;
+	background-image: -moz-linear-gradient(top,#35aa47,#35aa47);
+	background-image: -o-linear-gradient(top,#35aa47,#35aa47);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#35aa47));
+}
+
+.button.green:hover,
+.button.green:focus,
+.button.green:active {
+	border: 1px solid #508c36;
+	background: #609d47;
+	background-image: -moz-linear-gradient(top,#35aa47,#1D943B);
+	background-image: -o-linear-gradient(top,#35aa47,#1D943B);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#1D943B));
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button.green:active,
+.button.green.active {
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	background-image: -moz-linear-gradient(top,#35aa47,#088728);
+	background-image: -o-linear-gradient(top,#35aa47,#088728);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#088728));
+}
+
 
 /* ............................................................... Icon-only */
 
