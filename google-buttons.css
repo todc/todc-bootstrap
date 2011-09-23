@@ -100,31 +100,6 @@ over any of this.
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee',EndColorStr='#e0e0e0');
 }
 
-.button.disabled {
-	color: #B8B8B8;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	background: white;
-	cursor: default;
-}
-
-.button.disabled:hover,
-.button.disabled:active,
-.button.disabled2:hover,
-.button.disabled2:active {
-    -moz-box-shadow: 0 0 0;
-    -webkit-box-shadow: 0 0 0;
-    box-shadow: 0 0 0;
-}
-.button.disabled2 {
-	color: #777;
-	opacity: 0.4;
-	cursor: default;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.button.disabled2:hover {
-	color: #777;
-}
-
 /* overrides extra padding on button elements in Firefox */
 .button::-moz-focus-inner {
     padding: 0;
@@ -330,6 +305,37 @@ over any of this.
 	background-image: -o-linear-gradient(top,#35aa47,#088728);
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#088728));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#35aa47',EndColorStr='#088728');
+}
+
+
+/* ................................................................ Disabled */
+
+.button.disabled {
+	color: #B8B8B8;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: white;
+	cursor: default;
+}
+
+.button.disabled:hover,
+.button.disabled:active {
+	color: #b8b8b8;
+	background: white;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.button.disabled2 {
+	color: #b8b8b8;
+	cursor: default;
+	border: 1px solid #dcdcdc;
+}
+.button.disabled2:hover {
+	border: 1px solid #dcdcdc;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
 
