@@ -86,7 +86,7 @@ over any of this.
 .button.checked {
     color: #333;
     text-shadow: none;
-    border: 1px solid transparent;
+    border: 1px solid #ccc;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
