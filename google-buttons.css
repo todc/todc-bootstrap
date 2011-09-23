@@ -320,6 +320,7 @@ over any of this.
 .button.disabled:hover,
 .button.disabled:active {
 	color: #b8b8b8;
+	text-shadow: none;
 	background: white;
 	border: 1px solid rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 0 0;
