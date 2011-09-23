@@ -86,18 +86,18 @@ over any of this.
 .button.checked {
     color: #333;
     text-shadow: none;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     -wekbit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
     background: #eee;
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#e0e0e0));
-    background-image: -webkit-linear-gradient(top,#eee,#e0e0e0);
-    background-image: -moz-linear-gradient(top,#eee,#e0e0e0);
-    background-image: -ms-linear-gradient(top,#eee,#e0e0e0);
-    background-image: -o-linear-gradient(top,#eee,#e0e0e0);
-    background-image: linear-gradient(top,#eee,#e0e0e0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee',EndColorStr='#e0e0e0');
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#eeeeee),to(#e0e0e0));
+    background-image: -webkit-linear-gradient(top,#eeeeee,#e0e0e0);
+    background-image: -moz-linear-gradient(top,#eeeeee,#e0e0e0);
+    background-image: -ms-linear-gradient(top,#eeeeee,#e0e0e0);
+    background-image: -o-linear-gradient(top,#eeeeee,#e0e0e0);
+    background-image: linear-gradient(top,#eeeeee,#e0e0e0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee',EndColorStr='#e0e0e0');
 }
 
 .button.disabled {
