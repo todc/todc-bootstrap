@@ -1,0 +1,198 @@
+// buttons.less
+// -----------------------------------------------------
+
+
+
+.g-button { 
+    position: relative; 
+    display: inline-block; 
+    overflow: visible; 
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer; 
+    outline: none; 
+    border: 1px solid #dcdcdc;
+    .border-radius(0.2em);
+    #gradient > .vertical(#f5f5f5,#f1f1f1);
+    .background-clip(padding);
+    
+    /* IE hacks */
+    zoom: 1;
+    z-index: 1;
+    *display: inline;
+    
+    font: bold 12px Helvetica, Arial, sans-serif;
+    line-height: 12px;
+    color: #444444;
+    min-width: 42px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none; 
+    white-space: nowrap;
+}
+
+.g-button:hover,
+.g-button:focus,
+.g-button:active,
+.g-button.active {    
+    color: #333;
+    text-decoration: none;
+    border-color: #c6c6c6;
+    
+    #gradient > .vertical(#f8f8f8,#f1f1f1);
+    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+    
+    z-index: 100;
+    outline: none;
+}
+
+.g-button:active,
+.g-button.active {
+    #gradient > .vertical(#f6f6f6,#f1f1f1);
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.g-button:focus {
+    /* Blue border on button focus. */
+    border-color: #4D90FE;
+}
+
+.g-button.checked {
+    color: #333;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    
+    #gradient > .vertical(#eeeeee,#e0e0e0);
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* overrides extra padding on button elements in Firefox */
+.g-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+/* ..................................................................... Red */
+
+.g-button.red {
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #C6322A;
+    #gradient > .vertical(#dd4b39,#d14836);
+}
+
+.g-button.red:hover,
+.g-button.red:focus,
+.g-button.red:active {
+    border: 1px solid #AF301F;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    #gradient > .vertical(#dd4b39,#c53727);
+    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+.g-button.red:active,
+.g-button.red.active {
+    #gradient > .vertical(#dd4b39,#b0281a);
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* .................................................................... Blue */
+
+.g-button.blue {
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3079ED;
+    #gradient > .vertical(#4d90fe,#4787ed);
+}
+
+.g-button.blue:hover,
+.g-button.blue:focus,
+.g-button.blue:active {
+    border: 1px solid #2F5BB7;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+    #gradient > .vertical(#4d90fe,#357AE8);
+}
+
+.g-button.blue:active,
+.g-button.blue.active {
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* ................................................................... Green */
+
+.g-button.green {
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #359947;
+    #gradient > .vertical(#35aa47,#35aa47);
+}
+
+.g-button.green:hover,
+.g-button.green:focus,
+.g-button.green:active {
+    border: 1px solid #508c36;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+    #gradient > .vertical(#35aa47,#1D943B);
+}
+.g-button.green:active,
+.g-button.green.active {
+    #gradient > .vertical(#35aa47,#088728);
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+
+/* .............................................................. Minibutton */
+
+.sm {
+    font-size: 11px;
+}
+
+.mini {
+    height: 13px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 4px 10px;
+    .border-radius(2px);
+}
+
+.xs {
+    height: 9px;
+    width: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 4px 2px;
+    min-width: 5px;
+    .border-radius(2px);
+}
+
+
+/* ................................................................ Disabled */
+
+.g-button.disabled {
+    color: #B8B8B8;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: white;
+    cursor: default;
+}
+
+.g-button.disabled:hover,
+.g-button.disabled:active {
+    color: #b8b8b8;
+    text-shadow: none;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    .box-shadow(none);
+}
+.g-button.disabled2 {
+    color: #b8b8b8;
+    cursor: default;
+    border: 1px solid #dcdcdc;
+}
+.g-button.disabled2:hover {
+    border: 1px solid #dcdcdc;
+    .box-shadow(none);
+}

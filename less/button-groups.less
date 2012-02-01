@@ -1,0 +1,64 @@
+// button-groups.less
+// -----------------------------------------------------
+
+.g-button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.g-button + .g-button,
+.g-button + .g-button-group,
+.g-button-group + .g-button,
+.g-button-group + .g-button-group {
+    margin-left: 15px;
+}
+
+.g-button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.g-button-group .g-button {
+    float: left;
+    margin-left: -1px; 
+}
+
+.g-button-group > .g-button:not(:first-child):not(:last-child),
+.g-button-group li:not(:first-child):not(:last-child) .g-button {
+    .border-radius(0);
+}
+
+.g-button-group > .g-button:first-child,
+.g-button-group li:first-child .g-button { 
+    margin-left: 0; 
+    -webkit-border-top-right-radius: 0; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.g-button-group > .g-button:last-child,
+.g-button-group li:last-child > .g-button { 
+    -webkit-border-top-left-radius: 0; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+
+/* -------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.g-button-container .g-button,
+.g-button-container .g-button-group {
+    vertical-align: top;
+}

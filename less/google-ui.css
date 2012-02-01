@@ -1,0 +1,428 @@
+/*!
+ * CSS3 Google UI
+ *
+ * Heavily inspired by css3-github-buttons, Twitter Bootstrap, and
+ * of course, Google. I don't claim ownership over any of this.
+ *
+ * Constructed by Tim O'Donnell (http://github.com/todc)
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover, a:active {
+  outline: 0;
+}
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  /*vertical-align: middle;*/
+
+}
+button, input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.g-button {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  margin: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f1f1f1', GradientType=0);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding;
+  /* IE hacks */
+
+  zoom: 1;
+  z-index: 1;
+  *display: inline;
+  font: bold 12px Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  color: #444444;
+  min-width: 42px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.g-button:hover,
+.g-button:focus,
+.g-button:active,
+.g-button.active {
+  color: #333;
+  text-decoration: none;
+  border-color: #c6c6c6;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  outline: none;
+}
+.g-button:active, .g-button.active {
+  background-color: #f4f4f4;
+  background-image: -moz-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#f1f1f1', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.g-button:focus {
+  /* Blue border on button focus. */
+
+  border-color: #4D90FE;
+}
+.g-button.checked {
+  color: #333;
+  text-shadow: none;
+  border: 1px solid #ccc;
+  background-color: #e8e8e8;
+  background-image: -moz-linear-gradient(top, #eeeeee, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #eeeeee, #e0e0e0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#e0e0e0));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #e0e0e0);
+  background-image: -o-linear-gradient(top, #eeeeee, #e0e0e0);
+  background-image: linear-gradient(top, #eeeeee, #e0e0e0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e0e0e0', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* overrides extra padding on button elements in Firefox */
+.g-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* ..................................................................... Red */
+.g-button.red {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #C6322A;
+  background-color: #d84a38;
+  background-image: -moz-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -ms-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd4b39), to(#d14836));
+  background-image: -webkit-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -o-linear-gradient(top, #dd4b39, #d14836);
+  background-image: linear-gradient(top, #dd4b39, #d14836);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#d14836', GradientType=0);
+}
+.g-button.red:hover, .g-button.red:focus, .g-button.red:active {
+  border: 1px solid #AF301F;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background-color: #d34332;
+  background-image: -moz-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -ms-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd4b39), to(#c53727));
+  background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -o-linear-gradient(top, #dd4b39, #c53727);
+  background-image: linear-gradient(top, #dd4b39, #c53727);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#c53727', GradientType=0);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.g-button.red:active, .g-button.red.active {
+  background-color: #cb3d2d;
+  background-image: -moz-linear-gradient(top, #dd4b39, #b0281a);
+  background-image: -ms-linear-gradient(top, #dd4b39, #b0281a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd4b39), to(#b0281a));
+  background-image: -webkit-linear-gradient(top, #dd4b39, #b0281a);
+  background-image: -o-linear-gradient(top, #dd4b39, #b0281a);
+  background-image: linear-gradient(top, #dd4b39, #b0281a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#b0281a', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* .................................................................... Blue */
+.g-button.blue {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #3079ED;
+  background-color: #4b8cf7;
+  background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
+  background-image: -ms-linear-gradient(top, #4d90fe, #4787ed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed));
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+  background-image: -o-linear-gradient(top, #4d90fe, #4787ed);
+  background-image: linear-gradient(top, #4d90fe, #4787ed);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d90fe', endColorstr='#4787ed', GradientType=0);
+}
+.g-button.blue:hover, .g-button.blue:focus, .g-button.blue:active {
+  border: 1px solid #2F5BB7;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #4387f5;
+  background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8));
+  background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: linear-gradient(top, #4d90fe, #357ae8);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d90fe', endColorstr='#357ae8', GradientType=0);
+}
+.g-button.blue:active, .g-button.blue.active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* ................................................................... Green */
+.g-button.green {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #359947;
+  background-color: #35aa47;
+  background-image: -moz-linear-gradient(top, #35aa47, #35aa47);
+  background-image: -ms-linear-gradient(top, #35aa47, #35aa47);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#35aa47), to(#35aa47));
+  background-image: -webkit-linear-gradient(top, #35aa47, #35aa47);
+  background-image: -o-linear-gradient(top, #35aa47, #35aa47);
+  background-image: linear-gradient(top, #35aa47, #35aa47);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35aa47', endColorstr='#35aa47', GradientType=0);
+}
+.g-button.green:hover, .g-button.green:focus, .g-button.green:active {
+  border: 1px solid #508c36;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #2ba142;
+  background-image: -moz-linear-gradient(top, #35aa47, #1d943b);
+  background-image: -ms-linear-gradient(top, #35aa47, #1d943b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#35aa47), to(#1d943b));
+  background-image: -webkit-linear-gradient(top, #35aa47, #1d943b);
+  background-image: -o-linear-gradient(top, #35aa47, #1d943b);
+  background-image: linear-gradient(top, #35aa47, #1d943b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35aa47', endColorstr='#1d943b', GradientType=0);
+}
+.g-button.green:active, .g-button.green.active {
+  background-color: #239c3b;
+  background-image: -moz-linear-gradient(top, #35aa47, #088728);
+  background-image: -ms-linear-gradient(top, #35aa47, #088728);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#35aa47), to(#088728));
+  background-image: -webkit-linear-gradient(top, #35aa47, #088728);
+  background-image: -o-linear-gradient(top, #35aa47, #088728);
+  background-image: linear-gradient(top, #35aa47, #088728);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35aa47', endColorstr='#088728', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* .............................................................. Minibutton */
+.sm {
+  font-size: 11px;
+}
+.mini {
+  height: 13px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  padding: 4px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.xs {
+  height: 9px;
+  width: 18px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+  padding: 4px 2px;
+  min-width: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+/* ................................................................ Disabled */
+.g-button.disabled {
+  color: #B8B8B8;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: white;
+  cursor: default;
+}
+.g-button.disabled:hover, .g-button.disabled:active {
+  color: #b8b8b8;
+  text-shadow: none;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.g-button.disabled2 {
+  color: #b8b8b8;
+  cursor: default;
+  border: 1px solid #dcdcdc;
+}
+.g-button.disabled2:hover {
+  border: 1px solid #dcdcdc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.g-button-group {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* IE hacks */
+
+  zoom: 1;
+  *display: inline;
+}
+.g-button + .g-button,
+.g-button + .g-button-group,
+.g-button-group + .g-button,
+.g-button-group + .g-button-group {
+  margin-left: 15px;
+}
+.g-button-group li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.g-button-group .g-button {
+  float: left;
+  margin-left: -1px;
+}
+.g-button-group > .g-button:not(:first-child):not(:last-child), .g-button-group li:not(:first-child):not(:last-child) .g-button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.g-button-group > .g-button:first-child, .g-button-group li:first-child .g-button {
+  margin-left: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.g-button-group > .g-button:last-child, .g-button-group li:last-child > .g-button {
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* -------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+.g-button-container .g-button, .g-button-container .g-button-group {
+  vertical-align: top;
+}

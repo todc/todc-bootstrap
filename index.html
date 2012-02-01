@@ -1,16 +1,14 @@
 <!DOCTYPE HTML> 
 <html lang="en"> 
 <head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<title>CSS3 Google UI Demo</title>
-	<meta name="description" content="Using CSS3 to create Google-style UI elements">
-	
-	<link rel="stylesheet" href="reset.css" type="text/css"  media="screen" />
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
-	<style>
-	/* ------------------------------------------------------------------------------------------------------------- RESET */
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>CSS3 Google UI Demo</title>
+    <meta name="description" content="Using CSS3 to create Google-style UI elements">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    
+    <style>
+    /* ------------------------------------------------------------------------------------------------------------- RESET */
 
     html, body, div, form, p,
     code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: sans-serif; }
@@ -51,11 +49,11 @@
 
     .footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
     .footer a { color: #666; }
-	</style>
-	
-	<link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" />
-	
-	<!-- prettyify -->
+    </style>
+    
+    <link rel="stylesheet" href="less/google-ui.css" type="text/css"  media="screen" />
+    
+    <!-- prettyify -->
     <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
 </head>
@@ -69,273 +67,273 @@
         <p><b><a href="http://github.com/todc/css3-google-buttons" title="GitHub repository">CSS3 Google Buttons</a> helps you easily create Google-style UI elements.</b></p>
     </div>
 
-	<div class="section">
-		<h2>Buttons</h2>
+    <div class="section">
+        <h2>Buttons</h2>
         <p>
-	      The "buttons" can be created by adding <code>class="button"</code> to
-	      any appropriate <code>&lt;a></code>, <code>&lt;button></code>, or 
-	      <code>&lt;input></code> element.
-	    </p>
+          The "buttons" can be created by adding <code>class="g-button"</code> to
+          any appropriate <code>&lt;a></code>, <code>&lt;button></code>, or 
+          <code>&lt;input></code> element.
+        </p>
 
         <div class="example">
-            <pre class="code prettyprint"><code>&lt;a href="#" class="button">Post comment&lt;/a></code></pre>
+            <pre class="code prettyprint"><code>&lt;a href="#" class="g-button">Post comment&lt;/a></code></pre>
             <form>
-				<a class="button">New Comment (link)</a>
-				<input type="submit" value="New Comment (submit)" class="button" />
-				<button class="button">New Comment (button)</button>
+                <a class="g-button">New Comment (link)</a>
+                <input class="g-button" type="submit" value="New Comment (submit)" />
+                <button class="g-button">New Comment (button)</button>
             </form>
         </div>
-	</div>
-	
-	<div class="section">
-		<h2>Colored Buttons</h2>
+    </div>
+    
+    <div class="section">
+        <h2>Colored Buttons</h2>
         <p>
-		  Red and blue colored buttons can be created by adding the 
-		  <code>red</code>, <code>blue</code>, or <code>green</code> class to your button.
-		</p>
+          Colored buttons can be created by adding the 
+          <code>red</code>, <code>blue</code>, or <code>green</code> class to your button.
+        </p>
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="button red">Compose Mail&lt;/a></code></pre>
-            <a href="#button" class="button red">Compose Mail</a>
-			<a href="#button" class="button blue">Search Mail</a>
-			<a href="#button" class="button green">Add Contact</a>
+            <pre class="prettyprint"><code>&lt;a href="#" class="g-button red">Compose Mail&lt;/a></code></pre>
+            <a href="#button" class="g-button red">Compose Mail</a>
+            <a href="#button" class="g-button blue">Search Mail</a>
+            <a href="#button" class="g-button green">Add Contact</a>
         </div>
-	</div>
-	
-	<div class="section">
-		<h2>Disabled Buttons</h2>
+    </div>
+    
+    <div class="section">
+        <h2>Disabled Buttons</h2>
         <p>
-	      Buttons can also be disabled. The traditional style used in Google 
-	      Calendar displays the button with a white background and greyed out 
-	      text. Add the <code>disabled</code> class for this style. If you'd 
-	      rather keep the grey background but dim it, you can add the 
-	      <code>disabled2</code> class.
-	    </p>
-	
+          Buttons can also be disabled. The traditional style used in Google 
+          Calendar displays the button with a white background and greyed out 
+          text. Add the <code>disabled</code> class for this style. If you'd 
+          rather keep the grey background but dim it, you can add the 
+          <code>disabled2</code> class.
+        </p>
+    
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="button disabled">Today&lt;/a>
-&lt;a href="#" class="button disabled2">Today&lt;/a></code></pre>
-            <a href="#button" class="button disabled">Today</a>
-			<a href="#button" class="button disabled2">Today</a>
+            <pre class="prettyprint"><code>&lt;a href="#" class="g-button disabled">Today&lt;/a>
+&lt;a href="#" class="g-button disabled2">Today&lt;/a></code></pre>
+            <a href="#button" class="g-button disabled">Today</a>
+            <a href="#button" class="g-button disabled2">Today</a>
         </div>
-	</div>
-	
-	<div class="section">
-		<h2>Smaller Buttons</h2>
+    </div>
+    
+    <div class="section">
+        <h2>Smaller Buttons</h2>
         <p>
-	      Default buttons too big? Shrink the text-size of the button with the 
-	      <code>sm</code> class, or the size of the entire button with the 
-	      <code>mini</code> class.
-	    </p>
-	
+          Default buttons too big? Shrink the text-size of the button with the 
+          <code>sm</code> class, or the size of the entire button with the 
+          <code>mini</code> class.
+        </p>
+    
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="button sm">Month&lt;/a>
-&lt;a href="#" class="button mini">Month&lt;/a></code></pre>
-            <a href="#button" class="button sm">Month</a>
-			<a href="#button" class="button mini">Month</a>
+            <pre class="prettyprint"><code>&lt;a href="#" class="g-button sm">Month&lt;/a>
+&lt;a href="#" class="g-button mini">Month&lt;/a></code></pre>
+            <a href="#button" class="g-button sm">Month</a>
+            <a href="#button" class="g-button mini">Month</a>
         </div>
-	</div>
-	
-	<div class="section">
+    </div>
+    
+    <div class="section">
         <h2>Grouped buttons</h2>
         <p>
-		  Groups of buttons can be created by wrapping them in an element given 
-		  a class of <code>button-group</code>.
-		</p>
+          Groups of buttons can be created by wrapping them in an element given 
+          a class of <code>g-button-group</code>.
+        </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group">
-    &lt;a href="#" class="button">Archive&lt;/a>
-    &lt;a href="#" class="button">Spam&lt;/a>
-    &lt;a href="#" class="button">Delete&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="g-button-group">
+    &lt;a href="#" class="g-button">Archive&lt;/a>
+    &lt;a href="#" class="g-button">Spam&lt;/a>
+    &lt;a href="#" class="g-button">Delete&lt;/a>
 &lt;/div></code></pre>
-        <div class="button-group">
-            <a href="#button" class="button">Archive</a>
-            <a href="#button" class="button">Spam</a>
-            <a href="#button" class="button">Delete</a>
+        <div class="g-button-group">
+            <a href="#button" class="g-button">Archive</a>
+            <a href="#button" class="g-button">Spam</a>
+            <a href="#button" class="g-button">Delete</a>
         </div>
     </div>
 
-	<div class="section">
+    <div class="section">
         <h2>Mixed groups</h2>
         <p>
-	      Displaying a mixture of grouped and standalone buttons, as might be 
-	      seen in a toolbar, can be done by adding another wrapping element 
-	      with the class <code>button-container</code>.
-	    </p>
+          Displaying a mixture of grouped and standalone buttons, as might be 
+          seen in a toolbar, can be done by adding another wrapping element 
+          with the class <code>g-button-container</code>.
+        </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="actions <b>button-container</b>">
-    &lt;a href="#" class="button">Compose New&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="actions <b>g-button-container</b>">
+    &lt;a href="#" class="g-button">Compose New&lt;/a>
     
-    &lt;div class="button-group">
-        &lt;a href="#" class="button">Archive&lt;/a>
-        &lt;a href="#" class="button">Spam&lt;/a>
-        &lt;a href="#" class="button">Delete&lt;/a>
+    &lt;div class="g-button-group">
+        &lt;a href="#" class="g-button">Archive&lt;/a>
+        &lt;a href="#" class="g-button">Spam&lt;/a>
+        &lt;a href="#" class="g-button">Delete&lt;/a>
     &lt;/div>
                         
-    &lt;div class="button-group minor-group">
-        &lt;a href="#" class="button">Move to&lt;/a>
-        &lt;a href="#" class="button">Labels&lt;/a>
+    &lt;div class="g-button-group minor-group">
+        &lt;a href="#" class="g-button">Move to&lt;/a>
+        &lt;a href="#" class="g-button">Labels&lt;/a>
     &lt;/div>
 
-    &lt;a href="#" class="button">More&lt;/a>
+    &lt;a href="#" class="g-button">More&lt;/a>
 &lt;/div></code></pre>
-            <div class="actions button-container">
-                <a href="#button" class="button">Compose New</a>
+            <div class="actions g-button-container">
+                <a href="#button" class="g-button">Compose New</a>
                 
-                <div class="button-group">
-                    <a href="#button" class="button">Archive</a>
-                    <a href="#button" class="button">Spam</a>
-                    <a href="#button" class="button">Delete</a>
+                <div class="g-button-group">
+                    <a href="#button" class="g-button">Archive</a>
+                    <a href="#button" class="g-button">Spam</a>
+                    <a href="#button" class="g-button">Delete</a>
                 </div>
                                     
-                <div class="button-group minor-group">
-                    <a href="#button" class="button">Move to</a>
-                    <a href="#button" class="button">Labels</a>
+                <div class="g-button-group minor-group">
+                    <a href="#button" class="g-button">Move to</a>
+                    <a href="#button" class="g-button">Labels</a>
                 </div>
 
-				<a href="#button" class="button">More</a>
+                <a href="#button" class="g-button">More</a>
             </div>
         </div>
     </div>
 
-	<div class="section">
+    <div class="section">
         <h2>Radio Button Groups</h2>
         <p>
-	      Sometimes your button group should act like a series of radio buttons,
-	      in which selecting one button deselects the others. Add the 
-	      <code>toggle-buttons</code> class to your <code>button-group</code> 
-	      div to accomplish this. To set the currently selected button, use the 
-	      <code>checked</code> class.
-	    </p>
+          Sometimes your button group should act like a series of radio buttons,
+          in which selecting one button deselects the others. Add the 
+          <code>toggle-buttons</code> class to your <code>button-group</code> 
+          div to accomplish this. To set the currently selected button, use the 
+          <code>checked</code> class.
+        </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group toggle-buttons">
-    &lt;a href="#" class="button">Day&lt;/a>
-    &lt;a href="#" class="button">Week&lt;/a>
-    &lt;a href="#" class="button checked">Month&lt;/a>
-    &lt;a href="#" class="button">4 Days&lt;/a>
-    &lt;a href="#" class="button">Agenda&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
+    &lt;a href="#" class="g-button">Day&lt;/a>
+    &lt;a href="#" class="g-button">Week&lt;/a>
+    &lt;a href="#" class="g-button checked">Month&lt;/a>
+    &lt;a href="#" class="g-button">4 Days&lt;/a>
+    &lt;a href="#" class="g-button">Agenda&lt;/a>
 &lt;/div></code></pre>
-	    	<div class="button-group toggle-buttons">
-	    		<a class="button">Day</a>
-	    		<a class="button">Week</a>
-	    		<a class="button checked">Month</a>
-	    		<a class="button">4 Days</a>
-	    		<a class="button">Agenda</a>
-	    	</div>
+            <div class="g-button-group toggle-buttons">
+                <a class="g-button">Day</a>
+                <a class="g-button">Week</a>
+                <a class="g-button checked">Month</a>
+                <a class="g-button">4 Days</a>
+                <a class="g-button">Agenda</a>
+            </div>
         </div>
 
-		<div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group toggle-buttons">
-    &lt;a href="#" class="button mini">Day&lt;/a>
-    &lt;a href="#" class="button mini">Week&lt;/a>
-    &lt;a href="#" class="button mini checked">Month&lt;/a>
-    &lt;a href="#" class="button mini">4 Days&lt;/a>
-    &lt;a href="#" class="button mini">Agenda&lt;/a>
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
+    &lt;a href="#" class="g-button mini">Day&lt;/a>
+    &lt;a href="#" class="g-button mini">Week&lt;/a>
+    &lt;a href="#" class="g-button mini checked">Month&lt;/a>
+    &lt;a href="#" class="g-button mini">4 Days&lt;/a>
+    &lt;a href="#" class="g-button mini">Agenda&lt;/a>
 &lt;/div></code></pre>
 
-		    <div class="button-group toggle-buttons">
-			    <a class="button mini">Day</a>
-			    <a class="button mini">Week</a>
-			    <a class="button mini checked">Month</a>
-			    <a class="button mini">4 Days</a>
-			    <a class="button mini">Agenda</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section">
-		<h2>Buttons with icons only</h2>
-	    <p>
-		  Create a button with only an icon (no text) by adding the
-		  <code>icon no-text</code> classes, along with one of the icon
-		  classes below.
-		</p>
-		
-		<div class="example">
+            <div class="g-button-group toggle-buttons">
+                <a class="g-button mini">Day</a>
+                <a class="g-button mini">Week</a>
+                <a class="g-button mini checked">Month</a>
+                <a class="g-button mini">4 Days</a>
+                <a class="g-button mini">Agenda</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Buttons with icons only</h2>
+        <p>
+          Create a button with only an icon (no text) by adding the
+          <code>icon no-text</code> classes, along with one of the icon
+          classes below.
+        </p>
+        
+        <div class="example">
 <pre class="prettyprint"><code>
-&lt;a href="#" class="button icon return no-text">&lt;/a>
-&lt;a href="#" class="button icon reload no-text">&lt;/a>
+&lt;a href="#" class="g-button icon return no-text">&lt;/a>
+&lt;a href="#" class="g-button icon reload no-text">&lt;/a>
 </code></pre>
 
-			<a class="button icon return no-text"></a>
-			<a class="button icon reload no-text"></a>
-		</div>
-		
-		<p>Or group them together, just like Gmail's paginator.</p>
-		
-		<div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group">
-    &lt;a href="#" class="button icon rewind no-text">&lt;/a>
-    &lt;a href="#" class="button icon play no-text">&lt;/a>
+            <a class="g-button icon return no-text"></a>
+            <a class="g-button icon reload no-text"></a>
+        </div>
+        
+        <p>Or group them together, just like Gmail's paginator.</p>
+        
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="g-button-group">
+    &lt;a href="#" class="g-button icon rewind no-text">&lt;/a>
+    &lt;a href="#" class="g-button icon play no-text">&lt;/a>
 &lt;div>
 </code></pre>
 
-			<div class="button-group">
-			    <a class="button icon rewind no-text"></a>
-			    <a class="button icon play no-text"></a>
-			</div>
-		</div>
-		
-		<p>You can even mix and match with the disabled state.</p>
-		
-		<div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group">
-    &lt;a href="#" class="button icon rewind no-text disabled2">&lt;/a>
-    &lt;a href="#" class="button icon play no-text">&lt;/a>
+            <div class="g-button-group">
+                <a class="g-button icon rewind no-text"></a>
+                <a class="g-button icon play no-text"></a>
+            </div>
+        </div>
+        
+        <p>You can even mix and match with the disabled state.</p>
+        
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="g-button-group">
+    &lt;a href="#" class="g-button icon rewind no-text disabled2">&lt;/a>
+    &lt;a href="#" class="g-button icon play no-text">&lt;/a>
 &lt;div>
 </code></pre>
 
-			<div class="button-group">
-			    <a class="button icon rewind no-text disabled2"></a>
-			    <a class="button icon play no-text"></a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section">
-		<h2>Mini paginator buttons</h2>
-	    <p>
-		  The new back/forward buttons inside input elements on 
-		  <a href="http://google.com/flights" target="_blank">Google Flights</a>
-		  is pretty slick. You can create those too by adding the 
-		  <code>xs pg bw</code> and <code>xs pg fw</code> classes.
-		</p>
-		
-		<div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group">
-    &lt;a href="#" class="button xs pg bw">&lt;/a>
-    &lt;a href="#" class="button xs pg fw">&lt;/a>
+            <div class="g-button-group">
+                <a class="g-button icon rewind no-text disabled2"></a>
+                <a class="g-button icon play no-text"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Mini paginator buttons</h2>
+        <p>
+          The new back/forward buttons inside input elements on 
+          <a href="http://google.com/flights" target="_blank">Google Flights</a>
+          is pretty slick. You can create those too by adding the 
+          <code>xs pg bw</code> and <code>xs pg fw</code> classes.
+        </p>
+        
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="g-button-group">
+    &lt;a href="#" class="g-button xs pg bw">&lt;/a>
+    &lt;a href="#" class="g-button xs pg fw">&lt;/a>
 &lt;div>
 </code></pre>
 
-			<div class="button-group">
-		    	<a class="button xs pg bw"></a>
-				<a class="button xs pg fw"></a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section">
-		<h2>Buttons with text and icon</h2>
-	    <p>
-		  A range of icons can be added (only for links and buttons) by adding 
-		  a class of <code>icon</code> and any one of the provided icon classes 
-		  below.
-		</p>
+            <div class="g-button-group">
+                <a class="g-button xs pg bw"></a>
+                <a class="g-button xs pg fw"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Buttons with text and icon</h2>
+        <p>
+          A range of icons can be added (only for links and buttons) by adding 
+          a class of <code>icon</code> and any one of the provided icon classes 
+          below.
+        </p>
 
-		<div class="example">
-<pre class="prettyprint"><code>&lt;div class="button-group">
-    &lt;a href="#" class="button xs pg bw">&lt;/a>
-    &lt;a href="#" class="button xs pg fw">&lt;/a>
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="g-button-group">
+    &lt;a href="#" class="g-button xs pg bw">&lt;/a>
+    &lt;a href="#" class="g-button xs pg fw">&lt;/a>
 &lt;div>
 </code></pre>
 
-			<a class="button icon search">Search</a>
-		</div>
-		
-		<div class="example">
+            <a class="g-button icon search">Search</a>
+        </div>
+        
+        <div class="example">
             <table>
                 <thead>
                     <tr>
@@ -345,49 +343,49 @@
                 </thead>
                 <tr>
                     <td scope="row"><code>.add</code></td>
-                    <td><a href="#button" class="button icon add">Add Item</a></td>
+                    <td><a href="#button" class="g-button icon add">Add Item</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.arrowleft</code></td>
-                    <td><a href="#button" class="button icon arrowleft">Back</a></td>
+                    <td><a href="#button" class="g-button icon arrowleft">Back</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.arrowright</code></td>
-                    <td><a href="#button" class="button icon arrowright">Forward</a></td>
+                    <td><a href="#button" class="g-button icon arrowright">Forward</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.remove</code></td>
-                    <td><a href="#button" class="button icon remove">Remove Item</a></td>
+                    <td><a href="#button" class="g-button icon remove">Remove Item</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.search</code></td>
-                    <td><a href="#button" class="button icon search">Search</a></td>
+                    <td><a href="#button" class="g-button icon search">Search</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.settings</code></td>
-                    <td><a href="#button" class="button icon settings">Settings</a></td>
+                    <td><a href="#button" class="g-button icon settings">Settings</a></td>
                 </tr>
-			</table>
-		</div>
-	</div>
-	
-	<div class="section">
-		<h2>Menu Buttons</h2>
-	    <p>
-		  Create buttons with dropdown menus, just like Google Docs, easily.
-		  Of course, it will require a little bit of Javascript magic, but the
-		  CSS is all here.
-		</p>
-		<p>
-	      Add the <code>icon menu</code> classes to your button. The Javascript 
-	      used here also requires a <code>data-menu</code> attribute to be set 
-	      on your button. The value should be the id of the <code>UL</code> for
-		  your menu.
-	    </p>
+            </table>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Menu Buttons</h2>
+        <p>
+          Create buttons with dropdown menus, just like Google Docs, easily.
+          Of course, it will require a little bit of Javascript magic, but the
+          CSS is all here.
+        </p>
+        <p>
+          Add the <code>icon menu</code> classes to your button. The Javascript 
+          used here also requires a <code>data-menu</code> attribute to be set 
+          on your button. The value should be the id of the <code>UL</code> for
+          your menu.
+        </p>
 
-		<div class="example" style="position:relative">
-<pre class="prettyprint"><code>&lt;a class="button icon menu" data-menu="btn-menu">Menu&lt;/a>
-&lt;a class="button icon menu" data-menu="btn-menu">Another Menu&lt;/a>
+        <div class="example" style="position:relative">
+<pre class="prettyprint"><code>&lt;a class="g-button icon menu" data-menu="btn-menu">Menu&lt;/a>
+&lt;a class="g-button icon menu" data-menu="btn-menu">Another Menu&lt;/a>
 
 &lt;ul id="btn-menu" class="menu">
     &lt;li>&lt;a href="">Document&lt;/a>&lt;/li>
@@ -397,137 +395,137 @@
 &lt;/ul>
 </code></pre>
 
-			<a class="button icon menu" data-menu="basic-menu">Menu</a>
-			<a class="button icon menu" data-menu="basic-menu">Another Menu</a>
-		
-			<ul id="basic-menu" class="menu">
-				<li><a href="">Document</a></li>
-				<li><a href="">Presentation</a></li>
-				<li><a href="">Spreadsheet</a></li>
-				<li><a href="">Form</a></li>
-			</ul>
-		</div>
-		
-		<p>
-	      Menus can get pretty fancy too, with icons, dividers, disabled items, and submenus.
-	    </p>
-		
-		<div class="example" style="position:relative">
-			<a class="button icon menu" data-menu="fancy-menu">Fancy Menu</a>
-		
-			<ul id="fancy-menu" class="menu">
-			  <li class="has-submenu">
-				<a href="#">Create new</a>
-				<ul class="menu">
-					<li><a href="">Document</a></li>
-					<li><a href="">Presentation</a></li>
-					<li><a href="">Spreadsheet</a></li>
-					<li><a href="">Form</a></li>
-				</ul>
-			  </li>
-			  <li class="divider"></li>
-			  <li class="has-submenu icon share">
-				<a href="#">Share&hellip;</a>
-				<ul class="menu">
-					<li class="has-submenu">
-						<a href="">Share&hellip;</a>
-						<ul class="menu">
-							<li><a href="">Share&hellip;</a></li>
-							<li class="divider"></li>
-							<li><a href="">Email collaborators&hellip;</a></li>
-							<li class="disabled">Email as attachment&hellip;</li>
-						</ul>
-					</li>
-					<li class="divider"></li>
-					<li><a href="">Email collaborators&hellip;</a></li>
-					<li class="disabled">Email as attachment&hellip;</li>
-				</ul>
-			  </li>
-			  <li class="divider"></li>
-			  <li class="icon star"><a href="#">Add star</a></li>
-			  <li><a href="#">Don't show in home</a></li>
-			  <li><a href="#">Organize&hellip;</a></li>
-			  <li class="disabled">Download&hellip;</li>
-			</ul>
-		</div>
-		
-	</div>
-	
-	<div class="section">
-		<h2>Tables</h2>
-		<p>
-	      Create Google Docs styled tables by affixing the <code>gtable</code>
-		  class to your table element.
-	    </p>
-
-		<div class="example">
+            <a class="g-button icon menu" data-menu="basic-menu">Menu</a>
+            <a class="g-button icon menu" data-menu="basic-menu">Another Menu</a>
         
-	        <table style="width: 500px" class="gtable">
-	            <thead>
-	                <tr>
-	                    <th>
-	                        <div class="checkbox" id="check-all">
-	                            <input type="checkbox" name="c1" />
-	                        </div>
-	                    </th>
-	                    <th></th>
-	                    <th class="sorted">Title</th>
-	                    <th>Owner</th>
-	                    <th>Last Modified</th>
-	                </tr>
-	            </thead>
-	            <tbody>
-	                <tr>
-	                    <td>
-	                        <div class="checkbox cb">
-	                            <input type="checkbox" name="c1" />
-	                        </div>
-	                    </td>
-	                    <td></td>
-	                    <td>The Great Gatsby</td>
-	                    <td>me</td>
-	                    <td>Sep 1</td>
-	                </tr>
-	                <tr>
-	                    <td>
-	                        <div class="checkbox cb">
-	                            <input type="checkbox" name="c1" />
-	                        </div>
-	                    </td>
-	                    <td></td>
-	                    <td>To Kill a Mockingbird</td>
-	                    <td>me</td>
-	                    <td>Sep 1</td>
-	                </tr>
-	                <tr>
-	                    <td>
-	                        <div class="checkbox cb">
-	                            <input type="checkbox" name="c1" />
-	                        </div>
-	                    </td>
-	                    <td></td>
-	                    <td>War and Peace</td>
-	                    <td>me</td>
-	                    <td>Sep 1</td>
-	                </tr>
-	                <tr>
-	                    <td>
-	                        <div class="checkbox cb">
-	                            <input type="checkbox" name="c1" />
-	                        </div>
-	                    </td>
-	                    <td></td>
-	                    <td>Catcher in the Rye</td>
-	                    <td>me</td>
-	                    <td>Sep 1</td>
-	                </tr>
-	            </tbody>
-	        </table>
-	
-		</div>    
+            <ul id="basic-menu" class="menu">
+                <li><a href="">Document</a></li>
+                <li><a href="">Presentation</a></li>
+                <li><a href="">Spreadsheet</a></li>
+                <li><a href="">Form</a></li>
+            </ul>
+        </div>
+        
+        <p>
+          Menus can get pretty fancy too, with icons, dividers, disabled items, and submenus.
+        </p>
+        
+        <div class="example" style="position:relative">
+            <a class="g-button icon menu" data-menu="fancy-menu">Fancy Menu</a>
+        
+            <ul id="fancy-menu" class="menu">
+              <li class="has-submenu">
+                <a href="#">Create new</a>
+                <ul class="menu">
+                    <li><a href="#">Document</a></li>
+                    <li><a href="#">Presentation</a></li>
+                    <li><a href="#">Spreadsheet</a></li>
+                    <li><a href="#">Form</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-submenu icon share">
+                <a href="#">Share&hellip;</a>
+                <ul class="menu">
+                    <li class="has-submenu">
+                        <a href="">Share&hellip;</a>
+                        <ul class="menu">
+                            <li><a href="#">Share&hellip;</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Email collaborators&hellip;</a></li>
+                            <li class="disabled">Email as attachment&hellip;</li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">Email collaborators&hellip;</a></li>
+                    <li class="disabled">Email as attachment&hellip;</li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="icon star"><a href="#">Add star</a></li>
+              <li><a href="#">Don't show in home</a></li>
+              <li><a href="#">Organize&hellip;</a></li>
+              <li class="disabled">Download&hellip;</li>
+            </ul>
+        </div>
+        
     </div>
-	
-	<div class="section">
+    
+    <div class="section">
+        <h2>Tables</h2>
+        <p>
+          Create Google Docs styled tables by affixing the <code>g-table</code>
+          class to your table element.
+        </p>
+
+        <div class="example">
+        
+            <table style="width: 500px" class="g-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="checkbox" id="check-all">
+                                <input type="checkbox" name="c1" />
+                            </div>
+                        </th>
+                        <th></th>
+                        <th class="sorted">Title</th>
+                        <th>Owner</th>
+                        <th>Last Modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="checkbox cb">
+                                <input type="checkbox" name="c1" />
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>The Great Gatsby</td>
+                        <td>me</td>
+                        <td>Sep 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox cb">
+                                <input type="checkbox" name="c1" />
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>me</td>
+                        <td>Sep 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox cb">
+                                <input type="checkbox" name="c1" />
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>War and Peace</td>
+                        <td>me</td>
+                        <td>Sep 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox cb">
+                                <input type="checkbox" name="c1" />
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>Catcher in the Rye</td>
+                        <td>me</td>
+                        <td>Sep 1</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>    
+    </div>
+    
+    <div class="section">
         <h2>Browser compatibility</h2>
         <p>Latest version of Chrome and Firefox.</p>
     </div>
@@ -550,40 +548,46 @@
 
 <script type="text/javascript">
 // Implement checkbox-like buttons
-$(".toggle-buttons > .button").click(function() {
-    $(this).siblings(".button").removeClass("checked");
+$(".toggle-buttons > .g-button").click(function() {
+    $(this).siblings(".g-button").removeClass("checked");
     $(this).addClass("checked");
 });
 
 // Implement submenus.
 $(".has-submenu").hover(
-	function() {
-		var elSubMenu = $(this).children(".menu");
-		elSubMenu.show().css({ left: elSubMenu.width(), top: 0 } );
-	},
-	function() { $(this).children(".menu").hide(); }
+    function() {
+        var elSubMenu = $(this).children(".menu");
+        elSubMenu.show().css({ left: elSubMenu.width(), top: 0 } );
+    },
+    function() { $(this).children(".menu").hide(); }
 );
 
 // Implement buttons with dropdown menus.
-$(".button.menu").bind('mousedown', function(e) {
-	if ($(e.target).is(".button.menu")) {
-		closeButtonMenus(e);
-		var pos = $(this).position(),
-		    menuId = $(this).attr("data-menu"),
-		    elMenu = $("#"+menuId),
-			newLeft = pos.left + parseInt($(this).css("margin-left").replace("px", "")),
-			newTop = pos.top + $(this).outerHeight();
-		
-		elMenu.show().css({ left: newLeft, top: newTop });
-		$(this).addClass("checked"); /* show button in depressed state while menu is out */
-	}
-	return false;
+$(".g-button.menu").bind('click', function(e) {
+    if ($(e.target).is(".g-button.menu")) {
+        closeButtonMenus(e);
+        var pos = $(this).position(),
+            menuId = $(this).attr("data-menu"),
+            elMenu = $("#"+menuId),
+            newLeft = pos.left + parseInt($(this).css("margin-left").replace("px", "")),
+            newTop = pos.top + $(this).outerHeight();
+        
+        elMenu.show().css({ left: newLeft, top: newTop });
+        $(this).addClass("checked"); /* show button in depressed state while menu is out */
+    }
+    return false;
 });
 
 // Hide any open menus if we click outside of them.
-$("body").bind("mousedown", function (e) {
-	closeButtonMenus();
+$("body").bind("click", function (e) {
+    closeButtonMenus();
 });
+
+// Hide any open menus if we click outside of them.
+var closeButtonMenus = function(e) {
+    $('ul.menu').hide();
+    $('.g-button.menu').removeClass("checked"); /* remove 'checked' state from menu buttons */
+};
 
 // Implement checkboxes in table.
 $(".checkbox").click(function() {
@@ -597,12 +601,6 @@ $("#check-all").click(function() {
         $(".checkbox.cb").toggleChecked(false);
     }
 });
-
-// Hide any open menus if we click outside of them.
-var closeButtonMenus = function(e) {
-	$('ul.menu').hide();
-	$('.button.menu').removeClass("checked"); /* remove 'checked' state from menu buttons */
-};
 
 // Helper methods for table checkboxes.
 $.fn.extend({
