@@ -5,8 +5,7 @@ the look of these new UI elements for my own personal use.
 
 ## Browser compatibility ##
 
-This is being tested in the latest versions of Chrome and Firefox only. I have
-no immediate plans to test this in IE.
+This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 
 ## Demo ##
@@ -21,6 +20,7 @@ Public domain: [http://unlicense.org](http://unlicense.org)
 
 ## Acknowledgements ##
 
-The foundation of the CSS was borrowed heavily from the 
-[css3-github-buttons](https://github.com/todc/css3-github-buttons) project.
-And of course, Google.
+Inspired by Michael Henriksen's 
+[CSS3 Buttons](http://github.com/michenriksen/css3buttons),
+[Twitter Bootstrap](http://twitter.github.com/bootstrap/), 
+and of course, Google. Icons from [glyphicons.com](http://glyphicons.com/).
