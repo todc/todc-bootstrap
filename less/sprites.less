@@ -16,9 +16,10 @@
 
 [class^="icon-"] {
   display: inline-block;
+  margin-top: -2px;
   width: 14px;
   height: 14px;
-  vertical-align: text-top;
+  vertical-align: top;
   background-image: url(../img/glyphicons-halflings.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
@@ -27,6 +28,11 @@
 }
 .icon-white {
   background-image: url(../img/glyphicons-halflings-white.png);
+}
+
+.disabled > [class^="icon-"],
+.disabled2 > [class^="icon-"] {
+    .opacity(50);
 }
 
 .icon-glass              { background-position: 0      0; }
@@ -154,3 +160,20 @@
 .icon-folder-open        { background-position: -408px -120px; }
 .icon-resize-vertical    { background-position: -432px -119px; }
 .icon-resize-horizontal  { background-position: -456px -118px; }
+
+
+[class^="xs-icon-"] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  background-image: url(../img/xs-icons.png);
+  background-position: 12px 12px;
+  background-repeat: no-repeat;
+
+  .ie7-restore-right-whitespace();
+}
+
+.xs-icon-bw              { background-position: -36px  0; }
+.xs-icon-fw              { background-position: -20px  0; }

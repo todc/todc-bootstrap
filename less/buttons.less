@@ -12,7 +12,7 @@
     cursor: pointer; 
     outline: none; 
     border: 1px solid #dcdcdc;
-    .border-radius(0.2em);
+    .border-radius(2px);
     #gradient > .vertical(#f5f5f5,#f1f1f1);
     .background-clip(padding);
     
@@ -158,17 +158,6 @@
     .border-radius(2px);
 }
 
-.xs {
-    height: 9px;
-    width: 18px;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 10px;
-    padding: 4px 2px;
-    min-width: 5px;
-    .border-radius(2px);
-}
-
 
 /* ................................................................ Disabled */
 
@@ -195,4 +184,38 @@
 .g-button.disabled2:hover {
     border: 1px solid #dcdcdc;
     .box-shadow(none);
+}
+
+
+/* ................................................................ Dropdown */
+
+
+.g-button.dropdown-toggle {
+    min-width: 5px;
+    height: 12px;
+    padding: 8px;
+}
+.g-button .caret {
+  margin-left: 0;
+  margin-top: 4px;
+}
+.g-button:hover .caret {
+  opacity: 1;
+}
+
+
+/* .................................................................... Misc */
+
+.g-button.no-text {
+    min-width: 14px;
+}
+.g-button.xs-no-text {
+    height: 9px;
+    width: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 4px 2px;
+    min-width: 5px;
+    .border-radius(2px);
 }
