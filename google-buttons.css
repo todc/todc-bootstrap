@@ -529,7 +529,6 @@ textarea {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 1000;
   float: left;
   display: none;
@@ -544,6 +543,12 @@ textarea {
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 13px;
+}
+.dropdown-menu.right{
+  right:0;
+}
+.dropdown-menu.left{
+  left:0;
 }
 .dropdown-menu.bottom-up {
   top: auto;
