@@ -45,7 +45,6 @@
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
     z-index: 1000;
     float: left;
     display: none;
@@ -58,7 +57,14 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     .box-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     font-size: 13px;
-    
+  
+   
+    &.left {
+        left: 0;
+    }
+    &.right {
+        right: 0;
+    }
 
   // Allow for dropdowns to go bottom up (aka, dropup-menu)
   &.bottom-up {
