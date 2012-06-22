@@ -1,494 +1,260 @@
-<!DOCTYPE HTML> 
-<html lang="en"> 
-<head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <title>CSS3 Google UI Demo</title>
-    <meta name="description" content="Using CSS3 to create Google-style UI elements">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    
-    <style>
-    /* ------------------------------------------------------------------------------------------------------------- RESET */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    html, body, div, form, p,
-    code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: sans-serif; }
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
-    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    body { font: 14px/18px sans-serif; color: #444; background: #eee; }
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    a { color: #980905; }
-    a:hover, a:focus, a:active { text-decoration: none; }
+    <link href="assets/css/bootstrap-google.css" rel="stylesheet">
+  </head>
 
-    h1 { margin: 0 0 0.5em; font-size: 36px; font-weight: bold; }
-    h2 { margin: 0 0 0.75em; font-size: 21px; font-weight: bold; }
-    h3 { margin: 0 0 0.333em; font-size: 16px; font-weight: normal; }
-    p { margin: 0 0 1.333em; line-height: 18px; }
-    em { font-style: italic; }
-    table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
-    th { font-weight: bold; }
-    th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
-    pre, code { font-family: monospace, sans-serif; font-size: 1em; color:#080; }
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
-    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
 
-    .container { position:relative; overflow:hidden; width: 700px; padding: 40px 60px; border: 1px solid #ccc; margin: 40px auto 20px; background: #fff; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.1); box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-
-    .container pre,
-    .container .prettyprint { padding: 0; border: 0; margin: 0 0 20px; font-size: 13px; background: #fff; }
-
-    .ribbon { position: absolute; top: -1px; right: -1px; opacity: 0.9; }
-    .ribbon:hover, .ribbon:focus, .ribbon:active { opacity: 1; }
-    .ribbon img { display: block; border: 0; }
-
-    .header { padding-right:80px; }
-
-    .section { margin: 40px 0 20px; }
-
-    .example { padding: 20px; border: 1px solid #ccc; margin: 10px -20px 20px; }
-
-    .footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
-    .footer a { color: #666; }
-    </style>
-    
-    <link rel="stylesheet" href="google-buttons.css" type="text/css"  media="screen" />
-    
-    <!-- prettyify -->
-    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
-    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-
-<div class="container">
-    <a class="ribbon" href="http://github.com/todc/css3-google-buttons" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
-    <div class="header">
-        <h1>CSS3 Google Buttons</h1>
-        <p>
-          <b><a href="http://github.com/todc/css3-google-buttons" title="GitHub repository">CSS3 Google Buttons</a>
-          helps you easily create Google-style buttons.</b>
-        </p>
-        <p>
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=watch&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="108px" height="30px"></iframe>
-            
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=fork&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="93px" height="30px"></iframe>
-          
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=follow"
-            allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="30px"></iframe>
-        </p>
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Overview</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">Javascript plugins</a>
+              </li>
+              <li class="">
+                <a href="./less.html">Using LESS</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="./download.html">Customize</a>
+              </li>
+              <li class="">
+                <a href="./examples.html">Examples</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="section">
-        <h2>Buttons</h2>
-        <p>
-          The "buttons" can be created by adding <code>class="g-button"</code> to
-          any appropriate <code>&lt;a></code>, <code>&lt;button></code>, or 
-          <code>&lt;input></code> element.
-        </p>
+    <div class="container">
 
-        <div class="example">
-            <pre class="code prettyprint"><code>&lt;a href="#" class="g-button">Post comment&lt;/a></code></pre>
-            <form>
-                <a class="g-button">New Comment (link)</a>
-                <input class="g-button" type="submit" value="New Comment (submit)" />
-                <button class="g-button">New Comment (button)</button>
-            </form>
-        </div>
+<!-- Masthead
+================================================== -->
+<header class="jumbotron masthead">
+  <div class="inner">
+    <h1>Bootstrap, from Twitter</h1>
+    <p>Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>
+    <p class="download-info">
+      <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large" >View project on GitHub</a>
+      <a href="assets/bootstrap.zip" class="btn btn-large" >Download Bootstrap <small>(v2.0.4)</small></a>
+    </p>
+  </div>
+
+  <div class="bs-links">
+    <ul class="quick-links">
+      <li><a href="./upgrading.html">Upgrading from 1.4</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/zipball/master">Download with docs</a></li>
+      <li><a href="http://blog.getbootstrap.com">Read the blog</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+    </ul>
+    <ul class="quick-links">
+      <li>
+        <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+      </li>
+      <li>
+        <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+      </li>
+      <li class="follow-btn">
+        <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+      </li>
+      <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<hr class="soften">
+
+<div class="marketing">
+  <h1>Designed for everyone, everywhere.</h1>
+  <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+  <div class="row">
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_042_group.png">
+      <h2>Built for and by nerds</h2>
+      <p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you.</p>
     </div>
-    
-    <div class="section">
-        <h2>Colored Buttons</h2>
-        <p>
-          Colored buttons can be created by adding the 
-          <code>red</code>, <code>blue</code>, or <code>green</code> class to your button.
-        </p>
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button red">Compose Mail&lt;/a></code></pre>
-            <a href="#button" class="g-button red">Compose Mail</a>
-            <a href="#button" class="g-button blue">Search Mail</a>
-            <a href="#button" class="g-button green">Add Contact</a>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_079_podium.png">
+      <h2>For all skill levels</h2>
+      <p>Bootstrap is designed to help people of all skill levels&mdash;designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</p>
     </div>
-    
-    <div class="section">
-        <h2>Disabled Buttons</h2>
-        <p>
-          Buttons can also be disabled. The traditional style used in Google 
-          Calendar displays the button with a white background and greyed out 
-          text. Add the <code>disabled</code> class for this style. If you'd 
-          rather keep the grey background but dim it, you can add the 
-          <code>disabled2</code> class.
-        </p>
-    
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button disabled">Today&lt;/a>
-&lt;a href="#" class="g-button disabled2">Today&lt;/a></code></pre>
-            <a href="#button" class="g-button disabled">Today</a>
-            <a href="#button" class="g-button disabled2">Today</a>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_163_iphone.png">
+      <h2>Cross-everything</h2>
+      <p>Originally built with only modern browsers in mind, Bootstrap has evolved to include support for all major browsers (even IE7!) and, with Bootstrap 2, tablets and smartphones, too.</p>
     </div>
-    
-    <div class="section">
-        <h2>Smaller Buttons</h2>
-        <p>
-          Default buttons too big? Shrink the text-size of the button with the 
-          <code>sm</code> class, or the size of the entire button with the 
-          <code>mini</code> class.
-        </p>
-    
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button sm">Month&lt;/a>
-&lt;a href="#" class="g-button mini">Month&lt;/a></code></pre>
-            <a href="#button" class="g-button sm">Month</a>
-            <a href="#button" class="g-button mini">Month</a>
-        </div>
+  </div><!--/row-->
+  <div class="row">
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_155_show_thumbnails.png">
+      <h2>12-column grid</h2>
+      <p>Grid systems aren't everything, but having a durable and flexible one at the core of your work can make development much simpler. Use our built-in grid classes or roll your own.</p>
     </div>
-    
-    <div class="section">
-        <h2>Grouped buttons</h2>
-        <p>
-          Groups of buttons can be created by wrapping them in an element given 
-          a class of <code>g-button-group</code>.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button">Archive&lt;/a>
-    &lt;a href="#" class="g-button">Spam&lt;/a>
-    &lt;a href="#" class="g-button">Delete&lt;/a>
-&lt;/div></code></pre>
-        <div class="g-button-group">
-            <a href="#button" class="g-button">Archive</a>
-            <a href="#button" class="g-button">Spam</a>
-            <a href="#button" class="g-button">Delete</a>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_214_resize_small.png">
+      <h2>Responsive design</h2>
+      <p>With Bootstrap 2, we've gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</p>
     </div>
-
-    <div class="section">
-        <h2>Mixed groups</h2>
-        <p>
-          Displaying a mixture of grouped and standalone buttons, as might be 
-          seen in a toolbar, can be done by adding another wrapping element 
-          with the class <code>g-button-container</code>.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="actions <b>g-button-container</b>">
-    &lt;a href="#" class="g-button">Compose New&lt;/a>
-    
-    &lt;div class="g-button-group">
-        &lt;a href="#" class="g-button">Archive&lt;/a>
-        &lt;a href="#" class="g-button">Spam&lt;/a>
-        &lt;a href="#" class="g-button">Delete&lt;/a>
-    &lt;/div>
-                        
-    &lt;div class="g-button-group minor-group">
-        &lt;a href="#" class="g-button">Move to&lt;/a>
-        &lt;a href="#" class="g-button">Labels&lt;/a>
-    &lt;/div>
-
-    &lt;a href="#" class="g-button">More&lt;/a>
-&lt;/div></code></pre>
-            <div class="actions g-button-container">
-                <a href="#button" class="g-button">Compose New</a>
-                
-                <div class="g-button-group">
-                    <a href="#button" class="g-button">Archive</a>
-                    <a href="#button" class="g-button">Spam</a>
-                    <a href="#button" class="g-button">Delete</a>
-                </div>
-                                    
-                <div class="g-button-group minor-group">
-                    <a href="#button" class="g-button">Move to</a>
-                    <a href="#button" class="g-button">Labels</a>
-                </div>
-
-                <a href="#button" class="g-button">More</a>
-            </div>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_266_book_open.png">
+      <h2>Styleguide docs</h2>
+      <p>Unlike other front-end toolkits, Bootstrap was designed first and foremost as a styleguide to document not only our features, but best practices and living, coded examples.</p>
     </div>
-
-    <div class="section">
-        <h2>Radio Button Groups</h2>
-        <p>
-          Sometimes your button group should act like a series of radio buttons,
-          in which selecting one button deselects the others. Add the 
-          <code>toggle-buttons</code> class to your <code>button-group</code> 
-          div to accomplish this. To set the currently selected button, use the 
-          <code>checked</code> class.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
-    &lt;a href="#" class="g-button">Day&lt;/a>
-    &lt;a href="#" class="g-button">Week&lt;/a>
-    &lt;a href="#" class="g-button checked">Month&lt;/a>
-    &lt;a href="#" class="g-button">4 Days&lt;/a>
-    &lt;a href="#" class="g-button">Agenda&lt;/a>
-&lt;/div></code></pre>
-            <div class="g-button-group toggle-buttons">
-                <a class="g-button">Day</a>
-                <a class="g-button">Week</a>
-                <a class="g-button checked">Month</a>
-                <a class="g-button">4 Days</a>
-                <a class="g-button">Agenda</a>
-            </div>
-        </div>
-
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
-    &lt;a href="#" class="g-button mini">Day&lt;/a>
-    &lt;a href="#" class="g-button mini">Week&lt;/a>
-    &lt;a href="#" class="g-button mini checked">Month&lt;/a>
-    &lt;a href="#" class="g-button mini">4 Days&lt;/a>
-    &lt;a href="#" class="g-button mini">Agenda&lt;/a>
-&lt;/div></code></pre>
-
-            <div class="g-button-group toggle-buttons">
-                <a class="g-button mini">Day</a>
-                <a class="g-button mini">Week</a>
-                <a class="g-button mini checked">Month</a>
-                <a class="g-button mini">4 Days</a>
-                <a class="g-button mini">Agenda</a>
-            </div>
-        </div>
+  </div><!--/row-->
+  <div class="row">
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_082_roundabout.png">
+      <h2>Growing library</h2>
+      <p>Despite being only 10kb (gzipped), Bootstrap is one of the most complete front-end toolkits out there with dozens of fully functional components ready to be put to use.</p>
     </div>
-    
-    <div class="section">
-        <h2>Buttons with icons only</h2>
-        <p>
-          Create a button with only an icon (no text) by adding the
-          <code>no-text</code> class, along with one of the nested icon
-          classes below.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
-</code></pre>
-
-            <a class="g-button no-text"><i class="icon-refresh"></i></a>
-            <a class="g-button red no-text"><i class="icon-trash icon-white"></i></a>
-        </div>
-        
-        <p>Or group them together, just like Gmail's paginator.</p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
-&lt;div>
-</code></pre>
-
-            <div class="g-button-group">
-                <a class="g-button no-text"><i class="icon-chevron-left"></i></a>
-                <a class="g-button no-text"><i class="icon-chevron-right"></i></a>
-            </div>
-        </div>
-        
-        <p>You can even mix and match with the disabled state.</p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text disabled2">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
-&lt;div>
-</code></pre>
-
-            <div class="g-button-group">
-                <a class="g-button no-text disabled2"><i class="icon-chevron-left"></i></a>
-                <a class="g-button no-text"><i class="icon-chevron-right"></i></a>
-            </div>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/glyphicons/glyphicons_009_magic.png">
+      <h2>Custom jQuery plugins</h2>
+      <p>What good is an awesome design component without easy-to-use, proper, and extensible interactions? With Bootstrap, you get custom-built jQuery plugins to bring your projects to life.</p>
     </div>
-    
-    <div class="section">
-        <h2>Mini paginator buttons</h2>
-        <p>
-          The new back/forward buttons inside input elements on 
-          <a href="http://google.com/flights" target="_blank">Google Flights</a>
-          is pretty slick. You can create those too by adding the 
-          <code>xs pg bw</code> and <code>xs pg fw</code> classes.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-bw">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
-&lt;div>
-</code></pre>
-
-            <div class="g-button-group">
-                <a class="g-button xs-no-text"><i class="xs-icon-bw"></i></a>
-                <a class="g-button xs-no-text"><i class="xs-icon-fw"></i></a>
-            </div>
-        </div>
+    <div class="span4">
+      <img class="bs-icon" src="assets/img/less-small.png">
+      <h2>Built on LESS</h2>
+      <p>Where vanilla CSS falters, LESS excels. Variables, nesting, operations, and mixins in LESS makes coding CSS faster and more efficient with minimal overhead.</p>
     </div>
-    
-    <div class="section">
-        <h2>Buttons with text and icon</h2>
-        <p>
-          A range of icons can be added (only for links and buttons) by adding 
-          a class of <code>icon</code> and any one of the provided icon classes 
-          below.
-        </p>
-
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button">&lt;i class="icon-search">&lt;i>Search&lt;/a>
-&lt;div>
-</code></pre>
-
-          <a class="g-button"><i class="icon-search"></i> Search</a>
-        </div>
-        
-        <div class="example">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Class</th>
-                        <th scope="col">Example</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td scope="row"><code>.icon-plus</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-plus"></i> Add Item</a></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.icon-arrow-left</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-arrow-left"></i> Back</a></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.icon-arrow-right</code></td>
-                    <td><a href="#button" class="g-button">Forward <i class="icon-arrow-right"></i></a></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.icon-remove</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-remove"></i> Remove Item</a></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.icon-search</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-search"></i> Search</a></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.icon-cog</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-cog"></i> Settings</a></td>
-                </tr>
-            </table>
-        </div>
+  </div><!--/row-->
+  <div class="row">
+    <div class="span3">
+      <img class="small-bs-icon" src="assets/img/icon-html5.png">
+      <h3>HTML5</h3>
+      <p>Built to support new HTML5 elements and syntax.</p>
     </div>
-    
-    <div class="section">
-        <h2>Button dropdowns</h2>
-        <p>
-          Create buttons with dropdown menus, just like Google Docs, easily.
-          We'll use Twitter Bootstrap's javascript to make it happen.
-        </p>
-
-        <div class="example" style="position:relative">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-  &lt;a class="g-button dropdown-toggle" data-toggle="dropdown" href="#">
-    Dropdown Menu &lt;span class="caret">&lt;/span>
-  &lt;/a>
-  &lt;ul class="dropdown-menu">
-      &lt;li>&lt;a href="#">Document&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">Presentation&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">Spreadsheet&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">Form&lt;/a>&lt;/li>
-  &lt;/ul>
-&lt;/div>
-</code></pre>
-
-            <div class="g-button-container">
-              <div class="g-button-group">
-                <a class="g-button dropdown-toggle" data-toggle="dropdown" href="#">
-                  Dropdown Menu <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Document</a></li>
-                    <li><a href="#">Presentation</a></li>
-                    <li><a href="#">Spreadsheet</a></li>
-                    <li><a href="#">Form</a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        
-        <p>
-          We can even create fancy split-button dropdowns in color with icons and dividers!
-        </p>
-        
-        <div class="example" style="position:relative">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-  &lt;a class="g-button blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
-  &lt;a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
-    &lt;span class="caret">&lt;/span>
-  &lt;/a>
-  &lt;ul class="dropdown-menu">
-      &lt;li>&lt;a href="#">&lt;i class="icon-ok">&lt;/i> Action&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">&lt;i class="icon-remove">&lt;/i> Another Action&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">&lt;i class="icon-star">&lt;/i> Something else here&lt;/a>&lt;/li>
-      &lt;li class="divider">&lt;/li>
-      &lt;li>&lt;a href="#">&lt;i class="icon-print">&lt;/i> Separated link&lt;/a>&lt;/li>
-  &lt;/ul>
-&lt;/div>
-</code></pre>
-          
-            <div class="g-button-group">
-              <a class="g-button blue"><i class="icon-user icon-white"></i> Add User</a>
-              <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                  <li><a href="#"><i class="icon-ok"></i> Action</a></li>
-                  <li><a href="#"><i class="icon-remove"></i> Another Action</a></li>
-                  <li><a href="#"><i class="icon-star"></i> Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#"><i class="icon-print"></i> Separated link</a></li>
-              </ul>
-            </div>
-        </div>
-        
+    <div class="span3">
+      <img class="small-bs-icon" src="assets/img/icon-css3.png">
+      <h3>CSS3</h3>
+      <p>Progressively enhanced components for ultimate style.</p>
     </div>
-    
-    <div class="section">
-        <h2>Browser compatibility</h2>
-        <p>Latest version of Chrome, Firefox, and IE8+</p>
+    <div class="span3">
+      <img class="small-bs-icon" src="assets/img/icon-github.png">
+      <h3>Open-source</h3>
+      <p>Built for and maintained by the community via <a href="https://github.com">GitHub</a>.</p>
     </div>
-
-    <div class="section">
-        <h2>License</h2>
-        <p>Public domain: <a href="http://unlicense.org/">http://unlicense.org/</a></p>
+    <div class="span3">
+      <img class="small-bs-icon" src="assets/img/icon-twitter.png">
+      <h3>Made at Twitter</h3>
+      <p>Brought to you by an experienced <a href="http://twitter.com/fat">engineer</a> and <a href="http://twitter.com/mdo">designer</a>.</p>
     </div>
+  </div><!--/row-->
 
-    <div class="section">
-        <h2>Acknowledgements</h2>
-        <p>
-          Inspired by Michael Henriksen's 
-          <a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a>, 
-          <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>, 
-          and of course, Google. Icons from <a href="http://glyphicons.com/">glyphicons.com</a>.
-        </p>
-    </div>
+  <hr class="soften">
 
-</div>
+  <h1>Built with Bootstrap.</h1>
+  <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./examples.html">browse the examples</a>.</p>
+  <ul class="thumbnails example-sites">
+    <li class="span3">
+      <a class="thumbnail" href="http://soundready.fm/" target="_blank">
+        <img src="assets/img/example-sites/soundready.png" alt="SoundReady.fm">
+      </a>
+    </li>
+    <li class="span3">
+      <a class="thumbnail" href="http://kippt.com/" target="_blank">
+        <img src="assets/img/example-sites/kippt.png" alt="Kippt">
+      </a>
+    </li>
+    <li class="span3">
+      <a class="thumbnail" href="http://www.fleetio.com/" target="_blank">
+        <img src="assets/img/example-sites/fleetio.png" alt="Fleetio">
+      </a>
+    </li>
+    <li class="span3">
+      <a class="thumbnail" href="http://www.jshint.com/" target="_blank">
+        <img src="assets/img/example-sites/jshint.png" alt="JS Hint">
+      </a>
+    </li>
+  </ul>
 
-<div class="footer">
-    <a href="http://github.com/todc/css3-google-buttons">CSS3 Google Buttons</a> by 
-    <a href="http://timodonnell.com">Tim O'Donnell</a>.
-</div>
+</div><!-- /.marketing -->
 
-<script src="../js/bootstrap-dropdown.js"></script>
-<script type="text/javascript">
-// Implement checkbox-like buttons
-$(".toggle-buttons > .g-button").click(function() {
-    $(this).siblings(".g-button").removeClass("checked");
-    $(this).addClass("checked");
-});
-</script>
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>
 
-</body>
+    </div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/application.js"></script>
+
+
+  </body>
 </html>
