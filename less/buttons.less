@@ -2,220 +2,378 @@
 // -----------------------------------------------------
 
 
-
-.g-button { 
-    position: relative; 
-    display: inline-block; 
-    overflow: visible; 
-    margin: 0;
-    padding: 8px 12px;
-    cursor: pointer; 
-    outline: none; 
-    border: 1px solid #dcdcdc;
-    .border-radius(2px);
-    #gradient > .vertical(#f5f5f5,#f1f1f1);
-    .background-clip(padding);
-    
-    /* IE hacks */
-    zoom: 1;
-    z-index: 1;
-    *display: inline;
-    
-    font: bold 12px Helvetica, Arial, sans-serif;
-    line-height: 12px;
-    color: #444444;
-    min-width: 42px;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    text-decoration: none; 
-    white-space: nowrap;
+.btn {
+  position: relative;
+  
+  margin: 0;
+  padding: 4px 12px;
+  
+  border: 1px solid #dcdcdc;
+  .border-radius(2px);
+  
+  background-color: @btnBackground;
+  #gradient > .vertical(#f5f5f5,#f1f1f1);
+  .background-clip(padding);
+  
+  .box-shadow(none);
+  
+  color: #333;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  font-weight: bold;
+  line-height: @baseLineHeight;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  cursor: default;
+  outline: none;
+  overflow: visible;
 }
 
-.g-button:hover,
-.g-button:focus,
-.g-button:active,
-.g-button.active {    
-    color: #333;
-    text-decoration: none;
-    border-color: #c6c6c6;
-    
-    #gradient > .vertical(#f8f8f8,#f1f1f1);
-    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
-    
-    z-index: 100;
-    outline: none;
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+  color: #333;
+  text-decoration: none;
+  text-shadow: none;
+  border-color: #c6c6c6;
+  
+  background-color: #f5f5f5;
+  #gradient > .vertical(#f8f8f8,#f1f1f1);
+  
+  .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+          
+  .transition(none);
+  background-position: 0 0;
+                  
+  outline: none;
 }
-
-.g-button:active,
-.g-button.active {
-    #gradient > .vertical(#f6f6f6,#f1f1f1);
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+.btn:active, 
+.btn.active {
+  background-color: #f4f4f4;
+  #gradient > .vertical(#f6f6f6,#f1f1f1);
+  .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
 }
-
-.g-button:focus {
-    /* Blue border on button focus. */
-    border-color: #4D90FE;
+.btn:active,
+.btn:focus {
+  /* Blue border on button focus. */
+  border-color: #4D90FE;
 }
-
-.g-button.checked {
-    color: #333;
-    text-shadow: none;
-    border: 1px solid #ccc;
-    
-    #gradient > .vertical(#eeeeee,#e0e0e0);
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
-}
-
 /* overrides extra padding on button elements in Firefox */
-.g-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+.btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 
-/* ..................................................................... Red */
-
-.g-button.red {
-    color: white;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #C6322A;
-    #gradient > .vertical(#dd4b39,#d14836);
-}
-
-.g-button.red:hover,
-.g-button.red:focus,
-.g-button.red:active {
-    border: 1px solid #AF301F;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    #gradient > .vertical(#dd4b39,#c53727);
-    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
-}
-.g-button.red:active,
-.g-button.red.active {
-    #gradient > .vertical(#dd4b39,#b0281a);
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
-}
-
-/* .................................................................... Blue */
-
-.g-button.blue {
-    color: white;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #3079ED;
-    #gradient > .vertical(#4d90fe,#4787ed);
-}
-
-.g-button.blue:hover,
-.g-button.blue:focus,
-.g-button.blue:active {
-    border: 1px solid #2F5BB7;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
-    #gradient > .vertical(#4d90fe,#357AE8);
-}
-
-.g-button.blue:active,
-.g-button.blue.active {
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
-}
-
-/* ................................................................... Green */
-
-.g-button.green {
-    color: white;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #359947;
-    #gradient > .vertical(#35aa47,#35aa47);
-}
-
-.g-button.green:hover,
-.g-button.green:focus,
-.g-button.green:active {
-    border: 1px solid #508c36;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
-    #gradient > .vertical(#35aa47,#1D943B);
-}
-.g-button.green:active,
-.g-button.green.active {
-    #gradient > .vertical(#35aa47,#088728);
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active,
+.btn.disabled.active,
+.btn.disabled:focus,
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:active,
+.btn[disabled].active,
+.btn[disabled]:focus {
+  color: darken(@white, 30%);
+  border-color: darken(@white, 15%);
+  background-color: darken(@white, 10%);
+  background-image: none;
+  .box-shadow(none);
+  text-shadow: none;
 }
 
 
-/* .............................................................. Minibutton */
-
-.sm {
-    font-size: 11px;
+/* Large */
+.btn-large {
+  padding: 9px 14px;
+  font-size: @baseFontSize + 2px;
+  line-height: normal;
+}
+.btn-large [class^="icon-"] {
+  margin-top: 1px;
 }
 
-.mini {
-    height: 13px;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 13px;
-    padding: 4px 10px;
-    .border-radius(2px);
+/* Small */
+.btn-small {
+  padding: 5px 9px;
+  font-size: @baseFontSize - 1px;
+  line-height: 15px;
+}
+.btn-small [class^="icon-"] {
+  margin-top: -1px;
 }
 
-
-/* ................................................................ Disabled */
-
-.g-button.disabled {
-    color: #B8B8B8;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: white;
-    cursor: default;
-}
-
-.g-button.disabled:hover,
-.g-button.disabled:active {
-    color: #b8b8b8;
-    text-shadow: none;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    .box-shadow(none);
-}
-.g-button.disabled2 {
-    color: #b8b8b8;
-    cursor: default;
-    border: 1px solid #dcdcdc;
-}
-.g-button.disabled2:hover {
-    border: 1px solid #dcdcdc;
-    .box-shadow(none);
+/* Mini */
+.btn-mini {
+  padding: 2px 6px;
+  font-size: @baseFontSize - 1px;
+  line-height: 13px;
 }
 
 
-/* ................................................................ Dropdown */
-
-
-.g-button.dropdown-toggle {
-    min-width: 5px;
-    height: 12px;
-    padding: 8px;
-}
-.g-button .caret {
-  margin-left: 0;
-  margin-top: 4px;
-}
-.g-button:hover .caret {
-  opacity: 1;
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-success,
+.btn-info,
+.btn-inverse {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
 
-
-/* .................................................................... Misc */
-
-.g-button.no-text {
-    min-width: 14px;
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-inverse:hover {
+  .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
 }
-.g-button.xs-no-text {
-    height: 9px;
-    width: 18px;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 10px;
-    padding: 4px 2px;
-    min-width: 5px;
-    .border-radius(2px);
+.btn-primary:active,
+.btn-primary.active,
+.btn-warning:active,
+.btn-warning.active,
+.btn-danger:active,
+.btn-danger.active,
+.btn-success:active,
+.btn-success.active,
+.btn-info:active,
+.btn-info.active,
+.btn-inverse:active,
+.btn-inverse.active {
+  .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-warning.active,
+.btn-warning:active,
+.btn-warning:hover,
+.btn-danger.active,
+.btn-danger:active,
+.btn-danger:hover,
+.btn-success.active,
+.btn-success:active,
+.btn-success:hover,
+.btn-info.active,
+.btn-info:active,
+.btn-info:hover,
+.btn-inverse.active,
+.btn-inverse:active,
+.btn-inverse:hover {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+
+// Primary Button
+// -------------------------
+.btn-primary {
+  border: 1px solid #3079ED;
+  background-color: @btnPrimaryBackground;
+  #gradient > .vertical(#4d90fe,#4787ed);
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active,
+.btn-primary.active {
+  border: 1px solid #2F5BB7;
+  background-color: #4387f5;
+  #gradient > .vertical(#4d90fe,#357ae8);
+}
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary.disabled:focus,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+.btn-primary[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(#3079ED, 10%);
+  background-color: lighten(#4b8cf7, 10%);
+}
+
+
+// Danger Button
+// -------------------------
+.btn-danger {
+  border: 1px solid #C6322A;
+  background-color: @btnDangerBackground;
+  #gradient > .vertical(#dd4b39,#d14836);
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  border: 1px solid #AF301F;
+  background-color: #d34332;
+  #gradient > .vertical(#dd4b39,#c53727);
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #cb3d2d;
+  #gradient > .vertical(#dd4b39,#b0281a);
+}
+.btn-danger.disabled,
+.btn-danger.disabled:hover,
+.btn-danger.disabled:active,
+.btn-danger.disabled.active,
+.btn-danger.disabled:focus,
+.btn-danger[disabled],
+.btn-danger[disabled]:hover,
+.btn-danger[disabled]:active,
+.btn-danger[disabled].active,
+.btn-danger[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(#C6322A, 10%);
+  background-color: lighten(#d84a38, 10%);
+}
+
+
+// Warning Button
+// -------------------------
+.btn-warning {
+  border: 1px solid darken(@btnWarningBackground, 5%);
+  background-color: @btnWarningBackground;
+  #gradient > .vertical(@btnWarningBackground,@btnWarningBackground);
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+  border: 1px solid darken(@btnWarningBackground, 10%);
+  background-color: @btnWarningBackground;
+  #gradient > .vertical(lighten(@btnWarningBackground, 3%), darken(@btnWarningBackground, 3%));
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: darken(@btnWarningBackground, 8%);
+  #gradient > .vertical(lighten(@btnWarningBackground, 3%), darken(@btnWarningBackground, 3%));
+}
+.btn-warning.disabled,
+.btn-warning.disabled:hover,
+.btn-warning.disabled:active,
+.btn-warning.disabled.active,
+.btn-warning.disabled:focus,
+.btn-warning[disabled],
+.btn-warning[disabled]:hover,
+.btn-warning[disabled]:active,
+.btn-warning[disabled].active,
+.btn-warning[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(@btnWarningBackground, 5%);
+  background-color: lighten(@btnWarningBackground, 10%);
+}
+
+
+// Success Button
+// -------------------------
+.btn-success {
+  border: 1px solid #359947;
+  background-color: #35aa47;
+  #gradient > .vertical(#35aa47,#35aa47);
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  border: 1px solid #508c36;
+  background-color: #2ba142;
+  #gradient > .vertical(#35aa47,#1d943b);
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #239c3b;
+  #gradient > .vertical(#35aa47,#088728);
+}
+.btn-success.disabled,
+.btn-success.disabled:hover,
+.btn-success.disabled:active,
+.btn-success.disabled.active,
+.btn-success.disabled:focus,
+.btn-success[disabled],
+.btn-success[disabled]:hover,
+.btn-success[disabled]:active,
+.btn-success[disabled].active,
+.btn-success[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(#359947, 10%);
+  background-color: lighten(#35aa47, 10%);
+}
+
+
+// Info Button
+// -------------------------
+.btn-info {
+  border: 1px solid darken(@btnInfoBackground, 5%);
+  background-color: @btnInfoBackground;
+  #gradient > .vertical(@btnInfoBackground,@btnInfoBackground);
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active {
+  border: 1px solid darken(@btnInfoBackground, 10%);
+  background-color: @btnInfoBackground;
+  #gradient > .vertical(lighten(@btnInfoBackground, 3%), darken(@btnInfoBackground, 3%));
+}
+.btn-info:active,
+.btn-info.active {
+  background-color: darken(@btnInfoBackground, 8%);
+  #gradient > .vertical(lighten(@btnInfoBackground, 3%), darken(@btnInfoBackground, 3%));
+}
+.btn-info.disabled,
+.btn-info.disabled:hover,
+.btn-info.disabled:active,
+.btn-info.disabled.active,
+.btn-info.disabled:focus,
+.btn-info[disabled],
+.btn-info[disabled]:hover,
+.btn-info[disabled]:active,
+.btn-info[disabled].active,
+.btn-info[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(@btnInfoBackground, 5%);
+  background-color: lighten(@btnInfoBackground, 10%);
+}
+
+
+// Inverse Button
+// -------------------------
+.btn-inverse {
+  border: 1px solid darken(@btnInverseBackground, 5%);
+  background-color: @btnInverseBackground;
+  #gradient > .vertical(@btnInverseBackground, @btnInverseBackground);
+}
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active {
+  border: 1px solid @black;
+  background-color: @btnInverseBackground;
+  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 3%));
+}
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: darken(#2d2d2d, 8%);
+  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 3%));
+}
+.btn-inverse.disabled,
+.btn-inverse.disabled:hover,
+.btn-inverse.disabled:active,
+.btn-inverse.disabled.active,
+.btn-inverse.disabled:focus,
+.btn-inverse[disabled],
+.btn-inverse[disabled]:hover,
+.btn-inverse[disabled]:active,
+.btn-inverse[disabled].active,
+.btn-inverse[disabled]:focus {
+  color: darken(@white, 10%);
+  border-color: lighten(@btnInverseBackground, 10%);
+  background-color: lighten(@btnInverseBackground, 15%);
 }

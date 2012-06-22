@@ -7,14 +7,14 @@
 // --------------------------------------------------
 
 // Border Radius
-.border-radius(@radius: 5px) {
+.border-radius(@radius) {
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
           border-radius: @radius;
 }
 
 // Drop shadows
-.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+.box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
      -moz-box-shadow: @shadow;
           box-shadow: @shadow;
@@ -29,21 +29,6 @@
           transition: @transition;
 }
 
-// User select
-// For selecting text on the page
-.user-select(@select) {
-  -webkit-user-select: @select;
-     -moz-user-select: @select;
-       -o-user-select: @select;
-          user-select: @select;
-}
-
-// Opacity
-.opacity(@opacity: 100) {
-  opacity: @opacity / 100;
-   filter: e(%("alpha(opacity=%d)", @opacity));
-}
-
 // Background clipping
 // Heads up: FF 3.6 and under need "padding" instead of "padding-box"
 .background-clip(@clip) {
@@ -52,16 +37,60 @@
           background-clip: @clip;
 }
 
+// Background sizing
+.background-size(@size){
+  -webkit-background-size: @size;
+     -moz-background-size: @size;
+       -o-background-size: @size;
+          background-size: @size;
+}
+
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+      -ms-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+// User select
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select;
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
 
 
 // BACKGROUNDS
 // --------------------------------------------------
 
+// Add an alphatransparency value to any background or border color (via Elyse Holladay)
+#translucent {
+  .background(@color: @white, @alpha: 1) {
+    background-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+  }
+  .border(@color: @white, @alpha: 1) {
+    border-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+    .background-clip(padding-box);
+  }
+}
+
 // Gradient Bar Colors for buttons and alerts
 .gradientBar(@primaryColor, @secondaryColor) {
   #gradient > .vertical(@primaryColor, @secondaryColor);
   border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
-  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) fadein(rgba(0,0,0,0.1), 15%);
+  border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
 }
 
 // Gradients
@@ -114,8 +143,8 @@
     background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
     background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
     background-image: -ms-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
     background-repeat: no-repeat;
-    // Opera cannot do radial gradients yet
   }
   .striped(@color, @angle: -45deg) {
     background-color: @color;
@@ -133,56 +162,27 @@
 }
 
 
-// Mixin for generating button backgrounds
-// ---------------------------------------
+
+// COMPONENT MIXINS
+// --------------------------------------------------
+
+// Button backgrounds
+// ------------------
 .buttonBackground(@startColor, @endColor) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   .gradientBar(@startColor, @endColor);
+  *background-color: @endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   .reset-filter();
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:active, &.active, &.disabled, &[disabled] {
     background-color: @endColor;
+    *background-color: darken(@endColor, 5%);
   }
 
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
   &.active {
     background-color: darken(@endColor, 10%) e("\9");
-  }
-}
-
-
-// Webkit-style focus
-// ------------------
-.tab-focus() {
-  // Default
-  outline: thin dotted;
-  // Webkit
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-
-
-// IE7 likes to collapse whitespace on either side of the inline-block elements.
-// Ems because we're attempting to match the width of a space character. Left
-// version is for form buttons, which typically come after other elements, and
-// right version is for icons, which come before. Applying both is ok, but it will
-// mean that space between those elements will be .6em (~2 space characters) in IE7,
-// instead of the 1 space in other browsers.
-.ie7-restore-left-whitespace() {
-  *margin-left: .3em;
-
-  &:first-child {
-    *margin-left: 0;
-  }
-}
-
-.ie7-restore-right-whitespace() {
-  *margin-right: .3em;
-
-  &:last-child {
-    *margin-left: 0;
   }
 }
