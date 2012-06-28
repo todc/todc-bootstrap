@@ -96,6 +96,7 @@ textarea {
 // Reset height since textareas have rows
 textarea {
   height: auto;
+  padding-right: 4px;
 }
 // Everything else
 textarea,
@@ -123,14 +124,18 @@ input[type="color"],
 
   &:hover {
     border: 1px solid #b9b9b9;
+    border-top: 1px solid #a0a0a0;
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
+    z-index: 2;
   }
 
   // Focus state
-  &:focus {
+  &:focus,
+  &.focused {
     outline: none;
     border: 1px solid #4d90fe;
     .transition(none);
-    .box-shadow(none);
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
   }
 }
 
@@ -204,7 +209,8 @@ input[type="checkbox"]:focus {
 }
 
 // Google style
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
   width: 13px;
@@ -215,26 +221,46 @@ input[type="checkbox"] {
   .box-sizing(border-box);
   position: relative;
 }
+input[type="radio"] {
+  .border-radius(1em);
+  width: 15px;
+  height: 15px;
+}
 input[type="checkbox"]:hover {
   border-color: #c6c6c6;
   .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
 }
-input[type="checkbox"]:active {
+input[type="checkbox"]:active,
+input[type="radio"]:active {
+  border-color: #c6c6c6;
   background: #EBEBEB;
 }
-input[type=checkbox]:checked {
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
   background: #fff;
 }
-input[type=checkbox]:checked::after {
+input[type="checkbox"]:checked::after {
   content: url(../img/checkmark.png);
   display: block;
   position: absolute;
   top: -6px;
   left: -5px;
 }
-input[type=checkbox]:focus {
+input[type="radio"]:checked::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  background: #666;
+  .border-radius(1em);
+}
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
   outline: none;
-  border-color:#4d90fe;
+  border-color: #4d90fe;
 }
 
 // Move the options list down to align with labels
