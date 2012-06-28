@@ -63,6 +63,9 @@
   /* Blue border on button focus. */
   border-color: #4D90FE;
 }
+.btn.active {
+  background: #e8e8e8;
+}
 /* overrides extra padding on button elements in Firefox */
 .btn::-moz-focus-inner {
   padding: 0;
@@ -189,6 +192,9 @@
   background-color: #4387f5;
   #gradient > .vertical(#4d90fe,#357ae8);
 }
+.btn-primary.active {
+  background: darken(#4387f5, 10%);
+}
 .btn-primary.disabled,
 .btn-primary.disabled:hover,
 .btn-primary.disabled:active,
@@ -223,6 +229,10 @@
 .btn-danger.active {
   background-color: #cb3d2d;
   #gradient > .vertical(#dd4b39,#b0281a);
+}
+.btn-danger.active {
+  border-color: darken(#cb3d2d, 10%);
+  background: darken(#cb3d2d, 2%);
 }
 .btn-danger.disabled,
 .btn-danger.disabled:hover,
@@ -259,6 +269,10 @@
   background-color: @btnWarningBackground;
   #gradient > .vertical(lighten(@orange, 15%), @orange);
 }
+.btn-warning.active {
+  border-color: darken(@btnWarningBackground, 15%);
+  background-color: darken(@btnWarningBackground, 10%);
+}
 .btn-warning.disabled,
 .btn-warning.disabled:hover,
 .btn-warning.disabled:active,
@@ -294,6 +308,10 @@
   background-color: #239c3b;
   #gradient > .vertical(#35aa47,#088728);
 }
+.btn-success.active {
+  border-color: darken(#239c3b, 10%);
+  background: darken(#239c3b, 5%);
+}
 .btn-success.disabled,
 .btn-success.disabled:hover,
 .btn-success.disabled:active,
@@ -328,6 +346,10 @@
 .btn-info.active {
   background-color: darken(@btnInfoBackground, 8%);
   #gradient > .vertical(lighten(@btnInfoBackground, 3%), darken(@btnInfoBackground, 3%));
+}
+.btn-info.active {
+  border-color: darken(@btnInfoBackground, 15%);
+  background: darken(@btnInfoBackground, 10%);
 }
 .btn-info.disabled,
 .btn-info.disabled:hover,
