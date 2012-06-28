@@ -203,6 +203,40 @@ input[type="checkbox"]:focus {
   margin-left: -18px;
 }
 
+// Google style
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  background: white;
+  border: 1px solid #dcdcdc;
+  .border-radius(1px);
+  .box-sizing(border-box);
+  position: relative;
+}
+input[type="checkbox"]:hover {
+  border-color: #c6c6c6;
+  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
+}
+input[type="checkbox"]:active {
+  background: #EBEBEB;
+}
+input[type=checkbox]:checked {
+  background: #fff;
+}
+input[type=checkbox]:checked::after {
+  content: url(../img/checkmark.png);
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -5px;
+}
+input[type=checkbox]:focus {
+  outline: none;
+  border-color:#4d90fe;
+}
+
 // Move the options list down to align with labels
 .controls > .radio:first-child,
 .controls > .checkbox:first-child {
