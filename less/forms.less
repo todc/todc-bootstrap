@@ -334,13 +334,25 @@ textarea[class*="span"],
 // Disabled and read-only inputs
 input[disabled],
 select[disabled],
-textarea[disabled],
+textarea[disabled] {
+  cursor: not-allowed;
+  border: 1px solid #e5e5e5;
+  background: #f1f1f1;
+
+  &:hover {
+    .box-shadow(none);
+  }
+}
 input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: @inputDisabledBackground;
-  border-color: #ddd;
+  border: 1px solid #d9d9d9;
+
+  &:hover,
+  &:focus {
+    .box-shadow(none);
+  }
 }
 // Explicitly reset the colors here
 input[type="radio"][disabled],
