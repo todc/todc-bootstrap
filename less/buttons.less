@@ -245,19 +245,19 @@
 .btn-warning {
   border: 1px solid darken(@btnWarningBackground, 5%);
   background-color: @btnWarningBackground;
-  #gradient > .vertical(@btnWarningBackground,@btnWarningBackground);
+  #gradient > .vertical(lighten(@orange, 15%), lighten(@orange, 10%));
 }
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active {
-  border: 1px solid darken(@btnWarningBackground, 10%);
+  border: 1px solid darken(@btnWarningBackground, 15%);
   background-color: @btnWarningBackground;
-  #gradient > .vertical(lighten(@btnWarningBackground, 3%), darken(@btnWarningBackground, 3%));
+  #gradient > .vertical(lighten(@orange, 15%), @orange);
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: darken(@btnWarningBackground, 8%);
-  #gradient > .vertical(lighten(@btnWarningBackground, 3%), darken(@btnWarningBackground, 3%));
+  background-color: @btnWarningBackground;
+  #gradient > .vertical(lighten(@orange, 15%), @orange);
 }
 .btn-warning.disabled,
 .btn-warning.disabled:hover,
