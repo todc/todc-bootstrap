@@ -80,7 +80,7 @@
 // -------------------------
 @inputBackground:               @white;
 @inputBorderRadius:             1px;
-@inputDisabledBackground:       @grayLighter;
+@inputDisabledBackground:       #f1f1f1;
 @formActionsBackground:         #f5f5f5;
 
 
@@ -155,21 +155,21 @@
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
-@warningBackground:       #fcf8e3;
-@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+@warningText:             #333; //#c09853;
+@warningBackground:       #f9edbe;
+@warningBorder:           #f0c36d;
 
-@errorText:               #b94a48;
+@errorText:               #DD4B39;
 @errorBackground:         #f2dede;
-@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+@errorBorder:             #DD4B39;
 
 @successText:             #468847;
 @successBackground:       #dff0d8;
-@successBorder:           darken(spin(@successBackground, -10), 5%);
+@successBorder:           darken(@successBackground, 20%);
 
 @infoText:                #3a87ad;
 @infoBackground:          #d9edf7;
-@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+@infoBorder:              darken(@infoBackground, 20%);
 
 
 

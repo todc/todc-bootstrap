@@ -1,14 +1,63 @@
-// alerts.less
-// -----------------------------------------------------
+// ALERT STYLES
+// ------------
 
+// Base alert styles
 .alert {
-    color: #222;
-    padding: 8px 35px 8px 14px;
-    margin-bottom: 18px;
-    line-height: 18px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    background-color: #f9edbe;
-    border: 1px solid #f0c36d;
-    .border-radius(4px);
-    display: none;
+  padding: 8px 35px 8px 10px;
+  margin-bottom: @baseLineHeight;
+  //text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: none;
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(2px);
+  .box-shadow(0 2px 4px rgba(0,0,0,0.2));
+  color: @warningText;
+}
+.alert-heading {
+  color: inherit;
+}
+
+// Adjust close link position
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+// Alternate styles
+// ----------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;  
+  color: @successText;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: darken(@errorBackground, 20%);
+  color: #b94a48;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+// Block alerts
+// ------------------------
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
 }
