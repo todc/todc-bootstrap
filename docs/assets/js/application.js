@@ -84,6 +84,9 @@
         e.preventDefault()
       })
 
+    // google-styled select menus
+    $("select:not([multiple])").gSelect();
+
     // button state demo
     $('#fat-btn')
       .click(function () {

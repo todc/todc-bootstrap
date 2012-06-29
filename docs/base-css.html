@@ -986,10 +986,10 @@ For example, &lt;code&gt;section&lt;/code&gt; should be wrapped as inline.
           <div class="control-group">
             <label class="control-label" for="select01">Select list</label>
             <div class="controls">
-              <select id="select01">
-                <option>something</option>
-                <option>2</option>
-                <option>3</option>
+              <select id="select01" class="g-select">
+                <option value="val-something">something</option>
+                <option value="val-2">2</option>
+                <option value="val-3">3</option>
                 <option>4</option>
                 <option>5</option>
               </select>
@@ -1111,8 +1111,8 @@ For example, &lt;code&gt;section&lt;/code&gt; should be wrapped as inline.
               <span class="help-inline">Woohoo!</span>
             </div>
           </div>
-          <div class="control-group success">
-            <label class="control-label" for="selectError">Select with success</label>
+          <div class="control-group error">
+            <label class="control-label" for="selectError">Select with error</label>
             <div class="controls">
               <select id="selectError">
                 <option>1</option>
@@ -1121,7 +1121,7 @@ For example, &lt;code&gt;section&lt;/code&gt; should be wrapped as inline.
                 <option>4</option>
                 <option>5</option>
               </select>
-              <span class="help-inline">Woohoo!</span>
+              <span class="help-inline">Uhoh!</span>
             </div>
           </div>
           <div class="form-actions">
@@ -1715,6 +1715,7 @@ For example, &lt;code&gt;section&lt;/code&gt; should be wrapped as inline.
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/application.js"></script>
 
-
+    <script src="../js/google-select-dropdown.js"></script>
+    <script src="../js/google-select.js"></script>
   </body>
 </html>
