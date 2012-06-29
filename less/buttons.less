@@ -370,21 +370,21 @@
 // Inverse Button
 // -------------------------
 .btn-inverse {
-  border: 1px solid darken(@btnInverseBackground, 5%);
+  border: 1px solid darken(@btnInverseBackground, 3%);
   background-color: @btnInverseBackground;
-  #gradient > .vertical(@btnInverseBackground, @btnInverseBackground);
+  #gradient > .vertical(lighten(@btnInverseBackground, 1%), darken(@btnInverseBackground, 1%));
 }
 .btn-inverse:hover,
 .btn-inverse:focus,
 .btn-inverse:active {
-  border: 1px solid @black;
+  border: 1px solid darken(@btnInverseBackground, 9%);
   background-color: @btnInverseBackground;
-  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 3%));
+  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 6%));
 }
 .btn-inverse:active,
 .btn-inverse.active {
   background-color: darken(#2d2d2d, 8%);
-  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 3%));
+  #gradient > .vertical(lighten(@btnInverseBackground, 1%), darken(@btnInverseBackground, 9%));
 }
 .btn-inverse.disabled,
 .btn-inverse.disabled:hover,
