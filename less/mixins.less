@@ -169,6 +169,7 @@
     color: @textColor;
   }
   // Style inputs accordingly
+  .g-select,
   .checkbox,
   .radio,
   input,
@@ -664,7 +665,7 @@
   .input(@gridColumnWidth, @gridGutterWidth) {
 
     .spanX (@index) when (@index > 0) {
-      (~"input.span@{index}, textarea.span@{index}, .uneditable-input.span@{index}") { .span(@index); }
+      (~"input.span@{index}, textarea.span@{index}, .uneditable-input.span@{index}, .g-select.span@{index}") { .span(@index); }
       .spanX(@index - 1);
     }
     .spanX (0) {}
