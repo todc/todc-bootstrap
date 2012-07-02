@@ -1,6 +1,36 @@
 // BUTTON GROUPS
 // -------------
 
+// Make the div behave like a button
+.btn-group {
+  position: relative;
+  .clearfix(); // clears the floated buttons
+  .ie7-restore-left-whitespace();
+}
+
+// Space out series of button groups
+.btn-group + .btn-group {
+  margin-left: 5px;
+}
+
+// Optional: Group multiple button groups together for a toolbar
+.btn-toolbar {
+  margin-top: @baseLineHeight / 2;
+  margin-bottom: @baseLineHeight / 2;
+  .btn-group {
+    display: inline-block;
+    .ie7-inline-block();
+  }
+}
+
+// Float them, remove border radius, then re-add to first and last elements
+.btn-group > .btn {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  .border-radius(0);
+}
+
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -40,6 +70,20 @@
   -webkit-border-bottom-right-radius: 2px;
       -moz-border-radius-bottomright: 2px;
           border-bottom-right-radius: 2px;
+}
+
+// On hover/focus/active, bring the proper btn to front
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active,
+.btn-group > .btn.active {
+  z-index: 2;
+}
+
+// On active and open, don't show outline
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
+  outline: 0;
 }
 
 
