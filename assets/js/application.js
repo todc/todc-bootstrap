@@ -12,7 +12,7 @@
     })
 
     // make code pretty
-    window.prettyPrint && prettyPrint(); ("select:not([multiple])").gSelect()()
+    window.prettyPrint && prettyPrint(); $("select:not([multiple])").gSelect()
 
     // add-ons
     $('.add-on :checkbox').on('click', function () {
