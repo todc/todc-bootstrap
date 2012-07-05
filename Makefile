@@ -29,13 +29,11 @@ docs:
 	@cp js/*.js ./docs/assets/js/
 	@cp img/* ./docs/assets/img/
 	
-	@sed -i '' 's/<\/head>/  <link href=\"assets\/css\/google-bootstrap\.css\" rel=\"stylesheet\"><\/head>/g' ./docs/*.html
-	@sed -i '' 's/<script src="assets\/js\/application.js"><\/script>/<script src="assets\/js\/google-select-dropdown.js"><\/script><script src="assets\/js\/google-select.js"><\/script><script src="assets\/js\/application.js"><\/script>/g' ./docs/*.html
-	@sed -i '' 's/window\.prettyPrint \&\& prettyPrint\(\)/window\.prettyPrint \&\& prettyPrint\(\); \$\("select\:not\(\[multiple\]\)"\)\.gSelect\(\)/g' ./docs/assets/js/application.js
+	@sed -i '' 's|</head>|<link href="assets/css/google-bootstrap.css" rel="stylesheet"></head>|g' ./docs/*.html
+	@sed -i '' 's|<script src="assets/js/application.js"></script>|<script src="assets/js/google-select-dropdown.js"></script><script src="assets/js/google-select.js"></script><script src="assets/js/application.js"></script>|g' ./docs/*.html
+	@sed -i '' 's|window.prettyPrint \&\& prettyPrint()|window.prettyPrint \&\& prettyPrint\(\)\; $$("select:not([multiple])").gSelect() |' ./docs/assets/js/application.js
 
 	@rm -rf docs/build
 	@rm -rf docs/templates
-
-	cp -r docs/* ../google-bootstrap-pages/
 
 .PHONY: build docs checkout_bootstrap
