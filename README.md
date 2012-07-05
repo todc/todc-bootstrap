@@ -3,9 +3,14 @@
 Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
 the look of these new UI elements for my own personal use.
 
-## Browser compatibility ##
+## Compatibility ##
 
 This is being tested in the latest versions of Chrome, Firefox, and IE8+.
+
+Notes:
+* If you popovers plugin, be sure to use the updated version found in `js/bootstrap-popovers.js`.
+* To use Google-styled menus, include the google-select*.js files from the `js` directory. You can activate the styling via jquery by calling `$("select:not([multiple])").gSelect()`.
+
 
 ## Requirements ##
 
