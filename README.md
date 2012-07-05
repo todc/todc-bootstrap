@@ -9,14 +9,13 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 ## Requirements ##
 
-[LESS](http://lesscss.org) - for compiling `.less` files into CSS
+* [LESS](http://lesscss.org) - for compiling `.less` files into CSS
+* [Twitter Bootstrap](http://github.com/twitter/bootstrap) - this will be automatically checked out, if necessary, during the build process
 
 
 ## Building ##
 
-To build the CSS file, simply run the `.less` files through `lessc`:
-
-  lessc less/bootstrap-google.less > bootstrap-google.css
+To build the CSS file, simply run `make` from the top-level directory.
 
 
 ## Demo ##

@@ -1,44 +1,6 @@
 // DROPDOWN MENUS
 // --------------
 
-// Use the .menu class on any <li> element within the topbar or ul.tabs and you'll get some superfancy dropdowns
-.dropup,
-.dropdown {
-  position: relative;
-}
-.dropdown-toggle {
-  // The caret makes the toggle a bit too tall in IE7
-  *margin-bottom: -3px;
-}
-.dropdown-toggle:active,
-.open .dropdown-toggle {
-  outline: 0;
-}
-
-// Dropdown arrow/caret
-// --------------------
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  vertical-align: top;
-  border-top:   4px solid @black;
-  border-right: 4px solid transparent;
-  border-left:  4px solid transparent;
-  content: "";
-  .opacity(30);
-}
-
-// Place the caret
-.dropdown .caret {
-  margin-top: 8px;
-  margin-left: 2px;
-}
-.dropdown:hover .caret,
-.open .caret {
-  .opacity(100);
-}
-
 // The dropdown menu (ul)
 // ----------------------
 .g-select-dropdown,
@@ -121,36 +83,8 @@
   }
 }
 
-// Right aligned dropdowns
-// ---------------------------
-.pull-right > .dropdown-menu {
-  right: 0;
-  left: auto;
-}
-
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
-// ------------------------------------------------------
-// Just add .dropup after the standard .dropdown class and you're set, bro.
-// TODO: abstract this so that the navbar fixed styles are not placed here?
-.dropup,
-.navbar-fixed-bottom .dropdown {
-  // Reverse the caret
-  .caret {
-    border-top: 0;
-    border-bottom: 4px solid @black;
-    content: "\2191";
-  }
-  // Different positioning for bottom up menu
-  .dropdown-menu {
-    top: auto;
-    bottom: 100%;
-    margin-bottom: 1px;
-  }
-}
-
 // Typeahead
 // ---------
 .typeahead {
-  margin-top: 2px; // give it some space to breathe
   .border-radius(0);
 }

@@ -1,24 +1,11 @@
 // PAGINATION
 // ----------
 
-.pagination {
-  height: @baseLineHeight * 2;
-  margin: @baseLineHeight 0;
- }
 .pagination ul {
-  display: inline-block;
-  .ie7-inline-block();
-  margin-left: 0;
-  margin-bottom: 0;
   .border-radius(2px);
-  .box-shadow(0 1px 2px rgba(0,0,0,.05));
-}
-.pagination li {
-    display: inline;
 }
 .pagination a {
   position: relative;
-  float: left;
   padding: 4px 12px;
   margin-left: -1px;
 
@@ -33,7 +20,6 @@
   line-height: @baseLineHeight;
   text-align: center;
   text-shadow: 0 1px 0 #fff;
-  text-decoration: none;
   white-space: nowrap;
 
   cursor: default;
@@ -59,7 +45,6 @@
 }
 .pagination .active a {
   color: #4D90FE;
-  cursor: default;
 }
 .pagination .disabled span,
 .pagination .disabled a,
@@ -80,12 +65,4 @@
 }
 .pagination li:last-child a {
   .border-radius(0 2px 2px 0);
-}
-
-// Centered
-.pagination-centered {
-  text-align: center;
-}
-.pagination-right {
-  text-align: right;
 }

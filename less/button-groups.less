@@ -1,36 +1,6 @@
 // BUTTON GROUPS
 // -------------
 
-// Make the div behave like a button
-.btn-group {
-  position: relative;
-  .clearfix(); // clears the floated buttons
-  .ie7-restore-left-whitespace();
-}
-
-// Space out series of button groups
-.btn-group + .btn-group {
-  margin-left: 5px;
-}
-
-// Optional: Group multiple button groups together for a toolbar
-.btn-toolbar {
-  margin-top: @baseLineHeight / 2;
-  margin-bottom: @baseLineHeight / 2;
-  .btn-group {
-    display: inline-block;
-    .ie7-inline-block();
-  }
-}
-
-// Float them, remove border radius, then re-add to first and last elements
-.btn-group > .btn {
-  position: relative;
-  float: left;
-  margin-left: -1px;
-  .border-radius(0);
-}
-
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -72,20 +42,6 @@
           border-bottom-right-radius: 2px;
 }
 
-// On hover/focus/active, bring the proper btn to front
-.btn-group > .btn:hover,
-.btn-group > .btn:focus,
-.btn-group > .btn:active,
-.btn-group > .btn.active {
-  z-index: 2;
-}
-
-// On active and open, don't show outline
-.btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle {
-  outline: 0;
-}
-
 
 
 // Split button dropdowns
@@ -93,11 +49,7 @@
 
 // Give the line between buttons some depth
 .btn-group > .dropdown-toggle {
-  padding-left: 8px;
-  padding-right: 8px;
-  .box-shadow(inset 0 0 0 rgba(0,0,0,0));
-  *padding-top: 4px;
-  *padding-bottom: 4px;
+  .box-shadow(none);
 }
 .btn-group > .dropdown-toggle:hover {
   .box-shadow(0 1px 1px rgba(0,0,0,0.1));
@@ -143,7 +95,6 @@
   // The clickable button for toggling the menu
   // Remove the gradient and set the same inset shadow as the :active state
   .dropdown-toggle {
-    background-image: none;
     .box-shadow(inset 0 1px 6px rgba(0, 0, 0, 0.15));
   }
 
@@ -182,11 +133,6 @@
 // Reposition the caret
 .btn .caret {
   margin-top: 8px;
-  margin-left: 0;
-}
-.btn:hover .caret,
-.open.btn-group .caret {
-  .opacity(100);
 }
 // Carets in other button sizes
 .btn-mini .caret {
@@ -197,29 +143,4 @@
 }
 .btn-large .caret {
   margin-top: 6px;
-  border-left-width:  5px;
-  border-right-width: 5px;
-  border-top-width:   5px;
 }
-// Upside down carets for .dropup
-.dropup .btn-large .caret {
-  border-bottom: 5px solid @black;
-  border-top: 0;
-}
-
-
-
-// Account for other colors
-.btn-primary,
-.btn-warning,
-.btn-danger,
-.btn-info,
-.btn-success,
-.btn-inverse {
-  .caret {
-    border-top-color: @white;
-    border-bottom-color: @white;
-    .opacity(75);
-  }
-}
-

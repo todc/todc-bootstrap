@@ -1,6 +1,7 @@
 // Variables.less
-// Variables to customize the look and feel of Bootstrap-Google
+// Variables to customize the look and feel of Google-Bootstrap
 // ------------------------------------------------------------
+
 
 
 // GLOBAL VALUES
@@ -41,13 +42,14 @@
 @linkColor:             #15c;
 @linkColorHover:        #15c;
 
+
 // Typography
 // -------------------------
 @sansFontFamily:        Arial, Helvetica, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
-@baseFontSize:          12px;
+@baseFontSize:          13px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -68,21 +70,35 @@
 // Buttons
 // -------------------------
 @btnBackground:                     #f3f3f3;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc;
+
 @btnPrimaryBackground:              #4b8cf7;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
 @btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
 @btnSuccessBackground:              #35aa47;
-@btnWarningBackground:              lighten(@orange, 10%); //#FBB450;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 10%);
+@btnWarningBackgroundHighlight:     @orange;
+
 @btnDangerBackground:               #d84a38;
+@btnDangerBackgroundHighlight:      #bd362f;
+
 @btnInverseBackground:              #4e4e4e;
+@btnInverseBackgroundHighlight:     @grayDarker;
 
 
 // Forms
 // -------------------------
 @inputBackground:               @white;
+@inputBorder:                   #ccc;
 @inputBorderRadius:             1px;
 @inputDisabledBackground:       #f1f1f1;
 @formActionsBackground:         #f5f5f5;
-
 
 // Dropdowns
 // -------------------------
@@ -93,6 +109,7 @@
 @dropdownLinkBackgroundHover:   #eee;
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @white;
+
 
 
 // COMPONENT VARIABLES
