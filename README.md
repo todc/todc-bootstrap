@@ -20,7 +20,9 @@ Notes:
 
 ## Building ##
 
-To build the CSS file, simply run `make` from the top-level directory.
+To build the CSS file, simply run `make` from the top-level directory. If necessary, Twitter Bootstrap will be automatically checked out.
+
+The resulting CSS file will be found at `dist/google-bootstrap.css`.
 
 
 ## Demo ##
