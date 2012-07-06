@@ -27,7 +27,7 @@ The resulting CSS file will be found at `dist/google-bootstrap.css`.
 
 ## Demo ##
 
-http://todc.github.com/css3-google-buttons/docs/index.html
+http://todc.github.com/css3-google-buttons/index.html
 
 
 ## License ##
