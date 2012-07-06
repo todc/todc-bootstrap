@@ -1133,6 +1133,14 @@ select:focus:required:invalid:focus {
   border-color: #ddd;
   z-index: 2;
 }
+.nav-tabs > li > a {
+  color: #666;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  font-weight: bold;
+  color: #333;
+}
 .nav-tabs .dropdown-menu {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
