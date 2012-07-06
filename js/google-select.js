@@ -18,7 +18,7 @@
 
     var $container = $('<div>').addClass('btn-group');
     var $btn = $('<a>', { text: 'Select...'}).addClass('btn g-select');
-    var $menu = $('<ul>').addClass('g-select-dropdown');
+    var $menu = $('<ul>').addClass('g-select-dropdown scrollable');
 
     $btn.addClass($el.attr('class'));
 
