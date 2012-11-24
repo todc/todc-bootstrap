@@ -2,7 +2,7 @@ DIST_DIR = dist
 CSS_FILE = ${DIST_DIR}/google-bootstrap.css
 BOOTSTRAP_DIR = bootstrap
 BOOTSTRAP_URL = https://github.com/twitter/bootstrap.git
-BOOTSTRAP_VERSION = v2.0.4
+BOOTSTRAP_VERSION = v2.2.1
 
 build:
 	@test -d $(BOOTSTRAP_DIR) || $(MAKE) checkout_bootstrap
@@ -28,7 +28,7 @@ docs:
 	@cp ${CSS_FILE} docs/assets/css/
 	@cp js/*.js ./docs/assets/js/
 	@cp img/* ./docs/assets/img/
-	
+
 	@sed -i '' 's|</head>|<link href="assets/css/google-bootstrap.css" rel="stylesheet"></head>|g' ./docs/*.html
 	@sed -i '' 's|<script src="assets/js/application.js"></script>|<script src="assets/js/google-select-dropdown.js"></script><script src="assets/js/google-select.js"></script><script src="assets/js/application.js"></script>|g' ./docs/*.html
 	@sed -i '' 's|window.prettyPrint \&\& prettyPrint()|window.prettyPrint \&\& prettyPrint(); $$("select:not([multiple])").gSelect() |' ./docs/assets/js/application.js
