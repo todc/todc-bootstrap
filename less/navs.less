@@ -1,16 +1,35 @@
-// NAVIGATIONS
-// -----------
+//
+// Navs
+// --------------------------------------------------
+
+
+// NAV LIST
+// --------
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   background-color: #4D90FE;
 }
 
+
+// TABS
+// ----
+
 // Actual tabs (as links)
 .nav-tabs > li > a {
   .border-radius(2px 2px 0 0);
+  color: #666;
 }
 
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+    font-weight: bold;
+    color: #333;
+}
+
+
+// PILLS
+// -----
 // Links rendered as pills
 .nav-pills > li > a {
   .border-radius(2px);
@@ -23,6 +42,10 @@
 }
 
 
+
+// STACKED NAV
+// -----------
+
 .nav-tabs.nav-stacked > li:first-child > a {
   .border-radius(2px 2px 0 0);
 }
@@ -34,18 +57,6 @@
   z-index: 2;
 }
 
-
-// TABS
-// ----
-
-.nav-tabs > li > a {
-    color: #666;
-}
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-    font-weight: bold;
-    color: #333;
-}
 
 
 // DROPDOWNS
