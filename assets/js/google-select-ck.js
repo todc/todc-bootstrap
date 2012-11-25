@@ -1,0 +1,4 @@
+/* ===========================================================
+ * google-select.js v1.0.0
+ * http://todc.github.com/google-bootstrap
+ * =========================================================== */!function(e){"use strict";var t=function(t){var n=e(t);n.hide();var r=e("<div>").addClass("btn-group"),i=e("<a>",{text:"Select..."}).addClass("btn g-select"),s=e("<ul>").addClass("g-select-dropdown scrollable");i.addClass(n.attr("class"));e.each(t.options,function(t,n){var r=e("<li>",{text:n.text});r.data("val",n.value?n.value:n.text);s.append(r)});n.after(r);r.append(i);i.after(s);e.each(s.children(),function(t,r){e(r).click(function(){i.text(e(this).text());n.val(e(this).data("val")).change()})});i.gSelectDropdown()};t.prototype={constructor:t,toggle:function(e){}};e.fn.gSelect=function(n){return this.each(function(){var r=e(this),i=r.data("gSelect");i||r.data("gSelect",i=new t(this));typeof n=="string"&&i[n].call(r)})};e.fn.gSelect.Constructor=t}(window.jQuery);
