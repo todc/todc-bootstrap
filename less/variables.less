@@ -178,9 +178,13 @@
 
 // Navbar
 // -------------------------
+@navbarCollapseWidth:             979px;
+@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
+
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
 @navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                @grayDarker;
+@navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      @grayLight;
 @navbarLinkColor:                 @grayLight;
@@ -189,10 +193,6 @@
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      @navbarBackground;
 
-@navbarSearchBackground:          lighten(@navbarBackground, 25%);
-@navbarSearchBackgroundFocus:     @white;
-@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
-@navbarSearchPlaceholderColor:    #ccc;
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
