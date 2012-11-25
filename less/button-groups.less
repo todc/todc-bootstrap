@@ -48,7 +48,7 @@
 // ----------------------
 
 // Give the line between buttons some depth
-.btn-group > .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle {
   .box-shadow(none);
 }
 .btn-group > .dropdown-toggle:hover {
@@ -56,7 +56,7 @@
 }
 .btn-group > .btn-primary.dropdown-toggle:hover,
 .btn-group > .btn-info.dropdown-toggle:hover,
-.btn-group > .btn-warning.dropdown-toggle:hover, 
+.btn-group > .btn-warning.dropdown-toggle:hover,
 .btn-group > .btn-danger.dropdown-toggle:hover,
 .btn-group > .btn-success.dropdown-toggle:hover,
 .btn-group > .btn-inverse.dropdown-toggle:hover {
@@ -91,7 +91,7 @@
 }
 
 .btn-group.open {
-  
+
   // The clickable button for toggling the menu
   // Remove the gradient and set the same inset shadow as the :active state
   .dropdown-toggle {
