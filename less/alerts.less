@@ -4,8 +4,31 @@
 .alert {
   padding: 8px 35px 8px 10px;
   text-shadow: none;
-  .border-radius(2px);
   .box-shadow(0 2px 4px rgba(0,0,0,0.2));
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(@baseBorderRadius);
+  color: @grayDark;
+}
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
 }
 
 .alert-success,
