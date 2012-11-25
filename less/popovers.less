@@ -1,36 +1,8 @@
-// POPOVERS
-// --------
+//
+// Popovers
+// --------------------------------------------------
+
 
 .popover {
-  &.top .arrow          { #popoverArrowBig > .top(); }
-  &.top .arrowbefore    { #popoverArrowBig > .top(10px, #bbb); }
-
-  &.right .arrow        { #popoverArrowBig > .right(); }
-  &.right .arrowbefore  { #popoverArrowBig > .right(10px, #bbb); }
-
-  &.bottom .arrow       { #popoverArrowBig > .bottom(); }
-  &.bottom .arrowbefore { #popoverArrowBig > .bottom(10px, #bbb); }
-
-  &.left .arrow         { #popoverArrowBig > .left();  }
-  &.left .arrowbefore   { #popoverArrowBig > .left(10px, #bbb);  }
-
-  .arrowbefore {
-    position: absolute;
-    width: 0;
-    height: 0;
-  }
-}
-.popover-inner {
-  padding: 0px;
-  border: 1px solid;
-  border-color: #bbb #bbb #a8a8a8;
-  background: #bbb; // has to be full background declaration for IE fallback
-  .border-radius(0);
-  .box-shadow(0 1px 3px rgba(0,0,0,0.2));
-}
-.popover-title {
-  .border-radius(0);
-}
-.popover-content {
   .border-radius(0);
 }
