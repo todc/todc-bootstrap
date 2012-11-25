@@ -122,11 +122,16 @@
 // -------------------------
 @dropdownBackground:            @white;
 @dropdownBorder:                rgba(0,0,0,.2);
-@dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @grayDark;
-@dropdownLinkBackgroundHover:   #eee;
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @white;
+
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @grayDark;
+@dropdownLinkColorActive:       @dropdownLinkColor;
+
+@dropdownLinkBackgroundActive:  @linkColor;
+//@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+@dropdownLinkBackgroundHover:   #eee;
 
 
 
@@ -159,6 +164,16 @@
 // Hr border color
 // -------------------------
 @hrBorder:                @grayLighter;
+
+
+// Horizontal forms & lists
+// -------------------------
+@horizontalComponentOffset:       180px;
+
+
+// Wells
+// -------------------------
+@wellBackground:                  #f1f1f1;
 
 
 // Navbar
