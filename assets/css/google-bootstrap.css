@@ -1435,6 +1435,46 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.label-important,
+.badge-important {
+  background-color: #dd4b39;
+}
+.label-important[href],
+.badge-important[href] {
+  background-color: #c23321;
+}
+.label-warning,
+.badge-warning {
+  background-color: #f89406;
+}
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+.label-success,
+.badge-success {
+  background-color: #468847;
+}
+.label-success[href],
+.badge-success[href] {
+  background-color: #356635;
+}
+.label-info,
+.badge-info {
+  background-color: #3a87ad;
+}
+.label-info[href],
+.badge-info[href] {
+  background-color: #2d6987;
+}
+.label-inverse,
+.badge-inverse {
+  background-color: #333333;
+}
+.label-inverse[href],
+.badge-inverse[href] {
+  background-color: #1a1a1a;
+}
 .progress {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
