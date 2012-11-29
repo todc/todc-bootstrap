@@ -20,7 +20,40 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
 }
 
+// Dividers in navbar
+// -------------------------
+.navbar .divider-vertical {
+  height: @navbarHeight;
+}
 
+// Buttons in navbar
+// -------------------------
+.navbar .btn,
+.navbar .btn-group {
+  .navbarVerticalAlign(26px); // Vertically center in navbar
+  padding: 2px 14px;
+}
+
+// Navbar forms
+// -------------------------
+.navbar-form {
+  input,
+  select,
+  .radio,
+  .checkbox {
+    .navbarVerticalAlign(26px); // Vertically center in navbar
+    padding: 2px 14px;
+  }
+}
+
+// Navbar search
+// -------------------------
+.navbar-search {
+  .navbarVerticalAlign(26px); // Vertically center in navbar
+  .search-query {
+    padding: 2px 14px;
+  }
+}
 
 // NAVIGATION
 // ----------

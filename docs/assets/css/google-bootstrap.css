@@ -1287,6 +1287,27 @@ select:focus:required:invalid:focus {
 .navbar .brand {
   padding: 5px 20px 5px;
 }
+.navbar .divider-vertical {
+  height: 30px;
+}
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 2px;
+  padding: 2px 14px;
+}
+.navbar-form input,
+.navbar-form select,
+.navbar-form .radio,
+.navbar-form .checkbox {
+  margin-top: 2px;
+  padding: 2px 14px;
+}
+.navbar-search {
+  margin-top: 2px;
+}
+.navbar-search .search-query {
+  padding: 2px 14px;
+}
 .navbar .nav > li > a {
   padding: 5px 15px 5px;
 }
