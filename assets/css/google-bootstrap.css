@@ -1233,6 +1233,30 @@ select:focus:required:invalid:focus {
   font-weight: bold;
   color: #333;
 }
+.nav-tabs-google > li > a {
+  color: #777;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  line-height: 20px;
+  border: 1px solid transparent;
+}
+.nav-tabs-google > li > a:hover {
+  background-color: #ffffff;
+  color: #222;
+  border-color: #ffffff #ffffff #ffffff;
+}
+.nav-tabs-google > li > a:active {
+  color: #dd4b39;
+}
+.nav-tabs-google li.active {
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google > .active > a,
+.nav-tabs-google > .active > a:hover {
+  font-weight: bold;
+  color: #dd4b39;
+  border: 1px solid transparent;
+}
 .nav-pills > li > a {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
