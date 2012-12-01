@@ -63,3 +63,78 @@
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
 }
+
+
+// Google Navbar
+// -------------------------
+.navbar-googlebar {
+
+  // Plain text in topbar
+  // -------------------------
+  .navbar-text {
+    margin-bottom: 0;
+    line-height: @navbarHeight;
+  }
+
+  // Dividers in navbar
+  // -------------------------
+  .divider-vertical {
+    height: @navbarHeight;
+    margin: 0 9px;
+    border-left: 1px solid @navbarGoogleBarBackground;
+    border-right: 1px solid @navbarGoogleBarBackgroundHighlight;
+  }
+
+  // Inner for background effects
+  // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+  .navbar-inner {
+    height: @navbarGoogleBarHeight;
+    margin: 0px;
+    padding: 24px 44px;
+    // padding: ((@navbarGoogleBarHeight - @baseLineHeight) / 2) 44px;
+    background: none repeat scroll 0% 0% @navbarGoogleBarBackground;
+    border: 1px solid @navbarGoogleBarBorder;
+    color: @navbarText;
+    // border-bottom: 1px solid #e5e5e5;
+    .border-radius(@baseBorderRadius);
+    .box-shadow(none);
+    .box-sizing(border-box);
+
+    // overflow: hidden;
+    // Prevent floats from breaking the navbar
+    // .clearfix();
+  }
+}
+
+// NAVIGATION
+// ----------
+
+// Links
+.navbar-googlebar .nav > li > a {
+  float: none;
+  color: @navbarGoogleBarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 1px 0 @navbarGoogleBarBackgroundHighlight;
+}
+.navbar-googlebar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+
+// Hover
+.navbar-googlebar .nav > li > a:focus,
+.navbar-googlebar .nav > li > a:hover {
+  background-color: @navbarGoogleBarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
+  color: @navbarGoogleBarLinkColorHover;
+  text-decoration: none;
+}
+
+// Active nav items
+.navbar-googlebar .nav > .active > a,
+.navbar-googlebar .nav > .active > a:hover,
+.navbar-googlebar .nav > .active > a:focus {
+  color: @navbarGoogleBarLinkColorActive;
+  text-decoration: none;
+  background-color: @navbarGoogleBarLinkBackgroundActive;
+  .box-shadow(none);
+}
+

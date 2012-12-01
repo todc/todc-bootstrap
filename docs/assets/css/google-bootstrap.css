@@ -1335,6 +1335,58 @@ select:focus:required:invalid:focus {
 .navbar .nav > li > a {
   padding: 5px 15px 5px;
 }
+.navbar-googlebar .navbar-text {
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.navbar-googlebar .divider-vertical {
+  height: 30px;
+  margin: 0 9px;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #e5e5e5;
+}
+.navbar-googlebar .navbar-inner {
+  height: 77px;
+  margin: 0px;
+  padding: 24px 44px;
+  background: none repeat scroll 0% 0% #f1f1f1;
+  border: 1px solid #e5e5e5;
+  color: #999999;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navbar-googlebar .nav > li > a {
+  float: none;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #e5e5e5;
+}
+.navbar-googlebar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+.navbar-googlebar .nav > li > a:focus,
+.navbar-googlebar .nav > li > a:hover {
+  background-color: transparent;
+  color: #333333;
+  text-decoration: none;
+}
+.navbar-googlebar .nav > .active > a,
+.navbar-googlebar .nav > .active > a:hover,
+.navbar-googlebar .nav > .active > a:focus {
+  color: #333333;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 .breadcrumb {
   background-color: #f3f3f3;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
