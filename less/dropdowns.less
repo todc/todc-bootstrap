@@ -53,6 +53,7 @@
   display: block;
   padding: 3px 10px;
   clear: both;
+  font-size: @baseFontSize;
   font-weight: normal;
   line-height: 18px;
   color: @dropdownLinkColor;
@@ -68,6 +69,7 @@
   color: @dropdownLinkColorHover;
   text-decoration: none;
   background-color: @dropdownLinkBackgroundHover;
+  background-image: none;
 }
 
 .g-select-dropdown {
@@ -85,6 +87,25 @@
   & > .g-select-dropdown,
   & > .dropdown-menu {
     display: block;
+  }
+}
+
+// Sub menus
+// ---------------------------
+// Default dropdowns
+.dropdown-submenu > .dropdown-menu {
+  .border-radius(0);
+}
+
+// Dropups
+.dropup .dropdown-submenu > .dropdown-menu {
+  .border-radius(0);
+}
+
+// Left aligned submenus
+.dropdown-submenu.pull-left {
+  > .dropdown-menu {
+    .border-radius(0);
   }
 }
 
