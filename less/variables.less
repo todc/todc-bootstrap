@@ -149,6 +149,9 @@
 @zindexModalBackdrop:     1040;
 @zindexModal:             1050;
 
+@zindexFixedGooglebar:    1029;
+@zindexFixedGooglenav:    1028;
+
 
 // Sprite icons path
 // -------------------------
@@ -181,7 +184,7 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    30px;
+@navbarHeight:                    24px; // 30px Google.com
 @navbarBackgroundHighlight:       @grayDark;
 @navbarBackground:                @grayDarker;
 @navbarBorder:                    darken(@navbarBackground, 12%);
@@ -220,7 +223,7 @@
 @navbarGoogleBarCollapseWidth:             979px;
 @navbarGoogleBarCollapseDesktopWidth:      @navbarGoogleBarCollapseWidth + 1;
 
-@navbarGoogleBarHeight:                    77px;
+@navbarGoogleBarHeight:                    46px; // 77px for Google Developer. 46px for Google news. 50px for youtube
 @navbarGoogleBarBackground:                #f1f1f1;
 @navbarGoogleBarBackgroundHighlight:       darken(@navbarGoogleBarBackground, 4.7%);
 @navbarGoogleBarBorder:                    darken(@navbarGoogleBarBackground, 4.7%);
@@ -233,6 +236,46 @@
 @navbarGoogleBarLinkBackgroundActive:      @navbarGoogleBarBackground;
 
 @navbarGoogleBarBrandColor:                @navbarGoogleBarLinkColor;
+
+// Googlenav
+// -------------------------
+@navbarGoogleNavCollapseWidth:             979px;
+@navbarGoogleNavCollapseDesktopWidth:      @navbarGoogleNavCollapseWidth + 1;
+
+@navbarGoogleNavHeight:                    39px; // 39px for Google developer. 41px for Google.com. 44px for Google news
+@navbarGoogleNavBackground:                #fff;
+// @navbarGoogleNavBackground:                @navbarGoogleBarBackground;
+// @navbarGoogleNavBackgroundHighlight:       #fafafa;
+@navbarGoogleNavBackgroundHighlight:       darken(@navbarGoogleNavBackground, 5%);
+@navbarGoogleNavBorder:                    darken(@navbarGoogleNavBackground, 15.5%); //#d7d7d7
+
+@navbarGoogleNavText:                      #777;
+@navbarGoogleNavLinkColor:                 #777;
+@navbarGoogleNavLinkColorHover:            @grayDark;
+@navbarGoogleNavLinkColorActive:           @navbarGoogleNavLinkColorHover;
+@navbarGoogleNavLinkBackgroundHover:       transparent;
+@navbarGoogleNavLinkBackgroundActive:      #f2f2f2;
+
+@navbarGoogleNavBrandColor:                #DD4B39;
+
+// Inverted Googlenav
+@navbarGoogleNavInverseBackground:                #444;
+@navbarGoogleNavInverseBackgroundHighlight:       @gray;
+@navbarGoogleNavInverseBorder:                    @grayDark;
+
+@navbarGoogleNavInverseText:                      @grayLight;
+@navbarGoogleNavInverseLinkColor:                 @grayLight;
+@navbarGoogleNavInverseLinkColorHover:            @white;
+@navbarGoogleNavInverseLinkColorActive:           @navbarGoogleNavInverseLinkColorHover;
+@navbarGoogleNavInverseLinkBackgroundHover:       transparent;
+@navbarGoogleNavInverseLinkBackgroundActive:      @navbarGoogleNavInverseBackground;
+
+@navbarGoogleNavInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarGoogleNavInverseSearchBackgroundFocus:     @white;
+@navbarGoogleNavInverseSearchBorder:              @navbarGoogleNavInverseBackground;
+@navbarGoogleNavInverseSearchPlaceholderColor:    #ccc;
+
+@navbarGoogleNavInverseBrandColor:                @navbarGoogleNavInverseLinkColor;
 
 // Pagination
 // -------------------------
