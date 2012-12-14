@@ -44,3 +44,22 @@
     border-color: transparent @color;
   }
 }
+
+
+//TODO: Refactor these into a single mixin that accepts the navbar height as a parameter
+
+// Googlebar vertical align
+// -------------------------
+// Vertically center elements in the navbar.
+// Example: an element has a height of 30px, so write out `.navbarGoogleBarVerticalAlign(30px);` to calculate the appropriate top margin.
+.navbarGoogleBarVerticalAlign(@elementHeight) {
+  margin-top: (@navbarGoogleBarHeight - @elementHeight) / 2;
+}
+
+// Navbar vertical align
+// -------------------------
+// Vertically center elements in the navbar.
+// Example: an element has a height of 30px, so write out `.navbarGoogleNavVerticalAlign(30px);` to calculate the appropriate top margin.
+.navbarGoogleNavVerticalAlign(@elementHeight) {
+  margin-top: (@navbarGoogleNavHeight - @elementHeight) / 2;
+}
