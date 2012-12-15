@@ -348,7 +348,7 @@
   // Dividers in navbar
   // -------------------------
   .divider-vertical {
-    height: @navbarGoogleNavHeight;
+    height: @navbarGoogleNavHeight - 2;
     margin: 0 9px;
     border-right: 1px solid @navbarGoogleNavBackground;
     border-left: 1px solid @navbarGoogleNavBackgroundHighlight;
@@ -409,9 +409,19 @@
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
     z-index: @zindexFixedGooglenav;
+  }
+  &.navbar-fixed-top,
+  &.navbar-fixed-bottom,
+  &.navbar-static-top {
     .nav > li > a {
-     padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
-   }
+      padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
+    }
+
+    // Dividers in navbar
+    // -------------------------
+    .divider-vertical {
+      height: @navbarGoogleNavHeight - 1;
+    }
   }
 
   // NAVIGATION

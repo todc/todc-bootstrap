@@ -1575,7 +1575,7 @@ select:focus:required:invalid:focus {
   line-height: 39px;
 }
 .navbar-googlenav .divider-vertical {
-  height: 39px;
+  height: 37px;
   margin: 0 9px;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
@@ -1623,8 +1623,14 @@ select:focus:required:invalid:focus {
   z-index: 1028;
 }
 .navbar-googlenav.navbar-fixed-top .nav > li > a,
-.navbar-googlenav.navbar-fixed-bottom .nav > li > a {
+.navbar-googlenav.navbar-fixed-bottom .nav > li > a,
+.navbar-googlenav.navbar-static-top .nav > li > a {
   padding: 9.5px 15px 8.5px;
+}
+.navbar-googlenav.navbar-fixed-top .divider-vertical,
+.navbar-googlenav.navbar-fixed-bottom .divider-vertical,
+.navbar-googlenav.navbar-static-top .divider-vertical {
+  height: 38px;
 }
 .navbar-googlenav .nav > li {
   position: relative;
