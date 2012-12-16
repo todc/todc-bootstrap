@@ -1360,8 +1360,7 @@ select:focus:required:invalid:focus {
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
-  height: 30px;
-  margin: 6px 9px;
+  height: 34px;
   border-right: 1px solid #e5e5e5;
   border-left: 1px solid #f1f1f1;
 }
