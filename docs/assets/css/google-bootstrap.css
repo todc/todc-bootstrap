@@ -1703,6 +1703,7 @@ select:focus:required:invalid:focus {
 .navbar-googlenav .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #f2f2f2;
 }
+.navbar-googlenav .nav > li > a.brand:focus,
 .navbar-googlenav .nav > li > a.brand:hover {
   color: #dd4b39;
   text-decoration: none;
