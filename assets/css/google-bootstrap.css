@@ -1360,8 +1360,7 @@ select:focus:required:invalid:focus {
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
-  height: 30px;
-  margin: 6px 9px;
+  height: 34px;
   border-right: 1px solid #e5e5e5;
   border-left: 1px solid #f1f1f1;
 }
@@ -1704,6 +1703,7 @@ select:focus:required:invalid:focus {
 .navbar-googlenav .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #f2f2f2;
 }
+.navbar-googlenav .nav > li > a.brand:focus,
 .navbar-googlenav .nav > li > a.brand:hover {
   color: #dd4b39;
   text-decoration: none;
