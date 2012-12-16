@@ -1308,10 +1308,10 @@ select:focus:required:invalid:focus {
   border-radius: 0 2px 2px 0;
 }
 .navbar-inner {
-  min-height: 24px;
+  min-height: 30px;
 }
 .navbar .brand {
-  padding: 2px 20px 2px;
+  padding: 5px 20px 5px;
 }
 .navbar .brand.dropdown-menu {
   display: none;
@@ -1324,28 +1324,28 @@ select:focus:required:invalid:focus {
   display: block;
 }
 .navbar .divider-vertical {
-  height: 24px;
+  height: 30px;
 }
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 1px;
+  margin-top: 2px;
   padding: 2px 10px;
 }
 .navbar-form input,
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 1px;
-  padding: 0px 6px;
+  margin-top: 2px;
+  padding: 2px 14px;
 }
 .navbar-search {
-  margin-top: 1px;
+  margin-top: 2px;
 }
 .navbar-search .search-query {
-  padding: 0px 14px;
+  padding: 2px 14px;
 }
 .navbar .nav > li > a {
-  padding: 2px 15px 2px;
+  padding: 5px 15px 5px;
   font-weight: bold;
 }
 .navbar-inverse .navbar-search .search-query:focus,
@@ -1360,7 +1360,7 @@ select:focus:required:invalid:focus {
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
-  height: 24px;
+  height: 30px;
   margin: 6px 9px;
   border-right: 1px solid #e5e5e5;
   border-left: 1px solid #f1f1f1;
