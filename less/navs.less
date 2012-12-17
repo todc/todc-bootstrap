@@ -1,19 +1,67 @@
-// NAVIGATIONS
-// -----------
+//
+// Navs
+// --------------------------------------------------
+
+
+// NAV LIST
+// --------
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   background-color: #4D90FE;
 }
 
+
+// TABS
+// ----
+
 // Actual tabs (as links)
 .nav-tabs > li > a {
   .border-radius(2px 2px 0 0);
+  color: #666;
 }
 
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+    font-weight: bold;
+    color: #333;
+}
+
+
+// Google TABS
+// ----
+.nav-tabs-google > li > a {
+    color: #777;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    line-height: @baseLineHeight;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: @white;
+      color: #222;
+      //border-color: @grayLighter @grayLighter #dd4b39;
+      border-color: @white @white @white;
+    }
+    &:active {
+      color: #dd4b39;
+    }
+}
+.nav-tabs-google li.active {
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google > .active > a,
+.nav-tabs-google > .active > a:hover {
+    font-weight: bold;
+    color: #dd4b39;
+    border: 1px solid transparent;
+}
+
+
+// PILLS
+// -----
 // Links rendered as pills
 .nav-pills > li > a {
-  .border-radius(2px);
+  .border-radius(@baseBorderRadius);
 }
 
 // Active state
@@ -22,6 +70,10 @@
   background-color: #4D90FE;
 }
 
+
+
+// STACKED NAV
+// -----------
 
 .nav-tabs.nav-stacked > li:first-child > a {
   .border-radius(2px 2px 0 0);
@@ -34,18 +86,6 @@
   z-index: 2;
 }
 
-
-// TABS
-// ----
-
-.nav-tabs > li > a {
-    color: #666;
-}
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-    font-weight: bold;
-    color: #333;
-}
 
 
 // DROPDOWNS

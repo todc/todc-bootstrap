@@ -1,0 +1,66 @@
+//
+// Navbars (Redux)
+// --------------------------------------------------
+
+
+// COMMON STYLES
+// -------------
+
+// Inner for background effects
+// Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+.navbar-inner {
+  min-height: @navbarHeight;
+}
+
+
+// Brand: website or project name
+// -------------------------
+.navbar .brand {
+  // Vertically center the text given @navbarHeight
+  padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
+}
+
+// Dividers in navbar
+// -------------------------
+.navbar .divider-vertical {
+  height: @navbarHeight;
+}
+
+// Buttons in navbar
+// -------------------------
+.navbar .btn,
+.navbar .btn-group {
+  .navbarVerticalAlign(22px); // Vertically center in navbar
+  padding: 0px 14px;
+}
+
+// Navbar forms
+// -------------------------
+.navbar-form {
+  input,
+  select,
+  .radio,
+  .checkbox {
+    .navbarVerticalAlign(22px); // Vertically center in navbar
+    padding: 0px 14px;
+  }
+}
+
+// Navbar search
+// -------------------------
+.navbar-search {
+  .navbarVerticalAlign(22px); // Vertically center in navbar
+  .search-query {
+    padding: 0px 14px;
+  }
+}
+
+// NAVIGATION
+// ----------
+
+// Links
+.navbar .nav > li > a {
+  // Vertically center the text given @navbarHeight
+  padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
+  font-weight: bold;
+}
