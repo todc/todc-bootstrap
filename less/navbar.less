@@ -66,6 +66,7 @@
   .navbarVerticalAlign(26px); // Vertically center in navbar
   .search-query {
     padding: 2px 14px;
+     line-height: normal;
   }
 }
 
@@ -155,7 +156,7 @@
     .navbarGoogleBarVerticalAlign(30px); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
-    }
+     }
   }
 
   // Inner for background effects
@@ -549,6 +550,7 @@
 
     .brand,
     .nav > li > a {
+      font-weight: normal;
       color: @navbarGoogleNavInverseLinkColor;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
@@ -565,8 +567,12 @@
     .nav .active > a,
     .nav .active > a:hover,
     .nav .active > a:focus {
+      font-weight: bold;
       color: @navbarGoogleNavInverseLinkColorActive;
       background-color: @navbarGoogleNavInverseLinkBackgroundActive;
+    }
+    .nav .active > a:hover {
+      text-decoration: underline;
     }
 
     // Inline text links
