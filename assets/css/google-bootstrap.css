@@ -1636,7 +1636,7 @@ select:focus:required:invalid:focus {
   position: relative;
 }
 .navbar-googlenav .nav > li > a {
-  padding: 9px 15px 7.5px;
+  padding: 9px 15px 7px;
   color: #777777;
   text-shadow: none;
 }
