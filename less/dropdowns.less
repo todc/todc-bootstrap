@@ -64,10 +64,18 @@
 // -----------
 .g-select-dropdown li:hover,
 .dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: @dropdownLinkColorHover;
+  background-color: @dropdownLinkBackgroundHover;
+  background-image: none;
+}
+
+// Active state
+// ------------
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorHover;
-  text-decoration: none;
+  color: @dropdownLinkColorActive;
   background-color: @dropdownLinkBackgroundHover;
   background-image: none;
 }
@@ -100,6 +108,14 @@
 // Dropups
 .dropup .dropdown-submenu > .dropdown-menu {
   .border-radius(0);
+}
+
+// Caret to indicate there is a submenu
+.dropdown-submenu > a:after {
+  border-left-color: #808080;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #000000;
 }
 
 // Left aligned submenus
