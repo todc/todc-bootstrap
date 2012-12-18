@@ -1563,7 +1563,7 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .brand,
 .navbar-googlenav .brand .btn {
-  padding: 9.5px 20px 9.5px;
+  padding: 9px 20px 9px;
   font-size: 16px;
   font-weight: bold;
   color: #dd4b39;
@@ -1572,10 +1572,10 @@ select:focus:required:invalid:focus {
 .navbar-googlenav .navbar-text {
   margin-top: -1px;
   margin-bottom: 0;
-  line-height: 39px;
+  line-height: 38px;
 }
 .navbar-googlenav .divider-vertical {
-  height: 37px;
+  height: 36px;
   margin: 0 9px;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
@@ -1589,15 +1589,15 @@ select:focus:required:invalid:focus {
 .navbar-googlenav .navbar-form select,
 .navbar-googlenav .navbar-form .radio,
 .navbar-googlenav .navbar-form .checkbox {
-  margin-top: 3.5px;
+  margin-top: 3px;
   padding: 4px 8px;
 }
 .navbar-googlenav .navbar-form .btn,
 .navbar-googlenav .navbar-form .btn-group {
-  margin-top: 3.5px;
+  margin-top: 3px;
 }
 .navbar-googlenav .navbar-search {
-  margin-top: 3.5px;
+  margin-top: 3px;
 }
 .navbar-googlenav .navbar-search .search-query {
   padding: 4px 14px;
@@ -1612,7 +1612,7 @@ select:focus:required:invalid:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 39px;
+  height: 38px;
   margin: 0px;
   color: #999999;
   background: none repeat scroll 0% 0% #ffffff;
@@ -1625,18 +1625,18 @@ select:focus:required:invalid:focus {
 .navbar-googlenav.navbar-fixed-top .nav > li > a,
 .navbar-googlenav.navbar-fixed-bottom .nav > li > a,
 .navbar-googlenav.navbar-static-top .nav > li > a {
-  padding: 9.5px 15px 8.5px;
+  padding: 9px 15px 8px;
 }
 .navbar-googlenav.navbar-fixed-top .divider-vertical,
 .navbar-googlenav.navbar-fixed-bottom .divider-vertical,
 .navbar-googlenav.navbar-static-top .divider-vertical {
-  height: 38px;
+  height: 37px;
 }
 .navbar-googlenav .nav > li {
   position: relative;
 }
 .navbar-googlenav .nav > li > a {
-  padding: 9px 15px 8px;
+  padding: 9px 15px 7.5px;
   color: #777777;
   text-shadow: none;
 }
@@ -1671,6 +1671,12 @@ select:focus:required:invalid:focus {
   border-bottom: 7px solid #ffffff;
   border-left: 7px solid transparent;
   content: '';
+}
+.navbar-googlenav .nav > .active.open > a:before {
+  display: none;
+}
+.navbar-googlenav .nav > .active.open > a:after {
+  display: none;
 }
 .navbar-googlenav .nav > .active > a,
 .navbar-googlenav .nav > .active > a:hover,
