@@ -130,7 +130,7 @@
   // -------------------------
   .btn,
   .btn-group {
-    .navbarGoogleBarVerticalAlign(@navbarGoogleBarHeight); // Vertically center in navbar
+    .navbarVerticalAlign(@navbarGoogleBarHeight, @navbarGoogleBarHeight); // Vertically center in navbar
     padding: 4px 12px;
   }
 
@@ -141,19 +141,19 @@
     select,
     .radio,
     .checkbox {
-      .navbarGoogleBarVerticalAlign(30px); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarGoogleBarVerticalAlign(30px); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarGoogleBarVerticalAlign(30px); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
      }
@@ -187,7 +187,7 @@
   // ----------
 
   .nav {
-    .navbarGoogleBarVerticalAlign(34px); // Vertically center in navbar
+    .navbarVerticalAlign(34px, @navbarGoogleBarHeight); // Vertically center in navbar
   }
 
   // Links
@@ -341,7 +341,7 @@
   // Plain text in topbar
   // -------------------------
   .navbar-text {
-    .navbarGoogleNavVerticalAlign(@navbarGoogleNavHeight + 2); // Vertically center in navbar
+    .navbarVerticalAlign(@navbarGoogleNavHeight + 2, @navbarGoogleNavHeight); // Vertically center in navbar
     margin-bottom: 0;
     line-height: @navbarGoogleNavHeight;
   }
@@ -359,7 +359,7 @@
   // -------------------------
   .btn,
   .btn-group {
-    .navbarGoogleNavVerticalAlign(@navbarGoogleNavHeight + 2); // Vertically center in navbar
+    .navbarVerticalAlign(@navbarGoogleNavHeight + 2, @navbarGoogleNavHeight); // Vertically center in navbar
     padding: 4px 12px;
   }
 
@@ -370,19 +370,19 @@
     select,
     .radio,
     .checkbox {
-      .navbarGoogleNavVerticalAlign(32px); // Vertically center in navbar
+      .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarGoogleNavVerticalAlign(32px); // Vertically center in navbar
+      .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarGoogleNavVerticalAlign(32px); // Vertically center in navbar
+    .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
     }
