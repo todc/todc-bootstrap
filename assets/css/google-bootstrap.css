@@ -410,10 +410,15 @@ select:focus:required:invalid:focus {
 }
 .g-select-dropdown li:hover,
 .dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #333333;
+  background-color: #eeeeee;
+  background-image: none;
+}
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #333333;
-  text-decoration: none;
   background-color: #eeeeee;
   background-image: none;
 }
@@ -437,6 +442,12 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.dropdown-submenu > a:after {
+  border-left-color: #808080;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #000000;
 }
 .dropdown-submenu.pull-left > .dropdown-menu {
   -webkit-border-radius: 0;
@@ -470,7 +481,7 @@ select:focus:required:invalid:focus {
 }
 .scrollable::-webkit-scrollbar {
   height: 16px;
-  width: 12px;
+  width: 10px;
 }
 .scrollable::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
@@ -492,7 +503,7 @@ select:focus:required:invalid:focus {
 }
 .scrollable::-webkit-scrollbar:hover {
   background-color: #f3f3f3;
-  border-left: 1px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
 }
 .scrollable::-webkit-scrollbar-thumb:vertical,
 .scrollable::-webkit-scrollbar-thumb:horizontal {
@@ -504,7 +515,7 @@ select:focus:required:invalid:focus {
 .scrollable::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border: solid transparent;
-  border-width: 1px 1px 1px 2px;
+  border-width: 0;
   -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
   -moz-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
   box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
@@ -2004,6 +2015,17 @@ select:focus:required:invalid:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
+}
+.modal-backdrop {
+  background-color: #ffffff;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
 }
 .modal {
   -webkit-border-radius: 0;
