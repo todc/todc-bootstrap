@@ -1246,6 +1246,9 @@ select:focus:required:invalid:focus {
   font-weight: bold;
   color: #333;
 }
+.nav-tabs-google > li {
+  margin: 0 1px 0 0;
+}
 .nav-tabs-google > li > a {
   color: #777;
   padding-top: 2px;
@@ -1261,13 +1264,17 @@ select:focus:required:invalid:focus {
 .nav-tabs-google > li > a:active {
   color: #dd4b39;
 }
+.nav-tabs-google li:hover {
+  color: #333;
+  border-bottom: 3px solid #dd4b39;
+}
 .nav-tabs-google li.active {
+  font-weight: bold;
   border-bottom: 3px solid #dd4b39;
 }
 .nav-tabs-google > .active > a,
 .nav-tabs-google > .active > a:hover {
-  font-weight: bold;
-  color: #dd4b39;
+  color: #333;
   border: 1px solid transparent;
 }
 .nav-pills > li > a {
@@ -1297,6 +1304,14 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.nav-tabs .dropdown-toggle .caret {
+  border-top-color: #666;
+  border-bottom-color: #666;
+}
+.nav-tabs .dropdown-toggle:hover .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
 }
 .nav-pills .dropdown-menu {
   -webkit-border-radius: 0;
