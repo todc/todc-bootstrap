@@ -45,6 +45,9 @@
 
 // Google TABS
 // ----
+.nav-tabs-google > li {
+  margin: 0 1px 0 0;
+}
 .nav-tabs-google > li > a {
     padding-top: 2px;
     padding-bottom: 6px;
@@ -61,13 +64,17 @@
       color: #dd4b39;
     }
 }
+.nav-tabs-google li:hover {
+  color: #333;
+  border-bottom: 3px solid #dd4b39;
+}
 .nav-tabs-google li.active {
+  font-weight: bold;
   border-bottom: 3px solid #dd4b39;
 }
 .nav-tabs-google > .active > a,
 .nav-tabs-google > .active > a:hover {
-    font-weight: bold;
-    color: #dd4b39;
+    color: #333;
     border: 1px solid transparent;
 }
 
