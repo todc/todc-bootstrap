@@ -1,6 +1,6 @@
 .scrollable::-webkit-scrollbar {
     height: 16px;
-    width: 12px;
+    width: 10px;
 }
 .scrollable::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
@@ -20,7 +20,7 @@
 }
 .scrollable::-webkit-scrollbar:hover {
     background-color: #f3f3f3;
-    border-left: 1px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
 }
 .scrollable::-webkit-scrollbar-thumb:vertical,
 .scrollable::-webkit-scrollbar-thumb:horizontal {
@@ -30,7 +30,7 @@
 .scrollable::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,0.2);
     border: solid transparent;
-    border-width: 1px 1px 1px 2px;
+    border-width: 0;
     .box-shadow(~"inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07)");
     background-clip: padding-box;
 }
