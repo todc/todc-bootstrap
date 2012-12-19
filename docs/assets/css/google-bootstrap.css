@@ -410,10 +410,15 @@ select:focus:required:invalid:focus {
 }
 .g-select-dropdown li:hover,
 .dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #333333;
+  background-color: #eeeeee;
+  background-image: none;
+}
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #333333;
-  text-decoration: none;
   background-color: #eeeeee;
   background-image: none;
 }
@@ -437,6 +442,12 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.dropdown-submenu > a:after {
+  border-left-color: #808080;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #000000;
 }
 .dropdown-submenu.pull-left > .dropdown-menu {
   -webkit-border-radius: 0;
@@ -2004,6 +2015,17 @@ select:focus:required:invalid:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
+}
+.modal-backdrop {
+  background-color: #ffffff;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
 }
 .modal {
   -webkit-border-radius: 0;
