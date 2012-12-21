@@ -25,7 +25,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    <link href="assets/css/google-bootstrap.css" rel="stylesheet"></head>
+    <link href="assets/css/google-bootstrap.css" rel="stylesheet">
+    <link href="assets/css/select2.css" rel="stylesheet">
 
   </head>
 
@@ -1086,22 +1087,46 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 
           <h3>Selects</h3>
           <p>Use the default option or specify a <code>multiple="multiple"</code> to show multiple options at once.</p>
+          <p><a href="http://todc.github.com/google-select2" target="_blank">Google Select2</a> is used for Google-themed rendering of select menus.</p>
           <form class="bs-docs-example">
-            <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <select class="g-select">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Orange</option>
+              <option>Pear</option>
+              <option>Peach</option>
             </select>
-            <br>
-            <select multiple="multiple">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <br><br>
+            <select multiple="multiple" class="g-select">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Orange</option>
+                <option>Pear</option>
+                <option>Peach</option>
             </select>
+          </form>
+<pre class="prettyprint linenums">
+&lt;select&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select multiple="multiple"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+        <h3>File Uploads</h3>
+          <p>Form control which supports the selection of local files.</p>
+          <form class="bs-docs-example">
+            <input type="file" name="file" size="40" />
           </form>
 <pre class="prettyprint linenums">
 &lt;select&gt;
@@ -2110,11 +2135,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/bootstrap-affix.js"></script>
-    <script src="assets/js/google-select-dropdown.js"></script>
-    <script src="assets/js/google-select.js"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/application.js"></script>
-
-
 
   </body>
 </html>
