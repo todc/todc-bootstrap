@@ -517,6 +517,15 @@
     background-color: transparent;
   }
 
+  // Navbar button for toggling navbar items in responsive layouts
+  // These definitions need to come after '.navbar .btn'
+  .btn-navbar {
+    padding: 3px 10px 6px;
+    .navbarVerticalAlign(24px, @navbarGoogleNavHeight); // Vertically center in navbar
+    .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
+    .box-shadow(none);
+  }
+
   // Dropdown menus
   // --------------
 

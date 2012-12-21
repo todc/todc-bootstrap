@@ -1837,6 +1837,42 @@ select:focus:required:invalid:focus {
   text-decoration: underline;
   background-color: transparent;
 }
+.navbar-googlenav .btn-navbar {
+  padding: 3px 10px 6px;
+  margin-top: 7px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
+  border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e5e5e5;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar-googlenav .btn-navbar:hover,
+.navbar-googlenav .btn-navbar:active,
+.navbar-googlenav .btn-navbar.active,
+.navbar-googlenav .btn-navbar.disabled,
+.navbar-googlenav .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  *background-color: #d9d9d9;
+}
+.navbar-googlenav .btn-navbar:active,
+.navbar-googlenav .btn-navbar.active {
+  background-color: #cccccc \9;
+}
 .navbar-googlenav .nav > li > .dropdown-menu:before {
   display: none;
 }
