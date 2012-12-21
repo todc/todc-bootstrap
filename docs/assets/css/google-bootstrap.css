@@ -1482,7 +1482,6 @@ select:focus:required:invalid:focus {
   padding: 13px 20px 13px;
 }
 .navbar-googlebar .navbar-text {
-  margin-bottom: 0;
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
@@ -1732,7 +1731,6 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .navbar-text {
   margin-top: -1px;
-  margin-bottom: 0;
   line-height: 38px;
 }
 .navbar-googlenav .divider-vertical {
@@ -2284,4 +2282,14 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+@media (max-width: 979px) {
+  .navbar-googlebar.navbar-fixed-top .navbar-inner,
+  .navbar-googlebar.navbar-fixed-bottom .navbar-inner {
+    padding: 0;
+  }
+  .navbar-googlenav.navbar-fixed-top .navbar-inner,
+  .navbar-googlenav.navbar-fixed-bottom .navbar-inner {
+    padding: 0;
+  }
 }
