@@ -1482,6 +1482,7 @@ select:focus:required:invalid:focus {
   padding: 13px 20px 13px;
 }
 .navbar-googlebar .navbar-text {
+  margin-bottom: 0;
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
@@ -1521,7 +1522,7 @@ select:focus:required:invalid:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 46px;
+  height: 46px;
   margin: 0px;
   color: #999999;
   background: none repeat scroll 0% 0% #f1f1f1;
@@ -1731,6 +1732,7 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .navbar-text {
   margin-top: -1px;
+  margin-bottom: 0;
   line-height: 38px;
 }
 .navbar-googlenav .divider-vertical {
@@ -1771,7 +1773,7 @@ select:focus:required:invalid:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 38px;
+  height: 38px;
   margin: 0px;
   color: #999999;
   background: none repeat scroll 0% 0% #ffffff;
