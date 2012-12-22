@@ -179,7 +179,7 @@
     .border-radius(@baseBorderRadius);
     .box-shadow(none);
     .box-sizing(border-box);
-    height: @navbarGoogleBarHeight;
+    min-height: @navbarGoogleBarHeight;
     margin: 0px;
     color: @navbarText;
     background: none repeat scroll 0% 0% @navbarGoogleBarBackground;
@@ -241,7 +241,7 @@
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
     padding: 3px 10px 6px;
-    .navbarVerticalAlign(24px, @navbarGoogleBarHeight); // Vertically center in navbar
+    .navbarVerticalAlign(26px, @navbarGoogleBarHeight); // Vertically center in navbar
     .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
     .box-shadow(none);
   }
@@ -354,7 +354,7 @@
   .brand,
   .brand .btn {
     // Vertically center the text given @navbarHeight
-    padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 20px ((@navbarGoogleNavHeight - @baseLineHeight) / 2);
+    padding: (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1) 20px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
     font-size: 16px;
     font-weight: bold;
     color: @navbarGoogleNavBrandColor;
@@ -416,7 +416,7 @@
     .border-radius(@baseBorderRadius);
     .box-shadow(none);
     .box-sizing(border-box);
-    height: @navbarGoogleNavHeight;
+    min-height: @navbarGoogleNavHeight;
     margin: 0px;
     color: @navbarText;
     background: none repeat scroll 0% 0% @navbarGoogleNavBackground;
@@ -519,7 +519,7 @@
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
     padding: 3px 10px 6px;
-    .navbarVerticalAlign(24px, @navbarGoogleNavHeight); // Vertically center in navbar
+    .navbarVerticalAlign(26px, @navbarGoogleNavHeight); // Vertically center in navbar
     .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
     .box-shadow(none);
   }
