@@ -16,6 +16,10 @@
       padding: 0;
     }
 
+    // TODO: Include all styles that use variables
+    // COLLAPSIBLE NAVBAR
+    // ------------------
+
   }
 
 
@@ -27,6 +31,24 @@
     &.navbar-fixed-bottom .navbar-inner {
       padding: 0;
     }
+
+    // TODO: Include all styles that use variables
+    // COLLAPSIBLE NAVBAR
+    // ------------------
+    .nav-collapse {
+
+      // Active nav items
+      .nav > .active > a {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+
+    }
+
   }
 
 }
