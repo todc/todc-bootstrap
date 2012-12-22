@@ -84,9 +84,10 @@
 // Navbar button for toggling navbar items in responsive layouts
 // These definitions need to come after '.navbar .btn'
 .navbar .btn-navbar {
-  padding: 3px 10px 6px;
-  .navbarVerticalAlign(24px); // Vertically center in navbar
-  .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
+  padding: 4px 10px 7px;
+  .navbarVerticalAlign(26px); // Vertically center in navbar
+  #gradient > .vertical(#f5f5f5, #f1f1f1);
+  border: 1px solid #dcdcdc;
   .box-shadow(none);
 }
 
@@ -240,10 +241,11 @@
   // Navbar button for toggling navbar items in responsive layouts
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
-    padding: 3px 10px 6px;
+    padding: 4px 10px 7px;
     .navbarVerticalAlign(26px, @navbarGoogleBarHeight); // Vertically center in navbar
-    .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
-    .box-shadow(none);
+    // #gradient > .vertical(@navbarGoogleBarBackgroundHighlight, @navbarGoogleBarBackground);
+    #gradient > .vertical(#f5f5f5, #f1f1f1);
+    border: 1px solid #dcdcdc;
   }
 
 
@@ -518,10 +520,10 @@
   // Navbar button for toggling navbar items in responsive layouts
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
-    padding: 3px 10px 6px;
+    padding: 4px 10px 7px;
     .navbarVerticalAlign(26px, @navbarGoogleNavHeight); // Vertically center in navbar
-    .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
-    .box-shadow(none);
+    #gradient > .vertical(#f5f5f5, #f1f1f1);
+    border: 1px solid #dcdcdc;
   }
 
   // Dropdown menus
