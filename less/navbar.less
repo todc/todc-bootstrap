@@ -251,65 +251,65 @@
   // -------------------------
 
   &.navbar-inverse {
-    color: @navbarInverseText;
+    color: @navbarGoogleBarInverseText;
 
     .navbar-inner {
-      border-color: @navbarInverseBorder;
-      #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+      border-color: @navbarGoogleBarInverseBorder;
+      #gradient > .vertical(@navbarGoogleBarInverseBackgroundHighlight, @navbarGoogleBarInverseBackground);
     }
 
     .brand,
     .nav > li > a {
-      color: @navbarInverseLinkColor;
+      color: @navbarGoogleBarInverseLinkColor;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbarInverseLinkColorHover;
+        color: @navbarGoogleBarInverseLinkColorHover;
       }
     }
 
     .nav > li > a:focus,
     .nav > li > a:hover {
-      color: @navbarInverseLinkColorHover;
-      background-color: @navbarInverseLinkBackgroundHover;
+      color: @navbarGoogleBarInverseLinkColorHover;
+      background-color: @navbarGoogleBarInverseLinkBackgroundHover;
     }
 
     .nav .active > a,
     .nav .active > a:hover,
     .nav .active > a:focus {
-      color: @navbarInverseLinkColorActive;
-      background-color: @navbarInverseLinkBackgroundActive;
+      color: @navbarGoogleBarInverseLinkColorActive;
+      background-color: @navbarGoogleBarInverseLinkBackgroundActive;
     }
 
     // Inline text links
     .navbar-link {
-      color: @navbarInverseLinkColor;
+      color: @navbarGoogleBarInverseLinkColor;
       &:hover {
-        color: @navbarInverseLinkColorHover;
+        color: @navbarGoogleBarInverseLinkColorHover;
       }
     }
 
     // Dividers in navbar
     .divider-vertical {
-      border-right-color: @navbarInverseBackgroundHighlight;
-      border-left-color: @navbarInverseBackground;
+      border-right-color: @navbarGoogleBarInverseBackgroundHighlight;
+      border-left-color: @navbarGoogleBarInverseBackground;
     }
 
     // Dropdowns
     .nav li.dropdown.open > .dropdown-toggle,
     .nav li.dropdown.active > .dropdown-toggle,
     .nav li.dropdown.open.active > .dropdown-toggle {
-      color: @navbarInverseLinkColorActive;
-      background-color: @navbarInverseLinkBackgroundActive;
+      color: @navbarGoogleBarInverseLinkColorActive;
+      background-color: @navbarGoogleBarInverseLinkBackgroundActive;
     }
     .nav li.dropdown > .dropdown-toggle .caret {
-      border-top-color: @navbarInverseLinkColor;
-      border-bottom-color: @navbarInverseLinkColor;
+      border-top-color: @navbarGoogleBarInverseLinkColor;
+      border-bottom-color: @navbarGoogleBarInverseLinkColor;
     }
     .nav li.dropdown.open > .dropdown-toggle .caret,
     .nav li.dropdown.active > .dropdown-toggle .caret,
     .nav li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbarInverseLinkColorActive;
-      border-bottom-color: @navbarInverseLinkColorActive;
+      border-top-color: @navbarGoogleBarInverseLinkColorActive;
+      border-bottom-color: @navbarGoogleBarInverseLinkColorActive;
     }
 
     // Navbar search
@@ -317,10 +317,10 @@
       .search-query {
         .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
         .transition(none);
-        .placeholder(@navbarInverseSearchPlaceholderColor);
+        .placeholder(@navbarGoogleBarInverseSearchPlaceholderColor);
         color: @white;
-        background-color: @navbarInverseSearchBackground;
-        border-color: @navbarInverseSearchBorder;
+        background-color: @navbarGoogleBarInverseSearchBackground;
+        border-color: @navbarGoogleBarInverseSearchBorder;
 
         // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
         &:focus,
@@ -329,7 +329,7 @@
           padding: 5px 15px;
           color: @grayDark;
           text-shadow: 0 1px 0 @white;
-          background-color: @navbarInverseSearchBackgroundFocus;
+          background-color: @navbarGoogleBarInverseSearchBackgroundFocus;
           border: 0;
           outline: 0;
         }
@@ -338,7 +338,7 @@
 
     // Navbar collapse button
     .btn-navbar {
-      .buttonBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+      .buttonBackground(darken(@navbarGoogleBarInverseBackgroundHighlight, 5%), darken(@navbarGoogleBarInverseBackground, 5%));
     }
 
   }
