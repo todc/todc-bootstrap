@@ -1482,7 +1482,6 @@ select:focus:required:invalid:focus {
   padding: 13px 20px 13px;
 }
 .navbar-googlebar .navbar-text {
-  margin-bottom: 0;
   line-height: 46px;
 }
 .navbar-googlebar .divider-vertical {
@@ -1522,7 +1521,7 @@ select:focus:required:invalid:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 46px;
+  min-height: 46px;
   margin: 0px;
   color: #999999;
   background: none repeat scroll 0% 0% #f1f1f1;
@@ -1564,7 +1563,7 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlebar .btn-navbar {
   padding: 3px 10px 6px;
-  margin-top: 11px;
+  margin-top: 10px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #ededed;
@@ -1724,7 +1723,7 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .brand,
 .navbar-googlenav .brand .btn {
-  padding: 9px 20px 9px;
+  padding: 8px 20px 8px;
   font-size: 16px;
   font-weight: bold;
   color: #dd4b39;
@@ -1732,7 +1731,6 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .navbar-text {
   margin-top: -1px;
-  margin-bottom: 0;
   line-height: 38px;
 }
 .navbar-googlenav .divider-vertical {
@@ -1773,7 +1771,7 @@ select:focus:required:invalid:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 38px;
+  min-height: 38px;
   margin: 0px;
   color: #999999;
   background: none repeat scroll 0% 0% #ffffff;
@@ -1856,7 +1854,7 @@ select:focus:required:invalid:focus {
 }
 .navbar-googlenav .btn-navbar {
   padding: 3px 10px 6px;
-  margin-top: 7px;
+  margin-top: 6px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #ededed;
@@ -2284,4 +2282,20 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+@media (max-width: 979px) {
+  .navbar-googlebar.navbar-fixed-top .navbar-inner,
+  .navbar-googlebar.navbar-fixed-bottom .navbar-inner {
+    padding: 0;
+  }
+  .navbar-googlenav.navbar-fixed-top .navbar-inner,
+  .navbar-googlenav.navbar-fixed-bottom .navbar-inner {
+    padding: 0;
+  }
+  .navbar-googlenav .nav-collapse .nav > .active > a:before {
+    display: none;
+  }
+  .navbar-googlenav .nav-collapse .nav > .active > a:after {
+    display: none;
+  }
 }
