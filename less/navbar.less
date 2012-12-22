@@ -91,6 +91,14 @@
   .box-shadow(none);
 }
 
+// Right aligned menus need alt position
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
+  .dropdown-menu {
+    .border-radius(0);
+  }
+}
+
 
 // Inverted navbar
 // -------------------------
