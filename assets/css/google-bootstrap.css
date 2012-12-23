@@ -1423,6 +1423,12 @@ select:focus:required:invalid:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
   padding: 1px 15px;
@@ -1788,12 +1794,6 @@ select:focus:required:invalid:focus {
   border-left: 7px solid transparent;
   content: '';
 }
-.navbar-googlenav .nav > .active.open > a:before {
-  display: none;
-}
-.navbar-googlenav .nav > .active.open > a:after {
-  display: none;
-}
 .navbar-googlenav .nav > .active > a,
 .navbar-googlenav .nav > .active > a:hover,
 .navbar-googlenav .nav > .active > a:focus {
@@ -1821,6 +1821,9 @@ select:focus:required:invalid:focus {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
   border: 1px solid #dcdcdc;
+}
+.navbar-googlenav .nav > li > .dropdown-menu {
+  border-top-width: 0;
 }
 .navbar-googlenav .nav > li > .dropdown-menu:before {
   display: none;
