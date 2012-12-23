@@ -501,14 +501,6 @@
       content: '';
     }
   }
-  .nav > .active.open > a {
-    &:before {
-      display: none;
-    }
-    &:after {
-      display: none;
-    }
-  }
 
   .nav > .active > a,
   .nav > .active > a:hover,
@@ -539,6 +531,7 @@
 
   // Menu position and menu carets
   .nav > li > .dropdown-menu {
+    border-top-width: 0;
     &:before {
       display: none;
     }
