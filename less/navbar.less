@@ -64,3 +64,11 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
   font-weight: bold;
 }
+
+// Right aligned menus need alt position
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
+  .dropdown-menu {
+    .border-radius(0);
+  }
+}
