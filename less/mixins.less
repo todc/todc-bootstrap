@@ -2,3 +2,16 @@
 // Snippets of reusable CSS to develop faster and keep code readable
 // -----------------------------------------------------------------
 
+
+// COMPONENT MIXINS
+// --------------------------------------------------
+
+// Navbar vertical align
+// -------------------------
+// Vertically center elements in the navbar or other bars.
+// Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
+// Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
+//          .navbarVerticalAlign(32px, @navbarGoogleNavHeight);
+.navbarVerticalAlign(@elementHeight, @barHeight: @navbarHeight) {
+  margin-top: (@barHeight - @elementHeight) / 2;
+}
