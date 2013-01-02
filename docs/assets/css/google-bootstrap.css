@@ -1366,10 +1366,10 @@ select:focus:required:invalid:focus {
   border-radius: 0 2px 2px 0;
 }
 .navbar-inner {
-  min-height: 24px;
+  min-height: 30px;
 }
 .navbar .brand {
-  padding: 2px 20px 2px;
+  padding: 5px 20px 5px;
 }
 .navbar .brand.dropdown-menu {
   display: none;
@@ -1382,7 +1382,7 @@ select:focus:required:invalid:focus {
   display: block;
 }
 .navbar .divider-vertical {
-  height: 24px;
+  height: 30px;
 }
 .navbar .btn,
 .navbar .btn-group {
@@ -1393,11 +1393,11 @@ select:focus:required:invalid:focus {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 1px;
+  margin-top: 4px;
   padding: 0px 14px;
 }
 .navbar-search {
-  margin-top: 1px;
+  margin-top: 4px;
 }
 .navbar-search .search-query {
   padding: 2px 14px;
