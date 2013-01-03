@@ -12,36 +12,15 @@
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="../assets/css/google-bootstrap.css" rel="stylesheet">
     <style type="text/css">
-      body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
-      a { 
-        color: #15c; 
-        text-decoration: none;
-      }
-      a:hover {
-        color: #15c;
-        text-decoration: underline;
-      }
+      body { padding-top: 40px; padding-bottom: 40px; }
+      a { color: #15c; text-decoration: none; }
+      a:hover { color: #15c; text-decoration: underline; }
       form,
       label,
       input[type=text],
       input[type=checkbox],
       input[type=password] {
         margin: 0;
-      }
-      input[type=checkbox] {
-        vertical-align: bottom;
-      }
-      input[type=text],
-      input[type=password] {
-        width: 100%;
-        font-size: 15px;
-        color: black;
-        line-height: normal;
-        height: 32px;
-        box-sizing: border-box;
       }
 
       .signin {
@@ -61,21 +40,24 @@
         margin: 0 0 19px;
       }
       
-      .signin-box input[type=submit] {
-        margin: 0 1.5em 1.2em 0;
+      .signin-box input[type=checkbox] {
+        vertical-align: bottom;
       }
-      
-      .signin-box div {
-        margin: 0 0 1.5em;
+      .signin-box input[type=text],
+      .signin-box input[type=password] {
+        width: 100%;
+        font-size: 15px;
+        color: black;
+        line-height: normal;
+        height: 32px;
+        margin: 0 0 20px;
+        box-sizing: border-box;
+      }
+      .signin-box input[type=submit] {
+        margin: 0 20px 15px 0;
       }
       
       .signin-box label {
-        color: #333;
-        font-size: 13px;
-        font-weight: normal;
-      }
-      .signin-box .username-label,
-      .signin-box .passwd-label {
         color: #222;
         margin: 0 0 5px;
         display: block;
@@ -95,7 +77,7 @@
         font-weight: normal;
         color: #666;
         line-height: 0;
-        padding: 0 0 0 .4em;
+        padding: 0 0 0 5px;
       }
 
       .signin-box ul {
@@ -128,23 +110,18 @@
           <h2>Sign in</h2>
           
           <form>
-            <div class="username-div">
-              <label for="username">
-                <strong class="username-label">Username</strong>
-              </label>
+            <fieldset>
+              <label for="username">Username</label>
               <input type="text" name="username" id="username">
-            </div>
-            <div class="pwd-div">
-              <label for="passwd">
-                <strong class="passwd-label">Password</strong>
-              </label>
+              <label for="passwd">Password</label>
               <input type="password" name="passwd" id="passwd">
-            </div>
-            <input type="submit" class="btn btn-primary" value="Sign in">
-            <label class="remember">
-              <input type="checkbox" name="rememberMe" value="yes">
-              <strong class="remember-label">Stay signed in</strong>
-            </label>
+              
+              <input type="submit" class="btn btn-primary" value="Sign in">
+              <label class="remember">
+                <input type="checkbox" name="rememberMe" value="yes">
+                <strong class="remember-label">Stay signed in</strong>
+              </label>
+            </fieldset>
           </form>
           
           <ul>
@@ -155,17 +132,6 @@
         </div>
       </div>
 
-<!--
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="input-block-level" placeholder="Email address">
-        <input type="password" class="input-block-level" placeholder="Password">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
-      </form>
--->
     </div> <!-- /container -->
 
     <!-- Le javascript
