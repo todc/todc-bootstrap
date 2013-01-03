@@ -1393,11 +1393,11 @@ select:focus:required:invalid:focus {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 4px;
-  padding: 0px 14px;
+  margin-top: 2px;
+  padding: 2px 14px;
 }
 .navbar-search {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 .navbar-search .search-query {
   padding: 2px 14px;
