@@ -38,14 +38,16 @@
   }
 
   // Links within the dropdown menu
-  a {
-    display: block;
-    padding: 6px 15px;
-    clear: both;
-    font-weight: normal;
-    line-height: 18px;
-    color: @dropdownLinkColor;
-    white-space: nowrap;
+  li > a {
+    padding: 3px 30px;
+    position: relative;
+    
+    // icon within the menu item
+    i {
+      position: absolute;
+      left: 7px;
+      top: 4px;
+    }
   }
 }
 
@@ -113,6 +115,7 @@
 // Caret to indicate there is a submenu
 .dropdown-submenu > a:after {
   border-left-color: #808080;
+  margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
   border-left-color: #000000;
