@@ -394,6 +394,22 @@
     .navbarVerticalAlign(@navbarGoogleNavHeight + 2, @navbarGoogleNavHeight); // Vertically center in navbar
     padding: 4px 12px;
   }
+  .btn,
+  .btn-small,
+  .btn-group > .btn,
+  .btn-group > .btn-small {
+    font-size: @fontSizeSmall;
+  }
+
+  // Reset fonts for other sizes
+  .btn-mini,
+  .btn-group > .btn-mini {
+    font-size: @fontSizeMini;
+  }
+  .btn-large,
+  .btn-group > .btn-large {
+    font-size: @fontSizeLarge;
+  }
 
   // Navbar forms
   // -------------------------
