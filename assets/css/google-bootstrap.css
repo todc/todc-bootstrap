@@ -397,23 +397,25 @@ select:focus:required:invalid:focus {
 }
 .g-select-dropdown .divider,
 .dropdown-menu .divider {
+  margin: 9px 1px;
   *width: 100%;
   height: 1px;
-  margin: 9px 1px;
+  margin: 9px 0;
   *margin: -5px 0 5px;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
 }
-.g-select-dropdown a,
-.dropdown-menu a {
-  display: block;
-  padding: 6px 15px;
-  clear: both;
-  font-weight: normal;
-  line-height: 18px;
-  color: #333333;
-  white-space: nowrap;
+.g-select-dropdown li > a,
+.dropdown-menu li > a {
+  padding: 3px 30px;
+  position: relative;
+}
+.g-select-dropdown li > a i,
+.dropdown-menu li > a i {
+  position: absolute;
+  left: 7px;
+  top: 4px;
 }
 .g-select-dropdown li {
   display: block;
@@ -462,6 +464,7 @@ select:focus:required:invalid:focus {
 }
 .dropdown-submenu > a:after {
   border-left-color: #808080;
+  margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
   border-left-color: #000000;
@@ -1060,6 +1063,20 @@ select:focus:required:invalid:focus {
 .btn-link[disabled]:hover {
   color: #333333;
   text-decoration: none;
+}
+.btn-group > .btn,
+.btn-group > .dropdown-menu,
+.btn-group > .popover {
+  font-size: 13px;
+}
+.btn-group > .btn-mini {
+  font-size: 9.75px;
+}
+.btn-group > .btn-small {
+  font-size: 11.049999999999999px;
+}
+.btn-group > .btn-large {
+  font-size: 16.25px;
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
