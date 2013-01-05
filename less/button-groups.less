@@ -1,5 +1,24 @@
-// BUTTON GROUPS
-// -------------
+//
+// Button groups
+// --------------------------------------------------
+
+
+.btn-group > .btn,
+.btn-group > .dropdown-menu,
+.btn-group > .popover {
+  font-size: @baseFontSize; // redeclare as part 2 of font-size inline-block hack
+}
+
+// Reset fonts for other sizes
+.btn-group > .btn-mini {
+  font-size: @fontSizeMini;
+}
+.btn-group > .btn-small {
+  font-size: @fontSizeSmall;
+}
+.btn-group > .btn-large {
+  font-size: @fontSizeLarge;
+}
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
