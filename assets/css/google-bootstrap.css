@@ -1724,6 +1724,20 @@ select:focus:required:invalid:focus {
   margin-top: -1px;
   padding: 4px 12px;
 }
+.navbar-googlenav .btn,
+.navbar-googlenav .btn-small,
+.navbar-googlenav .btn-group > .btn,
+.navbar-googlenav .btn-group > .btn-small {
+  font-size: 11.049999999999999px;
+}
+.navbar-googlenav .btn-mini,
+.navbar-googlenav .btn-group > .btn-mini {
+  font-size: 9.75px;
+}
+.navbar-googlenav .btn-large,
+.navbar-googlenav .btn-group > .btn-large {
+  font-size: 16.25px;
+}
 .navbar-googlenav .navbar-form input,
 .navbar-googlenav .navbar-form select,
 .navbar-googlenav .navbar-form .radio,
