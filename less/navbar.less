@@ -52,7 +52,9 @@
 .navbar .btn,
 .navbar .btn-group {
   .navbarVerticalAlign(26px); // Vertically center in navbar
-  padding: @paddingSmall;
+}
+.navbar .btn {
+  padding: @paddingSmall; // FIXME: This is probably not necessary for the btn-group;
 }
 
 // Navbar forms
@@ -394,13 +396,25 @@
     border-left: 1px solid @navbarGoogleNavBackgroundHighlight;
   }
 
+  // Optional: Group multiple button groups together for a toolbar
+  .btn-toolbar {
+    margin: 0;
+  }
+
   // Buttons in navbar
   // -------------------------
   .btn,
   .btn-group {
-    .navbarVerticalAlign(@navbarGoogleNavHeight + 2, @navbarGoogleNavHeight); // Vertically center in navbar
-    padding: 4px 12px;
+    .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
   }
+  .btn {
+    padding: 4px 12px; // FIXME: This is probably not necessary for the btn-group;
+  }
+  .btn [class^="icon-"],
+  .btn [class*=" icon-"] {
+    margin-top: -1px;
+  }
+
   .btn,
   .btn-small,
   .btn-group > .btn,
