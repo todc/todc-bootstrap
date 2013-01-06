@@ -1728,6 +1728,9 @@ select:focus:required:invalid:focus {
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
 }
+.navbar-googlenav .btn-toolbar {
+  margin: 0;
+}
 .navbar-googlenav .btn,
 .navbar-googlenav .btn-group {
   margin-top: 3px;
