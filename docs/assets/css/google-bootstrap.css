@@ -650,6 +650,10 @@ select:focus:required:invalid:focus {
   font-size: 14px;
   line-height: normal;
 }
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 1px;
+}
 .btn-small {
   padding: 5px 9px;
   font-size: 12px;
@@ -1064,6 +1068,9 @@ select:focus:required:invalid:focus {
   color: #333333;
   text-decoration: none;
 }
+.btn-group + .btn-group {
+  margin-left: 16px;
+}
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
@@ -1404,6 +1411,8 @@ select:focus:required:invalid:focus {
 .navbar .btn,
 .navbar .btn-group {
   margin-top: 2px;
+}
+.navbar .btn {
   padding: 2px 10px;
 }
 .navbar-form input,
@@ -1719,10 +1728,19 @@ select:focus:required:invalid:focus {
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
 }
+.navbar-googlenav .btn-toolbar {
+  margin: 0;
+}
 .navbar-googlenav .btn,
 .navbar-googlenav .btn-group {
-  margin-top: -1px;
+  margin-top: 3px;
+}
+.navbar-googlenav .btn {
   padding: 4px 12px;
+}
+.navbar-googlenav .btn [class^="icon-"],
+.navbar-googlenav .btn [class*=" icon-"] {
+  margin-top: -1px;
 }
 .navbar-googlenav .btn,
 .navbar-googlenav .btn-small,
