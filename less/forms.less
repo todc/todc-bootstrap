@@ -29,7 +29,6 @@ input[type="color"],
 
 // Reset appearance properties for textual inputs and textarea
 // Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
-.g-select,
 input,
 textarea {
   width: 210px;
@@ -171,7 +170,6 @@ textarea[readonly] {
 
 // HTML5 invalid states
 // Shares styles with the .control-group.error above
-.g-select:focus:required:invalid,
 input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid {
@@ -193,7 +191,6 @@ select:focus:required:invalid {
 .form-search,
 .form-inline,
 .form-horizontal {
-  .g-select,
   input,
   textarea,
   select,
@@ -209,21 +206,4 @@ select:focus:required:invalid {
   .hide {
     display: none;
   }
-}
-
-.btn.g-select {
-  font-weight: bold;
-  text-align: left;
-  padding: 4px 8px;
-}
-.btn.g-select:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  top: 9px;
-  right: 6px;
-  width: 7px;
-  height: 11px;
-  background-image: url(../img/grey-disclosure-arrow-up-down.png);
-  background-repeat: no-repeat;
 }

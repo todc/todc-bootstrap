@@ -3,7 +3,6 @@
 
 // The dropdown menu (ul)
 // ----------------------
-.g-select-dropdown,
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -51,20 +50,8 @@
   }
 }
 
-.g-select-dropdown li {
-  display: block;
-  padding: 3px 10px;
-  clear: both;
-  font-size: @baseFontSize;
-  font-weight: normal;
-  line-height: 18px;
-  color: @dropdownLinkColor;
-  white-space: nowrap;
-}
-
 // Hover state
 // -----------
-.g-select-dropdown li:hover,
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
@@ -82,11 +69,6 @@
   background-image: none;
 }
 
-.g-select-dropdown {
-  max-height: 200px;
-  overflow-y: auto;
-}
-
 // Open state for the dropdown
 // ---------------------------
 .open {
@@ -94,7 +76,6 @@
   // make the menu appear below buttons that appeared later on the page
   *z-index: @zindexDropdown;
 
-  & > .g-select-dropdown,
   & > .dropdown-menu {
     display: block;
   }
