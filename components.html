@@ -1918,6 +1918,102 @@
           <hr class="bs-docs-separator">
 
 
+          <h2>Toolbar</h2>
+          <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
+          <div class="bs-docs-example">
+            <div class="navbar navbar-googlenav">
+              <div class="navbar-inner">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-danger">NEW</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn" title="Display All Events">All</a>
+                    <a href="#" class="btn" title="Display Events by your Friends">Friends</a>
+                    <a href="#" class="btn" title="Display Events by your Family">Family</a>
+                  </div>
+
+                  <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" title="More Filters">
+                      More <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" title="Display Events by your Acquantances">Acquantances</a></li>
+                      <li><a href="#" title="Display Events by who you are Following">Following</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group pull-right">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" title="Actions">
+                      <i class="icon-cog"></i> <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-header">Nav header</li>
+                      <li>
+                        <a href="#">
+                          <i class="icon-bookmark"></i> Bookmark
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#"><i class="icon-download"></i> Download</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-googlenav"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;div class="btn-toolbar"&gt;
+      &lt;div class="btn-group"&gt;
+        &lt;a href="#" class="btn btn-danger"&gt;NEW&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="btn-group"&gt;
+        &lt;a href="#" class="btn"&gt;All&lt;/a&gt;
+        &lt;a href="#" class="btn"&gt;Friends&lt;/a&gt;
+        &lt;a href="#" class="btn"&gt;Family&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div class="btn-group"&gt;
+        &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+          More &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Acquantances&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Following&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="btn-group pull-right"&gt;
+        &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+          &lt;i class="icon-cog"&gt;&lt;/i&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+          &lt;li class="nav-header"&gt;Nav header&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;i class="icon-bookmark"&gt;&lt;/i&gt; Bookmark
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="divider"&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;&lt;i class="icon-download"&gt;&lt;/i&gt; Download&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
           <h2>Google navbar components</h2>
 
           <h3>Brand</h3>
