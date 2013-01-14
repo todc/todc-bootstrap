@@ -295,7 +295,7 @@
     .nav .active > a:hover,
     .nav .active > a:focus {
       color: @navbarGoogleBarInverseLinkColorActive;
-      background-color: @navbarGoogleBarInverseLinkBackgroundActive;
+      #gradient > .vertical(@navbarGoogleBarInverseLinkBackgroundActive, @navbarGoogleBarInverseLinkBackgroundActive);
     }
 
     // Inline text links
@@ -465,7 +465,7 @@
     min-height: @navbarGoogleNavHeight;
     margin: 0px;
     color: @navbarText;
-    background: none repeat scroll 0% 0% @navbarGoogleNavBackground;
+    #gradient > .vertical(@navbarGoogleNavBackground, @navbarGoogleNavBackground);
     border: 1px solid @navbarGoogleNavBorder;
   }
 
