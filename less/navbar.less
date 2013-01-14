@@ -199,7 +199,7 @@
     min-height: @navbarGoogleBarHeight;
     margin: 0px;
     color: @navbarText;
-    background: none repeat scroll 0% 0% @navbarGoogleBarBackground;
+    #gradient > .vertical(@navbarGoogleBarBackground, @navbarGoogleBarBackground);
     border: 1px solid @navbarGoogleBarBorder;
   }
 
@@ -251,7 +251,7 @@
     .box-shadow(none);
     color: @navbarGoogleBarLinkColorActive;
     text-decoration: none;
-    background-color: @navbarGoogleBarLinkBackgroundActive;
+    #gradient > .vertical(@navbarGoogleBarLinkBackgroundActive, @navbarGoogleBarLinkBackgroundActive);
   }
 
   // Navbar button for toggling navbar items in responsive layouts
