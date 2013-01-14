@@ -467,6 +467,7 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  margin-left: 18px;
 }
 .typeahead {
   -webkit-border-radius: 0;
