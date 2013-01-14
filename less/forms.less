@@ -165,6 +165,35 @@ textarea[readonly] {
 }
 
 
+// INPUT GROUPS
+// ------------
+
+.input-prepend {
+  input,
+  select,
+  .uneditable-input {
+    .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+  }
+}
+
+.input-append {
+  input,
+  select,
+  .uneditable-input {
+    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+  }
+}
+
+// Remove all border-radius for inputs with both prepend and append
+.input-prepend.input-append {
+  input,
+  select,
+  .uneditable-input {
+    .border-radius(0);
+  }
+}
+
+
 // FORM FIELD FEEDBACK STATES
 // --------------------------
 

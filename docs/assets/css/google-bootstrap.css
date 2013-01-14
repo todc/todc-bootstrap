@@ -253,6 +253,27 @@ textarea[readonly]:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.input-prepend input,
+.input-prepend select,
+.input-prepend .uneditable-input {
+  -webkit-border-radius: 0 1px 1px 0;
+  -moz-border-radius: 0 1px 1px 0;
+  border-radius: 0 1px 1px 0;
+}
+.input-append input,
+.input-append select,
+.input-append .uneditable-input {
+  -webkit-border-radius: 1px 0 0 1px;
+  -moz-border-radius: 1px 0 0 1px;
+  border-radius: 1px 0 0 1px;
+}
+.input-prepend.input-append input,
+.input-prepend.input-append select,
+.input-prepend.input-append .uneditable-input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid {
