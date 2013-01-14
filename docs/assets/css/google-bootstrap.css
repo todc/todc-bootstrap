@@ -2243,6 +2243,11 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.popover .popover-title {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 .label {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
