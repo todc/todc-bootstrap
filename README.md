@@ -7,6 +7,11 @@ the look of these new UI elements for my own personal use.
 
 This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
+The following projects are specifically designed for use with Google Bootstrap:
+
+* [Google Select2](http://github.com/todc/google-select2) - Google-themed select menus
+* [Google Datepicker](http://github.com/todc/google-datepicker) - Google-themed datepicker component
+
 ## Requirements ##
 
 * [LESS](http://lesscss.org) - for compiling `.less` files into CSS
