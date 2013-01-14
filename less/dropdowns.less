@@ -56,8 +56,7 @@
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: @dropdownLinkColorHover;
-  background-color: @dropdownLinkBackgroundHover;
-  background-image: none;
+  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
 }
 
 // Active state
@@ -65,8 +64,7 @@
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: @dropdownLinkColorActive;
-  background-color: @dropdownLinkBackgroundHover;
-  background-image: none;
+  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
 }
 
 // Open state for the dropdown
