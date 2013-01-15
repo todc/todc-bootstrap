@@ -93,6 +93,12 @@ input[type="radio"] {
   .border-radius(1px);
   .box-sizing(border-box);
   position: relative;
+  
+  // override styles for IE
+  box-sizing: content-box e("\9");
+  width: 16px e("\9");
+  height: 16px e("\9");
+  border-width: 0 e("\9");
 }
 input[type="radio"] {
   .border-radius(1em);
@@ -102,11 +108,16 @@ input[type="radio"] {
 input[type="checkbox"]:hover {
   border-color: #c6c6c6;
   .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
+  
+  // no box shadow for IE
+  box-shadow: none e("\9");
 }
 input[type="checkbox"]:active,
 input[type="radio"]:active {
   border-color: #c6c6c6;
-  background: #EBEBEB;
+  background-color: #ebebeb;
+  // override the bkgd color for IE
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
