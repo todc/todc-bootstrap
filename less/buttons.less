@@ -17,66 +17,59 @@
   font-family: @baseFontFamily;
   font-weight: bold;
   font-size: @baseFontSize;
-
+  text-align: center;
+  vertical-align: middle;
+  .background-clip(padding);
   cursor: default;
+  
   background-color: @btnBackground;
   #gradient > .vertical(#f5f5f5,#f1f1f1);
-  .background-clip(padding);
+  
   border: 1px solid #dcdcdc;
   .border-radius(@baseBorderRadius);
   .box-shadow(none);
-}
-
-// Hover state
-.btn:hover {
-  color: #333;
-  text-shadow: none;
-  border-color: #c6c6c6;
-
-  background-color: #f5f5f5;
-  #gradient > .vertical(#f8f8f8,#f1f1f1);
-  .box-shadow(0 1px 1px rgba(0,0,0,0.1));
-
-  background-position: 0 0;
-  .transition(none);
-  z-index: 2;
-}
-
-// Active state
-.btn.active,
-.btn:active {
-  background-color: #f4f4f4;
-  #gradient > .vertical(#f6f6f6,#f1f1f1);
-  .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
-}
-
-.btn:active,
-.btn:focus {
-  /* Blue border on button focus. */
-  border-color: #4D90FE;
-  outline-style: none;
-}
-.btn.active {
-  background: #e8e8e8;
-}
-
-// Disabled state
-.btn.disabled,
-.btn.disabled:hover,
-.btn.disabled:active,
-.btn.disabled.active,
-.btn.disabled:focus,
-.btn[disabled],
-.btn[disabled]:hover,
-.btn[disabled]:active,
-.btn[disabled].active,
-.btn[disabled]:focus {
-  color: darken(@white, 30%);
-  border-color: darken(@white, 15%);
-  background-color: darken(@white, 10%);
-  background-image: none;
-  .box-shadow(none);
-  text-shadow: none;
+  
+  &:hover {
+    text-shadow: none;
+    border-color: #c6c6c6;
+    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+    #gradient > .vertical(#f8f8f8,#f1f1f1);
+    background-position: 0 0;
+    .transition(none);
+  }
+  
+  &.active,
+  &:active {
+    background-image: none;
+    outline: 0;
+    background: #e8e8e8;
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+    #gradient > .vertical(#f6f6f6,#f1f1f1);
+  }
+  
+  // Disabled state
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:active,
+  &.disabled.active,
+  &.disabled:focus,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:active,
+  &[disabled].active,
+  &[disabled]:focus {
+    border: 1px solid #dcdcdc;
+    background-color: @btnBackground;
+    #gradient > .vertical(#f5f5f5,#f1f1f1);
+    .box-shadow(none);
+    text-shadow: none;
+  }
+  
+  &:focus {
+    /* Blue border on button focus. */
+    border-color: #4D90FE;
+    outline-style: none;
+  }
 }
 
 
@@ -179,225 +172,37 @@
 // Primary Button
 // -------------------------
 .btn-primary {
-  border: 1px solid #3079ED;
-  background-color: @btnPrimaryBackground;
-  #gradient > .vertical(#4d90fe,#4787ed);
+  .btnBackground(#4d90fe, #4787ed, #fff, #3079ed);
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active {
-  border: 1px solid #2F5BB7;
-  background-color: #4387f5;
-  #gradient > .vertical(#4d90fe,#357ae8);
-}
-.btn-primary.active {
-  background: darken(#4387f5, 10%);
-}
-.btn-primary.disabled,
-.btn-primary.disabled:hover,
-.btn-primary.disabled:active,
-.btn-primary.disabled.active,
-.btn-primary.disabled:focus,
-.btn-primary[disabled],
-.btn-primary[disabled]:hover,
-.btn-primary[disabled]:active,
-.btn-primary[disabled].active,
-.btn-primary[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(#3079ED, 10%);
-  background-color: lighten(#4b8cf7, 10%);
-}
-
 
 // Danger Button
 // -------------------------
 .btn-danger {
-  border: 1px solid #C6322A;
-  background-color: @btnDangerBackground;
-  #gradient > .vertical(#dd4b39,#d14836);
+  .btnBackground(#dd4b39, #d14836, #fff, #C6322A);
 }
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger:active {
-  border: 1px solid #AF301F;
-  background-color: #d34332;
-  #gradient > .vertical(#dd4b39,#c53727);
-}
-.btn-danger:active,
-.btn-danger.active {
-  background-color: #cb3d2d;
-  #gradient > .vertical(#dd4b39,#b0281a);
-}
-.btn-danger.active {
-  border-color: darken(#cb3d2d, 10%);
-  background: darken(#cb3d2d, 2%);
-}
-.btn-danger.disabled,
-.btn-danger.disabled:hover,
-.btn-danger.disabled:active,
-.btn-danger.disabled.active,
-.btn-danger.disabled:focus,
-.btn-danger[disabled],
-.btn-danger[disabled]:hover,
-.btn-danger[disabled]:active,
-.btn-danger[disabled].active,
-.btn-danger[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(#C6322A, 10%);
-  background-color: lighten(#d84a38, 10%);
-}
-
 
 // Warning Button
 // -------------------------
 .btn-warning {
-  border: 1px solid darken(@btnWarningBackground, 3%);
-  background-color: @btnWarningBackground;
-  #gradient > .vertical(lighten(@orange, 15%), lighten(@orange, 10%));
+  .btnBackground(lighten(@orange, 15%), lighten(@orange, 10%), #fff, darken(@btnWarningBackground, 3%));
 }
-.btn-warning:hover,
-.btn-warning:focus,
-.btn-warning:active {
-  border: 1px solid darken(@btnWarningBackground, 15%);
-  background-color: @btnWarningBackground;
-  #gradient > .vertical(lighten(@orange, 15%), @orange);
-}
-.btn-warning:active,
-.btn-warning.active {
-  background-color: @btnWarningBackground;
-  #gradient > .vertical(lighten(@orange, 15%), @orange);
-}
-.btn-warning.active {
-  border-color: darken(@btnWarningBackground, 15%);
-  background-color: darken(@btnWarningBackground, 10%);
-}
-.btn-warning.disabled,
-.btn-warning.disabled:hover,
-.btn-warning.disabled:active,
-.btn-warning.disabled.active,
-.btn-warning.disabled:focus,
-.btn-warning[disabled],
-.btn-warning[disabled]:hover,
-.btn-warning[disabled]:active,
-.btn-warning[disabled].active,
-.btn-warning[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(@btnWarningBackground, 5%);
-  background-color: lighten(@btnWarningBackground, 10%);
-}
-
 
 // Success Button
 // -------------------------
 .btn-success {
-  border: 1px solid #359947;
-  background-color: #35aa47;
-  #gradient > .vertical(#35aa47,#35aa47);
+  .btnBackground(#35aa47, #35aa47, #fff, #359947);
 }
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active {
-  border: 1px solid #508c36;
-  background-color: #2ba142;
-  #gradient > .vertical(#35aa47,#1d943b);
-}
-.btn-success:active,
-.btn-success.active {
-  background-color: #239c3b;
-  #gradient > .vertical(#35aa47,#088728);
-}
-.btn-success.active {
-  border-color: darken(#239c3b, 10%);
-  background: darken(#239c3b, 5%);
-}
-.btn-success.disabled,
-.btn-success.disabled:hover,
-.btn-success.disabled:active,
-.btn-success.disabled.active,
-.btn-success.disabled:focus,
-.btn-success[disabled],
-.btn-success[disabled]:hover,
-.btn-success[disabled]:active,
-.btn-success[disabled].active,
-.btn-success[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(#359947, 10%);
-  background-color: lighten(#35aa47, 10%);
-}
-
 
 // Info Button
 // -------------------------
 .btn-info {
-  border: 1px solid darken(@btnInfoBackground, 5%);
-  background-color: @btnInfoBackground;
-  #gradient > .vertical(@btnInfoBackground,@btnInfoBackground);
+  .btnBackground(@btnInfoBackground, @btnInfoBackground, #fff, darken(@btnInfoBackground, 5%));
 }
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active {
-  border: 1px solid darken(@btnInfoBackground, 10%);
-  background-color: @btnInfoBackground;
-  #gradient > .vertical(lighten(@btnInfoBackground, 3%), darken(@btnInfoBackground, 3%));
-}
-.btn-info:active,
-.btn-info.active {
-  background-color: darken(@btnInfoBackground, 8%);
-  #gradient > .vertical(lighten(@btnInfoBackground, 3%), darken(@btnInfoBackground, 3%));
-}
-.btn-info.active {
-  border-color: darken(@btnInfoBackground, 15%);
-  background: darken(@btnInfoBackground, 10%);
-}
-.btn-info.disabled,
-.btn-info.disabled:hover,
-.btn-info.disabled:active,
-.btn-info.disabled.active,
-.btn-info.disabled:focus,
-.btn-info[disabled],
-.btn-info[disabled]:hover,
-.btn-info[disabled]:active,
-.btn-info[disabled].active,
-.btn-info[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(@btnInfoBackground, 5%);
-  background-color: lighten(@btnInfoBackground, 10%);
-}
-
 
 // Inverse Button
 // -------------------------
 .btn-inverse {
-  border: 1px solid darken(@btnInverseBackground, 3%);
-  background-color: @btnInverseBackground;
-  #gradient > .vertical(lighten(@btnInverseBackground, 1%), darken(@btnInverseBackground, 1%));
-}
-.btn-inverse:hover,
-.btn-inverse:focus,
-.btn-inverse:active {
-  border: 1px solid darken(@btnInverseBackground, 9%);
-  background-color: @btnInverseBackground;
-  #gradient > .vertical(lighten(@btnInverseBackground, 3%), darken(@btnInverseBackground, 6%));
-}
-.btn-inverse:active,
-.btn-inverse.active {
-  background-color: darken(#2d2d2d, 8%);
-  #gradient > .vertical(lighten(@btnInverseBackground, 1%), darken(@btnInverseBackground, 9%));
-}
-.btn-inverse.disabled,
-.btn-inverse.disabled:hover,
-.btn-inverse.disabled:active,
-.btn-inverse.disabled.active,
-.btn-inverse.disabled:focus,
-.btn-inverse[disabled],
-.btn-inverse[disabled]:hover,
-.btn-inverse[disabled]:active,
-.btn-inverse[disabled].active,
-.btn-inverse[disabled]:focus {
-  color: darken(@white, 10%);
-  border-color: lighten(@btnInverseBackground, 10%);
-  background-color: lighten(@btnInverseBackground, 15%);
+  .btnBackground(lighten(@btnInverseBackground, 1%), lighten(@btnInverseBackground, 1%), #fff, darken(@btnInverseBackground, 3%));
 }
 
 

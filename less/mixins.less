@@ -30,3 +30,42 @@
   background-color: @top;
   border-bottom: 1px solid @bottom;
 }
+
+// Button backgrounds
+// ------------------
+.btnBackground(@startColor, @endColor, @textColor, @borderColor) {
+  border: 1px solid @borderColor;
+  color: @textColor;
+  #gradient > .vertical(@startColor, @endColor);
+  *background-color: @startColor;
+  .reset-filter();
+
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active {
+    border: 1px solid darken(@borderColor, 5%);
+    color: @textColor;
+    #gradient > .vertical(@startColor, darken(@endColor, 5%));
+    .reset-filter();
+    background-color: darken(@endColor, 5%);
+    background-color: darken(@endColor, 5%) e("\9");
+  }
+  &:active, &.active {
+    border: 1px solid darken(@borderColor, 10%);
+    #gradient > .vertical(@startColor, darken(@endColor, 10%));
+    .reset-filter();
+  }
+  &:focus {
+    border: 1px solid @borderColor;
+    .box-shadow(inset 0 0 0 1px #fff);
+  }
+  &.disabled, &[disabled], 
+  &.disabled:hover, &[disabled]:hover, 
+  &.disabled:active, &[disabled]:active, 
+  &.disabled:focus, &[disabled]:focus {
+    border: 1px solid @borderColor;
+    #gradient > .vertical(@startColor, @endColor);
+    .reset-filter();
+    background-color: @startColor;
+    background-color: @startColor e("\9");
+  }
+}
