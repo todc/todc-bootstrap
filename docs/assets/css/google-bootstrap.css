@@ -45,6 +45,14 @@ body {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.img-polaroid {
+  padding: 0;
+  background-color: #fff;
+  border: 3px solid #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #aaaaaa;
+  -moz-box-shadow: 0 0 0 1px #aaaaaa;
+  box-shadow: 0 0 0 1px #aaaaaa;
+}
 select,
 textarea,
 input[type="text"],
