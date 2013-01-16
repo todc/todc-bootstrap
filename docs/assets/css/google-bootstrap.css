@@ -40,6 +40,11 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
+.img-rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
 select,
 textarea,
 input[type="text"],
