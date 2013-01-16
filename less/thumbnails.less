@@ -1,0 +1,24 @@
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+// The actual thumbnail (can be `a` or `div`)
+.thumbnail {
+  padding: 0;
+  border: 3px solid #FFFFFF;
+  .border-radius(0);
+  .box-shadow(0 0 0 1px #AAAAAA);
+  .transition(none);
+}
+// Add a hover state for linked versions only
+a.thumbnail:hover {
+  border-color: #FFFFFF;
+  .box-shadow(0 0 0 1px #dedede);
+}
+
+// Images and captions
+.thumbnail .caption {
+  padding: 9px 4px;
+  color: #000000;
+}
