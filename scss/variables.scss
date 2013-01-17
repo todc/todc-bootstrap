@@ -154,8 +154,8 @@ $zindexFixedGooglenav:    1028;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          "../img/glyphicons-halflings.png";
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+$iconSpritePath:          image-path("glyphicons-halflings.png");
+$iconWhiteSpritePath:     image-path("glyphicons-halflings-white.png");
 
 
 // Input placeholder text color
