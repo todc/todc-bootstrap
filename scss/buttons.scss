@@ -35,7 +35,7 @@
     @include box-shadow(0 1px 1px rgba(0,0,0,0.1));
     #gradient > @include vertical(#f8f8f8,#f1f1f1);
     background-position: 0 0;
-    .transition(none);
+    @include transition(none);
   }
 
   &.active,
@@ -172,37 +172,37 @@
 // Primary Button
 // -------------------------
 .btn-primary {
-  .btnBackground(#4d90fe, #4787ed, #fff, #3079ed);
+  @include btnBackground(#4d90fe, #4787ed, #fff, #3079ed);
 }
 
 // Danger Button
 // -------------------------
 .btn-danger {
-  .btnBackground(#dd4b39, #d14836, #fff, #C6322A);
+  @include btnBackground(#dd4b39, #d14836, #fff, #C6322A);
 }
 
 // Warning Button
 // -------------------------
 .btn-warning {
-  .btnBackground(lighten($orange, 15%), lighten($orange, 10%), #fff, darken($btnWarningBackground, 3%));
+  @include btnBackground(lighten($orange, 15%), lighten($orange, 10%), #fff, darken($btnWarningBackground, 3%));
 }
 
 // Success Button
 // -------------------------
 .btn-success {
-  .btnBackground(#35aa47, #35aa47, #fff, #359947);
+  @include btnBackground(#35aa47, #35aa47, #fff, #359947);
 }
 
 // Info Button
 // -------------------------
 .btn-info {
-  .btnBackground($btnInfoBackground, $btnInfoBackground, #fff, darken($btnInfoBackground, 5%));
+  @include btnBackground($btnInfoBackground, $btnInfoBackground, #fff, darken($btnInfoBackground, 5%));
 }
 
 // Inverse Button
 // -------------------------
 .btn-inverse {
-  .btnBackground(lighten($btnInverseBackground, 1%), lighten($btnInverseBackground, 1%), #fff, darken($btnInverseBackground, 3%));
+  @include btnBackground(lighten($btnInverseBackground, 1%), lighten($btnInverseBackground, 1%), #fff, darken($btnInverseBackground, 3%));
 }
 
 

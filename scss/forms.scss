@@ -58,7 +58,7 @@ input[type="color"],
   border-top: 1px solid #c0c0c0;
   @include border-radius($inputBorderRadius);
   @include box-shadow(none);
-  .transition(none);
+  @include transition(none);
 
   &:hover {
     border: 1px solid #b9b9b9;
@@ -72,7 +72,7 @@ input[type="color"],
   &.focused {
     outline: none;
     border: 1px solid #4d90fe;
-    .transition(none);
+    @include transition(none);
     @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
   }
 }
@@ -117,7 +117,7 @@ input[type="radio"]:active {
   border-color: #c6c6c6;
   background-color: #ebebeb;
   // override the bkgd color for IE
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft@include gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {

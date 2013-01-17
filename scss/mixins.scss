@@ -9,10 +9,10 @@
 // Navbar vertical align
 // -------------------------
 // Vertically center elements in the navbar or other bars.
-// Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
+// Example: an element has a height of 30px, so write out `@include navbarVerticalAlign(30px);` to calculate the appropriate top margin.
 // Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
-//          .navbarVerticalAlign(32px, $navbarGoogleNavHeight);
-.navbarVerticalAlign($elementHeight, $barHeight: $navbarHeight) {
+//          @include navbarVerticalAlign(32px, $navbarGoogleNavHeight);
+@include navbarVerticalAlign($elementHeight, $barHeight: $navbarHeight) {
   margin-top: ($barHeight - $elementHeight) / 2;
 }
 
@@ -33,7 +33,7 @@
 
 // Button backgrounds
 // ------------------
-.btnBackground($startColor, $endColor, $textColor, $borderColor) {
+@include btnBackground($startColor, $endColor, $textColor, $borderColor) {
   border: 1px solid $borderColor;
   color: $textColor;
   #gradient > @include vertical($startColor, $endColor);
