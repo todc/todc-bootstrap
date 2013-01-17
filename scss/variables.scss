@@ -216,29 +216,6 @@ $navbarInverseSearchPlaceholderColor:    #ccc;
 
 $navbarInverseBrandColor:                $navbarInverseLinkColor;
 
-
-// Googlebar
-// -------------------------
-$navbarGoogleBarCollapseWidth:             979px;
-$navbarGoogleBarCollapseDesktopWidth:      $navbarGoogleBarCollapseWidth + 1;
-
-$navbarGoogleBarHeight:                    46px; // 77px for Google Developer. 46px for Google news. 50px for youtube
-$navbarGoogleBarBackground:                #f1f1f1;
-// $navbarGoogleBarBackgroundHighlight:       darken($navbarGoogleBarBackground, 4.7%);
-$navbarGoogleBarBackgroundHighlight:       lighten($navbarGoogleBarBackground, 1.5%);
-$navbarGoogleBarBorder:                    darken($navbarGoogleBarBackground, 4.7%);
-
-$navbarGoogleBarText:                      #777;
-$navbarGoogleBarLinkColor:                 #777;
-$navbarGoogleBarLinkColorHover:            $grayDark;
-$navbarGoogleBarLinkColorActive:           $navbarGoogleBarLinkColorHover;
-$navbarGoogleBarLinkBackgroundHover:       transparent;
-$navbarGoogleBarLinkBackgroundActive:      $navbarGoogleBarBackground;
-
-$navbarGoogleBarBrandColor:                $navbarGoogleBarLinkColor;
-
-
-
 // Googlenav
 // -------------------------
 $navbarGoogleNavCollapseWidth:             979px;
@@ -278,6 +255,45 @@ $navbarGoogleNavInverseSearchBorder:              $navbarGoogleNavInverseBackgro
 $navbarGoogleNavInverseSearchPlaceholderColor:    #ccc;
 
 $navbarGoogleNavInverseBrandColor:                $navbarGoogleNavInverseLinkColor;
+
+// Googlebar
+// -------------------------
+$navbarGoogleBarCollapseWidth:             979px;
+$navbarGoogleBarCollapseDesktopWidth:      $navbarGoogleBarCollapseWidth + 1;
+
+$navbarGoogleBarHeight:                    46px; // 77px for Google Developer. 46px for Google news. 50px for youtube
+$navbarGoogleBarBackground:                #f1f1f1;
+// $navbarGoogleBarBackgroundHighlight:       darken($navbarGoogleBarBackground, 4.7%);
+$navbarGoogleBarBackgroundHighlight:       lighten($navbarGoogleBarBackground, 1.5%);
+$navbarGoogleBarBorder:                    darken($navbarGoogleBarBackground, 4.7%);
+
+$navbarGoogleBarText:                      #777;
+$navbarGoogleBarLinkColor:                 #777;
+$navbarGoogleBarLinkColorHover:            $grayDark;
+$navbarGoogleBarLinkColorActive:           $navbarGoogleBarLinkColorHover;
+$navbarGoogleBarLinkBackgroundHover:       transparent;
+$navbarGoogleBarLinkBackgroundActive:      $navbarGoogleBarBackground;
+
+$navbarGoogleBarBrandColor:                $navbarGoogleBarLinkColor;
+
+// Inverted Googlebar
+$navbarGoogleBarInverseBackground:                #444;
+$navbarGoogleBarInverseBackgroundHighlight:       $gray;
+$navbarGoogleBarInverseBorder:                    $grayDark;
+
+$navbarGoogleBarInverseText:                      $grayLight;
+$navbarGoogleBarInverseLinkColor:                 $white;
+$navbarGoogleBarInverseLinkColorHover:            $white;
+$navbarGoogleBarInverseLinkColorActive:           $navbarGoogleNavInverseLinkColorHover;
+$navbarGoogleBarInverseLinkBackgroundHover:       transparent;
+$navbarGoogleBarInverseLinkBackgroundActive:      $navbarGoogleNavInverseBackground;
+
+$navbarGoogleBarInverseSearchBackground:          lighten($navbarInverseBackground, 25%);
+$navbarGoogleBarInverseSearchBackgroundFocus:     $white;
+$navbarGoogleBarInverseSearchBorder:              $navbarGoogleNavInverseBackground;
+$navbarGoogleBarInverseSearchPlaceholderColor:    #ccc;
+
+$navbarGoogleBarInverseBrandColor:                $navbarGoogleNavInverseLinkColor;
 
 
 // Pagination
