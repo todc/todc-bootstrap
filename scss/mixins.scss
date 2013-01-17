@@ -36,7 +36,7 @@
 .btnBackground($startColor, $endColor, $textColor, $borderColor) {
   border: 1px solid $borderColor;
   color: $textColor;
-  #gradient > .vertical($startColor, $endColor);
+  #gradient > @include vertical($startColor, $endColor);
   *background-color: $startColor;
   .reset-filter();
 
@@ -44,14 +44,14 @@
   &:hover, &:active, &.active {
     border: 1px solid darken($borderColor, 5%);
     color: $textColor;
-    #gradient > .vertical($startColor, darken($endColor, 5%));
+    #gradient > @include vertical($startColor, darken($endColor, 5%));
     .reset-filter();
     background-color: darken($endColor, 5%);
     background-color: darken($endColor, 5%) e("\9");
   }
   &:active, &.active {
     border: 1px solid darken($borderColor, 10%);
-    #gradient > .vertical($startColor, darken($endColor, 10%));
+    #gradient > @include vertical($startColor, darken($endColor, 10%));
     .reset-filter();
   }
   &:focus {
@@ -63,7 +63,7 @@
   &.disabled:active, &[disabled]:active,
   &.disabled:focus, &[disabled]:focus {
     border: 1px solid $borderColor;
-    #gradient > .vertical($startColor, $endColor);
+    #gradient > @include vertical($startColor, $endColor);
     .reset-filter();
     background-color: $startColor;
     background-color: $startColor e("\9");
