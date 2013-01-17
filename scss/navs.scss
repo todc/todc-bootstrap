@@ -1,0 +1,146 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// NAV LIST
+// --------
+
+.nav-list > li > a {
+  padding: 1px 15px;
+  color: $grayDarker;
+  &:hover {
+    background-color: $grayLighter;
+  }
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  padding-left: 12px;
+  font-weight: bold;
+  color: #dd4b39;
+  text-shadow: none;
+  background-color: transparent;
+  border-left: 3px solid #dd4b39;
+}
+.nav-list > .active > a:hover {
+  background-color: $grayLighter;
+}
+
+// TABS
+// ----
+
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  @include border-radius(2px 2px 0 0);
+  color: #666;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+    font-weight: bold;
+    color: #333;
+}
+
+
+// Google TABS
+// ----
+.nav-tabs-google > li {
+  margin: 0 1px 0 0;
+}
+.nav-tabs-google > li > a {
+    padding-top: 2px;
+    padding-bottom: 6px;
+    line-height: $baseLineHeight;
+    color: #777;
+    border: 1px solid transparent;
+    &:hover {
+      color: #222;
+      background-color: $white;
+      border-color: $white $white $white;
+      //border-color: $grayLighter $grayLighter #dd4b39
+    }
+    &:active {
+      color: #dd4b39;
+    }
+}
+.nav-tabs-google li:hover {
+  color: #333;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google li.active {
+  font-weight: bold;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google > .active > a,
+.nav-tabs-google > .active > a:hover {
+    color: #333;
+    border: 1px solid transparent;
+}
+
+
+// PILLS
+// -----
+// Links rendered as pills
+.nav-pills > li > a {
+  @include border-radius($baseBorderRadius);
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background-color: #4D90FE;
+}
+
+
+
+// STACKED NAV
+// -----------
+
+.nav-tabs.nav-stacked > li:first-child > a {
+  @include border-radius(2px 2px 0 0);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  @include border-radius(0 0 2px 2px);
+}
+.nav-tabs.nav-stacked > li > a:hover {
+  z-index: 2;
+  border-color: #ddd;
+}
+
+
+
+// DROPDOWNS
+// ---------
+
+.nav-tabs .dropdown-menu {
+  @include border-radius(0); // remove the top rounded corners here since there is a hard edge above the menu
+}
+.nav-tabs .dropdown-toggle .caret {
+  border-top-color: #666;
+  border-bottom-color: #666;
+}
+.nav-tabs .dropdown-toggle:hover .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+.nav-pills .dropdown-menu {
+  @include border-radius(0); // make rounded corners match the pills
+}
+
+// BOTTOM
+// ------
+
+.tabs-below > .nav-tabs > li > a {
+  @include border-radius(0 0 2px 2px);
+}
+
+// LEFT & RIGHT
+// ------------
+
+.tabs-left > .nav-tabs > li > a {
+  @include border-radius(2px 0 0 2px);
+}
+.tabs-right > .nav-tabs > li > a {
+  @include border-radius(0 2px 2px 0);
+}

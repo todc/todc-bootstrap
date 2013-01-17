@@ -1,0 +1,237 @@
+// BUTTON STYLES
+// -------------
+
+
+// Base styles
+// --------------------------------------------------
+
+// Core
+.btn {
+  position: relative;
+  padding: 4px 12px;
+  margin: 0;
+
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  font-family: $baseFontFamily;
+  font-weight: bold;
+  font-size: $baseFontSize;
+  text-align: center;
+  vertical-align: middle;
+  @include background-clip(padding);
+  cursor: default;
+
+  background-color: $btnBackground;
+  @include gradient-vertical(#f5f5f5,#f1f1f1);
+
+  border: 1px solid #dcdcdc;
+  @include border-radius($baseBorderRadius);
+  @include box-shadow(none);
+
+  &:hover {
+    text-shadow: none;
+    border-color: #c6c6c6;
+    @include box-shadow(0 1px 1px rgba(0,0,0,0.1));
+    @include gradient-vertical(#f8f8f8,#f1f1f1);
+    background-position: 0 0;
+    @include transition(none);
+  }
+
+  &.active,
+  &:active {
+    background-image: none;
+    outline: 0;
+    background: #e8e8e8;
+    @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+    @include gradient-vertical(#f6f6f6,#f1f1f1);
+  }
+
+  // Disabled state
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:active,
+  &.disabled.active,
+  &.disabled:focus,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:active,
+  &[disabled].active,
+  &[disabled]:focus {
+    border: 1px solid #dcdcdc;
+    background-color: $btnBackground;
+    @include gradient-vertical(#f5f5f5,#f1f1f1);
+    @include box-shadow(none);
+    text-shadow: none;
+  }
+
+  &:focus {
+    /* Blue border on button focus. */
+    border-color: #4D90FE;
+    outline-style: none;
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: 9px 14px;
+  font-size: $baseFontSize + 1px;
+  line-height: normal;
+}
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 1px;
+}
+
+// Small
+.btn-small {
+  padding: 5px 9px;
+  font-size: $baseFontSize - 1px;
+  line-height: $baseLineHeight - 5px;
+}
+
+// Mini
+.btn-mini {
+  padding: 2px 6px;
+  font-size: $baseFontSize - 2px;
+  line-height: $baseLineHeight - 7px;
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Set text color
+// -------------------------
+.btn-primary,
+.btn-primary:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-success,
+.btn-success:hover,
+.btn-info,
+.btn-info:hover,
+.btn-inverse,
+.btn-inverse:hover {
+  color: $white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+// Provide *some* extra contrast for those who can get it
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-inverse:hover {
+  @include box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-warning:active,
+.btn-warning.active,
+.btn-danger:active,
+.btn-danger.active,
+.btn-success:active,
+.btn-success.active,
+.btn-info:active,
+.btn-info.active,
+.btn-inverse:active,
+.btn-inverse.active {
+  @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-warning.active,
+.btn-warning:active,
+.btn-warning:hover,
+.btn-danger.active,
+.btn-danger:active,
+.btn-danger:hover,
+.btn-success.active,
+.btn-success:active,
+.btn-success:hover,
+.btn-info.active,
+.btn-info:active,
+.btn-info:hover,
+.btn-inverse.active,
+.btn-inverse:active,
+.btn-inverse:hover {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+
+// Primary Button
+// -------------------------
+.btn-primary {
+  @include btnBackground(#4d90fe, #4787ed, #fff, #3079ed);
+}
+
+// Danger Button
+// -------------------------
+.btn-danger {
+  @include btnBackground(#dd4b39, #d14836, #fff, #C6322A);
+}
+
+// Warning Button
+// -------------------------
+.btn-warning {
+  @include btnBackground(lighten($orange, 15%), lighten($orange, 10%), #fff, darken($btnWarningBackground, 3%));
+}
+
+// Success Button
+// -------------------------
+.btn-success {
+  @include btnBackground(#35aa47, #35aa47, #fff, #359947);
+}
+
+// Info Button
+// -------------------------
+.btn-info {
+  @include btnBackground($btnInfoBackground, $btnInfoBackground, #fff, darken($btnInfoBackground, 5%));
+}
+
+// Inverse Button
+// -------------------------
+.btn-inverse {
+  @include btnBackground(lighten($btnInverseBackground, 1%), lighten($btnInverseBackground, 1%), #fff, darken($btnInverseBackground, 3%));
+}
+
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: $linkColor;
+  @include border-radius(0);
+}
+.btn-link:hover {
+  border-color: transparent;
+  color: $linkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+  background-image: none;
+  @include box-shadow(none);
+}
+.btn-link[disabled]:hover {
+  color: $grayDark;
+  text-decoration: none;
+}

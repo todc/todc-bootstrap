@@ -1,0 +1,115 @@
+// DROPDOWN MENUS
+// --------------
+
+// The dropdown menu (ul)
+// ----------------------
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $zindexDropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: 0 0 6px 0;
+  margin: 1px 0 0; // override default ul
+  list-style: none;
+  background-color: $dropdownBackground;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  @include border-radius(0);
+  @include box-shadow(0 2px 4px rgba(0,0,0,.2));
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+
+  // Aligns the dropdown menu to right
+  &.pull-right {
+    right: 0;
+    left: auto;
+  }
+
+  // Dividers (basically an hr) within the dropdown
+  .divider {
+    @include nav-divider($dropdownDividerTop, $dropdownDividerBottom);
+  }
+
+  // Links within the dropdown menu
+  li > a {
+    padding: 3px 30px;
+    position: relative;
+
+    // icon within the menu item
+    i {
+      position: absolute;
+      left: 7px;
+      top: 4px;
+    }
+  }
+}
+
+// Hover state
+// -----------
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: $dropdownLinkColorHover;
+  @include gradient-vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
+}
+
+// Active state
+// ------------
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: $dropdownLinkColorActive;
+  @include gradient-vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
+}
+
+// Open state for the dropdown
+// ---------------------------
+.open {
+  // IE7's z-index only goes to the nearest positioned ancestor, which would
+  // make the menu appear below buttons that appeared later on the page
+  *z-index: $zindexDropdown;
+
+  & > .dropdown-menu {
+    display: block;
+  }
+}
+
+// Sub menus
+// ---------------------------
+// Default dropdowns
+.dropdown-submenu > .dropdown-menu {
+  @include border-radius(0);
+}
+
+// Dropups
+.dropup .dropdown-submenu > .dropdown-menu {
+  @include border-radius(0);
+}
+
+// Caret to indicate there is a submenu
+.dropdown-submenu > a:after {
+  border-left-color: #808080;
+  margin-right: -20px;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #000000;
+}
+
+// Left aligned submenus
+.dropdown-submenu.pull-left {
+  > .dropdown-menu {
+    @include border-radius(0);
+    margin-left: 18px;
+  }
+}
+
+// Typeahead
+// ---------
+.typeahead {
+  @include border-radius(0);
+}

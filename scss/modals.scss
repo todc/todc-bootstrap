@@ -1,0 +1,20 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Background
+.modal-backdrop {
+  background-color: $white;
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  @include opacity(75);
+}
+
+// Base modal
+.modal {
+  @include border-radius(0);
+}

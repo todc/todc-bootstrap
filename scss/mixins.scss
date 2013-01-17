@@ -1,0 +1,71 @@
+// Mixins.less
+// Snippets of reusable CSS to develop faster and keep code readable
+// -----------------------------------------------------------------
+
+
+// COMPONENT MIXINS
+// --------------------------------------------------
+
+// Navbar vertical align
+// -------------------------
+// Vertically center elements in the navbar or other bars.
+// Example: an element has a height of 30px, so write out `@include navbarVerticalAlign(30px);` to calculate the appropriate top margin.
+// Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
+//          @include navbarVerticalAlign(32px, $navbarGoogleNavHeight);
+@mixin navbarVerticalAlign($elementHeight, $barHeight: $navbarHeight) {
+  margin-top: ($barHeight - $elementHeight) / 2;
+}
+
+// Override Twitter Bootstrap's mixin
+@mixin nav-divider($top: #ebebeb, $bottom: $white) {
+  // IE7 needs a set width since we gave a height. Restricting just
+  // to IE7 to keep the 1px left/right space in other browsers.
+  // It is unclear where IE is getting the extra space that we need
+  // to negative-margin away, but so it goes.
+  *width: 100%;
+  height: 1px;
+  margin: (($baseLineHeight / 2) - 1) 0; // 8px 0px
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: $top;
+  border-bottom: 1px solid $bottom;
+}
+
+// Button backgrounds
+// ------------------
+@mixin btnBackground($startColor, $endColor, $textColor, $borderColor) {
+  border: 1px solid $borderColor;
+  color: $textColor;
+  @include gradient-vertical($startColor, $endColor);
+  *background-color: $startColor;
+  @include reset-filter();
+
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active {
+    border: 1px solid darken($borderColor, 5%);
+    color: $textColor;
+    @include gradient-vertical($startColor, darken($endColor, 5%));
+    @include reset-filter();
+    background-color: darken($endColor, 5%);
+    background-color: darken($endColor, 5%) \9;
+  }
+  &:active, &.active {
+    border: 1px solid darken($borderColor, 10%);
+    @include gradient-vertical($startColor, darken($endColor, 10%));
+    @include reset-filter();
+  }
+  &:focus {
+    border: 1px solid $borderColor;
+    @include box-shadow(inset 0 0 0 1px #fff);
+  }
+  &.disabled, &[disabled],
+  &.disabled:hover, &[disabled]:hover,
+  &.disabled:active, &[disabled]:active,
+  &.disabled:focus, &[disabled]:focus {
+    border: 1px solid $borderColor;
+    @include gradient-vertical($startColor, $endColor);
+    @include reset-filter();
+    background-color: $startColor;
+    background-color: $startColor \9;
+  }
+}
