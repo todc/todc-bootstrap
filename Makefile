@@ -14,6 +14,9 @@ checkout_bootstrap:
 	git clone ${BOOTSTRAP_URL} ${BOOTSTRAP_DIR}
 	cd ${BOOTSTRAP_DIR} && git checkout tags/${BOOTSTRAP_VERSION}
 
+sass:
+	scss scss/google-bootstrap.scss > ${CSS_FILE}
+
 #
 # For @todc
 #
