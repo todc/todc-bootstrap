@@ -56,14 +56,14 @@ input[type="color"],
 .uneditable-input {
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  .border-radius(@inputBorderRadius);
-  .box-shadow(none);
+  @include border-radius($inputBorderRadius);
+  @include box-shadow(none);
   .transition(none);
 
   &:hover {
     border: 1px solid #b9b9b9;
     border-top: 1px solid #a0a0a0;
-    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
+    @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
     z-index: 2;
   }
 
@@ -73,7 +73,7 @@ input[type="color"],
     outline: none;
     border: 1px solid #4d90fe;
     .transition(none);
-    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
+    @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
   }
 }
 
@@ -90,10 +90,10 @@ input[type="radio"] {
   height: 13px;
   background: white;
   border: 1px solid #dcdcdc;
-  .border-radius(1px);
+  @include border-radius(1px);
   .box-sizing(border-box);
   position: relative;
-  
+
   // override styles for IE
   box-sizing: content-box e("\9");
   width: 16px e("\9");
@@ -101,14 +101,14 @@ input[type="radio"] {
   border-width: 0 e("\9");
 }
 input[type="radio"] {
-  .border-radius(1em);
+  @include border-radius(1em);
   width: 15px;
   height: 15px;
 }
 input[type="checkbox"]:hover {
   border-color: #c6c6c6;
-  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
-  
+  @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
+
   // no box shadow for IE
   box-shadow: none e("\9");
 }
@@ -139,7 +139,7 @@ input[type="radio"]:checked::after {
   width: 7px;
   height: 7px;
   background: #666;
-  .border-radius(1em);
+  @include border-radius(1em);
 }
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
@@ -160,7 +160,7 @@ textarea[disabled] {
   background: #f1f1f1;
 
   &:hover {
-    .box-shadow(none);
+    @include box-shadow(none);
   }
 }
 input[readonly],
@@ -171,7 +171,7 @@ textarea[readonly] {
 
   &:hover,
   &:focus {
-    .box-shadow(none);
+    @include box-shadow(none);
   }
 }
 
@@ -183,7 +183,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
   }
 }
 
@@ -191,7 +191,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
   }
 }
 
@@ -200,7 +200,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(0);
+    @include border-radius(0);
   }
 }
 
@@ -217,7 +217,7 @@ select:focus:required:invalid {
   border-color: #ee5f5b;
   &:focus {
     border-color: #4d90fe;
-    .box-shadow(0);
+    @include box-shadow(0);
   }
 }
 

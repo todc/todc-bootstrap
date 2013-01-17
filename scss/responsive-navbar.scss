@@ -5,7 +5,7 @@
 
 // TABLETS AND BELOW
 // -----------------
-@media (max-width: @navbarCollapseWidth) {
+$media (max-width: $navbarCollapseWidth) {
 
   // Google bar
   // -------------------------
@@ -22,27 +22,27 @@
     .nav-collapse {
       // Active nav items
       .nav > .active > a {
-        color: @navbarGoogleBarLinkColorActive;
-        background-color: @navbarGoogleBarBackgroundHighlight;
+        color: $navbarGoogleBarLinkColorActive;
+        background-color: $navbarGoogleBarBackgroundHighlight;
       }
 
       .nav .nav-header {
-        color: @navbarGoogleBarText;
+        color: $navbarGoogleBarText;
       }
       // Nav and dropdown links in navbar
       .nav > li > a,
       .dropdown-menu a {
-        color: @navbarGoogleBarLinkColor;
+        color: $navbarGoogleBarLinkColor;
       }
       .nav > li > a:hover,
       .dropdown-menu a:hover {
-        background-color: @navbarGoogleBarBackground;
+        background-color: $navbarGoogleBarBackground;
       }
       // Forms in navbar
       .navbar-form,
       .navbar-search {
-        border-top: 1px solid @navbarGoogleBarBackground;
-        border-bottom: 1px solid @navbarGoogleBarBackground;
+        border-top: 1px solid $navbarGoogleBarBackground;
+        border-bottom: 1px solid $navbarGoogleBarBackground;
       }
     }
 
@@ -50,23 +50,23 @@
       .nav-collapse {
         // Active nav items
         .nav > .active > a {
-          color: @navbarGoogleBarInverseLinkColorActive;
-          background-color: @navbarGoogleBarInverseBackground;
+          color: $navbarGoogleBarInverseLinkColorActive;
+          background-color: $navbarGoogleBarInverseBackground;
         }
         // Nav and dropdown links in navbar
         .nav > li > a,
         .dropdown-menu a {
-          color: @navbarGoogleBarInverseLinkColor;
+          color: $navbarGoogleBarInverseLinkColor;
         }
         .nav > li > a:hover,
         .dropdown-menu a:hover {
-          background-color: @navbarGoogleBarInverseBackground;
+          background-color: $navbarGoogleBarInverseBackground;
         }
         // Forms in navbar
         .navbar-form,
         .navbar-search {
-          border-top-color: @navbarGoogleBarInverseBackground;
-          border-bottom-color: @navbarGoogleBarInverseBackground;
+          border-top-color: $navbarGoogleBarInverseBackground;
+          border-bottom-color: $navbarGoogleBarInverseBackground;
         }
       }
     }
@@ -97,22 +97,22 @@
         }
       }
       .nav .nav-header {
-        color: @navbarGoogleNavText;
+        color: $navbarGoogleNavText;
       }
       // Nav and dropdown links in navbar
       .nav > li > a,
       .dropdown-menu a {
-        color: @navbarGoogleNavLinkColor;
+        color: $navbarGoogleNavLinkColor;
       }
       .nav > li > a:hover,
       .dropdown-menu a:hover {
-        background-color: @navbarGoogleNavBackground;
+        background-color: $navbarGoogleNavBackground;
       }
       // Forms in navbar
       .navbar-form,
       .navbar-search {
-        border-top: 1px solid @navbarGoogleNavBackground;
-        border-bottom: 1px solid @navbarGoogleNavBackground;
+        border-top: 1px solid $navbarGoogleNavBackground;
+        border-bottom: 1px solid $navbarGoogleNavBackground;
       }
     }
 
@@ -121,23 +121,23 @@
         // Active nav items
         .nav > .active > a,
         .nav > .active > a:hover {
-          color: @navbarGoogleBarInverseLinkColorActive;
-          background-color: @navbarGoogleBarInverseBackgroundHighlight;
+          color: $navbarGoogleBarInverseLinkColorActive;
+          background-color: $navbarGoogleBarInverseBackgroundHighlight;
         }
         // Nav and dropdown links in navbar
         .nav > li > a,
         .dropdown-menu a {
-          color: @navbarGoogleNavInverseLinkColor;
+          color: $navbarGoogleNavInverseLinkColor;
         }
         .nav > li > a:hover,
         .dropdown-menu a:hover {
-          background-color: @navbarGoogleNavInverseBackground;
+          background-color: $navbarGoogleNavInverseBackground;
         }
         // Forms in navbar
         .navbar-form,
         .navbar-search {
-          border-top-color: @navbarGoogleNavInverseBackground;
-          border-bottom-color: @navbarGoogleNavInverseBackground;
+          border-top-color: $navbarGoogleNavInverseBackground;
+          border-bottom-color: $navbarGoogleNavInverseBackground;
         }
       }
     }

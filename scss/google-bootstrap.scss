@@ -8,43 +8,43 @@
  */
 
 // Core variables and mixins
-@import "variables.less";
-@import "../bootstrap/less/mixins.less";
-@import "mixins.less";
+$import "variables.less";
+$import "../bootstrap/less/mixins.less";
+$import "mixins.less";
 
 // Grid system and page structure
-@import "scaffolding.less";
+$import "scaffolding.less";
 
 // Base CSS
-@import "forms.less";
-@import "tables.less";
+$import "forms.less";
+$import "tables.less";
 
 // Components: common
-@import "sprites.less";
-@import "dropdowns.less";
-@import "wells.less";
-@import "scrollbars.less";
+$import "sprites.less";
+$import "dropdowns.less";
+$import "wells.less";
+$import "scrollbars.less";
 
 // Components: Buttons & Alerts
-@import "buttons.less";
-@import "button-groups.less";
-@import "alerts.less";
+$import "buttons.less";
+$import "button-groups.less";
+$import "alerts.less";
 
 // Components: Nav
-@import "navs.less";
-@import "navbar.less";
-@import "breadcrumbs.less";
-@import "pagination.less";
-@import "pager.less";
+$import "navs.less";
+$import "navbar.less";
+$import "breadcrumbs.less";
+$import "pagination.less";
+$import "pager.less";
 
 // Components: Popovers
-@import "modals.less";
-@import "tooltip.less";
-@import "popovers.less";
+$import "modals.less";
+$import "tooltip.less";
+$import "popovers.less";
 
 // Components: Misc
-@import "labels-badges.less";
-@import "progress-bars.less";
+$import "labels-badges.less";
+$import "progress-bars.less";
 
 
 
@@ -54,4 +54,4 @@
 
 // Responsive navbar
 // From 979px and below, show a button to toggle navbar contents
-@import "responsive-navbar.less";
+$import "responsive-navbar.less";

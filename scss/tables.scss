@@ -9,7 +9,7 @@
   tbody {
     tr:hover td,
     tr:hover th {
-      background-color: @tableBackgroundHover;
+      background-color: $tableBackgroundHover;
     }
   }
 }
@@ -21,31 +21,31 @@
 
 .table tbody tr {
   &.success td {
-    background-color: @successBackground;
+    background-color: $successBackground;
   }
   &.error td {
-    background-color: @errorBackground;
+    background-color: $errorBackground;
   }
   &.warning td {
-    background-color: @warningBackground;
+    background-color: $warningBackground;
   }
   &.info td {
-    background-color: @infoBackground;
+    background-color: $infoBackground;
   }
 }
 
 // Hover states for .table-hover
 .table-hover tbody tr {
   &.success:hover td {
-    background-color: darken(@successBackground, 5%);
+    background-color: darken($successBackground, 5%);
   }
   &.error:hover td {
-    background-color: darken(@errorBackground, 5%);
+    background-color: darken($errorBackground, 5%);
   }
   &.warning:hover td {
-    background-color: darken(@warningBackground, 5%);
+    background-color: darken($warningBackground, 5%);
   }
   &.info:hover td {
-    background-color: darken(@infoBackground, 5%);
+    background-color: darken($infoBackground, 5%);
   }
 }

@@ -4,17 +4,17 @@
 
 // Background
 .modal-backdrop {
-  background-color: @white;
+  background-color: $white;
   // Fade for backdrop
   &.fade { opacity: 0; }
 }
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  .opacity(75);
+  @include opacity(75);
 }
 
 // Base modal
 .modal {
-  .border-radius(0);
+  @include border-radius(0);
 }

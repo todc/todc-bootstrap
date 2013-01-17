@@ -7,11 +7,11 @@
 // -------------------------
 
 body {
-  font-family: @baseFontFamily;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  color: @textColor;
-  background-color: @bodyBackground;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $textColor;
+  background-color: $bodyBackground;
 }
 
 
@@ -20,7 +20,7 @@ body {
 
 // Rounded corners
 .img-rounded {
-  .border-radius(4px);
+  @include border-radius(4px);
 }
 
 // Add polaroid-esque trim
@@ -28,5 +28,5 @@ body {
   padding: 0;
   background-color: #fff;
   border: 3px solid #FFFFFF;
-  .box-shadow(0 0 0 1px #AAAAAA);
+  @include box-shadow(0 0 0 1px #AAAAAA);
 }
