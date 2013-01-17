@@ -33,7 +33,7 @@
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    .nav-divider($dropdownDividerTop, $dropdownDividerBottom);
+    @include nav-divider($dropdownDividerTop, $dropdownDividerBottom);
   }
 
   // Links within the dropdown menu
@@ -56,7 +56,7 @@
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: $dropdownLinkColorHover;
-  #gradient > @include vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
+  @include gradient-vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
 }
 
 // Active state
@@ -64,7 +64,7 @@
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: $dropdownLinkColorActive;
-  #gradient > @include vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
+  @include gradient-vertical($dropdownLinkBackgroundHover, $dropdownLinkBackgroundHover);
 }
 
 // Open state for the dropdown

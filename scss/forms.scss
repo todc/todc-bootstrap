@@ -91,7 +91,7 @@ input[type="radio"] {
   background: white;
   border: 1px solid #dcdcdc;
   @include border-radius(1px);
-  .box-sizing(border-box);
+  @include box-sizing(border-box);
   position: relative;
 
   // override styles for IE
@@ -117,7 +117,7 @@ input[type="radio"]:active {
   border-color: #c6c6c6;
   background-color: #ebebeb;
   // override the bkgd color for IE
-  filter: progid:DXImageTransform.Microsoft@include gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
@@ -239,7 +239,7 @@ select:focus:required:invalid {
   .input-prepend,
   .input-append {
     display: inline-block;
-    .ie7-inline-block();
+    @include ie7-inline-block();
     margin-bottom: 0;
   }
   // Re-hide hidden elements due to specifity

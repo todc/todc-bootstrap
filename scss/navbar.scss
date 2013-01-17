@@ -94,7 +94,7 @@
 .navbar .btn-navbar {
   padding: 4px 10px 7px;
   @include navbarVerticalAlign(26px); // Vertically center in navbar
-  #gradient > @include vertical(#f5f5f5, #f1f1f1);
+  @include gradient-vertical(#f5f5f5, #f1f1f1);
   border: 1px solid #dcdcdc;
   @include box-shadow(none);
 }
@@ -195,11 +195,11 @@
   .navbar-inner {
     @include border-radius($baseBorderRadius);
     @include box-shadow(none);
-    .box-sizing(border-box);
+    @include box-sizing(border-box);
     min-height: $navbarGoogleBarHeight;
     margin: 0px;
     color: $navbarText;
-    #gradient > @include vertical($navbarGoogleBarBackground, $navbarGoogleBarBackground);
+    @include gradient-vertical($navbarGoogleBarBackground, $navbarGoogleBarBackground);
     border: 1px solid $navbarGoogleBarBorder;
   }
 
@@ -251,7 +251,7 @@
     @include box-shadow(none);
     color: $navbarGoogleBarLinkColorActive;
     text-decoration: none;
-    #gradient > @include vertical($navbarGoogleBarLinkBackgroundActive, $navbarGoogleBarLinkBackgroundActive);
+    @include gradient-vertical($navbarGoogleBarLinkBackgroundActive, $navbarGoogleBarLinkBackgroundActive);
   }
 
   // Navbar button for toggling navbar items in responsive layouts
@@ -259,8 +259,8 @@
   .btn-navbar {
     padding: 4px 10px 7px;
     @include navbarVerticalAlign(26px, $navbarGoogleBarHeight); // Vertically center in navbar
-    // #gradient > @include vertical($navbarGoogleBarBackgroundHighlight, $navbarGoogleBarBackground);
-    #gradient > @include vertical(#f5f5f5, #f1f1f1);
+    // @include gradient-vertical($navbarGoogleBarBackgroundHighlight, $navbarGoogleBarBackground);
+    @include gradient-vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
 
@@ -273,7 +273,7 @@
 
     .navbar-inner {
       border-color: $navbarGoogleBarInverseBorder;
-      #gradient > @include vertical($navbarGoogleBarInverseBackgroundHighlight, $navbarGoogleBarInverseBackground);
+      @include gradient-vertical($navbarGoogleBarInverseBackgroundHighlight, $navbarGoogleBarInverseBackground);
     }
 
     .brand,
@@ -295,7 +295,7 @@
     .nav .active > a:hover,
     .nav .active > a:focus {
       color: $navbarGoogleBarInverseLinkColorActive;
-      #gradient > @include vertical($navbarGoogleBarInverseLinkBackgroundActive, $navbarGoogleBarInverseLinkBackgroundActive);
+      @include gradient-vertical($navbarGoogleBarInverseLinkBackgroundActive, $navbarGoogleBarInverseLinkBackgroundActive);
     }
 
     // Inline text links
@@ -461,11 +461,11 @@
   .navbar-inner {
     @include border-radius($baseBorderRadius);
     @include box-shadow(none);
-    .box-sizing(border-box);
+    @include box-sizing(border-box);
     min-height: $navbarGoogleNavHeight;
     margin: 0px;
     color: $navbarText;
-    #gradient > @include vertical($navbarGoogleNavBackground, $navbarGoogleNavBackground);
+    @include gradient-vertical($navbarGoogleNavBackground, $navbarGoogleNavBackground);
     border: 1px solid $navbarGoogleNavBorder;
   }
 
@@ -558,7 +558,7 @@
   .btn-navbar {
     padding: 4px 10px 7px;
     @include navbarVerticalAlign(26px, $navbarGoogleNavHeight); // Vertically center in navbar
-    #gradient > @include vertical(#f5f5f5, #f1f1f1);
+    @include gradient-vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
 
@@ -614,7 +614,7 @@
 
     .navbar-inner {
       border-color: $navbarGoogleNavInverseBorder;
-      #gradient > @include vertical($navbarGoogleNavInverseBackgroundHighlight, $navbarGoogleNavInverseBackground);
+      @include gradient-vertical($navbarGoogleNavInverseBackgroundHighlight, $navbarGoogleNavInverseBackground);
       background: $navbarGoogleNavInverseBackground;
     }
 

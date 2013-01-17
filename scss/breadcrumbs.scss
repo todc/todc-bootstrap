@@ -3,6 +3,6 @@
 
 .breadcrumb {
   background-color: $btnBackground;
-  #gradient > @include vertical(#f5f5f5, #f1f1f1);
+  @include gradient-vertical(#f5f5f5, #f1f1f1);
   @include border-radius(2px);
 }
