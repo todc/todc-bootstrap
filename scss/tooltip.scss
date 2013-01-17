@@ -1,0 +1,10 @@
+// TOOLTIP
+// ------=
+
+.tooltip {
+  font-weight: bold;
+  &.in     { .opacity(100); }
+}
+.tooltip-inner {
+  .border-radius(0px);
+}

@@ -1,0 +1,44 @@
+// ALERT STYLES
+// ------------
+
+.alert {
+  padding: 8px 35px 8px 10px;
+  text-shadow: none;
+  .box-shadow(0 2px 4px rgba(0,0,0,0.2));
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(@baseBorderRadius);
+  color: @grayDark;
+}
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+}
+
+.alert-success,
+.alert-danger,
+.alert-error,
+.alert-info {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.alert-danger,
+.alert-error {
+  border-color: darken(@errorBackground, 20%);
+  color: #b94a48;
+}
