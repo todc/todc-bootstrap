@@ -53,6 +53,12 @@ body {
   -moz-box-shadow: 0 0 0 1px #aaaaaa;
   box-shadow: 0 0 0 1px #aaaaaa;
 }
+a.img-polaroid:hover {
+  border-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #dedede;
+  -moz-box-shadow: 0 0 0 1px #dedede;
+  box-shadow: 0 0 0 1px #dedede;
+}
 select,
 textarea,
 input[type="text"],
@@ -2396,6 +2402,30 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.thumbnail {
+  padding: 0;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 1px #aaaaaa;
+  -moz-box-shadow: 0 0 0 1px #aaaaaa;
+  box-shadow: 0 0 0 1px #aaaaaa;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+a.thumbnail:hover {
+  border-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #dedede;
+  -moz-box-shadow: 0 0 0 1px #dedede;
+  box-shadow: 0 0 0 1px #dedede;
+}
+.thumbnail .caption {
+  padding: 9px 4px;
+  color: #000000;
 }
 .label {
   -webkit-border-radius: 0;
