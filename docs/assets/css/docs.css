@@ -528,8 +528,12 @@ h2 + .row {
 }
 
 /* For input sizes, make them display block */
+.docs-input-sizes .select2-container,
 .docs-input-sizes select,
 .docs-input-sizes input[type=text] {
+  float: none;
+  margin-left: 0;
+  
   display: block;
   margin-bottom: 9px;
 }
