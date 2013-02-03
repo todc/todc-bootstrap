@@ -22,7 +22,7 @@ The following projects are specifically designed for use with Google Bootstrap:
 
 To build the CSS file, simply run `make` from the top-level directory. If necessary, Twitter Bootstrap will be automatically checked out.
 
-The resulting CSS file will be found at `dist/google-bootstrap.css`.
+The resulting CSS file will be found at `dist/todc-bootstrap.css`.
 
 
 ## Demo ##
