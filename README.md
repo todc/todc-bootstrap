@@ -1,6 +1,6 @@
 # Overview #
 
-Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
+This is a Google-styled theme for Twitter Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
 the look of these new UI elements for my own personal use.
 
 ## Compatibility ##
@@ -28,6 +28,13 @@ The resulting CSS file will be found at `dist/todc-bootstrap.css`.
 ## Demo ##
 
 http://todc.github.com/todc-bootstrap/index.html
+
+
+## License ##
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+**NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Twitter Bootstrap's current license.
 
 
 ## Acknowledgements ##
