@@ -9,8 +9,8 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 The following projects are specifically designed for use with Google Bootstrap:
 
-* [Google Select2](http://github.com/todc/google-select2) - Google-themed select menus
-* [Google Datepicker](http://github.com/todc/google-datepicker) - Google-themed datepicker component
+* [todc-select2](http://github.com/todc/todc-select2) - Google-themed select menus
+* [todc-datepicker](http://github.com/todc/todc-datepicker) - Google-themed datepicker component
 
 ## Requirements ##
 
@@ -27,12 +27,7 @@ The resulting CSS file will be found at `dist/google-bootstrap.css`.
 
 ## Demo ##
 
-http://todc.github.com/google-bootstrap/index.html
-
-
-## License ##
-
-Public domain: [http://unlicense.org](http://unlicense.org)
+http://todc.github.com/todc-bootstrap/index.html
 
 
 ## Acknowledgements ##
