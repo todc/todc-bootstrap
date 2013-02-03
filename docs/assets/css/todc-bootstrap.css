@@ -152,23 +152,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus,
-textarea.focused,
-input[type="text"].focused,
-input[type="password"].focused,
-input[type="datetime"].focused,
-input[type="datetime-local"].focused,
-input[type="date"].focused,
-input[type="month"].focused,
-input[type="time"].focused,
-input[type="week"].focused,
-input[type="number"].focused,
-input[type="email"].focused,
-input[type="url"].focused,
-input[type="search"].focused,
-input[type="tel"].focused,
-input[type="color"].focused,
-.uneditable-input.focused {
+.uneditable-input:focus {
   outline: none;
   border: 1px solid #4d90fe;
   -webkit-transition: none;

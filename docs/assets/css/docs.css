@@ -520,11 +520,11 @@ h2 + .row {
 
 /* Fake the :focus state to demo it */
 .focused {
-  border-color: rgba(82,168,236,.8);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
-     -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
-          box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
-  outline: 0;
+  border: 1px solid #4D90FE !important;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  outline: 0 !important;
 }
 
 /* For input sizes, make them display block */
@@ -533,7 +533,7 @@ h2 + .row {
 .docs-input-sizes input[type=text] {
   float: none;
   margin-left: 0;
-  
+
   display: block;
   margin-bottom: 9px;
 }
