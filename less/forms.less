@@ -25,6 +25,8 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 4px 8px;
+  font-size: @baseFontSize;
+  .border-radius(@inputBorderRadius);
 }
 
 // Reset appearance properties for textual inputs and textarea
@@ -54,25 +56,24 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  .border-radius(@inputBorderRadius);
+  border: 1px solid @inputBorder;
+  border-top-color: #c0c0c0;
   .box-shadow(none);
   .transition(none);
 
   &:hover {
     border: 1px solid #b9b9b9;
-    border-top: 1px solid #a0a0a0;
+    border-top-color: #a0a0a0;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
     z-index: 2;
   }
 
   // Focus state
   &:focus {
-    outline: none;
-    border: 1px solid #4d90fe;
-    .transition(none);
+    outline: 0 \9;
+    border-color: #4d90fe;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
+    .transition(none);
   }
 }
 

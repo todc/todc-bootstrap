@@ -77,6 +77,10 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 4px 8px;
+  font-size: 13px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
 }
 input,
 textarea {
@@ -101,11 +105,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
+  border: 1px solid #cccccc;
+  border-top-color: #c0c0c0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -131,7 +132,7 @@ input[type="tel"]:hover,
 input[type="color"]:hover,
 .uneditable-input:hover {
   border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
+  border-top-color: #a0a0a0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -153,15 +154,15 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  outline: none;
-  border: 1px solid #4d90fe;
+  outline: 0 \9;
+  border-color: #4d90fe;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 input[type="checkbox"],
 input[type="radio"] {
