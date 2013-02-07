@@ -195,7 +195,6 @@
   .navbar-inner {
     .border-radius(@baseBorderRadius);
     .box-shadow(none);
-    .box-sizing(border-box);
     min-height: @navbarGoogleBarHeight;
     margin: 0px;
     color: @navbarText;
@@ -372,7 +371,7 @@
   .brand,
   .brand .btn {
     // Vertically center the text given @navbarHeight
-    padding: (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1) 20px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
+    padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 20px ((@navbarGoogleNavHeight - @baseLineHeight) / 2);
     font-size: 16px;
     font-weight: bold;
     color: @navbarGoogleNavBrandColor;
@@ -382,7 +381,7 @@
   // Plain text in topbar
   // -------------------------
   .navbar-text {
-    .navbarVerticalAlign(@navbarGoogleNavHeight + 2, @navbarGoogleNavHeight); // Vertically center in navbar
+    .navbarVerticalAlign(@navbarGoogleNavHeight, @navbarGoogleNavHeight); // Vertically center in navbar
     line-height: @navbarGoogleNavHeight;
   }
 
@@ -404,14 +403,10 @@
   // -------------------------
   .btn,
   .btn-group {
-    .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbarGoogleNavHeight); // Vertically center in navbar
   }
   .btn {
     padding: 4px 12px; // FIXME: This is probably not necessary for the btn-group;
-  }
-  .btn [class^="icon-"],
-  .btn [class*=" icon-"] {
-    margin-top: -1px;
   }
 
   .btn,
@@ -438,19 +433,19 @@
     select,
     .radio,
     .checkbox {
-      .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbarGoogleNavHeight); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbarGoogleNavHeight); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarVerticalAlign(32px, @navbarGoogleNavHeight); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbarGoogleNavHeight); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
     }
@@ -461,7 +456,6 @@
   .navbar-inner {
     .border-radius(@baseBorderRadius);
     .box-shadow(none);
-    .box-sizing(border-box);
     min-height: @navbarGoogleNavHeight;
     margin: 0px;
     color: @navbarText;
@@ -483,7 +477,7 @@
   &.navbar-fixed-bottom,
   &.navbar-static-top {
     .nav > li > a {
-      padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
+      // padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
     }
 
     // Dividers in navbar
@@ -503,7 +497,7 @@
   // Links
   .nav > li > a {
     // padding: 9px 15px 8px;
-    padding: (floor((@navbarGoogleNavHeight - @baseLineHeight) / 2)) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 2);
+    padding: (floor((@navbarGoogleNavHeight - @baseLineHeight) / 2)) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2));
     color: @navbarGoogleNavLinkColor;
     text-shadow: none;
   }
