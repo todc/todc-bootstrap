@@ -792,11 +792,15 @@ form.bs-docs-example {
   padding: 8px 14px !important;
   border: 1px solid #e5e5e5;
 }
+.bs-docs-sidenav > .active {
+  border-left: 3px solid #DD4B39;
+}
 .bs-docs-sidenav > .active > a {
   position: relative;
   z-index: 2;
-  padding: 9px 15px;
+  padding: 8px 14px 8px 12px !important;
   text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  border-left: 0 !important;
 }
 /* Chevrons */
 .bs-docs-sidenav .icon-chevron-right {
