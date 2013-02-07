@@ -57,7 +57,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   border: 1px solid @inputBorder;
-  border-top-color: #c0c0c0;
+  border-top-color: darken(@inputBorder, 10%);
   .box-shadow(none);
   .transition(none);
 
@@ -166,7 +166,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  border: 1px solid #d9d9d9;
+  border: 1px solid @inputBorder;
 
   &:hover,
   &:focus {
