@@ -1,5 +1,6 @@
-// BUTTON STYLES
-// -------------
+//
+// Buttons
+// --------------------------------------------------
 
 
 // Base styles
@@ -21,32 +22,32 @@
   vertical-align: middle;
   .background-clip(padding);
   cursor: default;
-  
+
   background-color: @btnBackground;
-  #gradient > .vertical(#f5f5f5,#f1f1f1);
-  
+  #gradient > .vertical(#f5f5f5, #f1f1f1);
+
   border: 1px solid #dcdcdc;
   .border-radius(@baseBorderRadius);
   .box-shadow(none);
-  
+
   &:hover {
     text-shadow: none;
     border-color: #c6c6c6;
     .box-shadow(0 1px 1px rgba(0,0,0,0.1));
-    #gradient > .vertical(#f8f8f8,#f1f1f1);
+    #gradient > .vertical(#f8f8f8, #f1f1f1);
     background-position: 0 0;
     .transition(none);
   }
-  
+
   &.active,
   &:active {
     background-image: none;
     outline: 0;
     background: #e8e8e8;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
-    #gradient > .vertical(#f6f6f6,#f1f1f1);
+    #gradient > .vertical(#f6f6f6, #f1f1f1);
   }
-  
+
   // Disabled state
   &.disabled,
   &.disabled:hover,
@@ -60,11 +61,11 @@
   &[disabled]:focus {
     border: 1px solid #dcdcdc;
     background-color: @btnBackground;
-    #gradient > .vertical(#f5f5f5,#f1f1f1);
+    #gradient > .vertical(#f5f5f5, #f1f1f1);
     .box-shadow(none);
     text-shadow: none;
   }
-  
+
   &:focus {
     /* Blue border on button focus. */
     border-color: #4D90FE;
