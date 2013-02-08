@@ -119,6 +119,15 @@
       }
       })
     })
+
+  // Google styled selects
+  $("select.g-select").each(function() {
+    var e = $(this)
+    e.select2({
+    minimumResultsForSearch: 20
+    })
+  })
+
   })
 
 // Modified from the original jsonpi https://github.com/benvinegar/jquery-jsonpi
