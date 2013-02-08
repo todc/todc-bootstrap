@@ -1599,6 +1599,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-inverse .btn-navbar:hover,
+.navbar-inverse .btn-navbar:focus,
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active,
 .navbar-inverse .btn-navbar.disabled,
@@ -1837,6 +1838,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlebar.navbar-inverse .btn-navbar:hover,
+.navbar-googlebar.navbar-inverse .btn-navbar:focus,
 .navbar-googlebar.navbar-inverse .btn-navbar:active,
 .navbar-googlebar.navbar-inverse .btn-navbar.active,
 .navbar-googlebar.navbar-inverse .btn-navbar.disabled,
@@ -2153,6 +2155,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlenav.navbar-inverse .btn-navbar:hover,
+.navbar-googlenav.navbar-inverse .btn-navbar:focus,
 .navbar-googlenav.navbar-inverse .btn-navbar:active,
 .navbar-googlenav.navbar-inverse .btn-navbar.active,
 .navbar-googlenav.navbar-inverse .btn-navbar.disabled,
