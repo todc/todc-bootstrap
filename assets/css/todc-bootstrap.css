@@ -358,8 +358,7 @@ select:focus:required:invalid:focus {
 .table-hover tbody tr.info:hover td {
   background-color: #c4e3f3;
 }
-.disabled > [class^="icon-"],
-.disabled2 > [class^="icon-"] {
+.disabled > [class^="icon-"] {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -515,8 +514,8 @@ select:focus:required:invalid:focus {
 }
 .scrollable::-webkit-scrollbar-track {
   background-clip: padding-box;
-  border: solid 
-    transparent;
+  border: solid
+  transparent;
   border-width: 0 0 0 4px;
 }
 .scrollable::-webkit-scrollbar-track-piece {
@@ -650,7 +649,7 @@ select:focus:required:invalid:focus {
 .btn:focus {
   /* Blue border on button focus. */
 
-  border-color: #4D90FE;
+  border-color: #4d90fe;
   outline-style: none;
 }
 .btn-large {
@@ -1459,7 +1458,7 @@ select:focus:required:invalid:focus {
 }
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
-  background-color: #4D90FE;
+  background-color: #4d90fe;
 }
 .nav-tabs.nav-stacked > li:first-child > a {
   -webkit-border-radius: 2px 2px 0 0;
@@ -2377,7 +2376,7 @@ select:focus:required:invalid:focus {
 }
 .thumbnail {
   padding: 0;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -2390,7 +2389,7 @@ select:focus:required:invalid:focus {
   transition: none;
 }
 a.thumbnail:hover {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   -webkit-box-shadow: 0 0 0 1px #dedede;
   -moz-box-shadow: 0 0 0 1px #dedede;
   box-shadow: 0 0 0 1px #dedede;
