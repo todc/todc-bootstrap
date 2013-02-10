@@ -234,8 +234,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .bs-docs-sidenav .active .glyphicon-chevron-right,
 .bs-docs-sidenav .active a:hover .glyphicon-chevron-right {
-  color: #fff;
-  opacity: 1;
+  color: #000;
+  opacity: .25;
+  font-weight: normal;
 }
 
 
