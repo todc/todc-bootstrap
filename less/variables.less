@@ -268,16 +268,16 @@
 @navbar-googlebar-inverse-border:                    @grayDark;
 
 // Inverted navbar brand label
-@navbar-googlebar-inverse-brand-color:               @navbarGoogleNavInverseLinkColor;
+@navbar-googlebar-inverse-brand-color:               @navbar-googlebar-inverse-link-color;
 @navbar-googlebar-inverse-brand-color-hover:         #fff;
 @navbar-googlebar-inverse-brand-bg-hover:            transparent;
 
 // Inverted navbar links
 @navbar-googlebar-inverse-link-color:                #fff;
 @navbar-googlebar-inverse-link-color-hover:          #fff;
-@navbar-googlebar-inverse-link-color-active:         @navbarGoogleNavInverseLinkColorHover;
+@navbar-googlebar-inverse-link-color-active:         @navbar-googlebar-inverse-link-color-hover;
 @navbar-googlebar-inverse-link-bg-hover:             transparent;
-@navbar-googlebar-inverse-link-bg-active:            @navbarGoogleNavInverseBackground;
+@navbar-googlebar-inverse-link-bg-active:            @navbar-googlebar-inverse-bg;
 
 // Inverted navbar search
 // Normal navbar needs no special styles or vars
@@ -294,40 +294,49 @@
 // @navbarGoogleNavCollapseWidth:             979px;
 // @navbarGoogleNavCollapseDesktopWidth:      @navbarGoogleNavCollapseWidth + 1;
 
-@navbarGoogleNavHeight:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
-@navbarGoogleNavBackground:                #fff;
-// @navbarGoogleNavBackground:                @navbar-googlebar-bg;
-// @navbarGoogleNavBackgroundHighlight:       #fafafa;
-@navbarGoogleNavBackgroundHighlight:       darken(@navbarGoogleNavBackground, 5%);
-@navbarGoogleNavBorder:                    darken(@navbarGoogleNavBackground, 15.5%); //#d7d7d7
+// Basics of a googlenav
+@navbar-googlenav-height:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
+@navbar-googlenav-text:                      #777;
+@navbar-googlenav-bg:                        #fff;
+@navbar-googlenav-border:                    darken(@navbar-googlenav-bg, 15.5%); //#d7d7d7
 
-@navbarGoogleNavText:                      #777;
-@navbarGoogleNavLinkColor:                 #777;
-@navbarGoogleNavLinkColorHover:            @grayDark;
-@navbarGoogleNavLinkColorActive:           @navbarGoogleNavLinkColorHover;
-@navbarGoogleNavLinkBackgroundHover:       transparent;
-@navbarGoogleNavLinkBackgroundActive:      #f2f2f2;
+// Navbar brand label
+@navbar-googlenav-brand-color:               #dd4b39;
+@navbar-googlenav-brand-color-hover:         #dd4b39;
+@navbar-googlenav-brand-bg-hover:            transparent;
 
-@navbarGoogleNavBrandColor:                #dd4b39;
+// Navbar links
+@navbar-googlenav-link-color:                #777;
+@navbar-googlenav-link-color-hover:          @grayDark;
+@navbar-googlenav-link-color-active:         @navbar-googlenav-link-color-hover;
+@navbar-googlenav-link-bg-hover:             transparent;
+@navbar-googlenav-link-bg-active:            #f2f2f2;
 
-// Inverted Googlenav
-@navbarGoogleNavInverseBackground:                #444;
-@navbarGoogleNavInverseBackgroundHighlight:       @gray;
-@navbarGoogleNavInverseBorder:                    @grayDark;
 
-@navbarGoogleNavInverseText:                      @grayLight;
-@navbarGoogleNavInverseLinkColor:                 #fff;
-@navbarGoogleNavInverseLinkColorHover:            #fff;
-@navbarGoogleNavInverseLinkColorActive:           @navbarGoogleNavInverseLinkColorHover;
-@navbarGoogleNavInverseLinkBackgroundHover:       transparent;
-@navbarGoogleNavInverseLinkBackgroundActive:      @navbarGoogleNavInverseBackground;
+// Inverted googlenav
+@navbar-googlenav-inverse-text:                      @grayLight;
+@navbar-googlenav-inverse-bg:                        #444;
+@navbar-googlenav-inverse-border:                    @grayDark;
 
-@navbarGoogleNavInverseSearchBackground:          lighten(@navbar-inverse-bg, 25%);
-@navbarGoogleNavInverseSearchBackgroundFocus:     #fff;
-@navbarGoogleNavInverseSearchBorder:              @navbarGoogleNavInverseBackground;
-@navbarGoogleNavInverseSearchPlaceholderColor:    #ccc;
+// Inverted navbar brand label
+@navbar-googlenav-inverse-brand-color:               @navbar-googlenav-inverse-link-color;
+@navbar-googlenav-inverse-brand-color-hover:         #fff;
+@navbar-googlenav-inverse-brand-bg-hover:            transparent;
 
-@navbarGoogleNavInverseBrandColor:                @navbarGoogleNavInverseLinkColor;
+// Inverted navbar links
+@navbar-googlenav-inverse-link-color:                #fff;
+@navbar-googlenav-inverse-link-color-hover:          #fff;
+@navbar-googlenav-inverse-link-color-active:         @navbar-googlenav-inverse-link-color-hover;
+@navbar-googlenav-inverse-link-bg-hover:             transparent;
+@navbar-googlenav-inverse-link-bg-active:            @navbar-googlenav-inverse-bg;
+
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+@navbar-googlenav-inverse-search-background:         lighten(@navbar-inverse-bg, 25%);
+@navbar-googlenav-inverse-search-background-focus:   #fff;
+@navbar-googlenav-inverse-search-border:             @navbar-googlenav-inverse-bg;
+@navbar-googlenav-inverse-search-placeholder-color:  #ccc;
+
 
 
 

@@ -30,7 +30,9 @@
   border-radius: @border-radius-base;
   .box-shadow(none);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    color: @btn-color;
     text-shadow: none;
     border-color: #c6c6c6;
     .box-shadow(0 1px 1px rgba(0,0,0,0.1));
