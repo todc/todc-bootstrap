@@ -124,12 +124,23 @@
 // Forms
 // -------------------------
 
-@inputBackground:               #fff;
-@inputBorder:                   #d9d9d9;
-@inputBorderRadius:             1px;
-@inputDisabledBackground:       #f1f1f1;
-@formActionsBackground:         #f5f5f5;
-@inputHeight:                   @line-height-base + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+@input-background:               #fff;
+@input-background-disabled:      #f1f1f1;
+
+@input-border:                   #d9d9d9;
+@input-border-radius:            @border-radius-small;
+@input-border-radius-search:     20px;
+
+@input-color-placeholder:        @grayLight;
+
+@input-height-base:              @line-height-base + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+@input-height-large:             @line-height-base + 20px; // base line-height + 18px vertical padding + 2px top/bottom border
+@input-height-small:             @line-height-base + 4px;  // base line-height + 2px vertical padding + 2px top/bottom border
+
+// adjust min-height on input sizes
+
+
+@form-actions-background:        #f5f5f5;
 
 
 // Dropdowns
@@ -157,41 +168,21 @@
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
-@zindexDropdown:          1000;
-@zindexPopover:           1010;
-@zindexTooltip:           1020;
-@zindexFixedNavbar:       1030;
-@zindexModalBackdrop:     1040;
-@zindexModal:             1050;
 
-@zindexFixedGooglebar:    1029;
-@zindexFixedGooglenav:    1028;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+@zindex-googlebar-fixed:   1029;
+@zindex-googlenav-fixed:   1028;
 
 
-// Sprite icons path
+// Glyphicons font path
 // -------------------------
-@iconSpritePath:          "../img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
-
-
-// Input placeholder text color
-// -------------------------
-@placeholderText:         @grayLight;
-
-
-// Hr border color
-// -------------------------
-@hrBorder:                @grayLighter;
-
-
-// Horizontal forms & lists
-// -------------------------
-@horizontalComponentOffset:       180px;
-
-
-// Wells
-// -------------------------
-@wellBackground:                  #f1f1f1;
+@glyphicons-font-path:          "../fonts";
 
 
 // Navbar
@@ -360,6 +351,38 @@
 // Special enhancement for popovers
 @popoverArrowOuterWidth:  @popoverArrowWidth + 1;
 @popoverArrowOuterColor:  rgba(0,0,0,.25);
+
+
+// Modals
+// -------------------------
+
+@modal-inner-padding:         20px;
+
+
+// Progress bars
+// -------------------------
+@progress-bg:                 #f5f5f5;
+@progress-bar-bg:             @brand-primary;
+@progress-bar-success-bg:     @brand-success;
+@progress-bar-warning-bg:     @brand-warning;
+@progress-bar-danger-bg:      @brand-danger;
+@progress-bar-info-bg:        @brand-info;
+
+
+// Miscellaneous
+// -------------------------
+
+// Hr border color
+// -------------------------
+@hr-border:                   @grayLighter;
+
+// Horizontal forms & lists
+// -------------------------
+@component-offset-horizontal: 180px;
+
+// Wells
+// -------------------------
+@well-background:             #f1f1f1;
 
 
 

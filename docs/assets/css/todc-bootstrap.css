@@ -312,16 +312,6 @@ select:focus:required:invalid:focus {
 }
 /* Override ßsome of the values in Bootstrap
 /* White icons with optional class, or on hover/active states of certain elements */
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings.png");
-}
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -599,9 +589,7 @@ select:focus:required:invalid:focus {
 .btn-success,
 .btn-success:hover,
 .btn-info,
-.btn-info:hover,
-.btn-inverse,
-.btn-inverse:hover {
+.btn-info:hover {
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
@@ -609,8 +597,7 @@ select:focus:required:invalid:focus {
 .btn-warning:hover,
 .btn-danger:hover,
 .btn-success:hover,
-.btn-info:hover,
-.btn-inverse:hover {
+.btn-info:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -623,9 +610,7 @@ select:focus:required:invalid:focus {
 .btn-success:active,
 .btn-success.active,
 .btn-info:active,
-.btn-info.active,
-.btn-inverse:active,
-.btn-inverse.active {
+.btn-info.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -643,10 +628,7 @@ select:focus:required:invalid:focus {
 .btn-success:hover,
 .btn-info.active,
 .btn-info:active,
-.btn-info:hover,
-.btn-inverse.active,
-.btn-inverse:active,
-.btn-inverse:hover {
+.btn-info:hover {
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
@@ -807,28 +789,28 @@ select:focus:required:invalid:focus {
 .btn-warning.active {
   border: 1px solid #f9980f;
   color: #ffffff;
-  background-image: -moz-linear-gradient(top, #fbb450, #fa9f1e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#fa9f1e));
-  background-image: -webkit-linear-gradient(top, #fbb450, #fa9f1e);
-  background-image: -o-linear-gradient(top, #fbb450, #fa9f1e);
-  background-image: linear-gradient(to bottom, #fbb450, #fa9f1e);
+  background-image: -moz-linear-gradient(top, #fbb450, #f99e1e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f99e1e));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f99e1e);
+  background-image: -o-linear-gradient(top, #fbb450, #f99e1e);
+  background-image: linear-gradient(to bottom, #fbb450, #f99e1e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fffa9f1e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff99e1e', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-color: #fa9f1e;
-  background-color: #fa9f1e \9;
+  background-color: #f99e1e;
+  background-color: #f99e1e \9;
 }
 .btn-warning:active,
 .btn-warning.active {
   border: 1px solid #e98b06;
-  background-color: #f89406;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #f89306;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89306);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89306));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89306);
+  background-image: -o-linear-gradient(top, #fbb450, #f89306);
+  background-image: linear-gradient(to bottom, #fbb450, #f89306);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89306', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-warning:focus {
@@ -993,74 +975,6 @@ select:focus:required:invalid:focus {
   background-color: #5bc0de;
   background-color: #5bc0de \9;
 }
-.btn-inverse {
-  border: 1px solid #464646;
-  color: #ffffff;
-  background-color: #515151;
-  background-image: -moz-linear-gradient(top, #515151, #515151);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#515151));
-  background-image: -webkit-linear-gradient(top, #515151, #515151);
-  background-image: -o-linear-gradient(top, #515151, #515151);
-  background-image: linear-gradient(to bottom, #515151, #515151);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff515151', endColorstr='#ff515151', GradientType=0);
-  *background-color: #515151;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-inverse:hover,
-.btn-inverse:active,
-.btn-inverse.active {
-  border: 1px solid #3a3a3a;
-  color: #ffffff;
-  background-image: -moz-linear-gradient(top, #515151, #444444);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#444444));
-  background-image: -webkit-linear-gradient(top, #515151, #444444);
-  background-image: -o-linear-gradient(top, #515151, #444444);
-  background-image: linear-gradient(to bottom, #515151, #444444);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff515151', endColorstr='#ff444444', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-color: #444444;
-  background-color: #444444 \9;
-}
-.btn-inverse:active,
-.btn-inverse.active {
-  border: 1px solid #2d2d2d;
-  background-color: #373737;
-  background-image: -moz-linear-gradient(top, #515151, #373737);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#373737));
-  background-image: -webkit-linear-gradient(top, #515151, #373737);
-  background-image: -o-linear-gradient(top, #515151, #373737);
-  background-image: linear-gradient(to bottom, #515151, #373737);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff515151', endColorstr='#ff373737', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-inverse:focus {
-  border: 1px solid #464646;
-  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff;
-}
-.btn-inverse.disabled,
-.btn-inverse[disabled],
-.btn-inverse.disabled:hover,
-.btn-inverse[disabled]:hover,
-.btn-inverse.disabled:active,
-.btn-inverse[disabled]:active,
-.btn-inverse.disabled:focus,
-.btn-inverse[disabled]:focus {
-  border: 1px solid #464646;
-  background-image: -moz-linear-gradient(top, #515151, #515151);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#515151));
-  background-image: -webkit-linear-gradient(top, #515151, #515151);
-  background-image: -o-linear-gradient(top, #515151, #515151);
-  background-image: linear-gradient(to bottom, #515151, #515151);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff515151', endColorstr='#ff515151', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-color: #515151;
-  background-color: #515151 \9;
-}
 .btn-link,
 .btn-link:active,
 .btn-link[disabled] {
@@ -1137,8 +1051,7 @@ select:focus:required:invalid:focus {
 .btn-group > .btn-info.dropdown-toggle:hover,
 .btn-group > .btn-warning.dropdown-toggle:hover,
 .btn-group > .btn-danger.dropdown-toggle:hover,
-.btn-group > .btn-success.dropdown-toggle:hover,
-.btn-group > .btn-inverse.dropdown-toggle:hover {
+.btn-group > .btn-success.dropdown-toggle:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1156,9 +1069,7 @@ select:focus:required:invalid:focus {
 .btn-group > .btn-success.dropdown-toggle:active,
 .btn-group > .btn-success.dropdown-toggle.active,
 .btn-group > .btn-info.dropdown-toggle:active,
-.btn-group > .btn-info.dropdown-toggle.active,
-.btn-group > .btn-inverse.dropdown-toggle:active,
-.btn-group > .btn-inverse.dropdown-toggle.active {
+.btn-group > .btn-info.dropdown-toggle.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -1202,11 +1113,6 @@ select:focus:required:invalid:focus {
 }
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #5bc0de;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-.btn-group.open .btn-inverse.dropdown-toggle {
-  background-color: #4e4e4e;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }

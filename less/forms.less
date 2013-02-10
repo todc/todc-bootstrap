@@ -26,7 +26,7 @@ input[type="color"],
 .uneditable-input {
   padding: 4px 8px;
   font-size: @font-size-base;
-  border-radius: @inputBorderRadius;
+  border-radius: @input-border-radius;
 }
 
 // Reset appearance properties for textual inputs and textarea
@@ -56,8 +56,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  border: 1px solid @inputBorder;
-  border-top-color: darken(@inputBorder, 10%);
+  border: 1px solid @input-border;
+  border-top-color: darken(@input-border, 10%);
   .box-shadow(none);
   .transition(none);
 
@@ -166,7 +166,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  border: 1px solid @inputBorder;
+  border: 1px solid @input-border;
 
   &:hover,
   &:focus {
@@ -182,7 +182,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    border-radius: 0 @inputBorderRadius @inputBorderRadius 0;
+    border-radius: 0 @input-border-radius @input-border-radius 0;
   }
 }
 
@@ -190,7 +190,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    border-radius: @inputBorderRadius 0 0 @inputBorderRadius;
+    border-radius: @input-border-radius 0 0 @input-border-radius;
   }
 }
 
