@@ -16,12 +16,12 @@
   padding: 0 0 6px 0;
   margin: 1px 0 0; // override default ul
   list-style: none;
-  background-color: @dropdownBackground;
+  background-color: @dropdown-background;
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.2);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
-  .border-radius(0);
+  border-radius: 0;
   .box-shadow(0 2px 4px rgba(0,0,0,.2));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
@@ -35,7 +35,7 @@
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    .nav-divider(@dropdownDividerTop, @dropdownDividerBottom);
+    .nav-divider(@dropdown-divider-top, @dropdown-divider-bottom);
   }
 
   // Links within the dropdown menu
@@ -57,16 +57,16 @@
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-  color: @dropdownLinkColorHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
+  color: @dropdown-link-color-hover;
+  #gradient > .vertical(@dropdown-link-background-hover, @dropdown-link-background-hover);
 }
 
 // Active state
 // ------------
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorActive;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
+  color: @dropdown-link-color-active;
+  #gradient > .vertical(@dropdown-link-background-hover, @dropdown-link-background-hover);
 }
 
 // Open state for the dropdown
@@ -85,17 +85,17 @@
 // ---------------------------
 // Default dropdowns
 .dropdown-submenu > .dropdown-menu {
-  .border-radius(0);
+  border-radius: 0;
 }
 
 // Dropups
 .dropup .dropdown-submenu > .dropdown-menu {
-  .border-radius(0);
+  border-radius: 0;
 }
 
 // Caret to indicate there is a submenu
 .dropdown-submenu > a:after {
-  border-left-color: darken(@dropdownBackground, 50%);
+  border-left-color: darken(@dropdown-background, 50%);
   margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
@@ -105,7 +105,7 @@
 // Left aligned submenus
 .dropdown-submenu.pull-left {
   > .dropdown-menu {
-    .border-radius(0);
+    border-radius: 0;
     margin-left: 18px;
   }
 }
@@ -113,5 +113,5 @@
 // Typeahead
 // ---------
 .typeahead {
-  .border-radius(0);
+  border-radius: 0;
 }

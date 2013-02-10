@@ -25,8 +25,8 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 4px 8px;
-  font-size: @baseFontSize;
-  .border-radius(@inputBorderRadius);
+  font-size: @font-size-base;
+  border-radius: @inputBorderRadius;
 }
 
 // Reset appearance properties for textual inputs and textarea
@@ -89,7 +89,7 @@ input[type="radio"] {
   height: 13px;
   background: white;
   border: 1px solid #dcdcdc;
-  .border-radius(1px);
+  border-radius: 1px;
   .box-sizing(border-box);
   position: relative;
 
@@ -100,7 +100,7 @@ input[type="radio"] {
   border-width: 0 e("\9");
 }
 input[type="radio"] {
-  .border-radius(1em);
+  border-radius: 1em;
   width: 15px;
   height: 15px;
 }
@@ -138,7 +138,7 @@ input[type="radio"]:checked::after {
   width: 7px;
   height: 7px;
   background: #666;
-  .border-radius(1em);
+  border-radius: 1em;
 }
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
@@ -182,7 +182,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+    border-radius: 0 @inputBorderRadius @inputBorderRadius 0;
   }
 }
 
@@ -190,7 +190,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+    border-radius: @inputBorderRadius 0 0 @inputBorderRadius;
   }
 }
 
@@ -199,7 +199,7 @@ textarea[readonly] {
   input,
   select,
   .uneditable-input {
-    .border-radius(0);
+    border-radius: 0;
   }
 }
 
@@ -238,7 +238,7 @@ select:focus:required:invalid {
   .input-prepend,
   .input-append {
     display: inline-block;
-    .ie7-inline-block();
+    // .ie7-inline-block();
     margin-bottom: 0;
   }
   // Re-hide hidden elements due to specifity

@@ -17,7 +17,7 @@
 // -------------------------
 .navbar .brand {
   // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
+  padding: ((@navbarHeight - @line-height-base) / 2) 20px ((@navbarHeight - @line-height-base) / 2);
 }
 
 
@@ -34,7 +34,7 @@
     display: none;
     padding: 0 0 6px;
     margin-left: -20px;
-    font-size: @baseFontSize;
+    font-size: @font-size-base;
 }
 .open > .brand.dropdown-menu {
     display: block;
@@ -53,7 +53,7 @@
   .navbarVerticalAlign(26px); // Vertically center in navbar
 }
 .navbar .btn {
-  padding: @paddingSmall; // FIXME: This is probably not necessary for the btn-group;
+  padding: @padding-small; // FIXME: This is probably not necessary for the btn-group;
 }
 
 // Navbar forms
@@ -85,7 +85,7 @@
 // Links
 .navbar .nav > li > a {
   // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
+  padding: ((@navbarHeight - @line-height-base) / 2) 15px ((@navbarHeight - @line-height-base) / 2);
   font-weight: bold;
 }
 
@@ -103,7 +103,7 @@
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
   .dropdown-menu {
-    .border-radius(0);
+    border-radius: 0;
   }
 }
 
@@ -127,7 +127,7 @@
 
   // Navbar collapse button
   .btn-navbar {
-    .buttonBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+    .btnBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
   }
 
 }
@@ -139,7 +139,7 @@
   // Brand: website or project name
   // -------------------------
   .brand {
-    padding: ((@navbarGoogleBarHeight - @baseLineHeight) / 2) 20px ((@navbarGoogleBarHeight - @baseLineHeight) / 2);
+    padding: ((@navbarGoogleBarHeight - @line-height-base) / 2) 20px ((@navbarGoogleBarHeight - @line-height-base) / 2);
   }
 
   // Plain text in topbar
@@ -193,7 +193,7 @@
   // Inner for background effects
   // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
   .navbar-inner {
-    .border-radius(@baseBorderRadius);
+    border-radius: @border-radius-base;
     .box-shadow(none);
     min-height: @navbarGoogleBarHeight;
     margin: 0px;
@@ -224,7 +224,7 @@
   .nav > li > a {
     float: none;
     // Vertically center the text given @navbarHeight
-    // padding: ((@navbarGoogleBarHeight - @baseLineHeight) / 2) 15px ((@navbarGoogleBarHeight - @baseLineHeight) / 2);
+    // padding: ((@navbarGoogleBarHeight - @line-height-base) / 2) 15px ((@navbarGoogleBarHeight - @line-height-base) / 2);
     padding: 8px 15px;
     font-weight: normal;
     color: @navbarGoogleBarLinkColor;
@@ -335,7 +335,7 @@
         .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
         .transition(none);
         .placeholder(@navbarGoogleBarInverseSearchPlaceholderColor);
-        color: @white;
+        color: #fff;
         background-color: @navbarGoogleBarInverseSearchBackground;
         border-color: @navbarGoogleBarInverseSearchBorder;
 
@@ -345,7 +345,7 @@
           .box-shadow(0 0 3px rgba(0,0,0,.15));
           padding: 5px 15px;
           color: @grayDark;
-          text-shadow: 0 1px 0 @white;
+          text-shadow: 0 1px 0 #fff;
           background-color: @navbarGoogleBarInverseSearchBackgroundFocus;
           border: 0;
           outline: 0;
@@ -355,7 +355,7 @@
 
     // Navbar collapse button
     .btn-navbar {
-      .buttonBackground(darken(@navbarGoogleBarInverseBackgroundHighlight, 5%), darken(@navbarGoogleBarInverseBackground, 5%));
+      .btnBackground(darken(@navbarGoogleBarInverseBackgroundHighlight, 5%), darken(@navbarGoogleBarInverseBackground, 5%));
     }
 
   }
@@ -371,7 +371,7 @@
   .brand,
   .brand .btn {
     // Vertically center the text given @navbarHeight
-    padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 20px ((@navbarGoogleNavHeight - @baseLineHeight) / 2);
+    padding: ((@navbarGoogleNavHeight - @line-height-base) / 2) 20px ((@navbarGoogleNavHeight - @line-height-base) / 2);
     font-size: 16px;
     font-weight: bold;
     color: @navbarGoogleNavBrandColor;
@@ -413,17 +413,17 @@
   .btn-small,
   .btn-group > .btn,
   .btn-group > .btn-small {
-    font-size: @fontSizeSmall;
+    font-size: @font-size-small;
   }
 
   // Reset fonts for other sizes
   .btn-mini,
   .btn-group > .btn-mini {
-    font-size: @fontSizeMini;
+    font-size: @font-size-mini;
   }
   .btn-large,
   .btn-group > .btn-large {
-    font-size: @fontSizeLarge;
+    font-size: @font-size-large;
   }
 
   // Navbar forms
@@ -454,7 +454,7 @@
   // Inner for background effects
   // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
   .navbar-inner {
-    .border-radius(@baseBorderRadius);
+    border-radius: @border-radius-base;
     .box-shadow(none);
     min-height: @navbarGoogleNavHeight;
     margin: 0px;
@@ -477,7 +477,7 @@
   &.navbar-fixed-bottom,
   &.navbar-static-top {
     .nav > li > a {
-      // padding: ((@navbarGoogleNavHeight - @baseLineHeight) / 2) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2) - 1);
+      // padding: ((@navbarGoogleNavHeight - @line-height-base) / 2) 15px (((@navbarGoogleNavHeight - @line-height-base) / 2) - 1);
     }
 
     // Dividers in navbar
@@ -497,7 +497,7 @@
   // Links
   .nav > li > a {
     // padding: 9px 15px 8px;
-    padding: (floor((@navbarGoogleNavHeight - @baseLineHeight) / 2)) 15px (((@navbarGoogleNavHeight - @baseLineHeight) / 2));
+    padding: (floor((@navbarGoogleNavHeight - @line-height-base) / 2)) 15px (((@navbarGoogleNavHeight - @line-height-base) / 2));
     color: @navbarGoogleNavLinkColor;
     text-shadow: none;
   }
@@ -526,7 +526,7 @@
       display: inline-block;
       margin-left: -7px; /* value should match border-width below */
       border-right:  7px solid transparent;
-      border-bottom: 7px solid @dropdownBackground;
+      border-bottom: 7px solid @dropdown-background;
       border-left:   7px solid transparent;
       content: '';
     }
@@ -677,7 +677,7 @@
         .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
         .transition(none);
         .placeholder(@navbarGoogleNavInverseSearchPlaceholderColor);
-        color: @white;
+        color: #fff;
         background-color: @navbarGoogleNavInverseSearchBackground;
         border-color: @navbarGoogleNavInverseSearchBorder;
 
@@ -687,7 +687,7 @@
           .box-shadow(0 0 3px rgba(0,0,0,.15));
           padding: 5px 15px;
           color: @grayDark;
-          text-shadow: 0 1px 0 @white;
+          text-shadow: 0 1px 0 #fff;
           background-color: @navbarGoogleNavInverseSearchBackgroundFocus;
           border: 0;
           outline: 0;
@@ -697,7 +697,7 @@
 
     // Navbar collapse button
     .btn-navbar {
-      .buttonBackground(darken(@navbarGoogleNavInverseLinkBackgroundActive, 5%), darken(@navbarGoogleNavInverseBackground, 5%));
+      .btnBackground(darken(@navbarGoogleNavInverseLinkBackgroundActive, 5%), darken(@navbarGoogleNavInverseBackground, 5%));
     }
 
   }

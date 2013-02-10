@@ -12,22 +12,22 @@
   padding: 4px 12px;
   margin: 0;
 
-  color: #333;
+  color: @btn-color;
   text-shadow: 0 1px 0 #fff;
   white-space: nowrap;
-  font-family: @baseFontFamily;
+  font-family: @font-family-base;
   font-weight: bold;
-  font-size: @baseFontSize;
+  font-size: @font-size-base;
   text-align: center;
   vertical-align: middle;
   .background-clip(padding);
   cursor: default;
 
-  background-color: @btnBackground;
+  background-color: @btn-background;
   #gradient > .vertical(#f5f5f5, #f1f1f1);
 
-  border: 1px solid #dcdcdc;
-  .border-radius(@baseBorderRadius);
+  border: 1px solid @btn-border;
+  border-radius: @border-radius-base;
   .box-shadow(none);
 
   &:hover {
@@ -60,7 +60,7 @@
   &[disabled].active,
   &[disabled]:focus {
     border: 1px solid #dcdcdc;
-    background-color: @btnBackground;
+    background-color: @btn-background;
     #gradient > .vertical(#f5f5f5, #f1f1f1);
     .box-shadow(none);
     text-shadow: none;
@@ -80,7 +80,7 @@
 // Large
 .btn-large {
   padding: 9px 14px;
-  font-size: @baseFontSize + 1px;
+  font-size: @font-size-base + 1px;
   line-height: normal;
 }
 .btn-large [class^="icon-"],
@@ -91,15 +91,15 @@
 // Small
 .btn-small {
   padding: 5px 9px;
-  font-size: @baseFontSize - 1px;
-  line-height: @baseLineHeight - 5px;
+  font-size: @font-size-base - 1px;
+  line-height: @line-height-base - 5px;
 }
 
 // Mini
 .btn-mini {
   padding: 2px 6px;
-  font-size: @baseFontSize - 2px;
-  line-height: @baseLineHeight - 7px;
+  font-size: @font-size-base - 2px;
+  line-height: @line-height-base - 7px;
 }
 
 
@@ -117,10 +117,8 @@
 .btn-success,
 .btn-success:hover,
 .btn-info,
-.btn-info:hover,
-.btn-inverse,
-.btn-inverse:hover {
-  color: @white;
+.btn-info:hover {
+  color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
 // Provide *some* extra contrast for those who can get it
@@ -128,8 +126,7 @@
 .btn-warning:hover,
 .btn-danger:hover,
 .btn-success:hover,
-.btn-info:hover,
-.btn-inverse:hover {
+.btn-info:hover {
   .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
 }
 .btn-primary:active,
@@ -141,9 +138,7 @@
 .btn-success:active,
 .btn-success.active,
 .btn-info:active,
-.btn-info.active,
-.btn-inverse:active,
-.btn-inverse.active {
+.btn-info.active {
   .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -161,10 +156,7 @@
 .btn-success:hover,
 .btn-info.active,
 .btn-info:active,
-.btn-info:hover,
-.btn-inverse.active,
-.btn-inverse:active,
-.btn-inverse:hover {
+.btn-info:hover {
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
@@ -173,7 +165,7 @@
 // Primary Button
 // -------------------------
 .btn-primary {
-  .btnBackground(#4d90fe, #4787ed, #fff, #3079ed);
+  .btnBackground(#4d90fe, #4787ed, #fff, @btn-border-primary);
 }
 
 // Danger Button
@@ -185,25 +177,19 @@
 // Warning Button
 // -------------------------
 .btn-warning {
-  .btnBackground(lighten(@orange, 15%), lighten(@orange, 10%), #fff, darken(@btnWarningBackground, 3%));
+  .btnBackground(lighten(@brand-warning, 5%), @brand-warning, #fff, @btn-border-warning);
 }
 
 // Success Button
 // -------------------------
 .btn-success {
-  .btnBackground(#35aa47, #35aa47, #fff, #359947);
+  .btnBackground(#35aa47, #35aa47, #fff, @btn-border-success);
 }
 
 // Info Button
 // -------------------------
 .btn-info {
-  .btnBackground(@btnInfoBackground, @btnInfoBackground, #fff, darken(@btnInfoBackground, 5%));
-}
-
-// Inverse Button
-// -------------------------
-.btn-inverse {
-  .btnBackground(lighten(@btnInverseBackground, 1%), lighten(@btnInverseBackground, 1%), #fff, darken(@btnInverseBackground, 3%));
+  .btnBackground(@btn-background-info, @btn-background-info, #fff, @btn-border-info);
 }
 
 
@@ -221,12 +207,12 @@
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: @linkColor;
-  .border-radius(0);
+  color: @link-color;
+  border-radius: 0);
 }
 .btn-link:hover {
   border-color: transparent;
-  color: @linkColorHover;
+  color: @link-color-hover;
   text-decoration: underline;
   background-color: transparent;
   background-image: none;
