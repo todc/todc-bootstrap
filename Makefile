@@ -2,7 +2,7 @@ DIST_DIR = dist
 CSS_FILE = ${DIST_DIR}/todc-bootstrap.css
 BOOTSTRAP_DIR = bootstrap
 BOOTSTRAP_URL = https://github.com/twitter/bootstrap.git
-BOOTSTRAP_VERSION = v2.2.2
+BOOTSTRAP_VERSION = v2.3.0
 
 build:
 	@test -d $(BOOTSTRAP_DIR) || $(MAKE) checkout_bootstrap
