@@ -16,6 +16,8 @@
 @grayLight:             #999;
 @grayLighter:           #eee;
 
+
+// TODO: Remove Accent colors
 // Accent colors
 // -------------------------
 @blue:                  #4b8cf7;
@@ -23,7 +25,7 @@
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
-@orange:                #f89406;
+@orange:                #f89406; // 10% darker than @brand-warning
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
@@ -187,90 +189,114 @@
 
 // Navbar
 // -------------------------
-@navbarCollapseWidth:             979px;
-@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    30px; // 30px Google.com. 24px other Google sites
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+// Responsive collapsing
+// @navbar-collapse-width:            979px;
+// @navbar-collapse-width-desktop:    @navbar-collapse-width + 1;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
-@navbarLinkColorHover:            #fff;
-@navbarLinkColorActive:           @navbarLinkColorHover;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @navbarBackground;
+// Basics of a navbar
+@navbar-height:                    30px; // 30px Google.com. 24px other Google sites
+@navbar-text:                      @grayLight;
+@navbar-bg:                        #fafafa;
+@navbar-border:                    darken(@navbar-bg, 12%);
 
-@navbarBrandColor:                @navbarLinkColor;
+// Navbar brand label
+@navbar-brand-color:               @navbar-link-color;
+@navbar-brand-color-hover:         darken(@navbar-link-color, 10%);
+@navbar-brand-bg-hover:            transparent;
+
+// Navbar links
+@navbar-link-color:                @grayLight;
+@navbar-link-color-hover:          #fff;
+@navbar-link-color-active:         @navbar-link-color-hover;
+@navbar-link-bg-hover:             transparent;
+@navbar-link-bg-active:            darken(@navbar-bg, 10%);
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbar-inverse-text:                       @grayLight;
+@navbar-inverse-bg:                         #2d2d2d;
+@navbar-inverse-border:                     #000;
 
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            #fff;
-@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-color-hover:          #fff;
+@navbar-inverse-brand-bg-hover:             transparent;
 
-@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
-@navbarInverseSearchBackgroundFocus:     #fff;
-@navbarInverseSearchBorder:              @navbarInverseBackground;
-@navbarInverseSearchPlaceholderColor:    #ccc;
+// Inverted navbar links
+@navbar-inverse-link-color:                 @grayLight;
+@navbar-inverse-link-color-hover:           #fff;
+@navbar-inverse-link-color-active:          @navbar-inverse-link-color-hover;
+@navbar-inverse-link-bg-hover:              transparent;
+@navbar-inverse-link-bg-active:             @navbar-inverse-bg;
 
-@navbarInverseBrandColor:                @navbarInverseLinkColor;
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+@navbar-inverse-search-background:          lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-search-background-focus:    #fff;
+@navbar-inverse-search-border:              @navbar-inverse-bg;
+@navbar-inverse-search-placeholder-color:   #ccc;
 
 
 // Googlebar
 // -------------------------
-@navbarGoogleBarCollapseWidth:             979px;
-@navbarGoogleBarCollapseDesktopWidth:      @navbarGoogleBarCollapseWidth + 1;
 
-@navbarGoogleBarHeight:                    44px; // 75px for Google Developer. 44px for Google news. 48px for youtube
-@navbarGoogleBarBackground:                #f1f1f1;
-// @navbarGoogleBarBackgroundHighlight:       darken(@navbarGoogleBarBackground, 4.7%);
-@navbarGoogleBarBackgroundHighlight:       lighten(@navbarGoogleBarBackground, 1.5%);
-@navbarGoogleBarBorder:                    darken(@navbarGoogleBarBackground, 4.7%);
+// Responsive collapsing
+// @navbarGoogleBarCollapseWidth:             979px;
+// @navbarGoogleBarCollapseDesktopWidth:      @navbarGoogleBarCollapseWidth + 1;
 
-@navbarGoogleBarText:                      #777;
-@navbarGoogleBarLinkColor:                 #777;
-@navbarGoogleBarLinkColorHover:            @grayDark;
-@navbarGoogleBarLinkColorActive:           @navbarGoogleBarLinkColorHover;
-@navbarGoogleBarLinkBackgroundHover:       transparent;
-@navbarGoogleBarLinkBackgroundActive:      @navbarGoogleBarBackground;
+// Basics of a googlebar
+@navbar-googlebar-height:                    44px; // 75px for Google Developer. 44px for Google news. 48px for youtube
+@navbar-googlebar-text:                      #777;
+@navbar-googlebar-bg:                        #f1f1f1;
+@navbar-googlebar-border:                    darken(@navbar-googlebar-bg, 4.7%);
 
-@navbarGoogleBarBrandColor:                @navbarGoogleBarLinkColor;
+// Navbar brand label
+@navbar-googlebar-brand-color:               @navbar-googlebar-link-color;
+@navbar-googlebar-brand-color-hover:         @navbar-googlebar-link-color;
+@navbar-googlebar-brand-bg-hover:            transparent;
 
-// Inverted Googlebar
-@navbarGoogleBarInverseBackground:                #444;
-@navbarGoogleBarInverseBackgroundHighlight:       @gray;
-@navbarGoogleBarInverseBorder:                    @grayDark;
+// Navbar links
+@navbar-googlebar-link-color:                #777;
+@navbar-googlebar-link-color-hover:          @grayDark;
+@navbar-googlebar-link-color-active:         @navbar-googlebar-link-color-hover;
+@navbar-googlebar-link-bg-hover:             transparent;
+@navbar-googlebar-link-bg-active:            @navbar-googlebar-bg;
 
-@navbarGoogleBarInverseText:                      @grayLight;
-@navbarGoogleBarInverseLinkColor:                 #fff;
-@navbarGoogleBarInverseLinkColorHover:            #fff;
-@navbarGoogleBarInverseLinkColorActive:           @navbarGoogleNavInverseLinkColorHover;
-@navbarGoogleBarInverseLinkBackgroundHover:       transparent;
-@navbarGoogleBarInverseLinkBackgroundActive:      @navbarGoogleNavInverseBackground;
+// Inverted googlebar
+@navbar-googlebar-inverse-text:                      @grayLight;
+@navbar-googlebar-inverse-bg:                        #444;
+@navbar-googlebar-inverse-border:                    @grayDark;
 
-@navbarGoogleBarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
-@navbarGoogleBarInverseSearchBackgroundFocus:     #fff;
-@navbarGoogleBarInverseSearchBorder:              @navbarGoogleNavInverseBackground;
-@navbarGoogleBarInverseSearchPlaceholderColor:    #ccc;
+// Inverted navbar brand label
+@navbar-googlebar-inverse-brand-color:               @navbarGoogleNavInverseLinkColor;
+@navbar-googlebar-inverse-brand-color-hover:         #fff;
+@navbar-googlebar-inverse-brand-bg-hover:            transparent;
 
-@navbarGoogleBarInverseBrandColor:                @navbarGoogleNavInverseLinkColor;
+// Inverted navbar links
+@navbar-googlebar-inverse-link-color:                #fff;
+@navbar-googlebar-inverse-link-color-hover:          #fff;
+@navbar-googlebar-inverse-link-color-active:         @navbarGoogleNavInverseLinkColorHover;
+@navbar-googlebar-inverse-link-bg-hover:             transparent;
+@navbar-googlebar-inverse-link-bg-active:            @navbarGoogleNavInverseBackground;
+
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+@navbar-googlebar-inverse-search-background:         lighten(@navbar-googlebar-inverse-bg, 25%);
+@navbar-googlebar-inverse-search-background-focus:   #fff;
+@navbar-googlebar-inverse-search-border:             @navbar-googlebar-inverse-bg;
+@navbar-googlebar-inverse-search-placeholder-color:  #ccc;
+
 
 // Googlenav
 // -------------------------
-@navbarGoogleNavCollapseWidth:             979px;
-@navbarGoogleNavCollapseDesktopWidth:      @navbarGoogleNavCollapseWidth + 1;
+
+// Responsive collapsing
+// @navbarGoogleNavCollapseWidth:             979px;
+// @navbarGoogleNavCollapseDesktopWidth:      @navbarGoogleNavCollapseWidth + 1;
 
 @navbarGoogleNavHeight:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
 @navbarGoogleNavBackground:                #fff;
-// @navbarGoogleNavBackground:                @navbarGoogleBarBackground;
+// @navbarGoogleNavBackground:                @navbar-googlebar-bg;
 // @navbarGoogleNavBackgroundHighlight:       #fafafa;
 @navbarGoogleNavBackgroundHighlight:       darken(@navbarGoogleNavBackground, 5%);
 @navbarGoogleNavBorder:                    darken(@navbarGoogleNavBackground, 15.5%); //#d7d7d7
@@ -296,61 +322,66 @@
 @navbarGoogleNavInverseLinkBackgroundHover:       transparent;
 @navbarGoogleNavInverseLinkBackgroundActive:      @navbarGoogleNavInverseBackground;
 
-@navbarGoogleNavInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarGoogleNavInverseSearchBackground:          lighten(@navbar-inverse-bg, 25%);
 @navbarGoogleNavInverseSearchBackgroundFocus:     #fff;
 @navbarGoogleNavInverseSearchBorder:              @navbarGoogleNavInverseBackground;
 @navbarGoogleNavInverseSearchPlaceholderColor:    #ccc;
 
 @navbarGoogleNavInverseBrandColor:                @navbarGoogleNavInverseLinkColor;
 
+
+
 // Pagination
 // -------------------------
-@paginationBackground:                @btn-background;
-@paginationBorder:                    #dcdcdc;
-@paginationActiveBackground:          #f5f5f5;
+
+@pagination-background:                @btn-background;
+@pagination-background-active:         #f5f5f5;
+@pagination-border:                    #dcdcdc;
 
 
-// Hero unit
+// Jumbotron
 // -------------------------
-@heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
-@heroUnitLeadColor:               inherit;
+
+@jumbotron-background:           @grayLighter;
+@jumbotron-heading-color:        inherit;
+@jumbotron-lead-color:           inherit;
 
 
 // Form states and alerts
 // -------------------------
-@warningText:             #333; //#c09853;
-@warningBackground:       #f9edbe;
-@warningBorder:           #f0c36d;
 
-@errorText:               #dd4b39;
-@errorBackground:         #f2dede;
-@errorBorder:             #dd4b39;
+@state-warning-text:             #333;
+@state-warning-background:       #f9edbe;
+@state-warning-border:           #f0c36d;
 
-@successText:             #468847;
-@successBackground:       #dff0d8;
-@successBorder:           darken(@successBackground, 20%);
+@state-error-text:               #dd4b39;
+@state-error-background:         #f2dede;
+@state-error-border:             @state-error-text;
 
-@infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
-@infoBorder:              darken(@infoBackground, 20%);
+@state-success-text:             #468847;
+@state-success-background:       #dff0d8;
+@state-success-border:           darken(@state-success-background, 20%);
+
+@state-info-text:                #3a87ad;
+@state-info-background:          #d9edf7;
+@state-info-border:              darken(@state-success-background, 20%);
 
 
 // Tooltips and popovers
 // -------------------------
-@tooltipColor:            #fff;
-@tooltipBackground:       #000;
-@tooltipArrowWidth:       5px;
-@tooltipArrowColor:       @tooltipBackground;
+@tooltip-color:               #fff;
+@tooltip-background:          #2a2a2a;
+@tooltip-arrow-width:         5px;
+@tooltip-arrow-color:         @tooltip-background;
 
-@popoverBackground:       #fff;
-@popoverArrowWidth:       10px;
-@popoverArrowColor:       #fff;
-@popoverTitleBackground:  darken(@popoverBackground, 3%);
+@popover-background:          #fff;
+@popover-arrow-width:         10px;
+@popover-arrow-color:         #fff;
+@popover-title-background:    darken(@popover-background, 3%);
 
 // Special enhancement for popovers
-@popoverArrowOuterWidth:  @popoverArrowWidth + 1;
-@popoverArrowOuterColor:  rgba(0,0,0,.25);
+@popover-arrow-outer-width:   @popover-arrow-width + 1;
+@popover-arrow-outer-color:   rgba(0,0,0,.25);
 
 
 // Modals
@@ -389,34 +420,8 @@
 // GRID
 // --------------------------------------------------
 
-
 // Default 940px grid
-// -------------------------
-@gridColumns:             12;
-@gridColumnWidth:         60px;
-@gridGutterWidth:         20px;
-@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
-
-// 1200px min
-@gridColumnWidth1200:     70px;
-@gridGutterWidth1200:     30px;
-@gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * (@gridColumns - 1));
-
-// 768px-979px
-@gridColumnWidth768:      42px;
-@gridGutterWidth768:      20px;
-@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * (@gridColumns - 1));
-
-
-// Fluid grid
-// -------------------------
-@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
-@fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);
-
-// 1200px min
-@fluidGridColumnWidth1200:     percentage(@gridColumnWidth1200/@gridRowWidth1200);
-@fluidGridGutterWidth1200:     percentage(@gridGutterWidth1200/@gridRowWidth1200);
-
-// 768px-979px
-@fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
-@fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
+@grid-columns:              12;
+@grid-column-width:         60px;
+@grid-gutter-width:         20px;
+@grid-row-width:            (@grid-columns * @grid-column-width) + (@grid-gutter-width * (@grid-columns - 1));

@@ -8,23 +8,25 @@
 
 // Inner for background effects
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
-.navbar-inner {
-  min-height: @navbarHeight;
+.navbar {
+  min-height: @navbar-height;
+  background-color: @navbar-bg;
+  border: 1px solid @navbar-border;
 }
 
 
 // Brand: website or project name
 // -------------------------
 .navbar .brand {
-  // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @line-height-base) / 2) 20px ((@navbarHeight - @line-height-base) / 2);
+  // Vertically center the text given @navbar-height
+  padding: ((@navbar-height - @line-height-base) / 2) 20px ((@navbar-height - @line-height-base) / 2);
 }
 
 
 // Plain text in topbar
 // -------------------------
 .navbar-text {
-  line-height: @navbarHeight;
+  line-height: @navbar-height;
 }
 
 
@@ -43,7 +45,7 @@
 // Dividers in navbar
 // -------------------------
 .navbar .divider-vertical {
-  height: @navbarHeight;
+  height: @navbar-height;
 }
 
 // Buttons in navbar
@@ -84,8 +86,8 @@
 
 // Links
 .navbar .nav > li > a {
-  // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @line-height-base) / 2) 15px ((@navbarHeight - @line-height-base) / 2);
+  // Vertically center the text given @navbar-height
+  padding: ((@navbar-height - @line-height-base) / 2) 15px ((@navbar-height - @line-height-base) / 2);
   font-weight: bold;
 }
 
@@ -112,6 +114,8 @@
 // -------------------------
 
 .navbar-inverse {
+  background-color: @navbar-inverse-bg;
+  border: 1px solid @navbar-inverse-border;
 
   // Navbar search
   .navbar-search {
@@ -126,26 +130,39 @@
   }
 
   // Navbar collapse button
-  .btn-navbar {
-    .btnBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
-  }
+  // .btn-navbar {
+  //   .btnBackground(darken(@navbar-inverse-bgHighlight, 5%), darken(@navbar-inverse-bg, 5%));
+  // }
 
 }
 
 // Google bar
 // -------------------------
 .navbar-googlebar {
+  border-radius: @border-radius-base;
+  .box-shadow(none);
+  min-height: @navbar-googlebar-height;
+  margin: 0px;
+  color: @navbar-text;
+  #gradient > .vertical(@navbar-googlebar-bg, @navbar-googlebar-bg);
+  border: 1px solid @navbar-googlebar-border;
 
   // Brand: website or project name
   // -------------------------
   .brand {
-    padding: ((@navbarGoogleBarHeight - @line-height-base) / 2) 20px ((@navbarGoogleBarHeight - @line-height-base) / 2);
+    padding: ((@navbar-googlebar-height - @line-height-base) / 2) 20px ((@navbar-googlebar-height - @line-height-base) / 2);
+    &:hover,
+    &:focus {
+      color: @navbar-googlebar-brand-color-hover;
+      text-decoration: none;
+      background-color: @navbar-googlebar-brand-bg-hover;
+    }
   }
 
   // Plain text in topbar
   // -------------------------
   .navbar-text {
-    line-height: @navbarGoogleBarHeight;
+    line-height: @navbar-googlebar-height;
   }
 
   // Dividers in navbar
@@ -153,15 +170,15 @@
   .divider-vertical {
     height: 34px;
     // margin: 6px 9px;
-    border-right: 1px solid @navbarGoogleBarBackgroundHighlight;
-    border-left: 1px solid @navbarGoogleBarBackground;
+    border-right: 1px solid lighten(@navbar-googlebar-bg, 1.5%);
+    border-left: 1px solid @navbar-googlebar-bg;
   }
 
   // Buttons in navbar
   // -------------------------
   .btn,
   .btn-group {
-    .navbarVerticalAlign(@navbarGoogleBarHeight, @navbarGoogleBarHeight); // Vertically center in navbar
+    .navbarVerticalAlign(@navbar-googlebar-height, @navbar-googlebar-height); // Vertically center in navbar
     padding: 4px 12px;
   }
 
@@ -172,34 +189,22 @@
     select,
     .radio,
     .checkbox {
-      .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbar-googlebar-height); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbar-googlebar-height); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarVerticalAlign(30px, @navbarGoogleBarHeight); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbar-googlebar-height); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
      }
-  }
-
-  // Inner for background effects
-  // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
-  .navbar-inner {
-    border-radius: @border-radius-base;
-    .box-shadow(none);
-    min-height: @navbarGoogleBarHeight;
-    margin: 0px;
-    color: @navbarText;
-    #gradient > .vertical(@navbarGoogleBarBackground, @navbarGoogleBarBackground);
-    border: 1px solid @navbarGoogleBarBorder;
   }
 
 
@@ -217,19 +222,19 @@
   // ----------
 
   .nav {
-    .navbarVerticalAlign(34px, @navbarGoogleBarHeight); // Vertically center in navbar
+    .navbarVerticalAlign(34px, @navbar-googlebar-height); // Vertically center in navbar
   }
 
   // Links
   .nav > li > a {
     float: none;
-    // Vertically center the text given @navbarHeight
-    // padding: ((@navbarGoogleBarHeight - @line-height-base) / 2) 15px ((@navbarGoogleBarHeight - @line-height-base) / 2);
+    // Vertically center the text given @navbar-height
+    // padding: ((@navbar-googlebar-height - @line-height-base) / 2) 15px ((@navbar-googlebar-height - @line-height-base) / 2);
     padding: 8px 15px;
     font-weight: normal;
-    color: @navbarGoogleBarLinkColor;
+    color: @navbar-googlebar-link-color;
     text-decoration: none;
-    text-shadow: 0 1px 0 @navbarGoogleBarBackgroundHighlight;
+    text-shadow: 0 1px 0 lighten(@navbar-googlebar-bg, 1.5%);
   }
   .nav .dropdown-toggle .caret {
     margin-top: 8px;
@@ -239,8 +244,8 @@
   .nav > li > a:focus,
   .nav > li > a:hover {
     text-decoration: none;
-    background-color: @navbarGoogleBarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
-    color: @navbarGoogleBarLinkColorHover;
+    background-color: @navbar-googlebar-link-bg-hover; // "transparent" is default to differentiate :hover from .active
+    color: @navbar-googlebar-link-color-hover;
   }
 
   // Active nav items
@@ -248,17 +253,17 @@
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     .box-shadow(none);
-    color: @navbarGoogleBarLinkColorActive;
+    color: @navbar-googlebar-link-color-active;
     text-decoration: none;
-    #gradient > .vertical(@navbarGoogleBarLinkBackgroundActive, @navbarGoogleBarLinkBackgroundActive);
+    #gradient > .vertical(@navbar-googlebar-link-bg-active, @navbar-googlebar-link-bg-active);
   }
 
   // Navbar button for toggling navbar items in responsive layouts
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
     padding: 4px 10px 7px;
-    .navbarVerticalAlign(26px, @navbarGoogleBarHeight); // Vertically center in navbar
-    // #gradient > .vertical(@navbarGoogleBarBackgroundHighlight, @navbarGoogleBarBackground);
+    .navbarVerticalAlign(26px, @navbar-googlebar-height); // Vertically center in navbar
+    // #gradient > .vertical(lighten(@navbar-googlebar-bg, 1.5%), @navbar-googlebar-bg);
     #gradient > .vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
@@ -268,65 +273,71 @@
   // -------------------------
 
   &.navbar-inverse {
-    color: @navbarGoogleBarInverseText;
+    border-color: @navbar-googlebar-inverse-border;
+    #gradient > .vertical(@gray, @navbar-googlebar-inverse-bg);
+    color: @navbar-googlebar-inverse-text;
 
-    .navbar-inner {
-      border-color: @navbarGoogleBarInverseBorder;
-      #gradient > .vertical(@navbarGoogleBarInverseBackgroundHighlight, @navbarGoogleBarInverseBackground);
+    .brand {
+      color: @navbar-googlebar-inverse-link-color;
+      &:hover,
+      &:focus {
+        color: @navbar-googlebar-inverse-brand-color-hover;
+        background-color: @navbar-googlebar-inverse-brand-bg-hover;
+      }
     }
 
     .brand,
     .nav > li > a {
-      color: @navbarGoogleBarInverseLinkColor;
+      color: @navbar-googlebar-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbarGoogleBarInverseLinkColorHover;
+        color: @navbar-googlebar-inverse-link-color-hover;
       }
     }
 
     .nav > li > a:focus,
     .nav > li > a:hover {
-      color: @navbarGoogleBarInverseLinkColorHover;
-      background-color: @navbarGoogleBarInverseLinkBackgroundHover;
+      color: @navbar-googlebar-inverse-link-color-hover;
+      background-color: @navbar-googlebar-inverse-link-bg-hover;
     }
 
     .nav .active > a,
     .nav .active > a:hover,
     .nav .active > a:focus {
-      color: @navbarGoogleBarInverseLinkColorActive;
-      #gradient > .vertical(@navbarGoogleBarInverseLinkBackgroundActive, @navbarGoogleBarInverseLinkBackgroundActive);
+      color: @navbar-googlebar-inverse-link-color-active;
+      #gradient > .vertical(@navbar-googlebar-inverse-link-bg-active, @navbar-googlebar-inverse-link-bg-active);
     }
 
     // Inline text links
     .navbar-link {
-      color: @navbarGoogleBarInverseLinkColor;
+      color: @navbar-googlebar-inverse-link-color;
       &:hover {
-        color: @navbarGoogleBarInverseLinkColorHover;
+        color: @navbar-googlebar-inverse-link-color-hover;
       }
     }
 
     // Dividers in navbar
     .divider-vertical {
-      border-right-color: @navbarGoogleBarInverseBackgroundHighlight;
-      border-left-color: @navbarGoogleBarInverseBackground;
+      border-right-color: @gray;
+      border-left-color: @navbar-googlebar-inverse-bg;
     }
 
     // Dropdowns
     .nav li.dropdown.open > .dropdown-toggle,
     .nav li.dropdown.active > .dropdown-toggle,
     .nav li.dropdown.open.active > .dropdown-toggle {
-      color: @navbarGoogleBarInverseLinkColorActive;
-      background-color: @navbarGoogleBarInverseLinkBackgroundActive;
+      color: @navbar-googlebar-inverse-link-color-active;
+      background-color: @navbar-googlebar-inverse-link-bg-active;
     }
     .nav li.dropdown > .dropdown-toggle .caret {
-      border-top-color: @navbarGoogleBarInverseLinkColor;
-      border-bottom-color: @navbarGoogleBarInverseLinkColor;
+      border-top-color: @navbar-googlebar-inverse-link-color;
+      border-bottom-color: @navbar-googlebar-inverse-link-color;
     }
     .nav li.dropdown.open > .dropdown-toggle .caret,
     .nav li.dropdown.active > .dropdown-toggle .caret,
     .nav li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbarGoogleBarInverseLinkColorActive;
-      border-bottom-color: @navbarGoogleBarInverseLinkColorActive;
+      border-top-color: @navbar-googlebar-inverse-link-color-active;
+      border-bottom-color: @navbar-googlebar-inverse-link-color-active;
     }
 
     // Navbar search
@@ -334,10 +345,10 @@
       .search-query {
         .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
         .transition(none);
-        .placeholder(@navbarGoogleBarInverseSearchPlaceholderColor);
+        .placeholder(@navbar-googlebar-inverse-search-placeholder-color);
         color: #fff;
-        background-color: @navbarGoogleBarInverseSearchBackground;
-        border-color: @navbarGoogleBarInverseSearchBorder;
+        background-color: @navbar-googlebar-inverse-search-background;
+        border-color: @navbar-googlebar-inverse-search-border;
 
         // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
         &:focus,
@@ -346,7 +357,7 @@
           padding: 5px 15px;
           color: @grayDark;
           text-shadow: 0 1px 0 #fff;
-          background-color: @navbarGoogleBarInverseSearchBackgroundFocus;
+          background-color: @navbar-googlebar-inverse-search-background-focus;
           border: 0;
           outline: 0;
         }
@@ -355,7 +366,7 @@
 
     // Navbar collapse button
     .btn-navbar {
-      .btnBackground(darken(@navbarGoogleBarInverseBackgroundHighlight, 5%), darken(@navbarGoogleBarInverseBackground, 5%));
+      .btnBackground(darken(@gray, 5%), darken(@navbar-googlebar-inverse-bg, 5%));
     }
 
   }
@@ -370,7 +381,7 @@
   // -------------------------
   .brand,
   .brand .btn {
-    // Vertically center the text given @navbarHeight
+    // Vertically center the text given @navbar-height
     padding: ((@navbarGoogleNavHeight - @line-height-base) / 2) 20px ((@navbarGoogleNavHeight - @line-height-base) / 2);
     font-size: 16px;
     font-weight: bold;
@@ -458,7 +469,7 @@
     .box-shadow(none);
     min-height: @navbarGoogleNavHeight;
     margin: 0px;
-    color: @navbarText;
+    color: @navbar-text;
     #gradient > .vertical(@navbarGoogleNavBackground, @navbarGoogleNavBackground);
     border: 1px solid @navbarGoogleNavBorder;
   }

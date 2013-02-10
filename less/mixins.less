@@ -12,7 +12,7 @@
 // Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
 // Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
 //          .navbarVerticalAlign(32px, @navbarGoogleNavHeight);
-.navbarVerticalAlign(@elementHeight, @barHeight: @navbarHeight) {
+.navbarVerticalAlign(@elementHeight, @barHeight: @navbar-height) {
   margin-top: (@barHeight - @elementHeight) / 2;
 }
 
