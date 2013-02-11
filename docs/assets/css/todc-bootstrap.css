@@ -2240,8 +2240,38 @@ a.thumbnail:hover {
   padding: 9px 4px;
   color: #000000;
 }
+.label,
+.badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 10.998px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999999;
+}
 .label {
   border-radius: 0;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 9px;
+}
+.label:empty,
+.badge:empty {
+  display: none;
+}
+a.label:hover,
+a.label:focus,
+a.badge:hover,
+a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .label-important,
 .badge-important {
@@ -2253,7 +2283,7 @@ a.thumbnail:hover {
 }
 .label-warning,
 .badge-warning {
-  background-color: #f89406;
+  background-color: #f89306;
 }
 .label-warning[href],
 .badge-warning[href] {
@@ -2282,6 +2312,15 @@ a.thumbnail:hover {
 .label-inverse[href],
 .badge-inverse[href] {
   background-color: #1a1a1a;
+}
+.btn .label,
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+.btn-mini .label,
+.btn-mini .badge {
+  top: 0;
 }
 .progress {
   border-radius: 2px;
