@@ -39,7 +39,7 @@
         height: 16px;
         margin: 0 0 19px;
       }
-      
+
       .signin-box input[type=checkbox] {
         vertical-align: bottom;
       }
@@ -56,7 +56,7 @@
       .signin-box input[type=submit] {
         margin: 0 20px 15px 0;
       }
-      
+
       .signin-box label {
         color: #222;
         margin: 0 0 5px;
@@ -90,7 +90,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -98,7 +98,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
   <body>
@@ -107,23 +107,23 @@
 
       <div class="signin">
         <div class="signin-box">
-          <h2>Sign in</h2>
-          
+          <h2 class="form-signin-heading">Sign in</h2>
+
           <form>
             <fieldset>
               <label for="username">Username</label>
-              <input type="text" name="username" id="username">
+              <input type="text" class="input-block-level" name="username" id="username">
               <label for="passwd">Password</label>
-              <input type="password" name="passwd" id="passwd">
-              
+              <input type="password" class="input-block-level" name="passwd" id="passwd">
+
               <input type="submit" class="btn btn-primary" value="Sign in">
-              <label class="remember">
+             <label class="remember">
                 <input type="checkbox" name="rememberMe" value="yes">
                 <strong class="remember-label">Stay signed in</strong>
               </label>
             </fieldset>
           </form>
-          
+
           <ul>
             <li>
               <a id="link-forgot-pwd" href="#">Can't access your account?</a>
