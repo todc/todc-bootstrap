@@ -3,6 +3,33 @@
 // -----------------------------------------------------------------
 
 
+// FORMS
+// --------------------------------------------------
+
+// Override Twitter Bootstrap's formFieldState mixin
+.formFieldState(@text-color: #555, @border-color: #ccc, @background-color: #f5f5f5) {
+  // Color the label text
+  .control-label {
+    color: @text-color;
+  }
+  // Set the border and box shadow on specific inputs to match
+  .input-with-feedback {
+    padding-right: 32px; // to account for the feedback icon
+    border-color: @border-color;
+    .box-shadow(none);
+    &:hover {
+      border-color: @border-color;
+      .box-shadow(0 1px 2px rgba(0, 0, 0, 0.1) inset);
+    }
+    &:focus {
+      border-color: @border-color;
+      .box-shadow(0 1px 2px rgba(0, 0, 0, 0.3) inset);
+    }
+  }
+}
+
+
+
 // COMPONENT MIXINS
 // --------------------------------------------------
 
