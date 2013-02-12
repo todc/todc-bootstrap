@@ -1,15 +1,19 @@
-///
+//
 // Alerts
 // --------------------------------------------------
+
+
+// Base styles
+// -------------------------
 
 .alert {
   padding: 8px 35px 8px 10px;
   text-shadow: none;
+  color: @state-warning-text;
   .box-shadow(0 2px 4px rgba(0,0,0,0.2));
   background-color: @state-warning-background;
   border: 1px solid @state-warning-border;
   border-radius: @border-radius-base;
-  color: @grayDark;
 }
 
 // Alternate styles
@@ -37,9 +41,4 @@
 .alert-error,
 .alert-info {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-.alert-danger,
-.alert-error {
-  border-color: darken(@state-error-background, 20%);
-  color: #b94a48;
 }
