@@ -207,15 +207,28 @@ textarea[readonly] {
 // FORM FIELD FEEDBACK STATES
 // --------------------------
 
+// Warning
+.has-warning {
+  .formFieldState(@state-warning-text, @state-warning-text, @state-warning-background);
+}
+// Error
+.has-error {
+  .formFieldState(@state-error-text, @state-error-text, @state-error-background);
+}
+// Success
+.has-success {
+  .formFieldState(@state-success-text, @state-success-text, @state-success-background);
+}
+
 // HTML5 invalid states
 // Shares styles with the .control-group.error above
 input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid {
-  color: #b94a48;
-  border-color: #ee5f5b;
+  color: #dd4b39;
+  border-color: #dd4b39;
   &:focus {
-    border-color: #4d90fe;
+    border-color: #dd4b39;
     .box-shadow(0);
   }
 }
