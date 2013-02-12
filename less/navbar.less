@@ -375,47 +375,47 @@
 
 // Google Navbar
 // -------------------------
-.navbar-googlenav {
+.navbar-main {
   border-radius: @border-radius-base;
   .box-shadow(none);
-  min-height: @navbar-googlenav-height;
+  min-height: @navbar-main-height;
   margin: 0px;
   color: @navbar-text;
-  #gradient > .vertical(@navbar-googlenav-bg, @navbar-googlenav-bg);
-  border: 1px solid @navbar-googlenav-border;
+  #gradient > .vertical(@navbar-main-bg, @navbar-main-bg);
+  border: 1px solid @navbar-main-border;
 
   // Brand: website or project name
   // -------------------------
   .brand,
   .brand .btn {
     // Vertically center the text given @navbar-height
-    padding: ((@navbar-googlenav-height - @line-height-base) / 2) 20px ((@navbar-googlenav-height - @line-height-base) / 2);
+    padding: ((@navbar-main-height - @line-height-base) / 2) 20px ((@navbar-main-height - @line-height-base) / 2);
     font-size: 16px;
     font-weight: bold;
-    color: @navbar-googlenav-brand-color;
+    color: @navbar-main-brand-color;
     text-shadow: none;
     &:hover,
     &:focus {
-      color: @navbar-googlenav-brand-color-hover;
+      color: @navbar-main-brand-color-hover;
       text-decoration: none;
-      background-color: @navbar-googlenav-brand-bg-hover;
+      background-color: @navbar-main-brand-bg-hover;
     }
   }
 
   // Plain text in topbar
   // -------------------------
   .navbar-text {
-    .navbarVerticalAlign(@navbar-googlenav-height, @navbar-googlenav-height); // Vertically center in navbar
-    line-height: @navbar-googlenav-height;
+    .navbarVerticalAlign(@navbar-main-height, @navbar-main-height); // Vertically center in navbar
+    line-height: @navbar-main-height;
   }
 
   // Dividers in navbar
   // -------------------------
   .divider-vertical {
-    height: @navbar-googlenav-height - 2;
+    height: @navbar-main-height - 2;
     margin: 0 9px;
-    border-right: 1px solid @navbar-googlenav-bg;
-    border-left: 1px solid darken(@navbar-googlenav-bg, 5%);
+    border-right: 1px solid @navbar-main-bg;
+    border-left: 1px solid darken(@navbar-main-bg, 5%);
   }
 
   // Optional: Group multiple button groups together for a toolbar
@@ -427,7 +427,7 @@
   // -------------------------
   .btn,
   .btn-group {
-    .navbarVerticalAlign(30px, @navbar-googlenav-height); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
   }
   .btn {
     padding: 4px 12px; // FIXME: This is probably not necessary for the btn-group;
@@ -457,19 +457,19 @@
     select,
     .radio,
     .checkbox {
-      .navbarVerticalAlign(30px, @navbar-googlenav-height); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarVerticalAlign(30px, @navbar-googlenav-height); // Vertically center in navbar
+      .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarVerticalAlign(30px, @navbar-googlenav-height); // Vertically center in navbar
+    .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
     }
@@ -489,13 +489,13 @@
   &.navbar-fixed-bottom,
   &.navbar-static-top {
     .nav > li > a {
-      // padding: ((@navbar-googlenav-height - @line-height-base) / 2) 15px (((@navbar-googlenav-height - @line-height-base) / 2) - 1);
+      // padding: ((@navbar-main-height - @line-height-base) / 2) 15px (((@navbar-main-height - @line-height-base) / 2) - 1);
     }
 
     // Dividers in navbar
     // -------------------------
     .divider-vertical {
-      height: @navbar-googlenav-height - 1;
+      height: @navbar-main-height - 1;
     }
   }
 
@@ -509,12 +509,12 @@
   // Links
   .nav > li > a {
     // padding: 9px 15px 8px;
-    padding: (floor((@navbar-googlenav-height - @line-height-base) / 2)) 15px (((@navbar-googlenav-height - @line-height-base) / 2));
-    color: @navbar-googlenav-link-color;
+    padding: (floor((@navbar-main-height - @line-height-base) / 2)) 15px (((@navbar-main-height - @line-height-base) / 2));
+    color: @navbar-main-link-color;
     text-shadow: none;
   }
   .nav > li > a.brand {
-    color: @navbar-googlenav-brand-color;
+    color: @navbar-main-brand-color;
   }
 
   // Active nav items
@@ -527,7 +527,7 @@
       display: inline-block;
       margin-left: -8px; /* value should match border-width below */
       border-right:  8px solid transparent;
-      border-bottom: 8px solid @navbar-googlenav-border;
+      border-bottom: 8px solid @navbar-main-border;
       border-left:   8px solid transparent;
       content: '';
     }
@@ -548,13 +548,13 @@
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     .box-shadow(none);
-    color: @navbar-googlenav-link-color-active;
-    background-color: @navbar-googlenav-link-bg-active;
+    color: @navbar-main-link-color-active;
+    background-color: @navbar-main-link-bg-active;
   }
 
   .nav > li > a:focus,
   .nav > li > a:hover {
-    color: @navbar-googlenav-link-color-hover;
+    color: @navbar-main-link-color-hover;
     text-decoration: underline;
     background-color: transparent;
   }
@@ -563,7 +563,7 @@
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
     padding: 4px 10px 7px;
-    .navbarVerticalAlign(26px, @navbar-googlenav-height); // Vertically center in navbar
+    .navbarVerticalAlign(26px, @navbar-main-height); // Vertically center in navbar
     #gradient > .vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
@@ -587,28 +587,28 @@
   .nav li.dropdown.open > .dropdown-toggle,
   .nav li.dropdown.active > .dropdown-toggle,
   .nav li.dropdown.open.active > .dropdown-toggle {
-    background-color: @navbar-googlenav-link-bg-active;
+    background-color: @navbar-main-link-bg-active;
   }
 
 
   // Brand Dropdowns
   .nav > li > a.brand:focus,
   .nav > li > a.brand:hover {
-    color: @navbar-googlenav-brand-color;
+    color: @navbar-main-brand-color;
     text-decoration: none;
   }
 
   .nav li.dropdown.open > .brand.dropdown-toggle,
   .nav li.dropdown.active > .brand.dropdown-toggle,
   .nav li.dropdown.open.active > .brand.dropdown-toggle {
-    background-color: @navbar-googlenav-link-bg-active;
-    color: @navbar-googlenav-brand-color;
+    background-color: @navbar-main-link-bg-active;
+    color: @navbar-main-brand-color;
     text-decoration: none;
   }
 
   .nav li.dropdown > .brand.dropdown-toggle .caret {
-    border-top-color: @navbar-googlenav-brand-color;
-    border-bottom-color: @navbar-googlenav-brand-color;
+    border-top-color: @navbar-main-brand-color;
+    border-bottom-color: @navbar-main-brand-color;
   }
 
 
@@ -616,36 +616,36 @@
   // -------------------------
 
   &.navbar-inverse {
-    color: @navbar-googlenav-inverse-text;
+    color: @navbar-main-inverse-text;
 
     .navbar-inner {
-      border-color: @navbar-googlenav-inverse-border;
-      #gradient > .vertical(@gray, @navbar-googlenav-inverse-bg);
-      background: @navbar-googlenav-inverse-bg;
+      border-color: @navbar-main-inverse-border;
+      #gradient > .vertical(@gray, @navbar-main-inverse-bg);
+      background: @navbar-main-inverse-bg;
     }
 
     .brand,
     .nav > li > a {
       font-weight: normal;
-      color: @navbar-googlenav-inverse-link-color;
+      color: @navbar-main-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbar-googlenav-inverse-link-color-hover;
+        color: @navbar-main-inverse-link-color-hover;
       }
     }
 
     .nav > li > a:focus,
     .nav > li > a:hover {
-      color: @navbar-googlenav-inverse-link-color-hover;
-      background-color: @navbar-googlenav-inverse-link-bg-hover;
+      color: @navbar-main-inverse-link-color-hover;
+      background-color: @navbar-main-inverse-link-bg-hover;
     }
 
     .nav .active > a,
     .nav .active > a:hover,
     .nav .active > a:focus {
       font-weight: bold;
-      color: @navbar-googlenav-inverse-link-color-active;
-      background-color: @navbar-googlenav-inverse-link-bg-active;
+      color: @navbar-main-inverse-link-color-active;
+      background-color: @navbar-main-inverse-link-bg-active;
     }
     .nav .active > a:hover {
       text-decoration: underline;
@@ -653,34 +653,34 @@
 
     // Inline text links
     .navbar-link {
-      color: @navbar-googlenav-inverse-link-color;
+      color: @navbar-main-inverse-link-color;
       &:hover {
-        color: @navbar-googlenav-inverse-link-color-hover;
+        color: @navbar-main-inverse-link-color-hover;
       }
     }
 
     // Dividers in navbar
     .divider-vertical {
       border-right-color: @gray;
-      border-left-color: @navbar-googlenav-inverse-bg;
+      border-left-color: @navbar-main-inverse-bg;
     }
 
     // Dropdowns
     .nav li.dropdown.open > .dropdown-toggle,
     .nav li.dropdown.active > .dropdown-toggle,
     .nav li.dropdown.open.active > .dropdown-toggle {
-      color: @navbar-googlenav-inverse-link-color-active;
-      background-color: @navbar-googlenav-inverse-link-bg-active;
+      color: @navbar-main-inverse-link-color-active;
+      background-color: @navbar-main-inverse-link-bg-active;
     }
     .nav li.dropdown > .dropdown-toggle .caret {
-      border-top-color: @navbar-googlenav-inverse-link-color;
-      border-bottom-color: @navbar-googlenav-inverse-link-color;
+      border-top-color: @navbar-main-inverse-link-color;
+      border-bottom-color: @navbar-main-inverse-link-color;
     }
     .nav li.dropdown.open > .dropdown-toggle .caret,
     .nav li.dropdown.active > .dropdown-toggle .caret,
     .nav li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbar-googlenav-inverse-link-color-active;
-      border-bottom-color: @navbar-googlenav-inverse-link-color-active;
+      border-top-color: @navbar-main-inverse-link-color-active;
+      border-bottom-color: @navbar-main-inverse-link-color-active;
     }
 
     // Navbar search
@@ -688,10 +688,10 @@
       .search-query {
         .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
         .transition(none);
-        .placeholder(@navbar-googlenav-inverse-search-placeholder-color);
+        .placeholder(@navbar-main-inverse-search-placeholder-color);
         color: #fff;
-        background-color: @navbar-googlenav-inverse-search-background;
-        border-color: @navbar-googlenav-inverse-search-border;
+        background-color: @navbar-main-inverse-search-background;
+        border-color: @navbar-main-inverse-search-border;
 
         // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
         &:focus,
@@ -700,7 +700,7 @@
           padding: 5px 15px;
           color: @grayDark;
           text-shadow: 0 1px 0 #fff;
-          background-color: @navbar-googlenav-inverse-search-background-focus;
+          background-color: @navbar-main-inverse-search-background-focus;
           border: 0;
           outline: 0;
         }
@@ -709,7 +709,7 @@
 
     // Navbar collapse button
     .btn-navbar {
-      .btnBackground(darken(@navbar-googlenav-inverse-link-bg-active, 5%), darken(@navbar-googlenav-inverse-bg, 5%));
+      .btnBackground(darken(@navbar-main-inverse-link-bg-active, 5%), darken(@navbar-main-inverse-bg, 5%));
     }
 
   }
