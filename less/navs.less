@@ -46,7 +46,8 @@
 // Main list - Google styled
 // -------------------------
 
-.nav-list-main > li > a {
+.nav-list-main > li > a,
+.nav-list-sidebar > li > a {
   padding: 1px 15px;
   color: @grayDarker;
   border: 0 none;
@@ -56,7 +57,11 @@
 }
 
 .nav-list-main > .active > a,
-.nav-list-main > .active > a:hover {
+.nav-list-main > .active > a:hover,
+.nav-list-main > .active > a:focus,
+.nav-list-sidebar > .active > a,
+.nav-list-sidebar > .active > a:hover,
+.nav-list-sidebar > .active > a:focus {
   padding-left: 12px;
   font-weight: bold;
   color: #dd4b39;
@@ -70,6 +75,39 @@
 
 // Sidebar list
 // -------------------------
+
+.nav-list-sidebar {
+  color: @grayDarker;
+  .transition(color 0.218s ease 0s);
+  &:hover a,
+  &:hover .active > a   {
+    color: @link-color;
+  }
+  li {
+    margin-top: 3px;
+  }
+  .nav-header {
+    margin-bottom: 5px;
+    color: #808080;
+    border-bottom: 1px solid #E9E9E9;
+   }
+}
+.nav-list-sidebar > .active > a,
+.nav-list-sidebar > .active > a:hover,
+.nav-list-sidebar > .active > a:focus {
+  padding-left: 15px;
+  font-weight: bold;
+  color: @grayDarker;
+  border-left: 0 none;
+}
+.nav-list-sidebar > .active > a:hover,
+.nav-list-sidebar > li > a:hover,
+.nav-list-sidebar > li > a:active,
+.nav-list-sidebar > li > a:focus {
+  color: @link-color;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 
 // Tabs
