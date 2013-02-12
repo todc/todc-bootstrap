@@ -87,7 +87,7 @@
           <li><a href="#buttonDropdowns"><i class="glyphicon-chevron-right"></i> Button dropdowns</a></li>
           <li><a href="#navs"><i class="glyphicon-chevron-right"></i> Navs</a></li>
           <li><a href="#navbar"><i class="glyphicon-chevron-right"></i> Navbar</a></li>
-          <li><a href="#navbar-googlebar"><i class="glyphicon-chevron-right"></i> Google bar</a></li>
+          <li><a href="#navbar-masthead"><i class="glyphicon-chevron-right"></i> Google bar</a></li>
           <li><a href="#navbar-googlenav"><i class="glyphicon-chevron-right"></i> Google Navbar</a></li>
           <li><a href="#breadcrumbs"><i class="glyphicon-chevron-right"></i> Breadcrumbs</a></li>
           <li><a href="#pagination"><i class="glyphicon-chevron-right"></i> Pagination</a></li>
@@ -1093,7 +1093,7 @@
 
         <!-- Google bar
         ================================================== -->
-       <section id="navbar-googlebar">
+       <section id="navbar-masthead">
           <div class="page-header">
             <h1>Google Bar</h1>
           </div>
@@ -1102,7 +1102,7 @@
           <h2>Basic Google bar</h2>
           <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <a class="brand" href="#">Title</a>
               <form class="navbar-form pull-left">
                 <input type="text" class="span3" placeholder="Search">
@@ -1116,7 +1116,7 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar"&gt;
+&lt;div class="navbar navbar-masthead"&gt;
   &lt;a class="brand" href="#"&gt;Title&lt;/a&gt;
   &lt;form class="navbar-form pull-left"&gt;
     &lt;input type="text" class="span3" placeholder="Search"&gt;
@@ -1141,7 +1141,7 @@
           <h3>Brand</h3>
           <p>A simple link to show your brand or project name only requires an anchor tag.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <a class="brand" href="#">Title</a>
             </div>
           </div>
@@ -1152,7 +1152,7 @@
           <h3>Nav links</h3>
           <p>Nav items are simple to add via unordered lists.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Link</a></li>
@@ -1161,7 +1161,7 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;ul class="nav navbar-googlebar"&gt;
+&lt;ul class="nav navbar-masthead"&gt;
   &lt;li class="active"&gt;
     &lt;a href="#">Home&lt;/a&gt;
   &lt;/li&gt;
@@ -1171,7 +1171,7 @@
 </pre>
           <p>You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li class="divider-vertical"></li>
@@ -1193,7 +1193,7 @@
           <h3>Forms</h3>
           <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <form class="navbar-form pull-left">
                 <input type="text" class="span2">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -1210,7 +1210,7 @@
           <h3>Search form</h3>
           <p>For a more customized search form, add <code>.navbar-search</code> to the <code>form</code> and <code>.search-query</code> to the input for specialized styles in the navbar.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <form class="navbar-search pull-left">
                 <input type="text" class="search-query" placeholder="Search">
               </form>
@@ -1228,7 +1228,7 @@
           <h3>Using dropdowns</h3>
           <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <ul class="nav">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -1263,12 +1263,12 @@
           <h3>Text</h3>
           <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <p class="navbar-text">This is some text</p>
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar"&gt;
+&lt;div class="navbar navbar-masthead"&gt;
   &lt;p class="navbar-text"&gt;This is some text&lt;/p&gt;
 &lt;/div&gt;
 </pre>
@@ -1283,7 +1283,7 @@
           <h3>Fixed to top</h3>
           <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 46px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
           <div class="bs-docs-example bs-navbar-top-example">
-            <div class="navbar navbar-googlebar navbar-fixed-top" style="position: absolute;">
+            <div class="navbar navbar-masthead navbar-fixed-top" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
                 <a class="brand" href="#">Title</a>
                 <ul class="nav">
@@ -1295,7 +1295,7 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar navbar-fixed-top"&gt;
+&lt;div class="navbar navbar-masthead navbar-fixed-top"&gt;
   ...
 &lt;/div&gt;
 </pre>
@@ -1303,7 +1303,7 @@
           <h3>Fixed to bottom</h3>
           <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
           <div class="bs-docs-example bs-navbar-bottom-example">
-            <div class="navbar navbar-googlebar navbar-fixed-bottom" style="position: absolute;">
+            <div class="navbar navbar-masthead navbar-fixed-bottom" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
                 <a class="brand" href="#">Title</a>
                 <ul class="nav">
@@ -1315,7 +1315,7 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar navbar-fixed-bottom"&gt;
+&lt;div class="navbar navbar-masthead navbar-fixed-bottom"&gt;
   ...
 &lt;/div&gt;
 </pre>
@@ -1323,7 +1323,7 @@
           <h3>Static top navbar</h3>
           <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
           <div class="bs-docs-example bs-navbar-top-example">
-            <div class="navbar navbar-googlebar navbar-static-top" style="margin: -1px -1px 0;">
+            <div class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
               <div class="container" style="width: auto; padding: 0 20px;">
                 <a class="brand" href="#">Title</a>
                 <ul class="nav">
@@ -1335,7 +1335,7 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar navbar-static-top"&gt;
+&lt;div class="navbar navbar-masthead navbar-static-top"&gt;
   ...
 &lt;/div&gt;
 </pre>
@@ -1347,7 +1347,7 @@
           <h2>Responsive navbar</h2>
           <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar">
+            <div class="navbar navbar-masthead">
               <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                   <span class="icon-bar"></span>
@@ -1395,7 +1395,7 @@
             </div><!-- /navbar -->
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar"&gt;
+&lt;div class="navbar navbar-masthead"&gt;
   &lt;div class="container"&gt;
 
     &lt;!-- .btn-navbar is used as the toggle for collapsed navbar content --&gt;
@@ -1427,7 +1427,7 @@
           <h2>Inverted variation</h2>
           <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
           <div class="bs-docs-example">
-            <div class="navbar navbar-googlebar navbar-inverse" style="position: static;">
+            <div class="navbar navbar-masthead navbar-inverse" style="position: static;">
               <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                   <span class="icon-bar"></span>
@@ -1475,7 +1475,7 @@
             </div><!-- /navbar -->
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-googlebar navbar-inverse"&gt;
+&lt;div class="navbar navbar-masthead navbar-inverse"&gt;
   ...
 &lt;/div&gt;
 </pre>
