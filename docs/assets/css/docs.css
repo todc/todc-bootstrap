@@ -216,6 +216,23 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px !important;
+  border: 1px solid #e5e5e5 !important;
+}
+.bs-docs-sidenav > .active {
+  border-left: 3px solid #DD4B39;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 8px 14px 8px 12px !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  border-left: 0 !important;
+}
 .bs-docs-sidenav.affix {
   position: static;
   top: 0;
