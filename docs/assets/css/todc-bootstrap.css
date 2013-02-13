@@ -1429,8 +1429,8 @@ select:focus:required:invalid:focus {
 }
 .navbar {
   min-height: 30px;
-  background-color: #fafafa;
-  border: 1px solid #dbdbdb;
+  background-color: #2d2d2d;
+  border: 1px solid #000000;
 }
 .navbar .brand {
   padding: 5px 20px 5px;
@@ -1499,8 +1499,8 @@ select:focus:required:invalid:focus {
   border-radius: 0;
 }
 .navbar-inverse {
-  background-color: #2d2d2d;
-  border: 1px solid #000000;
+  background-color: #fafafa;
+  border: 1px solid #0e0e0e;
 }
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
@@ -2067,7 +2067,7 @@ select:focus:required:invalid:focus {
   -o-transition: none;
   transition: none;
   color: #fff;
-  background-color: #6d6d6d;
+  background-color: #ffffff;
   border-color: #444444;
 }
 .navbar-main.navbar-inverse .navbar-search .search-query:-moz-placeholder {
