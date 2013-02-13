@@ -32,7 +32,7 @@ http://todc.github.com/todc-bootstrap/index.html
 
 ## License ##
 
-http://www.apache.org/licenses/LICENSE-2.0
+MIT License - http://www.opensource.org/licenses/mit-license.php
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Twitter Bootstrap's current license.
 
