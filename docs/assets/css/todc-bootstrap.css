@@ -1432,11 +1432,70 @@ select:focus:required:invalid:focus {
   background-color: #2d2d2d;
   border: 1px solid #000000;
 }
+.navbar .nav > li > a {
+  padding: 5px 15px 5px;
+  font-weight: bold;
+  color: #999999;
+}
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #141414;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  border-width: 0 0 1px;
+}
+.navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0 0;
+}
 .navbar .brand {
   padding: 5px 20px 5px;
+  color: #999999;
 }
-.navbar-text {
-  line-height: 30px;
+.navbar .brand:hover,
+.navbar .brand:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.btn-navbar {
+  padding: 8px 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #444;
+  background-image: none;
+  border: 1px solid #222;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav > .divider {
+  height: 30px;
+  *width: 100%;
+  height: 1px;
+  margin: 9px 0;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #202020;
+  border-bottom: 1px solid #3a3a3a;
+}
+.navbar-form {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.navbar-form input,
+.navbar-form select {
+  min-height: 26px;
+}
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+  border-radius: 0;
 }
 .navbar .brand.dropdown-menu {
   display: none;
@@ -1446,57 +1505,6 @@ select:focus:required:invalid:focus {
 }
 .open > .brand.dropdown-menu {
   display: block;
-}
-.navbar .divider-vertical {
-  height: 30px;
-}
-.navbar .btn,
-.navbar .btn-group {
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.navbar .btn {
-  padding: 2px 10px;
-}
-.navbar-form input,
-.navbar-form select,
-.navbar-form .radio,
-.navbar-form .checkbox {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding: 2px 14px;
-}
-.navbar-search {
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.navbar-search .search-query {
-  padding: 2px 14px;
-  line-height: normal;
-}
-.navbar .nav > li > a {
-  padding: 5px 15px 5px;
-  font-weight: bold;
-}
-.navbar .btn-navbar {
-  padding: 4px 10px 7px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  background-color: #f1f1f1;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
-  border: 1px solid #dcdcdc;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.navbar .pull-right > li > .dropdown-menu .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
-  border-radius: 0;
 }
 .navbar-inverse {
   background-color: #fafafa;
@@ -2161,12 +2169,56 @@ select:focus:required:invalid:focus {
   background-color: #373737;
   background-color: #373737 \9;
 }
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
-}
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0;
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar .brand {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -15px;
+  }
+  .navbar .nav {
+    float: left;
+    margin-top: 0;
+  }
+  .navbar .nav:before,
+  .navbar .nav:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  .navbar .nav:after {
+    clear: both;
+  }
+  .navbar .nav.pull-right {
+    float: right;
+  }
+  .navbar .nav > li {
+    float: left;
+  }
+  .navbar .nav > .divider {
+    width: 1px;
+    height: 18px;
+    margin: 6px 9px;
+    border-bottom: 0;
+    border-right: 1px solid #3a3a3a;
+  }
+  .navbar-inverse .nav > .divider {
+    border-right-color: #ffffff;
+  }
+  .navbar .btn-navbar {
+    display: none;
+  }
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
 }
 .breadcrumb {
   background-color: #f3f3f3;

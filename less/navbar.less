@@ -1,33 +1,128 @@
 //
-// Navbars (Redux)
+// Navbars
 // --------------------------------------------------
 
-
-// COMMON STYLES
-// -------------
-
-// Inner for background effects
-// Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+// Wrapper and base class
 .navbar {
   min-height: @navbar-height;
   background-color: @navbar-bg;
   border: 1px solid @navbar-border;
 }
 
-
-// Brand: website or project name
+// Navbar nav links
 // -------------------------
+
+.navbar {
+  // .nav {
+  //   margin-top: 15px; // space out from .navbar .brand and .btn-navbar
+  // }
+  .nav > li > a {
+    // Vertically center the text given @navbar-height
+    padding: ((@navbar-height - @line-height-base) / 2) 15px ((@navbar-height - @line-height-base) / 2);
+    font-weight: bold;
+    color: @navbar-link-color;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    color: @navbar-link-color-hover;
+    background-color: @navbar-link-bg-hover;
+  }
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    color: @navbar-link-color-active;
+    background-color: @navbar-link-bg-active;
+  }
+}
+
+
+
+//
+// Navbar alignment options
+// --------------------------------------------------
+
+// Shared (top/bottom) styles
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  border-width: 0 0 1px;
+}
+.navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0 0;
+}
+
+
+
+//
+// Navbar optional components
+// --------------------------------------------------
+
+// Brand/project name
 .navbar .brand {
   // Vertically center the text given @navbar-height
   padding: ((@navbar-height - @line-height-base) / 2) 20px ((@navbar-height - @line-height-base) / 2);
+  color: @navbar-brand-color;
+  &:hover,
+  &:focus {
+    color: @navbar-brand-color-hover;
+    text-decoration: none;
+    background-color: @navbar-brand-bg-hover;
+  }
+}
+
+// Collapsible navbar toggle
+.btn-navbar {
+  padding: 8px 10px;
+  .navbarVerticalAlign(26px); // Vertically center in navbar
+  // #gradient > .vertical(#f5f5f5, #f1f1f1);
+  background-color: #444;
+  background-image: none;
+  border: 1px solid #222;
+  .box-shadow(none);
+
+  // Bars
+  // .icon-bar {
+  //   display: block;
+  //   width: 20px;
+  //   height: 2px;
+  //   background-color: #fff;
+  //   border-radius: 1px;
+  // }
+  // .icon-bar + .icon-bar {
+  //   margin-top: 3px;
+  // }
+}
+
+// Dividers in navbar
+.navbar .nav > .divider {
+  height: @navbar-height;
+  .nav-divider(darken(@navbar-bg, 5%), lighten(@navbar-bg, 5%));
+}
+
+// Navbar form
+.navbar-form {
+  .navbar-vertical-align(26px); // Vertically center in navbar
+  input,
+  select {
+    min-height: 26px;
+  }
+}
+
+// Dropdown menus
+
+
+// Right aligned menus need alt position
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
+  .dropdown-menu {
+    border-radius: 0;
+  }
 }
 
 
-// Plain text in topbar
-// -------------------------
-.navbar-text {
-  line-height: @navbar-height;
-}
+
+
+
+
 
 
 // Brand: dropdown menu
@@ -42,72 +137,38 @@
     display: block;
 }
 
-// Dividers in navbar
-// -------------------------
-.navbar .divider-vertical {
-  height: @navbar-height;
-}
-
 // Buttons in navbar
 // -------------------------
-.navbar .btn,
-.navbar .btn-group {
-  .navbarVerticalAlign(26px); // Vertically center in navbar
-}
-.navbar .btn {
-  padding: @padding-small; // FIXME: This is probably not necessary for the btn-group;
-}
+// .navbar .btn,
+// .navbar .btn-group {
+//   .navbarVerticalAlign(26px); // Vertically center in navbar
+// }
+// .navbar .btn {
+//   padding: @padding-small; // FIXME: This is probably not necessary for the btn-group;
+// }
 
-// Navbar forms
-// -------------------------
-.navbar-form {
-  input,
-  select,
-  .radio,
-  .checkbox {
-    .navbarVerticalAlign(26px); // Vertically center in navbar
-    padding: 2px 14px;
-  }
-}
+// // Navbar forms
+// // -------------------------
+// .navbar-form {
+//   input,
+//   select,
+//   .radio,
+//   .checkbox {
+//     .navbarVerticalAlign(26px); // Vertically center in navbar
+//     padding: 2px 14px;
+//   }
+// }
 
 // Navbar search
 // -------------------------
-.navbar-search {
-  .navbarVerticalAlign(26px); // Vertically center in navbar
-  .search-query {
-    padding: 2px 14px;
-    line-height: normal;
-  }
-}
+// .navbar-search {
+//   .navbarVerticalAlign(26px); // Vertically center in navbar
+//   .search-query {
+//     padding: 2px 14px;
+//     line-height: normal;
+//   }
+// }
 
-
-// NAVIGATION
-// ----------
-
-// Links
-.navbar .nav > li > a {
-  // Vertically center the text given @navbar-height
-  padding: ((@navbar-height - @line-height-base) / 2) 15px ((@navbar-height - @line-height-base) / 2);
-  font-weight: bold;
-}
-
-// Navbar button for toggling navbar items in responsive layouts
-// These definitions need to come after '.navbar .btn'
-.navbar .btn-navbar {
-  padding: 4px 10px 7px;
-  .navbarVerticalAlign(26px); // Vertically center in navbar
-  #gradient > .vertical(#f5f5f5, #f1f1f1);
-  border: 1px solid #dcdcdc;
-  .box-shadow(none);
-}
-
-// Right aligned menus need alt position
-.navbar .pull-right > li > .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right {
-  .dropdown-menu {
-    border-radius: 0;
-  }
-}
 
 
 // Inverted navbar
@@ -717,14 +778,56 @@
 }
 
 
-// Fixed navbar
-// -------------------------
 
-// Shared (top/bottom) styles
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
+// Navbar
+// --------------------------------------------------
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar .brand {
+    float: left;
+    padding-top: (@navbar-height - @line-height-base) / 2;
+    padding-bottom: (@navbar-height - @line-height-base) / 2;
+    margin-left: -15px;
+  }
+  .navbar .nav {
+    float: left;
+    margin-top: 0; // undo top margin to make nav extend full height of navbar
+    .clear_float();
+
+    &.pull-right {
+      float: right;
+    }
+  }
+  .navbar .nav > li {
+    float: left;
+  }
+
+  // Dividers go vertical
+  // Change the height and height, disable bottom border, then add right border
+  .navbar .nav > .divider {
+    width: 1px;
+    height: @navbar-height * .6;
+    margin: (@navbar-height * .2) 9px;
+    border-bottom: 0;
+    border-right: 1px solid lighten(@navbar-bg, 5%);
+  }
+  // Since we override the border, we need to specify it again for inverted navbars
+  .navbar-inverse .nav > .divider {
+    border-right-color: lighten(@navbar-inverse-bg, 5%);
+  }
+
+  // Required to make the collapsing navbar work on regular desktops
+  .navbar .btn-navbar {
+    display: none;
+  }
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
 }
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0;
-}
+
