@@ -2,19 +2,46 @@
 // Modals
 // --------------------------------------------------
 
-// Background
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Actual modal
+.modal-content {
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.333);
+  border-radius: 0;
+  .box-shadow(0 4px 16px rgba(0, 0, 0, 0.2));
+}
+
+// Modal background
 .modal-backdrop {
   background-color: #fff;
   // Fade for backdrop
   &.fade { opacity: 0; }
+  &.fade.in { .opacity(50);}
 }
 
-.modal-backdrop,
-.modal-backdrop.fade.in {
-  .opacity(75);
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #acacac;
+}
+// Close icon
+.modal-header .close {
+  .opacity(40);
 }
 
-// Base modal
-.modal {
-  border-radius: 0;
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+   padding: @modal-inner-padding;
+}
+
+// Footer (for actions)
+.modal-footer {
+  margin-top: 5px;
+  border-top: 1px solid #acacac;
 }

@@ -2288,6 +2288,7 @@ select:focus:required:invalid:focus {
   }
 }
 .breadcrumb {
+  margin: 0 0 20px;
   background-color: #f3f3f3;
   background-color: #f1f1f1;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
@@ -2298,6 +2299,9 @@ select:focus:required:invalid:focus {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
   border-radius: 2px;
+}
+.breadcrumb > .active {
+  color: #999999;
 }
 .pagination {
   margin: 20px 0;
@@ -2441,19 +2445,37 @@ pagination > .disabled > span,
   box-shadow: none;
   text-shadow: none;
 }
+.modal-content {
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.333);
+  border-radius: 0;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
 .modal-backdrop {
   background-color: #fff;
 }
 .modal-backdrop.fade {
   opacity: 0;
 }
-.modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
-.modal {
-  border-radius: 0;
+.modal-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #acacac;
+}
+.modal-header .close {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-footer {
+  margin-top: 5px;
+  border-top: 1px solid #acacac;
 }
 .tooltip {
   font-weight: bold;
