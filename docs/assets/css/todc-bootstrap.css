@@ -1322,6 +1322,7 @@ select:focus:required:invalid:focus {
   margin-bottom: 5px;
   color: #808080;
   position: relative;
+  overflow: hidden;
 }
 .nav-list-sidebar .nav-header:after {
   border-bottom: 1px solid #E9E9E9;
