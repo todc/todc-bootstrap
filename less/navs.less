@@ -68,7 +68,16 @@
   .nav-header {
     margin-bottom: 5px;
     color: #808080;
-    border-bottom: 1px solid #E9E9E9;
+    // border-bottom: 1px solid #E9E9E9;
+    position: relative;
+    &:after {
+      border-bottom: 1px solid #E9E9E9;
+      content: '';
+      margin-left: 10px;
+      margin-top: 10px;
+      position: absolute;
+      width: 100%;
+    }
    }
 }
 .nav-list-sidebar > .active > a,

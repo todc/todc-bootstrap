@@ -1321,7 +1321,15 @@ select:focus:required:invalid:focus {
 .nav-list-sidebar .nav-header {
   margin-bottom: 5px;
   color: #808080;
+  position: relative;
+}
+.nav-list-sidebar .nav-header:after {
   border-bottom: 1px solid #E9E9E9;
+  content: '';
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
 }
 .nav-list-sidebar > .active > a,
 .nav-list-sidebar > .active > a:hover,
