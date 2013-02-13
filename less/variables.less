@@ -60,6 +60,7 @@
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
+// TODO: Adjust these variables based on 2.3.0
 @padding-large:          11px 19px; // 44px
 @padding-small:          2px 10px;  // 26px
 @padding-mini:           1px 6px;   // 24px
@@ -120,6 +121,7 @@
 
 @input-color-placeholder:        @grayLight;
 
+// TODO: Adjust these variables based on 2.3.0
 @input-height-base:              @line-height-base + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 @input-height-large:             @line-height-base + 20px; // base line-height + 18px vertical padding + 2px top/bottom border
 @input-height-small:             @line-height-base + 4px;  // base line-height + 2px vertical padding + 2px top/bottom border
@@ -200,25 +202,25 @@
 // Inverted navbar
 @navbar-inverse-text:              @grayLight;
 @navbar-inverse-bg:                #fafafa;
-@navbar-inverse-border:            darken(@navbar-bg, 12%);
+@navbar-inverse-border:            darken(@navbar-inverse-bg, 12%);
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:               @navbar-inverse-link-color;
-@navbar-inverse-brand-color-hover:         darken(@navbar-link-color, 10%);
+@navbar-inverse-brand-color-hover:         darken(@navbar-inverse-link-color, 10%);
 @navbar-inverse-brand-bg-hover:            transparent;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                @grayLight;
-@navbar-inverse-link-color-hover:          #fff;
+@navbar-inverse-link-color-hover:          @grayDark;
 @navbar-inverse-link-color-active:         @navbar-inverse-link-color-hover;
 @navbar-inverse-link-bg-hover:             transparent;
 @navbar-inverse-link-bg-active:            @navbar-inverse-bg;
 
 // Inverted navbar search
 // Normal navbar needs no special styles or vars
-@navbar-inverse-search-background:          lighten(@navbar-bg, 25%);
+@navbar-inverse-search-background:          lighten(@navbar-inverse-bg, 25%);
 @navbar-inverse-search-background-focus:    #fff;
-@navbar-inverse-search-border:              @navbar-bg;
+@navbar-inverse-search-border:              @navbar-inverse-bg;
 @navbar-inverse-search-placeholder-color:   #ccc;
 
 
