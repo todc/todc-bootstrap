@@ -97,6 +97,34 @@
 
 // Dropdown menus
 
+// Dropdown menu items and carets
+.navbar .nav {
+  // Caret should match text color on hover
+  li.dropdown > a:hover .caret,
+  li.dropdown > a:focus .caret {
+    border-top-color: @navbar-link-color-hover;
+    border-bottom-color: @navbar-link-color-hover;
+  }
+
+  // Remove background color from open dropdown
+  li.dropdown.open > .dropdown-toggle,
+  li.dropdown.active > .dropdown-toggle,
+  li.dropdown.open.active > .dropdown-toggle {
+    background-color: @navbar-link-bg-active;
+    color: @navbar-link-color-active;
+  }
+  li.dropdown > .dropdown-toggle .caret {
+    border-top-color: @navbar-link-color;
+    border-bottom-color: @navbar-link-color;
+  }
+  li.dropdown.open > .dropdown-toggle .caret,
+  li.dropdown.active > .dropdown-toggle .caret,
+  li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: @navbar-link-color-active;
+    border-bottom-color: @navbar-link-color-active;
+  }
+}
+
 
 // Right aligned menus need alt position
 .navbar .pull-right > li > .dropdown-menu,
@@ -107,6 +135,8 @@
 }
 
 
+// TODO: Fix the form in navbar
+// TODO: Integrate the brand dropdown into the above
 
 
 
