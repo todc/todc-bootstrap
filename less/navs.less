@@ -56,10 +56,12 @@
 // -------------------------
 
 .nav-list-sidebar {
-  color: @grayDarker;
   .transition(color 0.218s ease 0s);
+  a {
+    color: @grayDarker;
+  }
   &:hover a,
-  &:hover .active > a   {
+  &:hover .active > a {
     color: @link-color;
   }
   li {

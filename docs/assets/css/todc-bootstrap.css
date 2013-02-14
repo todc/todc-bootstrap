@@ -1370,11 +1370,13 @@ table {
   background-color: #eeeeee;
 }
 .nav-list-sidebar {
-  color: #222222;
   -webkit-transition: color 0.218s ease 0s;
   -moz-transition: color 0.218s ease 0s;
   -o-transition: color 0.218s ease 0s;
   transition: color 0.218s ease 0s;
+}
+.nav-list-sidebar a {
+  color: #222222;
 }
 .nav-list-sidebar:hover a,
 .nav-list-sidebar:hover .active > a {
