@@ -6,32 +6,12 @@
 // The dropdown menu (ul)
 // ----------------------
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: @zindex-dropdown;
-  display: none; // none by default, but block on "open" of the menu
-  float: left;
-  min-width: 160px;
   padding: 0 0 6px 0;
   margin: 1px 0 0; // override default ul
-  list-style: none;
   background-color: @dropdown-background;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
+  border: 1px solid @dropdown-border;
   border-radius: 0;
-  .box-shadow(0 2px 4px rgba(0,0,0,.2));
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
-
-  // Aligns the dropdown menu to right
-  &.pull-right {
-    right: 0;
-    left: auto;
-  }
+  .box-shadow(0 2px 4px @dropdown-border);
 
   // Dividers (basically an hr) within the dropdown
   .divider {
@@ -39,7 +19,7 @@
   }
 
   // Links within the dropdown menu
-  li > a {
+  > li > a {
     padding: 3px 30px;
     position: relative;
 
@@ -52,7 +32,7 @@
   }
 }
 
-// Hover state
+// Hover/Focus state
 // -----------
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
@@ -63,22 +43,11 @@
 
 // Active state
 // ------------
-.dropdown-menu .active > a,
-.dropdown-menu .active > a:hover {
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   color: @dropdown-link-color-active;
   #gradient > .vertical(@dropdown-link-background-hover, @dropdown-link-background-hover);
-}
-
-// Open state for the dropdown
-// ---------------------------
-.open {
-  // IE7's z-index only goes to the nearest positioned ancestor, which would
-  // make the menu appear below buttons that appeared later on the page
-  *z-index: @zindex-dropdown;
-
-  & > .dropdown-menu {
-    display: block;
-  }
 }
 
 // Sub menus
@@ -108,10 +77,4 @@
     border-radius: 0;
     margin-left: 18px;
   }
-}
-
-// Typeahead
-// ---------
-.typeahead {
-  border-radius: 0;
 }

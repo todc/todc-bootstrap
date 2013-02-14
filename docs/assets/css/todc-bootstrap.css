@@ -586,31 +586,13 @@ table {
 /* Override ßsome of the values in Bootstrap
 /* White icons with optional class, or on hover/active states of certain elements */
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
   padding: 0 0 6px 0;
   margin: 1px 0 0;
-  list-style: none;
   background-color: #ffffff;
-  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-}
-.dropdown-menu.pull-right {
-  right: 0;
-  left: auto;
 }
 .dropdown-menu .divider {
   *width: 100%;
@@ -621,11 +603,11 @@ table {
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
 }
-.dropdown-menu li > a {
+.dropdown-menu > li > a {
   padding: 3px 30px;
   position: relative;
 }
-.dropdown-menu li > a i {
+.dropdown-menu > li > a i {
   position: absolute;
   left: 7px;
   top: 4px;
@@ -643,8 +625,9 @@ table {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffeeeeee', GradientType=0);
 }
-.dropdown-menu .active > a,
-.dropdown-menu .active > a:hover {
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   color: #333333;
   background-color: #eeeeee;
   background-image: -moz-linear-gradient(top, #eeeeee, #eeeeee);
@@ -654,12 +637,6 @@ table {
   background-image: linear-gradient(to bottom, #eeeeee, #eeeeee);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffeeeeee', GradientType=0);
-}
-.open {
-  *z-index: 1000;
-}
-.open > .dropdown-menu {
-  display: block;
 }
 .dropdown-submenu > .dropdown-menu {
   border-radius: 0;
@@ -677,9 +654,6 @@ table {
 .dropdown-submenu.pull-left > .dropdown-menu {
   border-radius: 0;
   margin-left: 18px;
-}
-.typeahead {
-  border-radius: 0;
 }
 .well {
   background-color: #f1f1f1;
