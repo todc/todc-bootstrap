@@ -7,11 +7,36 @@
 // -------------------------
 
 body {
+  margin: 0;
+  color: @text-color;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-size: 1.3rem;
+  line-height: @line-height-base;
+  background-color: @body-background;
+}
+
+// Reset fonts for revelant elements
+body,
+input,
+button,
+select,
+textarea {
   font-family: @font-family-base;
   font-size: @font-size-base;
   line-height: @line-height-base;
-  color: @text-color;
-  background-color: @body-background;
+}
+
+
+// Links
+// -------------------------
+
+a {
+  color: @link-color;
+}
+a:hover,
+a:focus {
+  color: @link-color-hover;
 }
 
 
@@ -21,17 +46,4 @@ body {
 // Rounded corners
 .img-rounded {
   border-radius: 4px;
-}
-
-// Add polaroid-esque trim
-.img-polaroid {
-  padding: 0;
-  background-color: #fff;
-  border: 3px solid #FFFFFF;
-  .box-shadow(0 0 0 1px #AAAAAA);
-}
-// Add a hover state for linked versions only
-a.img-polaroid:hover {
-  border-color: #FFFFFF;
-  .box-shadow(0 0 0 1px #dedede);
 }

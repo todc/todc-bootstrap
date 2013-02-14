@@ -11,26 +11,32 @@
 // input-large at 18 + 4 = 22, so I tried to compensate on padding.
 */
 body {
+  margin: 0;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  background-color: #ffffff;
+}
+body,
+input,
+button,
+select,
+textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+}
+a {
+  color: #1155cc;
+}
+a:hover,
+a:focus {
+  color: #1155cc;
 }
 .img-rounded {
   border-radius: 4px;
-}
-.img-polaroid {
-  padding: 0;
-  background-color: #fff;
-  border: 3px solid #FFFFFF;
-  -webkit-box-shadow: 0 0 0 1px #aaaaaa;
-  box-shadow: 0 0 0 1px #aaaaaa;
-}
-a.img-polaroid:hover {
-  border-color: #FFFFFF;
-  -webkit-box-shadow: 0 0 0 1px #dedede;
-  box-shadow: 0 0 0 1px #dedede;
 }
 select,
 textarea,
@@ -2559,6 +2565,7 @@ pagination > .disabled > span,
 .img-thumbnail {
   padding: 0;
   line-height: 20px;
+  background-color: #fff;
   border: 3px solid #ffffff;
   border-radius: 0;
   -webkit-box-shadow: 0 0 0 1px #aaaaaa;
