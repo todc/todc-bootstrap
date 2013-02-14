@@ -6,7 +6,7 @@
 // Base styles
 // --------------------------------------------------
 
-// Core
+// Core styles
 .btn {
   position: relative;
   padding: 4px 12px;
@@ -167,7 +167,7 @@
 // Primary Button
 // -------------------------
 .btn-primary {
-  .btnBackground(#4d90fe, #4787ed, #fff, @btn-border-primary);
+  .btnBackground(@brand-primary, #4787ed, #fff, @btn-border-primary);
 }
 
 // Danger Button
@@ -185,7 +185,7 @@
 // Success Button
 // -------------------------
 .btn-success {
-  .btnBackground(#35aa47, #35aa47, #fff, @btn-border-success);
+  .btnBackground(@brand-success, @brand-success, #fff, @btn-border-success);
 }
 
 // Info Button
