@@ -6,6 +6,72 @@
 // Nav variations
 // --------------------------------------------------
 
+// Tabs
+// -------------------------
+
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  border-radius: 2px 2px 0 0;
+  color: #666;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+    font-weight: bold;
+    color: #333;
+}
+
+
+// Google Tabs
+// -------------------------
+
+.nav-tabs-google > li {
+  margin: 0 1px 0 0;
+}
+.nav-tabs-google > li > a {
+    padding-top: 2px;
+    padding-bottom: 6px;
+    line-height: @line-height-base;
+    color: #777;
+    border: 1px solid transparent;
+    &:hover {
+      color: #222;
+      background-color: #fff;
+      border-color: #fff #fff #fff;
+      //border-color: @grayLighter @grayLighter #dd4b39
+    }
+    &:active {
+      color: #dd4b39;
+    }
+}
+.nav-tabs-google li:hover {
+  color: #333;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google li.active {
+  font-weight: bold;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google > .active > a,
+.nav-tabs-google > .active > a:hover {
+    color: #333;
+    border: 1px solid transparent;
+}
+
+// Pills
+// -------------------------
+
+// Links rendered as pills
+.nav-pills > li > a {
+  border-radius: @border-radius-base;
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background-color: #4d90fe;
+}
+
 // Lists
 // -------------------------
 
@@ -101,91 +167,29 @@
 }
 
 
-// Tabs
+
+// Nav states and addons
+// --------------------------------------------------
+
+// Disabled state
 // -------------------------
 
-// Actual tabs (as links)
-.nav-tabs > li > a {
-  border-radius: 2px 2px 0 0;
-  color: #666;
+// Gray out text
+.nav > .disabled > a {
+  color: @grayLight;
 }
 
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-    font-weight: bold;
-    color: #333;
-}
-
-
-// Google Tabs
+// Nav headers (for dropdowns and lists)
 // -------------------------
 
-.nav-tabs-google > li {
-  margin: 0 1px 0 0;
-}
-.nav-tabs-google > li > a {
-    padding-top: 2px;
-    padding-bottom: 6px;
-    line-height: @line-height-base;
-    color: #777;
-    border: 1px solid transparent;
-    &:hover {
-      color: #222;
-      background-color: #fff;
-      border-color: #fff #fff #fff;
-      //border-color: @grayLighter @grayLighter #dd4b39
-    }
-    &:active {
-      color: #dd4b39;
-    }
-}
-.nav-tabs-google li:hover {
-  color: #333;
-  border-bottom: 3px solid #dd4b39;
-}
-.nav-tabs-google li.active {
-  font-weight: bold;
-  border-bottom: 3px solid #dd4b39;
-}
-.nav-tabs-google > .active > a,
-.nav-tabs-google > .active > a:hover {
-    color: #333;
-    border: 1px solid transparent;
-}
-
-
-// Pills
-// -------------------------
-
-// Links rendered as pills
-.nav-pills > li > a {
-  border-radius: @border-radius-base;
-}
-
-// Active state
-.nav-pills > .active > a,
-.nav-pills > .active > a:hover {
-  background-color: #4d90fe;
+.nav-header {
+  line-height: @line-height-base;
+  color: @grayLight;
 }
 
 
 
-// STACKED NAV
-// -----------
-
-.nav-tabs.nav-stacked > li:first-child > a {
-  border-radius: 2px 2px 0 0;
-}
-.nav-tabs.nav-stacked > li:last-child > a {
-  border-radius: 0 0 2px 2px;
-}
-.nav-tabs.nav-stacked > li > a:hover {
-  z-index: 2;
-  border-color: #ddd;
-}
-
-
-
+/*
 // DROPDOWNS
 // ---------
 
@@ -203,20 +207,4 @@
 .nav-pills .dropdown-menu {
   border-radius: 0; // make rounded corners match the pills
 }
-
-// BOTTOM
-// ------
-
-.tabs-below > .nav-tabs > li > a {
-  border-radius: 0 0 2px 2px;
-}
-
-// LEFT & RIGHT
-// ------------
-
-.tabs-left > .nav-tabs > li > a {
-  border-radius: 2px 0 0 2px;
-}
-.tabs-right > .nav-tabs > li > a {
-  border-radius: 0 2px 2px 0;
-}
+*/

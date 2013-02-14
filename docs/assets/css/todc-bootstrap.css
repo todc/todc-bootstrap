@@ -1328,6 +1328,53 @@ table {
 .alert-info {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
+.nav-tabs > li > a {
+  border-radius: 2px 2px 0 0;
+  color: #666;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  font-weight: bold;
+  color: #333;
+}
+.nav-tabs-google > li {
+  margin: 0 1px 0 0;
+}
+.nav-tabs-google > li > a {
+  padding-top: 2px;
+  padding-bottom: 6px;
+  line-height: 20px;
+  color: #777;
+  border: 1px solid transparent;
+}
+.nav-tabs-google > li > a:hover {
+  color: #222;
+  background-color: #fff;
+  border-color: #fff #fff #fff;
+}
+.nav-tabs-google > li > a:active {
+  color: #dd4b39;
+}
+.nav-tabs-google li:hover {
+  color: #333;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google li.active {
+  font-weight: bold;
+  border-bottom: 3px solid #dd4b39;
+}
+.nav-tabs-google > .active > a,
+.nav-tabs-google > .active > a:hover {
+  color: #333;
+  border: 1px solid transparent;
+}
+.nav-pills > li > a {
+  border-radius: 2px;
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background-color: #4d90fe;
+}
 .nav-list [class^="glyphicon-"] {
   font-weight: normal;
 }
@@ -1415,65 +1462,19 @@ table {
   background-color: transparent;
   text-decoration: underline;
 }
-.nav-tabs > li > a {
-  border-radius: 2px 2px 0 0;
-  color: #666;
+.nav > .disabled > a {
+  color: #999999;
 }
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-  font-weight: bold;
-  color: #333;
-}
-.nav-tabs-google > li {
-  margin: 0 1px 0 0;
-}
-.nav-tabs-google > li > a {
-  padding-top: 2px;
-  padding-bottom: 6px;
+.nav-header {
   line-height: 20px;
-  color: #777;
-  border: 1px solid transparent;
+  color: #999999;
 }
-.nav-tabs-google > li > a:hover {
-  color: #222;
-  background-color: #fff;
-  border-color: #fff #fff #fff;
-}
-.nav-tabs-google > li > a:active {
-  color: #dd4b39;
-}
-.nav-tabs-google li:hover {
-  color: #333;
-  border-bottom: 3px solid #dd4b39;
-}
-.nav-tabs-google li.active {
-  font-weight: bold;
-  border-bottom: 3px solid #dd4b39;
-}
-.nav-tabs-google > .active > a,
-.nav-tabs-google > .active > a:hover {
-  color: #333;
-  border: 1px solid transparent;
-}
-.nav-pills > li > a {
-  border-radius: 2px;
-}
-.nav-pills > .active > a,
-.nav-pills > .active > a:hover {
-  background-color: #4d90fe;
-}
-.nav-tabs.nav-stacked > li:first-child > a {
-  border-radius: 2px 2px 0 0;
-}
-.nav-tabs.nav-stacked > li:last-child > a {
-  border-radius: 0 0 2px 2px;
-}
-.nav-tabs.nav-stacked > li > a:hover {
-  z-index: 2;
-  border-color: #ddd;
-}
+/*
+// DROPDOWNS
+// ---------
+
 .nav-tabs .dropdown-menu {
-  border-radius: 0;
+  border-radius: 0; // remove the top rounded corners here since there is a hard edge above the menu
 }
 .nav-tabs .dropdown-toggle .caret {
   border-top-color: #666;
@@ -1484,17 +1485,9 @@ table {
   border-bottom-color: #333;
 }
 .nav-pills .dropdown-menu {
-  border-radius: 0;
+  border-radius: 0; // make rounded corners match the pills
 }
-.tabs-below > .nav-tabs > li > a {
-  border-radius: 0 0 2px 2px;
-}
-.tabs-left > .nav-tabs > li > a {
-  border-radius: 2px 0 0 2px;
-}
-.tabs-right > .nav-tabs > li > a {
-  border-radius: 0 2px 2px 0;
-}
+*/
 .navbar {
   min-height: 30px;
   background-color: #2d2d2d;
