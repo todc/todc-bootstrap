@@ -2493,8 +2493,10 @@ pagination > .disabled > span,
 .popover .popover-title {
   border-radius: 0;
 }
-.thumbnail {
+.thumbnail,
+.img-thumbnail {
   padding: 0;
+  line-height: 20px;
   border: 3px solid #ffffff;
   border-radius: 0;
   -webkit-box-shadow: 0 0 0 1px #aaaaaa;
@@ -2504,7 +2506,8 @@ pagination > .disabled > span,
   -o-transition: none;
   transition: none;
 }
-a.thumbnail:hover {
+a.thumbnail:hover,
+a.thumbnail:focus {
   border-color: #ffffff;
   -webkit-box-shadow: 0 0 0 1px #dedede;
   box-shadow: 0 0 0 1px #dedede;

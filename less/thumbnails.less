@@ -3,16 +3,24 @@
 // --------------------------------------------------
 
 
-// The actual thumbnail (can be `a` or `div`)
-.thumbnail {
+// Base classes
+// For thumbnail block-level composite components and simple image styles
+
+// The actual thumbnailed element
+// Can be `a`, `div`, or `img`
+.thumbnail,
+.img-thumbnail {
   padding: 0;
+  line-height: @line-height-base;
   border: 3px solid #ffffff;
   border-radius: 0;
   .box-shadow(0 0 0 1px #aaaaaa);
   .transition(none);
 }
+
 // Add a hover state for linked versions only
-a.thumbnail:hover {
+a.thumbnail:hover,
+a.thumbnail:focus {
   border-color: #ffffff;
   .box-shadow(0 0 0 1px #dedede);
 }
