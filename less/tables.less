@@ -2,17 +2,120 @@
 // Tables
 // --------------------------------------------------
 
+
+table {
+  background-color: @table-background;
+}
+
+
+// BASELINE STYLES
+// ---------------
+
+.table {
+   margin-bottom: @line-height-base;
+  // Cells
+  th,
+  td {
+    line-height: @line-height-base;
+    border-top: 1px solid @table-border;
+  }
+  // Account for multiple tbody instances
+  tbody + tbody {
+    border-top: 2px solid @table-border;
+  }
+
+  // Nesting
+  .table {
+    background-color: @body-background;
+  }
+}
+
+
+
+// BORDERED VERSION
+// ----------------
+
+.table-bordered {
+  border: 1px solid @table-border;
+   border-radius: @border-radius-base;
+  th,
+  td {
+    border-left: 1px solid @table-border;
+  }
+  // For first th/td in the first row in the first thead or tbody
+  thead:first-child tr:first-child > th:first-child,
+  tbody:first-child tr:first-child > td:first-child,
+  tbody:first-child tr:first-child > th:first-child {
+    border-top-left-radius: @border-radius-base;
+  }
+  // For last th/td in the first row in the first thead or tbody
+  thead:first-child tr:first-child > th:last-child,
+  tbody:first-child tr:first-child > td:last-child,
+  tbody:first-child tr:first-child > th:last-child {
+    border-top-right-radius: @border-radius-base;
+  }
+  // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
+  thead:last-child tr:last-child > th:first-child,
+  tbody:last-child tr:last-child > td:first-child,
+  tbody:last-child tr:last-child > th:first-child,
+  tfoot:last-child tr:last-child > td:first-child,
+  tfoot:last-child tr:last-child > th:first-child {
+    border-bottom-left-radius: @border-radius-base;
+  }
+  // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
+  thead:last-child tr:last-child > th:last-child,
+  tbody:last-child tr:last-child > td:last-child,
+  tbody:last-child tr:last-child > th:last-child,
+  tfoot:last-child tr:last-child > td:last-child,
+  tfoot:last-child tr:last-child > th:last-child {
+    border-bottom-right-radius: @border-radius-base;
+  }
+
+  // Special fixes to round the left border on the first td/th
+  caption + thead tr:first-child th:first-child,
+  caption + tbody tr:first-child td:first-child,
+  colgroup + thead tr:first-child th:first-child,
+  colgroup + tbody tr:first-child td:first-child {
+    border-top-left-radius: @border-radius-base;
+  }
+  caption + thead tr:first-child th:last-child,
+  caption + tbody tr:first-child td:last-child,
+  colgroup + thead tr:first-child th:last-child,
+  colgroup + tbody tr:first-child td:last-child {
+    border-top-right-radius: @border-radius-base;
+  }
+
+}
+
+
+
+// ZEBRA-STRIPING
+// --------------
+
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.table-striped {
+  tbody {
+    > tr:nth-child(odd) > td,
+    > tr:nth-child(odd) > th {
+      background-color: @table-background-accent;
+    }
+  }
+}
+
+
+
 // HOVER EFFECT
 // ------------
 // Placed here since it has to come after the potential zebra striping
 .table-hover {
   tbody {
-    tr:hover td,
-    tr:hover th {
+    tr:hover > td,
+    tr:hover > th {
       background-color: @table-background-hover;
     }
   }
 }
+
 
 
 // TABLE BACKGROUNDS
@@ -20,32 +123,26 @@
 // Exact selectors below required to override .table-striped
 
 .table tbody tr {
-  &.success td {
+  &.success > td {
     background-color: @state-success-background;
   }
-  &.error td {
+  &.error > td {
     background-color: @state-error-background;
   }
-  &.warning td {
+  &.warning > td {
     background-color: @state-warning-background;
-  }
-  &.info td {
-    background-color: @state-success-background;
   }
 }
 
 // Hover states for .table-hover
 .table-hover tbody tr {
-  &.success:hover td {
+  &.success:hover > td {
     background-color: darken(@state-success-background, 5%);
   }
-  &.error:hover td {
+  &.error:hover > td {
     background-color: darken(@state-error-background, 5%);
   }
-  &.warning:hover td {
+  &.warning:hover > td {
     background-color: darken(@state-warning-background, 5%);
-  }
-  &.info:hover td {
-    background-color: darken(@state-success-background, 5%);
   }
 }
