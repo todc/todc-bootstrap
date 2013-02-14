@@ -2,7 +2,61 @@
 // Progress bars
 // --------------------------------------------------
 
+
+// Bar itself
+// -------------------------
+
 // Outer container
 .progress {
-  border-radius: 2px;
+  height: @line-height-base;
+  margin-bottom: @line-height-base;
+  background-color: @progress-bg;
+  border-radius: @border-radius-base;
+}
+
+// Bar of progress
+.progress-bar {
+  background-color: @progress-bar-bg;
+}
+
+// Striped bars
+.progress-striped .progress-bar {
+  #gradient > .striped(@progress-bar-bg);
+ }
+
+
+
+// Variations
+// -------------------------
+
+// Danger (red)
+.progress-bar-danger {
+  background-color: @progress-bar-danger-bg;
+  .progress-striped & {
+    #gradient > .striped(@progress-bar-danger-bg);
+  }
+}
+
+// Success (green)
+.progress-bar-success {
+  background-color: @progress-bar-success-bg;
+  .progress-striped & {
+    #gradient > .striped(@progress-bar-success-bg);
+  }
+}
+
+// Warning (orange)
+.progress-bar-warning {
+  background-color: @progress-bar-warning-bg;
+  .progress-striped & {
+    #gradient > .striped(@progress-bar-warning-bg);
+  }
+}
+
+// Info (teal)
+.progress-bar-info {
+  background-color: @progress-bar-info-bg;
+  .progress-striped & {
+    #gradient > .striped(@progress-bar-info-bg);
+  }
 }
