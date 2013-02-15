@@ -1257,25 +1257,16 @@ table {
 .dropup .btn .caret {
   border-bottom-color: #333333;
 }
-.btn-group + .btn-group {
+.btn-toolbar > .btn + .btn,
+.btn-toolbar > .btn-group + .btn,
+.btn-toolbar > .btn + .btn-group,
+.btn-toolbar > .btn-group + .btn-group {
   margin-left: 16px;
 }
-.btn-group > .btn,
-.btn-group > .dropdown-menu,
-.btn-group > .popover {
-  font-size: 13px;
-}
-.btn-group > .btn-mini {
-  font-size: 9.75px;
-}
-.btn-group > .btn-small {
-  font-size: 11.049999999999999px;
-}
-.btn-group > .btn-large {
-  font-size: 16.25px;
+.btn-group > .btn + .btn {
+  margin-left: -1px;
 }
 .btn-group > .btn:first-child {
-  margin-left: 0;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
@@ -1286,13 +1277,13 @@ table {
 }
 .btn-group > .btn.large:first-child {
   margin-left: 0;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .btn-group > .btn.large:last-child,
 .btn-group > .large.dropdown-toggle {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .btn-group > .btn + .dropdown-toggle {
   -webkit-box-shadow: none;
@@ -1382,6 +1373,20 @@ table {
 }
 .btn-large .caret {
   margin-top: 6px;
+}
+.btn-group > .btn,
+.btn-group > .dropdown-menu,
+.btn-group > .popover {
+  font-size: 13px;
+}
+.btn-group > .btn-mini {
+  font-size: 9.75px;
+}
+.btn-group > .btn-small {
+  font-size: 11.049999999999999px;
+}
+.btn-group > .btn-large {
+  font-size: 16.25px;
 }
 .alert {
   padding: 8px 35px 8px 10px;

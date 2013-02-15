@@ -2,7 +2,6 @@
 // Button groups
 // --------------------------------------------------
 
-
 // Button carets
 .btn .caret {
   border-top-color: @btn-color;
@@ -11,31 +10,24 @@
   border-bottom-color: @btn-color;
 }
 
-// Space out series of button groups
-.btn-group + .btn-group {
-  margin-left: 16px;
+// Optional: Group multiple button groups together for a toolbar
+.btn-toolbar {
+  // Space out series of button groups
+  > .btn + .btn,
+  > .btn-group + .btn,
+  > .btn + .btn-group,
+  > .btn-group + .btn-group {
+    margin-left: 16px;
+  }
 }
 
-.btn-group > .btn,
-.btn-group > .dropdown-menu,
-.btn-group > .popover {
-  font-size: @font-size-base; // redeclare as part 2 of font-size inline-block hack
-}
-
-// Reset fonts for other sizes
-.btn-group > .btn-mini {
-  font-size: @font-size-mini;
-}
-.btn-group > .btn-small {
-  font-size: @font-size-small;
-}
-.btn-group > .btn-large {
-  font-size: @font-size-large;
+// Float them, remove border radius, then re-add to first and last elements
+.btn-group > .btn + .btn {
+  margin-left: -1px;
 }
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
-  margin-left: 0;
   border-top-left-radius: @border-radius-base;
   border-bottom-left-radius: @border-radius-base;
 }
@@ -48,13 +40,13 @@
 // Reset corners for large buttons
 .btn-group > .btn.large:first-child {
   margin-left: 0;
-  border-top-left-radius: @border-radius-base;
-  border-bottom-left-radius: @border-radius-base;
+  border-top-left-radius: @border-radius-large;
+  border-bottom-left-radius: @border-radius-large;
 }
 .btn-group > .btn.large:last-child,
 .btn-group > .large.dropdown-toggle {
-  border-top-right-radius: @border-radius-base;
-  border-bottom-right-radius: @border-radius-base;
+  border-top-right-radius: @border-radius-large;
+  border-bottom-right-radius: @border-radius-large;
 }
 
 
@@ -151,4 +143,23 @@
 }
 .btn-large .caret {
   margin-top: 6px;
+}
+
+
+// TODO: [todc-bootstrap] Are these needed
+.btn-group > .btn,
+.btn-group > .dropdown-menu,
+.btn-group > .popover {
+  font-size: @font-size-base; // redeclare as part 2 of font-size inline-block hack
+}
+
+// Reset fonts for other sizes
+.btn-group > .btn-mini {
+  font-size: @font-size-mini;
+}
+.btn-group > .btn-small {
+  font-size: @font-size-small;
+}
+.btn-group > .btn-large {
+  font-size: @font-size-large;
 }
