@@ -9,5 +9,5 @@ permalink:    pretty
 auto:         true
 source:       ./docs
 destination:  ./_gh_pages
-url:          http://todc-bootstrap.dev:9001
-server_port:  9001
+url:          http://todc-bootstrap.dev:9002
+server_port:  9002
