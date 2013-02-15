@@ -2491,7 +2491,7 @@ table {
 }
 .pagination > .active > a,
 .pagination > .active > span {
-  color: #4D90FE;
+  color: #4d90fe;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
