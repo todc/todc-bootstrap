@@ -1,2 +1,5 @@
+# Ignore compiled docs
+_gh_pages
+
 bootstrap/
 dist/
