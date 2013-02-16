@@ -8,20 +8,21 @@
 
 // Core styles
 .btn {
-  position: relative;
   padding: 4px 12px;
   margin: 0;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: bold;
+  line-height: @line-height-base;
+  cursor: default;
+  border: 1px solid @btn-border;
+  border-radius: @border-radius-base;
+
 
   color: @btn-color;
   text-shadow: 0 1px 0 #fff;
   white-space: nowrap;
-  font-family: @font-family-base;
-  font-weight: bold;
-  font-size: @font-size-base;
-  text-align: center;
-  vertical-align: middle;
   .background-clip(padding);
-  cursor: default;
 
   background-color: @btn-background;
   #gradient > .vertical(#f5f5f5, #f1f1f1);
@@ -81,27 +82,23 @@
 
 // Large
 .btn-large {
-  padding: 9px 14px;
-  font-size: @font-size-base + 1px;
-  line-height: normal;
-}
-.btn-large [class^="icon-"],
-.btn-large [class*=" icon-"] {
-  margin-top: 1px;
+  padding: @padding-large;
+  font-size: @font-size-large;
+  border-radius: @border-radius-base;
 }
 
 // Small
 .btn-small {
-  padding: 5px 9px;
-  font-size: @font-size-base - 1px;
-  line-height: @line-height-base - 5px;
+  padding: @padding-small;
+  font-size: @font-size-small;
+  border-radius: @border-radius-base;
 }
 
 // Mini
 .btn-mini {
-  padding: 2px 6px;
-  font-size: @font-size-base - 2px;
-  line-height: @line-height-base - 7px;
+  padding: @padding-mini;
+  font-size: @font-size-mini;
+  border-radius: @border-radius-base;
 }
 
 
@@ -110,6 +107,12 @@
 
 .btn .glyphicon {
   font-weight: normal;
+}
+.btn-large .glyphicon {
+  margin-top: 1px;
+}
+.btn-mini .glyphicon {
+  margin-top: -1px;
 }
 
 // Alternate buttons
@@ -202,32 +205,51 @@
 }
 
 
+// Alternate buttons
+// --------------------------------------------------
+
+// .btn {
+//   color: @btn-color;
+//   .btn-pseudo-states(@btn-background, @btn-border);
+// }
+// .btn-primary {
+//   .btn-pseudo-states(@btn-background-primary, @btn-border-primary);
+// }
+// // Warning appears as orange
+// .btn-warning {
+//   .btn-pseudo-states(@btn-background-warning, @btn-border-warning);
+// }
+// // Danger and error appear as red
+// .btn-danger {
+//   .btn-pseudo-states(@btn-background-danger, @btn-border-danger);
+// }
+// // Success appears as green
+// .btn-success {
+//   .btn-pseudo-states(@btn-background-success, @btn-border-success);
+// }
+// // Info appears as blue-green
+// .btn-info {
+//   .btn-pseudo-states(@btn-background-info, @btn-border-info);
+// }
+
+
 // Link buttons
 // --------------------------------------------------
 
 // Make a button look and behave like a link
-.btn-link,
-.btn-link:active,
-.btn-link[disabled] {
-  background-color: transparent;
-  background-image: none;
-  .box-shadow(none);
+.btn-link {
+  color: @link-color;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: @link-color-hover;
 }
 .btn-link {
-  border-color: transparent;
-  cursor: pointer;
-  color: @link-color;
-  border-radius: 0);
-}
-.btn-link:hover {
-  border-color: transparent;
-  color: @link-color-hover;
-  text-decoration: underline;
-  background-color: transparent;
-  background-image: none;
-  .box-shadow(none);
-}
-.btn-link[disabled]:hover {
-  color: @grayDark;
-  text-decoration: none;
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @grayDark;
+    }
+  }
 }
