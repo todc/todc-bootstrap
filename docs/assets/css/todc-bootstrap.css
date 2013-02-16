@@ -1314,7 +1314,7 @@ select:focus:required:invalid:focus {
 .nav-pills > .active > a:hover {
   background-color: #4d90fe;
 }
-.nav-list [class^="glyphicon-"] {
+.nav-list .glyphicon {
   font-weight: normal;
 }
 .nav-list > li > a,
