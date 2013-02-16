@@ -11,5 +11,5 @@ source:       ./docs
 destination:  ./_gh_pages
 url:          http://todc-bootstrap.dev:9002
 server_port:  9002
-baseurl:      ""
-# baseurl:      /todc-bootstrap-3
+baseurl:      ""    # for local dev
+# baseurl:      /todc-bootstrap-3   # GitHub repository
