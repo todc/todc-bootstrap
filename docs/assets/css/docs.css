@@ -10,7 +10,7 @@
 
 body {
   position: relative; /* For scrollyspy */
-  padding-top: 30px; /* Default height of navbar */
+  /* We add the padding to the body for >768px only */
 }
 
 /*  */
@@ -283,7 +283,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 /* Tweak display of the examples */
-.bs-docs-example + .prettyprint {
+.bs-docs-example + .highlight {
   margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -396,7 +396,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   -webkit-box-sizing: border-box;
   margin: 0 -1px -1px 0;
 }
-.the-icons [class^="glyphicon-"] {
+.the-icons .glyphicon {
   display: block;
   margin: 5px auto;
   vertical-align: middle;
@@ -555,13 +555,41 @@ input.focused {
   overflow: auto;
 }
 
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+.highlight pre {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+.highlight pre code {
+  font-size: inherit;
+  color: #333; /* Effectively the base text color */
+}
+.highlight pre .lineno {
+  display: inline-block;
+  width: 18px;
+  padding-right: 5px;
+  margin-right: 10px;
+  text-align: right;
+  color: #bebec5;
+}
+
 
 
 /* Docs gallery
 -------------------------------------------------- */
 
 .bs-docs-gallery .thumbnail {
-  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto 20px;
 }
 
 
@@ -571,9 +599,9 @@ input.focused {
 /* Tablets and up */
 @media screen and (min-width: 768px) {
 
-  /* Account for fixed navbar */
+  /* Account for fixed navbar (which is static to start) */
   body {
-    padding-top: 30px;
+    padding-top: 30px; /* Default height of navbar */
   }
 
   /* Tweak display of docs jumbotrons */
