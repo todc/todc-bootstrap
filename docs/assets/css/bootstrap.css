@@ -1968,7 +1968,7 @@ fieldset[disabled] .btn-link:focus {
   src: url('../fonts/glyphiconshalflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphiconshalflings-regular.woff') format('woff'), url('../fonts/glyphiconshalflings-regular.ttf') format('truetype'), url('../fonts/glyphiconshalflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-[class^="glyphicon-"]:before {
+.glyphicon:before {
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   line-height: 1;
@@ -3116,19 +3116,7 @@ button.close {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
   border-radius: 0;
-}
-
-.navbar-fixed-top {
-  top: 0;
-}
-
-.navbar-fixed-bottom {
-  bottom: 0;
 }
 
 .navbar .brand {
@@ -3254,7 +3242,7 @@ button.close {
 .navbar-inverse .nav > .active > a:hover,
 .navbar-inverse .nav > .active > a:focus {
   color: #ffffff;
-  background-color: #222222;
+  background-color: #080808;
 }
 
 .navbar-inverse .btn-navbar {
@@ -3270,7 +3258,7 @@ button.close {
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   color: #ffffff;
-  background-color: #222222;
+  background-color: #080808;
 }
 
 .navbar-inverse .nav li.dropdown > a:hover .caret {
@@ -3328,6 +3316,19 @@ button.close {
   }
   .navbar-inverse .nav > .divider {
     border-right-color: #2f2f2f;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .navbar-fixed-top {
+    top: 0;
+  }
+  .navbar-fixed-bottom {
+    bottom: 0;
   }
   .navbar .btn-navbar {
     display: none;
@@ -4436,8 +4437,6 @@ a.counter:focus {
 
 .carousel {
   position: relative;
-  margin-bottom: 20px;
-  line-height: 1;
 }
 
 .carousel-inner {
@@ -4504,35 +4503,39 @@ a.counter:focus {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 120px;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
 .carousel-control.left {
-  background-color: rgba(0, 0, 0, 0.001);
+  background-color: rgba(0, 0, 0, 0.0001);
   background-color: transparent;
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.001));
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.001)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.001));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.001));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.001));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf000000', endColorstr='#00000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.001)), to(rgba(0, 0, 0, 0.75)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.75));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.75));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.75));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.5));
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.5));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.5));
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bf000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 .carousel-control:hover,
@@ -4543,42 +4546,38 @@ a.counter:focus {
   filter: alpha(opacity=90);
 }
 
-.carousel-control .control {
+.carousel-control .glyphicon {
   position: absolute;
   top: 50%;
+  left: 50%;
   z-index: 5;
-  display: block;
-  margin-top: -35px;
-  margin-left: 30px;
-  font-size: 80px;
-  font-weight: 100;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.carousel-control.right .control {
-  margin-left: 70px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
 .carousel-indicators {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  bottom: 20px;
+  left: 50%;
   z-index: 5;
-  margin: 0;
+  width: 100px;
+  margin: 0 0 0 -50px;
+  text-align: center;
   list-style: none;
 }
 
 .carousel-indicators li {
-  display: block;
-  float: left;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0;
+  margin-left: 0;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #ccc;
-  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
@@ -4588,27 +4587,34 @@ a.counter:focus {
 
 .carousel-caption {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  max-width: 60%;
-  padding: 40px;
+  right: 20%;
+  bottom: 20px;
+  left: 20%;
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-caption h3,
-.carousel-caption p {
-  line-height: 20px;
-  color: #fff;
-}
-
-.carousel-caption h3 {
-  margin: 0 0 5px;
-}
-
-.carousel-caption p {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+  .carousel-caption {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    max-width: 60%;
+    padding: 30px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .jumbotron {
