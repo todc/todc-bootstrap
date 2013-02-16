@@ -717,6 +717,9 @@ select:focus:required:invalid:focus {
   font-size: 11px;
   line-height: 13px;
 }
+.btn .glyphicon {
+  font-weight: normal;
+}
 .btn-primary,
 .btn-primary:hover,
 .btn-warning,
@@ -2369,31 +2372,37 @@ select:focus:required:invalid:focus {
 }
 .btn-group.open .btn.dropdown-toggle {
   background-color: #f3f3f3;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .btn-group.open .btn-primary.dropdown-toggle {
   background-color: #4d90fe;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #faa937;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .btn-group.open .btn-danger.dropdown-toggle {
   background-color: #d84a38;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .btn-group.open .btn-success.dropdown-toggle {
   background-color: #35aa47;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #5bc0de;
+  background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -2408,6 +2417,30 @@ select:focus:required:invalid:focus {
 }
 .btn-large .caret {
   margin-top: 6px;
+}
+.btn-primary .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-success .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.btn-group-vertical > .btn + .btn {
+  margin-left: 0;
+  margin-top: -1px;
+}
+.btn-group-vertical .btn:first-child {
+  border-radius: 2px 2px 0 0;
+}
+.btn-group-vertical .btn:last-child {
+  border-radius: 0 0 2px 2px;
+}
+.btn-group-vertical .btn-large:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.btn-group-vertical .btn-large:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu,

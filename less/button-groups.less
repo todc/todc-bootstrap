@@ -105,26 +105,32 @@
   // Keep the hover's background when dropdown is open
   .btn.dropdown-toggle {
     background-color: @btn-background;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
   }
   .btn-primary.dropdown-toggle {
     background-color: @btn-background-primary;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
   .btn-warning.dropdown-toggle {
     background-color: @btn-background-warning;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
   .btn-danger.dropdown-toggle {
     background-color: @btn-background-danger;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
   .btn-success.dropdown-toggle {
     background-color: @btn-background-success;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
   .btn-info.dropdown-toggle {
     background-color: @btn-background-info;
+    background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
 }
@@ -144,6 +150,42 @@
 .btn-large .caret {
   margin-top: 6px;
 }
+
+// Account for other colors
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-info,
+.btn-success {
+  .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+
+// Vertical button groups
+// ----------------------
+
+.btn-group-vertical > .btn + .btn {
+  margin-left: 0;
+  margin-top: -1px;
+}
+.btn-group-vertical .btn:first-child {
+  border-radius: @border-radius-base @border-radius-base 0 0;
+}
+.btn-group-vertical .btn:last-child {
+  border-radius: 0 0 @border-radius-base @border-radius-base;
+}
+.btn-group-vertical .btn-large:first-child {
+  border-radius: @border-radius-large @border-radius-large 0 0;
+}
+.btn-group-vertical .btn-large:last-child {
+  border-radius: 0 0 @border-radius-large @border-radius-large;
+}
+
+
+
 
 
 // TODO: [todc-bootstrap] Are these needed
