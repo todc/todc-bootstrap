@@ -1572,10 +1572,6 @@ fieldset[disabled] .btn-link:focus {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.navbar-form input,
-.navbar-form select {
-  min-height: 26px;
-}
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
   border-top-color: #ffffff;
