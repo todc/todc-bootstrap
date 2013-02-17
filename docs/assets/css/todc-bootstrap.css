@@ -1513,12 +1513,12 @@ fieldset[disabled] .btn-link:focus {
 }
 */
 .navbar {
-  min-height: 30px;
+  min-height: 28px;
   background-color: #2d2d2d;
   border: 1px solid #000000;
 }
 .navbar .nav > li > a {
-  padding: 5px 15px 5px;
+  padding: 4px 15px 4px;
   font-weight: bold;
   color: #999999;
 }
@@ -1541,7 +1541,7 @@ fieldset[disabled] .btn-link:focus {
   border-width: 1px 0 0;
 }
 .navbar .brand {
-  padding: 5px 20px 5px;
+  padding: 4px 20px 4px;
   color: #999999;
 }
 .navbar .brand:hover,
@@ -1552,8 +1552,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-navbar {
   padding: 8px 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   background-color: #444;
   background-image: none;
   border: 1px solid #222;
@@ -1561,7 +1561,7 @@ fieldset[disabled] .btn-link:focus {
   box-shadow: none;
 }
 .navbar .nav > .divider {
-  height: 30px;
+  height: 28px;
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
@@ -1569,8 +1569,8 @@ fieldset[disabled] .btn-link:focus {
   border-bottom: 1px solid #3a3a3a;
 }
 .navbar-form {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
@@ -2325,8 +2325,8 @@ fieldset[disabled] .navbar-main.navbar-inverse .btn-navbar:active {
   }
   .navbar .brand {
     float: left;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-left: -15px;
   }
   .navbar .nav {
@@ -2353,8 +2353,8 @@ fieldset[disabled] .navbar-main.navbar-inverse .btn-navbar:active {
   }
   .navbar .nav > .divider {
     width: 1px;
-    height: 18px;
-    margin: 6px 9px;
+    height: 16.8px;
+    margin: 5.6000000000000005px 9px;
     border-bottom: 0;
     border-right: 1px solid #3a3a3a;
   }
