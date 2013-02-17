@@ -1,5 +1,3 @@
-// TODO: [todc-bootstrap] Fix the form in navbar
-
 //
 // Navbars
 // --------------------------------------------------
@@ -9,6 +7,7 @@
   min-height: @navbar-height;
   background-color: @navbar-bg;
   border: 1px solid @navbar-border;
+  border-radius: @border-radius-base;
 }
 
 // Navbar nav links
@@ -74,7 +73,7 @@
 // Collapsible navbar toggle
 .btn-navbar {
   padding: 8px 10px;
-  .navbarVerticalAlign(26px); // Vertically center in navbar
+  .navbar-vertical-align(26px); // Vertically center in navbar
   // #gradient > .vertical(#f5f5f5, #f1f1f1);
   background-color: #444;
   background-image: none;
@@ -220,7 +219,7 @@
 // -------------------------
 // .navbar .btn,
 // .navbar .btn-group {
-//   .navbarVerticalAlign(26px); // Vertically center in navbar
+//   .navbar-vertical-align(26px); // Vertically center in navbar
 // }
 // .navbar .btn {
 //   padding: @padding-small; // FIXME: This is probably not necessary for the btn-group;
@@ -233,7 +232,7 @@
 //   select,
 //   .radio,
 //   .checkbox {
-//     .navbarVerticalAlign(26px); // Vertically center in navbar
+//     .navbar-vertical-align(26px); // Vertically center in navbar
 //     padding: 2px 14px;
 //   }
 // }
@@ -241,7 +240,7 @@
 // Navbar search
 // -------------------------
 // .navbar-search {
-//   .navbarVerticalAlign(26px); // Vertically center in navbar
+//   .navbar-vertical-align(26px); // Vertically center in navbar
 //   .search-query {
 //     padding: 2px 14px;
 //     line-height: normal;
@@ -256,108 +255,28 @@
 
 // Wrapper and base class
 .navbar-masthead {
-  border-radius: @border-radius-base;
-  .box-shadow(none);
   min-height: @navbar-masthead-height;
   margin: 0px;
+  border: 1px solid @navbar-masthead-border;
+  border-radius: @border-radius-base;
+  .box-shadow(none);
   color: @navbar-text;
   #gradient > .vertical(@navbar-masthead-bg, @navbar-masthead-bg);
-  border: 1px solid @navbar-masthead-border;
+}
 
-  // Brand: website or project name
-  // -------------------------
-  .brand {
-    padding: ((@navbar-masthead-height - @line-height-base) / 2) 20px ((@navbar-masthead-height - @line-height-base) / 2);
-    &:hover,
-    &:focus {
-      color: @navbar-masthead-brand-color-hover;
-      text-decoration: none;
-      background-color: @navbar-masthead-brand-bg-hover;
-    }
-  }
+// Navbar nav links
+// -------------------------
 
-  // Plain text in topbar
-  // -------------------------
-  .navbar-text {
-    line-height: @navbar-masthead-height;
-  }
-
-  // Dividers in navbar
-  // -------------------------
-  .divider-vertical {
-    height: 34px;
-    // margin: 6px 9px;
-    border-right: 1px solid lighten(@navbar-masthead-bg, 1.5%);
-    border-left: 1px solid @navbar-masthead-bg;
-  }
-
-  // Buttons in navbar
-  // -------------------------
-  .btn,
-  .btn-group {
-    .navbarVerticalAlign(@navbar-masthead-height, @navbar-masthead-height); // Vertically center in navbar
-    padding: 4px 12px;
-  }
-
-  // Navbar forms
-  // -------------------------
-  .navbar-form {
-    input,
-    select,
-    .radio,
-    .checkbox {
-      .navbarVerticalAlign(34px, @navbar-masthead-height); // Vertically center in navbar
-      padding: 4px 8px;
-    }
-    .btn,
-    .btn-group {
-      .navbarVerticalAlign(30px, @navbar-masthead-height); // Vertically center in navbar
-    }
-  }
-
-  // Navbar search
-  // -------------------------
-  .navbar-search {
-    .navbarVerticalAlign(30px, @navbar-masthead-height); // Vertically center in navbar
-    .search-query {
-      padding: 4px 14px;
-     }
-  }
-
-
-
-  // Fixed navbar
-  // -------------------------
-
-  // Shared (top/bottom) styles
-  &.navbar-fixed-top,
-  &.navbar-fixed-bottom {
-    z-index: @zindex-googlebar-fixed;
-  }
-
-  // NAVIGATION
-  // ----------
-
-  .nav {
-    .navbarVerticalAlign(36px, @navbar-masthead-height); // Vertically center in navbar
-  }
-
-  // Links
+.navbar-masthead {
   .nav > li > a {
     float: none;
-    // Vertically center the text given @navbar-height
-    // padding: ((@navbar-masthead-height - @line-height-base) / 2) 15px ((@navbar-masthead-height - @line-height-base) / 2);
     padding: 8px 15px;
     font-weight: normal;
     color: @navbar-masthead-link-color;
     text-decoration: none;
     text-shadow: 0 1px 0 lighten(@navbar-masthead-bg, 1.5%);
   }
-  .nav .dropdown-toggle .caret {
-    margin-top: 8px;
-  }
 
-  // Hover
   .nav > li > a:focus,
   .nav > li > a:hover {
     text-decoration: none;
@@ -365,7 +284,6 @@
     color: @navbar-masthead-link-color-hover;
   }
 
-  // Active nav items
   .nav > .active > a,
   .nav > .active > a:hover,
   .nav > .active > a:focus {
@@ -374,24 +292,102 @@
     text-decoration: none;
     #gradient > .vertical(@navbar-masthead-link-bg-active, @navbar-masthead-link-bg-active);
   }
+}
 
-  // Navbar button for toggling navbar items in responsive layouts
-  // These definitions need to come after '.navbar .btn'
+
+
+//
+// Masthead alignment options
+// --------------------------------------------------
+
+.navbar-masthead {
+  // Shared (top/bottom) styles
+  &.navbar-fixed-top,
+  &.navbar-fixed-bottom {
+    z-index: @zindex-googlebar-fixed;
+  }
+}
+
+
+
+//
+// Navbar optional components
+// --------------------------------------------------
+
+.navbar-masthead {
+
+  // Brand: website or project name
+  // -------------------------
+  .brand {
+    &:hover,
+    &:focus {
+      color: @navbar-masthead-brand-color-hover;
+      text-decoration: none;
+      background-color: @navbar-masthead-brand-bg-hover;
+    }
+  }
+
+  // Collapsible navbar toggle
   .btn-navbar {
     padding: 4px 10px 7px;
-    .navbarVerticalAlign(26px, @navbar-masthead-height); // Vertically center in navbar
+    .navbar-vertical-align(26px, @navbar-masthead-height); // Vertically center in navbar
     // #gradient > .vertical(lighten(@navbar-masthead-bg, 1.5%), @navbar-masthead-bg);
     #gradient > .vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
 
+  // Dividers in navbar
+  .nav > .divider {
+    // border-right: 1px solid lighten(@navbar-masthead-bg, 1.5%);
+    // border-left: 1px solid @navbar-masthead-bg;
+    .nav-divider(darken(@navbar-masthead-bg, 5%), lighten(@navbar-masthead-bg, 5%));
+  }
 
-  // Inverted navbar
-  // -------------------------
+  // Navbar form
+  .navbar-form {
+    .navbar-vertical-align(30px, @navbar-masthead-height); // Vertically center in navbar
+  }
 
+  // Dropdown menus
+
+  // Dropdown menu items and carets
+  .nav {
+    // Caret should match text color on hover
+    li.dropdown > a:hover .caret,
+    li.dropdown > a:focus .caret {
+      border-top-color: @navbar-masthead-link-color-hover;
+      border-bottom-color: @navbar-masthead-link-color-hover;
+    }
+
+    // Remove background color from open dropdown
+    li.dropdown.open > .dropdown-toggle,
+    li.dropdown.active > .dropdown-toggle,
+    li.dropdown.open.active > .dropdown-toggle {
+      background-color: darken(@navbar-masthead-bg, 4.7%); // #e5e5e5
+      color: @navbar-masthead-link-color-active;
+    }
+    li.dropdown > .dropdown-toggle .caret {
+      border-top-color: @navbar-masthead-link-color;
+      border-bottom-color: @navbar-masthead-link-color;
+    }
+    li.dropdown.open > .dropdown-toggle .caret,
+    li.dropdown.active > .dropdown-toggle .caret,
+    li.dropdown.open.active > .dropdown-toggle .caret {
+      border-top-color: @navbar-masthead-link-color-active;
+      border-bottom-color: @navbar-masthead-link-color-active;
+    }
+  }
+}
+
+
+
+// Inverse navbar
+// --------------------------------------------------
+
+.navbar-masthead {
   &.navbar-inverse {
-    border-color: @navbar-masthead-inverse-border;
     #gradient > .vertical(@gray, @navbar-masthead-inverse-bg);
+    border-color: @navbar-masthead-inverse-border;
     color: @navbar-masthead-inverse-text;
 
     .brand {
@@ -412,18 +408,58 @@
       }
     }
 
-    .nav > li > a:focus,
-    .nav > li > a:hover {
-      color: @navbar-masthead-inverse-link-color-hover;
-      background-color: @navbar-masthead-inverse-link-bg-hover;
-    }
+    .nav {
+      > li > a:hover,
+      > li > a:focus {
+        color: @navbar-masthead-inverse-link-color-hover;
+        background-color: @navbar-masthead-inverse-link-bg-hover;
+      }
 
-    .nav .active > a,
-    .nav .active > a:hover,
-    .nav .active > a:focus {
-      color: @navbar-masthead-inverse-link-color-active;
-      #gradient > .vertical(@navbar-masthead-inverse-link-bg-active, @navbar-masthead-inverse-link-bg-active);
+      .active > a,
+      .active > a:hover,
+      .active > a:focus {
+        color: @navbar-masthead-inverse-link-color-active;
+        #gradient > .vertical(@navbar-masthead-inverse-link-bg-active, @navbar-masthead-inverse-link-bg-active);
+      }
+
+      // Darken dividers
+      > .divider {
+        background-color: darken(@navbar-masthead-inverse-bg, 5%);
+        border-bottom-color: lighten(@navbar-masthead-inverse-bg, 5%);
+      }
+
+      // Dropdowns
+      li.dropdown.open > .dropdown-toggle,
+      li.dropdown.active > .dropdown-toggle,
+      li.dropdown.open.active > .dropdown-toggle {
+        background-color: @navbar-masthead-inverse-link-bg-active;
+        color: @navbar-masthead-inverse-link-color-active;
+      }
+      li.dropdown > .dropdown-toggle .caret {
+        border-top-color: @navbar-masthead-inverse-link-color;
+        border-bottom-color: @navbar-masthead-inverse-link-color;
+      }
+      li.dropdown.open > .dropdown-toggle .caret,
+      li.dropdown.active > .dropdown-toggle .caret,
+      li.dropdown.open.active > .dropdown-toggle .caret {
+        border-top-color: @navbar-masthead-inverse-link-color-active;
+        border-bottom-color: @navbar-masthead-inverse-link-color-active;
+      }
     }
+  }
+}
+
+
+
+
+
+.navbar-masthead {
+
+
+  // Inverted navbar
+  // -------------------------
+
+  &.navbar-inverse {
 
     // Inline text links
     .navbar-link {
@@ -432,65 +468,11 @@
         color: @navbar-masthead-inverse-link-color-hover;
       }
     }
-
-    // Dividers in navbar
-    .divider-vertical {
-      border-right-color: @gray;
-      border-left-color: @navbar-masthead-inverse-bg;
-    }
-
-    // Dropdowns
-    .nav li.dropdown.open > .dropdown-toggle,
-    .nav li.dropdown.active > .dropdown-toggle,
-    .nav li.dropdown.open.active > .dropdown-toggle {
-      color: @navbar-masthead-inverse-link-color-active;
-      background-color: @navbar-masthead-inverse-link-bg-active;
-    }
-    .nav li.dropdown > .dropdown-toggle .caret {
-      border-top-color: @navbar-masthead-inverse-link-color;
-      border-bottom-color: @navbar-masthead-inverse-link-color;
-    }
-    .nav li.dropdown.open > .dropdown-toggle .caret,
-    .nav li.dropdown.active > .dropdown-toggle .caret,
-    .nav li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbar-masthead-inverse-link-color-active;
-      border-bottom-color: @navbar-masthead-inverse-link-color-active;
-    }
-
-    // Navbar search
-    .navbar-search {
-      .search-query {
-        .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
-        .transition(none);
-        .placeholder(@navbar-masthead-inverse-search-placeholder-color);
-        color: #fff;
-        background-color: @navbar-masthead-inverse-search-background;
-        border-color: @navbar-masthead-inverse-search-border;
-
-        // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
-        &:focus,
-        &.focused {
-          .box-shadow(0 0 3px rgba(0,0,0,.15));
-          padding: 5px 15px;
-          color: @grayDark;
-          text-shadow: 0 1px 0 #fff;
-          background-color: @navbar-masthead-inverse-search-background-focus;
-          border: 0;
-          outline: 0;
-        }
-      }
-    }
-
-    // Navbar collapse button
-    .btn-navbar {
-      .btn-states(darken(@gray, 5%), darken(@navbar-masthead-inverse-bg, 5%));
-    }
-
   }
 }
 
 
-// Google Navbar
+// Main Navbar
 // -------------------------
 .navbar-main {
   border-radius: @border-radius-base;
@@ -522,7 +504,7 @@
   // Plain text in topbar
   // -------------------------
   .navbar-text {
-    .navbarVerticalAlign(@navbar-main-height, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(@navbar-main-height, @navbar-main-height); // Vertically center in navbar
     line-height: @navbar-main-height;
   }
 
@@ -544,7 +526,7 @@
   // -------------------------
   .btn,
   .btn-group {
-    .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
   }
   .btn {
     padding: 4px 12px; // FIXME: This is probably not necessary for the btn-group;
@@ -574,19 +556,19 @@
     select,
     .radio,
     .checkbox {
-      .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
+      .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
       padding: 4px 8px;
     }
     .btn,
     .btn-group {
-      .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
+      .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
     }
   }
 
   // Navbar search
   // -------------------------
   .navbar-search {
-    .navbarVerticalAlign(30px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
     .search-query {
       padding: 4px 14px;
     }
@@ -680,7 +662,7 @@
   // These definitions need to come after '.navbar .btn'
   .btn-navbar {
     padding: 4px 10px 7px;
-    .navbarVerticalAlign(26px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(26px, @navbar-main-height); // Vertically center in navbar
     #gradient > .vertical(#f5f5f5, #f1f1f1);
     border: 1px solid #dcdcdc;
   }
@@ -884,6 +866,63 @@
     height: auto !important;
     overflow: visible !important;
   }
+
+}
+
+// Masthead
+// --------------------------------------------------
+
+@media screen and (min-width: 768px) {
+  .navbar-masthead {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-masthead .brand {
+    float: left;
+    padding-top: (@navbar-masthead-height - @line-height-base) / 2;
+    padding-bottom: (@navbar-masthead-height - @line-height-base) / 2;
+    margin-left: -15px;
+  }
+  .navbar-masthead .nav {
+    float: left;
+    .navbar-vertical-align(36px, @navbar-masthead-height); // Vertically center in navbar
+    .clear_float();
+
+    &.pull-right {
+      float: right;
+    }
+  }
+  .navbar-masthead .nav > li {
+    float: left;
+  }
+
+  // Dividers go vertical
+  // Change the height and height, disable bottom border, then add right border
+  .navbar-masthead .nav > .divider {
+    width: 1px;
+    height: @navbar-masthead-height * .6;
+    margin: floor((@navbar-masthead-height * .1)) 9px;
+    border-bottom: 0;
+    border-right: 1px solid lighten(@navbar-masthead-bg, 5%);
+  }
+  // Plain text in topbar
+  .navbar-masthead .navbar-text {
+    .navbar-vertical-align(20px, @navbar-masthead-height); // Vertically center in navbar
+  }
+
+  // Since we override the border, we need to specify it again for inverted navbars
+  .navbar-masthead-inverse .nav > .divider {
+    border-right-color: lighten(@navbar-masthead-inverse-bg, 5%);
+  }
+
+  // Required to make the collapsing navbar work on regular desktops
+  .navbar-masthead .btn-navbar {
+    display: none;
+  }
+  // .nav-collapse.collapse {
+  //   height: auto !important;
+  //   overflow: visible !important;
+  // }
 
 }
 
