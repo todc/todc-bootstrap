@@ -230,28 +230,35 @@ textarea[class*="span"],
 // Note: HTML5 says that inputs under a fieldset > legend:first-child won't be
 //   disabled if the fieldset is disabled. Due to implementation difficulty,
 //   we don't honor that edge case; we style them as disabled anyway.
-input[disabled],
-select[disabled],
-textarea[disabled] {
-  cursor: not-allowed;
-  border: 1px solid #e5e5e5;
-  background: @input-background-disabled;
-
-  &:hover {
+input,
+select,
+textarea {
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    background-color: @input-background-disabled;
     border: 1px solid #e5e5e5;
-    .box-shadow(none);
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid #e5e5e5;
+      .box-shadow(none);
+    }
   }
 }
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  cursor: not-allowed;
-  border: 1px solid @input-border;
-
-  &:hover,
-  &:focus {
+input,
+select,
+textarea {
+  &[readonly] & {
+    cursor: not-allowed;
     border: 1px solid @input-border;
-    .box-shadow(none);
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid @input-border;
+      .box-shadow(none);
+    }
   }
 }
 
@@ -356,25 +363,25 @@ select:focus:required:invalid {
 // Horizontal forms
 // --------------------------------------------------
 
-// Common properties
-// -----------------
 
-.form-search,
-.form-inline,
-.form-horizontal {
-  input,
-  textarea,
-  select,
-  .help-inline,
-  .uneditable-input,
-  .input-prepend,
-  .input-append {
-    display: inline-block;
-    // .ie7-inline-block();
-    margin-bottom: 0;
-  }
-  // Re-hide hidden elements due to specifity
-  .hide {
-    display: none;
+@media screen and (min-width: 768px) {
+
+  .form-horizontal {
+
+    // Increase spacing between groups
+    .control-group {
+      margin-bottom: @line-height-base;
+    }
+
+    // Float the labels left
+    .control-group > .control-label {
+      width: @component-offset-horizontal - 20;
+    }
+
+    // Move over all input controls and content over
+    .control-group > .controls {
+      margin-left: @component-offset-horizontal;
+    }
+
   }
 }
