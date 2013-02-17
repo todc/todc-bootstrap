@@ -44,16 +44,20 @@
   border-bottom: 1px solid @bottom;
 }
 
-// Button backgrounds
-// ------------------
-.btnBackground(@startColor, @endColor, @text-color: #fff, @borderColor: @btn-border) {
+// Button states
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+.btn-states(@startColor, @endColor, @text-color: #fff, @borderColor: @btn-border) {
   border: 1px solid @borderColor;
   color: @text-color;
   #gradient > .vertical(@startColor, @endColor);
   .reset-filter();
 
   // in these cases the gradient won't cover the background, so we override
-  &:hover, &:active, &.active {
+  &:hover,
+  &:active,
+  &.active {
     border: 1px solid darken(@borderColor, 5%);
     color: @text-color;
     #gradient > .vertical(@startColor, darken(@endColor, 5%));
@@ -61,24 +65,32 @@
     background-color: darken(@endColor, 5%);
     background-color: darken(@endColor, 5%) e("\9");
   }
-  &:active, &.active {
+
+  &:active,
+  &.active {
     border: 1px solid darken(@borderColor, 10%);
     #gradient > .vertical(@startColor, darken(@endColor, 10%));
     .reset-filter();
   }
+
   &:focus {
     border: 1px solid @borderColor;
     .box-shadow(inset 0 0 0 1px #fff);
   }
-  &.disabled, &[disabled],
-  &.disabled:hover, &[disabled]:hover,
-  &.disabled:active, &[disabled]:active,
-  &.disabled:focus, &[disabled]:focus {
-    border: 1px solid @borderColor;
-    #gradient > .vertical(@startColor, @endColor);
-    .reset-filter();
-    background-color: @startColor;
-    background-color: @startColor e("\9");
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid @borderColor;
+      #gradient > .vertical(@startColor, @endColor);
+      .reset-filter();
+      background-color: @startColor;
+      background-color: @startColor e("\9");
+      .box-shadow(none)
+    }
   }
 }
 
