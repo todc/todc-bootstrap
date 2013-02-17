@@ -10,6 +10,7 @@
 .btn {
   padding: 4px 12px;
   margin: 0;
+  color: @btn-color;
   font-family: @font-family-base;
   font-size: @font-size-base;
   font-weight: bold;
@@ -24,26 +25,49 @@
   border-radius: @border-radius-base;
   .box-shadow(none);
 
+  &:hover {
+    text-shadow: none;
+    border-color: #c6c6c6;
+    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+    background-position: 0 0;
+    .transition(none);
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: @btn-color;
+    background-color: #e8e8e8;
+    #gradient > .vertical(#f5f5f5, #f1f1f1);
+  }
+
+  &:active,
+  &.active {
+    border: 1px solid @btn-border;
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+
   &:focus {
     /* Blue border on button focus. */
     border-color: @brand-primary;
     outline-style: none;
   }
 
-  &:hover,
-  &:focus {
-    color: @btn-color;
-    text-shadow: none;
-    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
-    background-position: 0 0;
-    .transition(none);
+  // Disabled state
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid @btn-border;
+      background-color: @btn-background;
+      #gradient > .vertical(#f5f5f5, #f1f1f1);
+      .box-shadow(none);
+      text-shadow: none;
+    }
   }
-
-  &.active,
-  &:active {
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
-  }
-
 }
 
 
@@ -147,9 +171,6 @@
 // Alternate buttons
 // --------------------------------------------------
 
-.btn {
-  .btn-states(#f5f5f5, #f1f1f1, @btn-color, @btn-border);
-}
 // Primary Button
 // -------------------------
 .btn-primary {
@@ -181,38 +202,24 @@
 }
 
 
-// Alternate buttons
-// --------------------------------------------------
-
-// .btn {
-//   color: @btn-color;
-//   .btn-pseudo-states(@btn-background, @btn-border);
-// }
-// .btn-primary {
-//   .btn-pseudo-states(@btn-background-primary, @btn-border-primary);
-// }
-// // Warning appears as orange
-// .btn-warning {
-//   .btn-pseudo-states(@btn-background-warning, @btn-border-warning);
-// }
-// // Danger and error appear as red
-// .btn-danger {
-//   .btn-pseudo-states(@btn-background-danger, @btn-border-danger);
-// }
-// // Success appears as green
-// .btn-success {
-//   .btn-pseudo-states(@btn-background-success, @btn-border-success);
-// }
-// // Info appears as blue-green
-// .btn-info {
-//   .btn-pseudo-states(@btn-background-info, @btn-border-info);
-// }
-
-
 // Link buttons
 // --------------------------------------------------
 
 // Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
 .btn-link {
   color: @link-color;
 }
