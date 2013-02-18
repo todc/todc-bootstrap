@@ -42,36 +42,11 @@
 // Navbar alignment options
 // --------------------------------------------------
 
-// Static navbar
-.navbar-static-top {
-  border-radius: 0;
-}
-
-// Shared (top/bottom) styles
-.navbar-fixed-top,
-.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
-
 // Fix the top/bottom navbars when screen real estate supports it
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: @zindex-navbar-fixed;
-  border-radius: 0;
-}
-// Fixed navbars aren't fixed to start; that comes at >768px
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0;
-}
-.navbar-fixed-top    { top: 0; }
-.navbar-fixed-bottom { bottom: 0; }
+   z-index: @zindex-navbar-fixed;
+ }
 
 
 
@@ -329,31 +304,11 @@
 // --------------------------------------------------
 
 .navbar-masthead {
-  // Static navbar
-  &.navbar-static-top {
-    border-radius: 0;
-  }
-
-  // Shared (top/bottom) styles
-  &.navbar-fixed-top,
-  &.navbar-static-top {
-    border-width: 1px 0;
-  }
-  &.navbar-fixed-bottom {
-    border-width: 1px 0;
-  }
-
   // Fix the top/bottom navbars when screen real estate supports it
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
-    position: fixed;
-    right: 0;
-    left: 0;
     z-index: @zindex-googlebar-fixed;
-    border-radius: 0;
   }
-  &.navbar-fixed-top    { top: 0; }
-  &.navbar-fixed-bottom { bottom: 0; }
 }
 
 
@@ -597,31 +552,11 @@
 // --------------------------------------------------
 
 .navbar-main {
-  // Static navbar
-  &.navbar-static-top {
-    border-radius: 0;
-  }
-
-  // Shared (top/bottom) styles
-  &.navbar-fixed-top,
-  &.navbar-static-top {
-    border-width: 1px 0;
-  }
-  &.navbar-fixed-bottom {
-    border-width: 1px 0;
-  }
-
   // Fix the top/bottom navbars when screen real estate supports it
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
-    position: fixed;
-    right: 0;
-    left: 0;
     z-index: @zindex-googlenav-fixed;
-    border-radius: 0;
   }
-  &.navbar-fixed-top    { top: 0; }
-  &.navbar-fixed-bottom { bottom: 0; }
 }
 
 
@@ -876,6 +811,48 @@
   }
 
 }
+
+
+
+//
+// Navbar alignment options - Shared
+// --------------------------------------------------
+
+// Static navbar
+.navbar-static-top {
+  border-radius: 0;
+}
+
+// Shared (top/bottom) styles
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+}
+// Fixed navbars aren't fixed to start; that comes at >768px
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top    { top: 0; }
+.navbar-fixed-bottom { bottom: 0; }
+
+
+
+//
+// Responsive
+// --------------------------------------------------
 
 // Masthead
 // --------------------------------------------------

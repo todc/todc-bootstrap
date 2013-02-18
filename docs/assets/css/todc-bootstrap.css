@@ -1535,33 +1535,9 @@ fieldset[disabled] .btn-link:focus {
   color: #ffffff;
   background-color: #141414;
 }
-.navbar-static-top {
-  border-radius: 0;
-}
-.navbar-fixed-top,
-.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
   z-index: 1030;
-  border-radius: 0;
-}
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0;
-}
-.navbar-fixed-top {
-  top: 0;
-}
-.navbar-fixed-bottom {
-  bottom: 0;
 }
 .navbar-brand {
   padding: 4px 20px 4px;
@@ -1732,29 +1708,9 @@ fieldset[disabled] .btn-link:focus {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff1f1f1', endColorstr='#fff1f1f1', GradientType=0);
 }
-.navbar-masthead.navbar-static-top {
-  border-radius: 0;
-}
-.navbar-masthead.navbar-fixed-top,
-.navbar-masthead.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-masthead.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
 .navbar-masthead.navbar-fixed-top,
 .navbar-masthead.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
   z-index: 1029;
-  border-radius: 0;
-}
-.navbar-masthead.navbar-fixed-top {
-  top: 0;
-}
-.navbar-masthead.navbar-fixed-bottom {
-  bottom: 0;
 }
 .navbar-masthead .navbar-brand:hover,
 .navbar-masthead .navbar-brand:focus {
@@ -1946,29 +1902,9 @@ fieldset[disabled] .btn-link:focus {
   color: #333333;
   background-color: #f2f2f2;
 }
-.navbar-main.navbar-static-top {
-  border-radius: 0;
-}
-.navbar-main.navbar-fixed-top,
-.navbar-main.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-main.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
 .navbar-main.navbar-fixed-top,
 .navbar-main.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
   z-index: 1028;
-  border-radius: 0;
-}
-.navbar-main.navbar-fixed-top {
-  top: 0;
-}
-.navbar-main.navbar-fixed-bottom {
-  bottom: 0;
 }
 .navbar-main .navbar-brand,
 .navbar-main .navbar-brand .btn {
@@ -2245,6 +2181,33 @@ fieldset[disabled] .navbar-main.navbar-inverse .navbar-toggle:active {
     height: auto !important;
     overflow: visible !important;
   }
+}
+.navbar-static-top {
+  border-radius: 0;
+}
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .navbar-masthead {
