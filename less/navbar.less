@@ -264,33 +264,35 @@
   #gradient > .vertical(@navbar-masthead-bg, @navbar-masthead-bg);
 }
 
-// Navbar nav links
+// Masthead nav links
 // -------------------------
 
 .navbar-masthead {
-  .nav > li > a {
-    float: none;
-    padding: 8px 15px;
-    font-weight: normal;
-    color: @navbar-masthead-link-color;
-    text-decoration: none;
-    text-shadow: 0 1px 0 lighten(@navbar-masthead-bg, 1.5%);
-  }
+  .nav {
+    > li > a {
+      float: none;
+      padding: 8px 15px;
+      font-weight: normal;
+      color: @navbar-masthead-link-color;
+      text-decoration: none;
+      text-shadow: 0 1px 0 lighten(@navbar-masthead-bg, 1.5%);
+    }
 
-  .nav > li > a:focus,
-  .nav > li > a:hover {
-    text-decoration: none;
-    background-color: @navbar-masthead-link-bg-hover; // "transparent" is default to differentiate :hover from .active
-    color: @navbar-masthead-link-color-hover;
-  }
+    > li > a:focus,
+    > li > a:hover {
+      text-decoration: none;
+      background-color: @navbar-masthead-link-bg-hover; // "transparent" is default to differentiate :hover from .active
+      color: @navbar-masthead-link-color-hover;
+    }
 
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    .box-shadow(none);
-    color: @navbar-masthead-link-color-active;
-    text-decoration: none;
-    #gradient > .vertical(@navbar-masthead-link-bg-active, @navbar-masthead-link-bg-active);
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      .box-shadow(none);
+      color: @navbar-masthead-link-color-active;
+      text-decoration: none;
+      #gradient > .vertical(@navbar-masthead-link-bg-active, @navbar-masthead-link-bg-active);
+    }
   }
 }
 
@@ -311,7 +313,7 @@
 
 
 //
-// Navbar optional components
+// Masthead optional components
 // --------------------------------------------------
 
 .navbar-masthead {
@@ -381,7 +383,7 @@
 
 
 
-// Inverse navbar
+// Inverse masthead
 // --------------------------------------------------
 
 .navbar-masthead {
@@ -467,6 +469,8 @@
 
 // Main Navbar
 // -------------------------
+
+// Wrapper and base class
 .navbar-main {
   border-radius: @border-radius-base;
   .box-shadow(none);
@@ -475,13 +479,121 @@
   color: @navbar-text;
   #gradient > .vertical(@navbar-main-bg, @navbar-main-bg);
   border: 1px solid @navbar-main-border;
+}
 
+// Main Navbar nav links
+// -------------------------
+
+.navbar-main {
+  .nav {
+    > li {
+      position: relative;
+    }
+
+    > li > a {
+      // padding: 9px 15px 8px;
+      padding: (floor((@navbar-main-height - @line-height-base) / 2)) 15px (((@navbar-main-height - @line-height-base) / 2));
+      color: @navbar-main-link-color;
+      text-shadow: none;
+    }
+    > li > a.brand {
+      color: @navbar-main-brand-color;
+    }
+
+    // Active nav items
+    > .active > a {
+      font-weight: bold;
+      &:before {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        display: inline-block;
+        margin-left: -8px; /* value should match border-width below */
+        border-right:  8px solid transparent;
+        border-bottom: 8px solid @navbar-main-border;
+        border-left:   8px solid transparent;
+        content: '';
+      }
+      &:after {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        display: inline-block;
+        margin-left: -7px; /* value should match border-width below */
+        border-right:  7px solid transparent;
+        border-bottom: 7px solid @dropdown-background;
+        border-left:   7px solid transparent;
+        content: '';
+      }
+    }
+
+    > li > a:focus,
+    > li > a:hover {
+      color: @navbar-main-link-color-hover;
+      text-decoration: underline;
+      background-color: transparent;
+    }
+
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      .box-shadow(none);
+      color: @navbar-main-link-color-active;
+      background-color: @navbar-main-link-bg-active;
+    }
+  }
+}
+
+
+
+//
+// Masthead alignment options
+// --------------------------------------------------
+
+.navbar-main {
+  // Shared (top/bottom) styles
+  &.navbar-fixed-top,
+  &.navbar-fixed-bottom {
+    z-index: @zindex-googlenav-fixed;
+  }
+  // &.navbar-fixed-top,
+  // &.navbar-fixed-bottom,
+  // &.navbar-static-top {
+  //   .nav > li > a {
+  //     // padding: ((@navbar-main-height - @line-height-base) / 2) 15px (((@navbar-main-height - @line-height-base) / 2) - 1);
+  //   }
+
+  //   // Dividers in navbar
+  //   // -------------------------
+  //   .divider-vertical {
+  //     height: @navbar-main-height - 1;
+  //   }
+  // }
+}
+
+
+
+//
+// Masthead optional components
+// --------------------------------------------------
+
+.navbar-main {
+
+  // Brand: website or project name
+  // -------------------------
+}
+
+
+
+
+
+
+.navbar-main {
   // Brand: website or project name
   // -------------------------
   .brand,
   .brand .btn {
     // Vertically center the text given @navbar-height
-    padding: ((@navbar-main-height - @line-height-base) / 2) 20px ((@navbar-main-height - @line-height-base) / 2);
     font-size: 16px;
     font-weight: bold;
     color: @navbar-main-brand-color;
@@ -558,98 +670,7 @@
     }
   }
 
-  // Navbar search
-  // -------------------------
-  .navbar-search {
-    .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
-    .search-query {
-      padding: 4px 14px;
-    }
-  }
 
-
-
-  // Fixed navbar
-  // -------------------------
-
-  // Shared (top/bottom) styles
-  &.navbar-fixed-top,
-  &.navbar-fixed-bottom {
-    z-index: @zindex-googlenav-fixed;
-  }
-  &.navbar-fixed-top,
-  &.navbar-fixed-bottom,
-  &.navbar-static-top {
-    .nav > li > a {
-      // padding: ((@navbar-main-height - @line-height-base) / 2) 15px (((@navbar-main-height - @line-height-base) / 2) - 1);
-    }
-
-    // Dividers in navbar
-    // -------------------------
-    .divider-vertical {
-      height: @navbar-main-height - 1;
-    }
-  }
-
-  // NAVIGATION
-  // ----------
-
-  .nav > li {
-    position: relative;
-  }
-
-  // Links
-  .nav > li > a {
-    // padding: 9px 15px 8px;
-    padding: (floor((@navbar-main-height - @line-height-base) / 2)) 15px (((@navbar-main-height - @line-height-base) / 2));
-    color: @navbar-main-link-color;
-    text-shadow: none;
-  }
-  .nav > li > a.brand {
-    color: @navbar-main-brand-color;
-  }
-
-  // Active nav items
-  .nav > .active > a {
-    font-weight: bold;
-    &:before {
-      position: absolute;
-      bottom: -1px;
-      left: 50%;
-      display: inline-block;
-      margin-left: -8px; /* value should match border-width below */
-      border-right:  8px solid transparent;
-      border-bottom: 8px solid @navbar-main-border;
-      border-left:   8px solid transparent;
-      content: '';
-    }
-    &:after {
-      position: absolute;
-      bottom: -1px;
-      left: 50%;
-      display: inline-block;
-      margin-left: -7px; /* value should match border-width below */
-      border-right:  7px solid transparent;
-      border-bottom: 7px solid @dropdown-background;
-      border-left:   7px solid transparent;
-      content: '';
-    }
-  }
-
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    .box-shadow(none);
-    color: @navbar-main-link-color-active;
-    background-color: @navbar-main-link-bg-active;
-  }
-
-  .nav > li > a:focus,
-  .nav > li > a:hover {
-    color: @navbar-main-link-color-hover;
-    text-decoration: underline;
-    background-color: transparent;
-  }
 
   // Navbar button for toggling navbar items in responsive layouts
   // These definitions need to come after '.navbar .btn'
@@ -910,6 +931,63 @@
 
   // Required to make the collapsing navbar work on regular desktops
   .navbar-masthead .btn-navbar {
+    display: none;
+  }
+  // .nav-collapse.collapse {
+  //   height: auto !important;
+  //   overflow: visible !important;
+  // }
+
+}
+
+// Main Navbar
+// --------------------------------------------------
+
+@media screen and (min-width: 768px) {
+  .navbar-main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-main .brand {
+    float: left;
+    padding-top: (@navbar-main-height - @line-height-base) / 2;
+    padding-bottom: (@navbar-main-height - @line-height-base) / 2;
+    margin-left: -15px;
+  }
+  .navbar-main .nav {
+    float: left;
+    .navbar-vertical-align(36px, @navbar-main-height); // Vertically center in navbar
+    .clear_float();
+
+    &.pull-right {
+      float: right;
+    }
+  }
+  .navbar-main .nav > li {
+    float: left;
+  }
+
+  // Dividers go vertical
+  // Change the height and height, disable bottom border, then add right border
+  .navbar-main .nav > .divider {
+    width: 1px;
+    height: @navbar-main-height * .6;
+    margin: floor((@navbar-main-height * .1)) 9px;
+    border-bottom: 0;
+    border-right: 1px solid lighten(@navbar-main-bg, 5%);
+  }
+  // Plain text in topbar
+  .navbar-main .navbar-text {
+    .navbar-vertical-align(20px, @navbar-main-height); // Vertically center in navbar
+  }
+
+  // Since we override the border, we need to specify it again for inverted navbars
+  .navbar-main-inverse .nav > .divider {
+    border-right-color: lighten(@navbar-main-inverse-bg, 5%);
+  }
+
+  // Required to make the collapsing navbar work on regular desktops
+  .navbar-main .btn-navbar {
     display: none;
   }
   // .nav-collapse.collapse {
