@@ -14,8 +14,8 @@ body {
 }
 
 /*  */
-body > .container,
-.footer .container {
+.bs-docs-body > .container,
+.bs-docs-footer .container {
   padding-left:  15px;
   padding-right: 15px;
 }
@@ -95,12 +95,12 @@ section > ul li {
      -moz-transition: none;
           transition: none;
 }
-.masthead .btn:hover {
+.bs-docs-jumbotron .btn:hover {
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
      -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
           box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
 }
-.masthead .btn:active {
+.bs-docs-jumbotron .btn:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
      -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
           box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
@@ -109,11 +109,11 @@ section > ul li {
 
 /* Pattern overlay
 ------------------------- */
-.jumbotron .container {
+.bs-docs-jumbotron .container {
   position: relative;
   z-index: 2;
 }
-.jumbotron:after {
+.bs-docs-jumbotron:after {
   content: '';
   display: block;
   position: absolute;
@@ -157,23 +157,23 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Marketing section of Overview
 -------------------------------------------------- */
 
-.marketing {
+.bs-docs-marketing {
   text-align: center;
   color: #5a5a5a;
 }
-.marketing h1 {
+.bs-docs-marketing h1 {
   margin: 60px 0 10px;
   font-size: 50px;
   line-height: 1;
 }
-.marketing h2 {
+.bs-docs-marketing h2 {
   margin-bottom: 5px;
 }
-.marketing p {
+.bs-docs-marketing p {
   font-size: 16px;
   line-height: 1.4;
 }
-.marketing .marketing-byline {
+.bs-docs-marketing .marketing-byline {
   margin-bottom: 40px;
   font-size: 21px;
   font-weight: 300;
@@ -283,6 +283,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 /* Tweak display of the examples */
+.bs-docs-example + .prettyprint,
 .bs-docs-example + .highlight {
   margin-top: 0;
   border-top-left-radius: 0;
@@ -372,6 +373,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .bs-docs-example-submenu > .pull-left + .pull-left {
   margin-left: 20px;
+}
+
+/* Example tabbable tabs */
+.bs-docs-example-tabs .nav-tabs {
+  margin-bottom: 15px;
 }
 
 
@@ -501,13 +507,13 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Footer
 -------------------------------------------------- */
 
-.footer {
+.bs-docs-footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 100px;
   border-top: 1px solid #e5e5e5;
 }
-.footer p {
+.bs-docs-footer p {
   margin-bottom: 0;
   color: #777;
 }
