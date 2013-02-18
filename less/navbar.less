@@ -15,7 +15,7 @@
 
 .navbar {
   // .nav {
-  //   margin-top: 15px; // space out from .navbar .brand and .btn-navbar
+  //   margin-top: 15px; // space out from .navbar-brand and .navbar-toggle
   // }
   .nav > li > a {
     // Vertically center the text given @navbar-height
@@ -64,7 +64,7 @@
 // --------------------------------------------------
 
 // Brand/project name
-.navbar .brand {
+.navbar-brand {
   // Vertically center the text given @navbar-height
   padding: ((@navbar-height - @line-height-base) / 2) 20px ((@navbar-height - @line-height-base) / 2);
   color: @navbar-brand-color;
@@ -77,7 +77,7 @@
 }
 
 // Collapsible navbar toggle
-.btn-navbar {
+.navbar-toggle {
   padding: 8px 10px;
   .navbar-vertical-align(26px); // Vertically center in navbar
   // #gradient > .vertical(#f5f5f5, #f1f1f1);
@@ -129,13 +129,13 @@
 }
 // TODO: [todc-bootstrap] Check with navbar-main
 // Brand: dropdown menu
-.navbar .brand.dropdown-menu {
+.navbar-brand.dropdown-menu {
     display: none;
     padding: 0 0 6px;
     margin-left: -20px;
     font-size: @font-size-base;
 }
-.open > .brand.dropdown-menu {
+.open > .navbar-brand.dropdown-menu {
     display: block;
 }
 
@@ -157,7 +157,7 @@
   background-color: @navbar-inverse-bg;
   border: 1px solid @navbar-inverse-border;
 
-  .brand {
+  .navbar-brand {
     color: @navbar-inverse-brand-color;
     &:hover,
     &:focus {
@@ -186,7 +186,7 @@
   }
 
   // Darken the responsive nav toggle
-  // .btn-navbar {
+  // .navbar-toggle {
   //   background-color: #444;
   // }
 
@@ -326,7 +326,7 @@
 
   // Brand: website or project name
   // -------------------------
-  .brand {
+  .navbar-brand {
     &:hover,
     &:focus {
       color: @navbar-masthead-brand-color-hover;
@@ -336,7 +336,7 @@
   }
 
   // Collapsible navbar toggle
-  .btn-navbar {
+  .navbar-toggle {
     padding: 4px 10px 7px;
     .navbar-vertical-align(26px, @navbar-masthead-height); // Vertically center in navbar
     // #gradient > .vertical(lighten(@navbar-masthead-bg, 1.5%), @navbar-masthead-bg);
@@ -398,7 +398,7 @@
     border-color: @navbar-masthead-inverse-border;
     color: @navbar-masthead-inverse-text;
 
-    .brand {
+    .navbar-brand {
       color: @navbar-masthead-inverse-link-color;
       &:hover,
       &:focus {
@@ -407,7 +407,7 @@
       }
     }
 
-    .brand,
+    .navbar-brand,
     .nav > li > a {
       color: @navbar-masthead-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -502,7 +502,7 @@
       color: @navbar-main-link-color;
       text-shadow: none;
     }
-    > li > a.brand {
+    > li > a.navbar-brand {
       color: @navbar-main-brand-color;
     }
 
@@ -553,7 +553,7 @@
 
 
 //
-// Masthead alignment options
+// Main Navbar alignment options
 // --------------------------------------------------
 
 .navbar-main {
@@ -580,7 +580,7 @@
 
 
 //
-// Masthead optional components
+// Main Navbar optional components
 // --------------------------------------------------
 
 .navbar-main {
@@ -597,8 +597,8 @@
 .navbar-main {
   // Brand: website or project name
   // -------------------------
-  .brand,
-  .brand .btn {
+  .navbar-brand,
+  .navbar-brand .btn {
     // Vertically center the text given @navbar-height
     font-size: 16px;
     font-weight: bold;
@@ -680,7 +680,7 @@
 
   // Navbar button for toggling navbar items in responsive layouts
   // These definitions need to come after '.navbar .btn'
-  .btn-navbar {
+  .navbar-toggle {
     padding: 4px 10px 7px;
     .navbar-vertical-align(26px, @navbar-main-height); // Vertically center in navbar
     #gradient > .vertical(#f5f5f5, #f1f1f1);
@@ -711,21 +711,21 @@
 
 
   // Brand Dropdowns
-  .nav > li > a.brand:focus,
-  .nav > li > a.brand:hover {
+  .nav > li > a.navbar-brand:focus,
+  .nav > li > a.navbar-brand:hover {
     color: @navbar-main-brand-color;
     text-decoration: none;
   }
 
-  .nav li.dropdown.open > .brand.dropdown-toggle,
-  .nav li.dropdown.active > .brand.dropdown-toggle,
-  .nav li.dropdown.open.active > .brand.dropdown-toggle {
+  .nav li.dropdown.open > .navbar-brand.dropdown-toggle,
+  .nav li.dropdown.active > .navbar-brand.dropdown-toggle,
+  .nav li.dropdown.open.active > .navbar-brand.dropdown-toggle {
     background-color: @navbar-main-link-bg-active;
     color: @navbar-main-brand-color;
     text-decoration: none;
   }
 
-  .nav li.dropdown > .brand.dropdown-toggle .caret {
+  .nav li.dropdown > .navbar-brand.dropdown-toggle .caret {
     border-top-color: @navbar-main-brand-color;
     border-bottom-color: @navbar-main-brand-color;
   }
@@ -743,7 +743,7 @@
       background: @navbar-main-inverse-bg;
     }
 
-    .brand,
+    .navbar-brand,
     .nav > li > a {
       font-weight: normal;
       color: @navbar-main-inverse-link-color;
@@ -827,7 +827,7 @@
     }
 
     // Navbar collapse button
-    .btn-navbar {
+    .navbar-toggle {
       .btn-states(darken(@navbar-main-inverse-link-bg-active, 5%), darken(@navbar-main-inverse-bg, 5%));
     }
 
@@ -845,7 +845,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .navbar .brand {
+  .navbar .navbar-brand {
     float: left;
     padding-top: (@navbar-height - @line-height-base) / 2;
     padding-bottom: (@navbar-height - @line-height-base) / 2;
@@ -879,7 +879,7 @@
   }
 
   // Required to make the collapsing navbar work on regular desktops
-  .navbar .btn-navbar {
+  .navbar-toggle {
     display: none;
   }
   .nav-collapse.collapse {
@@ -897,7 +897,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .navbar-masthead .brand {
+  .navbar-masthead .navbar-brand {
     float: left;
     padding-top: (@navbar-masthead-height - @line-height-base) / 2;
     padding-bottom: (@navbar-masthead-height - @line-height-base) / 2;
@@ -936,7 +936,7 @@
   }
 
   // Required to make the collapsing navbar work on regular desktops
-  .navbar-masthead .btn-navbar {
+  .navbar-masthead .navbar-toggle {
     display: none;
   }
   // .nav-collapse.collapse {
@@ -954,7 +954,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .navbar-main .brand {
+  .navbar-main .navbar-brand {
     float: left;
     padding-top: (@navbar-main-height - @line-height-base) / 2;
     padding-bottom: (@navbar-main-height - @line-height-base) / 2;
@@ -993,7 +993,7 @@
   }
 
   // Required to make the collapsing navbar work on regular desktops
-  .navbar-main .btn-navbar {
+  .navbar-main .navbar-toggle {
     display: none;
   }
   // .nav-collapse.collapse {

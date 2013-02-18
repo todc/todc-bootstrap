@@ -890,7 +890,7 @@ title: Components
           <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
           <div class="bs-docs-example">
             <div class="navbar">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Link</a></li>
@@ -900,7 +900,7 @@ title: Components
           </div><!-- /example -->
 {% highlight html linenos %}
 <div class="navbar">
-  <a class="brand" href="#">Title</a>
+  <a class="navbar-brand" href="#">Title</a>
   <ul class="nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
@@ -915,11 +915,11 @@ title: Components
           <p>A simple link to show your brand or project name only requires an anchor tag.</p>
           <div class="bs-docs-example">
             <div class="navbar">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
             </div>
           </div><!-- /example -->
 {% highlight html linenos %}
-<a class="brand" href="#">Title</a>
+<a class="navbar-brand" href="#">Title</a>
 {% endhighlight %}
 
           <h3>Nav links</h3>
@@ -996,7 +996,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-fixed-top" style="position: absolute;">
               <div class="container" style="width: auto;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1016,7 +1016,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-bottom-example">
             <div class="navbar navbar-fixed-bottom" style="position: absolute;">
               <div class="container" style="width: auto;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1036,7 +1036,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-static-top" style="margin: -1px -1px 0;">
               <div class="container" style="width: auto;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1053,16 +1053,16 @@ title: Components
 
 
           <h2>Responsive navbar</h2>
-          <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
+          <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.navbar-toggle</code>.</p>
           <div class="bs-docs-example">
             <div class="navbar">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -1106,15 +1106,15 @@ title: Components
 <div class="navbar">
   <div class="container">
 
-    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </a>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Title</a>
+    <a class="navbar-brand" href="#">Title</a>
 
     <!-- Place everything within .navbar-collapse to hide it until above 768px -->
     <div class="nav-collapse collapse navbar-responsive-collapse">
@@ -1134,12 +1134,12 @@ title: Components
           <div class="bs-docs-example">
             <div class="navbar navbar-inverse" style="position: static;">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-inverse-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -1201,7 +1201,7 @@ title: Components
           <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
           <div class="bs-docs-example">
             <div class="navbar navbar-masthead">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
               <form class="navbar-form pull-left">
                 <input type="text" class="span8" placeholder="Search">
                 <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
@@ -1215,7 +1215,7 @@ title: Components
           </div>
 {% highlight html linenos %}
 <div class="navbar navbar-masthead">
-  <a class="brand" href="#">Title</a>
+  <a class="navbar-brand" href="#">Title</a>
   <form class="navbar-form pull-left">
     <input type="text" class="span3" placeholder="Search">
     <button class="btn btn-primary" type="submit">
@@ -1237,11 +1237,11 @@ title: Components
           <p>A simple link to show your brand or project name only requires an anchor tag.</p>
           <div class="bs-docs-example">
             <div class="navbar navbar-masthead">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
             </div>
           </div>
 {% highlight html linenos %}
-<a class="brand" href="#">Project name</a>
+<a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
 
           <h3>Nav links</h3>
@@ -1363,7 +1363,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-masthead navbar-fixed-top" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1383,7 +1383,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-bottom-example">
             <div class="navbar navbar-masthead navbar-fixed-bottom" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1403,7 +1403,7 @@ title: Components
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
               <div class="container" style="width: auto; padding: 0 20px;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1424,12 +1424,12 @@ title: Components
           <div class="bs-docs-example">
             <div class="navbar navbar-masthead">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -1474,14 +1474,14 @@ title: Components
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </a>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Project name</a>
+    <a class="navbar-brand" href="#">Project name</a>
 
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
@@ -1501,12 +1501,12 @@ title: Components
           <div class="bs-docs-example">
             <div class="navbar navbar-masthead navbar-inverse" style="position: static;">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-inverse-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -1567,7 +1567,7 @@ title: Components
           <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
           <div class="bs-docs-example">
             <div class="navbar navbar-main">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Link</a></li>
@@ -1577,7 +1577,7 @@ title: Components
           </div>
 {% highlight html linenos %}
 <div class="navbar navbar-main">
-  <a class="brand" href="#">Title</a>
+  <a class="navbar-brand" href="#">Title</a>
   <ul class="nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
@@ -1682,11 +1682,11 @@ title: Components
           <p>A simple link to show your brand or project name only requires an anchor tag.</p>
           <div class="bs-docs-example">
             <div class="navbar navbar-main">
-              <a class="brand" href="#">Title</a>
+              <a class="navbar-brand" href="#">Title</a>
             </div>
           </div>
 {% highlight html linenos %}
-<a class="brand" href="#">Project name</a>
+<a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
 
           <h3>Nav links</h3>
@@ -1757,8 +1757,8 @@ ul class="nav navbar-main">
             <div class="navbar navbar-main">
               <ul class="nav">
                 <li class="dropdown">
-                  <a data-toggle="dropdown" class="brand dropdown-toggle" href="#">Brand <b class="caret"></b></a>
-                  <ul class="brand dropdown-menu">
+                  <a data-toggle="dropdown" class="navbar-brand dropdown-toggle" href="#">Brand <b class="caret"></b></a>
+                  <ul class="navbar-brand dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
@@ -1825,7 +1825,7 @@ ul class="nav navbar-main">
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-main navbar-fixed-top" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1845,7 +1845,7 @@ ul class="nav navbar-main">
           <div class="bs-docs-example bs-navbar-bottom-example">
             <div class="navbar navbar-main navbar-fixed-bottom" style="position: absolute;">
               <div class="container" style="width: auto; padding: 0 20px;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1865,7 +1865,7 @@ ul class="nav navbar-main">
           <div class="bs-docs-example bs-navbar-top-example">
             <div class="navbar navbar-main navbar-static-top" style="margin: -1px -1px 0;">
               <div class="container" style="width: auto;">
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Link</a></li>
@@ -1886,12 +1886,12 @@ ul class="nav navbar-main">
           <div class="bs-docs-example">
             <div class="navbar navbar-main">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -1936,14 +1936,14 @@ ul class="nav navbar-main">
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </a>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Project name</a>
+    <a class="navbar-brand" href="#">Project name</a>
 
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
@@ -1962,12 +1962,12 @@ ul class="nav navbar-main">
           <div class="bs-docs-example">
             <div class="navbar navbar-main navbar-inverse" style="position: static;">
               <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Title</a>
+                <a class="navbar-brand" href="#">Title</a>
                 <div class="nav-collapse collapse navbar-inverse-collapse">
                   <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
