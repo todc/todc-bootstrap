@@ -1253,7 +1253,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
   color: #333333;
   background-color: #eeeeee;
   background-image: -moz-linear-gradient(top, #eeeeee, #eeeeee);
@@ -1829,12 +1830,6 @@ fieldset[disabled] .btn-link:focus {
 .navbar-masthead.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: #bbbbbb;
   border-bottom-color: #bbbbbb;
-}
-.navbar-masthead.navbar-inverse .navbar-link {
-  color: #ffffff;
-}
-.navbar-masthead.navbar-inverse .navbar-link:hover {
-  color: #bbbbbb;
 }
 .navbar-main {
   border-radius: 2px;
