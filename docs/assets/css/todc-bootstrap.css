@@ -1535,12 +1535,16 @@ fieldset[disabled] .btn-link:focus {
   color: #ffffff;
   background-color: #141414;
 }
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
 }
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0;
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
 }
 .navbar .brand {
   padding: 4px 20px 4px;

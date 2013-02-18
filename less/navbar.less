@@ -43,12 +43,18 @@
 // --------------------------------------------------
 
 // Shared (top/bottom) styles
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
 }
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0;
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+
+// Fixed navbars aren't fixed to start; that comes at >768px
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
 }
 
 
