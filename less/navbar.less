@@ -91,6 +91,19 @@
 
 // Dropdown menus
 
+// Brand: dropdown menu
+.navbar-brand.dropdown-menu {
+  display: none;
+  padding: 0 0 6px;
+  margin: 1px 0 0 -15px;
+  font-size: @font-size-base;
+  text-align: left;
+  background-color: #fff;
+}
+.open > .navbar-brand.dropdown-menu {
+  display: block;
+}
+
 // Dropdown menu items and carets
 .navbar .nav {
   // Caret should match text color on hover
@@ -118,22 +131,6 @@
     border-bottom-color: @navbar-link-color-active;
   }
 }
-
-// TODO: [todc-bootstrap] Check with navbar-main
-// Brand: dropdown menu
-.navbar-brand.dropdown-menu {
-    background-color: #fff;
-    display: none;
-    padding: 0 0 6px;
-    margin: 1px 0 0;
-    margin-left: -20px;
-    font-size: @font-size-base;
-    text-align: left;
-}
-.open > .navbar-brand.dropdown-menu {
-    display: block;
-}
-
 
 // Right aligned menus need alt position
 .navbar .pull-right > li > .dropdown-menu,
@@ -181,9 +178,9 @@
   }
 
   // Darken the responsive nav toggle
-  // .navbar-toggle {
-  //   background-color: #444;
-  // }
+  .navbar-toggle {
+    background-color: #444;
+  }
 
   // Darken dividers
   .nav > .divider {
@@ -452,20 +449,6 @@
   }
 }
 
-// .navbar-masthead {
-//   // Inverted navbar
-//   // -------------------------
-//   &.navbar-inverse {
-//     // Inline text links
-//     .navbar-link {
-//       color: @navbar-masthead-inverse-link-color;
-//       &:hover {
-//         color: @navbar-masthead-inverse-link-color-hover;
-//       }
-//     }
-//   }
-// }
-
 
 
 // Main Navbar
@@ -528,8 +511,8 @@
       }
     }
 
-    > li > a:focus,
-    > li > a:hover {
+    > li > a:hover,
+    > li > a:focus {
       color: @navbar-main-link-color-hover;
       text-decoration: underline;
       background-color: transparent;
@@ -541,6 +524,13 @@
       .box-shadow(none);
       color: @navbar-main-link-color-active;
       background-color: @navbar-main-link-bg-active;
+    }
+
+    // Brand
+    > li > a.navbar-brand:hover,
+    > li > a.navbar-brand:focus {
+      color: @navbar-main-brand-color;
+      text-decoration: none;
     }
   }
 }
@@ -611,6 +601,13 @@
 
   // Dropdown menus
 
+  // Brand: dropdown menu
+  .navbar-brand.dropdown-menu {
+    padding: 0 0 6px;
+    font-size: @font-size-base;
+    background-color: #fff;
+  }
+
   .nav {
     // Menu position and menu carets
     > li > .dropdown-menu {
@@ -649,6 +646,20 @@
     li.dropdown.open.active > .dropdown-toggle .caret {
       border-top-color: @navbar-main-link-color-active;
       border-bottom-color: @navbar-main-link-color-active;
+    }
+
+    // Brand Dropdowns
+    li.dropdown.open > .navbar-brand.dropdown-toggle,
+    li.dropdown.active > .navbar-brand.dropdown-toggle,
+    li.dropdown.open.active > .navbar-brand.dropdown-toggle {
+      background-color: @navbar-main-link-bg-active;
+      color: @navbar-main-brand-color;
+      text-decoration: none;
+    }
+
+    li.dropdown > .navbar-brand.dropdown-toggle .caret {
+      border-top-color: @navbar-main-brand-color;
+      border-bottom-color: @navbar-main-brand-color;
     }
   }
 }
@@ -720,45 +731,46 @@
 }
 
 
-.navbar-main {
-  // Dropdown menus
-  // --------------
 
-  // Brand Dropdowns
-  .nav > li > a.navbar-brand:focus,
-  .nav > li > a.navbar-brand:hover {
-    color: @navbar-main-brand-color;
-    text-decoration: none;
-  }
+//
+// Navbar alignment options - Shared
+// --------------------------------------------------
 
-  .nav li.dropdown.open > .navbar-brand.dropdown-toggle,
-  .nav li.dropdown.active > .navbar-brand.dropdown-toggle,
-  .nav li.dropdown.open.active > .navbar-brand.dropdown-toggle {
-    background-color: @navbar-main-link-bg-active;
-    color: @navbar-main-brand-color;
-    text-decoration: none;
-  }
-
-  .nav li.dropdown > .navbar-brand.dropdown-toggle .caret {
-    border-top-color: @navbar-main-brand-color;
-    border-bottom-color: @navbar-main-brand-color;
-  }
-
-
-  // Inverted navbar
-  // -------------------------
-
-  &.navbar-inverse {
-
-    // Navbar collapse button
-    .navbar-toggle {
-      .btn-states(darken(@navbar-main-inverse-link-bg-active, 5%), darken(@navbar-main-inverse-bg, 5%));
-    }
-
-  }
+// Static navbar
+.navbar-static-top {
+  border-radius: 0;
 }
 
+// Shared (top/bottom) styles
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
 
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+}
+// Fixed navbars aren't fixed to start; that comes at >768px
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top    { top: 0; }
+.navbar-fixed-bottom { bottom: 0; }
+
+
+
+//
+// Responsive
+// --------------------------------------------------
 
 // Navbar
 // --------------------------------------------------
@@ -811,48 +823,6 @@
   }
 
 }
-
-
-
-//
-// Navbar alignment options - Shared
-// --------------------------------------------------
-
-// Static navbar
-.navbar-static-top {
-  border-radius: 0;
-}
-
-// Shared (top/bottom) styles
-.navbar-fixed-top,
-.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
-
-// Fix the top/bottom navbars when screen real estate supports it
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  border-radius: 0;
-}
-// Fixed navbars aren't fixed to start; that comes at >768px
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0;
-}
-.navbar-fixed-top    { top: 0; }
-.navbar-fixed-bottom { bottom: 0; }
-
-
-
-//
-// Responsive
-// --------------------------------------------------
 
 // Masthead
 // --------------------------------------------------
