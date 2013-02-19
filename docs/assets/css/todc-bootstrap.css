@@ -651,6 +651,7 @@ select:focus:required:invalid:focus {
 
   border-color: #4d90fe;
   outline-style: none;
+  background-color: #f3f3f3;
 }
 .btn-large {
   padding: 9px 14px;
@@ -749,7 +750,8 @@ select:focus:required:invalid:focus {
 }
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary.active {
+.btn-primary.active,
+.btn-primary:focus {
   border: 1px solid #196aeb;
   color: #ffffff;
   background-color: #4186f6;
@@ -820,7 +822,8 @@ select:focus:required:invalid:focus {
 }
 .btn-danger:hover,
 .btn-danger:active,
-.btn-danger.active {
+.btn-danger.active,
+.btn-danger:focus {
   border: 1px solid #b12d26;
   color: #ffffff;
   background-color: #d24634;
@@ -891,7 +894,8 @@ select:focus:required:invalid:focus {
 }
 .btn-warning:hover,
 .btn-warning:active,
-.btn-warning.active {
+.btn-warning.active,
+.btn-warning:focus {
   border: 1px solid #f9980f;
   color: #ffffff;
   background-color: #faac3c;
@@ -962,7 +966,8 @@ select:focus:required:invalid:focus {
 }
 .btn-success:hover,
 .btn-success:active,
-.btn-success.active {
+.btn-success.active,
+.btn-success:focus {
   border: 1px solid #2e863e;
   color: #ffffff;
   background-color: #33a244;
@@ -1032,7 +1037,8 @@ select:focus:required:invalid:focus {
 }
 .btn-info:hover,
 .btn-info:active,
-.btn-info.active {
+.btn-info.active,
+.btn-info:focus {
   border: 1px solid #31b0d5;
   color: #ffffff;
   background-color: #53bddc;
@@ -1102,7 +1108,8 @@ select:focus:required:invalid:focus {
 }
 .btn-inverse:hover,
 .btn-inverse:active,
-.btn-inverse.active {
+.btn-inverse.active,
+.btn-inverse:focus {
   border: 1px solid #3a3a3a;
   color: #ffffff;
   background-color: #4b4b4b;
@@ -1599,7 +1606,6 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-inverse .btn-navbar:hover,
-.navbar-inverse .btn-navbar:focus,
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active,
 .navbar-inverse .btn-navbar.disabled,
@@ -1838,7 +1844,6 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlebar.navbar-inverse .btn-navbar:hover,
-.navbar-googlebar.navbar-inverse .btn-navbar:focus,
 .navbar-googlebar.navbar-inverse .btn-navbar:active,
 .navbar-googlebar.navbar-inverse .btn-navbar.active,
 .navbar-googlebar.navbar-inverse .btn-navbar.disabled,
@@ -2155,7 +2160,6 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlenav.navbar-inverse .btn-navbar:hover,
-.navbar-googlenav.navbar-inverse .btn-navbar:focus,
 .navbar-googlenav.navbar-inverse .btn-navbar:active,
 .navbar-googlenav.navbar-inverse .btn-navbar.active,
 .navbar-googlenav.navbar-inverse .btn-navbar.disabled,

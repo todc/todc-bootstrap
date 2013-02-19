@@ -41,7 +41,7 @@
   .reset-filter();
 
   // in these cases the gradient won't cover the background, so we override
-  &:hover, &:active, &.active {
+  &:hover, &:active, &.active, &:focus {
     border: 1px solid darken(@borderColor, 5%);
     color: @textColor;
     #gradient > .vertical(@startColor, darken(@endColor, 5%));
