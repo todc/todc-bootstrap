@@ -700,6 +700,14 @@ select:focus:required:invalid:focus {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding;
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
   background-color: #f3f3f3;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -709,6 +717,14 @@ select:focus:required:invalid:focus {
   border-color: #c6c6c6;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#fff1f1f1', GradientType=0);
   background-position: 0 0;
   -webkit-transition: none;
   -moz-transition: none;
@@ -720,27 +736,28 @@ select:focus:required:invalid:focus {
 .btn:active,
 .btn.active {
   color: #333333;
-  background-color: #e8e8e8;
-  background-color: #f1f1f1;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
 }
 .btn:active,
 .btn.active {
   border: 1px solid #dcdcdc;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f6f6f6, #f1f1f1);
+  background-image: linear-gradient(to bottom, #f6f6f6, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6f6f6', endColorstr='#fff1f1f1', GradientType=0);
+  background-color: #e8e8e8;
 }
 .btn:focus {
   /* Blue border on button focus. */
 
   border-color: #4d90fe;
   outline-style: none;
+  background-color: #f3f3f3;
 }
 .btn.disabled:hover,
 .btn[disabled]:hover,
@@ -855,6 +872,7 @@ fieldset[disabled] .btn:active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
   border: 1px solid #196aeb;
@@ -926,6 +944,7 @@ fieldset[disabled] .btn-primary:active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-danger:hover,
+.btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active {
   border: 1px solid #b12d26;
@@ -997,6 +1016,7 @@ fieldset[disabled] .btn-danger:active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-warning:hover,
+.btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active {
   border: 1px solid #f9980f;
@@ -1068,6 +1088,7 @@ fieldset[disabled] .btn-warning:active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-success:hover,
+.btn-success:focus,
 .btn-success:active,
 .btn-success.active {
   border: 1px solid #2e863e;
@@ -1138,6 +1159,7 @@ fieldset[disabled] .btn-success:active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-info:hover,
+.btn-info:focus,
 .btn-info:active,
 .btn-info.active {
   border: 1px solid #31b0d5;
