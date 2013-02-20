@@ -2426,20 +2426,6 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-vertical .btn-large:last-child {
   border-radius: 0 0 4px 4px;
 }
-.btn-group > .btn,
-.btn-group > .dropdown-menu,
-.btn-group > .popover {
-  font-size: 13px;
-}
-.btn-group > .btn-mini {
-  font-size: 11px;
-}
-.btn-group > .btn-small {
-  font-size: 12px;
-}
-.btn-group > .btn-large {
-  font-size: 14px;
-}
 .breadcrumb {
   margin: 0 0 20px;
   background-color: #f3f3f3;
