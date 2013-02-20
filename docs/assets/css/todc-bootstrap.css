@@ -1423,6 +1423,9 @@ fieldset[disabled] .btn-link:focus {
 .nav-pills > .active > a:focus {
   background-color: #4d90fe;
 }
+.nav-list .btn {
+  font-size: 11px;
+}
 .nav-list .glyphicon {
   font-weight: normal;
 }
@@ -1935,6 +1938,9 @@ fieldset[disabled] .btn-link:focus {
 .navbar-main.navbar-fixed-top,
 .navbar-main.navbar-fixed-bottom {
   z-index: 1028;
+}
+.navbar-main .btn {
+  font-size: 11px;
 }
 .navbar-main .navbar-brand,
 .navbar-main .navbar-brand .btn {
