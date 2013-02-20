@@ -2205,8 +2205,8 @@ fieldset[disabled] .btn-link:focus {
   }
   .navbar-masthead .nav > .divider {
     width: 1px;
-    height: 26.4px;
-    margin: 4px 9px;
+    height: 26px;
+    margin: 5px 9px;
     border-bottom: 0;
     border-right: 1px solid #fefefe;
   }
