@@ -81,7 +81,7 @@ section > ul li {
 
 /* Download button */
 .bs-docs-jumbotron .btn {
-  padding: 14px 24px;
+  padding: 18px 28px;
   font-size: 24px;
   font-weight: 200;
   color: #fff; /* redeclare to override the `.jumbotron a` */
