@@ -1476,9 +1476,22 @@ fieldset[disabled] .btn-link:focus {
 .nav-list-sidebar a {
   color: #222222;
 }
+.nav-list-sidebar .btn {
+  color: #333333;
+}
 .nav-list-sidebar:hover a,
 .nav-list-sidebar:hover .active > a {
   color: #1155cc;
+}
+.nav-list-sidebar:hover .btn,
+.nav-list-sidebar:focus .btn,
+.nav-list-sidebar:active .btn,
+.nav-list-sidebar.active .nav-list-sidebar .btn,
+.nav-list-sidebar:hover > .btn,
+.nav-list-sidebar:focus > .btn,
+.nav-list-sidebar:active > .btn,
+.nav-list-sidebar.active .nav-list-sidebar > .btn {
+  color: #333333;
 }
 .nav-list-sidebar li {
   margin-top: 3px;

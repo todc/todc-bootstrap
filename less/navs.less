@@ -131,9 +131,21 @@
   a {
     color: @grayDarker;
   }
+  .btn {
+    color: @btn-color;
+  }
   &:hover a,
   &:hover .active > a {
     color: @link-color;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active & {
+    .btn,
+    > .btn {
+      color: @btn-color;
+    }
   }
   li {
     margin-top: 3px;
