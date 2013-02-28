@@ -1,0 +1,206 @@
+---
+layout: example
+title: Navigation template
+---
+
+<!-- Custom styles for this template -->
+<style>
+
+  body {
+    padding-top: 140px;
+  }
+
+  .jumbotron {
+    margin-top: 20px;
+  }
+
+  .navbar-masthead {
+    top: 31px;
+  }
+
+  .navbar-main {
+    top: 76px;
+  }
+
+  .media-list {
+    padding: 1px 15px;
+  }
+</style>
+
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+    <a class="navbar-brand" href="#">Project name</a>
+    <div class="nav-collapse collapse">
+      <ul class="nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="nav-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav pull-right">
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li class="active"><a href="#">Item 3</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div>
+
+<div class="navbar navbar-masthead navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Title</a>
+    <form class="navbar-form pull-left">
+      <input type="text" class="span9" placeholder="Search">
+      <button class="btn btn-primary" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </form>
+    <ul class="nav pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div><!--/.container -->
+</div>
+
+<div class="navbar navbar-main navbar-fixed-top">
+  <div class="container">
+    <div class="btn-toolbar">
+      <div class="btn-group">
+        <a href="#" class="btn btn-danger">NEW</a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn">All</a>
+        <a href="#" class="btn">Friends</a>
+        <a href="#" class="btn">Family</a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          More <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acquantances</a></li>
+          <li><a href="#">Following</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group pull-right">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="nav-header">Nav header</li>
+          <li>
+            <a href="#">
+              <i class="glyphicon glyphicon-bookmark"></i> Bookmark
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#"><i class="glyphicon glyphicon-download"></i> Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!--/.container -->
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span2">
+      <ul class="nav nav-list">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
+
+    <div class="span7">
+      <ul class="nav nav-tabs nav-tabs-google">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li><a href="#messages" data-toggle="tab">Messages</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+          <h1>Navigation Example</h1>
+          <p>
+            This example is a quick exercise to illustrate the navigation components.
+            It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+          </p>
+          <p>
+            <a href="{{ site.baseurl }}/components/#navs" class="btn btn-large btn-primary">View navs docs »</a>
+          </p>
+          <p>
+            <a href="{{ site.baseurl }}/components/#navbar" class="btn btn-large btn-primary">View navbar docs »</a>
+          </p>
+          <p>
+            <a href="{{ site.baseurl }}/components/#navbar-masthead" class="btn btn-large btn-primary">View navbar-masthead docs »</a>
+          </p>
+          <p>
+            <a href="{{ site.baseurl }}/components/#navbar-main" class="btn btn-large btn-primary">View navbar-main docs »</a>
+          </p>
+        </div>
+
+        <div class="tab-pane" id="profile">
+          <h1>Profile tab</h1>
+        </div>
+
+        <div class="tab-pane" id="messages">
+          <h1>Messages tab</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="span3">
+      <ul class="nav nav-list nav-list-sidebar">
+        <li class="nav-header">Header</li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+
+        <li class="nav-header">Header</li>
+        <ul class="media-list">
+          <li class="media">
+            <a href="#" class="pull-left"><img class="media-object" data-src="holder.js/32x32/acs" alt=""></a>
+            <div class="media-body">
+              <header>
+                <div class="btn-group pull-right">
+                  <a class="btn" href="#">View</a>
+                  <a class="btn" href="#">×</a>
+                </div>
+                <p>
+                  <a href="#">Item 1</a>
+                  <br>
+                  <small class="muted">
+                    Some text
+                  </small>
+                </p>
+              </header>
+            </div>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div><!--/.container -->
