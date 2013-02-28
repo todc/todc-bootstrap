@@ -100,6 +100,8 @@ section > ul li {
      -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
           box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
 }
+.bs-docs-jumbotron .btn,
+.bs-docs-jumbotron .btn:hover,
 .bs-docs-jumbotron .btn:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
      -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
@@ -306,6 +308,31 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .bs-docs-example > .alert:last-child {
   margin-bottom: 0;
 }
+
+/* Typography */
+.bs-docs-example-type .table td {
+  color: #999;
+  vertical-align: middle;
+  border-color: ;
+}
+.bs-docs-example-type .table td,
+.bs-docs-example-type .table th {
+  padding: 15px 0;
+  border-color: #eee;
+}
+.bs-docs-example-type .table tr:first-child td,
+.bs-docs-example-type .table tr:first-child th {
+  border-top: 0;
+}
+.bs-docs-example-type h1,
+.bs-docs-example-type h2,
+.bs-docs-example-type h3,
+.bs-docs-example-type h4,
+.bs-docs-example-type h5,
+.bs-docs-example-type h6 {
+  margin: 0;
+}
+
 
 /* Navbar examples */
 .bs-navbar-top-example,
