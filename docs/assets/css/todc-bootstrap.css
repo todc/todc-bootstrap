@@ -6,10 +6,6 @@
  *
  * Constructed by Tim O'Donnell (http://github.com/todc)
  */
-/*@padding-large-input:     10px 14px; // 44px
-// firefox hack since it doesn't accept custom line-height for inputs and automatically sets line-height as font-size + 4 px.
-// input-large at 18 + 4 = 22, so I tried to compensate on padding.
-*/
 body {
   margin: 0;
   color: #333333;
