@@ -2531,8 +2531,8 @@ pagination > .disabled > span,
   border-top-right-radius: 2px;
 }
 .pagination .disabled a [class^="icon-"] {
-  opacity: 30;
-  filter: alpha(opacity=3000);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 .pager {
   margin: 20px 0;
@@ -2622,16 +2622,16 @@ pagination > .disabled > span,
   opacity: 0;
 }
 .modal-backdrop.fade.in {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .modal-header {
   padding: 10px 15px;
   border-bottom: 1px solid #acacac;
 }
 .modal-header .close {
-  opacity: 40;
-  filter: alpha(opacity=4000);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .modal-body {
   padding: 10px 15px;
@@ -2644,8 +2644,8 @@ pagination > .disabled > span,
   font-weight: bold;
 }
 .tooltip.in {
-  opacity: 100;
-  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .tooltip-inner {
   border-radius: 0;
