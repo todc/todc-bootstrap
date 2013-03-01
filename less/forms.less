@@ -368,6 +368,13 @@ select:focus:required:invalid {
 // Button input groups
 // -------------------------
 
+.input-group-btn > .btn {
+  // Bring the "focus" button to the front
+  &:focus {
+    z-index: 2;
+  }
+}
+
 // Prepended buttons
 .input-group-btn:first-child {
   // Round the left corners only
