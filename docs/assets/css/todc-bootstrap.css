@@ -2538,7 +2538,7 @@ fieldset[disabled] .btn-link:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-pagination > .disabled > span,
+.pagination > .disabled > span,
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
