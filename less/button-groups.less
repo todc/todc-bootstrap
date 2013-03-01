@@ -22,6 +22,11 @@
 }
 
 
+// Fix the border between the two buttons of a split button
+.btn-group > .btn + .btn {
+  margin-left: -1px;
+}
+
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   .border-left-radius(@border-radius-base);

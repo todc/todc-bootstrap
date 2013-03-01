@@ -2349,6 +2349,9 @@ fieldset[disabled] .btn-link:focus {
 .btn-toolbar > .btn-group + .btn-group {
   margin-left: 16px;
 }
+.btn-group > .btn + .btn {
+  margin-left: -1px;
+}
 .btn-group > .btn:first-child {
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
