@@ -256,6 +256,12 @@ input[type="color"]:focus,
   background-color: #fcfcfc;
   border-color: #d9d9d9;
 }
+.uneditable-input:hover,
+.uneditable-textarea:hover {
+  border-color: #d9d9d9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-appearance: none;

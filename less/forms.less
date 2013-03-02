@@ -102,6 +102,12 @@ input[type="color"],
   color: @grayLight;
   background-color: darken(@input-background, 1%);
   border-color: @input-border;
+
+  // Hover state
+  &:hover {
+    border-color: @input-border;
+    .box-shadow(none);
+  }
 }
 
 
