@@ -19,7 +19,7 @@
   // }
   .nav > li > a {
     // Vertically center the text given @navbar-height
-    padding: ((@navbar-height - @line-height-base) / 2) 15px ((@navbar-height - @line-height-base) / 2);
+    padding: (((@navbar-height - @line-height-base) / 2) + 1) 15px (((@navbar-height - @line-height-base) / 2) - 1);
     font-weight: bold;
     color: @navbar-link-color;
   }
@@ -63,7 +63,7 @@
 // Brand/project name
 .navbar-brand {
   // Vertically center the text given @navbar-height
-  padding: ((@navbar-height - @line-height-base) / 2) 20px ((@navbar-height - @line-height-base) / 2);
+  padding: ((@navbar-height - @line-height-base) / 2) 15px ((@navbar-height - @line-height-base) / 2);
   color: @navbar-brand-color;
   &:hover,
   &:focus {

@@ -1573,7 +1573,7 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 2px;
 }
 .navbar .nav > li > a {
-  padding: 4px 15px 4px;
+  padding: 5px 15px 3px;
   font-weight: bold;
   color: #999999;
 }
@@ -1599,7 +1599,7 @@ fieldset[disabled] .btn-link:focus {
   z-index: 1030;
 }
 .navbar-brand {
-  padding: 4px 20px 4px;
+  padding: 4px 15px 4px;
   color: #999999;
 }
 .navbar-brand:hover,
