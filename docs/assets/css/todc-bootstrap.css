@@ -2684,19 +2684,19 @@ fieldset[disabled] .btn-link:focus {
   filter: alpha(opacity=50);
 }
 .modal-header {
-  padding: 10px 15px;
-  border-bottom: 1px solid #acacac;
+  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
+  font-weight: normal;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 .modal-body {
-  padding: 10px 15px;
+  padding: 15px;
 }
 .modal-footer {
   margin-top: 5px;
-  border-top: 1px solid #acacac;
+  border-top: 1px solid #e5e5e5;
 }
 .tooltip {
   font-weight: bold;
