@@ -163,6 +163,11 @@
 // Vertical button groups
 // ----------------------
 
+.btn-group-vertical > .btn + .btn {
+  margin-left: 0;
+  margin-top: -1px;
+}
+
 .btn-group-vertical .btn:first-child {
   border-radius: 0; // Needs to be here for specificity since we're not zeroing them out again
   .border-top-radius(@border-radius-base);
