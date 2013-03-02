@@ -2284,7 +2284,7 @@ fieldset[disabled] .btn-link:focus {
     margin-top: 12px;
     margin-bottom: 12px;
   }
-  .navbar-masthead-inverse .nav > .divider {
+  .navbar-masthead.navbar-inverse .nav > .divider {
     border-right-color: #515151;
   }
   .navbar-masthead .navbar-toggle {
@@ -2336,7 +2336,7 @@ fieldset[disabled] .btn-link:focus {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .navbar-main-inverse .nav > .divider {
+  .navbar-main.navbar-inverse .nav > .divider {
     border-right-color: #515151;
   }
   .navbar-main .navbar-toggle {
