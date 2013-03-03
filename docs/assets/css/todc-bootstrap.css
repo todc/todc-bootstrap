@@ -1404,7 +1404,8 @@ fieldset[disabled] .btn-link:focus {
   color: #777;
   border: 1px solid transparent;
 }
-.nav-tabs-google > li > a:hover {
+.nav-tabs-google > li > a:hover,
+.nav-tabs-google > li > a:focus {
   color: #222;
   background-color: #fff;
   border-color: #fff #fff #fff;
