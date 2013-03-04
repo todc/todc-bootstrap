@@ -32,8 +32,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   min-height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: 4px 8px;
   font-size: @font-size-base;
@@ -69,8 +68,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   border: 1px solid @input-border;
   border-top-color: darken(@input-border, 10%);
   .box-shadow(none);
@@ -89,24 +87,6 @@ input[type="color"],
     border-color: @brand-primary;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
     .transition(none);
-  }
-}
-
-
-// Uneditable inputs
-// -------------------------
-
-// Make uneditable inputs look inactive
-.uneditable-input,
-.uneditable-textarea {
-  color: @grayLight;
-  background-color: darken(@input-background, 1%);
-  border-color: @input-border;
-
-  // Hover state
-  &:hover {
-    border-color: @input-border;
-    .box-shadow(none);
   }
 }
 
@@ -200,8 +180,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   &.input-large {
     padding: @padding-large;
     font-size: @font-size-large;
@@ -222,8 +201,7 @@ input[type="color"],
 
 input[class*="span"],
 select[class*="span"],
-textarea[class*="span"],
-.uneditable-input[class*="span"] {
+textarea[class*="span"] {
   height: @input-height-base;
 }
 
@@ -309,8 +287,7 @@ select:focus:required:invalid {
 // -------------------------
 .input-group-addon,
 .input-group-btn,
-.input-group input,
-.input-group .uneditable-input {
+.input-group input {
   display: table-cell;
   margin: 0;
   border-radius: 0;
@@ -343,7 +320,6 @@ select:focus:required:invalid {
 
 // Reset rounded corners
 .input-group input:first-child,
-.input-group .uneditable-input:first-child,
 .input-group-addon:first-child {
   .border-left-radius(@border-radius-base);
   &.input-small {
@@ -357,7 +333,6 @@ select:focus:required:invalid {
   border-right: 0;
 }
 .input-group input:last-child,
-.input-group .uneditable-input:last-child,
 .input-group-addon:last-child {
   .border-right-radius(@border-radius-base);
   &.input-small {

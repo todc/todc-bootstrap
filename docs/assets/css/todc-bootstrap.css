@@ -167,8 +167,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   min-height: 30px;
   padding: 4px 8px;
   font-size: 13px;
@@ -193,8 +192,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   border: 1px solid #d9d9d9;
   border-top-color: #c0c0c0;
   -webkit-box-shadow: none;
@@ -218,8 +216,7 @@ input[type="email"]:hover,
 input[type="url"]:hover,
 input[type="search"]:hover,
 input[type="tel"]:hover,
-input[type="color"]:hover,
-.uneditable-input:hover {
+input[type="color"]:hover {
   border: 1px solid #b9b9b9;
   border-top-color: #a0a0a0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -239,8 +236,7 @@ input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
+input[type="color"]:focus {
   outline: 0 \9;
   border-color: #4d90fe;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -249,18 +245,6 @@ input[type="color"]:focus,
   -moz-transition: none;
   -o-transition: none;
   transition: none;
-}
-.uneditable-input,
-.uneditable-textarea {
-  color: #999999;
-  background-color: #fcfcfc;
-  border-color: #d9d9d9;
-}
-.uneditable-input:hover,
-.uneditable-textarea:hover {
-  border-color: #d9d9d9;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -339,8 +323,7 @@ input[type="email"].input-large,
 input[type="url"].input-large,
 input[type="search"].input-large,
 input[type="tel"].input-large,
-input[type="color"].input-large,
-.uneditable-input.input-large {
+input[type="color"].input-large {
   padding: 9px 14px;
   font-size: 14px;
   border-radius: 4px;
@@ -360,8 +343,7 @@ input[type="email"].input-small,
 input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
-input[type="color"].input-small,
-.uneditable-input.input-small {
+input[type="color"].input-small {
   min-height: 24px;
   padding: 2px 8px;
   font-size: 12px;
@@ -369,8 +351,7 @@ input[type="color"].input-small,
 }
 input[class*="span"],
 select[class*="span"],
-textarea[class*="span"],
-.uneditable-input[class*="span"] {
+textarea[class*="span"] {
   height: 30px;
 }
 input[disabled],
@@ -574,22 +555,19 @@ select:focus:required:invalid:focus {
 }
 .input-group-addon,
 .input-group-btn,
-.input-group input,
-.input-group .uneditable-input {
+.input-group input {
   display: table-cell;
   margin: 0;
   border-radius: 0;
 }
 .input-group-addon.input-small,
 .input-group-btn.input-small,
-.input-group input.input-small,
-.input-group .uneditable-input.input-small {
+.input-group input.input-small {
   border-radius: 0;
 }
 .input-group-addon.input-large,
 .input-group-btn.input-large,
-.input-group input.input-large,
-.input-group .uneditable-input.input-large {
+.input-group input.input-large {
   border-radius: 0;
 }
 .input-group-addon {
@@ -609,19 +587,16 @@ select:focus:required:invalid:focus {
   font-size: 14px;
 }
 .input-group input:first-child,
-.input-group .uneditable-input:first-child,
 .input-group-addon:first-child {
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
 }
 .input-group input:first-child.input-small,
-.input-group .uneditable-input:first-child.input-small,
 .input-group-addon:first-child.input-small {
   border-bottom-left-radius: 1px;
   border-top-left-radius: 1px;
 }
 .input-group input:first-child.input-large,
-.input-group .uneditable-input:first-child.input-large,
 .input-group-addon:first-child.input-large {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
@@ -630,19 +605,16 @@ select:focus:required:invalid:focus {
   border-right: 0;
 }
 .input-group input:last-child,
-.input-group .uneditable-input:last-child,
 .input-group-addon:last-child {
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
 }
 .input-group input:last-child.input-small,
-.input-group .uneditable-input:last-child.input-small,
 .input-group-addon:last-child.input-small {
   border-bottom-right-radius: 1px;
   border-top-right-radius: 1px;
 }
 .input-group input:last-child.input-large,
-.input-group .uneditable-input:last-child.input-large,
 .input-group-addon:last-child.input-large {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
