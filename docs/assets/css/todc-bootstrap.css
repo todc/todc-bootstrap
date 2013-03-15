@@ -2708,10 +2708,16 @@ fieldset[disabled] .btn-link:focus {
   border: 1px solid #f0c36d;
   border-radius: 2px;
 }
+.alert hr {
+  border-top-color: #eeb956;
+}
 .alert-success {
   background-color: #dff0d8;
   border-color: #a3d48e;
   color: #468847;
+}
+.alert-success hr {
+  border-top-color: #93cd7c;
 }
 .alert-danger,
 .alert-error {
@@ -2719,10 +2725,17 @@ fieldset[disabled] .btn-link:focus {
   border-color: #d59595;
   color: #b94a48;
 }
+.alert-danger hr,
+.alert-error hr {
+  border-top-color: #ce8383;
+}
 .alert-info {
   background-color: #d9edf7;
   border-color: #85c5e5;
   color: #3a87ad;
+}
+.alert-info hr {
+  border-top-color: #70bbe1;
 }
 .alert-success,
 .alert-danger,
