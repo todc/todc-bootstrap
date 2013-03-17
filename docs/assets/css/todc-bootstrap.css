@@ -896,7 +896,10 @@ fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled:active,
 .btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active {
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
   border: 1px solid #3079ed;
   background-color: #4787ed;
   background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
@@ -968,7 +971,10 @@ fieldset[disabled] .btn-danger:hover,
 fieldset[disabled] .btn-danger:focus,
 .btn-danger.disabled:active,
 .btn-danger[disabled]:active,
-fieldset[disabled] .btn-danger:active {
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
   border: 1px solid #c6322a;
   background-color: #d14836;
   background-image: -moz-linear-gradient(top, #dd4b39, #d14836);
@@ -1040,7 +1046,10 @@ fieldset[disabled] .btn-warning:hover,
 fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled:active,
 .btn-warning[disabled]:active,
-fieldset[disabled] .btn-warning:active {
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
   border: 1px solid #faa328;
   background-color: #faa937;
   background-image: -moz-linear-gradient(top, #fbb450, #faa937);
@@ -1112,7 +1121,10 @@ fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
 .btn-success.disabled:active,
 .btn-success[disabled]:active,
-fieldset[disabled] .btn-success:active {
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
   border: 1px solid #359947;
   background-image: -moz-linear-gradient(top, #35aa47, #35aa47);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#35aa47), to(#35aa47));
@@ -1183,7 +1195,10 @@ fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
 .btn-info.disabled:active,
 .btn-info[disabled]:active,
-fieldset[disabled] .btn-info:active {
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
   border: 1px solid #46b8da;
   background-image: -moz-linear-gradient(top, #5bc0de, #5bc0de);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#5bc0de));

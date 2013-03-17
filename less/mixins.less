@@ -84,7 +84,8 @@
   fieldset[disabled] & {
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.active {
       border: 1px solid @borderColor;
       #gradient > .vertical(@startColor, @endColor);
       .reset-filter();
