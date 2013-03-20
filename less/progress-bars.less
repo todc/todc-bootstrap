@@ -4,5 +4,62 @@
 
 // Outer container
 .progress {
-  .border-radius(2px);
+  border: 1px solid #999;
+  padding: 1px;
+  height: 10px;
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+  .border-radius(0px);
+}
+
+.progress .bar {
+  background-color: #6188f5;
+  background-image: none;
+  .box-shadow(none);
+}
+
+// Striped bars
+.progress-striped .bar {
+  #gradient > .striped(#6188f5);
+  .background-size(40px 40px);
+}
+
+.progress .bar + .bar {
+  .box-shadow(none);
+}
+
+// COLORS
+// ------
+
+// Danger (red)
+.progress-danger .bar, .progress .bar-danger {
+  background-color: #c13e2c;
+}
+.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
+  #gradient > .striped(#ee5f5b);
+}
+
+// Success (green)
+.progress-success .bar, .progress .bar-success {
+  background-color: #2f973f;
+}
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+  #gradient > .striped(#2f973f);
+}
+
+// Info (teal)
+.progress-info .bar, .progress .bar-info {
+  background-color: #53bddc;
+}
+.progress-info.progress-striped .bar, .progress-striped .bar-info {
+  #gradient > .striped(#53bddc);
+}
+
+// Warning (orange)
+.progress-warning .bar, .progress .bar-warning {
+  background-color: lighten(@orange, 15%);
+}
+.progress-warning.progress-striped .bar, .progress-striped .bar-warning {
+  #gradient > .striped(lighten(@orange, 15%));
 }
