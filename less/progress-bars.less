@@ -8,20 +8,26 @@
 
 // Outer container
 .progress {
-  height: @line-height-base;
-  margin-bottom: @line-height-base;
-  background-color: @progress-bg;
-  border-radius: @border-radius-base;
+  border: 1px solid #999;
+  padding: 1px;
+  height: 14px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  .box-shadow(none);
 }
 
 // Bar of progress
 .progress-bar {
   background-color: @progress-bar-bg;
+  background-image: none;
+  .box-shadow(none);
 }
 
 // Striped bars
 .progress-striped .progress-bar {
   #gradient > .striped(@progress-bar-bg);
+  .background-size(40px 40px);
  }
 
 
@@ -33,7 +39,7 @@
 .progress-bar-danger {
   background-color: @progress-bar-danger-bg;
   .progress-striped & {
-    #gradient > .striped(@progress-bar-danger-bg);
+    #gradient > .striped(#ee5f5b);
   }
 }
 
