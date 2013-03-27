@@ -7,18 +7,20 @@
  * Constructed by Tim O'Donnell (http://github.com/todc)
  */
 body {
-  color: #333333;
-  background-color: #ffffff;
-}
-body,
-input,
-button,
-select,
-textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
   line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 a {
   color: #1155cc;

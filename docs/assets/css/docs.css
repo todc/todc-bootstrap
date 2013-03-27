@@ -211,13 +211,13 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .show-grid {
   margin-bottom: 15px;
 }
-.show-grid [class^="span"] {
+.show-grid [class*="col-span-"] {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #eee;
   border: 1px solid #ddd;
 }
-.show-grid [class*="span"]:hover {
+.show-grid [class*="col-span-"]:hover {
   background-color: #ddd;
 }
 
