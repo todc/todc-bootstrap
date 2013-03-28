@@ -456,6 +456,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   line-height: 1.25;
   text-align: center;
   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 -1px -1px 0;
 }
 .the-icons .glyphicon {
@@ -551,7 +553,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 .bs-docs-footer {
   text-align: center;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 100px;
   border-top: 1px solid #e5e5e5;
 }
@@ -684,6 +687,12 @@ input:required:invalid {
     padding-top: 30px; /* Default height of navbar */
   }
 
+  /* Undo custom padding */
+  .bs-docs-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* Tweak display of docs jumbotrons */
   .masthead {
     padding-top:    100px;
@@ -720,6 +729,12 @@ input:required:invalid {
 
 /* Tablets/desktops and up */
 @media screen and (min-width: 992px) {
+
+  /* Icons */
+  .the-icons li {
+    width: 12.5%;
+  }
+
   .bs-docs-sidenav {
     width: 220px;
   }
