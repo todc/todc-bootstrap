@@ -449,7 +449,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-bottom: 5px;
 }
 .bs-docs-example-submenu {
-  min-height: 180px;
+  min-height: 230px;
 }
 .bs-docs-example-submenu > .pull-left + .pull-left {
   margin-left: 20px;
