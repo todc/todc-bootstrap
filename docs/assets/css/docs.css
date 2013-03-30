@@ -13,6 +13,15 @@ body {
   /* We add the padding to the body for >768px only */
 }
 
+.bs-docs-container,
+.bs-home-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bs-docs-container {
+  max-width: 860px;
+}
+
 /*  */
 .bs-docs-footer {
   padding-left:  15px;
@@ -25,7 +34,8 @@ body {
 -------------------------------------------------- */
 
 /* Padding for in-page bookmarks */
-section {
+section,
+.bs-docs-section {
   padding-top: 30px;
 }
 
@@ -40,24 +50,19 @@ section > ul li {
 
 
 
-/* Navbar
--------------------------------------------------- */
-
-.bs-docs-navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc; /* IE8 */
-  border-bottom: 1px solid rgba(0,0,0,.1);
-}
-.bs-docs-navbar .nav > .active > a,
-.bs-docs-navbar .nav > .active > a:hover {
-  font-weight: 500;
-  background-color: transparent;
-}
-
-
-
 /* Jumbotrons
 -------------------------------------------------- */
+
+.bs-docs-section-header {
+  padding-top: 60px;
+  color: #8a8a8a;
+}
+.bs-docs-section-header h1 {
+  font-size: 80px;
+  font-size: 8rem;
+  line-height: 1;
+  color: #dd4b39;
+}
 
 /* Base class */
 .bs-docs-jumbotron {
@@ -226,51 +231,84 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Sidenav
 -------------------------------------------------- */
 
-/* Base styles are not affixable given mobile-first */
-.bs-docs-sidenav {
-  margin: 20px 0 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.bs-docs-sidenav > li > a {
-  display: block;
-  width: 190px \9;
-  margin: 0 0 -1px;
-  padding: 8px 14px !important;
-  border: 1px solid #e5e5e5 !important;
-}
-.bs-docs-sidenav > .active {
-  border-left: 3px solid #DD4B39;
-}
-.bs-docs-sidenav > .active > a {
-  position: relative;
-  z-index: 2;
-  padding: 8px 14px 8px 12px !important;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  border-left: 0 !important;
-}
-.bs-docs-sidenav.affix {
-  position: static;
+.bs-docs-sidebar {
+  display: none;
+  position: fixed;
   top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background-color: #f5f5f5;
+  overflow-y: scroll;
+  text-shadow: 0 1px 0 #fff;
+  box-shadow: inset -1px 0 0 #e5e5e5;
 }
 
-/* Chevrons within each link */
-.bs-docs-sidenav .glyphicon-chevron-right {
-  float: right;
-  margin-top: 1px;
-  margin-right: -6px;
-  opacity: .25;
-  color: #000;
+/* Nav: first level */
+.bs-docs-sidebar > .nav {
+  margin: 0 0 25px;
 }
-.bs-docs-sidenav a:hover .glyphicon-chevron-right {
-  opacity: .5;
+.bs-docs-sidebar .nav > li > a {
+  display: block;
+  color: #666;
+  padding: 4px 25px;
 }
-.bs-docs-sidenav .active .glyphicon-chevron-right,
-.bs-docs-sidenav .active a:hover .glyphicon-chevron-right {
-  color: #000;
-  opacity: .25;
-  font-weight: normal;
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  border-right: 1px solid #d5d5d5;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+  font-weight: 500;
+  color: #dd4b39;
+  background-color: transparent;
+  border-right: 1px solid #dd4b39;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+  display: none;
+  margin-bottom: 5px;
+}
+.bs-docs-sidebar .nav > .active > ul {
+  display: block;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 40px;
+  font-size: 90%;
+}
+
+.bs-docs-sidenav-heading {
+  margin: 0 0 25px;
+}
+.bs-docs-sidenav-heading a {
+  display: block;
+  padding: 15px 25px;
+  color: #dd4b39;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 0 #fff;
+}
+.bs-docs-sidenav-heading a:hover {
+  color: #ac2d1e;
+  text-decoration: none;
+}
+
+/* Section headings for groups of links */
+.bs-docs-sidenav > li > .nav-header {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.bs-docs-sidenav > .active > .nav-header,
+.bs-docs-sidenav > .active > .nav-header:hover {
+  color: #333;
+  border-color: #333;
 }
 
 
@@ -428,7 +466,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 .bs-docs-examples h4 {
   margin-bottom: 5px;
-  background-color: #f9f9f9;
 }
 .bs-docs-examples p {
   margin-bottom: 20px;
@@ -683,14 +720,20 @@ input:required:invalid {
 @media screen and (min-width: 768px) {
 
   /* Account for fixed navbar (which is static to start) */
-  body {
-    padding-top: 30px; /* Default height of navbar */
+  .bs-docs-docs {
+    padding-left: 260px;
   }
 
   /* Undo custom padding */
-  .bs-docs-container {
+  .bs-docs-container,
+  .bs-home-container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  /* Show the docs nav */
+  .bs-docs-sidebar {
+    display: block;
   }
 
   /* Tweak display of docs jumbotrons */
@@ -712,37 +755,26 @@ input:required:invalid {
     text-align: left;
   }
 
-  /* From here, start to affix the nav because we keep columns here */
-  .bs-docs-sidenav.affix {
-    position: fixed;
-    top: 54px;
-  }
-  .bs-docs-sidenav {
-    width: 170px;
-  }
-  .bs-docs-sidenav.affix-bottom {
-    position: absolute;
-    top: auto;
-    bottom: 270px;
-  }
 }
 
 /* Tablets/desktops and up */
 @media screen and (min-width: 992px) {
+
+  .bs-docs-docs {
+    padding-left: 280px;
+  }
 
   /* Icons */
   .the-icons li {
     width: 12.5%;
   }
 
-  .bs-docs-sidenav {
-    width: 220px;
-  }
 }
 
 /* Large desktops and up */
 @media screen and (min-width: 1200px) {
-  .bs-docs-sidenav {
-    width: 260px;
+  .bs-docs-docs {
+    padding-left: 300px;
   }
+
 }
