@@ -28,6 +28,26 @@ body {
   padding-right: 15px;
 }
 
+/* Back to top link */
+.bs-docs-top {
+  float: left;
+  padding: 7px 15px;
+  font-weight: 500;
+  color: #999;
+  background-color: #eee;
+  border-radius: 4px;
+}
+.bs-docs-top:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #999;
+}
+.bs-docs-top.affix {
+  position: fixed;
+  right:  15px;
+  bottom: 15px;
+}
+
 
 
 /* Sections
@@ -358,7 +378,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .bs-docs-example > textarea:last-child,
 .bs-docs-example > .table:last-child,
 .bs-docs-example > .jumbotron:last-child,
-.bs-docs-example > .alert:last-child {
+.bs-docs-example > .alert:last-child,
+.bs-docs-example > .panel:last-child,
+.bs-docs-example > .list-group:last-child,
+.bs-docs-example > .well:last-child {
   margin-bottom: 0;
 }
 
@@ -386,6 +409,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin: 0;
 }
 
+/* List groups */
+.bs-docs-example > .list-group {
+  max-width: 400px;
+}
 
 /* Navbar examples */
 .bs-navbar-top-example,

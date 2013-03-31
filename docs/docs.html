@@ -3,7 +3,6 @@ layout: default
 title: Bootstrap Documentation
 ---
 
-
 <div class="bs-docs-container">
 
   <!-- Welcome
@@ -2525,7 +2524,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
     <h4>Navigation</h4>
     <div class="bs-docs-example">
-      <ul class="nav nav-list">
+      <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-book"></span> Library</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Applications</a></li>
@@ -2533,7 +2532,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       </ul>
     </div><!-- /bs-docs-example -->
 {% highlight html linenos %}
-<ul class="nav nav-list">
+<ul class="nav nav-pills nav-stacked">
   <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
   <li><a href="#"><span class="glyphicon glyphicon-book"></span> Library</a></li>
   <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Applications</a></li>
@@ -3112,7 +3111,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </ul>
 {% endhighlight %}
 
-    <h3>Basic Google tabs</h3>
+    <h3 id="nav-tabs-google">Basic Google tabs</h3>
     <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs .nav-tabs-google</code>:</p>
     <div class="bs-docs-example">
       <ul class="nav nav-tabs nav-tabs-google">
@@ -3623,7 +3622,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     </div>
 
 
-    <h2>Basic Masthead</h2>
+    <h2 id="navbar-masthead-basic">Basic Masthead</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
@@ -3670,7 +3669,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
 
-    <h3>Nav links</h3>
+    <h3 id="navbar-masthead-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
@@ -3713,7 +3712,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </ul>
 {% endhighlight %}
 
-    <h3>Forms</h3>
+    <h3 id="navbar-masthead-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
@@ -3786,7 +3785,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <h2>Optional display variations</h2>
     <p>Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, <code>.navbar</code>.</p>
 
-    <h3>Fixed to top</h3>
+    <h3 id="navbar-masthead-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 46px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-docs-example bs-navbar-top-example">
       <div class="navbar navbar-masthead navbar-fixed-top" style="position: absolute; top: -1px;">
@@ -3806,7 +3805,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div>
 {% endhighlight %}
 
-    <h3>Fixed to bottom</h3>
+    <h3 id="navbar-masthead-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-docs-example bs-navbar-bottom-example">
       <div class="navbar navbar-masthead navbar-fixed-bottom" style="position: absolute; bottom: -1px;">
@@ -3826,7 +3825,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div>
 {% endhighlight %}
 
-    <h3>Static top navbar</h3>
+    <h3 id="navbar-masthead-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-docs-example bs-navbar-top-example">
       <div class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
@@ -3847,7 +3846,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% endhighlight %}
 
 
-    <h2>Responsive navbar</h2>
+    <h2 id="navbar-masthead-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
@@ -3983,15 +3982,15 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   </div>
 
 
-        <!-- Main Navbar
-        ================================================== -->
+  <!-- Main Navbar
+  ================================================== -->
   <div class="bs-docs-section" id="navbar-main">
     <div class="page-header">
       <h1>Main Navbar <small></small></h1>
     </div>
 
 
-    <h2>Basic Main Navbar</h2>
+    <h2 id="navbar-main-basic">Basic Main Navbar</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
@@ -4015,7 +4014,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% endhighlight %}
 
 
-    <h2 id="main-navbar-toolbar">Toolbar</h2>
+    <h2 id="navbar-main-toolbar">Toolbar</h2>
     <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
@@ -4117,7 +4116,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
 
-    <h3>Nav links</h3>
+    <h3 id="navbar-main-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
@@ -4159,7 +4158,7 @@ ul class="nav navbar-main">
 </ul>
 {% endhighlight %}
 
-    <h3>Forms</h3>
+    <h3 id="navbar-main-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
@@ -4248,7 +4247,7 @@ ul class="nav navbar-main">
     <h2>Optional display variations</h2>
     <p>Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, <code>.navbar</code>.</p>
 
-    <h3>Fixed to top</h3>
+    <h3 id="navbar-main-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 38px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-docs-example bs-navbar-top-example">
       <div class="navbar navbar-main navbar-fixed-top" style="position: absolute; top: -1px;">
@@ -4268,7 +4267,7 @@ ul class="nav navbar-main">
 </div>
 {% endhighlight %}
 
-    <h3>Fixed to bottom</h3>
+    <h3 id="navbar-main-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-docs-example bs-navbar-bottom-example">
       <div class="navbar navbar-main navbar-fixed-bottom" style="position: absolute; bottom: -1px;">
@@ -4288,7 +4287,7 @@ ul class="nav navbar-main">
 </div>
 {% endhighlight %}
 
-    <h3>Static top navbar</h3>
+    <h3 id="navbar-main-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-docs-example bs-navbar-top-example">
       <div class="navbar navbar-main navbar-static-top" style="margin: -1px -1px 0;">
@@ -4309,7 +4308,7 @@ ul class="nav navbar-main">
 {% endhighlight %}
 
 
-    <h2>Responsive navbar</h2>
+    <h2 id="navbar-main-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
@@ -4755,7 +4754,7 @@ ul class="nav navbar-main">
         <li><a href="#">Messages <span class="badge">3</span></a></li>
       </ul>
       <br>
-      <ul class="nav nav-list" style="max-width: 260px;">
+      <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
         <li class="active">
           <a href="#">
             <span class="badge pull-right">42</span>
@@ -5265,6 +5264,288 @@ ul class="nav navbar-main">
   </li>
 </ul>
 {% endhighlight %}
+  </div>
+
+
+
+
+
+  <!-- List group
+  ================================================== -->
+  <div class="bs-docs-section" id="list-group">
+    <div class="page-header">
+      <h1>List group</h1>
+    </div>
+    <p class="lead">List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+
+    <h3 id="list-group-basic">Basic list group</h3>
+    <p>The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.</p>
+    <div class="bs-docs-example">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+{% highlight html linenos %}
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+{% endhighlight %}
+
+    <h3 id="list-group-chevrons">With chevrons</h3>
+    <p>Adding Glyphicon chevrons are automatically moved to the right.</p>
+    <div class="bs-docs-example">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          Cras justo odio
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          Dapibus ac facilisis in
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          Morbi leo risus
+        </li>
+      </ul>
+    </div>
+{% highlight html linenos %}
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    Cras justo odio
+  </li>
+</ul>
+{% endhighlight %}
+
+    <h3 id="list-group-badges">With badges</h3>
+    <p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+    <div class="bs-docs-example">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">14</span>
+          Cras justo odio
+        </li>
+        <li class="list-group-item">
+          <span class="badge">2</span>
+          Dapibus ac facilisis in
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1</span>
+          Morbi leo risus
+        </li>
+      </ul>
+    </div>
+{% highlight html linenos %}
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">14</span>
+    Cras justo odio
+  </li>
+</ul>
+{% endhighlight %}
+
+    <h3 id="list-group-badges-chevrons">With badges and chevrons</h3>
+    <p>Why not both?</p>
+    <div class="bs-docs-example">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="badge">14</span>
+          Cras justo odio
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="badge">2</span>
+          Dapibus ac facilisis in
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="badge">1</span>
+          Morbi leo risus
+        </li>
+      </ul>
+    </div>
+{% highlight html linenos %}
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="badge">14</span>
+    Cras justo odio
+  </li>
+</ul>
+{% endhighlight %}
+
+    <h3 id="list-group-linked">Linked list group</h3>
+    <p>Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>. No need for individual parents around each element.</p>
+    <div class="bs-docs-example">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          Cras justo odio
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a href="#" class="list-group-item">Morbi leo risus
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a href="#" class="list-group-item">Vestibulum at eros
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  <a href="#" class="list-group-item">Morbi leo risus
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  <a href="#" class="list-group-item">Vestibulum at eros
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+{% endhighlight %}
+
+    <h3 id="list-group-custom-content">Custom content</h3>
+    <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
+    <div class="bs-docs-example">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">...</p>
+  </a>
+</div>
+{% endhighlight %}
+  </div>
+
+
+
+
+  <!-- Panels
+  ================================================== -->
+  <div class="bs-docs-section" id="panels">
+    <div class="page-header">
+      <h1>Panels</h1>
+    </div>
+    <p class="lead">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.</p>
+
+    <h3 id="panels-basic">Basic panel</h3>
+    <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+    <div class="bs-docs-example">
+      <div class="panel">
+        Basic panel example
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="panel">
+  Basic panel example
+</div>
+{% endhighlight %}
+
+    <h3 id="panels-heading">Panel with heading</h3>
+    <p>Easily add a heading to your panel with <code>.panel-heading</code>. Use it on a <code>&lt;div&gt;</code> or any heading element (e.g., <code>&lt;h3&gt;</code>).</p>
+    <div class="bs-docs-example">
+      <div class="panel">
+        <div class="panel-heading">Panel heading</div>
+        Panel content
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="panel">
+  <div class="panel-heading">Panel heading</div>
+  Panel content
+</div>
+{% endhighlight %}
+
+    <h3 id="panels-alternatives">Contextual alternatives</h3>
+    <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+    <div class="bs-docs-example">
+      <div class="panel panel-success">
+        <div class="panel-heading">Panel heading</div>
+        Panel content
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">Panel heading</div>
+        Panel content
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">Panel heading</div>
+        Panel content
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">Panel heading</div>
+        Panel content
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="panel panel-success">...</div>
+<div class="panel panel-warning">...</div>
+<div class="panel panel-danger">...</div>
+<div class="panel panel-info">...</div>
+{% endhighlight %}
+
+    <h3 id="panels-list-group">With list groups</h3>
+    <p>Easily include full-width <a href="./docs/#list-group">list groups</a> within any panel.</p>
+    <div class="bs-docs-example">
+      <div class="panel">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+{% highlight html linenos %}
+<div class="panel">
+  <div class="panel-heading">Panel heading</div>
+  Panel content
+</div>
+{% endhighlight %}
+
   </div>
 
 
@@ -7135,3 +7416,7 @@ $('[data-spy="affix"]').each(function () {
         </section>
 
 </div><!-- /.container -->
+
+<a href="#welcome" class="bs-docs-top">
+  Back to top
+</a>
