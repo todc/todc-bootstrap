@@ -1333,7 +1333,49 @@ fieldset[disabled] .btn-link:focus {
   border-bottom-left-radius: 0;
 }
 .panel {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.panel-heading {
+  background-color: rgba(243, 243, 243, 0.85);
+  border-bottom: 1px solid #e5e5e5;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.panel-success {
+  border-color: #a3d48e;
+}
+.panel-success .panel-heading {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #a3d48e;
+}
+.panel-warning {
+  border-color: #f0c36d;
+}
+.panel-warning .panel-heading {
+  color: #333333;
+  background-color: #f9edbe;
+  border-color: #f0c36d;
+}
+.panel-danger {
+  border-color: #d59595;
+}
+.panel-danger .panel-heading {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #d59595;
+}
+.panel-info {
+  border-color: #85c5e5;
+}
+.panel-info .panel-heading {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #85c5e5;
 }
 .well {
   background-color: #f1f1f1;
