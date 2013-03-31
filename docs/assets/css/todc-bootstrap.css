@@ -9,7 +9,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  font-size: 1.3rem;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -35,7 +34,7 @@ a:focus {
 code,
 pre {
   padding: 0 3px 2px;
-  font-size: 12;
+  font-size: 12px;
   color: #333333;
   border-radius: 0;
 }
@@ -49,7 +48,7 @@ code {
 pre {
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 12;
+  font-size: 12px;
   line-height: 20px;
   border-radius: 0;
 }
@@ -157,7 +156,7 @@ table {
 }
 legend {
   margin-bottom: 20px;
-  font-size: 19.5;
+  font-size: 19.5px;
   line-height: 40px;
   color: #333333;
 }
@@ -179,7 +178,7 @@ input[type="tel"],
 input[type="color"] {
   min-height: 30px;
   padding: 4px 8px;
-  font-size: 13;
+  font-size: 13px;
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 1px;
@@ -334,7 +333,7 @@ input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
   padding: 9px 14px;
-  font-size: 14;
+  font-size: 14px;
   border-radius: 4px;
 }
 select.input-small,
@@ -355,7 +354,7 @@ input[type="tel"].input-small,
 input[type="color"].input-small {
   min-height: 24px;
   padding: 2px 8px;
-  font-size: 12;
+  font-size: 12px;
   border-radius: 1px;
 }
 input[class*="span"],
@@ -581,7 +580,7 @@ select:focus:required:invalid:focus {
 }
 .input-group-addon {
   padding: 4px 8px;
-  font-size: 13;
+  font-size: 13px;
   line-height: 20px;
   background-color: #eeeeee;
   border: 1px solid #d9d9d9;
@@ -589,11 +588,11 @@ select:focus:required:invalid:focus {
 }
 .input-group-addon.input-small {
   padding: 2px 8px;
-  font-size: 12;
+  font-size: 12px;
 }
 .input-group-addon.input-large {
   padding: 9px 14px;
-  font-size: 14;
+  font-size: 14px;
 }
 .input-group input:first-child,
 .input-group-addon:first-child {
@@ -680,7 +679,7 @@ select:focus:required:invalid:focus {
   margin: 0;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13;
+  font-size: 13px;
   font-weight: bold;
   line-height: 20px;
   cursor: default;
@@ -775,17 +774,17 @@ fieldset[disabled] .btn:active {
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 14;
+  font-size: 14px;
   border-radius: 2px;
 }
 .btn-small {
   padding: 2px 8px;
-  font-size: 12;
+  font-size: 12px;
   border-radius: 2px;
 }
 .btn-mini {
   padding: 1px 6px;
-  font-size: 11;
+  font-size: 11px;
   border-radius: 2px;
 }
 .btn .glyphicon {
@@ -1323,15 +1322,6 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 0;
   margin-left: 18px;
 }
-.list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.list-group-item:last-child {
-  margin-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
 .panel {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
@@ -1340,6 +1330,7 @@ fieldset[disabled] .btn-link:focus {
   box-shadow: none;
 }
 .panel-heading {
+  font-size: 16.25px;
   background-color: rgba(243, 243, 243, 0.85);
   border-bottom: 1px solid #e5e5e5;
   border-top-left-radius: 0;
@@ -1590,7 +1581,7 @@ fieldset[disabled] .btn-link:focus {
   display: none;
   padding: 0 0 6px;
   margin: 1px 0 0 -15px;
-  font-size: 13;
+  font-size: 13px;
   text-align: left;
   background-color: #fff;
 }
@@ -1954,7 +1945,7 @@ fieldset[disabled] .btn-link:focus {
   z-index: 1028;
 }
 .navbar-main .btn {
-  font-size: 11;
+  font-size: 11px;
 }
 .navbar-main .navbar-brand,
 .navbar-main .navbar-brand .btn {
@@ -2002,7 +1993,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .navbar-main .navbar-brand.dropdown-menu {
   padding: 0 0 6px;
-  font-size: 13;
+  font-size: 13px;
   background-color: #fff;
 }
 .navbar-main .nav > li > .dropdown-menu {

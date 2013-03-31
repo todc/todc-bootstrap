@@ -45,7 +45,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          13;
+@font-size-base:          13px;
 @font-size-large:         (@font-size-base + 1); // 14px
 @font-size-small:         (@font-size-base - 1); // 12px
 @font-size-mini:          (@font-size-base - 2); // 11px
@@ -56,7 +56,7 @@
 @headings-font-weight:    bold;
 
 
-// Component sizing
+// Components
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
@@ -67,6 +67,8 @@
 @border-radius-base:      2px;
 @border-radius-large:     4px;
 @border-radius-small:     1px;
+
+@component-active-bg:            @brand-primary;
 
 
 // Tables
@@ -416,9 +418,9 @@
 @list-group-border:           #ddd;
 @list-group-border-radius:    0;
 
-@list-group-hover-bg:         #f5f5f5;
-@list-group-active-text:      #fff;
-@list-group-active-bg:        @link-color;
+@list-group-hover-bg:         @grayLighter;
+@list-group-active-text:      #dd4b39;
+@list-group-active-bg:        transparent;
 @list-group-active-border:    @list-group-active-bg;
 
 // Panels
