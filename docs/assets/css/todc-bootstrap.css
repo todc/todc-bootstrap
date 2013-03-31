@@ -1541,6 +1541,11 @@ fieldset[disabled] .btn-link:focus {
   color: #555555;
   background-color: transparent;
 }
+.navbar input[class*="span"],
+.navbar select[class*="span"],
+.navbar textarea[class*="span"] {
+  height: 26px;
+}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   z-index: 1030;
