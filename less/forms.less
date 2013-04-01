@@ -36,7 +36,7 @@ input[type="color"] {
   min-height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: 4px 8px;
   font-size: @font-size-base;
-  background-color: @input-background;
+  background-color: @input-bg;
   border: 1px solid @input-border;
   border-radius: @input-border-radius;
 }
@@ -221,7 +221,7 @@ textarea {
   &[readonly],
   fieldset[disabled] & {
     cursor: not-allowed;
-    background-color: @input-background-disabled;
+    background-color: @input-bg-disabled;
     border: 1px solid #e5e5e5;
     &:hover,
     &:focus,
@@ -253,15 +253,15 @@ textarea {
 
 // Warning
 .has-warning {
-  .formFieldState(@state-warning-text, @state-warning-text, @state-warning-background);
+  .formFieldState(@state-warning-text, @state-warning-text, @state-warning-bg);
 }
 // Error
 .has-error {
-  .formFieldState(#dd4b39, #dd4b39, @state-danger-background);
+  .formFieldState(#dd4b39, #dd4b39, @state-danger-bg);
 }
 // Success
 .has-success {
-  .formFieldState(@state-success-text, @state-success-text, @state-success-background);
+  .formFieldState(@state-success-text, @state-success-text, @state-success-bg);
 }
 
 // HTML5 invalid states

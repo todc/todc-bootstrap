@@ -28,14 +28,14 @@
 // Scaffolding
 // -------------------------
 
-@body-background:       #fff;
+@body-bg:               #fff;
 @text-color:            @grayDark;
 
 // Links
 // -------------------------
 
 @link-color:            #15c;
-@link-color-hover:      #15c;
+@link-hover-color:      #15c;
 
 // Typography
 // -------------------------
@@ -74,9 +74,9 @@
 // Tables
 // -------------------------
 
-@table-background:                   transparent; // overall background-color
-@table-background-accent:            #f9f9f9; // for striping
-@table-background-hover:             #ffffcc; // for hover
+@table-bg:                           transparent; // overall background-color
+@table-bg-accent:                    #f9f9f9; // for striping
+@table-bg-hover:                     #ffffcc; // for hover
 
 @table-border:                       #ddd; // table and cell border
 
@@ -84,36 +84,35 @@
 // Buttons
 // -------------------------
 
-@btn-color:                          #333;
-@btn-background:                     #f3f3f3;
-@btn-border:                         #dcdcdc;
+@btn-color:                      #333;
+@btn-bg:                         #f3f3f3;
+@btn-border:                     #dcdcdc;
 
-@btn-background-primary:             @brand-primary;
-@btn-border-primary:                 #3079ed;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             #3079ed;
 
-@btn-background-success:             @brand-success;
-@btn-border-success:                 #359947;
+@btn-bg-success:                 @brand-success;
+@btn-success-border:             #359947;
 
-@btn-background-warning:             @brand-warning;
-@btn-border-warning:                 darken(@btn-background-warning, 3%);
+@btn-bg-warning:                 @brand-warning;
+@btn-warning-border:             darken(@btn-bg-warning, 3%);
 
-@btn-background-danger:              @brand-danger;
-@btn-border-danger:                  #c6322a;
+@btn-bg-danger:                  @brand-danger;
+@btn-danger-border:              #c6322a;
 
-@btn-background-info:                @brand-info;
-@btn-border-info:                    darken(@btn-background-info, 5%);
+@btn-bg-info:                    @brand-info;
+@btn-info-border:                darken(@btn-bg-info, 5%);
 
 
 
 // Forms
 // -------------------------
 
-@input-background:               #fff;
-@input-background-disabled:      #f1f1f1;
+@input-bg:                       #fff;
+@input-bg-disabled:              #f1f1f1;
 
 @input-border:                   #d9d9d9;
 @input-border-radius:            @border-radius-small;
-@input-border-radius-search:     20px;
 
 @input-color-placeholder:        @grayLight;
 
@@ -121,26 +120,23 @@
 @input-height-large:             (@line-height-base + 20px); // base line-height + 18px vertical padding + 2px top/bottom border
 @input-height-small:             (@line-height-base + 4px);  // base line-height + 2px vertical padding + 2px top/bottom border
 
-// adjust min-height on input sizes
-
-
-@form-actions-background:        #f5f5f5;
+@form-actions-bg:                #f5f5f5;
 
 
 // Dropdowns
 // -------------------------
 
-@dropdown-background:            #fff;
+@dropdown-bg:                    #fff;
 @dropdown-border:                rgba(0,0,0,.2);
 @dropdown-divider-top:           #ebebeb;
 @dropdown-divider-bottom:        #fff;
 
 @dropdown-link-color:            @grayDark;
-@dropdown-link-color-hover:      @grayDark;
-@dropdown-link-color-active:     @dropdown-link-color;
+@dropdown-link-hover-color:      @grayDark;
+@dropdown-link-hover-bg:         @grayLighter;
 
-@dropdown-link-background-active:  @link-color;
-@dropdown-link-background-hover:   @grayLighter;
+@dropdown-link-active-color:     @dropdown-link-color;
+@dropdown-link-active-bg:        @component-active-bg;
 
 
 
@@ -172,10 +168,6 @@
 // Navbar
 // -------------------------
 
-// Responsive collapsing
-// @navbar-collapse-width:            979px;
-// @navbar-collapse-width-desktop:    @navbar-collapse-width + 1;
-
 // Basics of a navbar
 @navbar-height:                    28px; // Total height - 30px Google.com. 24px other Google sites
 @navbar-text:                      @grayLight;
@@ -184,17 +176,17 @@
 
 // Navbar brand label
 @navbar-brand-color:               @navbar-link-color;
-@navbar-brand-color-hover:         #fff;
-@navbar-brand-bg-hover:            transparent;
+@navbar-brand-hover-color:         #fff;
+@navbar-brand-hover-bg:            transparent;
 
 // Navbar links
 @navbar-link-color:                @grayLight;
-@navbar-link-color-hover:          #fff;
-@navbar-link-bg-hover:             transparent;
-@navbar-link-color-active:         @navbar-link-color-hover;
-@navbar-link-bg-active:            darken(@navbar-bg, 10%);
-@navbar-link-color-disabled:       #555;
-@navbar-link-bg-disabled:          transparent;
+@navbar-link-hover-color:          #fff;
+@navbar-link-hover-bg:             transparent;
+@navbar-link-active-color:         @navbar-link-hover-color;
+@navbar-link-active-bg:            darken(@navbar-bg, 10%);
+@navbar-link-disabled-color:       #555;
+@navbar-link-disabled-bg:          transparent;
 
 // Inverted navbar
 @navbar-inverse-text:              @grayLight;
@@ -203,33 +195,29 @@
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-color-hover:          darken(@navbar-inverse-link-color, 10%);
-@navbar-inverse-brand-bg-hover:             transparent;
+@navbar-inverse-brand-hover-color:          darken(@navbar-inverse-link-color, 10%);
+@navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 @grayLight;
-@navbar-inverse-link-color-hover:           @grayDark;
-@navbar-inverse-link-bg-hover:              transparent;
-@navbar-inverse-link-color-active:          @navbar-inverse-link-color-hover;
-@navbar-inverse-link-bg-active:             darken(@navbar-inverse-bg, 10%);
-// @navbar-inverse-link-bg-active:            @navbar-inverse-bg;
-@navbar-inverse-link-color-disabled:        #ccc;
-@navbar-inverse-link-bg-disabled:           transparent;
+@navbar-inverse-link-hover-color:           @grayDark;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+// @navbar-inverse-link-active-bg:            @navbar-inverse-bg;
+@navbar-inverse-link-disabled-color:        #ccc;
+@navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar search
 // Normal navbar needs no special styles or vars
-@navbar-inverse-search-background:          lighten(@navbar-inverse-bg, 25%);
-@navbar-inverse-search-background-focus:    #fff;
+@navbar-inverse-search-bg:                  lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-search-bg-focus:            #fff;
 @navbar-inverse-search-border:              @navbar-inverse-bg;
 @navbar-inverse-search-placeholder-color:   #ccc;
 
 
 // Masthead
 // -------------------------
-
-// Responsive collapsing
-// @navbarGoogleBarCollapseWidth:             979px;
-// @navbarGoogleBarCollapseDesktopWidth:      @navbarGoogleBarCollapseWidth + 1;
 
 // Basics of a masthead
 @navbar-masthead-height:                    44px; // 75px for Google Developer. 44px for Google news. 48px for youtube
@@ -239,9 +227,9 @@
 
 // Masthead brand label
 @navbar-masthead-brand-color:               @navbar-masthead-link-color;
-@navbar-masthead-brand-color-hover:         @navbar-masthead-link-color;
-@navbar-masthead-brand-bg-hover:            transparent;
-
+@navbar-masthead-brand-hover-color:         @navbar-masthead-link-color;
+@navbar-masthead-brand-hover-bg:            transparent;
+// FIXME: remame to match navbar - same for navbar-main
 // Masthead links
 @navbar-masthead-link-color:                #777;
 @navbar-masthead-link-color-hover:          @grayDark;
@@ -280,10 +268,6 @@
 
 // Navbar Main
 // -------------------------
-
-// Responsive collapsing
-// @navbarGoogleNavCollapseWidth:             979px;
-// @navbarGoogleNavCollapseDesktopWidth:      @navbarGoogleNavCollapseWidth + 1;
 
 // Basics of a navbar-main
 @navbar-main-height:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
@@ -333,20 +317,18 @@
 @navbar-main-inverse-search-placeholder-color:  #ccc;
 
 
-
-
 // Pagination
 // -------------------------
 
-@pagination-background:                @btn-background;
-@pagination-background-active:         #f5f5f5;
+@pagination-bg:                        @btn-bg;
 @pagination-border:                    #dcdcdc;
+@pagination-active-bg:                 #f5f5f5;
 
 
 // Jumbotron
 // -------------------------
 
-@jumbotron-background:           @grayLighter;
+@jumbotron-bg:                   @grayLighter;
 @jumbotron-heading-color:        inherit;
 @jumbotron-lead-color:           inherit;
 
@@ -355,33 +337,33 @@
 // -------------------------
 
 @state-warning-text:             #333;
-@state-warning-background:       #f9edbe;
+@state-warning-bg:               #f9edbe;
 @state-warning-border:           #f0c36d;
 
-@state-danger-text:               #b94a48;
-@state-danger-background:         #f2dede;
-@state-danger-border:             darken(@state-danger-background, 20%);
+@state-danger-text:              #b94a48;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(@state-danger-bg, 20%);
 
 @state-success-text:             #468847;
-@state-success-background:       #dff0d8;
-@state-success-border:           darken(@state-success-background, 20%);
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(@state-success-bg, 20%);
 
 @state-info-text:                #3a87ad;
-@state-info-background:          #d9edf7;
-@state-info-border:              darken(@state-info-background, 20%);
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(@state-info-bg, 20%);
 
 
 // Tooltips and popovers
 // -------------------------
 @tooltip-color:               #fff;
-@tooltip-background:          #2a2a2a;
+@tooltip-bg:                  #2a2a2a;
 @tooltip-arrow-width:         5px;
-@tooltip-arrow-color:         @tooltip-background;
+@tooltip-arrow-color:         @tooltip-bg;
 
-@popover-background:          #fff;
+@popover-bg:                  #fff;
 @popover-arrow-width:         10px;
 @popover-arrow-color:         #fff;
-@popover-title-background:    darken(@popover-background, 3%);
+@popover-title-bg:            darken(@popover-bg, 3%);
 
 // Special enhancement for popovers
 @popover-arrow-outer-width:   (@popover-arrow-width + 1);
@@ -390,10 +372,10 @@
 
 // Labels
 // -------------------------
-@label-success-background:    @brand-success;
-@label-info-background:       @brand-info;
-@label-warning-background:    @brand-warning;
-@label-danger-background:     @brand-danger;
+@label-success-bg:            @brand-success;
+@label-info-bg:               @brand-info;
+@label-warning-bg:            @brand-warning;
+@label-danger-bg:             @brand-danger;
 
 
 // Modals
@@ -430,26 +412,30 @@
 @panel-border-radius:         0;
 @panel-heading-bg:            rgba(243,243,243,.85);
 
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
 @panel-success-text:          @state-success-text;
 @panel-success-border:        @state-success-border;
-@panel-success-heading-bg:    @state-success-background;
+@panel-success-heading-bg:    @state-success-bg;
 
 @panel-warning-text:          @state-warning-text;
 @panel-warning-border:        @state-warning-border;
-@panel-warning-heading-bg:    @state-warning-background;
+@panel-warning-heading-bg:    @state-warning-bg;
 
 @panel-danger-text:           @state-danger-text;
 @panel-danger-border:         @state-danger-border;
-@panel-danger-heading-bg:     @state-danger-background;
+@panel-danger-heading-bg:     @state-danger-bg;
 
 @panel-info-text:             @state-info-text;
 @panel-info-border:           @state-info-border;
-@panel-info-heading-bg:       @state-info-background;
+@panel-info-heading-bg:       @state-info-bg;
 
 
 // Wells
 // -------------------------
-@well-background:             #f1f1f1;
+@well-bg:             #f1f1f1;
 
 
 // Miscellaneous
@@ -468,6 +454,9 @@
 // Grid system
 // --------------------------------------------------
 
+// Number of columns in the grid system
 @grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
 @grid-gutter-width:         30px;
+// Point at which the navbar stops collapsing
 @grid-float-breakpoint:     768px;

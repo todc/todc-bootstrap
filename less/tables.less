@@ -4,7 +4,7 @@
 
 
 table {
-  background-color: @table-background;
+  background-color: @table-bg;
 }
 
 
@@ -26,7 +26,7 @@ table {
 
   // Nesting
   .table {
-    background-color: @body-background;
+    background-color: @body-bg;
   }
 }
 
@@ -97,7 +97,7 @@ table {
   > tbody {
     > tr:nth-child(odd) > td,
     > tr:nth-child(odd) > th {
-      background-color: @table-background-accent;
+      background-color: @table-bg-accent;
     }
   }
 }
@@ -111,7 +111,7 @@ table {
   > tbody {
     > tr:hover > td,
     > tr:hover > th {
-      background-color: @table-background-hover;
+      background-color: @table-bg-hover;
     }
   }
 }
@@ -126,17 +126,17 @@ table {
   > td.success,
   > th.success,
   &.success > td {
-    background-color: @state-success-background;
+    background-color: @state-success-bg;
   }
   > td.danger,
   > th.danger,
   &.danger > td {
-    background-color: @state-danger-background;
+    background-color: @state-danger-bg;
   }
   > td.warning,
   > th.warning,
   &.warning > td {
-    background-color: @state-warning-background;
+    background-color: @state-warning-bg;
   }
 }
 
@@ -145,16 +145,16 @@ table {
   > td.success:hover,
   > th.success:hover,
   &.success:hover > td {
-    background-color: darken(@state-success-background, 5%);
+    background-color: darken(@state-success-bg, 5%);
   }
   > td.danger:hover,
   > th.danger:hover,
   &.danger:hover > td {
-    background-color: darken(@state-danger-background, 5%);
+    background-color: darken(@state-danger-bg, 5%);
   }
   > td.warning:hover,
   > th.warning:hover,
   &.warning:hover > td {
-    background-color: darken(@state-warning-background, 5%);
+    background-color: darken(@state-warning-bg, 5%);
   }
 }

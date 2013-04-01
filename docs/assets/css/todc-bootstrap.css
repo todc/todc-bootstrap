@@ -1263,7 +1263,7 @@ fieldset[disabled] .btn-link:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .dropdown-menu .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #ebebeb;
@@ -1335,6 +1335,14 @@ fieldset[disabled] .btn-link:focus {
   border-bottom: 1px solid #e5e5e5;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.panel-primary {
+  border-color: #4d90fe;
+}
+.panel-primary .panel-heading {
+  color: #ffffff;
+  background-color: #4d90fe;
+  border-color: #4d90fe;
 }
 .panel-success {
   border-color: #a3d48e;
@@ -1572,7 +1580,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .navbar .nav > .divider {
   height: 28px;
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #202020;
@@ -1758,7 +1766,7 @@ fieldset[disabled] .btn-link:focus {
   border: 1px solid #dcdcdc;
 }
 .navbar-masthead .nav > .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e4e4e4;
@@ -1982,7 +1990,7 @@ fieldset[disabled] .btn-link:focus {
   border: 1px solid #dcdcdc;
 }
 .navbar-main .nav > .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #f2f2f2;

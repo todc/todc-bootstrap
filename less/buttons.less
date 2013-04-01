@@ -22,7 +22,7 @@
   white-space: nowrap;
   .background-clip(padding);
   #gradient > .vertical(#f5f5f5, #f1f1f1);
-  background-color: @btn-background;
+  background-color: @btn-bg;
   .box-shadow(none);
 
   &:hover {
@@ -53,7 +53,7 @@
     /* Blue border on button focus. */
     border-color: @brand-primary;
     outline-style: none;
-    background-color: @btn-background;
+    background-color: @btn-bg;
   }
 
   // Disabled state
@@ -64,7 +64,7 @@
     &:focus,
     &:active {
       border: 1px solid @btn-border;
-      background-color: @btn-background;
+      background-color: @btn-bg;
       #gradient > .vertical(#f5f5f5, #f1f1f1);
       .box-shadow(none);
       text-shadow: none;
@@ -176,7 +176,7 @@
 // Primary Button
 // -------------------------
 .btn-primary {
-  .btn-states(@brand-primary, #4787ed, #fff, @btn-border-primary);
+  .btn-states(@brand-primary, #4787ed, #fff, @btn-primary-border);
 }
 
 // Danger Button
@@ -188,19 +188,19 @@
 // Warning Button
 // -------------------------
 .btn-warning {
-  .btn-states(lighten(@brand-warning, 5%), @brand-warning, #fff, @btn-border-warning);
+  .btn-states(lighten(@brand-warning, 5%), @brand-warning, #fff, @btn-warning-border);
 }
 
 // Success Button
 // -------------------------
 .btn-success {
-  .btn-states(@brand-success, @brand-success, #fff, @btn-border-success);
+  .btn-states(@brand-success, @brand-success, #fff, @btn-success-border);
 }
 
 // Info Button
 // -------------------------
 .btn-info {
-  .btn-states(@btn-background-info, @btn-background-info, #fff, @btn-border-info);
+  .btn-states(@btn-bg-info, @btn-bg-info, #fff, @btn-info-border);
 }
 
 
@@ -227,7 +227,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: @link-color-hover;
+  color: @link-hover-color;
   background-color: transparent;
   background-image: none;
   .box-shadow(none);

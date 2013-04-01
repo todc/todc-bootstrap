@@ -426,7 +426,6 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 20px;
-  text-rendering: optimizelegibility;
 }
 
 h1 small,
@@ -758,29 +757,29 @@ pre code {
   clear: both;
 }
 
-.row {
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row .row {
   margin-right: -15px;
   margin-left: -15px;
-}
-
-.row:before,
-.row:after {
-  display: table;
-  content: " ";
-}
-
-.row:after {
-  clear: both;
-}
-
-.row:before,
-.row:after {
-  display: table;
-  content: " ";
-}
-
-.row:after {
-  clear: both;
 }
 
 [class*="col-span-"] {
@@ -2789,7 +2788,7 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .dropdown-menu .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3034,6 +3033,16 @@ a.list-group-item.active .list-group-item-text {
   border-top-left-radius: 3px;
 }
 
+.panel-primary {
+  border-color: #428bca;
+}
+
+.panel-primary .panel-heading {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
 .panel-success {
   border-color: #d6e9c6;
 }
@@ -3251,7 +3260,7 @@ button.close {
 }
 
 .nav-justified {
-  max-height: 40px;
+  width: 100%;
 }
 
 .nav-justified > li {
@@ -3259,6 +3268,22 @@ button.close {
   float: none;
   width: 1%;
   text-align: center;
+}
+
+.nav-justified.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-justified.nav-tabs > li > a {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-justified.nav-tabs > .active > a {
+  border-bottom-color: #ffffff;
+}
+
+.nav-justified > li > a {
+  margin-right: 0;
 }
 
 .nav > .disabled > a {
@@ -3289,7 +3314,7 @@ button.close {
 }
 
 .nav .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3350,8 +3375,8 @@ button.close {
   margin-top: 8px;
 }
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: @link-color-hover;
-  border-bottom-color: @link-color-hover;
+  border-top-color: @link-hover-color;
+  border-bottom-color: @link-hover-color;
 }
 
 // Active dropdown links
@@ -3522,7 +3547,7 @@ button.close {
 }
 
 .navbar .nav > .divider {
-  height: 1px;
+  height: 2px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e1e1e1;
@@ -3735,7 +3760,7 @@ button.close {
 .navbar-link {
   color: @navbar-link-color;
   &:hover {
-    color: @navbar-link-color-hover;
+    color: @navbar-link-hover-color;
   }
 }
 
@@ -4120,8 +4145,8 @@ button.close {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   border-radius: 15px;
 }
 
@@ -4399,9 +4424,9 @@ button.close {
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-bg-clip: padding-box;
+     -moz-bg-clip: padding;
 }
 
 .popover.top {
@@ -5120,6 +5145,10 @@ a.list-group-item.active > .badge,
   padding-bottom: 20px;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .btn {
+  text-shadow: none;
 }
 
 @media screen and (min-width: 768px) {

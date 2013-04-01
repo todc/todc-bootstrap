@@ -8,7 +8,7 @@
 .dropdown-menu {
   padding: 0 0 6px 0;
   margin: 1px 0 0; // override default ul
-  background-color: @dropdown-background;
+  background-color: @dropdown-bg;
   border: 1px solid @dropdown-border;
   border-radius: 0;
   .box-shadow(0 2px 4px @dropdown-border);
@@ -38,8 +38,8 @@
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: @dropdown-link-color-hover;
-  #gradient > .vertical(@dropdown-link-background-hover, @dropdown-link-background-hover);
+  color: @dropdown-link-hover-color;
+  #gradient > .vertical(@dropdown-link-hover-bg, @dropdown-link-hover-bg);
 }
 
 // Active state
@@ -47,8 +47,8 @@
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: @dropdown-link-color-active;
-  #gradient > .vertical(@dropdown-link-background-hover, @dropdown-link-background-hover);
+  color: @dropdown-link-active-color;
+  #gradient > .vertical(@dropdown-link-hover-bg, @dropdown-link-hover-bg);
 }
 
 // Sub menus
@@ -65,7 +65,7 @@
 
 // Caret to indicate there is a submenu
 .dropdown-submenu > a:after {
-  border-left-color: darken(@dropdown-background, 50%);
+  border-left-color: darken(@dropdown-bg, 50%);
   margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
