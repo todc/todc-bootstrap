@@ -296,23 +296,23 @@
     > li > a:focus,
     > li > a:hover {
       text-decoration: none;
-      background-color: @navbar-masthead-link-bg-hover; // "transparent" is default to differentiate :hover from .active
-      color: @navbar-masthead-link-color-hover;
+      background-color: @navbar-masthead-link-hover-bg; // "transparent" is default to differentiate :hover from .active
+      color: @navbar-masthead-link-hover-color;
     }
 
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
       .box-shadow(none);
-      color: @navbar-masthead-link-color-active;
+      color: @navbar-masthead-link-active-color;
       text-decoration: none;
-      #gradient > .vertical(@navbar-masthead-link-bg-active, @navbar-masthead-link-bg-active);
+      #gradient > .vertical(@navbar-masthead-link-active-bg, @navbar-masthead-link-active-bg);
     }
     > .disabled > a,
     > .disabled > a:hover,
     > .disabled > a:focus {
-      color: @navbar-masthead-link-color-disabled;
-      background-color: @navbar-masthead-link-bg-disabled;
+      color: @navbar-masthead-link-disabled-color;
+      background-color: @navbar-masthead-link-disabled-bg;
     }
   }
 }
@@ -378,8 +378,8 @@
     // Caret should match text color on hover
     li.dropdown > a:hover .caret,
     li.dropdown > a:focus .caret {
-      border-top-color: @navbar-masthead-link-color-hover;
-      border-bottom-color: @navbar-masthead-link-color-hover;
+      border-top-color: @navbar-masthead-link-hover-color;
+      border-bottom-color: @navbar-masthead-link-hover-color;
     }
 
     // Remove background color from open dropdown
@@ -387,7 +387,7 @@
     li.dropdown.active > .dropdown-toggle,
     li.dropdown.open.active > .dropdown-toggle {
       background-color: darken(@navbar-masthead-bg, 4.7%); // #e5e5e5
-      color: @navbar-masthead-link-color-active;
+      color: @navbar-masthead-link-active-color;
     }
     li.dropdown > .dropdown-toggle .caret {
       border-top-color: @navbar-masthead-link-color;
@@ -396,8 +396,8 @@
     li.dropdown.open > .dropdown-toggle .caret,
     li.dropdown.active > .dropdown-toggle .caret,
     li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbar-masthead-link-color-active;
-      border-bottom-color: @navbar-masthead-link-color-active;
+      border-top-color: @navbar-masthead-link-active-color;
+      border-bottom-color: @navbar-masthead-link-active-color;
     }
   }
 }
@@ -417,8 +417,8 @@
       color: @navbar-masthead-inverse-link-color;
       &:hover,
       &:focus {
-        color: @navbar-masthead-inverse-brand-color-hover;
-        background-color: @navbar-masthead-inverse-brand-bg-hover;
+        color: @navbar-masthead-inverse-brand-hover-color;
+        background-color: @navbar-masthead-inverse-brand-hover-bg;
       }
     }
 
@@ -427,28 +427,28 @@
       color: @navbar-masthead-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbar-masthead-inverse-link-color-hover;
+        color: @navbar-masthead-inverse-link-hover-color;
       }
     }
 
     .nav {
       > li > a:hover,
       > li > a:focus {
-        color: @navbar-masthead-inverse-link-color-hover;
-        background-color: @navbar-masthead-inverse-link-bg-hover;
+        color: @navbar-masthead-inverse-link-hover-color;
+        background-color: @navbar-masthead-inverse-link-hover-bg;
       }
 
       > .active > a,
       > .active > a:hover,
       > .active > a:focus {
-        color: @navbar-masthead-inverse-link-color-active;
-        #gradient > .vertical(@navbar-masthead-inverse-link-bg-active, @navbar-masthead-inverse-link-bg-active);
+        color: @navbar-masthead-inverse-link-active-color;
+        #gradient > .vertical(@navbar-masthead-inverse-link-active-bg, @navbar-masthead-inverse-link-active-bg);
       }
       > .disabled > a,
       > .disabled > a:hover,
       > .disabled > a:focus {
-        color: @navbar-masthead-inverse-link-color-disabled;
-        background-color: @navbar-masthead-inverse-link-bg-disabled;
+        color: @navbar-masthead-inverse-link-disabled-color;
+        background-color: @navbar-masthead-inverse-link-disabled-bg;
       }
 
       // Darken dividers
@@ -461,8 +461,8 @@
       li.dropdown.open > .dropdown-toggle,
       li.dropdown.active > .dropdown-toggle,
       li.dropdown.open.active > .dropdown-toggle {
-        background-color: @navbar-masthead-inverse-link-bg-active;
-        color: @navbar-masthead-inverse-link-color-active;
+        background-color: @navbar-masthead-inverse-link-active-bg;
+        color: @navbar-masthead-inverse-link-active-color;
       }
       li.dropdown > .dropdown-toggle .caret {
         border-top-color: @navbar-masthead-inverse-link-color;
@@ -471,8 +471,8 @@
       li.dropdown.open > .dropdown-toggle .caret,
       li.dropdown.active > .dropdown-toggle .caret,
       li.dropdown.open.active > .dropdown-toggle .caret {
-        border-top-color: @navbar-masthead-inverse-link-color-active;
-        border-bottom-color: @navbar-masthead-inverse-link-color-active;
+        border-top-color: @navbar-masthead-inverse-link-active-color;
+        border-bottom-color: @navbar-masthead-inverse-link-active-color;
       }
     }
   }
@@ -542,7 +542,7 @@
 
     > li > a:hover,
     > li > a:focus {
-      color: @navbar-main-link-color-hover;
+      color: @navbar-main-link-hover-color;
       text-decoration: underline;
       background-color: transparent;
     }
@@ -551,15 +551,15 @@
     > .active > a:hover,
     > .active > a:focus {
       .box-shadow(none);
-      color: @navbar-main-link-color-active;
-      background-color: @navbar-main-link-bg-active;
+      color: @navbar-main-link-active-color;
+      background-color: @navbar-main-link-active-bg;
     }
     > .disabled > a,
     > .disabled > a:hover,
     > .disabled > a:focus {
-      color: @navbar-main-link-color-disabled;
+      color: @navbar-main-link-disabled-color;
       text-decoration: none;
-      background-color: @navbar-main-link-bg-disabled;
+      background-color: @navbar-main-link-disabled-bg;
     }
 
     // Brand
@@ -608,9 +608,9 @@
     text-shadow: none;
     &:hover,
     &:focus {
-      color: @navbar-main-brand-color-hover;
+      color: @navbar-main-brand-hover-color;
       text-decoration: none;
-      background-color: @navbar-main-brand-bg-hover;
+      background-color: @navbar-main-brand-hover-bg;
     }
   }
 
@@ -666,8 +666,8 @@
     // Caret should match text color on hover
     li.dropdown > a:hover .caret,
     li.dropdown > a:focus .caret {
-      border-top-color: @navbar-main-link-color-hover;
-      border-bottom-color: @navbar-main-link-color-hover;
+      border-top-color: @navbar-main-link-hover-color;
+      border-bottom-color: @navbar-main-link-hover-color;
     }
 
     // Remove background color from open dropdown
@@ -675,7 +675,7 @@
     li.dropdown.active > .dropdown-toggle,
     li.dropdown.open.active > .dropdown-toggle {
       background-color: darken(@navbar-main-bg, 4.7%); // #e5e5e5
-      color: @navbar-main-link-color-active;
+      color: @navbar-main-link-active-color;
     }
     li.dropdown > .dropdown-toggle .caret {
       border-top-color: @navbar-main-link-color;
@@ -684,15 +684,15 @@
     li.dropdown.open > .dropdown-toggle .caret,
     li.dropdown.active > .dropdown-toggle .caret,
     li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbar-main-link-color-active;
-      border-bottom-color: @navbar-main-link-color-active;
+      border-top-color: @navbar-main-link-active-color;
+      border-bottom-color: @navbar-main-link-active-color;
     }
 
     // Brand Dropdowns
     li.dropdown.open > .navbar-brand.dropdown-toggle,
     li.dropdown.active > .navbar-brand.dropdown-toggle,
     li.dropdown.open.active > .navbar-brand.dropdown-toggle {
-      background-color: @navbar-main-link-bg-active;
+      background-color: @navbar-main-link-active-bg;
       color: @navbar-main-brand-color;
       text-decoration: none;
     }
@@ -721,23 +721,23 @@
       color: @navbar-main-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbar-main-inverse-link-color-hover;
+        color: @navbar-main-inverse-link-hover-color;
       }
     }
 
     .nav {
       > li > a:hover,
       > li > a:focus {
-        color: @navbar-main-inverse-link-color-hover;
-        background-color: @navbar-main-inverse-link-bg-hover;
+        color: @navbar-main-inverse-link-hover-color;
+        background-color: @navbar-main-inverse-link-hover-bg;
       }
 
       > .active > a,
       > .active > a:hover,
       > .active > a:focus {
         font-weight: bold;
-        color: @navbar-main-inverse-link-color-active;
-        #gradient > .vertical(@navbar-main-inverse-link-bg-active, @navbar-main-inverse-link-bg-active);
+        color: @navbar-main-inverse-link-active-color;
+        #gradient > .vertical(@navbar-main-inverse-link-active-bg, @navbar-main-inverse-link-active-bg);
       }
       > .active > a:hover {
         text-decoration: underline;
@@ -745,8 +745,8 @@
       > .disabled > a,
       > .disabled > a:hover,
       > .disabled > a:focus {
-        color: @navbar-main-inverse-link-color-disabled;
-        background-color: @navbar-main-inverse-link-bg-disabled;
+        color: @navbar-main-inverse-link-disabled-color;
+        background-color: @navbar-main-inverse-link-disabled-bg;
       }
 
       // Darken dividers
@@ -759,8 +759,8 @@
       li.dropdown.open > .dropdown-toggle,
       li.dropdown.active > .dropdown-toggle,
       li.dropdown.open.active > .dropdown-toggle {
-        background-color: @navbar-main-inverse-link-bg-active;
-        color: @navbar-main-inverse-link-color-active;
+        background-color: @navbar-main-inverse-link-active-bg;
+        color: @navbar-main-inverse-link-active-color;
       }
       li.dropdown > .dropdown-toggle .caret {
         border-top-color: @navbar-main-inverse-link-color;
@@ -769,8 +769,8 @@
       li.dropdown.open > .dropdown-toggle .caret,
       li.dropdown.active > .dropdown-toggle .caret,
       li.dropdown.open.active > .dropdown-toggle .caret {
-        border-top-color: @navbar-main-inverse-link-color-active;
-        border-bottom-color: @navbar-main-inverse-link-color-active;
+        border-top-color: @navbar-main-inverse-link-active-color;
+        border-bottom-color: @navbar-main-inverse-link-active-color;
       }
     }
   }
