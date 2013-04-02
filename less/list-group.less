@@ -94,8 +94,64 @@ li.list-group-item.active > a {
 // Sidebar list group
 // -------------------------
 
-// .list-group-sidebar {
-// }
+.list-group-sidebar {
+  .transition(color 0.218s ease 0s);
+  a {
+    color: @grayDarker;
+  }
+  .btn {
+    color: @btn-color;
+  }
+  &:hover a,
+  &:hover .active > a,
+  &:hover li.list-group-item.active > a {
+    color: @link-color;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active & {
+    .btn,
+    > .btn {
+      color: @btn-color;
+    }
+  }
+  li {
+    margin-top: 3px;
+  }
+  li.list-group-item.active > a,
+  li.list-group-item.active > a:hover,
+  li.list-group-item.active > a:focus {
+    padding-left: 15px;
+    font-weight: bold;
+    color: @grayDarker;
+    border-left: 0 none;
+  }
+  li.list-group-item.active > a:hover,
+  li.list-group-item > a:hover,
+  li.list-group-item > a:active,
+  li.list-group-item > a:focus {
+    color: @link-color;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .nav-header {
+    margin-bottom: 5px;
+    color: #808080;
+    // border-bottom: 1px solid #E9E9E9;
+    position: relative;
+    overflow: hidden;
+    &:after {
+      border-bottom: 1px solid #E9E9E9;
+      content: '';
+      margin-left: 10px;
+      margin-top: 10px;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
 
 
 

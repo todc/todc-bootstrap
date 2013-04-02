@@ -1393,6 +1393,66 @@ li.list-group-item.active > a {
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
 }
+.list-group-sidebar {
+  -webkit-transition: color 0.218s ease 0s;
+  -moz-transition: color 0.218s ease 0s;
+  -o-transition: color 0.218s ease 0s;
+  transition: color 0.218s ease 0s;
+}
+.list-group-sidebar a {
+  color: #222222;
+}
+.list-group-sidebar .btn {
+  color: #333333;
+}
+.list-group-sidebar:hover a,
+.list-group-sidebar:hover .active > a,
+.list-group-sidebar:hover li.list-group-item.active > a {
+  color: #1155cc;
+}
+.list-group-sidebar:hover .btn,
+.list-group-sidebar:focus .btn,
+.list-group-sidebar:active .btn,
+.list-group-sidebar.active .list-group-sidebar .btn,
+.list-group-sidebar:hover > .btn,
+.list-group-sidebar:focus > .btn,
+.list-group-sidebar:active > .btn,
+.list-group-sidebar.active .list-group-sidebar > .btn {
+  color: #333333;
+}
+.list-group-sidebar li {
+  margin-top: 3px;
+}
+.list-group-sidebar li.list-group-item.active > a,
+.list-group-sidebar li.list-group-item.active > a:hover,
+.list-group-sidebar li.list-group-item.active > a:focus {
+  padding-left: 15px;
+  font-weight: bold;
+  color: #222222;
+  border-left: 0 none;
+}
+.list-group-sidebar li.list-group-item.active > a:hover,
+.list-group-sidebar li.list-group-item > a:hover,
+.list-group-sidebar li.list-group-item > a:active,
+.list-group-sidebar li.list-group-item > a:focus {
+  color: #1155cc;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.list-group-sidebar .nav-header {
+  margin-bottom: 5px;
+  color: #808080;
+  position: relative;
+  overflow: hidden;
+}
+.list-group-sidebar .nav-header:after {
+  border-bottom: 1px solid #E9E9E9;
+  content: '';
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+}
 .panel {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
