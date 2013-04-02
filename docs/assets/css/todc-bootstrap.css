@@ -1338,30 +1338,60 @@ fieldset[disabled] .btn-link:focus {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-a.list-group-item {
+a.list-group-item,
+li.list-group-item > a {
   color: #222222;
 }
+li.list-group-item {
+  padding: 1px 30px 1px 15px;
+  border: 0 none;
+}
+li.list-group-item > a {
+  display: block;
+  padding: 0 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 a.list-group-item:hover,
-a.list-group-item:focus {
+a.list-group-item:focus,
+li.list-group-item > a:hover,
+li.list-group-item > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-a.list-group-item.active {
+a.list-group-item.active,
+li.list-group-item.active > a {
   font-weight: bold;
   color: #dd4b39;
   background-color: transparent;
   border-color: #e5e5e5;
   border-left: 3px solid #dd4b39;
 }
-a.list-group-item.active:hover {
+a.list-group-item.active:hover,
+li.list-group-item.active > a:hover {
   background-color: #eeeeee;
 }
-a.list-group-item.active .list-group-item-heading {
+a.list-group-item.active .list-group-item-heading,
+li.list-group-item.active > a .list-group-item-heading {
   color: inherit;
 }
-a.list-group-item.active .list-group-item-text {
+a.list-group-item.active .list-group-item-text,
+li.list-group-item.active > a .list-group-item-text {
   color: #888888;
   font-weight: normal;
+}
+li.list-group-item.active > a {
+  padding-left: 12px;
+}
+.list-group li + .nav-header {
+  margin-top: 9px;
+}
+.list-group li + .divider {
+  height: 2px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ffffff;
 }
 .panel {
   background-color: #ffffff;

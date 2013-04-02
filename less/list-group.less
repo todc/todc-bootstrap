@@ -29,21 +29,36 @@
 // Linked list items
 // -------------------------
 
-a.list-group-item {
+a.list-group-item,
+li.list-group-item > a {
   color: @grayDarker;
+}
+
+li.list-group-item {
+  padding: 1px 30px 1px 15px;
+  border: 0 none;
+  > a {
+    display: block;
+    padding: 0 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 // Custom content within linked items
 
 // Hover state
 a.list-group-item:hover,
-a.list-group-item:focus {
+a.list-group-item:focus,
+li.list-group-item > a:hover,
+li.list-group-item > a:focus {
   text-decoration: none;
   background-color: @list-group-hover-bg;
 }
 
 // Active class on item itself, not parent
-a.list-group-item.active {
+a.list-group-item.active,
+li.list-group-item.active > a {
   font-weight: bold;
   color: @list-group-active-text;
   background-color: @list-group-active-bg;
@@ -62,6 +77,18 @@ a.list-group-item.active {
     color: lighten(@grayDarker, 40%);
     font-weight: normal;
   }
+}
+
+li.list-group-item.active > a {
+  padding-left: 12px;
+}
+
+.list-group li + .nav-header {
+  margin-top: 9px;
+}
+
+.list-group li + .divider {
+  .nav-divider(@dropdown-divider-top, @dropdown-divider-bottom);
 }
 
 // Sidebar list group

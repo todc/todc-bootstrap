@@ -5455,6 +5455,35 @@ ul class="nav navbar-main">
 </div>
 {% endhighlight %}
 
+    <h4 id="list-group-linked-li">Linked list group using list items</h4>
+    <p>Linkify list group items by using list items instead of anchor tags.</p>
+    <div class="bs-docs-example">
+      <ul class="list-group">
+        <li class="nav-header">List header</li>
+        <li class="list-group-item active"><a href="#">Home</a></li>
+        <li class="list-group-item"><a href="#">Library</a></li>
+        <li class="list-group-item"><a href="#">Applications</a></li>
+        <li class="nav-header">Another list header</li>
+        <li class="list-group-item"><a href="#">Profile</a></li>
+        <li class="list-group-item"><a href="#">Settings</a></li>
+        <li class="divider"></li>
+        <li class="list-group-item"><a href="#">Help</a></li>
+      </ul>
+    </div>
+{% highlight html linenos %}
+<ul class="list-group">
+  <li class="nav-header">List header</li>
+  <li class="list-group-item active"><a href="#">Home</a></li>
+  <li class="list-group-item"><a href="#">Library</a></li>
+  <li class="list-group-item"><a href="#">Applications</a></li>
+  <li class="nav-header">Another list header</li>
+  <li class="list-group-item"><a href="#">Profile</a></li>
+  <li class="list-group-item"><a href="#">Settings</a></li>
+  <li class="divider"></li>
+  <li class="list-group-item"><a href="#">Help</a></li>
+</ul>
+{% endhighlight %}
+
     <h3 id="list-group-custom-content">Custom content</h3>
     <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
     <div class="bs-docs-example">
