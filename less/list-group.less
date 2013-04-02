@@ -5,60 +5,64 @@
 // Base class
 //
 // Easily usable on <ul>, <ol>, or <div>.
+.list-group {
+  // No need to set list-style: none; since .list-group-item is block level
+  background-color: @list-group-bg;
+}
 
 // Individual list items
 // -------------------------
 
-// .list-group-item {
-//   color: @grayDarker;
-//   border: 0 none;
-// }
-// // Round the first and last items
-// .list-group-item:first-child {
-//   .border-top-radius(@list-group-border-radius);
-// }
-// .list-group-item:last-child {
-//   margin-bottom: 0;
-//   .border-bottom-radius(@list-group-border-radius);
-// }
+.list-group-item {
+  color: @grayDarker;
+  border: 1px solid @list-group-border;
+}
+// Round the first and last items
+.list-group-item:first-child {
+  .border-top-radius(@list-group-border-radius);
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  .border-bottom-radius(@list-group-border-radius);
+}
 
-// // Linked list items
-// // -------------------------
+// Linked list items
+// -------------------------
 
-// a.list-group-item {
-//   color: @grayDarker;
-// }
+a.list-group-item {
+  color: @grayDarker;
+}
 
-// // Custom content within linked items
+// Custom content within linked items
 
-// // Hover state
-// a.list-group-item:hover,
-// a.list-group-item:focus {
-//   text-decoration: none;
-//   background-color: @list-group-hover-bg;
-// }
+// Hover state
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: @list-group-hover-bg;
+}
 
-// // Active class on item itself, not parent
-// a.list-group-item.active {
-//   font-weight: bold;
-//   color: @list-group-active-text;
-//   background-color: @list-group-active-bg;
-//   border-color: @list-group-active-border;
-//   // border-left: 3px solid #dd4b39;
+// Active class on item itself, not parent
+a.list-group-item.active {
+  font-weight: bold;
+  color: @list-group-active-text;
+  background-color: @list-group-active-bg;
+  border-color: @list-group-active-border;
+  border-left: 3px solid @list-group-active-text;
 
-//   &:hover {
-//     background-color: @list-group-hover-bg;
-//   }
+  &:hover {
+    background-color: @list-group-hover-bg;
+  }
 
-//   // Force color to inherit for custom content
-//   .list-group-item-heading {
-//     color: inherit;
-//   }
-//   .list-group-item-text {
-//     color: lighten(@grayDarker, 40%);
-//     font-weight: normal;
-//   }
-// }
+  // Force color to inherit for custom content
+  .list-group-item-heading {
+    color: inherit;
+  }
+  .list-group-item-text {
+    color: lighten(@grayDarker, 40%);
+    font-weight: normal;
+  }
+}
 
 // Sidebar list group
 // -------------------------

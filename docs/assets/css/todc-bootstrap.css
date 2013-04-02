@@ -1322,6 +1322,47 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 0;
   margin-left: 18px;
 }
+.list-group {
+  background-color: #ffffff;
+}
+.list-group-item {
+  color: #222222;
+  border: 1px solid #e5e5e5;
+}
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+a.list-group-item {
+  color: #222222;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+a.list-group-item.active {
+  font-weight: bold;
+  color: #dd4b39;
+  background-color: transparent;
+  border-color: #e5e5e5;
+  border-left: 3px solid #dd4b39;
+}
+a.list-group-item.active:hover {
+  background-color: #eeeeee;
+}
+a.list-group-item.active .list-group-item-heading {
+  color: inherit;
+}
+a.list-group-item.active .list-group-item-text {
+  color: #888888;
+  font-weight: normal;
+}
 .panel {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
