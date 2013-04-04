@@ -1383,6 +1383,17 @@ li.list-group-item.active > a .list-group-item-text {
 li.list-group-item.active > a {
   padding-left: 12px;
 }
+li.list-group-item a > .badge,
+li.list-group-item a > .glyphicon-chevron-right {
+  float: right;
+  margin-right: -15px;
+}
+li.list-group-item a > .glyphicon-chevron-right {
+  margin-right: -15px;
+}
+li.list-group-item a > .glyphicon + .badge {
+  margin-right: 5px;
+}
 .list-group-header {
   display: block;
   padding: 10px 30px 10px 15px;
@@ -2878,6 +2889,15 @@ a.thumbnail:focus {
 }
 .label-info[href] {
   background-color: #31b0d5;
+}
+a.list-group-item.active > .badge,
+li.list-group-item.active a > .badge {
+  color: #fff;
+  background-color: #dd4b39;
+}
+.nav-pills > .active > a > .badge {
+  color: #1155cc;
+  background-color: #fff;
 }
 .progress {
   border: 1px solid #999;
