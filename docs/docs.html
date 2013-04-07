@@ -1489,7 +1489,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <p>Use the default option or specify a <code>multiple="multiple"</code> to show multiple options at once.</p>
     <p><a href="http://todc.github.com/todc-select2" target="_blank">todc-select2</a> is used for Google-themed rendering of select menus.</p>
     <form class="bs-docs-example">
-      <select class="g-select">
+      <select>
         <option value="Apple">Apple</option>
         <option value="Banana">Banana</option>
         <option value="Orange">Orange</option>
@@ -1497,7 +1497,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
         <option value="Peach">Peach</option>
       </select>
       <br>
-      <select multiple="multiple" class="g-select">
+      <select multiple="multiple">
         <option value="Apple">Apple</option>
         <option value="Banana">Banana</option>
         <option value="Orange">Orange</option>
@@ -1506,7 +1506,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       </select>
     </form>
 {% highlight html linenos %}
-<select class="g-select">
+<select>
   <option value="Apple">Apple</option>
   <option value="Banana">Banana</option>
   <option value="Orange">Orange</option>
@@ -1514,7 +1514,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   <option value="Peach">Peach</option>
 </select>
 
-<select multiple="multiple" class="g-select">
+<select multiple="multiple">
   <option value="Apple">Apple</option>
   <option value="Banana">Banana</option>
   <option value="Orange">Orange</option>
@@ -1564,7 +1564,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
           <input type="text" class="col-span-4" placeholder="Disabled input">
         </div>
         <div>
-          <select class="g-select col-span-4">
+          <select class="col-span-4">
             <option>Disabled select</option>
           </select>
         </div>
@@ -1583,7 +1583,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <input type="text" class="col-span-4" placeholder="Disabled input">
     </div>
     <div>
-      <select class="g-select col-span-4">
+      <select class="col-span-4">
         <option>Disabled select</option>
       </select>
     </div>
@@ -1897,21 +1897,21 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
         <input class="col-span-1" type="text" placeholder=".col-span-1">
         <input class="col-span-2" type="text" placeholder=".col-span-2">
         <input class="col-span-3" type="text" placeholder=".col-span-3">
-        <select class="g-select col-span-1">
+        <select class="col-span-1">
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-        <select class="g-select col-span-2">
+        <select class="col-span-2">
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-        <select class="g-select col-span-3">
+        <select class="col-span-3">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -1924,13 +1924,13 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <input class="col-span-1" type="text" placeholder=".col-span-1">
 <input class="col-span-2" type="text" placeholder=".col-span-2">
 <input class="col-span-3" type="text" placeholder=".col-span-3">
-<select class="g-select col-span-1">
+<select class="col-span-1">
   ...
 </select>
-<select class="g-select col-span-2">
+<select class="col-span-2">
   ...
 </select>
-<select class="g-select col-span-3">
+<select class="col-span-3">
   ...
 </select>
 {% endhighlight %}
@@ -2152,7 +2152,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <input class="btn" type="button" value="Input">
 <input class="btn" type="submit" value="Submit">
 {% endhighlight %}
-    <p>As a best practice, <strong>we highly recommend matching using the <code>&lt;button&lt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
+    <p>As a best practice, <strong>we highly recommend matching using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
 
   </div>
 

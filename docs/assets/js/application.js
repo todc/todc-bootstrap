@@ -130,7 +130,7 @@
     })
 
   // Google styled selects
-  $("select.g-select").each(function() {
+  $("select").each(function() {
     var e = $(this)
     e.select2({
     minimumResultsForSearch: 20
