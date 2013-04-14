@@ -221,7 +221,7 @@ title: Bootstrap Documentation
     <p>Once you've downloaded and included Bootstrap's CSS into your templates, you can move on to customizing the included components. To do so, create a new stylesheet (LESS, if you like, or just plain CSS) to house your customizations.</p>
 
     <div class="bs-docs-sidenote">
-      <p><strong>Compiled or minified?</strong></p>
+      <h4>Compiled or minified?</h4>
       <p>Unless you plan on reading a good chunk of the compiled CSS, go with the minified. It's the same code, just compacted. Less bandwidth is good, especially in production environments.</p>
     </div>
 
@@ -275,7 +275,7 @@ title: Bootstrap Documentation
     <p>Going beyond light customizations and into visual overhauls is just as straightforward as the above custom button. For a site like <a href="http://yourkarma.com">Karma</a>, which uses Bootstrap as a CSS reset with heavy modifications, more extensive work is involved, but well worth it in the end.</p>
 
     <div class="bs-docs-sidenote">
-      <p><strong>Alternate customization methods</strong></p>
+      <h4>Alternate customization methods</h4>
       <p>While not recommended for folks new to Bootstrap, you may use one of two alternate methods for customization. The first is modifying the source .less files (making upgrades super difficult), and the second is mapping source LESS code to <a href="http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html">your own classes via mixins</a>. For the time being, neither options are documented here.</p>
     </div>
 
@@ -2119,7 +2119,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% endhighlight %}
 
     <div class="bs-docs-sidenote">
-      <p><strong>Cross-browser compatibility</strong></p>
+      <h4>Cross-browser compatibility</h4>
       <p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
     </div>
 
@@ -2576,10 +2576,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div>
 {% endhighlight %}
 
-    <p class="alert alert-info">
-      <strong>Heads up!</strong>
-      Using icons without any additional content means the icons are not represented to screen reader users.
-    </p>
+    <div class="bs-docs-sidenote">
+      <h4>Accessibility</h4>
+      <p>Keep in mind that using icons without any additional content means the icons are not represented to screen reader users.</p>
+    </div>
 
     <h5>Dropdown in a button group</h5>
     <div class="bs-docs-example">
@@ -3636,8 +3636,9 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div><!-- /.navbar -->
 {% endhighlight %}
 
-    <div class="alert alert-info">
-      <strong>Heads up!</strong> The responsive navbar requires the <a href="#collapse">collapse plugin</a>.
+    <div class="bs-docs-sidenote">
+      <h4>Plugin dependency</h4>
+      <p>The responsive navbar requires the <a href="#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
     </div>
 
 
@@ -5051,7 +5052,7 @@ ul class="nav navbar-main">
     <p class="lead">Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
 
     <div class="bs-docs-sidenote">
-      <p><strong>Cross-browser compatibility</strong></p>
+      <h4>Cross-browser compatibility</h4>
       <p>Progress bars use CSS3 transitions and animations to achieve some of their effects.</p>
       <p>These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.</p>
     </div>
@@ -6243,9 +6244,9 @@ $('.dropdown-toggle').dropdown()
 $('.navbar').scrollspy()
 {% endhighlight %}
 
-          <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            Navbar links must have resolvable id targets. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the dom like <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.
+          <div class="bs-docs-sidenote">
+            <h4>Resolvable ID targets required</h4>
+            <p>Navbar links must have resolvable id targets. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the dom like <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.</p>
           </div>
 
           <h3>Methods</h3>
@@ -6532,9 +6533,9 @@ $('#example').tooltip(options)
              </tr>
             </tbody>
           </table>
-          <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            Options for individual tooltips can alternatively be specified through the use of data attributes.
+          <div class="bs-docs-sidenote">
+            <h4>Data attributes for individual tooltips</h4>
+            <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
           </div>
 
           <h3>Markup</h3>
@@ -6712,9 +6713,9 @@ $('#example').tooltip(options)
            </tr>
           </tbody>
         </table>
-        <div class="alert alert-info">
-          <strong>Heads up!</strong>
-          Options for individual popovers can alternatively be specified through the use of data attributes.
+        <div class="bs-docs-sidenote">
+          <h4>Data attributes for individual popovers</h4>
+          <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
         </div>
 
         <h3>Markup</h3>
@@ -6763,7 +6764,7 @@ $('#example').tooltip(options)
         <div class="bs-docs-example">
           <div class="alert alert-block alert-error fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4 class="alert-heading">Oh snap! You got an error!</h4>
+            <h4>Oh snap! You got an error!</h4>
             <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
             <p>
               <a class="btn btn-danger" href="#">Take this action</a> <a class="btn" href="#">Or do this</a>
@@ -6932,9 +6933,9 @@ $('.nav-tabs').button()
 
             <h4>$().button('toggle')</h4>
             <p>Toggles push state. Gives the button the appearance that it has been activated.</p>
-            <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
+            <div class="bs-docs-sidenote">
+              <h4>Auto toggling</h4>
+              <p>You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.</p>
             </div>
 {% highlight html linenos %}
 <button type="button" class="btn" data-toggle="button">...</button>
@@ -6947,9 +6948,9 @@ $('.nav-tabs').button()
 <button type="button" class="btn" data-loading-text="loading stuff...">...</button>
 {% endhighlight %}
 
-            <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              <a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
+            <div class="bs-docs-sidenote">
+              <h4>Cross-browser compatibility</h4>
+              <p><a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.</p>
             </div>
 
             <h4>$().button('reset')</h4>
@@ -7348,6 +7349,7 @@ $('.carousel').carousel({
             <h4>.carousel('pause')</h4>
             <p>Stops the carousel from cycling through items.</p>
 
+
             <h4>.carousel(number)</h4>
             <p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
 
@@ -7499,9 +7501,9 @@ $('.typeahead').typeahead()
 <div data-spy="affix" data-offset-top="200">...</div>
 {% endhighlight %}
 
-            <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              You must manage the position of a pinned element and the behavior of its immediate parent. Position is controlled by <code>affix</code>, <code>affix-top</code>, and <code>affix-bottom</code>. Remember to check for a potentially collapsed parent when the affix kicks in as it's removing content from the normal flow of the page.
+            <div class="bs-docs-sidenote">
+              <h4>Requires positioning</h4>
+              <p>You must manage the position of a pinned element and the behavior of its immediate parent. Position is controlled by <code>affix</code>, <code>affix-top</code>, and <code>affix-bottom</code>. Remember to check for a potentially collapsed parent when the affix kicks in as it's removing content from the normal flow of the page.</p>
             </div>
 
             <h3>Via JavaScript</h3>
