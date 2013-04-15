@@ -17,11 +17,11 @@ table {
   th,
   td {
     line-height: @line-height-base;
-    border-top: 1px solid @table-border;
+    border-top: 1px solid @table-border-color;
   }
   // Account for multiple tbody instances
   tbody + tbody {
-    border-top: 2px solid @table-border;
+    border-top: 2px solid @table-border-color;
   }
 
   // Nesting
@@ -36,11 +36,11 @@ table {
 // ----------------
 
 .table-bordered {
-  border: 1px solid @table-border;
+  border: 1px solid @table-border-color;
    border-radius: @border-radius-base;
   th,
   td {
-    border-left: 1px solid @table-border;
+    border-left: 1px solid @table-border-color;
   }
   // For first th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:first-child,
