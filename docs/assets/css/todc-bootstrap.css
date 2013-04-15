@@ -61,8 +61,10 @@ table {
 .table {
   margin-bottom: 20px;
 }
-.table th,
-.table td {
+.table thead > tr > th,
+.table tbody > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td {
   line-height: 20px;
   border-top: 1px solid #dddddd;
 }
@@ -76,44 +78,52 @@ table {
   border: 1px solid #dddddd;
   border-radius: 2px;
 }
-.table-bordered th,
-.table-bordered td {
+.table-bordered thead > tr > th,
+.table-bordered tbody > tr > th,
+.table-bordered thead > tr > td,
+.table-bordered tbody > tr > td {
   border-left: 1px solid #dddddd;
 }
-.table-bordered thead:first-child tr:first-child > th:first-child,
-.table-bordered tbody:first-child tr:first-child > td:first-child,
-.table-bordered tbody:first-child tr:first-child > th:first-child {
+.table-bordered thead:first-child > tr:first-child > th:first-child,
+.table-bordered tbody:first-child > tr:first-child > td:first-child,
+.table-bordered tbody:first-child > tr:first-child > th:first-child {
   border-top-left-radius: 2px;
 }
-.table-bordered thead:first-child tr:first-child > th:last-child,
-.table-bordered tbody:first-child tr:first-child > td:last-child,
-.table-bordered tbody:first-child tr:first-child > th:last-child {
+.table-bordered thead:first-child > tr:first-child > th:last-child,
+.table-bordered tbody:first-child > tr:first-child > td:last-child,
+.table-bordered tbody:first-child > tr:first-child > th:last-child {
   border-top-right-radius: 2px;
 }
-.table-bordered thead:last-child tr:last-child > th:first-child,
-.table-bordered tbody:last-child tr:last-child > td:first-child,
-.table-bordered tbody:last-child tr:last-child > th:first-child,
-.table-bordered tfoot:last-child tr:last-child > td:first-child,
-.table-bordered tfoot:last-child tr:last-child > th:first-child {
+.table-bordered thead:last-child > tr:last-child > th:first-child,
+.table-bordered tbody:last-child > tr:last-child > td:first-child,
+.table-bordered tbody:last-child > tr:last-child > th:first-child,
+.table-bordered tfoot:last-child > tr:last-child > td:first-child,
+.table-bordered tfoot:last-child > tr:last-child > th:first-child {
   border-bottom-left-radius: 2px;
 }
-.table-bordered thead:last-child tr:last-child > th:last-child,
-.table-bordered tbody:last-child tr:last-child > td:last-child,
-.table-bordered tbody:last-child tr:last-child > th:last-child,
-.table-bordered tfoot:last-child tr:last-child > td:last-child,
-.table-bordered tfoot:last-child tr:last-child > th:last-child {
+.table-bordered thead:last-child > tr:last-child > th:last-child,
+.table-bordered tbody:last-child > tr:last-child > td:last-child,
+.table-bordered tbody:last-child > tr:last-child > th:last-child,
+.table-bordered tfoot:last-child > tr:last-child > td:last-child,
+.table-bordered tfoot:last-child > tr:last-child > th:last-child {
   border-bottom-right-radius: 2px;
 }
-.table-bordered caption + thead tr:first-child th:first-child,
-.table-bordered caption + tbody tr:first-child td:first-child,
-.table-bordered colgroup + thead tr:first-child th:first-child,
-.table-bordered colgroup + tbody tr:first-child td:first-child {
+.table-bordered tfoot + tbody:last-child > tr:last-child > td:first-child {
+  border-bottom-left-radius: 0;
+}
+.table-bordered tfoot + tbody:last-child > tr:last-child > td:last-child {
+  border-bottom-right-radius: 0;
+}
+.table-bordered caption + thead > tr:first-child > th:first-child,
+.table-bordered caption + tbody > tr:first-child > td:first-child,
+.table-bordered colgroup + thead > tr:first-child > th:first-child,
+.table-bordered colgroup + tbody > tr:first-child > td:first-child {
   border-top-left-radius: 2px;
 }
-.table-bordered caption + thead tr:first-child th:last-child,
-.table-bordered caption + tbody tr:first-child td:last-child,
-.table-bordered colgroup + thead tr:first-child th:last-child,
-.table-bordered colgroup + tbody tr:first-child td:last-child {
+.table-bordered caption + thead > tr:first-child > th:last-child,
+.table-bordered caption + tbody > tr:first-child > td:last-child,
+.table-bordered colgroup + thead > tr:first-child > th:last-child,
+.table-bordered colgroup + tbody > tr:first-child > td:last-child {
   border-top-right-radius: 2px;
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
