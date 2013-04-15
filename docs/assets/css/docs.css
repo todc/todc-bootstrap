@@ -26,12 +26,6 @@ body {
   margin-right: -15px;
 }
 
-/*  */
-.bs-docs-footer {
-  padding-left:  15px;
-  padding-right: 15px;
-}
-
 /* Side notes for calling out things */
 .bs-docs-sidenote {
   margin: 20px 0;
@@ -85,100 +79,28 @@ section > ul li {
   position: relative;
   margin-bottom: 20px;
   padding: 30px 15px;
-  color: #fff;
   text-align: center;
-  background: #3f66a2;
-  background: -moz-linear-gradient(45deg,  #050f06 0%, #51a351 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#050f06), color-stop(100%,#51a351)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050f06', endColorstr='#51a351',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 }
 .bs-docs-jumbotron h1 {
   font-size: 50px;
-}
-
-/* Link styles (used on .masthead-links as well) */
-.bs-docs-jumbotron a {
-  color: #fff;
-  color: rgba(255,255,255,.5);
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-}
-.bs-docs-jumbotron a:hover {
-  color: #fff;
+  line-height: 1;
 }
 
 /* Download button */
 .bs-docs-jumbotron .btn {
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 18px 28px;
-  font-size: 24px;
-  font-weight: 200;
-  color: #fff; /* redeclare to override the `.jumbotron a` */
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
+  padding: 18px 24px;
+  font-size: 21px;
+  color: #dd4b39; /* redeclare to override the `.jumbotron a` */
+  background-color: #fff;
+  border-color: #e5e5e5;
 }
-.bs-docs-jumbotron .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-}
-.bs-docs-jumbotron .btn,
 .bs-docs-jumbotron .btn:hover,
 .bs-docs-jumbotron .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-}
-
-
-/* Pattern overlay
-------------------------- */
-.bs-docs-jumbotron .container {
-  position: relative;
-  z-index: 2;
-}
-.bs-docs-jumbotron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
-  opacity: .8;
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1) {
-
-  .jumbotron:after {
-    background-size: 150px 150px;
-  }
-
-}
-
-/* Masthead (docs home)
-------------------------- */
-.masthead h1 {
-  line-height: 1;
+  color: #fff; /* redeclare to override the `.jumbotron a` */
+  background: #ac2d1e;
+  border-color: #ac2d1e;
 }
 
 /* Textual links in masthead */
@@ -188,42 +110,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .masthead-links li {
   display: inline;
-  padding: 0 10px;
-  color: rgba(255,255,255,.25);
-}
-
-
-
-/* Marketing section of Overview
--------------------------------------------------- */
-
-.bs-docs-marketing {
-  text-align: center;
-  color: #5a5a5a;
-}
-.bs-docs-marketing h1 {
-  margin: 60px 0 10px;
-  font-size: 50px;
-  line-height: 1;
-}
-.bs-docs-marketing h2 {
-  margin-bottom: 5px;
-}
-.bs-docs-marketing p {
-  font-size: 16px;
-  line-height: 1.4;
-}
-.bs-docs-marketing .marketing-byline {
-  margin-bottom: 40px;
-  font-size: 21px;
-  font-weight: 300;
-  line-height: 1.25;
   color: #999;
 }
-.marketing-img {
-  display: block;
-  margin: 30px auto 10px;
-  max-height: 145px;
+.masthead-links li + li {
+  margin-left: 20px;
 }
 
 
@@ -361,9 +251,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-.prettyprint .linenums {
-  /*margin-left: 0;*/
 }
 
 /* Tweak content of examples for optimum awesome */
@@ -638,7 +525,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 -------------------------------------------------- */
 
 .bs-docs-footer {
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 100px;
@@ -661,21 +547,21 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 /* Social proof buttons from GitHub & Twitter */
 .bs-docs-social {
-  margin-top: 10px;
+  margin-top: 80px;
   margin-bottom: 20px;
-  text-align: center;
 }
 /* Quick links on Home */
 .bs-docs-social-buttons {
   display: inline-block;
   margin: 0;
-  padding: 0 10px;
   list-style: none;
 }
 .bs-docs-social-buttons li {
   display: inline-block;
-  padding: 5px 8px;
   line-height: 1;
+}
+.bs-docs-social-buttons li + li {
+  margin-left: 15px;
 }
 .bs-docs-social-buttons .twitter-follow-button {
   width: 225px !important;
@@ -801,8 +687,7 @@ input:required:invalid {
   }
 
   /* Undo custom padding */
-  .bs-docs-container,
-  .bs-home-container {
+  .bs-docs-container {
     padding-left: 0;
     padding-right: 0;
   }
@@ -821,9 +706,9 @@ input:required:invalid {
     font-size: 100px;
   }
   .masthead p {
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   .subhead {
     padding-top:    60px;
