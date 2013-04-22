@@ -3471,8 +3471,8 @@ button.close {
 .nav-pills .open .dropdown-toggle,
 .nav > li.dropdown.open.active > a:hover {
   color: #fff;
-  background-color: @grayLight;
-  border-color: @grayLight;
+  background-color: @gray-light;
+  border-color: @gray-light;
 }
 .nav li.dropdown.open .caret,
 .nav li.dropdown.open.active .caret,
@@ -3484,7 +3484,7 @@ button.close {
 
 // Dropdowns in stacked tabs
 .tabs-stacked .open > a:hover {
-  border-color: @grayLight;
+  border-color: @gray-light;
 }
 
 */
@@ -4711,7 +4711,8 @@ button.close {
 .img-thumbnail {
   padding: 4px;
   line-height: 20px;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
@@ -4741,7 +4742,7 @@ a.thumbnail:focus {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #333333;
 }
 
 .media,
@@ -5298,6 +5299,12 @@ a.list-group-item.active > .badge,
 
 @-ms-viewport {
   width: device-width;
+}
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+  }
 }
 
 .hidden {
