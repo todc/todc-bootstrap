@@ -10,11 +10,11 @@
 // Grays
 // -------------------------
 
-@grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
 
 // Brand colors
 // -------------------------
@@ -29,7 +29,7 @@
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            @grayDark;
+@text-color:            @gray-dark;
 
 // Links
 // -------------------------
@@ -114,7 +114,7 @@
 @input-border:                   #d9d9d9;
 @input-border-radius:            @border-radius-small;
 
-@input-color-placeholder:        @grayLight;
+@input-color-placeholder:        @gray-light;
 
 @input-height-base:              (@line-height-base + 10px); // base line-height + 8px vertical padding + 2px top/bottom border
 @input-height-large:             (@line-height-base + 20px); // base line-height + 18px vertical padding + 2px top/bottom border
@@ -134,9 +134,9 @@
 @dropdown-link-active-color:     @dropdown-link-color;
 @dropdown-link-active-bg:        @component-active-bg;
 
-@dropdown-link-color:            @grayDark;
-@dropdown-link-hover-color:      @grayDark;
-@dropdown-link-hover-bg:         @grayLighter;
+@dropdown-link-color:            @gray-dark;
+@dropdown-link-hover-color:      @gray-dark;
+@dropdown-link-hover-bg:         @gray-lighter;
 
 
 
@@ -170,12 +170,12 @@
 
 // Basics of a navbar
 @navbar-height:                    28px; // Total height - 30px Google.com. 24px other Google sites
-@navbar-text:                      @grayLight;
+@navbar-text:                      @gray-light;
 @navbar-bg:                        #2d2d2d;
 @navbar-border:                    #000;
 
 // Navbar links
-@navbar-link-color:                @grayLight;
+@navbar-link-color:                @gray-light;
 @navbar-link-hover-color:          #fff;
 @navbar-link-hover-bg:             transparent;
 @navbar-link-active-color:         @navbar-link-hover-color;
@@ -189,13 +189,13 @@
 @navbar-brand-hover-bg:            transparent;
 
 // Inverted navbar
-@navbar-inverse-text:              @grayLight;
+@navbar-inverse-text:              @gray-light;
 @navbar-inverse-bg:                #fafafa;
 @navbar-inverse-border:            darken(@navbar-inverse-bg, 12%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @grayLight;
-@navbar-inverse-link-hover-color:           @grayDark;
+@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-hover-color:           @gray-dark;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
@@ -227,7 +227,7 @@
 
 // Masthead links
 @navbar-masthead-link-color:                #777;
-@navbar-masthead-link-hover-color:          @grayDark;
+@navbar-masthead-link-hover-color:          @gray-dark;
 @navbar-masthead-link-hover-bg:             transparent;
 @navbar-masthead-link-active-color:         @navbar-masthead-link-hover-color;
 @navbar-masthead-link-active-bg:            @navbar-masthead-bg;
@@ -240,9 +240,9 @@
 @navbar-masthead-brand-hover-bg:            transparent;
 
 // Inverted masthead
-@navbar-masthead-inverse-text:                      @grayLight;
+@navbar-masthead-inverse-text:                      @gray-light;
 @navbar-masthead-inverse-bg:                        #444;
-@navbar-masthead-inverse-border:                    @grayDark;
+@navbar-masthead-inverse-border:                    @gray-dark;
 
 // Inverted masthead links
 @navbar-masthead-inverse-link-color:                #fff;
@@ -277,7 +277,7 @@
 
 // Navbar-main links
 @navbar-main-link-color:                #777;
-@navbar-main-link-hover-color:          @grayDark;
+@navbar-main-link-hover-color:          @gray-dark;
 @navbar-main-link-hover-bg:             transparent;
 @navbar-main-link-active-color:         @navbar-main-link-hover-color;
 @navbar-main-link-active-bg:            #f2f2f2;
@@ -290,9 +290,9 @@
 @navbar-main-brand-hover-bg:            transparent;
 
 // Inverted navbar-main
-@navbar-main-inverse-text:                      @grayLight;
+@navbar-main-inverse-text:                      @gray-light;
 @navbar-main-inverse-bg:                        #444;
-@navbar-main-inverse-border:                    @grayDark;
+@navbar-main-inverse-border:                    @gray-dark;
 
 // Inverted navbar links
 @navbar-main-inverse-link-color:                #fff;
@@ -327,7 +327,7 @@
 // Jumbotron
 // -------------------------
 
-@jumbotron-bg:                   @grayLighter;
+@jumbotron-bg:                   @gray-lighter;
 @jumbotron-heading-color:        inherit;
 @jumbotron-lead-color:           inherit;
 
@@ -421,7 +421,7 @@
 @list-group-border:           #e5e5e5;
 @list-group-border-radius:    0;
 
-@list-group-hover-bg:         @grayLighter;
+@list-group-hover-bg:         @gray-lighter;
 @list-group-active-text:      #dd4b39;
 @list-group-active-bg:        transparent;
 @list-group-active-border:    @list-group-border;
@@ -464,7 +464,7 @@
 
 // Hr border color
 // -------------------------
-@hr-border:                   @grayLighter;
+@hr-border:                   @gray-lighter;
 
 // Horizontal forms & lists
 // -------------------------
