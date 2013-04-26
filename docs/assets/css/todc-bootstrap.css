@@ -2835,25 +2835,29 @@ a.thumbnail:focus {
 .label-danger {
   background-color: #d84a38;
 }
-.label-danger[href] {
+.label-danger[href]:hover,
+.label-danger[href]:focus {
   background-color: #b93524;
-}
-.label-warning {
-  background-color: #faa937;
-}
-.label-warning[href] {
-  background-color: #f89306;
 }
 .label-success {
   background-color: #35aa47;
 }
-.label-success[href] {
+.label-success[href]:hover,
+.label-success[href]:focus {
   background-color: #298337;
+}
+.label-warning {
+  background-color: #faa937;
+}
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #f89306;
 }
 .label-info {
   background-color: #5bc0de;
 }
-.label-info[href] {
+.label-info[href]:hover,
+.label-info[href]:focus {
   background-color: #31b0d5;
 }
 a.list-group-item.active > .badge,
