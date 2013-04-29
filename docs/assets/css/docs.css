@@ -124,13 +124,13 @@ section > ul li {
 .show-grid {
   margin-bottom: 15px;
 }
-.show-grid [class*="col-span-"] {
+.show-grid .col {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #eee;
   border: 1px solid #ddd;
 }
-.show-grid [class*="col-span-"]:hover {
+.show-grid .col:hover {
   background-color: #ddd;
 }
 
@@ -304,13 +304,20 @@ section > ul li {
 .bs-navbar-bottom-example {
   z-index: 1;
   padding: 0;
-  height: 130px;
+  min-height: 110px;
   overflow: hidden; /* cut the drop shadows off */
 }
 .bs-navbar-top-example .navbar-fixed-top,
 .bs-navbar-bottom-example .navbar-fixed-bottom {
+  position: relative;
   margin-left: 0;
   margin-right: 0;
+}
+.bs-navbar-top-example .navbar-fixed-top {
+  top: -1px;
+}
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+  bottom: -1px;
 }
 .bs-navbar-top-example {
   -webkit-border-radius: 0 0 4px 4px;
@@ -714,6 +721,11 @@ input:required:invalid {
     padding-top:    60px;
     padding-bottom: 60px;
     text-align: left;
+  }
+
+  .bs-navbar-top-example .navbar-fixed-top,
+  .bs-navbar-bottom-example .navbar-fixed-bottom {
+    position: absolute;
   }
 
 }

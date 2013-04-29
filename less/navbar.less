@@ -13,30 +13,30 @@
 // Navbar nav links
 // -------------------------
 
-.navbar {
+.navbar-nav {
   // .nav {
   //   margin-top: 15px; // space out from .navbar-brand and .navbar-toggle
   // }
-  .nav > li > a {
+  > li > a {
     // Vertically center the text given @navbar-height
     padding: (((@navbar-height - @line-height-base) / 2) + 1) 15px (((@navbar-height - @line-height-base) / 2) - 1);
     font-weight: bold;
     color: @navbar-link-color;
   }
-  .nav > li > a:hover,
-  .nav > li > a:focus {
+  > li > a:hover,
+  > li > a:focus {
     color: @navbar-link-hover-color;
     background-color: @navbar-link-hover-bg;
   }
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
+  > .active > a,
+  > .active > a:hover,
+  > .active > a:focus {
     color: @navbar-link-active-color;
     background-color: @navbar-link-active-bg;
   }
-  .nav > .disabled > a,
-  .nav > .disabled > a:hover,
-  .nav > .disabled > a:focus {
+  > .disabled > a,
+  > .disabled > a:hover,
+  > .disabled > a:focus {
     color: @navbar-link-disabled-color;
     background-color: @navbar-link-disabled-bg;
   }
@@ -80,19 +80,23 @@
 
 // Collapsible navbar toggle
 .navbar-toggle {
-  padding: 8px 10px;
-  .navbar-vertical-align(26px); // Vertically center in navbar
+  top: 2px;
+  right: 10px;
+  padding: 4px 5px;
+  // .navbar-vertical-align(26px); // Vertically center in navbar
   // #gradient > .vertical(#f5f5f5, #f1f1f1);
   background-color: #444;
   background-image: none;
   border: 1px solid #222;
   .box-shadow(none);
-}
 
-// Dividers in navbar
-.navbar .nav > .divider {
-  height: @navbar-height;
-  .nav-divider(darken(@navbar-bg, 5%), lighten(@navbar-bg, 5%));
+  &:hover,
+  &:focus {
+    background-color: #333;
+  }
+  .icon-bar {
+    background-color: #fff;
+  }
 }
 
 // Navbar form
@@ -116,7 +120,7 @@
 }
 
 // Dropdown menu items and carets
-.navbar .nav {
+.navbar-nav {
   // Caret should match text color on hover
   li.dropdown > a:hover .caret,
   li.dropdown > a:focus .caret {
@@ -144,8 +148,8 @@
 }
 
 // Right aligned menus need alt position
-.navbar .pull-right > li > .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right {
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
   .dropdown-menu {
     border-radius: 0;
   }
@@ -173,58 +177,65 @@
     color: @navbar-inverse-text;
   }
 
-  .nav > li > a {
-    color: @navbar-inverse-link-color;
-  }
-  .nav > li > a:hover,
-  .nav > li > a:focus {
-    color: @navbar-inverse-link-hover-color;
-    background-color: @navbar-inverse-link-hover-bg;
-  }
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    color: @navbar-inverse-link-active-color;
-    background-color: @navbar-inverse-link-active-bg;
-  }
-  .nav > .disabled > a,
-  .nav > .disabled > a:hover,
-  .nav > .disabled > a:focus {
-    color: @navbar-inverse-link-disabled-color;
-    background-color: @navbar-inverse-link-disabled-bg;
+  .navbar-nav {
+   > li > a {
+      color: @navbar-inverse-link-color;
+    }
+    > li > a:hover,
+    > li > a:focus {
+      color: @navbar-inverse-link-hover-color;
+      background-color: @navbar-inverse-link-hover-bg;
+    }
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      color: @navbar-inverse-link-active-color;
+      background-color: @navbar-inverse-link-active-bg;
+    }
+    > .disabled > a,
+    > .disabled > a:hover,
+    > .disabled > a:focus {
+      color: @navbar-inverse-link-disabled-color;
+      background-color: @navbar-inverse-link-disabled-bg;
+    }
   }
 
   // Darken the responsive nav toggle
   .navbar-toggle {
-    background-color: #444;
-  }
+    background-color: transparent;
+    border: 1px solid #ddd;
 
-  // Darken dividers
-  .nav > .divider {
-    background-color: darken(@navbar-inverse-bg, 5%);
-    border-bottom-color: lighten(@navbar-inverse-bg, 5%);
+    &:hover,
+    &:focus {
+      background-color: #ddd;
+    }
+    .icon-bar {
+      background-color: #ccc;
+    }
   }
 
   // Dropdowns
-  .nav li.dropdown.open > .dropdown-toggle,
-  .nav li.dropdown.active > .dropdown-toggle,
-  .nav li.dropdown.open.active > .dropdown-toggle {
-    background-color: @navbar-inverse-link-active-bg;
-    color: @navbar-inverse-link-active-color;
-  }
-  .nav li.dropdown > a:hover .caret {
-    border-top-color: @navbar-inverse-link-hover-color;
-    border-bottom-color: @navbar-inverse-link-hover-color;
-  }
-  .nav li.dropdown > .dropdown-toggle .caret {
-    border-top-color: @navbar-inverse-link-color;
-    border-bottom-color: @navbar-inverse-link-color;
-  }
-  .nav li.dropdown.open > .dropdown-toggle .caret,
-  .nav li.dropdown.active > .dropdown-toggle .caret,
-  .nav li.dropdown.open.active > .dropdown-toggle .caret {
-    border-top-color: @navbar-inverse-link-active-color;
-    border-bottom-color: @navbar-inverse-link-active-color;
+  .navbar-nav {
+    li.dropdown.open > .dropdown-toggle,
+    li.dropdown.active > .dropdown-toggle,
+    li.dropdown.open.active > .dropdown-toggle {
+      background-color: @navbar-inverse-link-active-bg;
+      color: @navbar-inverse-link-active-color;
+    }
+    li.dropdown > a:hover .caret {
+      border-top-color: @navbar-inverse-link-hover-color;
+      border-bottom-color: @navbar-inverse-link-hover-color;
+    }
+    li.dropdown > .dropdown-toggle .caret {
+      border-top-color: @navbar-inverse-link-color;
+      border-bottom-color: @navbar-inverse-link-color;
+    }
+    li.dropdown.open > .dropdown-toggle .caret,
+    li.dropdown.active > .dropdown-toggle .caret,
+    li.dropdown.open.active > .dropdown-toggle .caret {
+      border-top-color: @navbar-inverse-link-active-color;
+      border-bottom-color: @navbar-inverse-link-active-color;
+    }
   }
 }
 
@@ -822,27 +833,24 @@
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+
   .navbar .navbar-brand {
     float: left;
-    padding-top: (@navbar-height - @line-height-base) / 2;
-    padding-bottom: (@navbar-height - @line-height-base) / 2;
-    margin-left: -10px;
+    // padding-top: (@navbar-height - @line-height-base) / 2;
+    // padding-bottom: (@navbar-height - @line-height-base) / 2;
+    // margin-left: -10px;
   }
   .navbar .nav {
     float: left;
     margin-top: 0; // undo top margin to make nav extend full height of navbar
-    .clearfix();
+
+    > li {
+      float: left;
+    }
 
     &.pull-right {
       float: right;
     }
-  }
-  .navbar .nav > li {
-    float: left;
   }
 
   // Dividers go vertical
@@ -874,6 +882,7 @@
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
+
   .navbar-masthead {
     padding-top: 0;
     padding-bottom: 0;
@@ -931,6 +940,7 @@
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
+
   .navbar-main {
     padding-top: 0;
     padding-bottom: 0;
