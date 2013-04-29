@@ -3783,10 +3783,10 @@ body {
       <div class="navbar navbar-masthead">
         <a class="navbar-brand" href="#">Title</a>
         <form class="navbar-form pull-left">
-          <input type="text" class="col-span-8" placeholder="Search">
+          <input type="text" class="col col-lg-8" placeholder="Search">
           <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
         </form>
-        <ul class="nav pull-right">
+        <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
@@ -3797,12 +3797,12 @@ body {
 <div class="navbar navbar-masthead">
   <a class="navbar-brand" href="#">Title</a>
   <form class="navbar-form pull-left">
-    <input type="text" class="span3" placeholder="Search">
+    <input type="text" class="col col-lg-8" placeholder="Search">
     <button class="btn btn-primary" type="submit">
       <i class="glyphicon glyphicon-search"></i>
     </button>
   </form>
-  <ul class="nav">
+  <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
@@ -3828,7 +3828,7 @@ body {
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li class="disabled"><a href="#">Disabled</a></li>
@@ -3836,35 +3836,13 @@ body {
       </div>
     </div>
 {% highlight html linenos %}
-<ul class="navbar navbar-masthead">
-  <li class="active">
-    <a href="#">Home</a>
-  </li>
-  <li><a href="#">Link</a></li>
-  <li class="disabled"><a href="#">Disabled</a></li>
-</ul>
-{% endhighlight %}
-
-
-    <p>You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:</p>
-    <div class="bs-docs-example">
-      <div class="navbar navbar-masthead">
-        <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Link</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Link</a></li>
-          <li class="divider"></li>
-        </ul>
-      </div>
-    </div>
-{% highlight html linenos %}
-<ul class="nav">
-  ...
-  <li class="divider"></li>
-  ...
-</ul>
+<div class="navbar navbar-masthead">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="disabled"><a href="#">Disabled</a></li>
+  </ul>
+</div>
 {% endhighlight %}
 
     <h3 id="navbar-masthead-forms">Forms</h3>
@@ -3872,7 +3850,7 @@ body {
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
         <form class="navbar-form pull-left">
-          <input type="text" class="col-span-8">
+          <input type="text" class="col col-lg-8">
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
@@ -3891,7 +3869,7 @@ body {
     <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account
@@ -3908,7 +3886,7 @@ body {
       </div>
     </div>
 {% highlight html linenos %}
-<ul class="nav">
+<ul class="nav navbar-nav">
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       Account
@@ -3943,10 +3921,10 @@ body {
     <h3 id="navbar-masthead-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 46px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-docs-example bs-navbar-top-example">
-      <div class="navbar navbar-masthead navbar-fixed-top" style="position: absolute; top: -1px;">
+      <div class="navbar navbar-masthead navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -3963,10 +3941,10 @@ body {
     <h3 id="navbar-masthead-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-docs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-masthead navbar-fixed-bottom" style="position: absolute; bottom: -1px;">
+      <div class="navbar navbar-masthead navbar-fixed-bottom">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -3986,7 +3964,7 @@ body {
       <div class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -4006,14 +3984,14 @@ body {
     <div class="bs-docs-example">
       <div class="navbar navbar-masthead">
         <div class="container">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".masthead-responsive-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
+          </button>
           <a class="navbar-brand" href="#">Title</a>
-          <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav">
+          <div class="nav-collapse collapse masthead-responsive-collapse">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -4031,9 +4009,9 @@ body {
               </li>
             </ul>
             <form class="navbar-form pull-left" action="">
-              <input type="text" class="col-span-8" placeholder="Search">
+              <input type="text" class="col col-lg-8" placeholder="Search">
             </form>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav pull-right">
               <li><a href="#">Link</a></li>
               <li class="divider"></li>
               <li class="dropdown">
@@ -4056,11 +4034,11 @@ body {
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-    </a>
+    </button>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
     <a class="navbar-brand" href="#">Project name</a>
@@ -4083,16 +4061,16 @@ body {
     <h2>Inverted variation</h2>
     <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-docs-example">
-      <div class="navbar navbar-masthead navbar-inverse" style="position: static;">
+      <div class="navbar navbar-masthead navbar-inverse">
         <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".masthead-inverse-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Title</a>
-          <div class="nav-collapse collapse navbar-inverse-collapse">
-            <ul class="nav">
+          <div class="nav-collapse collapse masthead-inverse-collapse">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -4110,9 +4088,9 @@ body {
               </li>
             </ul>
             <form class="navbar-form pull-left" action="">
-              <input type="text" class="col-span-8" placeholder="Search">
+              <input type="text" class="col col-lg-8" placeholder="Search">
             </form>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav pull-right">
               <li><a href="#">Link</a></li>
               <li class="divider"></li>
               <li class="dropdown">
@@ -4152,7 +4130,7 @@ body {
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
         <a class="navbar-brand" href="#">Title</a>
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
@@ -4162,7 +4140,7 @@ body {
 {% highlight html linenos %}
 <div class="navbar navbar-main">
   <a class="navbar-brand" href="#">Title</a>
-  <ul class="nav">
+  <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
@@ -4277,7 +4255,7 @@ body {
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li class="disabled"><a href="#">Disabled</a></li>
@@ -4285,7 +4263,7 @@ body {
       </div>
     </div>
 {% highlight html linenos %}
-<ul class="nav">
+<ul class="nav navbar-nav">
   <li class="active">
     <a href="#">Home</a>
   </li>
@@ -4294,33 +4272,12 @@ body {
 </ul>
 {% endhighlight %}
 
-    <p>You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:</p>
-    <div class="bs-docs-example">
-      <div class="navbar navbar-main">
-        <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Link</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Link</a></li>
-          <li class="divider"></li>
-        </ul>
-      </div>
-    </div>
-{% highlight html linenos %}
-ul class="nav navbar-main">
-  ...
-  <li class="divider"></li>
-  ...
-</ul>
-{% endhighlight %}
-
     <h3 id="navbar-main-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
         <form class="navbar-form pull-left">
-          <input type="text" class="col-span-8">
+          <input type="text" class="col col-lg-8">
           <button type="submit" class="btn">Submit</button>
         </form>
       </div>
@@ -4339,7 +4296,7 @@ ul class="nav navbar-main">
     <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li class="dropdown">
             <a data-toggle="dropdown" class="navbar-brand dropdown-toggle" href="#">Brand <b class="caret"></b></a>
             <ul class="navbar-brand dropdown-menu">
@@ -4353,7 +4310,7 @@ ul class="nav navbar-main">
             </ul>
           </li>
         </ul>
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
@@ -4373,7 +4330,7 @@ ul class="nav navbar-main">
       </div>
     </div>
 {% highlight html linenos %}
-<ul class="nav">
+<ul class="nav navbar-nav">
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       Account
@@ -4407,10 +4364,10 @@ ul class="nav navbar-main">
     <h3 id="navbar-main-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 38px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-docs-example bs-navbar-top-example">
-      <div class="navbar navbar-main navbar-fixed-top" style="position: absolute; top: -1px;">
+      <div class="navbar navbar-main navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -4427,10 +4384,10 @@ ul class="nav navbar-main">
     <h3 id="navbar-main-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-docs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-main navbar-fixed-bottom" style="position: absolute; bottom: -1px;">
+      <div class="navbar navbar-main navbar-fixed-bottom">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -4450,7 +4407,7 @@ ul class="nav navbar-main">
       <div class="navbar navbar-main navbar-static-top" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
@@ -4470,14 +4427,14 @@ ul class="nav navbar-main">
     <div class="bs-docs-example">
       <div class="navbar navbar-main">
         <div class="container">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
+          </button>
           <a class="navbar-brand" href="#">Title</a>
           <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -4495,9 +4452,9 @@ ul class="nav navbar-main">
               </li>
             </ul>
             <form class="navbar-form pull-left" action="">
-              <input type="text" class="col-span-8" placeholder="Search">
+              <input type="text" class="col col-lg-8" placeholder="Search">
             </form>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav pull-right">
               <li><a href="#">Link</a></li>
               <li class="divider"></li>
               <li class="dropdown">
@@ -4520,11 +4477,11 @@ ul class="nav navbar-main">
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-    </a>
+    </button>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
     <a class="navbar-brand" href="#">Project name</a>
@@ -4547,7 +4504,7 @@ ul class="nav navbar-main">
     <h2>Inverted variation</h2>
     <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-docs-example">
-      <div class="navbar navbar-main navbar-inverse" style="position: static;">
+      <div class="navbar navbar-main navbar-inverse">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
             <span class="icon-bar"></span>
@@ -4556,7 +4513,7 @@ ul class="nav navbar-main">
           </button>
           <a class="navbar-brand" href="#">Title</a>
           <div class="nav-collapse collapse navbar-inverse-collapse">
-            <ul class="nav">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -4574,9 +4531,9 @@ ul class="nav navbar-main">
               </li>
             </ul>
             <form class="navbar-form pull-left" action="">
-              <input type="text" class="col-span-8" placeholder="Search">
+              <input type="text" class="col col-lg-8" placeholder="Search">
             </form>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav pull-right">
               <li><a href="#">Link</a></li>
               <li class="divider"></li>
               <li class="dropdown">

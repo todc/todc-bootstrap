@@ -294,7 +294,7 @@
 // -------------------------
 
 .navbar-masthead {
-  .nav {
+  .navbar-nav {
     > li > a {
       float: none;
       padding: 8px 15px;
@@ -363,18 +363,21 @@
 
   // Collapsible navbar toggle
   .navbar-toggle {
-    padding: 4px 10px 7px;
-    .navbar-vertical-align(26px, @navbar-masthead-height); // Vertically center in navbar
-    // #gradient > .vertical(lighten(@navbar-masthead-bg, 1.5%), @navbar-masthead-bg);
-    #gradient > .vertical(#f5f5f5, #f1f1f1);
+    top: 5px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: transparent;
     border: 1px solid #dcdcdc;
-  }
 
-  // Dividers in navbar
-  .nav > .divider {
-    // border-right: 1px solid lighten(@navbar-masthead-bg, 1.5%);
-    // border-left: 1px solid @navbar-masthead-bg;
-    .nav-divider(darken(@navbar-masthead-bg, 5%), lighten(@navbar-masthead-bg, 5%));
+    &:hover,
+    &:focus {
+      background-color: #e4e4e4;
+    }
+
+    // Bars
+    .icon-bar {
+      background-color: #ccc;
+    }
   }
 
   // Navbar form
@@ -383,7 +386,7 @@
   }
 
   // Dropdown menus
-  .nav {
+  .navbar-nav {
     // Dropdown menu items and carets
 
     // Caret should match text color on hover
@@ -434,7 +437,7 @@
     }
 
     .navbar-brand,
-    .nav > li > a {
+    .navbar-nav > li > a {
       color: @navbar-masthead-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
@@ -442,7 +445,20 @@
       }
     }
 
-    .nav {
+    // Darken the responsive nav toggle
+    .navbar-toggle {
+      background-color: transparent;
+      border-color: #222;
+      &:hover,
+      &:focus {
+        background-color: #333;
+      }
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+
+    .navbar-nav {
       > li > a:hover,
       > li > a:focus {
         color: @navbar-masthead-inverse-link-hover-color;
@@ -460,12 +476,6 @@
       > .disabled > a:focus {
         color: @navbar-masthead-inverse-link-disabled-color;
         background-color: @navbar-masthead-inverse-link-disabled-bg;
-      }
-
-      // Darken dividers
-      > .divider {
-        background-color: darken(@navbar-masthead-inverse-bg, 5%);
-        border-bottom-color: lighten(@navbar-masthead-inverse-bg, 5%);
       }
 
       // Dropdowns
@@ -509,7 +519,7 @@
 // -------------------------
 
 .navbar-main {
-  .nav {
+  .navbar-nav {
     > li {
       position: relative;
     }
@@ -627,17 +637,21 @@
 
   // Collapsible navbar toggle
   .navbar-toggle {
-    padding: 4px 10px 7px;
-    .navbar-vertical-align(26px, @navbar-main-height); // Vertically center in navbar
-    #gradient > .vertical(#f5f5f5, #f1f1f1);
+    top: 5px;
+    right: 10px;
+    padding: 4px 6px;
+    background-color: transparent;
     border: 1px solid #dcdcdc;
-  }
 
-  // Dividers in navbar
-  .nav > .divider {
-    // border-right: 1px solid @navbar-main-bg;
-    // border-left: 1px solid darken(@navbar-main-bg, 5%);
-    .nav-divider(darken(@navbar-main-bg, 5%), lighten(@navbar-main-bg, 5%));
+    &:hover,
+    &:focus {
+      background-color: #e4e4e4;
+    }
+
+    // Bars
+    .icon-bar {
+      background-color: #ccc;
+    }
   }
 
   // Navbar form
@@ -659,7 +673,7 @@
     background-color: #fff;
   }
 
-  .nav {
+  .navbar-nav {
     // Menu position and menu carets
     > li > .dropdown-menu {
       border-top-width: 0;
@@ -727,7 +741,7 @@
     color: @navbar-main-inverse-text;
 
     .navbar-brand,
-    .nav > li > a {
+    .navbar-nav > li > a {
       font-weight: normal;
       color: @navbar-main-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -736,7 +750,20 @@
       }
     }
 
-    .nav {
+    // Darken the responsive nav toggle
+    .navbar-toggle {
+      background-color: transparent;
+      border-color: #222;
+      &:hover,
+      &:focus {
+        background-color: #333;
+      }
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+
+    .navbar-nav {
       > li > a:hover,
       > li > a:focus {
         color: @navbar-main-inverse-link-hover-color;
@@ -758,12 +785,6 @@
       > .disabled > a:focus {
         color: @navbar-main-inverse-link-disabled-color;
         background-color: @navbar-main-inverse-link-disabled-bg;
-      }
-
-      // Darken dividers
-      > .divider {
-        background-color: darken(@navbar-main-inverse-bg, 5%);
-        border-bottom-color: lighten(@navbar-main-inverse-bg, 5%);
       }
 
       // Dropdowns
@@ -883,10 +904,6 @@
 
 @media screen and (min-width: @screen-tablet) {
 
-  .navbar-masthead {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .navbar-masthead .navbar-brand {
     float: left;
     padding-top: ((@navbar-masthead-height - @line-height-base) / 2);
@@ -896,14 +913,14 @@
   .navbar-masthead .nav {
     float: left;
     .navbar-vertical-align(36px, @navbar-masthead-height); // Vertically center in navbar
-    .clearfix();
+
+    > li {
+      float: left;
+    }
 
     &.pull-right {
       float: right;
     }
-  }
-  .navbar-masthead .nav > li {
-    float: left;
   }
 
   // Dividers go vertical
@@ -941,10 +958,6 @@
 
 @media screen and (min-width: @screen-tablet) {
 
-  .navbar-main {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .navbar-main .navbar-brand {
     float: left;
     padding-top: ((@navbar-main-height - @line-height-base) / 2);
@@ -954,14 +967,14 @@
   .navbar-main .nav {
     float: left;
     .navbar-vertical-align(36px, @navbar-main-height); // Vertically center in navbar
-    .clearfix();
+
+    > li {
+      float: left;
+    }
 
     &.pull-right {
       float: right;
     }
-  }
-  .navbar-main .nav > li {
-    float: left;
   }
 
   // Dividers go vertical
