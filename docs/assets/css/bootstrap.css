@@ -992,6 +992,10 @@ pre code {
   .container {
     max-width: 728px;
   }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -3487,7 +3491,9 @@ button.close {
 
 .navbar {
   position: relative;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
   background-color: #eeeeee;
   border-radius: 4px;
 }
