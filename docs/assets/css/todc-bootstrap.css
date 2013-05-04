@@ -1583,6 +1583,7 @@ li.list-group-header {
   background-color: #4d90fe;
 }
 .nav-header {
+  font-size: 11px;
   line-height: 20px;
   color: #999999;
 }
@@ -1644,6 +1645,7 @@ li.list-group-header {
 }
 .navbar-brand {
   padding: 4px 15px 4px;
+  font-size: 14px;
   color: #999999;
 }
 .navbar-brand:hover,
@@ -2681,6 +2683,7 @@ li.list-group-header {
   border-top: 1px solid #e5e5e5;
 }
 .tooltip {
+  font-size: 11px;
   font-weight: bold;
 }
 .tooltip.in {
@@ -2695,6 +2698,7 @@ li.list-group-header {
   background-color: #ffffff;
 }
 .popover-title {
+  font-size: 13px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 0;
@@ -2814,6 +2818,9 @@ a.thumbnail:focus {
 .label-info[href]:focus {
   background-color: #31b0d5;
 }
+.badge {
+  font-size: 12px;
+}
 a.list-group-item.active > .badge,
 li.list-group-item.active a > .badge {
   color: #fff;
@@ -2827,6 +2834,7 @@ li.list-group-item.active a > .badge {
   border: 1px solid #999;
   padding: 1px;
   height: 14px;
+  font-size: 12px;
   background-color: transparent;
   background-image: none;
   border-radius: 0;
