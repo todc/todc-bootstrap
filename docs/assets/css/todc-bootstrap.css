@@ -2229,6 +2229,7 @@ li.list-group-header {
 }
 .navbar-fixed-bottom {
   bottom: 0;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .navbar .navbar-brand {

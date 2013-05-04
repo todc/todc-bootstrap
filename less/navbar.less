@@ -842,16 +842,17 @@
 .navbar-fixed-bottom {
   border-radius: 0;
 }
-.navbar-fixed-top    { top: 0; }
-.navbar-fixed-bottom { bottom: 0; }
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+}
 
 
 
-//
-// Responsive
-// --------------------------------------------------
-
-// Navbar
+// Responsive navbar
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
@@ -900,7 +901,7 @@
 
 }
 
-// Masthead
+// Responsive masthead
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
@@ -954,7 +955,7 @@
 
 }
 
-// Main Navbar
+// Responsive navbar-main
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
