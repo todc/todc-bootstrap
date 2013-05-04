@@ -174,7 +174,7 @@
   }
 
   .navbar-text {
-    color: @navbar-inverse-text;
+    color: @navbar-inverse-color;
   }
 
   .navbar-nav {
@@ -286,7 +286,7 @@
   border: 1px solid @navbar-masthead-border;
   border-radius: @border-radius-base;
   .box-shadow(none);
-  color: @navbar-text;
+  color: @navbar-color;
   #gradient > .vertical(@navbar-masthead-bg, @navbar-masthead-bg);
 }
 
@@ -425,7 +425,7 @@
   &.navbar-inverse {
     #gradient > .vertical(@gray, @navbar-masthead-inverse-bg);
     border-color: @navbar-masthead-inverse-border;
-    color: @navbar-masthead-inverse-text;
+    color: @navbar-masthead-inverse-color;
 
     .navbar-brand {
       color: @navbar-masthead-inverse-link-color;
@@ -510,7 +510,7 @@
   .box-shadow(none);
   min-height: @navbar-main-height;
   margin: 0px;
-  color: @navbar-text;
+  color: @navbar-color;
   #gradient > .vertical(@navbar-main-bg, @navbar-main-bg);
   border: 1px solid @navbar-main-border;
 }
@@ -738,7 +738,7 @@
   &.navbar-inverse {
     #gradient > .vertical(@gray, @navbar-main-inverse-bg);
     border-color: @navbar-main-inverse-border;
-    color: @navbar-main-inverse-text;
+    color: @navbar-main-inverse-color;
 
     .navbar-brand,
     .navbar-nav > li > a {
