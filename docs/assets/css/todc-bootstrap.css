@@ -1654,6 +1654,9 @@ li.list-group-header {
   text-decoration: none;
   background-color: transparent;
 }
+.navbar-text {
+  color: #999999;
+}
 .navbar-toggle {
   top: 2px;
   right: 10px;
@@ -2334,6 +2337,25 @@ li.list-group-header {
   .navbar-main .navbar-toggle {
     display: none;
   }
+}
+.navbar-btn {
+  margin-top: -1px;
+}
+.navbar-link {
+  color: #999999;
+}
+.navbar-link:hover {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-link {
+  color: #999999;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #333333;
+}
+.navbar-form .radio-inline,
+.navbar-form .checkbox-inline {
+  color: #999999;
 }
 .btn .caret {
   border-top-color: #333333;

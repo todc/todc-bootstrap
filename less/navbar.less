@@ -76,6 +76,10 @@
   }
 }
 
+.navbar-text {
+  color: @navbar-color;
+}
+
 // Collapsible navbar toggle
 .navbar-toggle {
   top: 2px;
@@ -1004,4 +1008,55 @@
   //   overflow: visible !important;
   // }
 
+}
+
+
+
+// Buttons in navbars
+//
+// Vertically center a button within a navbar (when *not* in a form).
+
+.navbar-btn {
+  margin-top: ((@navbar-height - @input-height-base) / 2);
+}
+
+
+
+// Text in navbars
+//
+// Add a class to make any element properly align itself vertically within the navbars.
+
+.navbar-text {
+
+}
+
+
+
+// Links in navbars
+//
+// Add a class to ensure links outside the navbar nav are colored correctly.
+
+// Default navbar variables
+.navbar-link {
+  color: @navbar-link-color;
+  &:hover {
+    color: @navbar-link-hover-color;
+  }
+}
+
+// Use the inverse navbar variables
+.navbar-inverse .navbar-link {
+  color: @navbar-inverse-link-color;
+  &:hover {
+    color: @navbar-inverse-link-hover-color;
+  }
+}
+
+
+// Forms in navbars
+.navbar-form {
+  .radio-inline,
+  .checkbox-inline {
+    color: @navbar-color;
+  }
 }
