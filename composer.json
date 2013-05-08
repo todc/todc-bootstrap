@@ -4,6 +4,6 @@
   , "keywords": ["bootstrap", "css", "theme", "google"]
   , "homepage": "http://todc.github.io/todc-bootstrap/"
   , "author": "Tim O'Donnell"
-  , "license": "MIT"
+  , "license": "Apache-2.0"
 
 }
