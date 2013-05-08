@@ -9,51 +9,57 @@
 // Core styles
 .btn {
   padding: 4px 12px;
-  margin: 0;
-  color: @btn-color;
-  font-family: @font-family-base;
   font-size: @font-size-base;
   font-weight: bold;
   line-height: @line-height-base;
   cursor: default;
-  border: 1px solid @btn-border;
   border-radius: @border-radius-base;
-  text-shadow: 0 1px 0 #fff;
-  white-space: nowrap;
   .background-clip(padding);
-  #gradient > .vertical(#f5f5f5, #f1f1f1);
-  background-color: @btn-bg;
   .box-shadow(none);
+
+  &:hover {
+    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+  }
+
+  &:active,
+  &.active {
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  .btn-states(#f5f5f5, #f1f1f1, @btn-default-color, @btn-default-border);
+  background-color: @btn-default-bg;
+  text-shadow: 0 1px 0 #fff;
+  .box-shadow(0 1px 1px rgba(0,0,0,0.1));
 
   &:hover {
     text-shadow: none;
     border-color: #c6c6c6;
-    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
     #gradient > .vertical(#f8f8f8, #f1f1f1);
     background-position: 0 0;
+    .box-shadow(0 1px 1px rgba(0,0,0,0.1));
     .transition(none);
   }
 
-  &:hover,
-  &:focus,
   &:active,
   &.active {
-    color: @btn-color;
-  }
-
-  &:active,
-  &.active {
-    border: 1px solid @btn-border;
-    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+    border: 1px solid @btn-default-border;
     #gradient > .vertical(#f6f6f6, #f1f1f1);
     background-color: #e8e8e8;
+    text-shadow: 0 1px 0 #fff;
+    .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
   }
 
   &:focus {
     /* Blue border on button focus. */
     border-color: @brand-primary;
     outline-style: none;
-    background-color: @btn-bg;
+    background-color: @btn-default-bg;
   }
 
   // Disabled state
@@ -63,149 +69,45 @@
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid @btn-border;
-      background-color: @btn-bg;
-      #gradient > .vertical(#f5f5f5, #f1f1f1);
-      .box-shadow(none);
+      background-color: @btn-default-bg;
       text-shadow: none;
     }
   }
 }
 
-
-// Button Sizes
-// --------------------------------------------------
-
-// Large
-.btn-large {
-  padding: @padding-large;
-  font-size: @font-size-large;
-  border-radius: @border-radius-base;
-}
-
-// Small
-.btn-small {
-  padding: @padding-small;
-  font-size: @font-size-small;
-  border-radius: @border-radius-base;
-}
-
-// Mini
-.btn-mini {
-  padding: @padding-mini;
-  font-size: @font-size-mini;
-  border-radius: @border-radius-base;
-}
-
-
-// Icons in buttons
-// -------------------------
-
-.btn .glyphicon {
-  font-weight: normal;
-}
-.btn-large .glyphicon {
-  margin-top: 1px;
-}
-.btn-mini .glyphicon {
-  margin-top: -1px;
-}
-
-// Alternate buttons
-// --------------------------------------------------
-
-// Set text color
-// -------------------------
-.btn-primary,
-.btn-primary:hover,
-.btn-warning,
-.btn-warning:hover,
-.btn-danger,
-.btn-danger:hover,
-.btn-success,
-.btn-success:hover,
-.btn-info,
-.btn-info:hover {
-  color: #fff;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-}
-// Provide *some* extra contrast for those who can get it
-.btn-primary:hover,
-.btn-warning:hover,
-.btn-danger:hover,
-.btn-success:hover,
-.btn-info:hover {
-  .box-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
-}
-.btn-primary:active,
-.btn-primary.active,
-.btn-warning:active,
-.btn-warning.active,
-.btn-danger:active,
-.btn-danger.active,
-.btn-success:active,
-.btn-success.active,
-.btn-info:active,
-.btn-info.active {
-  .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
-}
-
-.btn-primary.active,
-.btn-primary:active,
-.btn-primary:hover,
-.btn-warning.active,
-.btn-warning:active,
-.btn-warning:hover,
-.btn-danger.active,
-.btn-danger:active,
-.btn-danger:hover,
-.btn-success.active,
-.btn-success:active,
-.btn-success:hover,
-.btn-info.active,
-.btn-info:active,
-.btn-info:hover {
-  color: white;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-}
-
-
-// Alternate buttons
-// --------------------------------------------------
-
 // Primary Button
 // -------------------------
 .btn-primary {
-  .btn-states(@brand-primary, #4787ed, #fff, @btn-primary-border);
+  .btn-states(@brand-primary, #4787ed, @btn-primary-color, @btn-primary-border);
 }
 
 // Danger Button
 // -------------------------
 .btn-danger {
-  .btn-states(#dd4b39, #d14836, #fff, #c6322a);
+  .btn-states(#dd4b39, #d14836, @btn-danger-color, @btn-danger-border);
 }
 
 // Warning Button
 // -------------------------
 .btn-warning {
-  .btn-states(lighten(@brand-warning, 5%), @brand-warning, #fff, @btn-warning-border);
+  .btn-states(lighten(@brand-warning, 5%), @brand-warning, @btn-warning-color, @btn-warning-border);
 }
 
 // Success Button
 // -------------------------
 .btn-success {
-  .btn-states(@brand-success, @brand-success, #fff, @btn-success-border);
+  .btn-states(@brand-success, @brand-success, @btn-success-color, @btn-success-border);
 }
 
 // Info Button
 // -------------------------
 .btn-info {
-  .btn-states(@btn-info-bg, @btn-info-bg, #fff, @btn-info-border);
+  .btn-states(@btn-info-bg, @btn-info-bg, @btn-info-color, @btn-info-border);
 }
 
 
 // Link buttons
-// --------------------------------------------------
+// -------------------------
 
 // Make a button look and behave like a link
 .btn-link,
@@ -240,4 +142,29 @@ fieldset[disabled] .btn-link {
       color: @gray-dark;
     }
   }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: @padding-large;
+  font-size: @font-size-large;
+  border-radius: @border-radius-base;
+}
+
+// Small
+.btn-small {
+  padding: @padding-small;
+  font-size: @font-size-small;
+  border-radius: @border-radius-base;
+}
+
+// Mini
+.btn-mini {
+  padding: @padding-mini;
+  font-size: @font-size-mini;
+  border-radius: @border-radius-base;
 }
