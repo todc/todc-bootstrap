@@ -1807,18 +1807,18 @@ body {
   </div>
 
 
-  <!-- Main Navbar
+  <!-- Toolbar
   ================================================== -->
-  <div class="bs-docs-section" id="navbar-main">
+  <div class="bs-docs-section" id="navbar-toolbar">
     <div class="page-header">
-      <h1>Main Navbar <small></small></h1>
+      <h1>Toolbar <small></small></h1>
     </div>
 
 
-    <h2 id="navbar-main-basic">Basic Main Navbar</h2>
+    <h2 id="navbar-toolbar-basic">Basic Toolbar</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <a class="navbar-brand" href="#">Title</a>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
@@ -1828,7 +1828,7 @@ body {
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main">
+<div class="navbar navbar-toolbar">
   <a class="navbar-brand" href="#">Title</a>
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
@@ -1839,22 +1839,22 @@ body {
 {% endhighlight %}
 
 
-    <h2 id="navbar-main-toolbar">Toolbar</h2>
+    <h2 id="navbar-toolbar-toolbar">Toolbar</h2>
     <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <div class="btn-toolbar">
           <div class="btn-group">
             <a href="#" class="btn btn-danger">NEW</a>
           </div>
           <div class="btn-group">
-            <a href="#" class="btn" title="Display All Events">All</a>
-            <a href="#" class="btn" title="Display Events by your Friends">Friends</a>
-            <a href="#" class="btn" title="Display Events by your Family">Family</a>
+            <a href="#" class="btn btn-default" title="Display All Events">All</a>
+            <a href="#" class="btn btn-default" title="Display Events by your Friends">Friends</a>
+            <a href="#" class="btn btn-default" title="Display Events by your Family">Family</a>
           </div>
 
           <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" title="More Filters">
+            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" title="More Filters">
               More <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -1864,7 +1864,7 @@ body {
           </div>
 
           <div class="btn-group pull-right">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" title="Actions">
+            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" title="Actions">
               <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -1885,19 +1885,19 @@ body {
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main">
+<div class="navbar navbar-toolbar">
   <div class="btn-toolbar">
     <div class="btn-group">
       <a href="#" class="btn btn-danger">NEW</a>
     </div>
     <div class="btn-group">
-      <a href="#" class="btn">All</a>
-      <a href="#" class="btn">Friends</a>
-      <a href="#" class="btn">Family</a>
+      <a href="#" class="btn btn-default">All</a>
+      <a href="#" class="btn btn-default">Friends</a>
+      <a href="#" class="btn btn-default">Family</a>
     </div>
 
     <div class="btn-group">
-      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
         More <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
@@ -1907,7 +1907,7 @@ body {
     </div>
 
     <div class="btn-group pull-right">
-      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
         <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
@@ -1928,12 +1928,12 @@ body {
 {% endhighlight %}
 
 
-    <h2>Main navbar components</h2>
+    <h2>Toolbar components</h2>
 
     <h3>Brand</h3>
     <p>A simple link to show your brand or project name only requires an anchor tag.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <a class="navbar-brand" href="#">Title</a>
       </div>
     </div>
@@ -1941,10 +1941,10 @@ body {
 <a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
 
-    <h3 id="navbar-main-nav">Nav links</h3>
+    <h3 id="navbar-toolbar-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
@@ -1962,13 +1962,13 @@ body {
 </ul>
 {% endhighlight %}
 
-    <h3 id="navbar-main-forms">Forms</h3>
+    <h3 id="navbar-toolbar-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <form class="navbar-form pull-left">
           <input type="text" class="col col-lg-8">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
     </div>
@@ -1985,7 +1985,7 @@ body {
     <h3>Using dropdowns</h3>
     <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a data-toggle="dropdown" class="navbar-brand dropdown-toggle" href="#">Brand <b class="caret"></b></a>
@@ -2037,12 +2037,12 @@ body {
     <h3>Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <p class="navbar-text">This is some text</p>
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main">
+<div class="navbar navbar-toolbar">
   <p class="navbar-text">This is some text</p>
 </div>
 {% endhighlight %}
@@ -2051,10 +2051,10 @@ body {
     <h2>Optional display variations</h2>
     <p>Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, <code>.navbar</code>.</p>
 
-    <h3 id="navbar-main-fixed-top">Fixed to top</h3>
+    <h3 id="navbar-toolbar-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 38px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-main navbar-fixed-top">
+      <div class="navbar navbar-toolbar navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2066,15 +2066,15 @@ body {
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main navbar-fixed-top">
+<div class="navbar navbar-toolbar navbar-fixed-top">
   ...
 </div>
 {% endhighlight %}
 
-    <h3 id="navbar-main-fixed-bottom">Fixed to bottom</h3>
+    <h3 id="navbar-toolbar-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-main navbar-fixed-bottom">
+      <div class="navbar navbar-toolbar navbar-fixed-bottom">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2086,15 +2086,15 @@ body {
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main navbar-fixed-bottom">
+<div class="navbar navbar-toolbar navbar-fixed-bottom">
   ...
 </div>
 {% endhighlight %}
 
-    <h3 id="navbar-main-static-top">Static top navbar</h3>
+    <h3 id="navbar-toolbar-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-main navbar-static-top" style="margin: -1px -1px 0;">
+      <div class="navbar navbar-toolbar navbar-static-top" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2106,16 +2106,16 @@ body {
       </div>
     </div>
 {% highlight html %}
-<div class="navbar navbar-main navbar-static-top">
+<div class="navbar navbar-toolbar navbar-static-top">
   ...
 </div>
 {% endhighlight %}
 
 
-    <h2 id="navbar-main-responsive">Responsive navbar</h2>
+    <h2 id="navbar-toolbar-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main">
+      <div class="navbar navbar-toolbar">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="icon-bar"></span>
@@ -2163,7 +2163,7 @@ body {
       </div><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-main">
+<div class="navbar navbar-toolbar">
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -2187,14 +2187,14 @@ body {
 
     <div class="bs-callout">
       <h4>Plugin dependency</h4>
-      <p>The responsive navbar-main requires the <a href="#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+      <p>The responsive navbar-toolbar requires the <a href="#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
     </div>
 
 
     <h2>Inverted variation</h2>
     <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-main navbar-inverse">
+      <div class="navbar navbar-toolbar navbar-inverse">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
             <span class="icon-bar"></span>
@@ -2242,7 +2242,7 @@ body {
       </div><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-main navbar-inverse">
+<div class="navbar navbar-toolbar navbar-inverse">
   ...
 </div>
 {% endhighlight %}

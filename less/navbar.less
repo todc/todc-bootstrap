@@ -507,20 +507,20 @@
 // -------------------------
 
 // Wrapper and base class
-.navbar-main {
+.navbar-toolbar {
   border-radius: @border-radius-base;
   .box-shadow(none);
-  min-height: @navbar-main-height;
+  min-height: @navbar-toolbar-height;
   margin: 0px;
   color: @navbar-color;
-  #gradient > .vertical(@navbar-main-bg, @navbar-main-bg);
-  border: 1px solid @navbar-main-border;
+  #gradient > .vertical(@navbar-toolbar-bg, @navbar-toolbar-bg);
+  border: 1px solid @navbar-toolbar-border;
 }
 
 // Main Navbar nav links
 // -------------------------
 
-.navbar-main {
+.navbar-toolbar {
   .navbar-nav {
     > li {
       position: relative;
@@ -528,12 +528,12 @@
 
     > li > a {
       // padding: 9px 15px 8px;
-      padding: (floor((@navbar-main-height - @line-height-base) / 2)) 15px (((@navbar-main-height - @line-height-base) / 2));
-      color: @navbar-main-link-color;
+      padding: (floor((@navbar-toolbar-height - @line-height-base) / 2)) 15px (((@navbar-toolbar-height - @line-height-base) / 2));
+      color: @navbar-toolbar-link-color;
       text-shadow: none;
     }
     > li > a.navbar-brand {
-      color: @navbar-main-brand-color;
+      color: @navbar-toolbar-brand-color;
     }
 
     // Active nav items
@@ -546,7 +546,7 @@
         display: inline-block;
         margin-left: -8px; /* value should match border-width below */
         border-right:  8px solid transparent;
-        border-bottom: 8px solid @navbar-main-border;
+        border-bottom: 8px solid @navbar-toolbar-border;
         border-left:   8px solid transparent;
         content: '';
       }
@@ -565,7 +565,7 @@
 
     > li > a:hover,
     > li > a:focus {
-      color: @navbar-main-link-hover-color;
+      color: @navbar-toolbar-link-hover-color;
       text-decoration: underline;
       background-color: transparent;
     }
@@ -574,21 +574,21 @@
     > .active > a:hover,
     > .active > a:focus {
       .box-shadow(none);
-      color: @navbar-main-link-active-color;
-      background-color: @navbar-main-link-active-bg;
+      color: @navbar-toolbar-link-active-color;
+      background-color: @navbar-toolbar-link-active-bg;
     }
     > .disabled > a,
     > .disabled > a:hover,
     > .disabled > a:focus {
-      color: @navbar-main-link-disabled-color;
+      color: @navbar-toolbar-link-disabled-color;
       text-decoration: none;
-      background-color: @navbar-main-link-disabled-bg;
+      background-color: @navbar-toolbar-link-disabled-bg;
     }
 
     // Brand
     > li > a.navbar-brand:hover,
     > li > a.navbar-brand:focus {
-      color: @navbar-main-brand-color;
+      color: @navbar-toolbar-brand-color;
       text-decoration: none;
     }
   }
@@ -600,7 +600,7 @@
 // Main Navbar alignment options
 // --------------------------------------------------
 
-.navbar-main {
+.navbar-toolbar {
   // Fix the top/bottom navbars when screen real estate supports it
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
@@ -614,7 +614,7 @@
 // Main Navbar optional components
 // --------------------------------------------------
 
-.navbar-main {
+.navbar-toolbar {
 
   // Buttons in navbar
   // -------------------------
@@ -627,13 +627,13 @@
     // Vertically center the text given @navbar-height
     font-size: 16px;
     font-weight: bold;
-    color: @navbar-main-brand-color;
+    color: @navbar-toolbar-brand-color;
     text-shadow: none;
     &:hover,
     &:focus {
-      color: @navbar-main-brand-hover-color;
+      color: @navbar-toolbar-brand-hover-color;
       text-decoration: none;
-      background-color: @navbar-main-brand-hover-bg;
+      background-color: @navbar-toolbar-brand-hover-bg;
     }
   }
 
@@ -658,12 +658,12 @@
 
   // Navbar form
   .navbar-form {
-    .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(30px, @navbar-toolbar-height); // Vertically center in navbar
   }
 
   // Optional: Group multiple button groups together for a toolbar
   .btn-toolbar {
-    .navbar-vertical-align(30px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(30px, @navbar-toolbar-height); // Vertically center in navbar
   }
 
   // Dropdown menus
@@ -693,40 +693,40 @@
     // Caret should match text color on hover
     li.dropdown > a:hover .caret,
     li.dropdown > a:focus .caret {
-      border-top-color: @navbar-main-link-hover-color;
-      border-bottom-color: @navbar-main-link-hover-color;
+      border-top-color: @navbar-toolbar-link-hover-color;
+      border-bottom-color: @navbar-toolbar-link-hover-color;
     }
 
     // Remove background color from open dropdown
     li.dropdown.open > .dropdown-toggle,
     li.dropdown.active > .dropdown-toggle,
     li.dropdown.open.active > .dropdown-toggle {
-      background-color: darken(@navbar-main-bg, 4.7%); // #e5e5e5
-      color: @navbar-main-link-active-color;
+      background-color: darken(@navbar-toolbar-bg, 4.7%); // #e5e5e5
+      color: @navbar-toolbar-link-active-color;
     }
     li.dropdown > .dropdown-toggle .caret {
-      border-top-color: @navbar-main-link-color;
-      border-bottom-color: @navbar-main-link-color;
+      border-top-color: @navbar-toolbar-link-color;
+      border-bottom-color: @navbar-toolbar-link-color;
     }
     li.dropdown.open > .dropdown-toggle .caret,
     li.dropdown.active > .dropdown-toggle .caret,
     li.dropdown.open.active > .dropdown-toggle .caret {
-      border-top-color: @navbar-main-link-active-color;
-      border-bottom-color: @navbar-main-link-active-color;
+      border-top-color: @navbar-toolbar-link-active-color;
+      border-bottom-color: @navbar-toolbar-link-active-color;
     }
 
     // Brand Dropdowns
     li.dropdown.open > .navbar-brand.dropdown-toggle,
     li.dropdown.active > .navbar-brand.dropdown-toggle,
     li.dropdown.open.active > .navbar-brand.dropdown-toggle {
-      background-color: @navbar-main-link-active-bg;
-      color: @navbar-main-brand-color;
+      background-color: @navbar-toolbar-link-active-bg;
+      color: @navbar-toolbar-brand-color;
       text-decoration: none;
     }
 
     li.dropdown > .navbar-brand.dropdown-toggle .caret {
-      border-top-color: @navbar-main-brand-color;
-      border-bottom-color: @navbar-main-brand-color;
+      border-top-color: @navbar-toolbar-brand-color;
+      border-bottom-color: @navbar-toolbar-brand-color;
     }
   }
 }
@@ -736,19 +736,19 @@
 // Inverse navbar main
 // --------------------------------------------------
 
-.navbar-main {
+.navbar-toolbar {
   &.navbar-inverse {
-    #gradient > .vertical(@gray, @navbar-main-inverse-bg);
-    border-color: @navbar-main-inverse-border;
-    color: @navbar-main-inverse-color;
+    #gradient > .vertical(@gray, @navbar-toolbar-inverse-bg);
+    border-color: @navbar-toolbar-inverse-border;
+    color: @navbar-toolbar-inverse-color;
 
     .navbar-brand,
     .navbar-nav > li > a {
       font-weight: normal;
-      color: @navbar-main-inverse-link-color;
+      color: @navbar-toolbar-inverse-link-color;
       text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       &:hover {
-        color: @navbar-main-inverse-link-hover-color;
+        color: @navbar-toolbar-inverse-link-hover-color;
       }
     }
 
@@ -768,16 +768,16 @@
     .navbar-nav {
       > li > a:hover,
       > li > a:focus {
-        color: @navbar-main-inverse-link-hover-color;
-        background-color: @navbar-main-inverse-link-hover-bg;
+        color: @navbar-toolbar-inverse-link-hover-color;
+        background-color: @navbar-toolbar-inverse-link-hover-bg;
       }
 
       > .active > a,
       > .active > a:hover,
       > .active > a:focus {
         font-weight: bold;
-        color: @navbar-main-inverse-link-active-color;
-        #gradient > .vertical(@navbar-main-inverse-link-active-bg, @navbar-main-inverse-link-active-bg);
+        color: @navbar-toolbar-inverse-link-active-color;
+        #gradient > .vertical(@navbar-toolbar-inverse-link-active-bg, @navbar-toolbar-inverse-link-active-bg);
       }
       > .active > a:hover {
         text-decoration: underline;
@@ -785,26 +785,26 @@
       > .disabled > a,
       > .disabled > a:hover,
       > .disabled > a:focus {
-        color: @navbar-main-inverse-link-disabled-color;
-        background-color: @navbar-main-inverse-link-disabled-bg;
+        color: @navbar-toolbar-inverse-link-disabled-color;
+        background-color: @navbar-toolbar-inverse-link-disabled-bg;
       }
 
       // Dropdowns
       li.dropdown.open > .dropdown-toggle,
       li.dropdown.active > .dropdown-toggle,
       li.dropdown.open.active > .dropdown-toggle {
-        background-color: @navbar-main-inverse-link-active-bg;
-        color: @navbar-main-inverse-link-active-color;
+        background-color: @navbar-toolbar-inverse-link-active-bg;
+        color: @navbar-toolbar-inverse-link-active-color;
       }
       li.dropdown > .dropdown-toggle .caret {
-        border-top-color: @navbar-main-inverse-link-color;
-        border-bottom-color: @navbar-main-inverse-link-color;
+        border-top-color: @navbar-toolbar-inverse-link-color;
+        border-bottom-color: @navbar-toolbar-inverse-link-color;
       }
       li.dropdown.open > .dropdown-toggle .caret,
       li.dropdown.active > .dropdown-toggle .caret,
       li.dropdown.open.active > .dropdown-toggle .caret {
-        border-top-color: @navbar-main-inverse-link-active-color;
-        border-bottom-color: @navbar-main-inverse-link-active-color;
+        border-top-color: @navbar-toolbar-inverse-link-active-color;
+        border-bottom-color: @navbar-toolbar-inverse-link-active-color;
       }
     }
   }
@@ -956,20 +956,20 @@
 
 }
 
-// Responsive navbar-main
+// Responsive navbar-toolbar
 // --------------------------------------------------
 
 @media screen and (min-width: @screen-tablet) {
 
-  .navbar-main .navbar-brand {
+  .navbar-toolbar .navbar-brand {
     float: left;
-    padding-top: ((@navbar-main-height - @line-height-base) / 2);
-    padding-bottom: ((@navbar-main-height - @line-height-base) / 2);
+    padding-top: ((@navbar-toolbar-height - @line-height-base) / 2);
+    padding-bottom: ((@navbar-toolbar-height - @line-height-base) / 2);
     margin-left: -10px;
   }
-  .navbar-main .nav {
+  .navbar-toolbar .nav {
     float: left;
-    .navbar-vertical-align(36px, @navbar-main-height); // Vertically center in navbar
+    .navbar-vertical-align(36px, @navbar-toolbar-height); // Vertically center in navbar
 
     > li {
       float: left;
@@ -982,25 +982,25 @@
 
   // Dividers go vertical
   // Change the height and height, disable bottom border, then add right border
-  .navbar-main .nav > .divider {
+  .navbar-toolbar .nav > .divider {
     width: 1px;
-    height: @navbar-main-height * .6;
-    margin: floor((@navbar-main-height * .2)) 9px;
+    height: @navbar-toolbar-height * .6;
+    margin: floor((@navbar-toolbar-height * .2)) 9px;
     border-bottom: 0;
-    border-right: 1px solid lighten(@navbar-main-bg, 5%);
+    border-right: 1px solid lighten(@navbar-toolbar-bg, 5%);
   }
   // Plain text in topbar
-  .navbar-main .navbar-text {
-    .navbar-vertical-align(20px, @navbar-main-height); // Vertically center in navbar
+  .navbar-toolbar .navbar-text {
+    .navbar-vertical-align(20px, @navbar-toolbar-height); // Vertically center in navbar
   }
 
   // Since we override the border, we need to specify it again for inverted navbars
-  .navbar-main.navbar-inverse .nav > .divider {
-    border-right-color: lighten(@navbar-main-inverse-bg, 5%);
+  .navbar-toolbar.navbar-inverse .nav > .divider {
+    border-right-color: lighten(@navbar-toolbar-inverse-bg, 5%);
   }
 
   // Required to make the collapsing navbar work on regular desktops
-  .navbar-main .navbar-toggle {
+  .navbar-toolbar .navbar-toggle {
     display: none;
   }
   // .nav-collapse.collapse {
