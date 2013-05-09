@@ -1,0 +1,9 @@
+{
+    "name": "todc/todc-bootstrap"
+  , "description": "Google-styled theme for Bootstrap."
+  , "keywords": ["bootstrap", "css", "theme", "google"]
+  , "homepage": "http://todc.github.io/todc-bootstrap/"
+  , "author": "Tim O'Donnell"
+  , "license": "Apache-2.0"
+
+}
