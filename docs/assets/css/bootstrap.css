@@ -251,7 +251,7 @@ table {
     max-width: 100% !important;
   }
   @page  {
-    margin: 0.5cm;
+    margin: 2cm .5cm;
   }
   p,
   h2,
@@ -263,7 +263,7 @@ table {
   h3 {
     page-break-after: avoid;
   }
-  .navbar-toggle {
+  .navbar {
     display: none;
   }
 }
@@ -3304,7 +3304,7 @@ button.close {
   float: right;
 }
 
-.nav .divider {
+.nav .nav-divider {
   height: 2px;
   margin: 9px 0;
   overflow: hidden;
@@ -3548,7 +3548,7 @@ button.close {
 }
 
 .navbar-nav {
-  margin: 10px -15px 0;
+  margin-top: 10px;
 }
 
 .navbar-nav > li > a {
