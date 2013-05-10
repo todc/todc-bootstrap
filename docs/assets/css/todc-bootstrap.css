@@ -367,11 +367,6 @@ input[type="color"].input-small {
   font-size: 12px;
   border-radius: 1px;
 }
-input[class*="span"],
-select[class*="span"],
-textarea[class*="span"] {
-  height: 30.02px;
-}
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -624,16 +619,14 @@ select:focus:required:invalid:focus {
 .input-group-btn > .btn:focus {
   z-index: 2;
 }
-@media screen and (min-width: 768px) {
-  .form-horizontal .control-group {
-    margin-bottom: 20.02px;
-  }
-  .form-horizontal .control-group > .control-label {
-    width: 160px;
-  }
-  .form-horizontal .control-group > .controls {
-    margin-left: 180px;
-  }
+.form-horizontal .control-group {
+  margin-bottom: 20.02px;
+}
+.form-horizontal .control-group > .control-label {
+  width: 160px;
+}
+.form-horizontal .control-group > .controls {
+  margin-left: 180px;
 }
 .btn {
   padding: 4px 12px;
@@ -1539,7 +1532,7 @@ li.list-group-header {
 }
 .nav-tabs-google > li > a {
   padding: 7px 15px;
-  line-height: 20.02px;
+  line-height: 1.54;
   color: #333333;
   border: 3px solid transparent;
   border-width: 3px 0;
@@ -1585,7 +1578,7 @@ li.list-group-header {
 }
 .nav-header {
   font-size: 11px;
-  line-height: 20.02px;
+  line-height: 1.54;
   color: #999999;
 }
 /*

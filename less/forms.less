@@ -196,17 +196,6 @@ input[type="color"] {
 
 
 
-// GRID SIZING FOR INPUTS
-// ----------------------
-
-input[class*="span"],
-select[class*="span"],
-textarea[class*="span"] {
-  height: @input-height-base;
-}
-
-
-
 // DISABLED STATE
 // --------------
 
@@ -295,6 +284,7 @@ select:focus:required:invalid {
     border-radius: 0;
   }
 }
+
 // Text input groups
 // -------------------------
 .input-group-addon {
@@ -351,26 +341,23 @@ select:focus:required:invalid {
 
 // Horizontal forms
 // --------------------------------------------------
+// Horizontal forms are built on grid classes.
 
+.form-horizontal {
 
-@media screen and (min-width: @screen-tablet) {
-
-  .form-horizontal {
-
-    // Increase spacing between groups
-    .control-group {
-      margin-bottom: @line-height-computed;
-    }
-
-    // Float the labels left
-    .control-group > .control-label {
-      width: (@component-offset-horizontal - 20);
-    }
-
-    // Move over all input controls and content over
-    .control-group > .controls {
-      margin-left: @component-offset-horizontal;
-    }
-
+  // Increase spacing between groups
+  .control-group {
+    margin-bottom: @line-height-computed;
   }
+
+  // Float the labels left
+  .control-group > .control-label {
+    width: (@component-offset-horizontal - 20);
+  }
+
+  // Move over all input controls and content over
+  .control-group > .controls {
+    margin-left: @component-offset-horizontal;
+  }
+
 }
