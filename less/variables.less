@@ -50,9 +50,8 @@
 @font-size-small:         (@font-size-base - 1); // 12px
 @font-size-mini:          (@font-size-base - 2); // 11px
 
-// @line-height-base:        20px;
-@line-height-base:        1.54;
-@line-height-computed:    (@font-size-base * @line-height-base);
+@line-height-base:        1.5381; // 20/13
+@line-height-computed:    ceil(@font-size-base * @line-height-base); // ~20px
 @line-height-headings:    1.15;
 
 @headings-font-family:    inherit; // empty to use BS default, @font-family-base
