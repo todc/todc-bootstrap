@@ -362,18 +362,6 @@ select:focus:required:invalid:focus {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-/* Override ßsome of the values in Bootstrap
-/* White icons with optional class, or on hover/active states of certain elements */
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings.png");
-}
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -1606,6 +1594,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-inverse .btn-navbar:hover,
+.navbar-inverse .btn-navbar:focus,
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active,
 .navbar-inverse .btn-navbar.disabled,
@@ -1844,6 +1833,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlebar.navbar-inverse .btn-navbar:hover,
+.navbar-googlebar.navbar-inverse .btn-navbar:focus,
 .navbar-googlebar.navbar-inverse .btn-navbar:active,
 .navbar-googlebar.navbar-inverse .btn-navbar.active,
 .navbar-googlebar.navbar-inverse .btn-navbar.disabled,
@@ -2160,6 +2150,7 @@ select:focus:required:invalid:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-googlenav.navbar-inverse .btn-navbar:hover,
+.navbar-googlenav.navbar-inverse .btn-navbar:focus,
 .navbar-googlenav.navbar-inverse .btn-navbar:active,
 .navbar-googlenav.navbar-inverse .btn-navbar.active,
 .navbar-googlenav.navbar-inverse .btn-navbar.disabled,
