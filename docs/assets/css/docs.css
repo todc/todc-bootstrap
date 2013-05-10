@@ -3,6 +3,8 @@
  * Special styles for presenting Bootstrap's documentation and code examples.
  */
 
+
+
 /* Key scaffolding
 -------------------------------------------------- */
 
@@ -602,6 +604,7 @@ input:required:invalid {
 }
 .highlight pre {
   padding: 0;
+  margin-top: 0;
   margin-bottom: 0;
   background-color: transparent;
   border: 0;

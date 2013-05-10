@@ -23,14 +23,14 @@ code {
 
 // Blocks of code
 pre {
-  padding: ((@line-height-base - 1) / 2);
-  margin: 0 0( @line-height-base / 2);
+  padding: ((@line-height-computed - 1) / 2);
+  margin: 0 0( @line-height-computed / 2);
   font-size: (@font-size-base - 1); // 14px to 13px
   line-height: @line-height-base;
   border-radius: 0;
 
   // Make prettyprint styles more spaced out for readability
   &.prettyprint {
-    margin-bottom: @line-height-base;
+    margin-bottom: @line-height-computed;
   }
 }

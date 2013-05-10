@@ -9,7 +9,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 1.54;
   color: #333333;
   background-color: #ffffff;
 }
@@ -46,26 +46,26 @@ code {
   white-space: nowrap;
 }
 pre {
-  padding: 9.5px;
-  margin: 0 0 10px;
+  padding: 9.51px;
+  margin: 0 0 10.01px;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.54;
   border-radius: 0;
 }
 pre.prettyprint {
-  margin-bottom: 20px;
+  margin-bottom: 20.02px;
 }
 table {
   background-color: transparent;
 }
 .table {
-  margin-bottom: 20px;
+  margin-bottom: 20.02px;
 }
 .table thead > tr > th,
 .table tbody > tr > th,
 .table thead > tr > td,
 .table tbody > tr > td {
-  line-height: 20px;
+  line-height: 1.54;
   border-top: 1px solid #dddddd;
 }
 .table tbody + tbody {
@@ -165,9 +165,9 @@ table {
   background-color: #f7e7a7;
 }
 legend {
-  margin-bottom: 20px;
+  margin-bottom: 20.02px;
   font-size: 19.5px;
-  line-height: 40px;
+  line-height: 3.08;
   color: #333333;
 }
 select,
@@ -186,7 +186,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  min-height: 30px;
+  min-height: 30.02px;
   padding: 4px 8px;
   font-size: 13px;
   background-color: #ffffff;
@@ -362,7 +362,7 @@ input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
 input[type="color"].input-small {
-  min-height: 24px;
+  min-height: 24.02px;
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 1px;
@@ -370,7 +370,7 @@ input[type="color"].input-small {
 input[class*="span"],
 select[class*="span"],
 textarea[class*="span"] {
-  height: 30px;
+  height: 30.02px;
 }
 input[disabled],
 select[disabled],
@@ -585,7 +585,7 @@ select:focus:required:invalid:focus {
 .input-group-addon {
   padding: 4px 8px;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 1.54;
   background-color: #eeeeee;
   border: 1px solid #d9d9d9;
   border-top-color: #c0c0c0;
@@ -626,7 +626,7 @@ select:focus:required:invalid:focus {
 }
 @media screen and (min-width: 768px) {
   .form-horizontal .control-group {
-    margin-bottom: 20px;
+    margin-bottom: 20.02px;
   }
   .form-horizontal .control-group > .control-label {
     width: 160px;
@@ -639,7 +639,7 @@ select:focus:required:invalid:focus {
   padding: 4px 12px;
   font-size: 13px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.54;
   cursor: default;
   border-radius: 2px;
   -webkit-background-clip: padding;
@@ -1248,8 +1248,9 @@ fieldset[disabled] .btn-link:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .dropdown-menu .divider {
+  margin: -0.22999999999999998 0;
   height: 2px;
-  margin: 9px 0;
+  margin: 9.01px 0;
   overflow: hidden;
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
@@ -1382,7 +1383,7 @@ li.list-group-item a > .glyphicon + .badge {
   padding: 10px 30px 10px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.54;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -1396,9 +1397,10 @@ li.list-group-header {
   margin-top: 9px;
 }
 .list-group .divider {
+  margin: -0.22999999999999998 0;
   background-color: #e5e5e5;
   height: 2px;
-  margin: 9px 0;
+  margin: 9.01px 0;
   overflow: hidden;
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
@@ -1537,7 +1539,7 @@ li.list-group-header {
 }
 .nav-tabs-google > li > a {
   padding: 7px 15px;
-  line-height: 20px;
+  line-height: 20.02px;
   color: #333333;
   border: 3px solid transparent;
   border-width: 3px 0;
@@ -1583,7 +1585,7 @@ li.list-group-header {
 }
 .nav-header {
   font-size: 11px;
-  line-height: 20px;
+  line-height: 20.02px;
   color: #999999;
 }
 /*
@@ -1612,7 +1614,7 @@ li.list-group-header {
   border-radius: 2px;
 }
 .navbar-nav > li > a {
-  padding: 5px 15px 3px;
+  padding: 4.99px 15px 2.99px;
   font-weight: bold;
   color: #999999;
 }
@@ -1636,14 +1638,14 @@ li.list-group-header {
 .navbar-nav input[class*="span"],
 .navbar-nav select[class*="span"],
 .navbar-nav textarea[class*="span"] {
-  height: 26px;
+  height: 26.02px;
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   z-index: 1030;
 }
 .navbar-brand {
-  padding: 4px 15px 4px;
+  padding: 3.99px 15px 3.99px;
   font-size: 14px;
   color: #999999;
 }
@@ -1977,7 +1979,7 @@ li.list-group-header {
   position: relative;
 }
 .navbar-toolbar .navbar-nav > li > a {
-  padding: 8px 15px 8px;
+  padding: 7px 15px 7.99px;
   color: #777777;
   text-shadow: none;
 }
@@ -2268,8 +2270,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-masthead .navbar-brand {
     float: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 11.99px;
+    padding-bottom: 11.99px;
     margin-left: -10px;
   }
   .navbar-masthead .nav {
@@ -2304,8 +2306,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-toolbar .navbar-brand {
     float: left;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 7.99px;
+    padding-bottom: 7.99px;
     margin-left: -10px;
   }
   .navbar-toolbar .nav {
@@ -2338,7 +2340,7 @@ li.list-group-header {
   }
 }
 .navbar-btn {
-  margin-top: -1px;
+  margin-top: -1.0099999999999998px;
 }
 .navbar-link {
   color: #999999;
@@ -2530,7 +2532,7 @@ li.list-group-header {
   border-bottom-left-radius: 4px;
 }
 .breadcrumb {
-  margin: 0 0 20px;
+  margin: 0 0 20.02px;
   background-color: #f3f3f3;
   background-color: #f1f1f1;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
@@ -2545,12 +2547,12 @@ li.list-group-header {
   color: #999999;
 }
 .pagination {
-  margin: 20px 0;
+  margin: 20.02px 0;
   border-radius: 2px;
 }
 .pagination > li > a,
 .pagination > li > span {
-  line-height: 20px;
+  line-height: 1.54;
   background-color: #f3f3f3;
   border: 1px solid #dcdcdc;
   border-left-width: 0;
@@ -2618,7 +2620,7 @@ li.list-group-header {
   filter: alpha(opacity=30);
 }
 .pager {
-  margin: 20px 0;
+  margin: 20.02px 0;
 }
 .pager li > a,
 .pager li > span {
@@ -2803,7 +2805,7 @@ li.list-group-header {
 .thumbnail,
 .img-thumbnail {
   padding: 0;
-  line-height: 20px;
+  line-height: 1.54;
   background-color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 0;
@@ -2872,6 +2874,8 @@ li.list-group-item.active a > .badge {
   padding: 1px;
   height: 14px;
   font-size: 12px;
+  height: 20.02px;
+  margin-bottom: 20.02px;
   background-color: transparent;
   background-image: none;
   border-radius: 0;
