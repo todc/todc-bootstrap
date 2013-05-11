@@ -189,6 +189,7 @@ input[type="color"] {
   min-height: 30px;
   padding: 4px 8px;
   font-size: 13px;
+  line-height: 1.5381;
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 1px;
@@ -598,8 +599,9 @@ select:focus:required:invalid:focus {
 }
 .input-group input:first-child,
 .input-group-addon:first-child,
-.input-group-btn:first-child > .btn:first-child,
-.input-group-btn:first-child > .dropdown-toggle:first-child {
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -608,8 +610,9 @@ select:focus:required:invalid:focus {
 }
 .input-group input:last-child,
 .input-group-addon:last-child,
-.input-group-btn:last-child > .btn:last-child,
-.input-group-btn:last-child > .dropdown-toggle {
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }

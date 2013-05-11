@@ -36,6 +36,7 @@ input[type="color"] {
   min-height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: 4px 8px;
   font-size: @font-size-base;
+  line-height: @line-height-base;
   background-color: @input-bg;
   border: 1px solid @input-border;
   border-radius: @input-border-radius;
@@ -311,8 +312,9 @@ select:focus:required:invalid {
 // Reset rounded corners
 .input-group input:first-child,
 .input-group-addon:first-child,
-.input-group-btn:first-child > .btn:first-child,
-.input-group-btn:first-child > .dropdown-toggle:first-child {
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   .border-right-radius(0);
 }
 .input-group-addon:first-child {
@@ -320,8 +322,9 @@ select:focus:required:invalid {
 }
 .input-group input:last-child,
 .input-group-addon:last-child,
-.input-group-btn:last-child > .btn:last-child,
-.input-group-btn:last-child > .dropdown-toggle {
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
   .border-left-radius(0);
 }
 .input-group-addon:last-child {
