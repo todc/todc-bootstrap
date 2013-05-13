@@ -123,6 +123,27 @@
 
 
 
+// Dropdowns
+// -------------------------
+
+// Make dropdown carets use link color in navs
+.nav .caret {
+  border-top-color: @link-color;
+  border-bottom-color: @link-color;
+}
+.nav a:hover .caret {
+  border-top-color: @link-hover-color;
+  border-bottom-color: @link-hover-color;
+}
+
+// Specific dropdowns
+.nav-tabs .dropdown-menu {
+  // Remove the top rounded corners here since there is a hard edge above the menu
+  .border-top-radius(0);
+}
+
+
+
 // Nav headers (for dropdowns and lists)
 // -------------------------
 
@@ -131,25 +152,3 @@
   line-height: @line-height-base;
   color: @gray-light;
 }
-
-
-
-/*
-// DROPDOWNS
-// ---------
-
-.nav-tabs .dropdown-menu {
-  border-radius: 0; // remove the top rounded corners here since there is a hard edge above the menu
-}
-.nav-tabs .dropdown-toggle .caret {
-  border-top-color: #666;
-  border-bottom-color: #666;
-}
-.nav-tabs .dropdown-toggle:hover .caret {
-  border-top-color: #333;
-  border-bottom-color: #333;
-}
-.nav-pills .dropdown-menu {
-  border-radius: 0; // make rounded corners match the pills
-}
-*/
