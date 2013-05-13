@@ -2693,30 +2693,16 @@ input[type="button"].btn-block {
   content: "\e160";
 }
 
-.dropup,
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle:active,
-.open .dropdown-toggle {
-  outline: 0;
-}
-
 .caret {
   display: inline-block;
   width: 0;
   height: 0;
-  vertical-align: top;
+  margin-left: 2px;
+  vertical-align: middle;
   border-top: 4px solid #000;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   content: "";
-}
-
-.dropdown .caret {
-  margin-top: 8px;
-  margin-left: 2px;
 }
 
 .dropdown-menu {
@@ -2811,6 +2797,10 @@ input[type="button"].btn-block {
 
 .open > .dropdown-menu {
   display: block;
+}
+
+.open > a {
+  outline: 0;
 }
 
 .pull-right > .dropdown-menu {
@@ -3140,6 +3130,7 @@ button.close {
 }
 
 .nav > li {
+  position: relative;
   display: block;
 }
 
@@ -3169,6 +3160,21 @@ button.close {
 
 .nav > li + .nav-header {
   margin-top: 9px;
+}
+
+.nav.open > a,
+.nav.open > a:hover,
+.nav.open > a:focus {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+.nav.open > a .caret,
+.nav.open > a:hover .caret,
+.nav.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 
 .nav > .pull-right {
@@ -3320,74 +3326,21 @@ button.close {
   display: block;
 }
 
-/*
-// Prevent IE8 from misplacing imgs
-// See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
-.nav > li > a > img {
-  max-width: none;
+.nav .caret {
+  border-top-color: #428bca;
+  border-bottom-color: #428bca;
 }
 
-// Dropdowns
-// -------------------------
+.nav a:hover .caret {
+  border-top-color: #2a6496;
+  border-bottom-color: #2a6496;
+}
 
 .nav-tabs .dropdown-menu {
-  // Remove the top rounded corners here since there is a hard edge above the menu
-  .border-top-radius(0);
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
-
-// Default dropdown links
-// -------------------------
-// Make carets use linkColor to start
-.nav .dropdown-toggle .caret {
-  border-top-color: @link-color;
-  border-bottom-color: @link-color;
-  margin-top: 8px;
-}
-.nav .dropdown-toggle:hover .caret {
-  border-top-color: @link-hover-color;
-  border-bottom-color: @link-hover-color;
-}
-
-// Active dropdown links
-// -------------------------
-.nav .active .dropdown-toggle .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-.nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: @gray;
-  border-bottom-color: @gray;
-}
-
-// Active:hover dropdown links
-// -------------------------
-.nav > .dropdown.active > a:hover {
-  cursor: pointer;
-}
-
-// Open dropdowns
-// -------------------------
-.nav-tabs .open .dropdown-toggle,
-.nav-pills .open .dropdown-toggle,
-.nav > li.dropdown.open.active > a:hover {
-  color: #fff;
-  background-color: @gray-light;
-  border-color: @gray-light;
-}
-.nav li.dropdown.open .caret,
-.nav li.dropdown.open.active .caret,
-.nav li.dropdown.open a:hover .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  .opacity(1);
-}
-
-// Dropdowns in stacked tabs
-.tabs-stacked .open > a:hover {
-  border-color: @gray-light;
-}
-
-*/
 
 .navbar {
   position: relative;
@@ -3548,27 +3501,27 @@ button.close {
   border-bottom-left-radius: 0;
 }
 
-.navbar-nav li.dropdown > a:hover .caret,
-.navbar-nav li.dropdown > a:focus .caret {
+.navbar-nav > .dropdown > a:hover .caret,
+.navbar-nav > .dropdown > a:focus .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 
-.navbar-nav li.dropdown.open > .dropdown-toggle,
-.navbar-nav li.dropdown.active > .dropdown-toggle,
-.navbar-nav li.dropdown.open.active > .dropdown-toggle {
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
   color: #555555;
   background-color: #d5d5d5;
 }
 
-.navbar-nav li.dropdown > .dropdown-toggle .caret {
+.navbar-nav > .dropdown > a .caret {
   border-top-color: #777777;
   border-bottom-color: #777777;
 }
 
-.navbar-nav li.dropdown.open > .dropdown-toggle .caret,
-.navbar-nav li.dropdown.active > .dropdown-toggle .caret,
-.navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar-nav > .open > a .caret,
+.navbar-nav > .open > a:hover .caret,
+.navbar-nav > .open > a:focus .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
 }
@@ -3634,26 +3587,26 @@ button.close {
   background-color: #fff;
 }
 
-.navbar-inverse .navbar-nav li.dropdown.open > .dropdown-toggle,
-.navbar-inverse .navbar-nav li.dropdown.active > .dropdown-toggle,
-.navbar-inverse .navbar-nav li.dropdown.open.active > .dropdown-toggle {
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
   background-color: #080808;
 }
 
-.navbar-inverse .navbar-nav li.dropdown > a:hover .caret {
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle .caret {
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
   border-top-color: #999999;
   border-bottom-color: #999999;
 }
 
-.navbar-inverse .navbar-nav li.dropdown.open > .dropdown-toggle .caret,
-.navbar-inverse .navbar-nav li.dropdown.active > .dropdown-toggle .caret,
-.navbar-inverse .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
@@ -5159,68 +5112,68 @@ a.list-group-item.active > .badge,
   visibility: hidden;
 }
 
-.visible-phone {
+.visible-sm {
   display: inherit !important;
 }
 
-.visible-tablet {
+.visible-md {
   display: none !important;
 }
 
-.visible-desktop {
+.visible-lg {
   display: none !important;
 }
 
-.hidden-phone {
+.hidden-sm {
   display: none !important;
 }
 
-.hidden-tablet {
+.hidden-md {
   display: inherit !important;
 }
 
-.hidden-desktop {
+.hidden-lg {
   display: inherit !important;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .visible-phone {
+  .visible-sm {
     display: none !important;
   }
-  .visible-tablet {
+  .visible-md {
     display: inherit !important;
   }
-  .visible-desktop {
+  .visible-lg {
     display: none !important;
   }
-  .hidden-phone {
+  .hidden-sm {
     display: inherit !important;
   }
-  .hidden-tablet {
+  .hidden-md {
     display: none !important;
   }
-  .hidden-desktop {
+  .hidden-lg {
     display: inherit !important;
   }
 }
 
 @media (min-width: 992px) {
-  .visible-phone {
+  .visible-sm {
     display: none !important;
   }
-  .visible-tablet {
+  .visible-md {
     display: none !important;
   }
-  .visible-desktop {
+  .visible-lg {
     display: inherit !important;
   }
-  .hidden-phone {
+  .hidden-sm {
     display: inherit !important;
   }
-  .hidden-tablet {
+  .hidden-md {
     display: inherit !important;
   }
-  .hidden-desktop {
+  .hidden-lg {
     display: none !important;
   }
 }
