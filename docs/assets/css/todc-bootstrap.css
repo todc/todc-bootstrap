@@ -1254,7 +1254,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 3px 30px;
   position: relative;
 }
-.dropdown-menu > li > a i {
+.dropdown-menu > li > a .glyphicon {
   position: absolute;
   left: 7px;
   top: 4px;
