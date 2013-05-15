@@ -1610,6 +1610,7 @@ li.list-group-header {
   padding: 5.5px 15px 3.5px;
   font-weight: bold;
   color: #999999;
+  border-radius: 2px;
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
@@ -2249,6 +2250,9 @@ li.list-group-header {
   .navbar .nav > li {
     float: left;
   }
+  .navbar .nav > li > a {
+    border-radius: 0;
+  }
   .navbar .nav.pull-right {
     float: right;
   }
@@ -2285,6 +2289,9 @@ li.list-group-header {
   .navbar-masthead .nav > li {
     float: left;
   }
+  .navbar-masthead .nav > li > a {
+    border-radius: 0;
+  }
   .navbar-masthead .nav.pull-right {
     float: right;
   }
@@ -2320,6 +2327,9 @@ li.list-group-header {
   }
   .navbar-toolbar .nav > li {
     float: left;
+  }
+  .navbar-toolbar .nav > li > a {
+    border-radius: 0;
   }
   .navbar-toolbar .nav.pull-right {
     float: right;
