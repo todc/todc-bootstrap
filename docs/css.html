@@ -1510,7 +1510,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <form class="bs-example">
       <div class="input-group col col-lg-7">
         <div class="input-group-btn">
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -1525,7 +1525,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <div class="input-group col col-lg-7">
         <input type="text">
         <div class="input-group-btn">
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -1539,7 +1539,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% highlight html %}
 <div class="input-group col col-lg-7">
   <div class="input-group-btn">
-    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">Action</a></li>
       <li><a href="#">Another action</a></li>
@@ -1554,7 +1554,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <div class="input-group col col-lg-7">
   <input type="text">
   <div class="input-group-btn">
-    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">Action</a></li>
       <li><a href="#">Another action</a></li>
@@ -1570,8 +1570,8 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <form class="bs-example">
       <div class="input-group col col-lg-7">
         <div class="input-group-btn">
-          <button class="btn btn-default" tabindex="-1">Action</button>
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+          <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
@@ -1590,8 +1590,8 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <div class="input-group col col-lg-7">
         <input type="text">
         <div class="input-group-btn">
-          <button class="btn btn-default" tabindex="-1">Action</button>
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+          <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
@@ -1879,10 +1879,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <h3>Close icon</h3>
     <p>Use the generic close icon for dismissing content like modals and alerts.</p>
     <div class="bs-example">
-      <p><button class="close" style="float: none;">&times;</button></p>
+      <p><button type="button" class="close">&times;</button></p>
     </div>
 {% highlight html %}
-<button class="close" style="float: none;">&times;</button>
+<button type="button" class="close">&times;</button>
 {% endhighlight %}
 
     <h3>.pull-left</h3>
