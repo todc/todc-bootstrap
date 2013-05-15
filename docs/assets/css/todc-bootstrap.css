@@ -1607,7 +1607,7 @@ li.list-group-header {
   border-radius: 2px;
 }
 .navbar-nav > li > a {
-  padding: 5.5px 15px 3.5px;
+  padding: 5px 15px 3px;
   font-weight: bold;
   color: #999999;
   border-radius: 2px;
