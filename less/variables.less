@@ -51,20 +51,24 @@
 @font-size-mini:          (@font-size-base - 2); // 11px
 
 @line-height-base:        1.5381; // 20/13
-@line-height-computed:    ceil(@font-size-base * @line-height-base); // ~20px
-@line-height-headings:    1.15;
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
-@headings-font-family:    inherit; // empty to use BS default, @font-family-base
 @headings-font-weight:    bold;
+@headings-line-height:    1.15;
 
 
 // Components
 // -------------------------
-// Based on 14px font-size and 20px line-height
+// Based on 14px font-size and 1.5381 line-height (~20px to start)
 
-@padding-large:          9px 14px; // 44px
-@padding-small:          2px 8px;  // 26px
-@padding-mini:           1px 6px;   // 24px
+@padding-base-vertical:          4px;
+@padding-base-horizontal:        8px;
+
+@padding-large-vertical:         9px;
+@padding-large-horizontal:       14px;
+
+@padding-small-vertical:         2px;
+@padding-small-horizontal:       8px;
 
 @border-radius-base:      2px;
 @border-radius-large:     4px;
@@ -123,9 +127,10 @@
 
 @input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-computed + 10px); // base line-height + 8px vertical padding + 2px top/bottom border
-@input-height-large:             (@line-height-computed + 20px); // base line-height + 18px vertical padding + 2px top/bottom border
-@input-height-small:             (@line-height-computed + 4px);  // base line-height + 2px vertical padding + 2px top/bottom border
+@input-height-base:              (@line-height-computed + 10);
+@input-height-large:             (@line-height-computed + 20);
+@input-height-small:             (@line-height-computed + 4);
+
 
 @form-actions-bg:                #f5f5f5;
 

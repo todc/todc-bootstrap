@@ -58,3 +58,41 @@
 .pagination .disabled a [class^="icon-"] {
   .opacity(.3);
 }
+
+
+// Sizing
+// --------------------------------------------------
+
+// Large
+.pagination-large {
+  > li > a,
+  > li > span {
+    padding: @padding-large-vertical @padding-large-horizontal;
+    font-size: @font-size-large;
+  }
+  > li:first-child > a,
+  > li:first-child > span {
+    .border-left-radius(@border-radius-large);
+  }
+  > li:last-child > a,
+  > li:last-child > span {
+    .border-right-radius(@border-radius-large);
+  }
+}
+
+// Small
+.pagination-small {
+  > li > a,
+  > li > span {
+    padding: @padding-small-vertical @padding-small-horizontal;
+    font-size: @font-size-small;
+  }
+  > li:first-child > a,
+  > li:first-child > span {
+    .border-left-radius(@border-radius-small);
+  }
+  > li:last-child > a,
+  > li:last-child > span {
+    .border-right-radius(@border-radius-small);
+  }
+}

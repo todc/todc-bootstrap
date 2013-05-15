@@ -65,7 +65,7 @@
 // Brand/project name
 .navbar-brand {
   // Vertically center the text given @navbar-height
-  padding: ((@navbar-height - @line-height-computed) / 2) 15px ((@navbar-height - @line-height-computed) / 2);
+  padding: (floor((@navbar-height - @line-height-computed) / 2)) 15px (floor((@navbar-height - @line-height-computed) / 2));
   font-size: @font-size-large;
   color: @navbar-brand-color;
   &:hover,
@@ -78,6 +78,7 @@
 
 .navbar-text {
   color: @navbar-color;
+  .navbar-vertical-align(20px, @navbar-height); // Vertically center in navbar
 }
 
 // Collapsible navbar toggle
