@@ -534,7 +534,7 @@
 
     > li > a {
       // padding: 9px 15px 8px;
-      padding: (floor((@navbar-toolbar-height - @line-height-computed) / 2)) 15px (((@navbar-toolbar-height - @line-height-computed) / 2));
+      padding: (floor((@navbar-toolbar-height - @line-height-computed) / 2)) 15px (floor((@navbar-toolbar-height - @line-height-computed) / 2));
       color: @navbar-toolbar-link-color;
       text-shadow: none;
     }
@@ -922,8 +922,8 @@
 
   .navbar-masthead .navbar-brand {
     float: left;
-    padding-top: ((@navbar-masthead-height - @line-height-computed) / 2);
-    padding-bottom: ((@navbar-masthead-height - @line-height-computed) / 2);
+    padding-top: (floor((@navbar-masthead-height - @line-height-computed) / 2));
+    padding-bottom: (floor((@navbar-masthead-height - @line-height-computed) / 2));
     margin-left: -10px;
   }
   .navbar-masthead .nav {
@@ -979,8 +979,8 @@
 
   .navbar-toolbar .navbar-brand {
     float: left;
-    padding-top: ((@navbar-toolbar-height - @line-height-computed) / 2);
-    padding-bottom: ((@navbar-toolbar-height - @line-height-computed) / 2);
+    padding-top: (floor((@navbar-toolbar-height - @line-height-computed) / 2));
+    padding-bottom: (floor((@navbar-toolbar-height - @line-height-computed) / 2));
     margin-left: -10px;
   }
   .navbar-toolbar .nav {

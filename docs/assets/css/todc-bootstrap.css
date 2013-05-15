@@ -1979,7 +1979,7 @@ li.list-group-header {
   position: relative;
 }
 .navbar-toolbar .navbar-nav > li > a {
-  padding: 8px 15px 8.5px;
+  padding: 8px 15px 8px;
   color: #777777;
   text-shadow: none;
 }
@@ -2277,8 +2277,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-masthead .navbar-brand {
     float: left;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     margin-left: -10px;
   }
   .navbar-masthead .nav {
@@ -2316,8 +2316,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-toolbar .navbar-brand {
     float: left;
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: -10px;
   }
   .navbar-toolbar .nav {
