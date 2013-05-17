@@ -20,7 +20,6 @@
 
 !function ($) { "use strict";
 
-
   // DROPDOWN CLASS DEFINITION
   // =========================
 
@@ -140,3 +139,4 @@
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
 }(window.jQuery);
+
