@@ -3,7 +3,7 @@
   , "description": "Google-styled theme for Bootstrap."
   , "keywords": ["bootstrap", "css", "theme", "google"]
   , "homepage": "http://todc.github.io/todc-bootstrap/"
-  , "author": "Tim O'Donnell"
+  , "authors": [{"name":"Tim O'Donnell", "homepage":"https://github.com/todc/"}]
   , "license": "MIT"
-
+  , "support":{"issues":"https://github.com/todc/todc-bootstrap/issues"}
 }
