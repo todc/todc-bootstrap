@@ -80,7 +80,7 @@
     })
   }
 
-  Modal.prototype.show = function (e) {
+  Modal.prototype.hide = function (e) {
     if (e) e.preventDefault()
 
     e = $.Event('bs:modal:hide')
@@ -238,17 +238,5 @@
     var $body = $(document.body)
       .on('bs:modal:shown',  '.modal', function () { $body.addClass('modal-open') })
       .on('bs:modal:hidden', '.modal', function () { $body.removeClass('modal-open') })
-
-}(window.jQuery);
-et
-      .modal(option)
-      .one('hide', function () {
-        $this.focus()
-      })
-    })
-
-    var $body = $(document.body)
-      .on('shown', '.modal', function () { $body.addClass('modal-open') })
-      .on('hidden', '.modal', function () { $body.removeClass('modal-open') })
 
 }(window.jQuery);

@@ -43,7 +43,10 @@
     clearMenus()
 
     if (!isActive) {
-      $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
+      if ('ontouchstart' in document.documentElement) {
+        // if mobile we we use a backdrop because click events don't delegate
+        $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
+      }
       $parent.toggleClass('open')
     }
 
@@ -134,9 +137,9 @@
 
 
   $(document)
+    .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
 }(window.jQuery);
-

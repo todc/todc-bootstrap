@@ -154,11 +154,3 @@
   })
 
 }(window.jQuery);
- {
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this)
-      $spy.scrollspy($spy.data())
-    })
-  })
-
-}(window.jQuery);
