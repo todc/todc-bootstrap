@@ -223,15 +223,15 @@ textarea {
 
 // Warning
 .has-warning {
-  .formFieldState(@state-warning-text, @state-warning-text, @state-warning-bg);
+  .form-field-validation(@state-warning-text, @state-warning-text, @state-warning-bg);
 }
 // Error
 .has-error {
-  .formFieldState(#dd4b39, #dd4b39, @state-danger-bg);
+  .form-field-validation(#dd4b39, #dd4b39, @state-danger-bg);
 }
 // Success
 .has-success {
-  .formFieldState(@state-success-text, @state-success-text, @state-success-bg);
+  .form-field-validation(@state-success-text, @state-success-text, @state-success-bg);
 }
 
 // HTML5 invalid states
