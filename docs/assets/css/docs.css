@@ -507,31 +507,25 @@ body {
   position: relative;
   float: left;
   width: 25%;
-  height: 43px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 43px;
-  color: #999;
-  text-align: center;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
 }
 .responsive-utilities-test li + li {
   margin-left: 10px;
 }
 .responsive-utilities-test span {
-  position: absolute;
-  top:    -1px;
-  left:   -1px;
-  right:  -1px;
-  bottom: -1px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  border-radius: 4px;
 }
-.responsive-utilities-test span {
+.responsive-utilities-test.visible-on [class*="hidden"],
+.responsive-utilities-test.hidden-on [class*="visible"] {
+  color: #999;
+  border: 1px solid #ddd;
+}
+.responsive-utilities-test.visible-on [class*="visible"],
+.responsive-utilities-test.hidden-on [class*="hidden"] {
   color: #468847;
   background-color: #dff0d8;
   border: 1px solid #d6e9c6;
@@ -652,6 +646,10 @@ input:required:invalid {
   margin-bottom: 5px;
 }
 
+/* Hide the top link initially */
+.bs-top {
+  display: none;
+}
 
 
 /* Responsive variations
@@ -679,6 +677,7 @@ input:required:invalid {
 
   /* Back to top link */
   .bs-top {
+    display: block; /* Unhide */
     float: left;
     padding: 7px 15px;
     font-weight: 500;
