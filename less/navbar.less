@@ -386,7 +386,7 @@
 
   // Navbar form
   .navbar-form {
-    .navbar-vertical-align(30px, @navbar-masthead-height); // Vertically center in navbar
+    .navbar-vertical-align(@input-height-base, @navbar-masthead-height); // Vertically center in navbar
   }
 
   // Dropdown menus
@@ -624,7 +624,10 @@
 
   // Buttons in navbar
   // -------------------------
-  .btn { font-size: @font-size-mini; }
+  .btn {
+    font-size: @font-size-mini;
+    padding: 6px 12px;
+  }
 
   // Brand: website or project name
   // -------------------------
@@ -664,12 +667,12 @@
 
   // Navbar form
   .navbar-form {
-    .navbar-vertical-align(30px, @navbar-toolbar-height); // Vertically center in navbar
+    .navbar-vertical-align(@input-height-base, @navbar-toolbar-height); // Vertically center in navbar
   }
 
   // Optional: Group multiple button groups together for a toolbar
   .btn-toolbar {
-    .navbar-vertical-align(30px, @navbar-toolbar-height); // Vertically center in navbar
+    .navbar-vertical-align(@input-height-base, @navbar-toolbar-height); // Vertically center in navbar
   }
 
   // Dropdown menus

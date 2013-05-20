@@ -46,20 +46,20 @@ code {
   white-space: nowrap;
 }
 pre {
-  padding: 9px;
-  margin: 0 0 9.5px;
+  padding: 9.5px;
+  margin: 0 0 10px;
   font-size: 12px;
   line-height: 1.5381;
   border-radius: 0;
 }
 pre.prettyprint {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 table {
   background-color: transparent;
 }
 .table {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .table thead > tr > th,
 .table tbody > tr > th,
@@ -165,7 +165,7 @@ table {
   background-color: #f7e7a7;
 }
 legend {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-size: 19.5px;
   color: #333333;
 }
@@ -185,7 +185,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  min-height: 29px;
+  min-height: 30px;
   padding: 4px 8px;
   font-size: 13px;
   line-height: 1.5381;
@@ -347,7 +347,7 @@ input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
 input[type="color"].input-small {
-  min-height: 23px;
+  min-height: 24px;
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 1px;
@@ -607,7 +607,7 @@ select:focus:required:invalid:focus {
   z-index: 2;
 }
 .form-horizontal .control-group {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .form-horizontal .control-group > .control-label {
   width: 160px;
@@ -1224,7 +1224,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .dropdown-menu .divider {
   height: 2px;
-  margin: 8.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
@@ -1373,7 +1373,7 @@ li.list-group-header {
 .list-group .divider {
   background-color: #e5e5e5;
   height: 2px;
-  margin: 8.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #ebebeb;
   border-bottom: 1px solid #ffffff;
@@ -1617,7 +1617,7 @@ li.list-group-header {
 .navbar-nav input[class*="span"],
 .navbar-nav select[class*="span"],
 .navbar-nav textarea[class*="span"] {
-  height: 25px;
+  height: 26px;
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -2032,6 +2032,7 @@ li.list-group-header {
 }
 .navbar-toolbar .btn {
   font-size: 11px;
+  padding: 6px 12px;
 }
 .navbar-toolbar .navbar-brand,
 .navbar-toolbar .navbar-brand .btn {
@@ -2338,7 +2339,7 @@ li.list-group-header {
   }
 }
 .navbar-btn {
-  margin-top: -0.5px;
+  margin-top: -1px;
 }
 .navbar-link {
   color: #999999;
@@ -2460,7 +2461,7 @@ li.list-group-header {
   border-bottom-color: #fff;
 }
 .breadcrumb {
-  margin: 0 0 19px;
+  margin: 0 0 20px;
   background-color: #f3f3f3;
   background-color: #f1f1f1;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f1f1f1));
@@ -2475,7 +2476,7 @@ li.list-group-header {
   color: #999999;
 }
 .pagination {
-  margin: 19px 0;
+  margin: 20px 0;
   border-radius: 2px;
 }
 .pagination > li > a,
@@ -2578,7 +2579,7 @@ li.list-group-header {
   border-top-right-radius: 1px;
 }
 .pager {
-  margin: 19px 0;
+  margin: 20px 0;
 }
 .pager li > a,
 .pager li > span {
@@ -2828,8 +2829,8 @@ li.list-group-item.active a > .badge {
   padding: 1px;
   height: 14px;
   font-size: 12px;
-  height: 19px;
-  margin-bottom: 19px;
+  height: 20px;
+  margin-bottom: 20px;
   background-color: transparent;
   background-image: none;
   border-radius: 0;
