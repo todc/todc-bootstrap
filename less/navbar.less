@@ -88,7 +88,7 @@
   right: 10px;
   padding: 4px 5px;
   // .navbar-vertical-align(26px); // Vertically center in navbar
-  // #gradient > .vertical(#f5f5f5, #f1f1f1);
+  // #gradient > .vertical(@start-color: #f5f5f5, @end-color: #f1f1f1);
   background-color: #444;
   background-image: none;
   border: 1px solid #222;
@@ -291,7 +291,7 @@
   border-radius: @border-radius-base;
   .box-shadow(none);
   color: @navbar-color;
-  #gradient > .vertical(@navbar-masthead-bg, @navbar-masthead-bg);
+  #gradient > .vertical(@start-color: @navbar-masthead-bg, @end-color: @navbar-masthead-bg);
 }
 
 // Masthead nav links
@@ -321,7 +321,7 @@
       .box-shadow(none);
       color: @navbar-masthead-link-active-color;
       text-decoration: none;
-      #gradient > .vertical(@navbar-masthead-link-active-bg, @navbar-masthead-link-active-bg);
+      #gradient > .vertical(@start-color: @navbar-masthead-link-active-bg, @end-color: @navbar-masthead-link-active-bg);
     }
     > .disabled > a,
     > .disabled > a:hover,
@@ -427,7 +427,7 @@
 
 .navbar-masthead {
   &.navbar-inverse {
-    #gradient > .vertical(@gray, @navbar-masthead-inverse-bg);
+    #gradient > .vertical(@start-color: @gray, @end-color: @navbar-masthead-inverse-bg);
     border-color: @navbar-masthead-inverse-border;
     color: @navbar-masthead-inverse-color;
 
@@ -473,7 +473,7 @@
       > .active > a:hover,
       > .active > a:focus {
         color: @navbar-masthead-inverse-link-active-color;
-        #gradient > .vertical(@navbar-masthead-inverse-link-active-bg, @navbar-masthead-inverse-link-active-bg);
+        #gradient > .vertical(@start-color: @navbar-masthead-inverse-link-active-bg, @end-color: @navbar-masthead-inverse-link-active-bg);
       }
       > .disabled > a,
       > .disabled > a:hover,
@@ -519,7 +519,7 @@
   min-height: @navbar-toolbar-height;
   margin: 0px;
   color: @navbar-color;
-  #gradient > .vertical(@navbar-toolbar-bg, @navbar-toolbar-bg);
+  #gradient > .vertical(@start-color: @navbar-toolbar-bg, @end-color: @navbar-toolbar-bg);
   border: 1px solid @navbar-toolbar-border;
 }
 
@@ -747,7 +747,7 @@
 
 .navbar-toolbar {
   &.navbar-inverse {
-    #gradient > .vertical(@gray, @navbar-toolbar-inverse-bg);
+    #gradient > .vertical(@start-color: @gray, @end-color: @navbar-toolbar-inverse-bg);
     border-color: @navbar-toolbar-inverse-border;
     color: @navbar-toolbar-inverse-color;
 
@@ -786,7 +786,7 @@
       > .active > a:focus {
         font-weight: bold;
         color: @navbar-toolbar-inverse-link-active-color;
-        #gradient > .vertical(@navbar-toolbar-inverse-link-active-bg, @navbar-toolbar-inverse-link-active-bg);
+        #gradient > .vertical(@start-color: @navbar-toolbar-inverse-link-active-bg, @end-color: @navbar-toolbar-inverse-link-active-bg);
       }
       > .active > a:hover {
         text-decoration: underline;

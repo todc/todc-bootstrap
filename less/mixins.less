@@ -21,10 +21,10 @@
 // -------------------------
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-.btn-states(@startColor, @endColor, @color: #fff, @border: @btn-default-border) {
-  border: 1px solid @border;
+.btn-states(@start-color, @end-color, @color: #fff, @border-color: @btn-default-border) {
+  border: 1px solid @border-color;
   color: @color;
-  #gradient > .vertical(@startColor, @endColor);
+  #gradient > .vertical(@start-color: @start-color, @end-color: @end-color);
   .reset-filter();
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 
@@ -38,25 +38,25 @@
   &:focus,
   &:active,
   &.active {
-    border: 1px solid darken(@border, 5%);
+    border: 1px solid darken(@border-color, 5%);
     color: @color;
-    #gradient > .vertical(@startColor, darken(@endColor, 5%));
+    #gradient > .vertical(@start-color: @start-color, @end-color: darken(@end-color, 5%));
     .reset-filter();
-    background-color: darken(@endColor, 5%);
-    background-color: darken(@endColor, 5%) e("\9");
+    background-color: darken(@end-color, 5%);
+    background-color: darken(@end-color, 5%) e("\9");
   }
 
   &:active,
   &.active {
-    border: 1px solid darken(@border, 10%);
+    border: 1px solid darken(@border-color, 10%);
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    #gradient > .vertical(@startColor, darken(@endColor, 10%));
+    #gradient > .vertical(@start-color: @start-color, @end-color: darken(@end-color, 10%));
     .reset-filter();
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
 
   &:focus {
-    border: 1px solid @border;
+    border: 1px solid @border-color;
     .box-shadow(inset 0 0 0 1px #fff);
   }
 
@@ -67,11 +67,11 @@
     &:focus,
     &:active,
     &.active {
-      border: 1px solid @border;
-      #gradient > .vertical(@startColor, @endColor);
+      border: 1px solid @border-color;
+      #gradient > .vertical(@start-color: @start-color, @end-color: @end-color);
       .reset-filter();
-      background-color: @startColor;
-      background-color: @startColor e("\9");
+      background-color: @start-color;
+      background-color: @start-color e("\9");
       .box-shadow(none)
     }
   }
