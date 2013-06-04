@@ -786,6 +786,7 @@ pre code {
 .col-9,
 .col-10,
 .col-11,
+.col-12,
 .col-lg-1,
 .col-lg-2,
 .col-lg-3,
@@ -796,7 +797,8 @@ pre code {
 .col-lg-8,
 .col-lg-9,
 .col-lg-10,
-.col-lg-11 {
+.col-lg-11,
+.col-lg-12 {
   position: relative;
   float: left;
   width: 100%;
@@ -806,82 +808,89 @@ pre code {
 }
 
 .col-1 {
-  width: 0.08333333333333333;
+  width: 8.333333333333332%;
 }
 
 .col-2 {
-  width: 0.16666666666666666;
+  width: 16.666666666666664%;
 }
 
 .col-3 {
-  width: 0.25;
+  width: 25%;
 }
 
 .col-4 {
-  width: 0.3333333333333333;
+  width: 33.33333333333333%;
 }
 
 .col-5 {
-  width: 0.4166666666666667;
+  width: 41.66666666666667%;
 }
 
 .col-6 {
-  width: 0.5;
+  width: 50%;
 }
 
 .col-7 {
-  width: 0.5833333333333334;
+  width: 58.333333333333336%;
 }
 
 .col-8 {
-  width: 0.6666666666666666;
+  width: 66.66666666666666%;
 }
 
 .col-9 {
-  width: 0.75;
+  width: 75%;
 }
 
 .col-10 {
-  width: 0.8333333333333334;
+  width: 83.33333333333334%;
 }
 
 .col-11 {
-  width: 0.9166666666666666;
+  width: 91.66666666666666%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .col-md-1 {
-    width: 0.08333333333333333;
+    width: 8.333333333333332%;
   }
   .col-md-2 {
-    width: 0.16666666666666666;
+    width: 16.666666666666664%;
   }
   .col-md-3 {
-    width: 0.25;
+    width: 25%;
   }
   .col-md-4 {
-    width: 0.3333333333333333;
+    width: 33.33333333333333%;
   }
   .col-md-5 {
-    width: 0.4166666666666667;
+    width: 41.66666666666667%;
   }
   .col-md-6 {
-    width: 0.5;
+    width: 50%;
   }
   .col-md-7 {
-    width: 0.5833333333333334;
+    width: 58.333333333333336%;
   }
   .col-md-8 {
-    width: 0.6666666666666666;
+    width: 66.66666666666666%;
   }
   .col-md-9 {
-    width: 0.75;
+    width: 75%;
   }
   .col-md-10 {
-    width: 0.8333333333333334;
+    width: 83.33333333333334%;
   }
   .col-md-11 {
-    width: 0.9166666666666666;
+    width: 91.66666666666666%;
+  }
+  .col-md-12 {
+    width: 100%;
   }
   .col-offset-1 {
     margin-left: 8.333333333333332%;
@@ -1017,6 +1026,9 @@ pre code {
   }
   .col-lg-11 {
     width: 91.66666666666666%;
+  }
+  .col-lg-12 {
+    width: 100%;
   }
 }
 
