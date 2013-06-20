@@ -2256,20 +2256,20 @@ li.list-group-header {
   .navbar .navbar-brand {
     float: left;
   }
-  .navbar .nav {
+  .navbar-nav {
     float: left;
     margin-top: 0;
   }
-  .navbar .nav > li {
+  .navbar-nav > li {
     float: left;
   }
-  .navbar .nav > li > a {
+  .navbar-nav > li > a {
     border-radius: 0;
   }
-  .navbar .nav.pull-right {
+  .navbar-nav.pull-right {
     float: right;
   }
-  .navbar .nav > .divider {
+  .navbar-nav > .divider {
     width: 1px;
     height: 16.8px;
     margin: 5.6000000000000005px 9px;
