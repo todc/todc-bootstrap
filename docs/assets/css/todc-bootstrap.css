@@ -569,19 +569,6 @@ textarea[readonly] textarea:active {
   border-color: #468847;
   background-color: #dff0d8;
 }
-input:focus:required:invalid,
-textarea:focus:required:invalid,
-select:focus:required:invalid {
-  color: #dd4b39;
-  border-color: #dd4b39;
-}
-input:focus:required:invalid:focus,
-textarea:focus:required:invalid:focus,
-select:focus:required:invalid:focus {
-  border-color: #dd4b39;
-  -webkit-box-shadow: 0;
-  box-shadow: 0;
-}
 .input-group-addon,
 .input-group-btn,
 .input-group input {

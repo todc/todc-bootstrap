@@ -235,19 +235,6 @@ textarea {
   .form-field-validation(@state-success-text, @state-success-text, @state-success-bg);
 }
 
-// HTML5 invalid states
-// Shares styles with the .control-group.error above
-input:focus:required:invalid,
-textarea:focus:required:invalid,
-select:focus:required:invalid {
-  color: #dd4b39;
-  border-color: #dd4b39;
-  &:focus {
-    border-color: #dd4b39;
-    .box-shadow(0);
-  }
-}
-
 
 
 

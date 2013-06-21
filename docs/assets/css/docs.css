@@ -644,15 +644,6 @@ input.focused {
   outline: 0 !important;
 }
 
-/* Pseudo :required:invalid state for showing how it looks in the docs */
-input:required:invalid {
-  color: #dd4b39;
-  border-color: #dd4b39 !important;
-  -webkit-box-shadow: 0 0 6px #F8B9B7 !important;
-     -moz-box-shadow: 0 0 6px #F8B9B7 !important;
-          box-shadow: 0 0 6px #F8B9B7 !important;
-}
-
 /* Scrollspy demo on fixed height div */
 .scrollspy-example {
   position: relative;
