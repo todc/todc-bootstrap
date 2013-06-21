@@ -327,6 +327,7 @@ input[type="url"].input-large,
 input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
+  min-height: 40px;
   padding: 9px 14px;
   font-size: 14px;
   border-radius: 4px;
