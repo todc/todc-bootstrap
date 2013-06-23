@@ -16,7 +16,7 @@
 .navbar-nav {
   > li > a {
     // Vertically center the text given @navbar-height
-    padding: (floor((@navbar-height - @line-height-computed) / 2) + 1) 15px (floor((@navbar-height - @line-height-computed) / 2) - 1);
+    padding: (floor((@navbar-height - @line-height-computed) / 2) + 1) @navbar-padding (floor((@navbar-height - @line-height-computed) / 2) - 1);
     font-weight: bold;
     color: @navbar-link-color;
     border-radius: @border-radius-base;
@@ -66,7 +66,7 @@
 // Brand/project name
 .navbar-brand {
   // Vertically center the text given @navbar-height
-  padding: (floor((@navbar-height - @line-height-computed) / 2)) 15px (floor((@navbar-height - @line-height-computed) / 2));
+  padding: (floor((@navbar-height - @line-height-computed) / 2)) @navbar-padding (floor((@navbar-height - @line-height-computed) / 2));
   font-size: @font-size-large;
   color: @navbar-brand-color;
   &:hover,
@@ -301,7 +301,7 @@
   .navbar-nav {
     > li > a {
       float: none;
-      padding: 8px 15px;
+      padding: 8px @navbar-padding;
       font-weight: normal;
       color: @navbar-masthead-link-color;
       text-decoration: none;
@@ -534,7 +534,7 @@
 
     > li > a {
       // padding: 9px 15px 8px;
-      padding: (floor((@navbar-toolbar-height - @line-height-computed) / 2)) 15px (floor((@navbar-toolbar-height - @line-height-computed) / 2));
+      padding: (floor((@navbar-toolbar-height - @line-height-computed) / 2)) @navbar-padding (floor((@navbar-toolbar-height - @line-height-computed) / 2));
       color: @navbar-toolbar-link-color;
       text-shadow: none;
     }
