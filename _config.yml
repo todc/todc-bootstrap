@@ -8,7 +8,6 @@ permalink:    pretty
 # Server
 source:       ./docs
 destination:  ./_gh_pages
-url:          http://todc-bootstrap.dev:9002
 port:         9002
 baseurl:      ""    # for local dev
 # baseurl:      /todc-bootstrap-3   # GitHub repository
