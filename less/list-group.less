@@ -16,22 +16,31 @@
 .list-group-item {
   color: @gray-darker;
   border: 1px solid @list-group-border;
-}
-// Round the first and last items
-.list-group-item:first-child {
-  .border-top-radius(@list-group-border-radius);
-}
-.list-group-item:last-child {
-  margin-bottom: 0;
-  .border-bottom-radius(@list-group-border-radius);
+
+  // Round the first and last items
+  &:first-child {
+    .border-top-radius(@list-group-border-radius);
+  }
+  &:last-child {
+    margin-bottom: 0;
+    .border-bottom-radius(@list-group-border-radius);
+  }
 }
 
 // Linked list items
 // -------------------------
 
+// Custom content within linked items
 a.list-group-item,
 li.list-group-item > a {
   color: @gray-darker;
+
+  // Hover state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: @list-group-hover-bg;
+  }
 }
 
 li.list-group-item {
@@ -43,17 +52,6 @@ li.list-group-item {
     margin-left: -15px;
     margin-right: -15px;
   }
-}
-
-// Custom content within linked items
-
-// Hover state
-a.list-group-item:hover,
-a.list-group-item:focus,
-li.list-group-item > a:hover,
-li.list-group-item > a:focus {
-  text-decoration: none;
-  background-color: @list-group-hover-bg;
 }
 
 // Active class on item itself, not parent

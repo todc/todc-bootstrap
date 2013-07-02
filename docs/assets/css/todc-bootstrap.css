@@ -2537,6 +2537,13 @@ a.list-group-item,
 li.list-group-item > a {
   color: #222222;
 }
+a.list-group-item:hover,
+li.list-group-item > a:hover,
+a.list-group-item:focus,
+li.list-group-item > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
 li.list-group-item {
   padding: 1px 30px 1px 15px;
   border: 0 none;
@@ -2546,13 +2553,6 @@ li.list-group-item > a {
   padding: 0 15px;
   margin-left: -15px;
   margin-right: -15px;
-}
-a.list-group-item:hover,
-a.list-group-item:focus,
-li.list-group-item > a:hover,
-li.list-group-item > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
 }
 a.list-group-item.active,
 li.list-group-item.active > a {
