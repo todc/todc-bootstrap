@@ -1580,6 +1580,7 @@ input[type="color"].input-small {
   font-size: 12px;
   border-radius: 1px;
 }
+.has-warning .help-block,
 .has-warning .control-label {
   color: #333333;
 }
@@ -1599,6 +1600,7 @@ input[type="color"].input-small {
   border-color: #333333;
   background-color: #f9edbe;
 }
+.has-warning .help-block,
 .has-warning .control-label {
   color: #333333;
 }
@@ -1623,6 +1625,7 @@ input[type="color"].input-small {
   border-color: #333333;
   background-color: #f9edbe;
 }
+.has-error .help-block,
 .has-error .control-label {
   color: #dd4b39;
 }
@@ -1642,6 +1645,7 @@ input[type="color"].input-small {
   border-color: #dd4b39;
   background-color: #f2dede;
 }
+.has-error .help-block,
 .has-error .control-label {
   color: #dd4b39;
 }
@@ -1666,6 +1670,7 @@ input[type="color"].input-small {
   border-color: #dd4b39;
   background-color: #f2dede;
 }
+.has-success .help-block,
 .has-success .control-label {
   color: #468847;
 }
@@ -1685,6 +1690,7 @@ input[type="color"].input-small {
   border-color: #468847;
   background-color: #dff0d8;
 }
+.has-success .help-block,
 .has-success .control-label {
   color: #468847;
 }
