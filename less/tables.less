@@ -14,12 +14,15 @@ table {
 .table {
    margin-bottom: @line-height-computed;
   // Cells
-  thead > tr > th,
-  tbody > tr > th,
-  thead > tr > td,
-  tbody > tr > td {
-    line-height: @line-height-base;
-    border-top: 1px solid @table-border-color;
+  thead,
+  tbody {
+    > tr {
+      > th,
+      > td {
+        line-height: @line-height-base;
+        border-top: 1px solid @table-border-color;
+      }
+    }
   }
   // Account for multiple tbody instances
   tbody + tbody {
@@ -41,11 +44,14 @@ table {
   border: 1px solid @table-border-color;
   border-radius: @border-radius-base;
 
-  > thead > tr > th,
-  > tbody > tr > th,
-  > thead > tr > td,
-  > tbody > tr > td {
-    border-left: 1px solid @table-border-color;
+  > thead,
+  > tbody {
+    > tr {
+      > th,
+      > td {
+        border-left: 1px solid @table-border-color;
+      }
+    }
   }
   // Prevent a double border
   > caption + thead > tr:first-child th,
@@ -95,15 +101,16 @@ table {
   }
 
   // Special fixes to round the left border on the first td/th
-  > caption + thead > tr:first-child > th,
-  > caption + tbody > tr:first-child > td,
-  > colgroup + thead > tr:first-child > th,
-  > colgroup + tbody > tr:first-child > td {
-    &:first-child{
-      border-top-left-radius: @border-radius-base;
-    }
-    &:last-child{
-      border-top-right-radius: @border-radius-base;
+  > caption,
+  > colgroup {
+    + thead > tr:first-child > th,
+    + tbody > tr:first-child > td {
+      &:first-child{
+        border-top-left-radius: @border-radius-base;
+      }
+      &:last-child{
+        border-top-right-radius: @border-radius-base;
+      }
     }
   }
 }
@@ -116,9 +123,11 @@ table {
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 .table-striped {
   > tbody {
-    > tr:nth-child(odd) > td,
-    > tr:nth-child(odd) > th {
-      background-color: @table-bg-accent;
+    > tr:nth-child(odd) {
+      > td,
+      > th {
+        background-color: @table-bg-accent;
+      }
     }
   }
 }
@@ -131,9 +140,11 @@ table {
 // Placed here since it has to come after the potential zebra striping
 .table-hover {
   > tbody {
-    > tr:hover > td,
-    > tr:hover > th {
-      background-color: @table-bg-hover;
+    > tr:hover {
+      > td,
+      > th {
+        background-color: @table-bg-hover;
+      }
     }
   }
 }
