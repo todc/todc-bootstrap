@@ -1132,7 +1132,7 @@ body { padding-bottom: 40px; }
         <a class="navbar-brand" href="#">Title</a>
         <form class="navbar-form pull-left">
           <input type="text" class="col-lg-8" placeholder="Search">
-          <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          <button class="btn btn-primary" type="submit">Search</button>
         </form>
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">Home</a></li>
@@ -1196,21 +1196,95 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
+
       <div class="navbar navbar-masthead">
         <form class="navbar-form pull-left">
-          <input type="text" class="col-lg-8">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <input type="text" style="width: 200px;">
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
-    </div>
+
+      <div class="navbar navbar-masthead">
+        <form class="navbar-form pull-left">
+          <select name="" id="" style="width: 200px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div class="navbar navbar-masthead">
+        <form class="navbar-form pull-left">
+          <input type="text" style="width: 200px;">
+          <input type="checkbox">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div class="navbar navbar-masthead">
+        <form class="navbar-form pull-left">
+          <input type="text" style="width: 200px;">
+          <label class="checkbox-inline">
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+    </div><!-- /example -->
 {% highlight html %}
 <form class="navbar-form pull-left">
-  <input type="text" class="span2">
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <input type="text" style="width: 200px;">
+  <button type="submit" class="btn btn-default btn-small">Submit</button>
 </form>
 {% endhighlight %}
 
-    <h3>Component alignment</h3>
+    <h3 id="navbar-masthead-buttons">Buttons</h3>
+    <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-masthead">
+        <a href="#" class="navbar-brand">Brand</a>
+        <button type="button" class="btn btn-default navbar-masthead-btn">Sign in</button>
+      </div>
+    </div>
+{% highlight html %}
+<button type="button" class="btn btn-default navbar-masthead-btn">Sign in</button>
+{% endhighlight %}
+
+    <h3 id="navbar-masthead-text">Text</h3>
+    <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-masthead">
+        <a href="#" class="navbar-brand">Brand</a>
+        <p class="navbar-text">Signed in as Mark Otto</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="navbar navbar-masthead">
+  <a href="#" class="navbar-brand">Brand</a>
+  <p class="navbar-text">Signed in as Mark Otto</p>
+</div>
+{% endhighlight %}
+
+    <h3 id="navbar-masthead-links">Links</h3>
+    <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-masthead">
+        <a href="#" class="navbar-brand">Brand</a>
+        <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="navbar navbar-masthead">
+  <a href="#" class="navbar-brand">Brand</a>
+  <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+</div>
+{% endhighlight %}
+
+    <h3 id="navbar-masthead-component-alignment">Component alignment</h3>
     <p>Align nav links, search form, or text, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
 
     <h3>Using dropdowns</h3>
@@ -1623,21 +1697,95 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-toolbar-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
+
       <div class="navbar navbar-toolbar">
         <form class="navbar-form pull-left">
-          <input type="text" class="col-lg-8">
+          <input type="text" style="width: 200px;">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
-    </div>
+
+      <div class="navbar navbar-toolbar">
+        <form class="navbar-form pull-left">
+          <select name="" id="" style="width: 200px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div class="navbar navbar-toolbar">
+        <form class="navbar-form pull-left">
+          <input type="text" style="width: 200px;">
+          <input type="checkbox">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div class="navbar navbar-toolbar">
+        <form class="navbar-form pull-left">
+          <input type="text" style="width: 200px;">
+          <label class="checkbox-inline">
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+    </div><!-- /example -->
 {% highlight html %}
 <form class="navbar-form pull-left">
-  <input type="text" class="span2">
-  <button type="submit" class="btn">Submit</button>
+  <input type="text" style="width: 200px;">
+  <button type="submit" class="btn btn-default btn-small">Submit</button>
 </form>
 {% endhighlight %}
 
-    <h3>Component alignment</h3>
+    <h3 id="navbar-toolbar-buttons">Buttons</h3>
+    <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-toolbar">
+        <a href="#" class="navbar-brand">Brand</a>
+        <button type="button" class="btn btn-default navbar-toolbar-btn">Sign in</button>
+      </div>
+    </div>
+{% highlight html %}
+<button type="button" class="btn btn-default navbar-toolbar-btn">Sign in</button>
+{% endhighlight %}
+
+    <h3 id="navbar-toolbar-text">Text</h3>
+    <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-toolbar">
+        <a href="#" class="navbar-brand">Brand</a>
+        <p class="navbar-text">Signed in as Mark Otto</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="navbar navbar-toolbar">
+  <a href="#" class="navbar-brand">Brand</a>
+  <p class="navbar-text">Signed in as Mark Otto</p>
+</div>
+{% endhighlight %}
+
+    <h3 id="navbar-toolbar-links">Links</h3>
+    <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
+    <div class="bs-example">
+      <div class="navbar navbar-toolbar">
+        <a href="#" class="navbar-brand">Brand</a>
+        <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="navbar navbar-toolbar">
+  <a href="#" class="navbar-brand">Brand</a>
+  <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+</div>
+{% endhighlight %}
+
+    <h3 id="navbar-toolbar-component-alignment">Component alignment</h3>
     <p>Align nav links, search form, or text, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
 
     <h3>Using dropdowns</h3>
