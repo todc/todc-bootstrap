@@ -3573,6 +3573,12 @@ li.list-group-header {
 .navbar-btn {
   margin-top: -1px;
 }
+.navbar-masthead-btn {
+  margin-top: 7px;
+}
+.navbar-toolbar-btn {
+  margin-top: 3px;
+}
 .navbar-link {
   color: #999999;
 }
