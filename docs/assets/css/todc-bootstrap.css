@@ -62,8 +62,10 @@ table {
 }
 .table thead > tr > th,
 .table tbody > tr > th,
+.table tfoot > tr > th,
 .table thead > tr > td,
-.table tbody > tr > td {
+.table tbody > tr > td,
+.table tfoot > tr > td {
   line-height: 1.5381;
   border-top: 1px solid #dddddd;
 }
@@ -79,8 +81,10 @@ table {
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td {
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
   border-left: 1px solid #dddddd;
 }
 .table-bordered > caption + thead > tr:first-child th,
