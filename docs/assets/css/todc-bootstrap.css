@@ -3779,10 +3779,6 @@ li.list-group-header {
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
 }
-.pagination .disabled a [class^="icon-"] {
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
 .pagination-large > li > a,
 .pagination-large > li > span {
   padding: 9px 14px;
