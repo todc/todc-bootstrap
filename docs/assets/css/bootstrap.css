@@ -342,6 +342,13 @@ img {
   border-radius: 500px;
 }
 
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
 p {
   margin: 0 0 10px;
 }
@@ -588,14 +595,6 @@ dd {
 
 .dl-horizontal dd:after {
   clear: both;
-}
-
-hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 abbr[title],
@@ -1113,8 +1112,10 @@ th {
 
 .table thead > tr > th,
 .table tbody > tr > th,
+.table tfoot > tr > th,
 .table thead > tr > td,
-.table tbody > tr > td {
+.table tbody > tr > td,
+.table tfoot > tr > td {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
@@ -1144,8 +1145,10 @@ th {
 
 .table-condensed thead > tr > th,
 .table-condensed tbody > tr > th,
+.table-condensed tfoot > tr > th,
 .table-condensed thead > tr > td,
-.table-condensed tbody > tr > td {
+.table-condensed tbody > tr > td,
+.table-condensed tfoot > tr > td {
   padding: 4px 5px;
 }
 
@@ -1158,8 +1161,10 @@ th {
 
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td {
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
   border-left: 1px solid #dddddd;
 }
 
@@ -2305,10 +2310,6 @@ input[type="button"].btn-block {
   padding-left: 20px;
 }
 
-.typeahead {
-  z-index: 1051;
-}
-
 .list-group {
   padding-left: 0;
   margin-bottom: 20px;
@@ -3289,15 +3290,11 @@ button.close {
   text-shadow: 0 1px 0 #fff;
 }
 
-.breadcrumb > li:after {
+.breadcrumb > li + li:before {
   display: inline-block;
   padding: 0 5px;
   color: #ccc;
-  content: "\00a0 /";
-}
-
-.breadcrumb > li:last-child:after {
-  display: none;
+  content: "/\00a0";
 }
 
 .breadcrumb > .active {
