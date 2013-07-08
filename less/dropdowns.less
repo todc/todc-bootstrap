@@ -44,11 +44,13 @@
 
 // Active state
 // ------------
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  color: @dropdown-link-active-color;
-  #gradient > .vertical(@start-color: @dropdown-link-hover-bg, @end-color: @dropdown-link-hover-bg);
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @dropdown-link-active-color;
+    #gradient > .vertical(@start-color: @dropdown-link-hover-bg, @end-color: @dropdown-link-hover-bg);
+  }
 }
 
 // Sub menus
