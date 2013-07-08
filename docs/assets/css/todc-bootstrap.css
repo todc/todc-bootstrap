@@ -3721,6 +3721,17 @@ li.list-group-header {
   border: 1px solid #dcdcdc;
   border-left-width: 0;
 }
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
 .pagination > li > a:hover,
 .pagination > li > a:focus,
 .pagination > .active > a,
@@ -3767,17 +3778,6 @@ li.list-group-header {
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
-}
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
-  margin-left: 0;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-}
-.pagination > li:last-child > a,
-.pagination > li:last-child > span {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
 }
 .pagination-large > li > a,
 .pagination-large > li > span {

@@ -7,11 +7,24 @@
 
   > li {
     > a,
-    > span,{
+    > span {
       line-height: @line-height-base;
       background-color: @pagination-bg;
       border: 1px solid @pagination-border;
       border-left-width: 0;
+    }
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        .border-left-radius(@border-radius-base);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        .border-right-radius(@border-radius-base);
+      }
     }
   }
 
@@ -52,21 +65,6 @@
       text-shadow: none;
     }
   }
-
-  > li:first-child {
-    > a,
-    > span {
-      margin-left: 0;
-      .border-left-radius(@border-radius-base);
-    }
-  }
-
-  > li:last-child {
-    > a,
-    > span {
-      .border-right-radius(@border-radius-base);
-    }
-  }
 }
 
 // Sizing
@@ -74,34 +72,46 @@
 
 // Large
 .pagination-large {
-  > li > a,
-  > li > span {
-    padding: @padding-large-vertical @padding-large-horizontal;
-    font-size: @font-size-large;
-  }
-  > li:first-child > a,
-  > li:first-child > span {
-    .border-left-radius(@border-radius-large);
-  }
-  > li:last-child > a,
-  > li:last-child > span {
-    .border-right-radius(@border-radius-large);
+  > li {
+    > a,
+    > span {
+      padding: @padding-large-vertical @padding-large-horizontal;
+      font-size: @font-size-large;
+    }
+    &:first-child {
+      > a,
+      > span {
+        .border-left-radius(@border-radius-large);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        .border-right-radius(@border-radius-large);
+      }
+    }
   }
 }
 
 // Small
 .pagination-small {
-  > li > a,
-  > li > span {
-    padding: @padding-small-vertical @padding-small-horizontal;
-    font-size: @font-size-small;
-  }
-  > li:first-child > a,
-  > li:first-child > span {
-    .border-left-radius(@border-radius-small);
-  }
-  > li:last-child > a,
-  > li:last-child > span {
-    .border-right-radius(@border-radius-small);
+  > li {
+    > a,
+    > span {
+      padding: @padding-small-vertical @padding-small-horizontal;
+      font-size: @font-size-small;
+    }
+    &:first-child {
+      > a,
+      > span {
+        .border-left-radius(@border-radius-small);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        .border-right-radius(@border-radius-small);
+      }
+    }
   }
 }
