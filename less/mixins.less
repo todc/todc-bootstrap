@@ -19,7 +19,9 @@
 
 // Alerts
 // -------------------------
-.alert-variant(@background, @border, @text-color) {
+// TODO: Review this when Bootstrap moves to Less 4 to see if using the same mixin name still causes duplicated CSS
+// .alert-variant(@background, @border, @text-color) {
+.alert-variant-todc(@background, @border, @text-color) {
   background-color: @background;
   border-color: @border;
   color: @text-color;
