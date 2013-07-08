@@ -12,19 +12,22 @@
     // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
       color: @gray-light;
-    }
-    &.disabled > a:hover,
-    &.disabled > a:focus {
+
+      &:hover,
+      &:focus {
       color: @gray-light;
+      }
     }
   }
 
   // Open dropdowns
-  &.open > a,
-  &.open > a:hover,
-  &.open > a:focus {
+  &.open > a {
+    &,
+    &:hover,
+    &:focus {
     background-color: @link-color;
     border-color: @link-color;
+    }
   }
 }
 
@@ -88,13 +91,15 @@
 
     // Active state, and it's :hover to override normal :hover
     > a:active,
-    &.active > a,
-    &.active > a:hover,
-    &.active > a:focus {
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
       border: 3px solid transparent;
       border-width: 3px 0;
       border-bottom-color: #dd4b39;
       .opacity(1);
+      }
     }
     &.active > a:focus {
       border-color: #3f76b7;
@@ -113,11 +118,13 @@
     }
 
     // Active state
-    &.active > a,
-    &.active > a:hover,
-    &.active > a:focus {
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
       color: #fff;
       background-color: @component-active-bg;
+      }
     }
   }
 }

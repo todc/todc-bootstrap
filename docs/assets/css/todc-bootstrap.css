@@ -2786,7 +2786,9 @@ li.list-group-header {
 }
 .nav-tabs-google > li > a:active,
 .nav-tabs-google > li.active > a,
+.nav-tabs-google > li > a:active:hover,
 .nav-tabs-google > li.active > a:hover,
+.nav-tabs-google > li > a:active:focus,
 .nav-tabs-google > li.active > a:focus {
   border: 3px solid transparent;
   border-width: 3px 0;
