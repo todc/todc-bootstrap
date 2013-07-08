@@ -2848,11 +2848,6 @@ li.list-group-header {
   color: #555555;
   background-color: transparent;
 }
-.navbar-nav input[class*="span"],
-.navbar-nav select[class*="span"],
-.navbar-nav textarea[class*="span"] {
-  height: 26px;
-}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   z-index: 1030;
@@ -2916,15 +2911,15 @@ li.list-group-header {
   background-color: #141414;
   color: #ffffff;
 }
-.navbar-nav > .dropdown > a .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
-}
 .navbar-nav > .open > a .caret,
 .navbar-nav > .open > a:hover .caret,
 .navbar-nav > .open > a:focus .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
+}
+.navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
 }
 .navbar-nav.pull-right > li > .dropdown-menu .dropdown-menu,
 .navbar-nav > li > .dropdown-menu.pull-right .dropdown-menu {
@@ -3205,6 +3200,17 @@ li.list-group-header {
 .navbar-toolbar .navbar-nav > li > a.navbar-brand {
   color: #dd4b39;
 }
+.navbar-toolbar .navbar-nav > li > a.navbar-brand:hover,
+.navbar-toolbar .navbar-nav > li > a.navbar-brand:focus {
+  color: #dd4b39;
+  text-decoration: none;
+}
+.navbar-toolbar .navbar-nav > li > a:hover,
+.navbar-toolbar .navbar-nav > li > a:focus {
+  color: #333333;
+  text-decoration: underline;
+  background-color: transparent;
+}
 .navbar-toolbar .navbar-nav > .active > a {
   font-weight: bold;
 }
@@ -3234,12 +3240,6 @@ li.list-group-header {
   border-left: 7px solid transparent;
   content: '';
 }
-.navbar-toolbar .navbar-nav > li > a:hover,
-.navbar-toolbar .navbar-nav > li > a:focus {
-  color: #333333;
-  text-decoration: underline;
-  background-color: transparent;
-}
 .navbar-toolbar .navbar-nav > .active > a,
 .navbar-toolbar .navbar-nav > .active > a:hover,
 .navbar-toolbar .navbar-nav > .active > a:focus {
@@ -3254,11 +3254,6 @@ li.list-group-header {
   color: #bbbbbb;
   text-decoration: none;
   background-color: transparent;
-}
-.navbar-toolbar .navbar-nav > li > a.navbar-brand:hover,
-.navbar-toolbar .navbar-nav > li > a.navbar-brand:focus {
-  color: #dd4b39;
-  text-decoration: none;
 }
 .navbar-toolbar.navbar-fixed-top,
 .navbar-toolbar.navbar-fixed-bottom {
