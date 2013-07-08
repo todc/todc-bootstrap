@@ -2362,6 +2362,9 @@ fieldset[disabled] .btn-info.active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.btn-link {
+  color: #1155cc;
+}
 .btn-link,
 .btn-link:active,
 .btn-link[disabled],
@@ -2376,9 +2379,6 @@ fieldset[disabled] .btn-link {
 .btn-link:focus,
 .btn-link:active {
   border-color: transparent;
-}
-.btn-link {
-  color: #1155cc;
 }
 .btn-link:hover,
 .btn-link:focus {
