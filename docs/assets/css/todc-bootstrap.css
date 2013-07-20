@@ -142,6 +142,11 @@ table {
 .table-hover > tbody > tr:hover > th {
   background-color: #ffffcc;
 }
+.table > tbody > tr > td.active,
+.table > tbody > tr > th.active,
+.table > tbody > tr.active > td {
+  background-color: #ffffcc;
+}
 .table > tbody > tr > td.success,
 .table > tbody > tr > th.success,
 .table > tbody > tr.success > td {
