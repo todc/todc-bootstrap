@@ -91,6 +91,49 @@ bootstrap/
     </div>
   </div>
 
+
+
+  <!-- Template
+  ================================================== -->
+  <div class="bs-docs-section" id="template">
+    <div class="page-header">
+      <h1>Basic template</h1>
+    </div>
+    <p class="lead">Make use of a super basic HTML template, or dive into a few examples we've started for you. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
+
+    <h3 id="examples-template">HTML template</h3>
+    <p>Copy and paste the HTML from below to get started with a bare bones Bootstrap document.</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="js/respond.js"></script>
+  </body>
+</html>
+{% endhighlight %}
+
+    <hr>
+
+    <h3>Looking for more example templates?</h3>
+    <p>Check out the new <a href="https://github.com/twbs/bootstrap-examples">Examples repository on GitHub</a>, or <a href="http://examples.getbootstrap.com">view them in your browser</a>. Included are over a dozen example templates for building with and extending Bootstrap.</p>
+  </div>
+
+
+
   <!-- Browser compatibility
   ================================================== -->
   <div class="bs-docs-section" id="browsers">
@@ -163,154 +206,6 @@ bootstrap/
       The full Bootstrap license is located <a href="https://github.com/twbs/bootstrap/blob/master/README.md">in the project repository</a> for more information.
     </p>
   </div><!-- /.bs-docs-section -->
-
-
-
-  <!-- Examples
-  ================================================== -->
-  <div class="bs-docs-section" id="examples">
-    <div class="page-header">
-      <h1>Templates and examples</h1>
-    </div>
-    <p class="lead">Make use of a super basic HTML template, or dive into a few examples we've started for you. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
-
-    <h3 id="examples-template">HTML template</h3>
-    <p>Copy and paste the HTML from below to get started with a bare bones Bootstrap document.</p>
-{% highlight html %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Optionally enable responsive features in IE8 -->
-    <script src="js/respond.js"></script>
-  </body>
-</html>
-{% endhighlight %}
-
-    <h3 id="examples-list">Examples</h3>
-    <div class="bs-examples">
-      <div class="row">
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/starter-template/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-starter.png" alt="">
-          </a>
-          <h4>Starter template</h4>
-          <p>A barebones HTML page with Bootstrap's CSS and JavaScript included.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/grid/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-grid.png" alt="">
-          </a>
-          <h4>Basic grid layouts</h4>
-          <p>Simple grid layouts to familiarize you with using the Bootstrap grid system.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/jumbotron/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-marketing.png" alt="">
-          </a>
-          <h4>Basic marketing site</h4>
-          <p>Features a jumbotron for primary message and three supporting elements.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/jumbotron-narrow/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-jumbotron-narrow.png" alt="">
-          </a>
-          <h4>Narrow marketing</h4>
-          <p>Slim, lightweight marketing template for small projects or teams.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/justified-nav/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-justified-nav.png" alt="">
-          </a>
-          <h4>Justified nav</h4>
-          <p>Marketing page with equal-width navigation links in a modified navbar.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/signin/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-signin.png" alt="">
-          </a>
-          <h4>Sign in</h4>
-          <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/sticky-footer/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
-          </a>
-          <h4>Sticky footer</h4>
-          <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/sticky-footer-navbar/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-sticky-footer-navbar.png" alt="">
-          </a>
-          <h4>Sticky footer w/ navbar</h4>
-          <p>Add a fixed navbar to the default sticky footer template.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/carousel/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-carousel.png" alt="">
-          </a>
-          <h4>Carousel jumbotron</h4>
-          <p>An interactive riff on the basic marketing site featuring a prominent carousel.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/navbar/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-navbar.png" alt="">
-          </a>
-          <h4>Navbar</h4>
-          <p>Basic template for showcasing how the navbar works.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/navbar-static-top/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-navbar-static-top.png" alt="">
-          </a>
-          <h4>Static top navbar</h4>
-          <p>Basic template for showcasing the static navbar variation.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/navbar-fixed-top/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-navbar-fixed-top.png" alt="">
-          </a>
-          <h4>Fixed top navbar</h4>
-          <p>Basic template for showcasing the fixed navbar variation.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/offcanvas/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/bootstrap-example-offcanvas.png" alt="">
-          </a>
-          <h4>Offcanvas layout</h4>
-          <p>An offcanvas layout based on <a href="https://github.com/bradfrost/this-is-responsive/blob/gh-pages/patterns/layout-offcanvas-right.html" target="_blank">This Is Responsive</a> by <a href="https://github.com/bradfrost" target="_blank">Brad Frost</a>.</p>
-        </div>
-        <div class="col-lg-4">
-          <a class="thumbnail" href="{{ site.baseurl }}/examples/navigation/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/examples/todc-bootstrap-example-navigation.png" alt="">
-          </a>
-          <h4>Navigation example</h4>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
