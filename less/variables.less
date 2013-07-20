@@ -181,7 +181,8 @@
 @navbar-height:                    28px; // Total height - 30px Google.com. 24px other Google sites
 @navbar-color:                     @gray-light;
 @navbar-bg:                        #2d2d2d;
-@navbar-padding:                   floor(@grid-gutter-width / 2);  // ~15px
+@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-border:                    #000;
 
 // Navbar links
@@ -233,6 +234,8 @@
 @navbar-masthead-height:                    44px; // 75px for Google Developer. 44px for Google news. 48px for youtube
 @navbar-masthead-color:                     #777;
 @navbar-masthead-bg:                        #f1f1f1;
+@navbar-masthead-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
+@navbar-masthead-padding-vertical:          ((@navbar-masthead-height - @line-height-computed) / 2);
 @navbar-masthead-border:                    darken(@navbar-masthead-bg, 4.7%);
 
 // Masthead links
@@ -283,6 +286,8 @@
 @navbar-toolbar-height:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
 @navbar-toolbar-color:                     #777;
 @navbar-toolbar-bg:                        #fff;
+@navbar-toolbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
+@navbar-toolbar-padding-vertical:          ((@navbar-toolbar-height - @line-height-computed) / 2);
 @navbar-toolbar-border:                    darken(@navbar-toolbar-bg, 15.5%); //#d7d7d7
 
 // navbar-toolbar links

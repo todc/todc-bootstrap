@@ -2822,12 +2822,14 @@ li.list-group-header {
 }
 .navbar {
   min-height: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #2d2d2d;
   border: 1px solid #000000;
   border-radius: 2px;
 }
 .navbar-nav > li > a {
-  padding: 5px 15px 3px;
+  padding: 4px 15px;
   font-weight: bold;
   color: #999999;
   border-radius: 2px;
@@ -2854,7 +2856,7 @@ li.list-group-header {
   z-index: 1030;
 }
 .navbar-brand {
-  padding: 4px 15px 4px;
+  padding: 4px 15px;
   font-size: 14px;
   color: #999999;
 }
@@ -3194,7 +3196,7 @@ li.list-group-header {
   position: relative;
 }
 .navbar-toolbar .navbar-nav > li > a {
-  padding: 8px 15px 8px;
+  padding: 8px 15px;
   color: #777777;
   text-shadow: none;
 }
