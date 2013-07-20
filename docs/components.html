@@ -48,6 +48,31 @@ lead: "Dozens of reusable components built to provide iconography, dropdowns, na
 </ul>
 {% endhighlight %}
 
+    <h3 id="dropdowns-headers">Dropdown headers</h3>
+    <p>Add a header to break up label sections of actions in any dropdown menu.</p>
+    <div class="bs-example">
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+          <li class="dropdown-header">Dropdown header</li>
+          <li><a tabindex="-1" href="#">Action</a></li>
+          <li><a tabindex="-1" href="#">Another action</a></li>
+          <li><a tabindex="-1" href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Dropdown header</li>
+          <li><a tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /example -->
+{% highlight html %}
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+  <li class="dropdown-header">Dropdown header</li>
+  ...
+  <li class="divider"></li>
+  <li class="dropdown-header">Dropdown header</li>
+  ...
+</ul>
+{% endhighlight %}
+
     <h3 id="dropdowns-disabled">Disabled menu options</h3>
     <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
     <div class="bs-example">
@@ -1010,7 +1035,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -1087,7 +1112,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -1430,7 +1455,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -1509,7 +1534,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -1606,7 +1631,7 @@ body { padding-bottom: 40px; }
               <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="nav-header">Nav header</li>
+              <li class="dropdown-header">Nav header</li>
               <li>
                 <a href="#">
                   <i class="glyphicon glyphicon-bookmark"></i> Bookmark
@@ -1649,7 +1674,7 @@ body { padding-bottom: 40px; }
         <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li class="nav-header">Nav header</li>
+        <li class="dropdown-header">Nav header</li>
         <li>
           <a href="#">
             <i class="glyphicon glyphicon-bookmark"></i> Bookmark
@@ -1806,7 +1831,7 @@ body { padding-bottom: 40px; }
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
+              <li class="dropdown-header">Nav header</li>
               <li><a href="#">Separated link</a></li>
               <li><a href="#">One more separated link</a></li>
             </ul>
@@ -1823,7 +1848,7 @@ body { padding-bottom: 40px; }
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
+              <li class="dropdown-header">Nav header</li>
               <li><a href="#">Separated link</a></li>
               <li><a href="#">One more separated link</a></li>
             </ul>
@@ -1947,7 +1972,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -2026,7 +2051,7 @@ body { padding-bottom: 40px; }
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
+                  <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -2965,11 +2990,11 @@ body { padding-bottom: 40px; }
     <p>Linkify list group items by using list items instead of anchor tags.</p>
     <div class="bs-example">
       <ul class="list-group">
-        <li class="nav-header">List header</li>
+        <li class="list-group-header">List header</li>
         <li class="list-group-item active"><a href="#">Home</a></li>
         <li class="list-group-item"><a href="#">Library</a></li>
         <li class="list-group-item"><a href="#">Applications</a></li>
-        <li class="nav-header">Another list header</li>
+        <li class="list-group-header">Another list header</li>
         <li class="list-group-item"><a href="#">Profile</a></li>
         <li class="list-group-item"><a href="#">Settings</a></li>
         <li class="divider"></li>
@@ -2978,11 +3003,11 @@ body { padding-bottom: 40px; }
     </div>
 {% highlight html %}
 <ul class="list-group">
-  <li class="nav-header">List header</li>
+  <li class="list-group-header">List header</li>
   <li class="list-group-item active"><a href="#">Home</a></li>
   <li class="list-group-item"><a href="#">Library</a></li>
   <li class="list-group-item"><a href="#">Applications</a></li>
-  <li class="nav-header">Another list header</li>
+  <li class="list-group-header">Another list header</li>
   <li class="list-group-item"><a href="#">Profile</a></li>
   <li class="list-group-item"><a href="#">Settings</a></li>
   <li class="divider"></li>

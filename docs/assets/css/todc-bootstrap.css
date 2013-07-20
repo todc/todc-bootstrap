@@ -2454,6 +2454,9 @@ fieldset[disabled] .btn-link:focus {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffeeeeee', GradientType=0);
 }
+.dropdown-header {
+  color: #999999;
+}
 .dropdown-submenu {
   position: relative;
 }
@@ -2594,11 +2597,9 @@ li.list-group-item a > .glyphicon + .badge {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
-li.nav-header,
 li.list-group-header {
   padding: 3px 15px;
 }
-.list-group .nav-header,
 .list-group .list-group-header {
   margin-top: 9px;
 }
@@ -2813,11 +2814,6 @@ li.list-group-header {
 .nav-tabs .dropdown-menu {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-}
-.nav-header {
-  font-size: 11px;
-  line-height: 1.5381;
-  color: #999999;
 }
 .navbar {
   min-height: 28px;
