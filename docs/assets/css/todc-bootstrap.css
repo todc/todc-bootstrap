@@ -1594,6 +1594,14 @@ input[type="color"].input-small {
   font-size: 12px;
   border-radius: 1px;
 }
+select.input-large {
+  height: 40px;
+  line-height: 40px;
+}
+select.input-small {
+  height: 24px;
+  line-height: 24px;
+}
 .has-warning .help-block,
 .has-warning .control-label {
   color: #333333;
