@@ -13,6 +13,19 @@ body {
   padding-top: 40px; /* Account for fixed navbar */
 }
 
+/* Custom docs button */
+.btn-bs {
+  color: #dd4b39;
+  background-color: #fff;
+  border-color: #e5e5e5;
+}
+.btn-bs:hover,
+.btn-bs:active {
+  color: #fff;
+  background-color: #ac2d1e;
+  border-color: #ac2d1e;
+}
+
 
 
 /* Top nav and header
@@ -44,6 +57,15 @@ body {
   border-color: #ac2d1e !important;
 }
 
+/* Old docs callout */
+.bs-old-docs {
+  padding: 15px 20px;
+  color: #777;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bs-old-docs strong {
+  color: #555;
+}
 
 
 /* Homepage masthead
@@ -64,20 +86,11 @@ body {
 }
 
 /* Download button */
-.bs-masthead .btn {
+.bs-masthead .btn-bs {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 18px 24px;
   font-size: 21px;
-  color: #dd4b39; /* redeclare to override the `.jumbotron a` */
-  background-color: #fff;
-  border-color: #e5e5e5;
-}
-.bs-masthead .btn:hover,
-.bs-masthead .btn:active {
-  color: #fff; /* redeclare to override the `.jumbotron a` */
-  background: #ac2d1e;
-  border-color: #ac2d1e;
 }
 
 /* Textual links */
@@ -96,12 +109,10 @@ body {
 }
 
 
+
 /* Customize and Download button
 -------------------------------------------------- */
 
-.bs-customizer {
-
-}
 .bs-customizer .toggle {
   float: right;
 }
@@ -117,23 +128,8 @@ body {
   background-color: #fafafa;
 }
 
-
 .bs-customize-download {
-  text-align:center;
-}
-.bs-customize-download .btn {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 18px 24px;
-  font-size: 21px;
-  color: #b94a48;
-  background-color: #fff;
-  border-color: #b94a48;
-}
-.bs-customize-download .btn:hover,
-.bs-customize-download .btn:active {
-  color: #fff;
-  background-color: #b94a48;
+  text-align: center;
 }
 
 
@@ -147,7 +143,7 @@ body {
   font-size: 16px;
   color: #5a5a5a;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5e5e5;
 }
 .bs-header h1 {
   color: #dd4b39;
