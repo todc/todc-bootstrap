@@ -2874,8 +2874,10 @@ li.list-group-header {
 .navbar-toggle {
   top: 2px;
   right: 10px;
+  width: 34px;
+  height: 24px;
   padding: 4px 5px;
-  background-color: #444;
+  background-color: transparent;
   background-image: none;
   border: 1px solid #222;
   -webkit-box-shadow: none;
