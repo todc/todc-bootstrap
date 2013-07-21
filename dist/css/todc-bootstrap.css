@@ -1483,12 +1483,6 @@ input[type="color"][readonly] input[type="tel"]:active,
 input[type="color"][readonly] input[type="color"]:active {
   border: 1px solid #d9d9d9;
 }
-input[type="file"] {
-  height: 30px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
-
-  line-height: 30px;
-}
 textarea {
   padding-right: 4px;
 }
