@@ -28,7 +28,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
-codekit-config.json
+/codekit-config.json
 *.TODO
 
 # Komodo
