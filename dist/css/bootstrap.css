@@ -1474,10 +1474,7 @@ input[type="checkbox"] {
 }
 
 input[type="file"] {
-  height: 38px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
-
-  line-height: 38px;
+  display: block;
 }
 
 select[multiple],
@@ -1554,14 +1551,6 @@ textarea::-webkit-input-placeholder {
 .checkbox + .checkbox {
   margin-top: -5px;
 }
-
-/*
-// Move the options list down to align with labels
-.controls > .radio:first-child,
-.controls > .checkbox:first-child {
-  padding-top: 5px; // has to be padding because margin collapses
-}
-*/
 
 .radio-inline,
 .checkbox-inline {
