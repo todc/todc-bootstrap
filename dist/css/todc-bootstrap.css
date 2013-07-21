@@ -198,7 +198,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  min-height: 30px;
+  height: 30px;
   padding: 4px 8px;
   font-size: 13px;
   line-height: 1.5381;
@@ -1483,6 +1483,12 @@ input[type="color"][readonly] input[type="tel"]:active,
 input[type="color"][readonly] input[type="color"]:active {
   border: 1px solid #d9d9d9;
 }
+input[type="file"] {
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
+
+  line-height: 30px;
+}
 textarea {
   padding-right: 4px;
 }
@@ -1564,7 +1570,7 @@ input[type="url"].input-large,
 input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
-  min-height: 40px;
+  height: 40px;
   padding: 9px 14px;
   font-size: 14px;
   border-radius: 4px;
@@ -1585,7 +1591,7 @@ input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
 input[type="color"].input-small {
-  min-height: 24px;
+  height: 24px;
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 1px;
