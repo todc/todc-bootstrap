@@ -3702,7 +3702,7 @@ li.list-group-header {
   border-bottom-color: #fff;
 }
 .breadcrumb {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   background-color: #f3f3f3;
   background-color: #f1f1f1;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
@@ -3712,9 +3712,6 @@ li.list-group-header {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
   border-radius: 2px;
-}
-.breadcrumb > .active {
-  color: #999999;
 }
 .pagination {
   margin: 20px 0;
