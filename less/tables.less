@@ -8,7 +8,7 @@ table {
 }
 
 
-// BASELINE STYLES
+// Baseline styles
 // ---------------
 
 .table {
@@ -38,80 +38,18 @@ table {
 
 
 
-// BORDERED VERSION
+// Bordered version
 // ----------------
 
 .table-bordered {
   border: 1px solid @table-border-color;
-  border-radius: @border-radius-base;
-
   > thead,
   > tbody,
   > tfoot {
     > tr {
       > th,
       > td {
-        border-left: 1px solid @table-border-color;
-      }
-    }
-  }
-  // Prevent a double border
-  > caption + thead > tr:first-child th,
-  > caption + tbody > tr:first-child th,
-  > caption + tbody > tr:first-child td,
-  > colgroup + thead > tr:first-child th,
-  > colgroup + tbody > tr:first-child th,
-  > colgroup + tbody > tr:first-child td,
-  > thead:first-child > tr:first-child th,
-  > tbody:first-child > tr:first-child th,
-  > tbody:first-child > tr:first-child td {
-    border-top: 0;
-  }
-  > thead:first-child > tr:first-child > th,
-  > tbody:first-child > tr:first-child > td,
-  > tbody:first-child > tr:first-child > th {
-    // For first th/td in the first row in the first thead or tbody
-    &:first-child{
-      border-top-left-radius: @border-radius-base;
-    }
-    // For last th/td in the first row in the first thead or tbody
-    &:last-child{
-      border-top-right-radius: @border-radius-base;
-    }
-  }
-  > thead:last-child > tr:last-child > th,
-  > tbody:last-child > tr:last-child > td,
-  > tbody:last-child > tr:last-child > th,
-  > tfoot:last-child > tr:last-child > td,
-  > tfoot:last-child > tr:last-child > th {
-    // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
-    &:first-child{
-      border-bottom-left-radius: @border-radius-base;
-    }
-    // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
-    &:last-child{
-      border-bottom-right-radius: @border-radius-base;
-    }
-  }
-
-  // Clear border-radius for first and last td in the last row in the last tbody for table with tfoot
-  > tfoot + tbody:last-child > tr:last-child > td:first-child {
-    border-bottom-left-radius: 0;
-  }
-  > tfoot + tbody:last-child > tr:last-child > td:last-child {
-    border-bottom-right-radius: 0;
-  }
-
-  // Special fixes to round the left border on the first td/th
-  > caption,
-  > colgroup {
-    + thead > tr:first-child > th,
-    + tbody > tr:first-child > td {
-      &:first-child{
-        border-top-left-radius: @border-radius-base;
-      }
-      &:last-child{
-        border-top-right-radius: @border-radius-base;
+        border: 1px solid @table-border-color;
       }
     }
   }
@@ -119,7 +57,7 @@ table {
 
 
 
-// ZEBRA-STRIPING
+// Zebra-striping
 // --------------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
@@ -136,7 +74,7 @@ table {
 
 
 
-// HOVER EFFECT
+// Hover effect
 // ------------
 
 // Placed here since it has to come after the potential zebra striping
@@ -153,7 +91,7 @@ table {
 
 
 
-// TABLE BACKGROUNDS
+// Table backgrounds
 // -----------------
 // Exact selectors below required to override .table-striped
 
