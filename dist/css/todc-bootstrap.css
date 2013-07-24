@@ -88,40 +88,67 @@ table {
 .table-hover > tbody > tr:hover > th {
   background-color: #ffffcc;
 }
+.table > thead > tr > td.active,
 .table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
 .table > tbody > tr > th.active,
-.table > tbody > tr.active > td {
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td {
   background-color: #ffffcc;
 }
+.table > thead > tr > td.success,
 .table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
 .table > tbody > tr > th.success,
-.table > tbody > tr.success > td {
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td {
   background-color: #dff0d8;
 }
+.table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
 .table > tbody > tr > th.danger,
-.table > tbody > tr.danger > td {
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td {
   background-color: #f2dede;
 }
+.table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
 .table > tbody > tr > th.warning,
-.table > tbody > tr.warning > td {
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td {
   background-color: #f9edbe;
 }
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
 .table-hover > tbody > tr.success:hover > td {
   background-color: #d0e9c6;
+  border-color: #93cd7c;
 }
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover,
 .table-hover > tbody > tr.danger:hover > td {
   background-color: #ebcccc;
+  border-color: #ce8383;
 }
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover,
 .table-hover > tbody > tr.warning:hover > td {
   background-color: #f7e7a7;
+  border-color: #eeb956;
 }
 legend {
   margin-bottom: 20px;
@@ -2555,6 +2582,7 @@ li.list-group-header {
   margin-top: 9px;
 }
 .list-group .divider {
+  height: 1px;
   background-color: #e5e5e5;
   height: 2px;
   margin: 9px 0;
