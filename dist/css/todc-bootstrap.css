@@ -34,8 +34,6 @@ a:focus {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
   border-radius: 0;
 }
 pre {
@@ -2386,6 +2384,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 0 0 6px 0;
   margin: 1px 0 0;
   background-color: #ffffff;
+  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
