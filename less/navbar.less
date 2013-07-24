@@ -1086,7 +1086,8 @@
 // Vertically center a button within a navbar (when *not* in a form).
 
 .navbar-btn {
-  margin-top: ((@navbar-height - @input-height-base) / 2);
+  padding: 2px 8px;
+  margin-top: (floor((@navbar-height - @input-height-small) / 2));
 }
 .navbar-masthead-btn {
   margin-top: ((@navbar-masthead-height - @input-height-base) / 2);
