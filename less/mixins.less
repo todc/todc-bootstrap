@@ -6,18 +6,7 @@
 // COMPONENT MIXINS
 // --------------------------------------------------
 
-// Horizontal dividers - Overrides Twitter Bootstrap's mixin
-// -------------------------
-// Dividers (basically an hr) within dropdowns and nav lists
-.nav-divider(@top: #ebebeb, @bottom: #fff) {
-  height: 2px;
-  margin: ((@line-height-computed / 2) - 1) 0; // 8px 0px
-  overflow: hidden;
-  background-color: @top;
-  border-bottom: 1px solid @bottom;
-}
-
-// Alerts
+// Alerts - Overrides Twitter Bootstrap's mixin
 // -------------------------
 // TODO: Review this when Bootstrap moves to Less 4 to see if using the same mixin name still causes duplicated CSS
 // .alert-variant(@background, @border, @text-color) {
