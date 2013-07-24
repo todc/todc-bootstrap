@@ -2391,11 +2391,10 @@ fieldset[disabled] .btn-link:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .dropdown-menu .divider {
-  height: 2px;
+  height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #ebebeb;
-  border-bottom: 1px solid #ffffff;
 }
 .dropdown-menu > li > a {
   padding: 3px 30px;
@@ -2582,12 +2581,9 @@ li.list-group-header {
 }
 .list-group .divider {
   height: 1px;
-  background-color: #e5e5e5;
-  height: 2px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: #ebebeb;
-  border-bottom: 1px solid #ffffff;
+  background-color: #e5e5e5;
 }
 .panel {
   background-color: #ffffff;
