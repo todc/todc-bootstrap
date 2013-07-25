@@ -3848,13 +3848,14 @@ li.list-group-header {
 }
 .modal-content {
   color: #222;
+  border: 1px solid #aaaaaa;
   border: 1px solid rgba(0, 0, 0, 0.333);
   border-radius: 0;
   -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 .modal-backdrop {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -3862,9 +3863,6 @@ li.list-group-header {
 .modal-backdrop.fade.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
-}
-.modal-header {
-  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   font-weight: normal;
@@ -3876,7 +3874,6 @@ li.list-group-header {
 }
 .modal-footer {
   margin-top: 5px;
-  border-top: 1px solid #e5e5e5;
 }
 .tooltip {
   font-size: 11px;

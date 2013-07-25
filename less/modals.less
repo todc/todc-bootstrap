@@ -10,24 +10,20 @@
 // Actual modal
 .modal-content {
   color: #222;
-  border: 1px solid rgba(0, 0, 0, 0.333);
+  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  border: 1px solid @modal-content-border-color;
   border-radius: 0;
   .box-shadow(0 4px 16px rgba(0, 0, 0, 0.2));
 }
 
 // Modal background
 .modal-backdrop {
-  background-color: #fff;
+  background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { opacity: 0; }
   &.fade.in { .opacity(.5);}
 }
 
-// Modal header
-// Top section of the modal w/ title and dismiss
-.modal-header {
-  border-bottom: 1px solid #e5e5e5;
-}
 // Close icon
 .modal-header .close {
   font-weight: normal;
@@ -43,5 +39,4 @@
 // Footer (for actions)
 .modal-footer {
   margin-top: 5px;
-  border-top: 1px solid #e5e5e5;
 }
