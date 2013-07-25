@@ -11,11 +11,11 @@
 
     // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
-      color: @gray-light;
+      color: @nav-disabled-link-color;
 
       &:hover,
       &:focus {
-      color: @gray-light;
+        color: @nav-disabled-link-hover-color;
       }
     }
   }
@@ -53,7 +53,7 @@
     &.active > a:hover,
     &.active > a:focus {
       font-weight: bold;
-      color: @gray-dark;
+      color: @nav-tabs-active-link-hover-color;
     }
   }
 }
@@ -95,10 +95,10 @@
       &,
       &:hover,
       &:focus {
-      border: 3px solid transparent;
-      border-width: 3px 0;
-      border-bottom-color: #dd4b39;
-      .opacity(1);
+        border: 3px solid transparent;
+        border-width: 3px 0;
+        border-bottom-color: #dd4b39;
+        .opacity(1);
       }
     }
     &.active > a:focus {
@@ -122,8 +122,8 @@
       &,
       &:hover,
       &:focus {
-      color: #fff;
-      background-color: @component-active-bg;
+        color: @nav-pills-active-link-hover-color;
+        background-color: @nav-pills-active-link-hover-bg;
       }
     }
   }

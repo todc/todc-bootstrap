@@ -2786,7 +2786,7 @@ li.list-group-header {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #4d90fe;
 }
 .nav .caret {
