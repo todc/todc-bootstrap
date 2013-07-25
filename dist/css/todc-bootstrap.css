@@ -2861,6 +2861,7 @@ li.list-group-header {
   background-color: transparent;
   background-image: none;
   border: 1px solid #222222;
+  border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3050,7 +3051,7 @@ li.list-group-header {
   background-color: #e4e4e4;
 }
 .navbar-masthead .navbar-toggle .icon-bar {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 .navbar-masthead .navbar-form {
   margin-top: 7px;
@@ -3107,14 +3108,14 @@ li.list-group-header {
 }
 .navbar-masthead.navbar-inverse .navbar-toggle {
   background-color: transparent;
-  border-color: #222;
+  border-color: #222222;
 }
 .navbar-masthead.navbar-inverse .navbar-toggle:hover,
 .navbar-masthead.navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: #333333;
 }
 .navbar-masthead.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .navbar-masthead.navbar-inverse .navbar-nav > li > a:hover,
 .navbar-masthead.navbar-inverse .navbar-nav > li > a:focus {
@@ -3276,7 +3277,7 @@ li.list-group-header {
   background-color: #e4e4e4;
 }
 .navbar-toolbar .navbar-toggle .icon-bar {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 .navbar-toolbar .navbar-form {
   margin-top: 3px;
@@ -3356,14 +3357,14 @@ li.list-group-header {
 }
 .navbar-toolbar.navbar-inverse .navbar-toggle {
   background-color: transparent;
-  border-color: #222;
+  border-color: #222222;
 }
 .navbar-toolbar.navbar-inverse .navbar-toggle:hover,
 .navbar-toolbar.navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: #333333;
 }
 .navbar-toolbar.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .navbar-toolbar.navbar-inverse .navbar-nav > li > a:hover,
 .navbar-toolbar.navbar-inverse .navbar-nav > li > a:focus {
