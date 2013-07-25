@@ -80,11 +80,11 @@
         border-top-color: transparent;
       }
       &:hover {
-        border-bottom-color: #dd4b39;
+        border-bottom-color: @nav-tabs-google-link-hover-border-color;
         .opacity(1);
       }
       &:focus {
-        border-color: #3f76b7;
+        border-color: @nav-tabs-google-link-focus-border-color;
         outline: 0;
       }
     }
@@ -97,12 +97,12 @@
       &:focus {
         border: 3px solid transparent;
         border-width: 3px 0;
-        border-bottom-color: #dd4b39;
+        border-bottom-color: @nav-tabs-google-link-hover-border-color;
         .opacity(1);
       }
     }
     &.active > a:focus {
-      border-color: #3f76b7;
+      border-color: @nav-tabs-google-link-focus-border-color;
     }
   }
 }
