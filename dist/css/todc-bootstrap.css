@@ -2860,16 +2860,16 @@ li.list-group-header {
   padding: 4px 5px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #222;
+  border: 1px solid #222222;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-  background-color: #333;
+  background-color: #333333;
 }
 .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .navbar-form {
   margin-top: 1px;
@@ -2948,14 +2948,14 @@ li.list-group-header {
 }
 .navbar-inverse .navbar-toggle {
   background-color: transparent;
-  border: 1px solid #ddd;
+  border-color: #dddddd;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,

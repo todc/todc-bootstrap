@@ -92,15 +92,15 @@
   padding: 4px 5px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #222;
+  border: 1px solid @navbar-toggle-border-color;
   .box-shadow(none);
 
   &:hover,
   &:focus {
-    background-color: #333;
+    background-color: @navbar-toggle-hover-bg;
   }
   .icon-bar {
-    background-color: #fff;
+    background-color: @navbar-toggle-icon-bar-bg;
   }
 }
 
@@ -213,14 +213,14 @@
   // Darken the responsive nav toggle
   .navbar-toggle {
     background-color: transparent;
-    border: 1px solid #ddd;
+    border-color: @navbar-inverse-toggle-border-color;
 
     &:hover,
     &:focus {
-      background-color: #ddd;
+      background-color: @navbar-inverse-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: #ccc;
+      background-color: @navbar-inverse-toggle-icon-bar-bg;
     }
   }
 
