@@ -9,9 +9,10 @@
     var $window = $(window)
 
     // Disable certain links in docs
-    $('[href=#]').click(function (e) {
+    $('.bs-docs-container [href=#]').click(function (e) {
       e.preventDefault()
     })
+
 
     // back to top
     setTimeout(function () {
