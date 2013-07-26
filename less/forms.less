@@ -3,8 +3,9 @@
 // --------------------------------------------------
 
 
-// Non-controls
-// -------------------------
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
 
 legend {
   margin-bottom: @line-height-computed;
@@ -12,26 +13,30 @@ legend {
   color: @gray-dark;
 }
 
-// Form controls
-// -------------------------
 
-// Shared size and type resets
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+// Common form controls
+//
+// Shared size and type resets for form controls. Apply `.form-control` to any
+// of the following form controls:
+//
+// select
+// textarea
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+
+.form-control {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: @padding-base-vertical @padding-base-horizontal;
   font-size: @font-size-base;
@@ -43,17 +48,15 @@ input[type="color"] {
   .box-shadow(none);
   .transition(none);
 
-  // Hover state
   &:hover {
     border: 1px solid #b9b9b9;
     border-top-color: #a0a0a0;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
   }
 
-  // Focus state
   &:focus {
-    outline: 0 \9;
     border-color: @brand-primary;
+    outline: 0;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
     .transition(none);
   }
@@ -65,7 +68,6 @@ input[type="color"] {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
-    cursor: not-allowed;
     background-color: @input-bg-disabled;
     border: 1px solid #e5e5e5;
     &:hover,
@@ -83,29 +85,27 @@ input[type="color"] {
       border: 1px solid @input-border;
     }
   }
+
+  textarea& {
+    padding-right: 4px;
+  }
 }
 
 
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
 
-// Reset appearance properties for textual inputs and textarea
-// Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
-// input,
-// textarea {
-//   width: 210px;
-// }
-
-// Reset height since textareas have rows
-textarea {
-  padding-right: 4px;
+.radio,
+.checkbox {
+  min-height: @line-height-computed; // clear the floating input if there is no label text
 }
-
-
-// CHECKBOXES & RADIOS
-// -------------------
-
-// Google style
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
 input[type="checkbox"],
-input[type="radio"] {
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
   width: 13px;
@@ -121,58 +121,66 @@ input[type="radio"] {
   width: 16px e("\9");
   height: 16px e("\9");
   border-width: 0 e("\9");
+
+  &:focus {
+    outline: none;
+    border-color: @brand-primary;
+  }
+
+  &:active {
+    border-color: #c6c6c6;
+    background-color: #ebebeb;
+    // override the bkgd color for IE
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+  }
+
+  &:checked{
+    background: #fff;
+  }
 }
-input[type="radio"] {
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
   border-radius: 1em;
   width: 15px;
   height: 15px;
-}
-input[type="checkbox"]:hover {
-  border-color: #c6c6c6;
-  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
 
-  // no box shadow for IE
-  box-shadow: none e("\9");
+  &:checked::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    background: #666;
+    border-radius: 1em;
+  }
 }
-input[type="checkbox"]:active,
-input[type="radio"]:active {
-  border-color: #c6c6c6;
-  background-color: #ebebeb;
-  // override the bkgd color for IE
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
-}
-input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-  background: #fff;
-}
-input[type="checkbox"]:checked::after {
-  content: url(../../img/checkmark.png);
-  display: block;
-  position: absolute;
-  top: -6px;
-  left: -5px;
-}
-input[type="radio"]:checked::after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 3px;
-  left: 3px;
-  width: 7px;
-  height: 7px;
-  background: #666;
-  border-radius: 1em;
-}
-input[type="checkbox"]:focus,
-input[type="radio"]:focus {
-  outline: none;
-  border-color: @brand-primary;
+input[type="checkbox"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  &:hover {
+    border-color: #c6c6c6;
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
+
+    // no box shadow for IE
+    box-shadow: none e("\9");
+  }
+
+  &:checked::after {
+    content: url(../../img/checkmark.png);
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -5px;
+  }
 }
 
-
-
-// INPUT SIZES
-// -----------
+// Form control sizing
+//
+// Relative text size, padding, and border-radii changes for form controls. For
+// horizontal sizing, wrap controls in the predefined grid classes.
 
 select,
 textarea,
@@ -216,8 +224,9 @@ select {
 
 
 
-// FORM FIELD FEEDBACK STATES
-// --------------------------
+// Form control feedback states
+//
+// Apply contextual and semantic states to individual form controls.
 
 // Warning
 .has-warning {
@@ -232,6 +241,15 @@ select {
   .form-field-validation(@state-success-text, @state-success-text, @state-success-bg);
 }
 
+
+// Help text
+//
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+
+.help-block {
+  color: lighten(@text-color, 26.5%); // lighten the text some for contrast
+}
 
 
 
