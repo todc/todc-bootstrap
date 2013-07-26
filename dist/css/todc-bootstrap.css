@@ -367,18 +367,38 @@ select.input-small {
 .has-warning .control-label {
   color: #333333;
 }
-.has-warning .input-with-feedback {
+.has-warning .form-control {
+  padding-right: 32px;
+  border-color: #333333;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-warning .form-control:focus {
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+}
+.has-warning .input-group-addon {
+  color: #333333;
+  border-color: #333333;
+  background-color: #f9edbe;
+}
+.has-warning .help-block,
+.has-warning .control-label {
+  color: #333333;
+}
+.has-warning .form-control {
   padding-right: 32px;
   border-color: #333333;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.has-warning .input-with-feedback:hover {
+.has-warning .form-control:hover {
   border-color: #333333;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 }
-.has-warning .input-with-feedback:focus {
+.has-warning .form-control:focus {
   border-color: #333333;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
@@ -392,18 +412,38 @@ select.input-small {
 .has-error .control-label {
   color: #dd4b39;
 }
-.has-error .input-with-feedback {
+.has-error .form-control {
+  padding-right: 32px;
+  border-color: #dd4b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-error .form-control:focus {
+  border-color: #c23321;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec9a90;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec9a90;
+}
+.has-error .input-group-addon {
+  color: #dd4b39;
+  border-color: #dd4b39;
+  background-color: #f2dede;
+}
+.has-error .help-block,
+.has-error .control-label {
+  color: #dd4b39;
+}
+.has-error .form-control {
   padding-right: 32px;
   border-color: #dd4b39;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.has-error .input-with-feedback:hover {
+.has-error .form-control:hover {
   border-color: #dd4b39;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 }
-.has-error .input-with-feedback:focus {
+.has-error .form-control:focus {
   border-color: #dd4b39;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
@@ -417,18 +457,38 @@ select.input-small {
 .has-success .control-label {
   color: #468847;
 }
-.has-success .input-with-feedback {
+.has-success .form-control {
+  padding-right: 32px;
+  border-color: #468847;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-success .form-control:focus {
+  border-color: #356635;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+.has-success .input-group-addon {
+  color: #468847;
+  border-color: #468847;
+  background-color: #dff0d8;
+}
+.has-success .help-block,
+.has-success .control-label {
+  color: #468847;
+}
+.has-success .form-control {
   padding-right: 32px;
   border-color: #468847;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.has-success .input-with-feedback:hover {
+.has-success .form-control:hover {
   border-color: #468847;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 }
-.has-success .input-with-feedback:focus {
+.has-success .form-control:focus {
   border-color: #468847;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
