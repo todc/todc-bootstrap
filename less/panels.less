@@ -13,11 +13,15 @@
 
 // Optional heading
 .panel-heading {
-  font-size: (@font-size-base * 1.25);
   background-color: @panel-heading-bg;
   border-bottom: 1px solid @panel-border;
   border-top-left-radius:  @panel-border-radius;
   border-top-right-radius: @panel-border-radius;
+}
+
+// Within heading, strip any `h*` tag of it's default margins for spacing.
+.panel-title {
+  font-size: (@font-size-base * 1.25);
 }
 
 // Optional footer (stays gray in every modifier class)
