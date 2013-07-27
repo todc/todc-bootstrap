@@ -509,13 +509,13 @@ select.input-small {
 }
 .input-group-addon,
 .input-group-btn,
-.input-group input {
+.input-group .form-control {
   margin: 0;
   border-radius: 0;
 }
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group input:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 .input-group-addon {
@@ -537,7 +537,7 @@ select.input-small {
   font-size: 14px;
   border-radius: 4px;
 }
-.input-group input:first-child,
+.input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .dropdown-toggle,
@@ -548,7 +548,7 @@ select.input-small {
 .input-group-addon:first-child {
   border-right: 0;
 }
-.input-group input:last-child,
+.input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .dropdown-toggle,
