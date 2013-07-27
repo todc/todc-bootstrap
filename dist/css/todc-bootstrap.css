@@ -532,15 +532,6 @@ select.input-small {
 .input-group-btn > .btn:focus {
   z-index: 2;
 }
-.form-horizontal .control-group {
-  margin-bottom: 20px;
-}
-.form-horizontal .control-group > .control-label {
-  width: 160px;
-}
-.form-horizontal .control-group > .controls {
-  margin-left: 180px;
-}
 .btn {
   padding: 4px 12px;
   font-size: 13px;
