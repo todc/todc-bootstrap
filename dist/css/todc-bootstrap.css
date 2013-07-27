@@ -2220,13 +2220,6 @@ li.list-group-header {
   .navbar-inverse .nav > .divider {
     border-right-color: #ffffff;
   }
-  .navbar-toggle {
-    display: none;
-  }
-  .nav-collapse.collapse {
-    height: auto !important;
-    overflow: visible !important;
-  }
 }
 @media screen and (min-width: 768px) {
   .navbar-masthead .navbar-brand {
