@@ -9,8 +9,6 @@ permalink:        pretty
 destination:      ./_gh_pages
 exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less", "codekit-config.json", "*.TODO"]
 port:             9002
-baseurl:          ""    # for local dev
-# baseurl:          /todc-bootstrap-3   # GitHub repository
 
 # Custom vars
 repo:                       https://github.com/todc/todc-bootstrap
