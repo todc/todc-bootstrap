@@ -322,7 +322,6 @@ body {
   padding-bottom: 10px;
   background-color: #eee;
   border: 1px solid #ddd;
-  /* Todo: reconcile these */
   background-color: rgba(185,74,72,.15);
   border: 1px solid rgba(185,74,72,.2);
 }
@@ -610,7 +609,7 @@ body {
 ------------------------- */
 .responsive-utilities-test {
   margin-top: 5px;
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
   overflow: hidden; /* clear floats */
 }
