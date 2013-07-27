@@ -362,9 +362,15 @@ p {
 
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 16.099999999999998px;
   font-weight: 200;
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
 }
 
 small {
@@ -2016,15 +2022,19 @@ input[type="button"].btn-block {
 }
 
 .collapse {
+  display: none;
+}
+
+.collapse.in {
+  display: block;
+}
+
+.collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
           transition: height 0.35s ease;
-}
-
-.collapse.in {
-  height: auto;
 }
 
 .caret {
@@ -2509,7 +2519,6 @@ button.close {
 }
 
 .nav-tabs.nav-justified {
-  display: table;
   width: 100%;
   border-bottom: 0;
 }
@@ -2517,7 +2526,7 @@ button.close {
 .nav-tabs.nav-justified > li {
   display: table-cell;
   float: none;
-  width: auto;
+  width: 1%;
 }
 
 .nav-tabs.nav-justified > li > a {
@@ -2541,7 +2550,7 @@ button.close {
   border-radius: 5px;
 }
 
-.nav-pills > li + li > a {
+.nav-pills > li + li {
   margin-left: 2px;
 }
 
@@ -2562,14 +2571,13 @@ button.close {
 }
 
 .nav-justified {
-  display: table;
   width: 100%;
 }
 
 .nav-justified > li {
   display: table-cell;
   float: none;
-  width: auto;
+  width: 1%;
 }
 
 .nav-justified > li > a {
@@ -2939,6 +2947,7 @@ button.close {
     display: none;
   }
   .nav-collapse.collapse {
+    display: block !important;
     height: auto !important;
     overflow: visible !important;
   }
@@ -3339,14 +3348,20 @@ button.close {
   overflow-y: scroll;
 }
 
-.modal.fade {
-  top: -25%;
-  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
-          transition: opacity 0.3s linear, top 0.3s ease-out;
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
 }
 
-.modal.fade.in {
-  top: 0;
+.modal.fade.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .modal-dialog {
@@ -4257,6 +4272,7 @@ a.list-group-item.active > .badge,
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
+  font-family: serif;
 }
 
 .carousel-control .icon-prev:before {
