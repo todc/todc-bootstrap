@@ -89,7 +89,7 @@ bootstrap/
     <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.</p>
     <div class="bs-callout bs-callout-danger">
       <h4>jQuery required</h4>
-      <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#examples">starter template</a>.</p>
+      <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#template">starter template</a>.</p>
     </div>
   </div>
 
@@ -101,9 +101,8 @@ bootstrap/
     <div class="page-header">
       <h1>Basic template</h1>
     </div>
-    <p class="lead">Make use of a super basic HTML template, or dive into a few examples we've started for you. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
+    <p class="lead">Make use of a super basic HTML template, or dive into a <a href="{{ site.examples }}">few examples</a> we've started for you. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
 
-    <h3 id="examples-template">HTML template</h3>
     <p>Copy and paste the HTML from below to get started with a bare bones Bootstrap document.</p>
 {% highlight html %}
 <!DOCTYPE html>
@@ -128,10 +127,8 @@ bootstrap/
 </html>
 {% endhighlight %}
 
-    <hr>
-
     <h3>Looking for more example templates?</h3>
-    <p>Check out the new <a href="https://github.com/twbs/bootstrap-examples">Examples repository on GitHub</a>, or <a href="http://examples.getbootstrap.com">view them in your browser</a>. Included are over a dozen example templates for building with and extending Bootstrap.</p>
+    <p>Check out the new <a href="{{ site.examples_repo }}">Examples repository on GitHub</a>, or <a href="{{ site.examples }}">view them in your browser</a>. Included are over a dozen example templates for building with and extending Bootstrap.</p>
   </div>
 
 
@@ -207,9 +204,9 @@ bootstrap/
       </div>
     </div>
     <p>
-      The full TODC Bootstrap license is located <a href="https://github.com/todc/todc-bootstrap/blob/master/README.md">in the project repository</a> for more information.
+      The full TODC Bootstrap license is located <a href="{{ site.repo }}/blob/master/README.md">in the project repository</a> for more information.
       <br>
-      The full Bootstrap license is located <a href="https://github.com/twbs/bootstrap/blob/master/README.md">in the project repository</a> for more information.
+    <p>The full Bootstrap license is located <a href="{{ site.bootstrap_repo }}/blob/master/README.md">in the project repository</a> for more information.</p>
     </p>
   </div><!-- /.bs-docs-section -->
 
