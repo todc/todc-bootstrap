@@ -1,13 +1,34 @@
 # Dependencies
-markdown:     rdiscount
-pygments:     true
+markdown:         rdiscount
+pygments:         true
 
 # Permalinks
-permalink:    pretty
+permalink:        pretty
 
 # Server
-destination:  ./_gh_pages
-exclude:      [".editorconfig", ".gitignore", ".ruby-version", "bower.json", "composer.json", "CONTRIBUTING.md", "LICENSE", "Makefile", "package.json", "node_modules", "README.md", "less", "codekit-config.json", "*.TODO"]
-port:         9002
-baseurl:      ""    # for local dev
-# baseurl:      /todc-bootstrap-3   # GitHub repository
+destination:      ./_gh_pages
+exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json", "composer.json", "CONTRIBUTING.md", "LICENSE", "Makefile", "package.json", "node_modules", "README.md", "less", "codekit-config.json", "*.TODO"]
+port:             9002
+baseurl:          ""    # for local dev
+# baseurl:          /todc-bootstrap-3   # GitHub repository
+
+# Custom vars
+repo:                       https://github.com/todc/todc-bootstrap
+download:                   https://github.com/todc/todc-bootstrap/archive/v3.0.0-rc1.zip
+download_dist:              https://github.com/todc/todc-bootstrap/archive/v3.0.0-rc1-dist.zip
+
+bootstrap_repo:             https://github.com/twbs/bootstrap
+bootstrap_download:         https://github.com/twbs/bootstrap/archive/v3.0.0-rc1.zip
+bootstrap_download_dist:    https://github.com/twbs/bootstrap/archive/v3.0.0-rc1-dist.zip
+
+examples:                   http://examples.getbootstrap.com
+examples_repo:              https://github.com/twbs/bootstrap-examples
+
+glyphicons:                 http://glyphicons.getbootstrap.com
+glyphicons_repo:            https://github.com/twbs/bootstrap-glyphicons
+
+blog:                       http://blog.getbootstrap.com
+expo:                       http://expo.getbootstrap.com
+
+cdn_css:                    //netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css
+cdn_js:                     //netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js
