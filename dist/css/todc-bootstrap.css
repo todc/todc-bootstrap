@@ -2615,13 +2615,6 @@ li.list-group-header {
 .modal-backdrop {
   background-color: #ffffff;
 }
-.modal-backdrop.fade {
-  opacity: 0;
-}
-.modal-backdrop.fade.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
 .modal-header .close {
   font-weight: normal;
   opacity: 0.4;
