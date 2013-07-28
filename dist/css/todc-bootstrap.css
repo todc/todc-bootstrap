@@ -477,61 +477,6 @@ select.input-small {
 .help-block {
   color: #777777;
 }
-.input-group-addon,
-.input-group-btn,
-.input-group .form-control {
-  margin: 0;
-  border-radius: 0;
-}
-.input-group-addon:not(:first-child):not(:last-child),
-.input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.input-group-addon {
-  padding: 4px 8px;
-  font-size: 13px;
-  line-height: 1.5381;
-  background-color: #eeeeee;
-  border: 1px solid #d9d9d9;
-  border-top-color: #c0c0c0;
-  border-radius: 2px;
-}
-.input-group-addon.input-small {
-  padding: 2px 8px;
-  font-size: 12px;
-  border-radius: 1px;
-}
-.input-group-addon.input-large {
-  padding: 9px 14px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-.input-group .form-control:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-.input-group-addon:first-child {
-  border-right: 0;
-}
-.input-group .form-control:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-.input-group-addon:last-child {
-  border-left: 0;
-}
-.input-group-btn > .btn:focus {
-  z-index: 2;
-}
 .btn {
   padding: 4px 12px;
   font-size: 13px;
@@ -1139,6 +1084,61 @@ fieldset[disabled] .btn-link:focus {
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 2px;
+}
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  margin: 0;
+  border-radius: 0;
+}
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.input-group-addon {
+  padding: 4px 8px;
+  font-size: 13px;
+  line-height: 1.5381;
+  background-color: #eeeeee;
+  border: 1px solid #d9d9d9;
+  border-top-color: #c0c0c0;
+  border-radius: 2px;
+}
+.input-group-addon.input-small {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 1px;
+}
+.input-group-addon.input-large {
+  padding: 9px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group-addon:first-child {
+  border-right: 0;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group-addon:last-child {
+  border-left: 0;
+}
+.input-group-btn > .btn:focus {
+  z-index: 2;
 }
 .dropdown-menu {
   padding: 0 0 6px 0;
