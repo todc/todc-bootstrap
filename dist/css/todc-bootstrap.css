@@ -566,8 +566,6 @@ select.input-small {
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-color: #f3f3f3;
   text-shadow: 0 1px 0 #fff;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .btn-default:hover {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
