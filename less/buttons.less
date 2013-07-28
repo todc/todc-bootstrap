@@ -8,13 +8,13 @@
 
 // Core styles
 .btn {
-  padding: 4px 12px;
+  padding: @padding-base-vertical (@padding-base-horizontal + 4);
   font-size: @font-size-base;
   font-weight: bold;
   line-height: @line-height-base;
   cursor: default;
   border-radius: @border-radius-base;
-  .background-clip(padding);
+  .background-clip(border-box);
   .box-shadow(none);
 
   &:hover {

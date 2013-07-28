@@ -173,7 +173,7 @@ legend {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 3px 4px 0 1px;
+  margin: 3px 0 0;
 }
 .form-control {
   height: 30px;
@@ -485,7 +485,7 @@ select.input-small {
   line-height: 1.5381;
   cursor: default;
   border-radius: 2px;
-  background-clip: padding;
+  background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
