@@ -171,6 +171,10 @@ legend {
   font-size: 19.5px;
   color: #333333;
 }
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 4px 0 1px;
+}
 .form-control {
   height: 30px;
   padding: 4px 8px;
@@ -246,9 +250,6 @@ input[type="checkbox"],
   background: white;
   border: 1px solid #dcdcdc;
   border-radius: 1px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   position: relative;
   box-sizing: content-box \9;
   width: 16px \9;

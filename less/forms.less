@@ -14,6 +14,15 @@ legend {
 }
 
 
+// Normalize form controls
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 4px 0 1px;
+}
+
+
 // Common form controls
 //
 // Shared size and type resets for form controls. Apply `.form-control` to any
@@ -113,7 +122,6 @@ input[type="checkbox"],
   background: white;
   border: 1px solid #dcdcdc;
   border-radius: 1px;
-  .box-sizing(border-box);
   position: relative;
 
   // override styles for IE
@@ -134,7 +142,7 @@ input[type="checkbox"],
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
   }
 
-  &:checked{
+  &:checked {
     background: #fff;
   }
 }
