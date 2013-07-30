@@ -320,13 +320,13 @@ input[type="checkbox"]:checked::after,
   top: -6px;
   left: -5px;
 }
-.form-control.input-large {
+.input-large {
   height: 42px;
   padding: 9px 14px;
   font-size: 14px;
   border-radius: 4px;
 }
-.form-control.input-small {
+.input-small {
   height: 25px;
   padding: 2px 8px;
   font-size: 12px;
