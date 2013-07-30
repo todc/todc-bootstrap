@@ -1081,10 +1081,16 @@ fieldset[disabled] .btn-link:focus {
   font-size: 14px;
   border-radius: 2px;
 }
-.btn-small {
+.btn-small,
+.btn-mini {
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 2px;
+}
+.btn-mini {
+  padding: 2px 6px;
+  font-size: 11px;
+  line-height: 14px;
 }
 .input-group-addon,
 .input-group-btn,

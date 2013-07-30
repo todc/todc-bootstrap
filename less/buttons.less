@@ -144,16 +144,19 @@
 // Button Sizes
 // --------------------------------------------------
 
-// Large
 .btn-large {
   padding: @padding-large-vertical @padding-large-horizontal;
   font-size: @font-size-large;
   border-radius: @border-radius-base;
 }
-
-// Small
-.btn-small {
+.btn-small,
+.btn-mini {
   padding: @padding-small-vertical @padding-small-horizontal;
   font-size: @font-size-small;
   border-radius: @border-radius-base;
+}
+.btn-mini {
+  padding: 2px 6px;
+  font-size: @font-size-mini;
+  line-height: 14px; // TODO: see if this can be removed if line-height is changed to 1.4. height should be 20px
 }
