@@ -1261,11 +1261,9 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 0;
   margin-left: 18px;
 }
-.list-group {
-  background-color: #ffffff;
-}
 .list-group-item {
   color: #222222;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
 .list-group-item:first-child {
