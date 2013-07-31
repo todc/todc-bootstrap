@@ -1122,6 +1122,10 @@ fieldset[disabled] .btn-link:focus {
   font-size: 14px;
   border-radius: 4px;
 }
+.input-group-addon input[type="radio"],
+.input-group-addon input[type="checkbox"] {
+  margin-bottom: -3px;
+}
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,

@@ -37,6 +37,12 @@
     font-size: @font-size-large;
     border-radius: @border-radius-large;
   }
+
+  // Nuke default margins from checkboxes and radios to vertically center within.
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-bottom: -3px;
+  }
 }
 
 // Reset rounded corners
