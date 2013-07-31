@@ -1733,6 +1733,34 @@ li.list-group-header {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
+@media screen and (min-width: 768px) {
+  .navbar .navbar-brand {
+    float: left;
+  }
+  .navbar-nav {
+    float: left;
+    margin-top: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    border-radius: 0;
+  }
+  .navbar-nav.pull-right {
+    float: right;
+  }
+  .navbar-nav > .divider {
+    width: 1px;
+    height: 16.8px;
+    margin: 5.6000000000000005px 9px;
+    border-bottom: 0;
+    border-right: 1px solid #3a3a3a;
+  }
+  .navbar-inverse .nav > .divider {
+    border-right-color: #ffffff;
+  }
+}
 .navbar-masthead {
   min-height: 44px;
   margin: 0px;
@@ -1914,6 +1942,44 @@ li.list-group-header {
 .navbar-masthead.navbar-inverse .navbar-nav > .open > a:focus .caret {
   border-top-color: #bbbbbb;
   border-bottom-color: #bbbbbb;
+}
+@media screen and (min-width: 768px) {
+  .navbar-masthead .navbar-brand {
+    float: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .navbar-masthead .nav {
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .navbar-masthead .nav > li {
+    float: left;
+  }
+  .navbar-masthead .nav > li > a {
+    border-radius: 0;
+  }
+  .navbar-masthead .nav.pull-right {
+    float: right;
+  }
+  .navbar-masthead .nav > .divider {
+    width: 1px;
+    height: 26px;
+    margin: 5px 9px;
+    border-bottom: 0;
+    border-right: 1px solid #fefefe;
+  }
+  .navbar-masthead .navbar-text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .navbar-masthead.navbar-inverse .nav > .divider {
+    border-right-color: #515151;
+  }
+  .navbar-masthead .navbar-toggle {
+    display: none;
+  }
 }
 .navbar-toolbar {
   border-radius: 2px;
@@ -2168,100 +2234,6 @@ li.list-group-header {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
-.navbar-static-top {
-  border-radius: 0;
-}
-.navbar-fixed-top,
-.navbar-static-top {
-  border-width: 1px 0;
-}
-.navbar-fixed-bottom {
-  border-width: 1px 0;
-}
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  border-radius: 0;
-}
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0;
-}
-.navbar-fixed-top {
-  top: 0;
-}
-.navbar-fixed-bottom {
-  bottom: 0;
-  margin-bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  .navbar .navbar-brand {
-    float: left;
-  }
-  .navbar-nav {
-    float: left;
-    margin-top: 0;
-  }
-  .navbar-nav > li {
-    float: left;
-  }
-  .navbar-nav > li > a {
-    border-radius: 0;
-  }
-  .navbar-nav.pull-right {
-    float: right;
-  }
-  .navbar-nav > .divider {
-    width: 1px;
-    height: 16.8px;
-    margin: 5.6000000000000005px 9px;
-    border-bottom: 0;
-    border-right: 1px solid #3a3a3a;
-  }
-  .navbar-inverse .nav > .divider {
-    border-right-color: #ffffff;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navbar-masthead .navbar-brand {
-    float: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .navbar-masthead .nav {
-    float: left;
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-  .navbar-masthead .nav > li {
-    float: left;
-  }
-  .navbar-masthead .nav > li > a {
-    border-radius: 0;
-  }
-  .navbar-masthead .nav.pull-right {
-    float: right;
-  }
-  .navbar-masthead .nav > .divider {
-    width: 1px;
-    height: 26px;
-    margin: 5px 9px;
-    border-bottom: 0;
-    border-right: 1px solid #fefefe;
-  }
-  .navbar-masthead .navbar-text {
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-  .navbar-masthead.navbar-inverse .nav > .divider {
-    border-right-color: #515151;
-  }
-  .navbar-masthead .navbar-toggle {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .navbar-toolbar .navbar-brand {
     float: left;
@@ -2299,6 +2271,34 @@ li.list-group-header {
   .navbar-toolbar .navbar-toggle {
     display: none;
   }
+}
+.navbar-static-top {
+  border-radius: 0;
+}
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
 }
 .navbar-btn {
   padding: 2px 8px;
