@@ -36,7 +36,7 @@ body {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
-  color: #1154c0;
+  color: #4787ed;
   background-color: #fff;
   border-color: #fff;
 }
@@ -54,8 +54,8 @@ body {
 -------------------------------------------------- */
 
 .bs-docs-nav {
-  background-color: #1154c0 !important;
-  border-color: #1154c0 !important;
+  background-color: #4787ed !important;
+  border-color: #4787ed !important;
 }
 .bs-docs-nav .navbar-brand {
   color: #fff;
@@ -69,7 +69,7 @@ body {
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
   color: #fff;
-  background-color: #0b357a !important;
+  background-color: #1154c0 !important;
 }
 .bs-docs-nav .navbar-toggle {
   border-color: #d33725 !important;
@@ -104,7 +104,7 @@ body {
 /* Homepage */
 .bs-docs-home {
   color: #bdd4f9;
-  background-color: #1154c0;
+  background-color: #4787ed;
 }
 
 
@@ -199,7 +199,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 .bs-header h1 {
-  color: #1154c0;
+  color: #4787ED;
 }
 .bs-header p {
   font-weight: 300;
