@@ -1433,6 +1433,10 @@ li.list-group-header {
   height: 16px;
   width: 10px;
 }
+.scrollable::-webkit-scrollbar:hover {
+  background-color: #f3f3f3;
+  border: 1px solid #dbdbdb;
+}
 .scrollable::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
   background-color: transparent;
@@ -1447,15 +1451,6 @@ li.list-group-header {
 }
 .scrollable::-webkit-scrollbar-track-piece {
   background-color: transparent;
-  border-radius: 0;
-}
-.scrollable::-webkit-scrollbar:hover {
-  background-color: #f3f3f3;
-  border: 1px solid #dbdbdb;
-}
-.scrollable::-webkit-scrollbar-thumb:vertical,
-.scrollable::-webkit-scrollbar-thumb:horizontal {
-  background-color: #c6c6c6;
   border-radius: 0;
 }
 .scrollable::-webkit-scrollbar-thumb {
@@ -1473,6 +1468,11 @@ li.list-group-header {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
+}
+.scrollable::-webkit-scrollbar-thumb:vertical,
+.scrollable::-webkit-scrollbar-thumb:horizontal {
+  background-color: #c6c6c6;
+  border-radius: 0;
 }
 .nav > li.disabled > a {
   color: #999999;
