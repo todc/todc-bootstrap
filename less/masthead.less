@@ -10,7 +10,7 @@
   border-radius: @border-radius-base;
   .box-shadow(none);
   color: @navbar-color;
-  #gradient > .vertical(@start-color: @navbar-masthead-bg, @end-color: @navbar-masthead-bg);
+  #gradient > .vertical(@start-color: @navbar-masthead-bg; @end-color: @navbar-masthead-bg);
 }
 
 // Masthead nav links
@@ -40,7 +40,7 @@
       .box-shadow(none);
       color: @navbar-masthead-link-active-color;
       text-decoration: none;
-      #gradient > .vertical(@start-color: @navbar-masthead-link-active-bg, @end-color: @navbar-masthead-link-active-bg);
+      #gradient > .vertical(@start-color: @navbar-masthead-link-active-bg; @end-color: @navbar-masthead-link-active-bg);
     }
     > .disabled > a,
     > .disabled > a:hover,
@@ -152,7 +152,7 @@
 
 .navbar-masthead {
   &.navbar-inverse {
-    #gradient > .vertical(@start-color: @gray, @end-color: @navbar-masthead-inverse-bg);
+    #gradient > .vertical(@start-color: @gray; @end-color: @navbar-masthead-inverse-bg);
     border-color: @navbar-masthead-inverse-border;
     color: @navbar-masthead-inverse-color;
 
@@ -200,7 +200,7 @@
         &:hover,
         &:focus {
           color: @navbar-masthead-inverse-link-active-color;
-          #gradient > .vertical(@start-color: @navbar-masthead-inverse-link-active-bg, @end-color: @navbar-masthead-inverse-link-active-bg);
+          #gradient > .vertical(@start-color: @navbar-masthead-inverse-link-active-bg; @end-color: @navbar-masthead-inverse-link-active-bg);
         }
       }
       > .disabled > a {

@@ -10,7 +10,7 @@
 // -------------------------
 // TODO: Review this when Bootstrap moves to Less 4 to see if using the same mixin name still causes duplicated CSS
 // .alert-variant(@background, @border, @text-color) {
-.alert-variant-todc(@background, @border, @text-color) {
+.alert-variant-todc(@background; @border; @text-color) {
   background-color: @background;
   border-color: @border;
   color: @text-color;
@@ -26,10 +26,10 @@
 // -------------------------
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-.btn-states(@start-color, @end-color, @color: #fff, @border-color: @btn-default-border) {
+.btn-states(@start-color; @end-color; @color: #fff; @border-color: @btn-default-border) {
   border: 1px solid @border-color;
   color: @color;
-  #gradient > .vertical(@start-color: @start-color, @end-color: @end-color);
+  #gradient > .vertical(@start-color: @start-color; @end-color: @end-color);
   .reset-filter();
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 
@@ -45,7 +45,7 @@
   &.active {
     border: 1px solid darken(@border-color, 5%);
     color: @color;
-    #gradient > .vertical(@start-color: @start-color, @end-color: darken(@end-color, 5%));
+    #gradient > .vertical(@start-color: @start-color; @end-color: darken(@end-color, 5%));
     .reset-filter();
     background-color: darken(@end-color, 5%);
     background-color: darken(@end-color, 5%) e("\9");
@@ -55,7 +55,7 @@
   &.active {
     border: 1px solid darken(@border-color, 10%);
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    #gradient > .vertical(@start-color: @start-color, @end-color: darken(@end-color, 10%));
+    #gradient > .vertical(@start-color: @start-color; @end-color: darken(@end-color, 10%));
     .reset-filter();
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
   }
@@ -74,7 +74,7 @@
     &:active,
     &.active {
       border: 1px solid @border-color;
-      #gradient > .vertical(@start-color: @start-color, @end-color: @end-color);
+      #gradient > .vertical(@start-color: @start-color; @end-color: @end-color);
       .reset-filter();
       background-color: @start-color;
       background-color: @start-color e("\9");
@@ -88,8 +88,8 @@
 // Vertically center elements in the navbar or other bars.
 // Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
 // Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
-//          .navbar-vertical-align(32px, @navbar-toolbar-height);
-.navbar-vertical-align(@element-height, @bar-height: @navbar-height) {
+//          .navbar-vertical-align(32px; @navbar-toolbar-height);
+.navbar-vertical-align(@element-height; @bar-height: @navbar-height) {
   // margin-top: (@bar-height - @element-height) / 2;
   margin-top: ((@bar-height - @element-height) / 2);
   margin-bottom: ((@bar-height - @element-height) / 2);
@@ -105,7 +105,7 @@
 // Used in forms.less to generate the form validation CSS for warnings, errors,
 // and successes.
 
-.form-control-validation(@text-color: #555, @border-color: #ccc, @background-color: #f5f5f5) {
+.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
   // Color the label text
   .help-block,
   .control-label {

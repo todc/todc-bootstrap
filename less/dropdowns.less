@@ -40,7 +40,7 @@
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
   color: @dropdown-link-hover-color;
-  #gradient > .vertical(@start-color: @dropdown-link-hover-bg, @end-color: @dropdown-link-hover-bg);
+  #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: @dropdown-link-hover-bg);
 }
 
 // Active state
@@ -50,7 +50,7 @@
   &:hover,
   &:focus {
     color: @dropdown-link-active-color;
-    #gradient > .vertical(@start-color: @dropdown-link-hover-bg, @end-color: @dropdown-link-hover-bg);
+    #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: @dropdown-link-hover-bg);
   }
 }
 

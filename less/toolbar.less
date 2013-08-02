@@ -8,7 +8,7 @@
   min-height: @navbar-toolbar-height;
   margin: 0px;
   color: @navbar-color;
-  #gradient > .vertical(@start-color: @navbar-toolbar-bg, @end-color: @navbar-toolbar-bg);
+  #gradient > .vertical(@start-color: @navbar-toolbar-bg; @end-color: @navbar-toolbar-bg);
   border: 1px solid @navbar-toolbar-border;
 }
 
@@ -243,7 +243,7 @@
 
 .navbar-toolbar {
   &.navbar-inverse {
-    #gradient > .vertical(@start-color: @gray, @end-color: @navbar-toolbar-inverse-bg);
+    #gradient > .vertical(@start-color: @gray; @end-color: @navbar-toolbar-inverse-bg);
     border-color: @navbar-toolbar-inverse-border;
     color: @navbar-toolbar-inverse-color;
 
@@ -284,7 +284,7 @@
         &:focus {
           font-weight: bold;
           color: @navbar-toolbar-inverse-link-active-color;
-          #gradient > .vertical(@start-color: @navbar-toolbar-inverse-link-active-bg, @end-color: @navbar-toolbar-inverse-link-active-bg);
+          #gradient > .vertical(@start-color: @navbar-toolbar-inverse-link-active-bg; @end-color: @navbar-toolbar-inverse-link-active-bg);
         }
         &:hover {
           text-decoration: underline;
