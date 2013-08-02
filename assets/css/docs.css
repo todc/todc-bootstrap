@@ -279,8 +279,8 @@ body {
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
   text-decoration: none;
-  background-color: #ecf2fd;
-  border-right: 1px solid #d5d5d5;
+  background-color: #e1e4f1;
+  border-right: 1px solid #c8c8c8;
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,
