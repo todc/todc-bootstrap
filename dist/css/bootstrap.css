@@ -2016,7 +2016,9 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
-.form-horizontal .control-label {
+.form-horizontal .control-label,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
   padding-top: 9px;
 }
 
@@ -2068,6 +2070,10 @@ input[type="button"].btn-block {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   content: "";
+}
+
+.dropdown {
+  position: relative;
 }
 
 .dropdown-menu {
@@ -2505,33 +2511,6 @@ button.close {
   background-color: #e5e5e5;
 }
 
-.nav-justified {
-  width: 100%;
-}
-
-.nav-justified > li {
-  display: table-cell;
-  float: none;
-  width: 1%;
-}
-
-.nav-justified > li > a {
-  text-align: center;
-}
-
-.nav-tabs-justified {
-  border-bottom: 0;
-}
-
-.nav-tabs-justified > li > a {
-  margin-right: 0;
-  border-bottom: 1px solid #dddddd;
-}
-
-.nav-tabs-justified > .active > a {
-  border-bottom-color: #ffffff;
-}
-
 .nav-tabs {
   border-bottom: 1px solid #dddddd;
 }
@@ -2612,6 +2591,33 @@ button.close {
 .nav-stacked > li + li {
   margin-top: 2px;
   margin-left: 0;
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+.nav-justified > li > a {
+  text-align: center;
+}
+
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs-justified > .active > a {
+  border-bottom-color: #ffffff;
 }
 
 .tabbable:before,
@@ -3751,7 +3757,7 @@ button.close {
 }
 
 .alert {
-  padding: 10px 35px 10px 15px;
+  padding: 15px 35px 15px 15px;
   margin-bottom: 20px;
   color: #c09853;
   background-color: #fcf8e3;
@@ -3778,6 +3784,15 @@ button.close {
   top: -2px;
   right: -21px;
   color: inherit;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+
+.alert > p + p {
+  margin-top: 5px;
 }
 
 .alert-success {
@@ -3820,20 +3835,6 @@ button.close {
 
 .alert-info .alert-link {
   color: #2d6987;
-}
-
-.alert-block {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.alert-block > p,
-.alert-block > ul {
-  margin-bottom: 0;
-}
-
-.alert-block p + p {
-  margin-top: 5px;
 }
 
 .thumbnail,
