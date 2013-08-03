@@ -328,8 +328,8 @@ input[type="checkbox"]:checked::after,
   border-radius: 4px;
 }
 .input-small {
-  height: 24px;
-  padding: 2px 8px;
+  height: 26px;
+  padding: 3px 8px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 1px;
@@ -339,8 +339,8 @@ select.input-large {
   line-height: 38px;
 }
 select.input-small {
-  height: 24px;
-  line-height: 24px;
+  height: 26px;
+  line-height: 26px;
 }
 .has-warning .help-block,
 .has-warning .control-label {
@@ -1086,7 +1086,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-small,
 .btn-mini {
-  padding: 2px 8px;
+  padding: 3px 8px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 2px;
@@ -1117,7 +1117,7 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 2px;
 }
 .input-group-addon.input-small {
-  padding: 2px 8px;
+  padding: 3px 8px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 1px;
@@ -1956,8 +1956,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-masthead .navbar-brand {
     float: left;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .navbar-masthead .nav {
     float: left;
@@ -1981,8 +1981,8 @@ li.list-group-header {
     border-right: 1px solid #fefefe;
   }
   .navbar-masthead .navbar-text {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
   .navbar-masthead.navbar-inverse .nav > .divider {
     border-right-color: #515151;
@@ -2011,7 +2011,7 @@ li.list-group-header {
   position: relative;
 }
 .navbar-toolbar .navbar-nav > li > a {
-  padding: 8.5px 15px;
+  padding: 8px 15px;
   color: #777777;
   text-shadow: none;
 }
@@ -2247,8 +2247,8 @@ li.list-group-header {
 @media screen and (min-width: 768px) {
   .navbar-toolbar .navbar-brand {
     float: left;
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .navbar-toolbar .nav {
     float: left;
@@ -2272,8 +2272,8 @@ li.list-group-header {
     border-right: 1px solid #ffffff;
   }
   .navbar-toolbar .navbar-text {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 9px;
+    margin-bottom: 9px;
   }
   .navbar-toolbar.navbar-inverse .nav > .divider {
     border-right-color: #515151;
@@ -2311,8 +2311,8 @@ li.list-group-header {
   margin-bottom: 0;
 }
 .navbar-btn {
-  padding: 2px 8px;
-  margin-top: 2px;
+  padding: 3px 8px;
+  margin-top: 1px;
 }
 .navbar-masthead-btn {
   margin-top: 7px;
@@ -2534,7 +2534,7 @@ li.list-group-header {
 }
 .pagination-small > li > a,
 .pagination-small > li > span {
-  padding: 2px 8px;
+  padding: 3px 8px;
   font-size: 12px;
 }
 .pagination-small > li:first-child > a,

@@ -67,7 +67,7 @@
 @padding-large-vertical:         9px;
 @padding-large-horizontal:       14px;
 
-@padding-small-vertical:         2px;
+@padding-small-vertical:         3px;
 @padding-small-horizontal:       8px;
 
 @line-height-large:              1.3;
@@ -289,7 +289,7 @@
 @navbar-masthead-color:                     #777;
 @navbar-masthead-bg:                        #f1f1f1;
 @navbar-masthead-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
-@navbar-masthead-padding-vertical:          ((@navbar-masthead-height - @line-height-computed) / 2);
+@navbar-masthead-padding-vertical:          floor((@navbar-masthead-height - @line-height-computed) / 2);
 @navbar-masthead-border:                    darken(@navbar-masthead-bg, 4.7%);
 
 // Masthead links
@@ -354,7 +354,7 @@
 @navbar-toolbar-color:                     #777;
 @navbar-toolbar-bg:                        #fff;
 @navbar-toolbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
-@navbar-toolbar-padding-vertical:          ((@navbar-toolbar-height - @line-height-computed) / 2);
+@navbar-toolbar-padding-vertical:          floor((@navbar-toolbar-height - @line-height-computed) / 2);
 @navbar-toolbar-border:                    darken(@navbar-toolbar-bg, 15.5%); //#d7d7d7
 
 // navbar-toolbar links
