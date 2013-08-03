@@ -321,24 +321,26 @@ input[type="checkbox"]:checked::after,
   left: -5px;
 }
 .input-large {
-  height: 42px;
+  height: 38px;
   padding: 9px 14px;
   font-size: 14px;
+  line-height: 1.33;
   border-radius: 4px;
 }
 .input-small {
-  height: 25px;
+  height: 24px;
   padding: 2px 8px;
   font-size: 12px;
+  line-height: 1.5;
   border-radius: 1px;
 }
 select.input-large {
-  height: 42px;
-  line-height: 42px;
+  height: 38px;
+  line-height: 38px;
 }
 select.input-small {
-  height: 25px;
-  line-height: 25px;
+  height: 24px;
+  line-height: 24px;
 }
 .has-warning .help-block,
 .has-warning .control-label {
@@ -1079,12 +1081,14 @@ fieldset[disabled] .btn-link:focus {
 .btn-large {
   padding: 9px 14px;
   font-size: 14px;
+  line-height: 1.33;
   border-radius: 2px;
 }
 .btn-small,
 .btn-mini {
   padding: 2px 8px;
   font-size: 12px;
+  line-height: 1.5;
   border-radius: 2px;
 }
 .btn-mini {
@@ -2306,7 +2310,7 @@ li.list-group-header {
 }
 .navbar-btn {
   padding: 2px 8px;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 .navbar-masthead-btn {
   margin-top: 7px;
