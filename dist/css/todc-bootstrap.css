@@ -1638,8 +1638,20 @@ li.list-group-header {
   background-color: #ffffff;
 }
 .navbar-form {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.navbar .form-control {
+  height: 26px;
+  padding: 3px 8px;
+}
+.navbar .btn,
+.navbar .btn-group {
   margin-top: 1px;
   margin-bottom: 1px;
+}
+.navbar .btn {
+  padding: 3px 8px;
 }
 .navbar-brand.dropdown-menu {
   display: none;

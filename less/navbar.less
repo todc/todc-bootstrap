@@ -107,7 +107,22 @@
 
 // Navbar form
 .navbar-form {
-  .navbar-vertical-align(26px); // Vertically center in navbar
+  .navbar-vertical-align(28px); // Vertically center in navbar
+}
+.navbar .form-control {
+  height: @input-height-small;
+  padding: @padding-small-vertical @padding-small-horizontal;
+}
+
+// Buttons in navbar
+.navbar {
+  .btn,
+  .btn-group {
+    .navbar-vertical-align(26px); // Vertically center in navbar
+  }
+  .btn {
+    padding: @padding-small-vertical @padding-small-horizontal;
+  }
 }
 
 // Dropdown menus
@@ -255,40 +270,6 @@
     }
   }
 }
-
-
-
-// Buttons in navbar
-// -------------------------
-// .navbar .btn,
-// .navbar .btn-group {
-//   .navbar-vertical-align(26px); // Vertically center in navbar
-// }
-// .navbar .btn {
-//   padding: @padding-small; // FIXME: This is probably not necessary for the btn-group;
-// }
-
-// // Navbar forms
-// // -------------------------
-// .navbar-form {
-//   input,
-//   select,
-//   .radio,
-//   .checkbox {
-//     .navbar-vertical-align(26px); // Vertically center in navbar
-//     padding: 2px 14px;
-//   }
-// }
-
-// Navbar search
-// -------------------------
-// .navbar-search {
-//   .navbar-vertical-align(26px); // Vertically center in navbar
-//   .search-query {
-//     padding: 2px 14px;
-//     line-height: normal;
-//   }
-// }
 
 
 
