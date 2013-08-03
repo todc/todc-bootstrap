@@ -49,7 +49,7 @@
 @font-size-small:         (@font-size-base - 1); // 12px
 @font-size-mini:          (@font-size-base - 2); // 11px
 
-@line-height-base:        1.5381; // 20/13
+@line-height-base:        1.4; // 18.2/13
 @line-height-computed:    ceil(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
@@ -61,7 +61,7 @@
 // -------------------------
 // Based on 14px font-size and 1.5381 line-height (~20px to start)
 
-@padding-base-vertical:          4px;
+@padding-base-vertical:          5px;
 @padding-base-horizontal:        8px;
 
 @padding-large-vertical:         9px;
@@ -70,7 +70,7 @@
 @padding-small-vertical:         2px;
 @padding-small-horizontal:       8px;
 
-@line-height-large:              1.33;
+@line-height-large:              1.3;
 @line-height-small:              1.5;
 
 @border-radius-base:             2px;
@@ -135,7 +135,7 @@
 
 @input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 1);
 @input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
