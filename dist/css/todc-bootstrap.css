@@ -1838,6 +1838,9 @@ li.list-group-header {
 .navbar-masthead.navbar-fixed-bottom {
   z-index: 1029;
 }
+.navbar-masthead .btn {
+  padding: 5px 8px;
+}
 .navbar-masthead .navbar-brand:hover,
 .navbar-masthead .navbar-brand:focus {
   color: #777777;
@@ -1861,6 +1864,15 @@ li.list-group-header {
 .navbar-masthead .navbar-form {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+.navbar-masthead .form-control {
+  height: 30px;
+  padding: 5px 8px;
+}
+.navbar-masthead .navbar-form > .btn,
+.navbar-masthead .navbar-form > .btn-group {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .navbar-masthead .navbar-nav > .dropdown > a:hover .caret,
 .navbar-masthead .navbar-nav > .dropdown > a:focus .caret {
@@ -2091,7 +2103,8 @@ li.list-group-header {
 }
 .navbar-toolbar .btn {
   font-size: 11px;
-  padding: 6px 12px;
+  padding: 7px 12px;
+  line-height: 1.3;
 }
 .navbar-toolbar .navbar-brand,
 .navbar-toolbar .navbar-brand .btn {
@@ -2125,6 +2138,15 @@ li.list-group-header {
 .navbar-toolbar .navbar-form {
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.navbar-toolbar .form-control {
+  height: 30px;
+  padding: 5px 8px;
+}
+.navbar-toolbar .navbar-form > .btn,
+.navbar-toolbar .navbar-form > .btn-group {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .navbar-toolbar .btn-toolbar {
   margin-top: 3px;
@@ -2326,10 +2348,10 @@ li.list-group-header {
   padding: 3px 8px;
   margin-top: 1px;
 }
-.navbar-masthead-btn {
+.btn.navbar-masthead-btn {
   margin-top: 7px;
 }
-.navbar-toolbar-btn {
+.btn.navbar-toolbar-btn {
   margin-top: 3px;
 }
 .navbar-link {

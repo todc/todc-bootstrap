@@ -73,6 +73,12 @@
 
 .navbar-masthead {
 
+  // Buttons in masthead
+  // -------------------------
+  .btn {
+    padding: @padding-base-vertical @padding-base-horizontal;
+  }
+
   // Brand: website or project name
   // -------------------------
   .navbar-brand {
@@ -107,6 +113,20 @@
   .navbar-form {
     .navbar-vertical-align(@input-height-base, @navbar-masthead-height); // Vertically center in navbar
   }
+  .form-control {
+    height: @input-height-base;
+    padding: @padding-base-vertical @padding-base-horizontal;
+  }
+
+  // Buttons in navbar-form
+  .navbar-form {
+    > .btn,
+    > .btn-group {
+        .navbar-vertical-align(28px); // Vertically center in navbar
+    }
+  }
+
+
 
   // Dropdown menus
   .navbar-nav {

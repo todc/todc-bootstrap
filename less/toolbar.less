@@ -112,18 +112,19 @@
 
 .navbar-toolbar {
 
-  // Buttons in navbar
+  // Buttons in toolbar
   // -------------------------
   .btn {
     font-size: @font-size-mini;
-    padding: 6px 12px;
+    padding: 7px 12px;
+    // padding: @padding-base-vertical 12px;
+    line-height: @line-height-large;
   }
 
   // Brand: website or project name
   // -------------------------
   .navbar-brand,
   .navbar-brand .btn {
-    // Vertically center the text given @navbar-height
     font-size: 16px;
     font-weight: bold;
     color: @navbar-toolbar-brand-color;
@@ -158,6 +159,18 @@
   // Navbar form
   .navbar-form {
     .navbar-vertical-align(@input-height-base, @navbar-toolbar-height); // Vertically center in navbar
+  }
+  .form-control {
+    height: @input-height-base;
+    padding: @padding-base-vertical @padding-base-horizontal;
+  }
+
+  // Buttons in navbar-form
+  .navbar-form {
+    > .btn,
+    > .btn-group {
+        .navbar-vertical-align(28px); // Vertically center in navbar
+    }
   }
 
   // Optional: Group multiple button groups together for a toolbar
