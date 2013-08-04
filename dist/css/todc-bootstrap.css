@@ -2466,6 +2466,7 @@ li.list-group-header {
 }
 .pagination > li > a,
 .pagination > li > span {
+  padding: 5px 8px;
   line-height: 1.4;
   background-color: #f3f3f3;
   border: 1px solid #dcdcdc;
