@@ -1775,9 +1775,6 @@ li.list-group-header {
   .navbar-nav > li > a {
     border-radius: 0;
   }
-  .navbar-nav.pull-right {
-    float: right;
-  }
   .navbar-nav > .divider {
     width: 1px;
     height: 16.8px;
@@ -2001,9 +1998,6 @@ li.list-group-header {
   }
   .navbar-masthead .nav > li > a {
     border-radius: 0;
-  }
-  .navbar-masthead .nav.pull-right {
-    float: right;
   }
   .navbar-masthead .nav > .divider {
     width: 1px;
@@ -2304,9 +2298,6 @@ li.list-group-header {
   }
   .navbar-toolbar .nav > li > a {
     border-radius: 0;
-  }
-  .navbar-toolbar .nav.pull-right {
-    float: right;
   }
   .navbar-toolbar .nav > .divider {
     width: 1px;
