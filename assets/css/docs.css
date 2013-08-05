@@ -72,11 +72,11 @@ body {
   background-color: #3d467c !important;
 }
 .bs-docs-nav .navbar-toggle {
-  border-color: #d33725 !important;
+  border-color: #3d467c !important;
 }
 .bs-docs-nav .navbar-toggle:hover {
-  background-color: #ac2d1e !important;
-  border-color: #ac2d1e !important;
+  background-color: #3d467c !important;
+  border-color: #3d467c !important;
 }
 
 /* Old docs callout */
