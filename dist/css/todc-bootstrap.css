@@ -522,8 +522,8 @@ select.input-sm {
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-  border: 1px solid #cfcfcf;
   color: #333333;
+  border: 1px solid #cfcfcf;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#e4e4e4));
   background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #e4e4e4, 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e4e4e4 100%);
@@ -655,8 +655,8 @@ fieldset[disabled] .btn-default:active {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  border: 1px solid #196aeb;
   color: #ffffff;
+  border: 1px solid #196aeb;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4d90fe), to(#3078eb));
   background-image: -webkit-linear-gradient(top, #4d90fe, 0%, #3078eb, 100%);
   background-image: -moz-linear-gradient(top, #4d90fe 0%, #3078eb 100%);
@@ -738,8 +738,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active {
-  border: 1px solid #b12d26;
   color: #ffffff;
+  border: 1px solid #b12d26;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#dd4b39), to(#c13e2c));
   background-image: -webkit-linear-gradient(top, #dd4b39, 0%, #c13e2c, 100%);
   background-image: -moz-linear-gradient(top, #dd4b39 0%, #c13e2c 100%);
@@ -821,8 +821,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active {
-  border: 1px solid #f9980f;
   color: #ffffff;
+  border: 1px solid #f9980f;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fbb450), to(#f99e1e));
   background-image: -webkit-linear-gradient(top, #fbb450, 0%, #f99e1e, 100%);
   background-image: -moz-linear-gradient(top, #fbb450 0%, #f99e1e 100%);
@@ -904,8 +904,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active {
-  border: 1px solid #2e863e;
   color: #ffffff;
+  border: 1px solid #2e863e;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#35aa47), to(#2f973f));
   background-image: -webkit-linear-gradient(top, #35aa47, 0%, #2f973f, 100%);
   background-image: -moz-linear-gradient(top, #35aa47 0%, #2f973f 100%);
@@ -986,8 +986,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active {
-  border: 1px solid #31b0d5;
   color: #ffffff;
+  border: 1px solid #31b0d5;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#5bc0de), to(#46b8da));
   background-image: -webkit-linear-gradient(top, #5bc0de, 0%, #46b8da, 100%);
   background-image: -moz-linear-gradient(top, #5bc0de 0%, #46b8da 100%);
