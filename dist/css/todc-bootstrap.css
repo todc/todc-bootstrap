@@ -1607,6 +1607,11 @@ li.list-group-header {
 .navbar-fixed-bottom {
   z-index: 1030;
 }
+@media (max-width: 768px) {
+  .nav-collapse-scrollable {
+    margin-bottom: 4px;
+  }
+}
 .navbar-brand {
   padding: 4px 15px;
   font-size: 14px;
@@ -1840,6 +1845,11 @@ li.list-group-header {
 .navbar-masthead.navbar-fixed-top,
 .navbar-masthead.navbar-fixed-bottom {
   z-index: 1029;
+}
+@media (max-width: 768px) {
+  .nav-collapse-scrollable {
+    margin-bottom: 12px;
+  }
 }
 .navbar-masthead .btn {
   padding: 5px 8px;
@@ -2102,6 +2112,11 @@ li.list-group-header {
 .navbar-toolbar.navbar-fixed-top,
 .navbar-toolbar.navbar-fixed-bottom {
   z-index: 1028;
+}
+@media (max-width: 768px) {
+  .nav-collapse-scrollable {
+    margin-bottom: 8px;
+  }
 }
 .navbar-toolbar .btn {
   font-size: 11px;

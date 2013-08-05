@@ -59,6 +59,23 @@
  }
 
 
+// Scrollable navbar navigation
+//
+// Sometimes you might have too many links in your fixed navbar and you need to
+// maintain access to all that content. To help, add `.nav-collapse-scrollable`
+// to your `.nav-collapse` to prevent the the content from flowing past the max-
+// height of your browser.
+//
+// This is not automatically added to the `.navbar-fixed-top` because it causes
+// z-index bugs in iOS7 (possibly earlier).
+
+@media (max-width: @screen-small) {
+  .nav-collapse-scrollable {
+    margin-bottom: @navbar-padding-vertical;
+  }
+}
+
+
 
 //
 // Navbar optional components
