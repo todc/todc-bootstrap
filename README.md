@@ -27,7 +27,7 @@ The resulting CSS file will be found at `dist/todc-bootstrap.css`.
 
 ## Demo ##
 
-http://todc.github.com/todc-bootstrap/index.html
+http://todc.github.io/todc-bootstrap/index.html
 
 
 ## License ##
