@@ -1,7 +1,7 @@
 DIST_DIR = dist
 CSS_FILE = ${DIST_DIR}/todc-bootstrap.css
 BOOTSTRAP_DIR = bootstrap
-BOOTSTRAP_URL = https://github.com/twitter/bootstrap.git
+BOOTSTRAP_URL = https://github.com/twbs/bootstrap.git
 BOOTSTRAP_VERSION = v2.3.1
 
 build:
