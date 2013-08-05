@@ -198,10 +198,14 @@ input[type="checkbox"] {
 .form-control:focus {
   border-color: #4d90fe;
   outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(77, 144, 254, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(77, 144, 254, 0.6);
+}
+.form-control:focus {
+  border-color: #4d90fe;
+  outline: 0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-transition: none;
-  transition: none;
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -347,7 +351,6 @@ select.input-sm {
   color: #333333;
 }
 .has-warning .form-control {
-  padding-right: 32px;
   border-color: #333333;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -367,7 +370,6 @@ select.input-sm {
   color: #333333;
 }
 .has-warning .form-control {
-  padding-right: 32px;
   border-color: #333333;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -392,7 +394,6 @@ select.input-sm {
   color: #dd4b39;
 }
 .has-error .form-control {
-  padding-right: 32px;
   border-color: #dd4b39;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -412,7 +413,6 @@ select.input-sm {
   color: #dd4b39;
 }
 .has-error .form-control {
-  padding-right: 32px;
   border-color: #dd4b39;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -437,7 +437,6 @@ select.input-sm {
   color: #468847;
 }
 .has-success .form-control {
-  padding-right: 32px;
   border-color: #468847;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -457,7 +456,6 @@ select.input-sm {
   color: #468847;
 }
 .has-success .form-control {
-  padding-right: 32px;
   border-color: #468847;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1618,11 +1616,11 @@ li.list-group-header {
   margin-bottom: 5px;
 }
 .navbar-toggle {
-  top: 2px;
-  right: 10px;
-  width: 34px;
-  height: 24px;
-  padding: 4px 5px;
+  height: 26px;
+  width: 36px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 3px 8px;
   background-color: transparent;
   background-image: none;
   border: 1px solid #222222;
@@ -1848,8 +1846,10 @@ li.list-group-header {
   background-color: transparent;
 }
 .navbar-masthead .navbar-toggle {
-  top: 5px;
-  right: 10px;
+  height: 30px;
+  width: 52px;
+  margin-top: -1px;
+  margin-bottom: -1px;
   padding: 8px 12px;
   background-color: transparent;
   border: 1px solid #dcdcdc;
@@ -2122,9 +2122,11 @@ li.list-group-header {
   background-color: transparent;
 }
 .navbar-toolbar .navbar-toggle {
-  top: 5px;
-  right: 10px;
-  padding: 4px 6px;
+  height: 30px;
+  width: 52px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 7px 12px;
   background-color: transparent;
   border: 1px solid #dcdcdc;
 }
