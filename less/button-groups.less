@@ -2,12 +2,34 @@
 // Button groups
 // --------------------------------------------------
 
+//
 // Button carets
-.btn .caret {
-  border-top-color: @btn-default-color;
+//
+// Match the button text color to the arrow/caret for indicating dropdown-ness.
+
+.caret {
+  .btn-default & {
+    border-top-color: @btn-default-color;
+  }
+  .btn-primary &,
+  .btn-success &,
+  .btn-warning &,
+  .btn-danger &,
+  .btn-info & {
+    border-top-color: #fff;
+  }
 }
-.dropup .btn .caret {
-  border-bottom-color: @btn-default-color;
+.dropup .caret {
+  .btn-default & {
+    border-bottom-color: @btn-default-color;
+  }
+  .btn-primary &,
+  .btn-success &,
+  .btn-warning &,
+  .btn-danger &,
+  .btn-info & {
+    border-bottom-color: #fff;
+  }
 }
 
 // Optional: Group multiple button groups together for a toolbar
@@ -105,18 +127,5 @@
     background-color: @btn-info-bg;
     background-image: none;
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
-  }
-}
-
-
-// Account for other colors
-.btn-primary,
-.btn-warning,
-.btn-danger,
-.btn-info,
-.btn-success {
-  .caret {
-    border-top-color: #fff;
-    border-bottom-color: #fff;
   }
 }

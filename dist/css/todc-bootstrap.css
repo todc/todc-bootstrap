@@ -2372,11 +2372,25 @@ li.list-group-header {
 .navbar-form .checkbox-inline {
   color: #999999;
 }
-.btn .caret {
+.btn-default .caret {
   border-top-color: #333333;
 }
-.dropup .btn .caret {
+.btn-primary .caret,
+.btn-success .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret {
+  border-top-color: #fff;
+}
+.btn-default .dropup .caret {
   border-bottom-color: #333333;
+}
+.btn-primary .dropup .caret,
+.btn-success .dropup .caret,
+.btn-warning .dropup .caret,
+.btn-danger .dropup .caret,
+.btn-info .dropup .caret {
+  border-bottom-color: #fff;
 }
 .btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn-group + .btn,
@@ -2463,14 +2477,6 @@ li.list-group-header {
   background-image: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-.btn-primary .caret,
-.btn-warning .caret,
-.btn-danger .caret,
-.btn-info .caret,
-.btn-success .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
 }
 .breadcrumb {
   margin-bottom: 19px;
