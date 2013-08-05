@@ -475,8 +475,16 @@ select.input-sm {
   border-color: #468847;
   background-color: #dff0d8;
 }
+.form-control-static {
+  padding-top: 5px;
+}
 .help-block {
   color: #777777;
+}
+.form-horizontal .control-label,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 5px;
 }
 .btn {
   padding: 5px 12px;

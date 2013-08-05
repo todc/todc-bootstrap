@@ -232,6 +232,16 @@ select {
 }
 
 
+// Static form control text
+//
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  padding-top: @padding-base-vertical;
+}
+
+
 // Help text
 //
 // Apply to any element you wish to create light text for placement immediately
@@ -239,4 +249,16 @@ select {
 
 .help-block {
   color: lighten(@text-color, 26.5%); // lighten the text some for contrast
+}
+
+
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form-horizontal .control-label,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: @padding-base-vertical;
 }
