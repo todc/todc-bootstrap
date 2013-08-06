@@ -2702,6 +2702,7 @@ li.list-group-header {
   filter: alpha(opacity=100);
 }
 .tooltip-inner {
+  background-color: #2a2a2a;
   border-radius: 0;
 }
 .popover {
