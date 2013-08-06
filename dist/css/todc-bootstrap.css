@@ -2794,6 +2794,13 @@ a.thumbnail:focus {
 .label {
   border-radius: 0;
 }
+.label-default {
+  background-color: #999999;
+}
+.label-default[href]:hover,
+.label-default[href]:focus {
+  background-color: #808080;
+}
 .label-danger {
   background-color: #d84a38;
 }
