@@ -119,6 +119,7 @@ table {
 .table > tbody > tr.success > th,
 .table > tfoot > tr.success > th {
   background-color: #dff0d8;
+  border-color: #a3d48e;
 }
 .table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
@@ -133,6 +134,7 @@ table {
 .table > tbody > tr.danger > th,
 .table > tfoot > tr.danger > th {
   background-color: #f2dede;
+  border-color: #d59595;
 }
 .table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
@@ -147,6 +149,7 @@ table {
 .table > tbody > tr.warning > th,
 .table > tfoot > tr.warning > th {
   background-color: #f9edbe;
+  border-color: #f0c36d;
 }
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
