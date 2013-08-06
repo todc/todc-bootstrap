@@ -2830,12 +2830,12 @@ a.thumbnail:focus {
 }
 a.list-group-item.active > .badge,
 li.list-group-item.active a > .badge {
-  color: #fff;
+  color: #ffffff;
   background-color: #dd4b39;
 }
 .nav-pills > .active > a > .badge {
   color: #1155cc;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .progress {
   border: 1px solid #999;
