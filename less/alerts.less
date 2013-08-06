@@ -7,7 +7,7 @@
 // -------------------------
 
 .alert {
-  padding: 8px 35px 8px 10px;
+  padding: @alert-padding (@alert-padding + 27) @alert-padding (@alert-padding + 2);
   text-shadow: none;
   color: @alert-text;
   .box-shadow(0 2px 4px rgba(0,0,0,0.2));
