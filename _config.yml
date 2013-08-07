@@ -12,8 +12,8 @@ port:             9002
 
 # Custom vars
 repo:                       https://github.com/todc/todc-bootstrap
-download:                   https://github.com/todc/todc-bootstrap/archive/v3.0.0-rc1.zip
-download_dist:              https://github.com/todc/todc-bootstrap/releases/download/v3.0.0-rc1/bs-v3.0.0-rc1-dist.zip
+download:                   https://github.com/todc/todc-bootstrap/archive/3.0.0-wip.zip
+download_dist:              https://github.com/todc/todc-bootstrap/releases/download/v3.0.0-rc1/todc-bs-v3.0.0-rc1-dist.zip
 
 bootstrap_repo:             https://github.com/twbs/bootstrap
 bootstrap_download:         https://github.com/twbs/bootstrap/archive/3.0.0-wip.zip
