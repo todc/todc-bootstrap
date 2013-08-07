@@ -6,12 +6,13 @@
     <!-- Place anything custom after this. -->
   </head>
   <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
 
     <!-- Docs master nav -->
     {% include nav-main.html %}
 
     <!-- Docs page layout -->
-    <div class="bs-header">
+    <div class="bs-header" id="content" role="banner">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
@@ -25,7 +26,7 @@
     <div class="container bs-docs-container">
       <div class="row">
         <div class="col-lg-3">
-          <div class="bs-sidebar">
+          <div class="bs-sidebar" role="complementary">
             <ul class="nav bs-sidenav">
               {% if page.slug == "getting-started" %}
                 {% include nav-getting-started.html %}
@@ -39,7 +40,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" role="main">
           {{ content }}
         </div>
       </div>
@@ -48,7 +49,7 @@
 
     <!-- Footer
     ================================================== -->
-    <footer class="bs-footer">
+    <footer class="bs-footer" role="contentinfo">
       {% include social-buttons.html %}
 
       <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
