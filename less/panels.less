@@ -15,8 +15,7 @@
 .panel-heading {
   background-color: @panel-heading-bg;
   border-bottom: 1px solid @panel-border;
-  border-top-left-radius:  @panel-border-radius;
-  border-top-right-radius: @panel-border-radius;
+  .border-top-radius(@panel-border-radius);
 }
 
 // Within heading, strip any `h*` tag of it's default margins for spacing.
@@ -28,8 +27,7 @@
 .panel-footer {
   background-color: @panel-footer-bg;
   border-top: 1px solid @panel-border;
-  border-bottom-left-radius:  @panel-border-radius;
-  border-bottom-right-radius: @panel-border-radius;
+  .border-bottom-radius(@panel-border-radius);
 }
 
 // Contextual variations

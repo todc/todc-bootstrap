@@ -1358,8 +1358,8 @@ li.list-group-header {
 .panel-heading {
   background-color: rgba(243, 243, 243, 0.85);
   border-bottom: 1px solid #e5e5e5;
-  border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 .panel-title {
   font-size: 16.25px;
@@ -1367,8 +1367,8 @@ li.list-group-header {
 .panel-footer {
   background-color: rgba(243, 243, 243, 0.85);
   border-top: 1px solid #e5e5e5;
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .panel-primary {
   border-color: #4d90fe;
