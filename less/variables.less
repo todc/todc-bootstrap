@@ -50,7 +50,7 @@
 @font-size-mini:          (@font-size-base - 2); // 11px
 
 @line-height-base:        1.4; // 18.2/13
-@line-height-computed:    ceil(@font-size-base * @line-height-base); // ~19px
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~18px
 
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    bold;
@@ -140,7 +140,7 @@
 
 @input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 1);
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
@@ -231,7 +231,7 @@
 @navbar-bg:                        #2d2d2d;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
-@navbar-padding-vertical:          floor((@navbar-height - @line-height-computed) / 2);
+@navbar-padding-vertical:          (floor((@navbar-height - @line-height-computed) / 2) - 1);
 @navbar-border:                    #000;
 
 // Navbar links
@@ -297,7 +297,7 @@
 @navbar-masthead-color:                     #777;
 @navbar-masthead-bg:                        #f1f1f1;
 @navbar-masthead-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
-@navbar-masthead-padding-vertical:          floor((@navbar-masthead-height - @line-height-computed) / 2);
+@navbar-masthead-padding-vertical:          (floor((@navbar-masthead-height - @line-height-computed) / 2) - 1);
 @navbar-masthead-border:                    darken(@navbar-masthead-bg, 4.7%);
 
 // Masthead links
@@ -362,7 +362,7 @@
 @navbar-toolbar-color:                     #777;
 @navbar-toolbar-bg:                        #fff;
 @navbar-toolbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
-@navbar-toolbar-padding-vertical:          floor((@navbar-toolbar-height - @line-height-computed) / 2);
+@navbar-toolbar-padding-vertical:          (floor((@navbar-toolbar-height - @line-height-computed) / 2) - 1);
 @navbar-toolbar-border:                    darken(@navbar-toolbar-bg, 15.5%); //#d7d7d7
 
 // navbar-toolbar links

@@ -44,19 +44,19 @@ code {
 }
 pre {
   padding: 9px;
-  margin: 0 0 9.5px;
+  margin: 0 0 9px;
   font-size: 12px;
   line-height: 1.4;
   border-radius: 0;
 }
 pre.prettyprint {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 table {
   background-color: transparent;
 }
 .table {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 .table thead > tr > th,
 .table tbody > tr > th,
@@ -170,7 +170,7 @@ table {
   border-color: #eeb956;
 }
 legend {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-size: 19.5px;
   color: #333333;
 }
@@ -242,7 +242,7 @@ textarea.form-control {
 }
 .radio,
 .checkbox {
-  min-height: 19px;
+  min-height: 18px;
 }
 input[type="radio"],
 .radio input[type="radio"],
@@ -493,7 +493,7 @@ select.input-sm {
   padding: 5px 12px;
   font-size: 13px;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 18px;
   cursor: default;
   border-radius: 2px;
   background-clip: border-box;
@@ -1157,7 +1157,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 8px 0;
   overflow: hidden;
   background-color: #ebebeb;
 }
@@ -1344,7 +1344,7 @@ li.list-group-header {
 }
 .list-group .divider {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 8px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -2522,7 +2522,7 @@ li.list-group-header {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .breadcrumb {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   background-color: #f3f3f3;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
   background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
@@ -2533,7 +2533,7 @@ li.list-group-header {
   border-radius: 2px;
 }
 .pagination {
-  margin: 19px 0;
+  margin: 18px 0;
   border-radius: 2px;
 }
 .pagination > li > a,
@@ -2631,7 +2631,7 @@ li.list-group-header {
   border-top-right-radius: 1px;
 }
 .pager {
-  margin: 19px 0;
+  margin: 18px 0;
 }
 .pager li > a,
 .pager li > span {
@@ -2875,8 +2875,8 @@ li.list-group-item.active a > .badge {
   padding: 1px;
   height: 14px;
   font-size: 12px;
-  height: 19px;
-  margin-bottom: 19px;
+  height: 18px;
+  margin-bottom: 18px;
   background-color: transparent;
   background-image: none;
   border-radius: 0;
