@@ -1046,22 +1046,24 @@ base_url: "../"
 
     <h3>Tabs with dropdowns</h3>
     <div class="bs-example">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Help</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            Dropdown <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+      <nav class="navbar" role="navigation">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Help</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
 {% highlight html %}
 <ul class="nav nav-tabs">
@@ -1126,24 +1128,24 @@ base_url: "../"
     <h2 id="navbar-basic">Basic navbar</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar" role="navigation">
+<nav class="navbar" role="navigation">
   <a class="navbar-brand" href="#">Title</a>
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
   </ul>
-</div>
+</nav>
 {% endhighlight %}
 <div class="bs-callout bs-callout-warning">
   <h4>Make navbars accessible</h4>
@@ -1155,9 +1157,9 @@ base_url: "../"
     <h3 id="navbar-brand">Brand</h3>
     <p>A simple link to show your brand or project name only requires an anchor tag.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
 <a class="navbar-brand" href="#">Title</a>
@@ -1166,13 +1168,13 @@ base_url: "../"
     <h3 id="navbar-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li class="disabled"><a href="#">Disabled</a></li>
         </ul>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
 <ul class="nav navbar-nav">
@@ -1186,14 +1188,14 @@ base_url: "../"
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
 
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <form class="navbar-form pull-left">
           <select name="" id="" class="form-control" style="width: 200px;">
             <option value="1">1</option>
@@ -1203,17 +1205,17 @@ base_url: "../"
           </select>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <input type="checkbox">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <label class="checkbox-inline">
@@ -1221,7 +1223,7 @@ base_url: "../"
           </label>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
     </div><!-- /example -->
 {% highlight html %}
@@ -1234,10 +1236,10 @@ base_url: "../"
     <h3 id="navbar-buttons">Buttons</h3>
     <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <button type="button" class="btn btn-default navbar-btn">Sign in</button>
@@ -1246,31 +1248,31 @@ base_url: "../"
     <h3 id="navbar-text">Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text">Signed in as Mark Otto</p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar" role="navigation">
+<nav class="navbar" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text">Signed in as Mark Otto</p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-links">Links</h3>
     <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar" role="navigation">
+<nav class="navbar" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-component-alignment">Component alignment</h3>
@@ -1283,7 +1285,7 @@ base_url: "../"
     <h3 id="navbar-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-fixed-top">
+      <nav class="navbar navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1292,12 +1294,12 @@ base_url: "../"
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-fixed-top" role="navigation">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -1312,7 +1314,7 @@ body { padding-top: 40px; }
     <h3 id="navbar-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-fixed-bottom" role="navigation">
+      <nav class="navbar navbar-fixed-bottom" role="navigation">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1321,12 +1323,12 @@ body { padding-top: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar navbar-fixed-bottom" role="navigation">
+<nav class="navbar navbar-fixed-bottom" role="navigation">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -1341,7 +1343,7 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-*</code> classes, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-static-top" role="navigation" style="margin: -1px -1px 0;">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1350,19 +1352,19 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar navbar-static-top" role="navigation">
+<nav class="navbar navbar-static-top" role="navigation">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
 
     <h2 id="navbar-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.navbar-toggle</code>.</p>
     <div class="bs-example">
-      <div class="navbar" role="navigation">
+      <nav class="navbar" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -1407,10 +1409,10 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
-      </div><!-- /.navbar -->
+      </nav><!-- /.navbar -->
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar" role="navigation">
+<nav class="navbar" role="navigation">
   <div class="container">
 
     <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -1429,7 +1431,7 @@ body { padding-bottom: 40px; }
       ...
     </div><!-- /.nav-collapse -->
   </div><!-- /.container -->
-</div><!-- /.navbar -->
+</nav><!-- /.navbar -->
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -1441,7 +1443,7 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-scrollable">Scrollable responsive navbar</h2>
     <p>For instances where you have too many items in your navbar to fight within the viewport of a small device, add <code>.nav-collapse-scrollable</code> to your navbar's <code>.nav-collapse</code> to set a <code>max-height</code> and smooth scrolling.</p>
     <div class="bs-example">
-      <div class="navbar">
+      <nav class="navbar">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-scroll-collapse">
             <span class="icon-bar"></span>
@@ -1464,10 +1466,10 @@ body { padding-bottom: 40px; }
             </form>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
-      </div><!-- /.navbar -->
+      </nav><!-- /.navbar -->
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar">
+<nav class="navbar">
   <div class="container">
 		...
 
@@ -1476,14 +1478,14 @@ body { padding-bottom: 40px; }
     </div><!-- /.nav-collapse -->
 
   </div><!-- /.container -->
-</div><!-- /.navbar -->
+</nav><!-- /.navbar -->
 {% endhighlight %}
 
 
     <h2 id="navbar-inverted">Inverted variation</h2>
     <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-inverse" role="navigation">
+      <nav class="navbar navbar-inverse" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
             <span class="icon-bar"></span>
@@ -1527,7 +1529,7 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
-      </div><!-- /.navbar -->
+      </nav><!-- /.navbar -->
     </div><!-- /example -->
 {% highlight html %}
 <div class="navbar navbar-inverse">
@@ -1549,7 +1551,7 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-masthead-basic">Basic Masthead</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
         <form class="navbar-form pull-left">
           <input type="text" class="form-control col-lg-8" placeholder="Search">
@@ -1560,10 +1562,10 @@ body { padding-bottom: 40px; }
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <a class="navbar-brand" href="#">Title</a>
   <form class="navbar-form pull-left">
     <input type="text" class="col-lg-8" placeholder="Search">
@@ -1576,7 +1578,7 @@ body { padding-bottom: 40px; }
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
   </ul>
-</div>
+</nav>
 {% endhighlight %}
 
 
@@ -1585,10 +1587,10 @@ body { padding-bottom: 40px; }
     <h3>Brand</h3>
     <p>A simple link to show your brand or project name only requires an anchor tag.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
       </div>
-    </div>
+    </nav>
 {% highlight html %}
 <a class="navbar-brand" href="#">Project name</a>
 {% endhighlight %}
@@ -1596,36 +1598,36 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li class="disabled"><a href="#">Disabled</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
     <li class="disabled"><a href="#">Disabled</a></li>
   </ul>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-masthead-forms">Forms</h3>
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
 
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <form class="navbar-form pull-left">
           <select name="" id="" class="form-control" style="width: 200px;">
             <option value="1">1</option>
@@ -1635,17 +1637,17 @@ body { padding-bottom: 40px; }
           </select>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <input type="checkbox">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <label class="checkbox-inline">
@@ -1653,7 +1655,7 @@ body { padding-bottom: 40px; }
           </label>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
     </div><!-- /example -->
 {% highlight html %}
@@ -1666,10 +1668,10 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-buttons">Buttons</h3>
     <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <button type="button" class="btn btn-default navbar-masthead-btn">Sign in</button>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <button type="button" class="btn btn-default navbar-masthead-btn">Sign in</button>
@@ -1678,31 +1680,31 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-text">Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text">Signed in as Mark Otto</p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text">Signed in as Mark Otto</p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-masthead-links">Links</h3>
     <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-masthead-component-alignment">Component alignment</h3>
@@ -1711,7 +1713,7 @@ body { padding-bottom: 40px; }
     <h3>Using dropdowns</h3>
     <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -1726,7 +1728,7 @@ body { padding-bottom: 40px; }
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <ul class="nav navbar-nav">
@@ -1747,14 +1749,14 @@ body { padding-bottom: 40px; }
     <h3>Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <p class="navbar-text">This is some text</p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <p class="navbar-text">This is some text</p>
-</div>
+</nav>
 {% endhighlight %}
 
 
@@ -1764,7 +1766,7 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 46px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-masthead navbar-fixed-top">
+      <nav class="navbar navbar-masthead navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1773,7 +1775,7 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <div class="navbar navbar-masthead navbar-fixed-top">
@@ -1784,7 +1786,7 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-masthead navbar-fixed-bottom">
+      <nav class="navbar navbar-masthead navbar-fixed-bottom">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1793,7 +1795,7 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <div class="navbar navbar-masthead navbar-fixed-bottom">
@@ -1804,7 +1806,7 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-masthead-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
+      <nav class="navbar navbar-masthead navbar-static-top" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -1813,7 +1815,7 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <div class="navbar navbar-masthead navbar-static-top">
@@ -1825,7 +1827,7 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-masthead-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".masthead-responsive-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -1871,10 +1873,10 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div>
-      </div><!-- /navbar -->
+      </nav><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead" role="navigation">
+<nav class="navbar navbar-masthead" role="navigation">
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -1894,7 +1896,7 @@ body { padding-bottom: 40px; }
     </div>
 
   </div>
-</div>
+</nav>
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -1906,7 +1908,7 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-masthead-scrollable">Scrollable responsive navbar</h2>
     <p>For instances where you have too many items in your navbar to fight within the viewport of a small device, add <code>.nav-collapse-scrollable</code> to your navbar's <code>.nav-collapse</code> to set a <code>max-height</code> and smooth scrolling.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead" role="navigation">
+      <nav class="navbar navbar-masthead" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-scroll-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -1930,10 +1932,10 @@ body { padding-bottom: 40px; }
             </form>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
-      </div><!-- /.navbar -->
+      </nav><!-- /.navbar -->
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar">
+<nav class="navbar">
   <div class="container">
     ...
 
@@ -1942,14 +1944,14 @@ body { padding-bottom: 40px; }
     </div><!-- /.nav-collapse -->
 
   </div><!-- /.container -->
-</div><!-- /.navbar -->
+</nav><!-- /.navbar -->
 {% endhighlight %}
 
 
     <h2 id="navbar-masthead-inverted">Inverted variation</h2>
   <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-masthead navbar-inverse">
+      <nav class="navbar navbar-masthead navbar-inverse">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".masthead-inverse-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -1995,12 +1997,12 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div>
-      </div><!-- /navbar -->
+      </nav><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-masthead navbar-inverse">
+<nav class="navbar navbar-masthead navbar-inverse">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
   </div>
@@ -2016,31 +2018,31 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-toolbar-basic">Basic Toolbar</h2>
     <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <a class="navbar-brand" href="#">Title</a>
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
   </ul>
-</div>
+</nav>
 {% endhighlight %}
 
 
     <h2 id="navbar-toolbar-toolbar">Toolbar</h2>
     <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <div class="btn-toolbar">
           <div class="btn-group">
             <a href="#" class="btn btn-danger">NEW</a>
@@ -2080,10 +2082,10 @@ body { padding-bottom: 40px; }
           </div>
 
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <div class="btn-toolbar">
     <div class="btn-group">
       <a href="#" class="btn btn-danger">NEW</a>
@@ -2122,7 +2124,7 @@ body { padding-bottom: 40px; }
       </ul>
     </div>
   </div>
-</div>
+</nav>
 {% endhighlight %}
 
 
@@ -2131,9 +2133,9 @@ body { padding-bottom: 40px; }
     <h3>Brand</h3>
     <p>A simple link to show your brand or project name only requires an anchor tag.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <a class="navbar-brand" href="#">Title</a>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <a class="navbar-brand" href="#">Project name</a>
@@ -2142,13 +2144,13 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-toolbar-nav">Nav links</h3>
     <p>Nav items are simple to add via unordered lists.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
           <li class="disabled"><a href="#">Disabled</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <ul class="nav navbar-nav">
@@ -2164,14 +2166,14 @@ body { padding-bottom: 40px; }
     <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
     <div class="bs-example">
 
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <form class="navbar-form pull-left">
           <select name="" id="" class="form-control" style="width: 200px;">
             <option value="1">1</option>
@@ -2181,17 +2183,17 @@ body { padding-bottom: 40px; }
           </select>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <input type="checkbox">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <form class="navbar-form pull-left">
           <input type="text" class="form-control" style="width: 200px;">
           <label class="checkbox-inline">
@@ -2199,7 +2201,7 @@ body { padding-bottom: 40px; }
           </label>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+      </nav>
 
     </div><!-- /example -->
 {% highlight html %}
@@ -2212,10 +2214,10 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-toolbar-buttons">Buttons</h3>
     <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <button type="button" class="btn btn-default navbar-toolbar-btn">Sign in</button>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <button type="button" class="btn btn-default navbar-toolbar-btn">Sign in</button>
@@ -2224,31 +2226,31 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-toolbar-text">Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text">Signed in as Mark Otto</p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text">Signed in as Mark Otto</p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-toolbar-links">Links</h3>
     <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <a href="#" class="navbar-brand">Brand</a>
         <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <a href="#" class="navbar-brand">Brand</a>
   <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-toolbar-component-alignment">Component alignment</h3>
@@ -2257,7 +2259,7 @@ body { padding-bottom: 40px; }
     <h3>Using dropdowns</h3>
     <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a data-toggle="dropdown" class="navbar-brand dropdown-toggle" href="#">Brand <b class="caret"></b></a>
@@ -2289,7 +2291,7 @@ body { padding-bottom: 40px; }
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
 <ul class="nav navbar-nav">
@@ -2309,14 +2311,14 @@ body { padding-bottom: 40px; }
     <h3>Text</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <p class="navbar-text">This is some text</p>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <p class="navbar-text">This is some text</p>
-</div>
+</nav>
 {% endhighlight %}
 
 
@@ -2326,7 +2328,7 @@ body { padding-bottom: 40px; }
     <h3 id="navbar-toolbar-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 38px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-toolbar navbar-fixed-top">
+      <nav class="navbar navbar-toolbar navbar-fixed-top">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2335,18 +2337,18 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar navbar-fixed-top">
+<nav class="navbar navbar-toolbar navbar-fixed-top">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-toolbar-fixed-bottom">Fixed to bottom</h3>
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-example bs-navbar-bottom-example">
-      <div class="navbar navbar-toolbar navbar-fixed-bottom">
+      <nav class="navbar navbar-toolbar navbar-fixed-bottom">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2355,18 +2357,18 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar navbar-fixed-bottom">
+<nav class="navbar navbar-toolbar navbar-fixed-bottom">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
     <h3 id="navbar-toolbar-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <div class="navbar navbar-toolbar navbar-static-top" style="margin: -1px -1px 0;">
+      <nav class="navbar navbar-toolbar navbar-static-top" style="margin: -1px -1px 0;">
         <div class="container" style="width: auto;">
           <a class="navbar-brand" href="#">Title</a>
           <ul class="nav navbar-nav">
@@ -2375,19 +2377,19 @@ body { padding-bottom: 40px; }
             <li><a href="#">Link</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar navbar-static-top">
+<nav class="navbar navbar-toolbar navbar-static-top">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
 
     <h2 id="navbar-toolbar-responsive">Responsive navbar</h2>
     <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -2433,10 +2435,10 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div>
-      </div><!-- /navbar -->
+      </nav><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-toolbar" role="navigation">
+<nav class="navbar navbar-toolbar" role="navigation">
   <div class="container">
 
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -2455,7 +2457,7 @@ body { padding-bottom: 40px; }
     </div>
 
   </div>
-</div>
+</nav>
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -2467,7 +2469,7 @@ body { padding-bottom: 40px; }
     <h2 id="navbar-toolbar-scrollable">Scrollable responsive navbar</h2>
     <p>For instances where you have too many items in your navbar to fight within the viewport of a small device, add <code>.nav-collapse-scrollable</code> to your navbar's <code>.nav-collapse</code> to set a <code>max-height</code> and smooth scrolling.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar" role="navigation">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-scroll-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -2491,10 +2493,10 @@ body { padding-bottom: 40px; }
             </form>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
-      </div><!-- /.navbar -->
+      </nav><!-- /.navbar -->
     </div><!-- /example -->
 {% highlight html %}
-<div class="navbar">
+<nav class="navbar">
   <div class="container">
     ...
 
@@ -2503,14 +2505,14 @@ body { padding-bottom: 40px; }
     </div><!-- /.nav-collapse -->
 
   </div><!-- /.container -->
-</div><!-- /.navbar -->
+</nav><!-- /.navbar -->
 {% endhighlight %}
 
 
     <h2 id="navbar-toolbar-inverted">Inverted variation</h2>
     <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-example">
-      <div class="navbar navbar-toolbar navbar-inverse">
+      <nav class="navbar navbar-toolbar navbar-inverse">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
             <span class="icon-bar"></span>
@@ -2555,12 +2557,12 @@ body { padding-bottom: 40px; }
             </ul>
           </div><!-- /.nav-collapse -->
         </div>
-      </div><!-- /navbar -->
+      </nav><!-- /navbar -->
     </div>
 {% highlight html %}
-<div class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
   ...
-</div>
+</nav>
 {% endhighlight %}
 
   </div>
