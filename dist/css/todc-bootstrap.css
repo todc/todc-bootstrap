@@ -2754,7 +2754,7 @@ li.list-group-header {
   border-radius: 0;
 }
 .alert {
-  padding: 8px 35px 8px 10px;
+  padding: 8px;
   text-shadow: none;
   color: #333333;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -2768,6 +2768,9 @@ li.list-group-header {
 }
 .alert .alert-link {
   color: #0d0d0d;
+}
+.alert-dismissable {
+  padding-right: 28px;
 }
 .alert-success {
   background-color: #dff0d8;

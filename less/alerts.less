@@ -7,7 +7,7 @@
 // -------------------------
 
 .alert {
-  padding: @alert-padding (@alert-padding + 27) @alert-padding (@alert-padding + 2);
+  padding: @alert-padding;
   text-shadow: none;
   color: @alert-text;
   .box-shadow(0 2px 4px rgba(0,0,0,0.2));
@@ -25,8 +25,17 @@
   }
 }
 
+// Dismissable alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissable {
+ padding-right: (@alert-padding + 20);
+}
+
 // Alternate styles
-// -------------------------
+//
+// Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
   .alert-variant-todc(@alert-success-bg; @alert-success-border; @alert-success-text);
