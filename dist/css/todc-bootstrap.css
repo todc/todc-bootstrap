@@ -172,7 +172,6 @@ table {
 legend {
   margin-bottom: 18px;
   font-size: 19.5px;
-  color: #333333;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -1101,7 +1100,6 @@ fieldset[disabled] .btn-link:focus {
 .input-group-addon {
   padding: 5px 8px;
   font-size: 13px;
-  background-color: #eeeeee;
   border: 1px solid #d9d9d9;
   border-top-color: #c0c0c0;
   border-radius: 2px;
@@ -1378,6 +1376,12 @@ li.list-group-header {
   background-color: #4d90fe;
   border-color: #4d90fe;
 }
+.panel-primary .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #4d90fe;
+}
+.panel-primary .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #4d90fe;
+}
 .panel-success {
   border-color: #a3d48e;
 }
@@ -1385,6 +1389,12 @@ li.list-group-header {
   color: #468847;
   background-color: #dff0d8;
   border-color: #a3d48e;
+}
+.panel-success .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #a3d48e;
+}
+.panel-success .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #a3d48e;
 }
 .panel-warning {
   border-color: #f0c36d;
@@ -1394,6 +1404,12 @@ li.list-group-header {
   background-color: #f9edbe;
   border-color: #f0c36d;
 }
+.panel-warning .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #f0c36d;
+}
+.panel-warning .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #f0c36d;
+}
 .panel-danger {
   border-color: #d59595;
 }
@@ -1402,6 +1418,12 @@ li.list-group-header {
   background-color: #f2dede;
   border-color: #d59595;
 }
+.panel-danger .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #d59595;
+}
+.panel-danger .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #d59595;
+}
 .panel-info {
   border-color: #85c5e5;
 }
@@ -1409,6 +1431,12 @@ li.list-group-header {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #85c5e5;
+}
+.panel-info .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #85c5e5;
+}
+.panel-info .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #85c5e5;
 }
 .well {
   background-color: #f1f1f1;
@@ -1613,7 +1641,8 @@ li.list-group-header {
   }
 }
 .navbar-brand {
-  padding: 4px 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   font-size: 14px;
   color: #999999;
 }
@@ -1629,11 +1658,9 @@ li.list-group-header {
   margin-bottom: 5px;
 }
 .navbar-toggle {
-  height: 26px;
-  width: 36px;
+  padding: 5px 10px;
   margin-top: 1px;
   margin-bottom: 1px;
-  padding: 3px 8px;
   background-color: transparent;
   background-image: none;
   border: 1px solid #222222;
@@ -1767,9 +1794,6 @@ li.list-group-header {
   border-bottom-color: #333333;
 }
 @media screen and (min-width: 768px) {
-  .navbar .navbar-brand {
-    float: left;
-  }
   .navbar-nav {
     float: left;
     margin-top: 0;
@@ -1870,6 +1894,10 @@ li.list-group-header {
 .navbar-masthead .btn {
   padding: 5px 8px;
 }
+.navbar-masthead .navbar-brand {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .navbar-masthead .navbar-brand:hover,
 .navbar-masthead .navbar-brand:focus {
   color: #777777;
@@ -1877,11 +1905,9 @@ li.list-group-header {
   background-color: transparent;
 }
 .navbar-masthead .navbar-toggle {
-  height: 30px;
-  width: 52px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  padding: 8px 12px;
+  padding: 8px 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   background-color: transparent;
   border: 1px solid #dcdcdc;
 }
@@ -2007,11 +2033,6 @@ li.list-group-header {
   border-bottom-color: #bbbbbb;
 }
 @media screen and (min-width: 768px) {
-  .navbar-masthead .navbar-brand {
-    float: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
   .navbar-masthead .nav {
     float: left;
     margin-top: 4px;
@@ -2156,6 +2177,8 @@ li.list-group-header {
 }
 .navbar-toolbar .navbar-brand,
 .navbar-toolbar .navbar-brand .btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 16px;
   font-weight: bold;
   color: #dd4b39;
@@ -2170,11 +2193,9 @@ li.list-group-header {
   background-color: transparent;
 }
 .navbar-toolbar .navbar-toggle {
-  height: 30px;
-  width: 52px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  padding: 7px 12px;
+  padding: 7px 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   background-color: transparent;
   border: 1px solid #dcdcdc;
 }
@@ -2327,11 +2348,6 @@ li.list-group-header {
   border-bottom-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .navbar-toolbar .navbar-brand {
-    float: left;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
   .navbar-toolbar .nav {
     float: left;
     margin-top: 0px;
