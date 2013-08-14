@@ -97,7 +97,8 @@
 // Brand/project name
 .navbar-brand {
   // Vertically center the text given @navbar-height
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding-top: @navbar-padding-vertical;
+  padding-bottom: @navbar-padding-vertical;
   font-size: @font-size-large;
   color: @navbar-brand-color;
   &:hover,
@@ -115,10 +116,8 @@
 
 // Collapsible navbar toggle
 .navbar-toggle {
-  height: 26px;
-  width: 36px;
+  padding: @padding-base-vertical 10px;
   .navbar-vertical-align(26px);
-  padding: @padding-small-vertical @padding-small-horizontal;
   background-color: transparent;
   background-image: none;
   border: 1px solid @navbar-toggle-border-color;
@@ -307,12 +306,6 @@
 
 @media screen and (min-width: @grid-float-breakpoint) {
 
-  .navbar .navbar-brand {
-    float: left;
-    // padding-top: (@navbar-height - @line-height-computed) / 2;
-    // padding-bottom: (@navbar-height - @line-height-computed) / 2;
-    // margin-left: -10px;
-  }
   .navbar-nav {
     float: left;
     margin-top: 0; // undo top margin to make nav extend full height of navbar

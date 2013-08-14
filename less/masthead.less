@@ -112,6 +112,8 @@
   // Brand: website or project name
   // -------------------------
   .navbar-brand {
+    padding-top: @navbar-masthead-padding-vertical;
+    padding-bottom: @navbar-masthead-padding-vertical;
     &:hover,
     &:focus {
       color: @navbar-masthead-brand-hover-color;
@@ -122,10 +124,10 @@
 
   // Collapsible navbar toggle
   .navbar-toggle {
-    height: 30px;
-    width: 52px;
-    .navbar-vertical-align(30px);
-    padding: 8px 12px;
+    // height: 30px;
+    // width: 52px;
+    padding: 8px 10px;
+    .navbar-vertical-align(30px, @navbar-masthead-height);
     background-color: transparent;
     border: 1px solid @navbar-masthead-toggle-border-color;
 
@@ -301,11 +303,6 @@
 
 @media screen and (min-width: @grid-float-breakpoint) {
 
-  .navbar-masthead .navbar-brand {
-    float: left;
-    padding-top: @navbar-masthead-padding-vertical;
-    padding-bottom: @navbar-masthead-padding-vertical;
-  }
   .navbar-masthead .nav {
     float: left;
     .navbar-vertical-align(36px, @navbar-masthead-height); // Vertically center in navbar
