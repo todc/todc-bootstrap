@@ -10,7 +10,7 @@
 // Can be `a`, `div`, or `img`
 .thumbnail,
 .img-thumbnail {
-  padding: 0;
+  padding: @thumbnail-padding;
   line-height: @line-height-base;
   background-color: @thumbnail-bg;
   border: 3px solid @thumbnail-border;
@@ -28,6 +28,6 @@ a.thumbnail:focus {
 
 // Images and captions
 .thumbnail .caption {
-  padding: 9px 4px;
+  padding: @thumbnail-caption-padding;
   color: @thumbnail-caption-color;
 }
