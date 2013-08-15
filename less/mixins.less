@@ -22,11 +22,11 @@
   }
 }
 
-// Button states
+// Button variants - Overrides Bootstrap's mixin
 // -------------------------
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-.btn-states(@start-color; @end-color; @color: #fff; @border-color: @btn-default-border) {
+.button-variant(@start-color; @end-color; @color: #fff; @border-color: @btn-default-border) {
   border: 1px solid @border-color;
   color: @color;
   #gradient > .vertical(@start-color: @start-color; @end-color: @end-color);
