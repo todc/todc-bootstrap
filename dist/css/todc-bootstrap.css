@@ -1086,6 +1086,24 @@ fieldset[disabled] .btn-link:focus {
   line-height: 14px;
   border-radius: 2px;
 }
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 38px;
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 4px;
+}
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 26px;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+}
 .input-group-addon,
 .input-group-btn,
 .input-group .form-control {
@@ -2455,6 +2473,24 @@ li.list-group-header {
 .btn-toolbar > .btn + .btn-group,
 .btn-toolbar > .btn-group + .btn-group {
   margin-left: 16px;
+}
+.btn-group-xs > .btn {
+  padding: 2px 6px;
+  font-size: 11px;
+  line-height: 14px;
+  border-radius: 2px;
+}
+.btn-group-sm > .btn {
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+.btn-group-lg > .btn {
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 2px;
 }
 .btn-group > .btn + .dropdown-toggle {
   -webkit-box-shadow: none;
