@@ -3575,12 +3575,16 @@ body { padding-bottom: 40px; }
     <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
     <div class="bs-example">
       <div class="panel">
-        Basic panel example
+        <div class="panel-body">
+          Basic panel example
+        </div>
       </div>
     </div>
 {% highlight html %}
 <div class="panel">
-  Basic panel example
+  <div class="panel-body">
+    Basic panel example
+  </div>
 </div>
 {% endhighlight %}
 
@@ -3589,26 +3593,34 @@ body { padding-bottom: 40px; }
     <div class="bs-example">
       <div class="panel">
         <div class="panel-heading">Panel heading</div>
-        Panel content
+        <div class="panel-body">
+          Panel content
+        </div>
       </div>
       <div class="panel">
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
         </div>
-        Panel content
+        <div class="panel-body">
+          Panel content
+        </div>
       </div>
     </div>
 {% highlight html %}
 <div class="panel">
   <div class="panel-heading">Panel heading</div>
-  Panel content
+  <div class="panel-body">
+    Panel content
+  </div>
 </div>
 
 <div class="panel">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
-  Panel content
+  <div class="panel-body">
+    Panel content
+  </div>
 </div>
 {% endhighlight %}
 
@@ -3616,13 +3628,17 @@ body { padding-bottom: 40px; }
     <p>Wrap buttons or secondary text in <code>.panel-footer</code>.</p>
     <div class="bs-example">
       <div class="panel">
-        Panel content
+        <div class="panel-body">
+          Panel content
+        </div>
         <div class="panel-footer">Panel footer</div>
       </div>
     </div>
 {% highlight html %}
 <div class="panel">
-  Panel content
+  <div class="panel-body">
+    Panel content
+  </div>
   <div class="panel-footer">Panel footer</div>
 </div>
 {% endhighlight %}
@@ -3634,39 +3650,49 @@ body { padding-bottom: 40px; }
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
         </div>
-        Panel content
+        <div class="panel-body">
+          Panel content
+        </div>
       </div>
       <div class="panel panel-success">
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
         </div>
-        Panel content
-      </div>
-      <div class="panel panel-warning">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
+        <div class="panel-body">
+          Panel content
         </div>
-        Panel content
-      </div>
-      <div class="panel panel-danger">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        Panel content
       </div>
       <div class="panel panel-info">
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
         </div>
-        Panel content
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
       </div>
     </div>
 {% highlight html %}
 <div class="panel panel-primary">...</div>
 <div class="panel panel-success">...</div>
+<div class="panel panel-info">...</div>
 <div class="panel panel-warning">...</div>
 <div class="panel panel-danger">...</div>
-<div class="panel panel-info">...</div>
 {% endhighlight %}
 
     <h3 id="panels-list-group">With list groups</h3>
@@ -3675,7 +3701,9 @@ body { padding-bottom: 40px; }
       <div class="panel">
         <!-- Default panel contents -->
         <div class="panel-heading">Panel heading</div>
-        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
 
         <!-- List group -->
         <ul class="list-group">
@@ -3691,7 +3719,9 @@ body { padding-bottom: 40px; }
 <div class="panel">
   <!-- Default panel contents -->
   <div class="panel-heading">Panel heading</div>
-  <p>...</p>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
 
   <!-- List group -->
   <ul class="list-group">
