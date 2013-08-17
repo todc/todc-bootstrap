@@ -720,7 +720,7 @@ body {
 -------------------------------------------------- */
 
 /* Pseudo :focus state for showing how it looks in the docs */
-input.focused {
+#focusedInput {
   border: 1px solid #4d90fe !important;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
