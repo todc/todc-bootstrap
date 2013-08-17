@@ -822,10 +822,6 @@ body {
   .bs-sidebar {
     display: block;
   }
-  /* Show the hidden subnavs when space allows it */
-  .bs-sidebar .nav > .active > ul {
-    display: block;
-  }
 
   /* Tweak display of docs jumbotrons */
   .bs-masthead {
@@ -850,24 +846,6 @@ body {
 
 /* Tablets/desktops and up */
 @media screen and (min-width: 992px) {
-
-  /* Widen the fixed sidebar */
-  .bs-sidebar.affix,
-  .bs-sidebar.affix-bottom {
-    width: 213px;
-  }
-  .bs-sidebar.affix {
-    position: fixed; /* Undo the static from mobile-first approach */
-    top: 50px;
-  }
-  .bs-sidebar.affix-bottom {
-    position: absolute; /* Undo the static from mobile-first approach */
-  }
-  .bs-sidebar.affix-bottom .bs-sidenav,
-  .bs-sidebar.affix .bs-sidenav {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
   .bs-header h1,
   .bs-header p {
     margin-right: 380px;
@@ -879,6 +857,28 @@ body {
     padding: 15px !important;
     width: 330px !important;
     min-height: 132px;
+  }
+
+  /* Show the hidden subnavs when space allows it */
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile-first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile-first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
