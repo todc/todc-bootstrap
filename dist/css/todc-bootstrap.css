@@ -2813,6 +2813,16 @@ li.list-group-header {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
 .breadcrumb {
   margin-bottom: 18px;
   background-color: #f3f3f3;
