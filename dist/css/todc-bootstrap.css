@@ -1214,6 +1214,7 @@ textarea.input-group-lg > .input-group-btn > .btn {
 .dropdown-menu {
   padding: 0 0 6px 0;
   margin: 1px 0 0;
+  font-size: 13px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
