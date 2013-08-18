@@ -1592,9 +1592,9 @@ li.list-group-header {
 .nav > li.disabled > a:focus {
   color: #999999;
 }
-.nav.open > a,
-.nav.open > a:hover,
-.nav.open > a:focus {
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
   background-color: #1155cc;
   border-color: #1155cc;
 }
