@@ -42,7 +42,8 @@
   &:hover,
   &:focus,
   &:active,
-  &.active {
+  &.active,
+  .open .dropdown-toggle& {
     color: @color;
     border: 1px solid darken(@border-color, 5%);
     #gradient > .vertical(@start-color: @start-color; @end-color: darken(@end-color, 5%));
