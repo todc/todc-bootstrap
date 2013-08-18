@@ -1788,9 +1788,9 @@ li.list-group-header {
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 9px 10px;
-  margin-top: -3px;
-  margin-bottom: -3px;
+  padding: 5px 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   background-color: transparent;
   border: 1px solid #222222;
   border-radius: 2px;
