@@ -2002,6 +2002,12 @@ li.list-group-header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+@media (min-width: 768px) {
+  .navbar-text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .navbar-link {
   color: #999999;
 }
