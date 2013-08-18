@@ -3167,12 +3167,12 @@ a.thumbnail:focus {
 .label-default[href]:focus {
   background-color: #808080;
 }
-.label-danger {
-  background-color: #d84a38;
+.label-primary {
+  background-color: #4d90fe;
 }
-.label-danger[href]:hover,
-.label-danger[href]:focus {
-  background-color: #b93524;
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #1a70fe;
 }
 .label-success {
   background-color: #35aa47;
@@ -3181,6 +3181,13 @@ a.thumbnail:focus {
 .label-success[href]:focus {
   background-color: #298337;
 }
+.label-info {
+  background-color: #5bc0de;
+}
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #31b0d5;
+}
 .label-warning {
   background-color: #faa937;
 }
@@ -3188,12 +3195,12 @@ a.thumbnail:focus {
 .label-warning[href]:focus {
   background-color: #f89306;
 }
-.label-info {
-  background-color: #5bc0de;
+.label-danger {
+  background-color: #d84a38;
 }
-.label-info[href]:hover,
-.label-info[href]:focus {
-  background-color: #31b0d5;
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #b93524;
 }
 .badge {
   font-size: 12px;

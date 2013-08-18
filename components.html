@@ -415,7 +415,7 @@ base_url: "../"
     <div class="bs-example">
       <div class="btn-toolbar" style="margin-bottom: 10px;">
         <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -425,7 +425,7 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -435,7 +435,17 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -455,7 +465,7 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -487,7 +497,7 @@ base_url: "../"
     <div class="bs-example">
       <div class="btn-toolbar" style="margin: 0;">
         <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
+          <button type="button" class="btn btn-default">Default</button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -498,7 +508,7 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-primary">Action</button>
+          <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -509,8 +519,19 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -531,8 +552,8 @@ base_url: "../"
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -546,8 +567,8 @@ base_url: "../"
 {% highlight html %}
 <!-- Split button -->
 <div class="btn-group">
-  <button type="button" class="btn btn-default">Action</button>
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
@@ -770,7 +791,7 @@ base_url: "../"
 
     <h2 id="input-groups-checkboxes-radios">Checkboxes and radio buttons</h2>
     <p>Place any checkbox or radio option within an input group's addon instead of text.</p>
-    <form class="bs-example bs-example-form" role="form">
+    <form class="bs-example bs-example-form">
       <div class="row">
         <div class="col-lg-6">
           <div class="input-group">
@@ -814,7 +835,7 @@ base_url: "../"
 
     <h2 id="input-groups-buttons">Buttons instead of text</h2>
     <p>Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser styles that cannot be overridden.</p>
-    <form class="bs-example bs-example-form" role="form">
+    <form class="bs-example bs-example-form">
       <div class="row">
         <div class="col-lg-6">
           <div class="input-group">
@@ -2792,17 +2813,19 @@ body { padding-bottom: 40px; }
     <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
     <div class="bs-example">
       <span class="label label-default">Default</span>
+      <span class="label label-primary">Primary</span>
       <span class="label label-success">Success</span>
+      <span class="label label-info">Info</span>
       <span class="label label-warning">Warning</span>
       <span class="label label-danger">Danger</span>
-      <span class="label label-info">Info</span>
     </div>
 {% highlight html %}
 <span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
 <span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
-<span class="label label-info">Info</span>
 {% endhighlight %}
 
   </div>
