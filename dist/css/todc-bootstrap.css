@@ -1759,9 +1759,11 @@ li.list-group-header {
     overflow-y: visible;
   }
 }
+.navbar-static-top {
+  border-width: 0 0 1px;
+}
 @media (min-width: 768px) {
   .navbar-static-top {
-    border-width: 0 0 1px;
     border-radius: 0;
   }
 }
