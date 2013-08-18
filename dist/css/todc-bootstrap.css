@@ -1590,6 +1590,9 @@ li.list-group-header {
   border-radius: 2px 2px 0 0;
   color: #666;
 }
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {

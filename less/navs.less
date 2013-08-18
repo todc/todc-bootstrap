@@ -46,6 +46,9 @@
     > a {
       border-radius: @border-radius-base @border-radius-base 0 0;
       color: #666;
+      &:hover {
+        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+      }
     }
 
     // Active state, and it's :hover to override normal :hover
