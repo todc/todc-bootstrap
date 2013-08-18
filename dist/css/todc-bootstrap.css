@@ -1743,6 +1743,9 @@ li.list-group-header {
     padding-bottom: 0;
     overflow: visible !important;
   }
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
 }
 @media (min-width: 768px) {
   .navbar-static-top {
