@@ -35,6 +35,20 @@ a:focus {
 .img-rounded {
   border-radius: 4px;
 }
+.img-thumbnail {
+  padding: 0;
+  line-height: 1.4;
+  background-color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 1px #aaaaaa;
+  box-shadow: 0 0 0 1px #aaaaaa;
+  -webkit-transition: none;
+  transition: none;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 .text-primary {
   color: #4d90fe;
 }
@@ -2943,8 +2957,7 @@ li.list-group-item.active a > .badge {
     font-size: 58.5px;
   }
 }
-.thumbnail,
-.img-thumbnail {
+.thumbnail {
   padding: 0;
   line-height: 1.4;
   background-color: #ffffff;
@@ -2954,6 +2967,15 @@ li.list-group-item.active a > .badge {
   box-shadow: 0 0 0 1px #aaaaaa;
   -webkit-transition: none;
   transition: none;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
