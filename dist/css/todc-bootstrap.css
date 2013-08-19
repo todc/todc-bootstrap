@@ -3139,6 +3139,9 @@ li.list-group-header {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.panel > .panel-body + .table {
+  border-top: 1px solid #dddddd;
+}
 .panel-heading {
   background-color: rgba(243, 243, 243, 0.85);
   border-bottom: 1px solid #e5e5e5;
