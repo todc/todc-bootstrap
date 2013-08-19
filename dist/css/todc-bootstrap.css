@@ -3197,7 +3197,7 @@ li.list-group-header {
 }
 .panel {
   background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid transparent;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3206,8 +3206,7 @@ li.list-group-header {
   border-top: 1px solid #dddddd;
 }
 .panel-heading {
-  background-color: rgba(243, 243, 243, 0.85);
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3228,6 +3227,20 @@ li.list-group-header {
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
   border-bottom: 1px solid #e5e5e5;
+}
+.panel-default {
+  border-color: #dddddd;
+}
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: rgba(243, 243, 243, 0.85);
+  border-color: #dddddd;
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
 }
 .panel-primary {
   border-color: #4d90fe;
