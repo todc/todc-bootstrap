@@ -241,31 +241,31 @@
 // Basics of a navbar
 @navbar-height:                    28px; // Total height - 30px Google.com. 24px other Google sites
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-color:                     @gray-light;
-@navbar-bg:                        #2d2d2d;
-@navbar-border:                    #000;
+@navbar-default-color:             @gray-light;
+@navbar-default-bg:                #2d2d2d;
+@navbar-default-border:            #000;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          (floor((@navbar-height - @line-height-computed) / 2) - 1);
 
 // Navbar links
-@navbar-link-color:                @gray-light;
-@navbar-link-hover-color:          #fff;
-@navbar-link-hover-bg:             transparent;
-@navbar-link-active-color:         @navbar-link-hover-color;
-@navbar-link-active-bg:            darken(@navbar-bg, 10%);
-@navbar-link-disabled-color:       #555;
-@navbar-link-disabled-bg:          transparent;
+@navbar-default-link-color:                @gray-light;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         @navbar-default-link-hover-color;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
+@navbar-default-link-disabled-color:       #555;
+@navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
-@navbar-brand-color:               @navbar-link-color;
-@navbar-brand-hover-color:         #fff;
-@navbar-brand-hover-bg:            transparent;
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         #fff;
+@navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-toggle-hover-bg:           #333;
-@navbar-toggle-icon-bar-bg:        #fff;
-@navbar-toggle-border-color:       #222;
+@navbar-default-toggle-hover-bg:           #333;
+@navbar-default-toggle-icon-bar-bg:        #fff;
+@navbar-default-toggle-border-color:       #222;
 
 
 // Inverted navbar
