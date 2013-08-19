@@ -520,6 +520,13 @@ textarea.input-lg {
     margin-left: 0;
   }
 }
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 6px;
+}
 .btn {
   padding: 5px 12px;
   font-size: 13px;

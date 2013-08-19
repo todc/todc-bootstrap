@@ -288,3 +288,21 @@ input[type="checkbox"],
     }
   }
 }
+
+
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form-horizontal {
+
+  // Consistent vertical alignment of labels, radios, and checkboxes
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+  }
+}
