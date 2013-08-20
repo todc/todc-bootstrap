@@ -187,6 +187,11 @@ table {
   background-color: #f7e7a7;
   border-color: #eeb956;
 }
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 1px solid #dddddd;
+  }
+}
 legend {
   margin-bottom: 18px;
   font-size: 19.5px;
