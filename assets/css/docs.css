@@ -51,21 +51,21 @@ body {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
-  color: #4e599e;
-  background-color: #fff;
-  border-color: #563d7c;
+  color: #fff;
+  background-color: #4e599e;
+  border-color: #bfc4e0;
 }
 
 /* Inverted outline button (white on dark) */
 .btn-outline-inverse {
   color: #fff;
   background-color: transparent;
-  border-color: #cdbfe3;
+  border-color: #bfc4e0;
 }
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
-  color: #563d7c;
+  color: #4e599e;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -215,13 +215,15 @@ body {
   position: relative;
   padding: 30px 15px;
   text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
 .bs-masthead h1 {
   font-size: 50px;
   line-height: 1;
   color: #fff;
 }
-.bs-masthead .btn-outline {
+.bs-masthead .btn-outline,
+.bs-masthead .btn-outline-inverse {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 18px 24px;
@@ -244,7 +246,7 @@ body {
   margin-left: 20px;
 }
 .bs-masthead-links a {
-  color: #fff;
+  color: #fff !important;
 }
 
 @media screen and (min-width: 768px) {
