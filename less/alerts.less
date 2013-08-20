@@ -6,22 +6,20 @@
 // Base styles
 // -------------------------
 
+//  for alert-default
+//   text-shadow: none;
+//   .box-shadow(0 2px 4px rgba(0,0,0,0.2));
+
+
 .alert {
   padding: @alert-padding;
-  text-shadow: none;
-  color: @alert-text;
-  .box-shadow(0 2px 4px rgba(0,0,0,0.2));
-  background-color: @alert-bg;
-  border: 1px solid @alert-border;
+  margin-bottom: @line-height-computed;
+  border: 1px solid transparent;
   border-radius: @alert-border-radius;
 
-  // Match the hr to the border of the alert
-  hr {
-    border-top-color: darken(@alert-border, 5%);
-  }
   // Provide class for links that match alerts
   .alert-link {
-    color: darken(@alert-text, 15%);
+    font-weight: @alert-link-font-weight;
   }
 }
 
@@ -38,19 +36,22 @@
 // Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
-  .alert-variant-todc(@alert-success-bg; @alert-success-border; @alert-success-text);
-}
-.alert-danger {
-  .alert-variant-todc(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+  .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
 }
 .alert-info {
-  .alert-variant-todc(@alert-info-bg; @alert-info-border; @alert-info-text);
+  .alert-variant(@alert-info-bg; @alert-info-border; @alert-info-text);
+}
+.alert-warning {
+  .alert-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-text);
+}
+.alert-danger {
+  .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
 }
 
 
 .alert-success,
-.alert-danger,
-.alert-error,
-.alert-info {
+.alert-info,
+.alert-warning,
+.alert-danger {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
