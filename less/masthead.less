@@ -2,7 +2,12 @@
 // Masthead
 // --------------------------------------------------
 
+
 // Wrapper and base class
+//
+// Provide a static masthead from which we expand to create full-width, fixed, and
+// other navbar variations.
+
 .navbar-masthead {
   min-height: @navbar-masthead-height;
   margin: 0px;
@@ -61,7 +66,7 @@
   // Fix the top/bottom navbars when screen real estate supports it
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
-    z-index: @zindex-googlebar-fixed;
+    z-index: @zindex-masthead-fixed;
   }
 
   .nav-collapse {

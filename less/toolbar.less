@@ -1,7 +1,13 @@
+//
 // Toolbar
-// -------------------------
+// --------------------------------------------------
+
 
 // Wrapper and base class
+//
+// Provide a static toolbar from which we expand to create full-width, fixed, and
+// other navbar variations.
+
 .navbar-toolbar {
   border-radius: @border-radius-base;
   .box-shadow(none);
@@ -100,7 +106,7 @@
   // Fix the top/bottom navbars when screen real estate supports it
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
-    z-index: @zindex-googlenav-fixed;
+    z-index: @zindex-toolbar-fixed;
   }
 
   .nav-collapse {
