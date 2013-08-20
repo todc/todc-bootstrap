@@ -1,6 +1,6 @@
 # Overview #
 
-This is a Google-styled theme for Twitter Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
+This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
 the look of these new UI elements for my own personal use.
 
 ## Compatibility ##
@@ -15,12 +15,12 @@ The following projects are specifically designed for use with todc-bootstrap:
 ## Requirements ##
 
 * [LESS](http://lesscss.org) - for compiling `.less` files into CSS
-* [Twitter Bootstrap](http://github.com/twitter/bootstrap) - this will be automatically checked out, if necessary, during the build process
+* [Bootstrap](http://github.com/twbs/bootstrap) - this will be automatically checked out, if necessary, during the build process
 
 
 ## Building ##
 
-To build the CSS file, simply run `make` from the top-level directory. If necessary, Twitter Bootstrap will be automatically checked out.
+To build the CSS file, simply run `make` from the top-level directory. If necessary, Bootstrap will be automatically checked out.
 
 The resulting CSS file will be found at `dist/todc-bootstrap.css`.
 
@@ -34,9 +34,9 @@ http://todc.github.io/todc-bootstrap/index.html
 
 MIT License - http://www.opensource.org/licenses/mit-license.php
 
-**NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Twitter Bootstrap's current license.
+**NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 
 
 ## Acknowledgements ##
 
-Inspired by [Twitter Bootstrap](http://twitter.github.com/bootstrap/) and, of course, Google.
+Inspired by [Bootstrap](http://twbs.github.com/bootstrap/) and, of course, Google.
