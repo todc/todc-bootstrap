@@ -88,7 +88,7 @@ body {
   border-color: #4e599e;
 }
 .bs-docs-nav .navbar-brand {
-  color: #fff;
+  color: #fff !important;
 }
 .bs-docs-nav .navbar-nav > li > a {
   color: #bfc4e0;
