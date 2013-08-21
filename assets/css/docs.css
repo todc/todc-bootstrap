@@ -782,10 +782,14 @@ h1[id] {
 }
 
 /* Example dropdowns */
-.bs-example > .dropdown > .dropdown-menu {
+.bs-example .dropdown > .dropdown-menu,
+.bs-example .dropup > .dropdown-menu {
   position: static;
   display: block;
   margin-bottom: 5px;
+}
+.bs-example-submenu .dropdown-menu {
+  margin-right: 20px;
 }
 
 /* Example tabbable tabs */

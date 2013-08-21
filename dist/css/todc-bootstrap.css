@@ -1250,7 +1250,7 @@ fieldset[disabled] .btn-link:focus {
   border-left-color: #333333;
 }
 .dropdown-submenu.pull-left {
-  float: none;
+  float: none !important;
 }
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
