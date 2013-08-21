@@ -149,7 +149,7 @@
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: (@navbar-padding-vertical + 1) @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
   &:hover,
@@ -373,6 +373,10 @@
       color: @navbar-default-brand-hover-color;
       background-color: @navbar-default-brand-hover-bg;
     }
+    > .caret {
+      border-top-color: @navbar-default-brand-color;
+      border-bottom-color: @navbar-default-brand-color;
+    }
   }
 
   .navbar-text {
@@ -508,6 +512,10 @@
     &:focus {
       color: @navbar-inverse-brand-hover-color;
       background-color: @navbar-inverse-brand-hover-bg;
+    }
+    > .caret {
+      border-top-color: @navbar-default-brand-color;
+      border-bottom-color: @navbar-default-brand-color;
     }
   }
 

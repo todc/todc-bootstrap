@@ -2044,7 +2044,7 @@ body { padding-bottom: 40px; }
 
     <div class="bs-callout bs-callout-danger">
       <h4>Body padding required</h4>
-      <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 46px high.</p>
+      <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 44px high.</p>
 {% highlight css %}
 body { padding-top: 65px; }
 {% endhighlight %}
@@ -2085,7 +2085,7 @@ body { padding-top: 65px; }
 
     <div class="bs-callout bs-callout-danger">
       <h4>Body padding required</h4>
-      <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 46px high.</p>
+      <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 44px high.</p>
 {% highlight css %}
 body { padding-bottom: 65px; }
 {% endhighlight %}
@@ -2185,7 +2185,14 @@ body { padding-bottom: 65px; }
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">Brand <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -2235,7 +2242,14 @@ body { padding-bottom: 65px; }
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Brand</a>
+    <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">Brand <b class="caret"></b></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li><a href="#">Separated link</a></li>
+      <li><a href="#">One more separated link</a></li>
+    </ul>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -2276,21 +2290,21 @@ body { padding-bottom: 65px; }
 </nav>
 {% endhighlight %}
 
-<div class="bs-callout bs-callout-danger">
-  <h4>Plugin dependency</h4>
-  <p>The responsive toolbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
-</div>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Plugin dependency</h4>
+      <p>The responsive toolbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+    </div>
 
-<div class="bs-callout bs-callout-warning">
-  <h4>Make toolbars accessible</h4>
-  <p>Be sure to add a <code>role="navigation"</code> to every toolbar to help with accessibility.</p>
-</div>
+    <div class="bs-callout bs-callout-warning">
+      <h4>Make toolbars accessible</h4>
+      <p>Be sure to add a <code>role="navigation"</code> to every toolbar to help with accessibility.</p>
+    </div>
 
 
     <h2 id="navbar-toolbar-toolbar">Toolbar</h2>
     <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
     <div class="bs-example">
-      <nav class="navbar navbar-toolbar" role="navigation">
+      <nav class="navbar navbar-toolbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-toolbar-ex1-collapse">
@@ -2299,7 +2313,6 @@ body { padding-bottom: 65px; }
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
