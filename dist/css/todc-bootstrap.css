@@ -1221,7 +1221,7 @@ fieldset[disabled] .btn-link:focus {
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
-  border-top-left-radius: 0;
+  border-radius: 0;
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -1231,7 +1231,7 @@ fieldset[disabled] .btn-link:focus {
   bottom: 0;
   margin-top: 0;
   margin-bottom: -2px;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 .dropdown-submenu > a:after {
   display: block;
@@ -1242,37 +1242,20 @@ fieldset[disabled] .btn-link:focus {
   border-color: transparent;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
+  border-left-color: #808080;
   margin-top: 5px;
-  margin-right: -10px;
+  margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
-  border-left-color: #333333;
+  border-left-color: #000000;
 }
 .dropdown-submenu.pull-left {
   float: none !important;
 }
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
-  margin-left: 10px;
-  border-top-right-radius: 0;
-}
-.dropdown-submenu > .dropdown-menu {
-  border-radius: 0;
-}
-.dropup .dropdown-submenu > .dropdown-menu {
-  border-radius: 0;
-}
-.dropdown-submenu > a:after {
-  border-left-color: #808080;
-  margin-right: -20px;
-}
-.dropdown-submenu:hover > a:after {
-  border-left-color: #000000;
-}
-.dropdown-submenu.pull-left > .dropdown-menu {
-  border-radius: 0;
   margin-left: 18px;
+  border-radius: 0;
 }
 .btn-default .caret {
   border-top-color: #333333;
