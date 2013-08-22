@@ -51,9 +51,6 @@
 }
 
 .progress-bar-danger {
-  background-color: @progress-bar-danger-bg;
-  .progress-striped & {
-    #gradient > .striped(#ee5f5b);
-  }
+  .progress-bar-variant(@progress-bar-danger-bg, #ee5f5b);
 }
 
