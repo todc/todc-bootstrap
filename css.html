@@ -1786,9 +1786,11 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
     <h3 id="forms-disabled-inputs">Disabled inputs</h3>
     <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
-    <form class="bs-example">
-      <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
-    </form>
+    <div class="bs-example">
+      <form role="form">
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+      </form>
+    </div><!-- /.bs-example -->
 {% highlight html %}
 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
 {% endhighlight %}
@@ -1806,28 +1808,30 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <p>While Bootstrap will apply these styles in all browsers, Internet Explorer 9 and below don't actually support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
     </div>
 
-    <form class="bs-example">
-      <fieldset disabled>
-        <div class="form-group">
-          <label for="disabledTextInput">Disabled input</label>
-          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-        </div>
-        <div class="form-group">
-          <label for="disabledSelect">Disabled select menu</label>
-          <select id="disabledSelect" class="form-control">
-            <option>Disabled select</option>
-          </select>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Can't check this
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </fieldset>
-    </form>
+    <div class="bs-example">
+      <form role="form">
+        <fieldset disabled>
+          <div class="form-group">
+            <label for="disabledTextInput">Disabled input</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="form-group">
+            <label for="disabledSelect">Disabled select menu</label>
+            <select id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+            </select>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Can't check this
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+    </div><!-- /.bs-example -->
 {% highlight html %}
-<form class="form-inline" role="form">
+<form role="form">
   <fieldset disabled>
     <div class="form-group">
       <label for="disabledTextInput">Disabled input</label>
