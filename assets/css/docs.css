@@ -782,8 +782,9 @@ h1[id] {
 }
 
 /* Example dropdowns */
-.bs-example .dropdown > .dropdown-menu,
-.bs-example .dropup > .dropdown-menu {
+.bs-example > .dropdown > .dropdown-menu,
+.bs-example-submenu .dropdown > .dropdown-menu,
+.bs-example-submenu .dropup > .dropdown-menu {
   position: static;
   display: block;
   margin-bottom: 5px;
