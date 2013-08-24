@@ -190,7 +190,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   // grunt.loadNpmTasks('browserstack-runner');
 
-  // Clone bootstrap and checkout the appropriate tag
+  // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', ['shell']);
 
   // Docs HTML validation task
