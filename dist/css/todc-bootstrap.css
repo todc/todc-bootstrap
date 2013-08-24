@@ -2898,6 +2898,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   box-shadow: none;
 }
 .pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
