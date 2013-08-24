@@ -203,6 +203,12 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 3px 0 0;
 }
+output {
+  padding-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #555555;
+}
 .form-control {
   height: 30px;
   padding: 5px 8px;
