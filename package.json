@@ -29,5 +29,6 @@
     , "grunt-html-validation": "~0.1.4"
     , "grunt-jekyll": "~0.3.8"
     , "grunt-recess": "~0.3.3"
+    , "grunt-shell": "~0.3.1"
   }
 }
