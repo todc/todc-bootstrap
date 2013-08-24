@@ -11,18 +11,19 @@ exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json",
 port:             9002
 
 # Custom vars
-repo:                       https://github.com/todc/todc-bootstrap
-download:                   https://github.com/todc/todc-bootstrap/archive/v3.0.0.zip
-download_dist:              https://github.com/todc/todc-bootstrap/releases/download/v3.0.0/todc-bootstrap-3.0.0-dist.zip
+current_version:          3.0.0
+repo:                     https://github.com/todc/todc-bootstrap
+download:                 https://github.com/todc/todc-bootstrap/archive/v3.0.0.zip
+download_dist:            https://github.com/todc/todc-bootstrap/releases/download/v3.0.0/todc-bootstrap-3.0.0-dist.zip
 
-bootstrap_repo:             https://github.com/twbs/bootstrap
-bootstrap_download:         https://github.com/twbs/bootstrap/archive/v3.0.0.zip
-bootstrap_download_dist:    https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
+bootstrap_repo:           https://github.com/twbs/bootstrap
+bootstrap_download:       https://github.com/twbs/bootstrap/archive/v3.0.0.zip
+bootstrap_download_dist:  https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
 
-bootstrap_docs:             http://getbootstrap.com
-blog:                       http://blog.getbootstrap.com
-expo:                       http://expo.getbootstrap.com
+bootstrap_docs:           http://getbootstrap.com
+blog:                     http://blog.getbootstrap.com
+expo:                     http://expo.getbootstrap.com
 
-cdn_css:          //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css
-cdn_theme_css:    //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css
-cdn_js:           //netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js
+cdn_css:                  //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css
+cdn_theme_css:            //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css
+cdn_js:                   //netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js
