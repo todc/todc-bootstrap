@@ -49,15 +49,15 @@
 @font-size-small:         (@font-size-base - 1); // 12px
 @font-size-mini:          (@font-size-base - 2); // 11px
 
-@font-size-h1:            floor(@font-size-base * 2.60); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.70); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h1:            (floor(@font-size-base * 2.60)); // ~36px
+@font-size-h2:            (floor(@font-size-base * 2.15)); // ~30px
+@font-size-h3:            (ceil(@font-size-base * 1.70)); // ~24px
+@font-size-h4:            (ceil(@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+@font-size-h6:            (ceil(@font-size-base * 0.85)); // ~12px
 
 @line-height-base:        1.4; // 18.2/13
-@line-height-computed:    floor(@font-size-base * @line-height-base); // ~18px
+@line-height-computed:    (floor(@font-size-base * @line-height-base)); // ~18px
 
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    bold;
@@ -263,7 +263,7 @@
 @navbar-default-bg:                #2d2d2d;
 @navbar-default-border:            #000;
 @navbar-border-radius:             @border-radius-base;
-@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
 @navbar-padding-vertical:          (floor((@navbar-height - @line-height-computed) / 2) - 1);
 
 // Navbar links
@@ -331,7 +331,7 @@
 @navbar-masthead-default-bg:                #f1f1f1;
 @navbar-masthead-default-border:            darken(@navbar-masthead-default-bg, 4.7%);
 @navbar-masthead-border-radius:             @border-radius-base;
-@navbar-masthead-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-masthead-padding-horizontal:        (floor(@grid-gutter-width / 2));
 @navbar-masthead-padding-vertical:          (floor((@navbar-masthead-height - @line-height-computed) / 2) - 1);
 
 // Masthead links
@@ -399,7 +399,7 @@
 @navbar-toolbar-default-bg:                #fff;
 @navbar-toolbar-default-border:            darken(@navbar-toolbar-default-bg, 15.5%); //#d7d7d7
 @navbar-toolbar-default-border-radius:     @border-radius-base;
-@navbar-toolbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-toolbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
 @navbar-toolbar-padding-vertical:          (floor((@navbar-toolbar-height - @line-height-computed) / 2) - 1);
 
 // navbar-toolbar links
