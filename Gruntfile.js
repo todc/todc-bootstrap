@@ -203,7 +203,7 @@ module.exports = function(grunt) {
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'compress']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   // // Default task.
   // grunt.registerTask('default', ['test', 'dist', 'build-customizer']);
