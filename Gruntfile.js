@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
+    bootstrapGit: 'https://github.com/twbs/bootstrap.git',
     bootstrapVersion: 'v3.0.0',
 
     // Task configuration.
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
       options: {
         compile: true
       },
-      bootstrap: {
+      todc_bootstrap: {
         src: ['less/todc-bootstrap.less'],
         dest: 'dist/css/<%= pkg.name %>.css'
       },
@@ -87,44 +88,38 @@ module.exports = function(grunt) {
         },
         src: ['less/todc-bootstrap.less'],
         dest: 'dist/css/<%= pkg.name %>.min.css'
-      // },
-      // theme: {
-      //   src: ['less/theme.less'],
-      //   dest: 'dist/css/<%= pkg.name %>-theme.css'
-      // },
-      // theme_min: {
-      //   options: {
-      //     compress: true
-      //   },
-      //   src: ['less/theme.less'],
-      //   dest: 'dist/css/<%= pkg.name %>-theme.min.css'
       }
     },
 
-    // TODO: Need to either copy the select2.min.js or the jshint and concat tasks
+    // TODO: Need to either copy the select2.min.js or the jshint and concat tasks. Need to account for select2.css
     copy: {
       images: {
         expand: true,
         src: ["img/*"],
         dest: 'dist/'
+      },
+      bootstrap: {
+        expand: true,
+        flatten: false,
+        cwd: '<%= bootstrapDir %>/dist',
+        src: '**',
+        dest: 'dist/'
       }
     },
 
-    // qunit: {
-    //   options: {
-    //     inject: 'js/tests/unit/phantom.js'
-    //   },
-    //   files: ['js/tests/*.html']
-    // },
-
-    // connect: {
-    //   server: {
-    //     options: {
-    //       port: 3000,
-    //       base: '.'
-    //     }
-    //   }
-    // },
+    compress: {
+      main: {
+        options: {
+          archive: 'dist/<%= pkg.name %>-<%= pkg.version %>-dist.zip',
+          mode: 'zip',
+          pretty: true
+        },
+        expand: true,
+        cwd: 'dist',
+        src: '**',
+        dest: 'dist/'
+      }
+    },
 
     jekyll: {
       docs: {}
@@ -152,19 +147,22 @@ module.exports = function(grunt) {
         files: 'less/*.less',
         tasks: ['recess']
       }
-    }
+    },
 
     // checkout-bootstrap task
     shell: {
       gitclone: {
-        command: 'git clone <%= pkg.repository.url %> <%= bootstrapDir %>',
+        command: 'git clone <%= bootstrapGit %> <%= bootstrapDir %>',
         options: {
+          failOnError: true,
+          stderr: true,
           stdout: true
         }
       },
       gitcheckout: {
         command: 'git checkout tags/<%= bootstrapVersion %>',
         options: {
+          stderr: true,
           stdout: true,
           execOptions: {
             cwd: '<%= bootstrapDir %>'
@@ -177,35 +175,22 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compress');
   // grunt.loadNpmTasks('grunt-contrib-concat');
-  // grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   // grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-qunit');
   // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-shell');
-  // grunt.loadNpmTasks('browserstack-runner');
 
   // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', ['shell']);
 
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
-
-  // // Test task.
-  // var testSubtasks = ['dist-css', 'jshint', 'qunit', 'validate-html'];
-  // // Only run BrowserStack tests under Travis
-  // if (process.env.TRAVIS) {
-  //   // Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
-  //   if ((process.env.TRAVIS_REPO_SLUG === 'twbs/bootstrap' && process.env.TRAVIS_PULL_REQUEST === 'false') || process.env.TWBS_HAVE_OWN_BROWSERSTACK_KEY) {
-  //     testSubtasks.push('browserstack_runner');
-  //   }
-  // }
-  // grunt.registerTask('test', testSubtasks);
 
   // // JS distribution task.
   // grunt.registerTask('dist-js', ['concat', 'uglify']);
@@ -218,28 +203,8 @@ module.exports = function(grunt) {
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'compress']);
 
   // // Default task.
   // grunt.registerTask('default', ['test', 'dist', 'build-customizer']);
-
-  // // task for building customizer
-  // grunt.registerTask('build-customizer', 'Add scripts/less files to customizer.', function () {
-  //   var fs = require('fs')
-
-  //   function getFiles(type) {
-  //     var files = {}
-  //     fs.readdirSync(type)
-  //       .filter(function (path) {
-  //         return type == 'fonts' ? true : new RegExp('\\.' + type + '$').test(path)
-  //       })
-  //       .forEach(function (path) {
-  //         return files[path] = fs.readFileSync(type + '/' + path, 'utf8')
-  //       })
-  //     return 'var __' + type + ' = ' + JSON.stringify(files) + '\n'
-  //   }
-
-  //   var customize = fs.readFileSync('customize.html', 'utf-8')
-  //   var files = getFiles('js') + getFiles('less') + getFiles('fonts')
-  //   fs.writeFileSync('assets/js/raw-files.js', files)
-  // });
 };
