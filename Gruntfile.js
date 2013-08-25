@@ -13,7 +13,7 @@ module.exports = function(grunt) {
               '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               '* Licensed under <%= _.pluck(pkg.licenses, "url").join(", ") %>.\n' +
               '*/\n',
-    jqueryCheck: 'if (!jQuery) { throw new Error(\"Bootstrap requires jQuery\") }\n\n',
+    jqueryCheck: 'if (!jQuery) { throw new Error(\"TODC Bootstrap requires jQuery\") }\n\n',
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
