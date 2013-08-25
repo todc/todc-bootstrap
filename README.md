@@ -46,7 +46,7 @@ Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`
 `grunt dist` creates the `/dist` directory with compiled files. **Uses [recess](http://twitter.github.io/recess/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
 
 #### Compress/zip - `grunt compress`
-Run `grunt compress` - compresses/zips the contents od the `/dist` folder to `todc-bootstrap-3.0.0-dist.zip` in the `/dist` folder.
+Run `grunt compress` - compresses/zips the contents of the `/dist` folder to `todc-bootstrap-x.x.x-dist.zip` in the `/dist` folder.
 
 #### Tests - `grunt test`
 Runs [JSHint](http://jshint.com) and [QUnit](http://qunitjs.com/) tests headlessly in [PhantomJS](http://phantomjs.org/) (used for CI).
