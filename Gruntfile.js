@@ -91,7 +91,7 @@ module.exports = function(grunt) {
       }
     },
 
-    // TODO: Need to either copy the select2.min.js or the jshint and concat tasks. Need to account for select2.css
+    // TODO: Do we need to account for select2?
     copy: {
       images: {
         expand: true,
