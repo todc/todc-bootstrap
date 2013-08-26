@@ -25,8 +25,9 @@
     &,
     &:hover,
     &:focus {
-    background-color: @link-color;
-    border-color: @link-color;
+      color: #fff;
+      background-color: @nav-open-bg;
+      border-color: @nav-open-bg;
     }
   }
 }
@@ -41,7 +42,7 @@
     // Actual tabs (as links)
     > a {
       border-radius: @border-radius-base @border-radius-base 0 0;
-      color: #666;
+      color: @nav-tabs-link-color;
       &:hover {
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
       }
@@ -138,13 +139,15 @@
 // -------------------------
 
 // Make dropdown carets use link color in navs
-.nav .caret {
-  border-top-color: @link-color;
-  border-bottom-color: @link-color;
-}
+.nav .caret,
 .nav a:hover .caret {
-  border-top-color: @link-hover-color;
-  border-bottom-color: @link-hover-color;
+  border-top-color: @nav-caret-color;
+  border-bottom-color: @nav-caret-color;
+}
+.nav .open a:hover .caret,
+.nav .open .caret {
+  border-top-color: @nav-open-caret-border-color;
+  border-bottom-color: @nav-open-caret-border-color;
 }
 
 // Specific dropdowns
