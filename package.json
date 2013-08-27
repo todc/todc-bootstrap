@@ -10,6 +10,9 @@
       "type": "git"
     , "url": "https://github.com/todc/todc-bootstrap.git"
   }
+  , "bugs": {
+      "url": "https://github.com/todc/todc-bootstrap/issues"
+  }
   , "licenses": [
     {
         "type": "MIT"
