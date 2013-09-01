@@ -2846,6 +2846,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
   border-radius: 2px;
 }
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+}
 .pagination {
   margin: 18px 0;
   border-radius: 2px;
