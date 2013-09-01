@@ -368,6 +368,10 @@ base_url: "../"
       <div class="pull-left">
         <p class="text-muted">Default</p>
         <div class="dropdown clearfix">
+          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownSubMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownSubMenu1">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -390,6 +394,10 @@ base_url: "../"
       <div class="pull-left">
         <p class="text-muted">Dropup</p>
         <div class="dropup">
+          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownSubMenu2" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownSubMenu2">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -412,6 +420,10 @@ base_url: "../"
       <div class="pull-left">
         <p class="text-muted">Left submenu</p>
         <div class="dropdown">
+          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownSubMenu3" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownSubMenu3">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -434,8 +446,7 @@ base_url: "../"
       <div class="clearfix"></div>
     </div>
 {% highlight html %}
-<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-  ...
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownSubMenu">
   <li class="dropdown-submenu pull-left">
     <a tabindex="-1" href="#">More options</a>
     <ul class="dropdown-menu">
@@ -446,7 +457,6 @@ base_url: "../"
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Second level link</a></li>
     </ul>
   </li>
-  ...
 </ul>
 {% endhighlight %}
 
