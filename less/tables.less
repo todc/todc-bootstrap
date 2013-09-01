@@ -13,9 +13,9 @@ table {
 .table {
    margin-bottom: @line-height-computed;
   // Cells
-  thead,
-  tbody,
-  tfoot {
+  > thead,
+  > tbody,
+  > tfoot {
     > tr {
       > th,
       > td {
@@ -24,8 +24,12 @@ table {
       }
     }
   }
+  // Bottom align for column headings
+  > thead > tr > th {
+    border-bottom: 2px solid @table-border-color;
+  }
   // Account for multiple tbody instances
-  tbody + tbody {
+  > tbody + tbody {
     border-top: 2px solid @table-border-color;
   }
 

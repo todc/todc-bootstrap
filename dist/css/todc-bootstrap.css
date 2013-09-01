@@ -76,16 +76,19 @@ table {
 .table {
   margin-bottom: 18px;
 }
-.table thead > tr > th,
-.table tbody > tr > th,
-.table tfoot > tr > th,
-.table thead > tr > td,
-.table tbody > tr > td,
-.table tfoot > tr > td {
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
   line-height: 1.4;
   border-top: 1px solid #dddddd;
 }
-.table tbody + tbody {
+.table > thead > tr > th {
+  border-bottom: 2px solid #dddddd;
+}
+.table > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 .table .table {
