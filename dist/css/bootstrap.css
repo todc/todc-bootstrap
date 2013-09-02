@@ -3276,9 +3276,9 @@ input[type="button"].btn-block {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ffffff;
+  color: #262626;
   text-decoration: none;
-  background-color: #428bca;
+  background-color: #f5f5f5;
 }
 
 .dropdown-menu > .active > a,
@@ -6223,7 +6223,8 @@ body.modal-open,
 }
 
 @media screen and (min-width: 768px) {
-  .carousel-control .icon-prev,
+  .carousel-control .glyphicons-chevron-left,
+  .carousel-control .glyphicons-chevron-right .icon-prev,
   .carousel-control .icon-next {
     width: 30px;
     height: 30px;
@@ -6249,6 +6250,12 @@ body.modal-open,
 
 .clearfix:after {
   clear: both;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .pull-right {
