@@ -24,20 +24,20 @@ base_url: "../"
     <h3>Download compiled CSS and JS</h3>
     <p>The fastest way to get TODC Bootstrap is to download the precompiled and minified versions of our CSS, JavaScript, and fonts. No documentation or original source code files are included.</p>
     <p><a class="btn btn-lg btn-primary" href="{{ site.download_dist }}" role="button">Download TODC Bootstrap</a></p>
-    <p><a class="btn btn-lg btn-primary" href="{{ site.bootstrap_download_dist }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);" role="button">Download precompiled Bootstrap</a></p>
+    <p><a class="btn btn-lg btn-primary" href="{{ site.bs_download_dist }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);" role="button">Download precompiled Bootstrap</a></p>
 
     <h3 id="download-additional">Additional downloads</h3>
     <div class="bs-docs-dl-options">
       <h4>
-        <a href="{{ site.download }}">Download latest TODC Bootstrap source code</a>
+        <a href="{{ site.download_source }}">Download TODC Bootstrap source code</a>
         <br>
-        <a href="{{ site.bootstrap_download }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download source code</a>
+        <a href="{{ site.bs_download_source }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download source code</a>
       </h4>
       <p>Get the latest TODC Bootstrap CSS and JavaScript source code by downloading it directly from GitHub.</p>
       <h4>
         <a href="{{ site.repo }}">Clone or fork TODC Bootstrap via GitHub</a>
         <br>
-        <a href="{{ site.bootstrap_repo }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'GitHub project']);">Clone or fork via GitHub</a>
+        <a href="{{ site.bs_repo }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'GitHub project']);">Clone or fork via GitHub</a>
       </h4>
       <p>Visit us on GitHub to clone or fork the TODC Bootstrap project.</p>
       <h4>
@@ -286,14 +286,14 @@ bootstrap/
     <h3>Steps to disable page responsiveness</h3>
     <ol>
       <li>Omit the viewport <code>&lt;meta&gt;</code> mentioned in <a href="../css/#overview-mobile">the CSS docs</a></li>
-      <li>Remove the <code>max-width</code> on the <code>.container</code> for all grids with <code>max-width: none !important;</code> and set a regular 
-          width, for example <code>width: 970px;</code>. Be sure that this comes after the default Bootstrap CSS. 
+      <li>Remove the <code>max-width</code> on the <code>.container</code> for all grids with <code>max-width: none !important;</code> and set a regular
+          width, for example <code>width: 970px;</code>. Be sure that this comes after the default Bootstrap CSS.
           You can optionally avoid the <code>!important</code> with media queries or some selector-fu.</li>
       <li>If using navbars, remove all navbar collapsing and expanding behavior.</li>
-      <li>For grid layouts, use <code>.col-xs-*</code> classes in addition to, or in place of, the medium/large ones. 
+      <li>For grid layouts, use <code>.col-xs-*</code> classes in addition to, or in place of, the medium/large ones.
 	      Don't worry, the extra-small device grid scales to all resolutions.</li>
     </ol>
-    <p>You'll still need Respond.js for IE8 (since our media queries are still there and need to be processed). 
+    <p>You'll still need Respond.js for IE8 (since our media queries are still there and need to be processed).
 	   This disables the "mobile site" aspects of Bootstrap.</p>
 
     <h3>Bootstrap template with responsiveness disabled</h3>
@@ -902,7 +902,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     <p>
       The full TODC Bootstrap license is located <a href="{{ site.repo }}/blob/master/README.md">in the project repository</a> for more information.
       <br>
-      The full Bootstrap license is located <a href="{{ site.bootstrap_repo }}/blob/master/README.md">in the project repository</a> for more information.
+      The full Bootstrap license is located <a href="{{ site.bs_repo }}/blob/master/README.md">in the project repository</a> for more information.
     </p>
   </div><!-- /.bs-docs-section -->
 
