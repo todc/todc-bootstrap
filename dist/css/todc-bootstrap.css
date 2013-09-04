@@ -3210,6 +3210,7 @@ a.thumbnail:focus {
   box-shadow: none;
 }
 .progress-bar {
+  line-height: 18px;
   background-color: #6188f5;
   background-image: none;
   -webkit-box-shadow: none;
