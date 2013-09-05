@@ -52,8 +52,14 @@ a:focus {
 .text-primary {
   color: #4d90fe;
 }
+.text-primary:hover {
+  color: #1a70fe;
+}
 .text-warning {
   color: #333333;
+}
+.text-warning:hover {
+  color: #1a1a1a;
 }
 code {
   padding: 2px 4px;

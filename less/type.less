@@ -7,5 +7,15 @@
 // -------------------------
 
 // Contextual emphasis
-.text-primary        { color: @brand-primary; }
-.text-warning        { color: @state-warning-text; }
+.text-primary {
+  color: @brand-primary;
+  &:hover {
+    color: darken(@brand-primary, 10%);
+  }
+}
+.text-warning {
+  color: @state-warning-text;
+  &:hover {
+    color: darken(@state-warning-text, 10%);
+  }
+}
