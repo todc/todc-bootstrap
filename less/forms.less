@@ -18,7 +18,7 @@ legend {
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 3px 0 0;
+  margin: 2px 0 0;
 }
 
 // Adjust output element
@@ -128,10 +128,7 @@ input[type="checkbox"],
   position: relative;
 
   // override styles for IE
-  box-sizing: content-box e("\9");
-  width: 16px e("\9");
-  height: 16px e("\9");
-  border-width: 0 e("\9");
+  border-width: 0\0;
 
   &:focus {
     outline: none;
@@ -293,6 +290,7 @@ input[type="checkbox"],
     .checkbox input[type="checkbox"] {
       float: none;
       margin-left: 0;
+      margin-bottom: -2px;
     }
   }
 }

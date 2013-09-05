@@ -210,7 +210,7 @@ legend {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 3px 0 0;
+  margin: 2px 0 0;
 }
 output {
   padding-top: 6px;
@@ -298,10 +298,7 @@ input[type="checkbox"],
   border: 1px solid #dcdcdc;
   border-radius: 1px;
   position: relative;
-  box-sizing: content-box \9;
-  width: 16px \9;
-  height: 16px \9;
-  border-width: 0 \9;
+  border-width: 0\0;
 }
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
@@ -555,6 +552,7 @@ textarea.input-lg {
   .form-inline .checkbox input[type="checkbox"] {
     float: none;
     margin-left: 0;
+    margin-bottom: -2px;
   }
 }
 .form-horizontal .control-label,
@@ -1847,6 +1845,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-form .checkbox input[type="checkbox"] {
     float: none;
     margin-left: 0;
+    margin-bottom: -2px;
   }
 }
 @media (max-width: 767px) {
