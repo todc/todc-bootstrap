@@ -1771,8 +1771,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin: 2px -15px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   line-height: 18px;
 }
 @media (max-width: 767px) {
