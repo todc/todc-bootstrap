@@ -94,15 +94,6 @@
   margin-bottom: ((@bar-height - @element-height) / 2);
 }
 
-// Progress bars - Overload Bootstrap's .progress-bar-variant
-// -------------------------
-.progress-bar-variant(@background, @color) {
-  background-color: @background;
-  .progress-striped & {
-    #gradient > .striped(@color);
-  }
-}
-
 
 // Form validation states - Override Bootstrap's mixin
 //
