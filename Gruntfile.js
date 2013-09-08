@@ -25,55 +25,6 @@ module.exports = function(grunt) {
       dist: ['dist']
     },
 
-    // jshint: {
-    //   options: {
-    //     jshintrc: 'js/.jshintrc'
-    //   },
-    //   gruntfile: {
-    //     src: 'Gruntfile.js'
-    //   },
-    //   src: {
-    //     src: ['js/*.js']
-    //   },
-    //   test: {
-    //     src: ['js/tests/unit/*.js']
-    //   }
-    // },
-
-    // concat: {
-    //   options: {
-    //     banner: '<%= banner %><%= jqueryCheck %>',
-    //     stripBanners: false
-    //   },
-    //   bootstrap: {
-    //     src: [
-    //       'js/transition.js',
-    //       'js/alert.js',
-    //       'js/button.js',
-    //       'js/carousel.js',
-    //       'js/collapse.js',
-    //       'js/dropdown.js',
-    //       'js/modal.js',
-    //       'js/tooltip.js',
-    //       'js/popover.js',
-    //       'js/scrollspy.js',
-    //       'js/tab.js',
-    //       'js/affix.js'
-    //     ],
-    //     dest: 'dist/js/<%= pkg.name %>.js'
-    //   }
-    // },
-
-    // uglify: {
-    //   options: {
-    //     banner: '<%= banner %>'
-    //   },
-    //   bootstrap: {
-    //     src: ['<%= concat.bootstrap.dest %>'],
-    //     dest: 'dist/js/<%= pkg.name %>.min.js'
-    //   }
-    // },
-
     recess: {
       options: {
         compile: true
@@ -91,7 +42,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // TODO: Do we need to account for select2?
     copy: {
       images: {
         expand: true,
@@ -135,14 +85,6 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      // src: {
-      //   files: '<%= jshint.src.src %>',
-      //   tasks: ['jshint:src', 'qunit']
-      // },
-      // test: {
-      //   files: '<%= jshint.test.src %>',
-      //   tasks: ['jshint:test', 'qunit']
-      // },
       recess: {
         files: 'less/*.less',
         tasks: ['recess']
@@ -176,10 +118,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  // grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
@@ -192,19 +131,13 @@ module.exports = function(grunt) {
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
-  // // JS distribution task.
-  // grunt.registerTask('dist-js', ['concat', 'uglify']);
-
   // CSS distribution task.
   grunt.registerTask('dist-css', ['recess']);
-
-  // // Fonts distribution task.
-  // grunt.registerTask('dist-fonts', ['copy']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   // // Default task.
-  // grunt.registerTask('default', ['test', 'dist', 'build-customizer']);
+  grunt.registerTask('default', ['dist']);
 };
