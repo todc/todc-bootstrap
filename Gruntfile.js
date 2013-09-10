@@ -12,6 +12,11 @@ module.exports = function(grunt) {
               '* TODC Bootstrap v<%= pkg.version %> by todc\n' +
               '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               '* Licensed under <%= _.pluck(pkg.licenses, "url").join(", ") %>.\n' +
+              '*\n' +
+              '* This CSS is intended to be used on top of Bootstrap, to theme\n' +
+              '* it in the Google style.\n' +
+              '*\n' +
+              '* Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
               '*/\n',
     jqueryCheck: 'if (!jQuery) { throw new Error(\"TODC Bootstrap requires jQuery\") }\n\n',
 
@@ -27,6 +32,7 @@ module.exports = function(grunt) {
 
     recess: {
       options: {
+        // banner: '<%= banner %>',
         compile: true
       },
       todc_bootstrap: {
