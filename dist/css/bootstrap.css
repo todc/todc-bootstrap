@@ -5823,8 +5823,6 @@ body.modal-open,
 
 @media screen and (min-width: 768px) {
   .modal-dialog {
-    right: auto;
-    left: 50%;
     width: 600px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -6346,12 +6344,6 @@ body.modal-open,
 
 @-ms-viewport {
   width: device-width;
-}
-
-@media screen and (max-width: 400px) {
-  @-ms-viewport {
-    width: 320px;
-  }
 }
 
 .hidden {
