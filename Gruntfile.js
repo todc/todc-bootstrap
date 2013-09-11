@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     banner: '/**\n' +
               '* TODC Bootstrap v<%= pkg.version %> by todc\n' +
               '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              '* Licensed under <%= _.pluck(pkg.licenses, "url").join(", ") %>.\n' +
+              '* Licensed under <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
               '*\n' +
               '* This CSS is intended to be used on top of Bootstrap, to theme\n' +
               '* it in the Google style.\n' +
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
     recess: {
       options: {
-        // banner: '<%= banner %>',
+        banner: '<%= banner %>',
         compile: true
       },
       todc_bootstrap: {
