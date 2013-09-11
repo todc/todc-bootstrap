@@ -80,7 +80,7 @@
     $('.bs-docs-carousel-example').carousel()
 
     // Google styled selects
-    $("select").each(function() {
+    $("select").not('.input-lg').not('.input-sm').each(function() {
       var e = $(this)
       e.select2({
       minimumResultsForSearch: 20
