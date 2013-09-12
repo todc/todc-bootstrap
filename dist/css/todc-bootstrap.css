@@ -3866,7 +3866,8 @@ li.list-group-header {
           box-shadow: none;
 }
 
-.panel > .panel-body + .table {
+.panel > .panel-body + .table,
+.panel > .panel-body + .table-responsive {
   border-top: 1px solid #dddddd;
 }
 
