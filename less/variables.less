@@ -262,12 +262,13 @@
 // Basics of a navbar
 @navbar-height:                    28px; // Total height - 30px Google.com. 24px other Google sites
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-default-color:             @gray-light;
-@navbar-default-bg:                #2d2d2d;
-@navbar-default-border:            #000;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
 @navbar-padding-vertical:          (floor((@navbar-height - @line-height-computed) / 2) - 1);
+
+@navbar-default-color:             @gray-light;
+@navbar-default-bg:                #2d2d2d;
+@navbar-default-border:            #000;
 
 // Navbar links
 @navbar-default-link-color:                @gray-light;
@@ -323,12 +324,13 @@
 // Basics of a masthead
 @navbar-masthead-height:                    44px; // 75px for Google Developer. 44px for Google news. 48px for youtube
 @navbar-masthead-margin-bottom:             @line-height-computed;
-@navbar-masthead-default-color:             #777;
-@navbar-masthead-default-bg:                #f1f1f1;
-@navbar-masthead-default-border:            darken(@navbar-masthead-default-bg, 4.7%);
 @navbar-masthead-border-radius:             @border-radius-base;
 @navbar-masthead-padding-horizontal:        (floor(@grid-gutter-width / 2));
 @navbar-masthead-padding-vertical:          (floor((@navbar-masthead-height - @line-height-computed) / 2) - 1);
+
+@navbar-masthead-default-color:             #777;
+@navbar-masthead-default-bg:                #f1f1f1;
+@navbar-masthead-default-border:            darken(@navbar-masthead-default-bg, 4.7%);
 
 // Masthead links
 @navbar-masthead-default-link-color:            #777;
@@ -384,12 +386,13 @@
 // Basics of a navbar-toolbar
 @navbar-toolbar-height:                    36px; // 37px for Google developer. 39px for Google.com. 42px for Google news
 @navbar-toolbar-margin-bottom:             @line-height-computed;
+@navbar-toolbar-border-radius:             @border-radius-base;
+@navbar-toolbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
+@navbar-toolbar-padding-vertical:          (floor((@navbar-toolbar-height - @line-height-computed) / 2) - 1);
+
 @navbar-toolbar-default-color:             #777;
 @navbar-toolbar-default-bg:                #fff;
 @navbar-toolbar-default-border:            darken(@navbar-toolbar-default-bg, 15.5%); //#d7d7d7
-@navbar-toolbar-default-border-radius:     @border-radius-base;
-@navbar-toolbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
-@navbar-toolbar-padding-vertical:          (floor((@navbar-toolbar-height - @line-height-computed) / 2) - 1);
 
 // navbar-toolbar links
 @navbar-toolbar-default-link-color:             #777;
@@ -730,8 +733,8 @@
 
 // Close
 // ------------------------
-@close-color:                 #000;
 @close-font-weight:           bold;
+@close-color:                 #000;
 @close-text-shadow:           0 1px 0 #fff;
 
 
