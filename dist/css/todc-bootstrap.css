@@ -2203,7 +2203,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #1b1b1b;
+  border-color: #000000;
 }
 
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
