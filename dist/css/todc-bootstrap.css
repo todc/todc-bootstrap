@@ -1717,6 +1717,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-color: #999999;
 }
 
+.nav .open > a .caret,
+.nav .open > a:hover .caret,
+.nav .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
 .nav-tabs > li > a {
   color: #666666;
   border-radius: 2px 2px 0 0;
@@ -1731,6 +1738,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   font-weight: bold;
   color: #333333;
+}
+
+.nav-tabs > li.active > a .caret,
+.nav-tabs > li.active > a:hover .caret,
+.nav-tabs > li.active > a:focus .caret {
+  border-top-color: #666666;
+  border-bottom-color: #666666;
 }
 
 .nav-tabs-google > li {
@@ -1793,21 +1807,21 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #4d90fe;
 }
 
-.nav .caret,
-.nav a:hover .caret {
-  border-top-color: #666666;
-  border-bottom-color: #666666;
-}
-
-.nav .open a:hover .caret,
-.nav .open .caret {
+.nav-pills > li.active > a .caret,
+.nav-pills > li.active > a:hover .caret,
+.nav-pills > li.active > a:focus .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
 
-.nav-tabs .dropdown-menu {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+.nav .caret {
+  border-top-color: #666666;
+  border-bottom-color: #666666;
+}
+
+.nav a:hover .caret {
+  border-top-color: #666666;
+  border-bottom-color: #666666;
 }
 
 .navbar {
