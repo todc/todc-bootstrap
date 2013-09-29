@@ -19,7 +19,7 @@ module.exports = function(grunt) {
               '*\n' +
               '* Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
               '*/\n',
-    jqueryCheck: 'if (!jQuery) { throw new Error(\"TODC Bootstrap requires jQuery\") }\n\n',
+    jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
