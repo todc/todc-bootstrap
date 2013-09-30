@@ -245,4 +245,3 @@
   })
 
 }(window.jQuery);
-);
