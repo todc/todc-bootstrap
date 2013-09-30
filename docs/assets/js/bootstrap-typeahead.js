@@ -333,4 +333,3 @@
   })
 
 }(window.jQuery);
-);
