@@ -164,4 +164,4 @@
     $(target).collapse(option)
   })
 
-}(window.jQuery);y);
+}(window.jQuery);
