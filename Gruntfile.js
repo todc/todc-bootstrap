@@ -9,16 +9,16 @@ module.exports = function(grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-              '* TODC Bootstrap v<%= pkg.version %> by todc\n' +
-              '*\n' +
-              '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              '* Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
-              '* <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
-              '*\n' +
-              '* This is a Google style theme that is intended to be used on top of Bootstrap.\n' +
-              '*\n' +
-              '* Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
-              '*/\n',
+              ' * TODC Bootstrap v<%= pkg.version %> by todc\n' +
+              ' *\n' +
+              ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+              ' * Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
+              ' * <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
+              ' *\n' +
+              ' * This is a Google style theme that is intended to be used on top of Bootstrap.\n' +
+              ' *\n' +
+              ' * Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
+              ' */\n',
     jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
     // Bootstrap variables
