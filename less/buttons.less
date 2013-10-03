@@ -8,14 +8,10 @@
 
 // Core styles
 .btn {
-  padding: @padding-base-vertical (@padding-base-horizontal + 4);
-  font-size: @font-size-base;
   font-weight: bold;
-  // line-height: @line-height-base;
-  line-height: @line-height-computed; // needed to fix an issue with FireFox and input-groups-buttons-dropdowns
   cursor: default;
-  border-radius: @border-radius-base;
   background-clip: border-box;
+  .button-size(@padding-base-vertical; (@padding-base-horizontal + 4); @font-size-base; @line-height-computed; @border-radius-base);
   .box-shadow(none);
 
   &:hover {
