@@ -4,9 +4,13 @@
 
 
 .popover {
-  .border-radius(0);
-  
-  .popover-title {
-    .border-radius(0);
-  }
+  background-color: @popover-bg;
+  border-radius: 0;
+}
+
+.popover-title {
+  font-size: @font-size-base;
+  background-color: @popover-title-bg;
+  border-bottom: 1px solid darken(@popover-title-bg, 5%);
+  border-radius: 0;
 }

@@ -3,61 +3,64 @@
 // --------------------------------------------------
 
 
-// Form controls
-// -------------------------
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
 
-// Shared size and type resets
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  padding: 4px 8px;
-  font-size: @baseFontSize;
-  .border-radius(@inputBorderRadius);
+legend {
+  margin-bottom: @line-height-computed;
+  font-size: (@font-size-base * 1.5);
 }
 
-// Reset appearance properties for textual inputs and textarea
-// Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
-input,
-textarea {
-  width: 210px;
+
+// Normalize form controls
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 2px 0 0;
 }
-// Reset height since textareas have rows
-textarea {
-  padding-right: 4px;
+
+// Adjust output element
+output {
+  padding-top: (@padding-base-vertical + 1);
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @input-color;
 }
-// Everything else
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  border: 1px solid @inputBorder;
-  border-top-color: darken(@inputBorder, 10%);
+
+
+// Common form controls
+//
+// Shared size and type resets for form controls. Apply `.form-control` to any
+// of the following form controls:
+//
+// select
+// textarea
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+
+.form-control {
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical @padding-base-horizontal;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  background-color: @input-bg;
+  border: 1px solid @input-border;
+  border-top-color: darken(@input-border, 10%);
+  border-radius: @input-border-radius;
   .box-shadow(none);
   .transition(none);
 
@@ -67,182 +70,245 @@ input[type="color"],
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
   }
 
-  // Focus state
-  &:focus {
-    outline: 0 \9;
-    border-color: #4d90fe;
-    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
-    .transition(none);
+  // Customize the `:focus` state to imitate native WebKit styles.
+  .form-control-focus();
+
+  // Disabled and read-only inputs
+  // Note: HTML5 says that controls under a fieldset > legend:first-child won't
+  // be disabled if the fieldset is disabled. Due to implementation difficulty,
+  // we don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: @input-bg-disabled;
+    border: 1px solid #e5e5e5;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid #e5e5e5;
+      .box-shadow(none);
+    }
+  }
+  &[readonly] & {
+    border: 1px solid @input-border;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid @input-border;
+    }
+  }
+
+  textarea& {
+    padding-right: 4px;
   }
 }
 
 
-// CHECKBOXES & RADIOS
-// -------------------
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
 
-// Google style
+.radio,
+.checkbox {
+  min-height: @line-height-computed; // clear the floating input if there is no label text
+}
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
 input[type="checkbox"],
-input[type="radio"] {
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
   width: 13px;
   height: 13px;
   background: white;
   border: 1px solid #dcdcdc;
-  .border-radius(1px);
-  .box-sizing(border-box);
+  border-radius: 1px;
   position: relative;
 
   // override styles for IE
-  box-sizing: content-box e("\9");
-  width: 16px e("\9");
-  height: 16px e("\9");
-  border-width: 0 e("\9");
+  border-width: 0\0;
+
+  &:focus {
+    outline: none;
+    border-color: @brand-primary;
+  }
+
+  &:active {
+    border-color: #c6c6c6;
+    background-color: #ebebeb;
+    // override the bkgd color for IE
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+  }
+
+  &:checked {
+    background: #fff;
+  }
 }
-input[type="radio"] {
-  .border-radius(1em);
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  border-radius: 1em;
   width: 15px;
   height: 15px;
-}
-input[type="checkbox"]:hover {
-  border-color: #c6c6c6;
-  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
 
-  // no box shadow for IE
-  box-shadow: none e("\9");
+  &:checked::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    background: #666;
+    border-radius: 1em;
+  }
 }
-input[type="checkbox"]:active,
-input[type="radio"]:active {
-  border-color: #c6c6c6;
-  background-color: #ebebeb;
-  // override the bkgd color for IE
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
-}
-input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-  background: #fff;
-}
-input[type="checkbox"]:checked::after {
-  content: url(../img/checkmark.png);
-  display: block;
-  position: absolute;
-  top: -6px;
-  left: -5px;
-}
-input[type="radio"]:checked::after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 3px;
-  left: 3px;
-  width: 7px;
-  height: 7px;
-  background: #666;
-  .border-radius(1em);
-}
-input[type="checkbox"]:focus,
-input[type="radio"]:focus {
-  outline: none;
-  border-color: #4d90fe;
-}
-
-
-// DISABLED STATE
-// --------------
-
-// Disabled and read-only inputs
-input[disabled],
-select[disabled],
-textarea[disabled] {
-  cursor: not-allowed;
-  border: 1px solid #e5e5e5;
-  background: #f1f1f1;
-
+input[type="checkbox"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
   &:hover {
-    .box-shadow(none);
+    border-color: #c6c6c6;
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1));
+
+    // no box shadow for IE
+    box-shadow: none e("\9");
   }
-}
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  cursor: not-allowed;
-  border: 1px solid @inputBorder;
 
-  &:hover,
-  &:focus {
-    .box-shadow(none);
-  }
-}
-
-
-// INPUT GROUPS
-// ------------
-
-.input-prepend {
-  input,
-  select,
-  .uneditable-input {
-    .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+  &:checked::after {
+    content: url(../../img/checkmark.png);
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -5px;
   }
 }
 
-.input-append {
-  input,
-  select,
-  .uneditable-input {
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
-  }
+// Form control sizing
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
 }
 
-// Remove all border-radius for inputs with both prepend and append
-.input-prepend.input-append {
-  input,
-  select,
-  .uneditable-input {
-    .border-radius(0);
-  }
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
 }
 
 
-// FORM FIELD FEEDBACK STATES
-// --------------------------
+// Form control feedback states
+//
+// Apply contextual and semantic states to individual form controls.
 
-// HTML5 invalid states
-// Shares styles with the .control-group.error above
-input:focus:required:invalid,
-textarea:focus:required:invalid,
-select:focus:required:invalid {
-  color: #b94a48;
-  border-color: #ee5f5b;
-  &:focus {
-    border-color: #4d90fe;
-    .box-shadow(0);
+// Warning
+.has-warning {
+  .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+}
+// Error
+.has-error {
+  .form-control-validation(#dd4b39; #dd4b39; @state-danger-bg);
+}
+// Success
+.has-success {
+  .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+}
+
+
+// Static form control text
+//
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  padding-top: (@padding-base-vertical + 1);
+}
+
+
+// Help text
+//
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+
+.help-block {
+  color: lighten(@text-color, 26.5%); // lighten the text some for contrast
+}
+
+
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form-horizontal .control-label,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: @padding-base-vertical;
+}
+
+
+
+// TODO: See if form-inline can be removed without causing issues with the navbar, masthead, and toolbar. Maybe
+//        by referencing bootstrap/forms.less in todc-bootstrap.less. @import (reference) "bootstrap/forms.less";
+
+// Inline forms
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+
+.form-inline {
+
+  // Kick in the inline
+  @media (min-width: @screen-sm) {
+    // Inline-block all the things for "inline"
+    .form-group  {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match (which also avoids
+    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      float: none;
+      margin-left: 0;
+      margin-bottom: -2px;
+    }
   }
 }
 
 
-// HORIZONTAL & VERTICAL FORMS
-// ---------------------------
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
 
-// Common properties
-// -----------------
-
-.form-search,
-.form-inline,
 .form-horizontal {
-  input,
-  textarea,
-  select,
-  .help-inline,
-  .uneditable-input,
-  .input-prepend,
-  .input-append {
-    display: inline-block;
-    .ie7-inline-block();
-    margin-bottom: 0;
-  }
-  // Re-hide hidden elements due to specifity
-  .hide {
-    display: none;
+
+  // Consistent vertical alignment of labels, radios, and checkboxes
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    padding-top: (@padding-base-vertical + 1); // Default padding plus a border
   }
 }

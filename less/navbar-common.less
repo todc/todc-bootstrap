@@ -1,0 +1,100 @@
+//
+// Navbar common classes
+// --------------------------------------------------
+
+
+//
+// Navbar alignment options - Shared
+// --------------------------------------------------
+
+// Static navbar
+.navbar-static-top {
+  border-radius: 0;
+}
+
+// Shared (top/bottom) styles
+.navbar-fixed-top,
+.navbar-static-top {
+  border-width: 1px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 1px 0;
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+}
+// Fixed navbars aren't fixed to start; that comes at >768px
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+}
+
+
+// Buttons in navbars
+//
+// Vertically center a button within a navbar (when *not* in a form).
+
+.navbar-btn {
+  padding: @padding-small-vertical @padding-small-horizontal;
+  margin-top: (floor((@navbar-height - @input-height-small) / 2));
+}
+.btn.navbar-masthead-btn {
+  margin-top: ((@navbar-masthead-height - @input-height-base) / 2);
+}
+.btn.navbar-toolbar-btn {
+  margin-top: ((@navbar-toolbar-height - @input-height-base) / 2);
+}
+
+
+
+// Text in navbars
+//
+// Add a class to make any element properly align itself vertically within the navbars.
+
+.navbar-text {
+
+}
+
+
+
+// Links in navbars
+//
+// Add a class to ensure links outside the navbar nav are colored correctly.
+
+// Default navbar variables
+.navbar-link {
+  color: @navbar-default-link-color;
+  &:hover {
+    color: @navbar-default-link-hover-color;
+  }
+}
+
+// Use the inverse navbar variables
+.navbar-inverse .navbar-link {
+  color: @navbar-inverse-link-color;
+  &:hover {
+    color: @navbar-inverse-link-hover-color;
+  }
+}
+
+
+// Forms in navbars
+.navbar-form {
+  .radio-inline,
+  .checkbox-inline {
+    color: @navbar-default-color;
+  }
+}

@@ -1,58 +1,42 @@
-/*!
- * TODC Bootstrap
- *
- * This CSS is intended to be used on top of Bootstrap, to theme
- * it in the Google style.
- *
- * Constructed by Tim O'Donnell (http://github.com/todc)
- */
-
 // Core variables and mixins
 @import "variables.less";
 @import "../bootstrap/less/mixins.less";
 @import "mixins.less";
 
-// Grid system and page structure
+// Core CSS
 @import "scaffolding.less";
-
-// Base CSS
-@import "forms.less";
+@import "type.less";
+@import "code.less";
 @import "tables.less";
-
-// Components: common
-@import "sprites.less";
-@import "dropdowns.less";
-@import "wells.less";
-@import "scrollbars.less";
-
-// Components: Buttons & Alerts
+@import "forms.less";
 @import "buttons.less";
-@import "button-groups.less";
-@import "alerts.less";
 
-// Components: Nav
+// Components
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
 @import "navs.less";
 @import "navbar.less";
+@import "masthead.less";
+@import "toolbar.less";
+@import "navbar-common.less";
 @import "breadcrumbs.less";
 @import "pagination.less";
 @import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+// @import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "wells.less";
+// @import "close.less";
+@import "scrollbars.less";
 
-// Components: Popovers
+// Components w/ JavaScript
 @import "modals.less";
 @import "tooltip.less";
 @import "popovers.less";
-
-// Components: Misc
-@import "thumbnails.less";
-@import "labels-badges.less";
-@import "progress-bars.less";
-
-
-
-// Responsive
-// -------------------------------------------------------------
-
-
-// Responsive navbar
-// From 979px and below, show a button to toggle navbar contents
-@import "responsive-navbar.less";
