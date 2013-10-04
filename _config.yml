@@ -19,7 +19,7 @@ download_dist:        https://github.com/todc/todc-bootstrap/releases/download/v
 
 bs_repo:              https://github.com/twbs/bootstrap
 bs_download_source:   https://github.com/twbs/bootstrap/archive/v3.0.0.zip
-bs_download_dist:         https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
+bs_download_dist:     https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
 
 bs_docs:              http://getbootstrap.com
 blog:                 http://blog.getbootstrap.com
