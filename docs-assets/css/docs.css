@@ -33,7 +33,7 @@
 
 body {
   position: relative; /* For scrollyspy */
-  padding-top: 30px; /* Account for fixed navbar */
+  padding-top: 46px; /* Account for fixed masthead */
 }
 
 /* Keep code small in tables on account of limited space */
@@ -78,7 +78,7 @@ body {
  * Turn the `.navbar` at the top of the docs purple.
  */
 
-.bs-docs-nav {
+/*.bs-docs-nav {
   text-shadow: 0 -1px 0 rgba(0,0,0,.15);
   background-color: #4e599e !important;
   border-color: #3d467c !important;
@@ -109,7 +109,7 @@ body {
   background-color: #3d467c !important;
   border-color: #3d467c !important;
 }
-
+*/
 
 /*
  * Footer
