@@ -91,9 +91,6 @@
         }, 3000)
       })
 
-    // carousel demo
-    $('.bs-docs-carousel-example').carousel()
-
     // Google styled selects
     $("select").not('.input-lg').not('.input-sm').each(function() {
       var e = $(this)
