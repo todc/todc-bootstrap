@@ -281,31 +281,24 @@ body {
 .bs-sidenav {
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-top:    10px;
-  padding-bottom: 10px;
-  text-shadow: 0 1px 0 #fff;
-  background-color: #fefefe;
-  border: 1px solid #ebebeb;
 }
 
 /* All levels of nav */
 .bs-sidebar .nav > li > a {
   display: block;
-  color: #666;
+  color: #222;
   padding: 5px 20px;
 }
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
   text-decoration: none;
   background-color: #eee;
-  border-right: 1px solid #c8c8c8;
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
   color: #dd4b39;
   background-color: transparent;
-  border-right: 1px solid #dd4b39;
 }
 
 /* Nav: second level (shown on .active) */
