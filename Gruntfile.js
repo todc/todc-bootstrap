@@ -74,7 +74,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'dist',
         src: '**',
-        dest: 'dist/'
+        dest: 'todc-bootstrap/'
       }
     },
 
