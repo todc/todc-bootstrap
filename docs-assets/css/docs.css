@@ -181,7 +181,7 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-social {
     text-align: left;
   }
@@ -246,7 +246,7 @@ body {
   color: #fff !important;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-masthead {
     text-align: left;
     padding-top:    140px;
@@ -297,7 +297,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-header {
     font-size: 21px;
     text-align: left;
@@ -308,7 +308,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .bs-header h1,
   .bs-header p {
     margin-right: 380px;
@@ -363,7 +363,7 @@ body {
   display: none; /* hide what I assume are tracking images */
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .carbonad {
     margin: 0 !important;
     border-radius: 4px;
@@ -371,7 +371,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .carbonad {
     position: absolute;
     top: 20px;
@@ -458,7 +458,7 @@ body {
 }
 
 /* Show and affix the side nav when space allows it */
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .bs-sidebar .nav > .active > ul {
     display: block;
   }
@@ -480,7 +480,7 @@ body {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   /* Widen the fixed sidebar again */
   .bs-sidebar.affix-bottom,
   .bs-sidebar.affix {
@@ -604,7 +604,7 @@ h1[id] {
 }
 
 /* Make the examples and snippets not full-width */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-example {
     margin-left: 0;
     margin-right: 0;
@@ -877,7 +877,7 @@ h1[id] {
 }
 
 /* Show code snippets when we have the space */
-@media screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .highlight {
     display: block;
   }
