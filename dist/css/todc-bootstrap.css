@@ -601,10 +601,6 @@ textarea.input-lg {
   border-color: #468847;
 }
 
-.form-control-static {
-  padding-top: 6px;
-}
-
 .help-block {
   color: #777777;
 }
@@ -644,6 +640,10 @@ textarea.input-lg {
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
+  padding-top: 6px;
+}
+
+.form-horizontal .form-control-static {
   padding-top: 6px;
 }
 
