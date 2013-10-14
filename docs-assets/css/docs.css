@@ -126,7 +126,7 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-social {
     text-align: left;
   }
@@ -179,7 +179,7 @@ body {
   margin-left: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-masthead {
     text-align: left;
     padding-top:    60px;
@@ -227,7 +227,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-header {
     font-size: 18px;
     text-align: left;
@@ -238,7 +238,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .bs-header h1,
   .bs-header p {
     margin-right: 380px;
@@ -314,7 +314,7 @@ body {
 }
 
 /* Show and affix the side nav when space allows it */
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .bs-sidebar .nav > .active > ul {
     display: block;
   }
@@ -336,7 +336,7 @@ body {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   /* Widen the fixed sidebar again */
   .bs-sidebar.affix-bottom,
   .bs-sidebar.affix {
@@ -372,19 +372,30 @@ h1[id] {
 
 /* Common styles for all types */
 .bs-callout {
+  /*position: relative;*/
   margin: 20px 0;
-  padding: 15px 30px 15px 15px;
-  border-left: 5px solid #eee;
+  padding: 20px;
+  border-left: 3px solid #eee;
+  /*border-width: 1px 1px 1px 10px;*/
 }
+/*.bs-callout:before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}*/
 .bs-callout h4 {
   margin-top: 0;
+  margin-bottom: 5px;
 }
 .bs-callout p:last-child {
   margin-bottom: 0;
 }
 .bs-callout code,
 .bs-callout .highlight {
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 /* Variations */
@@ -392,13 +403,48 @@ h1[id] {
   background-color: #fdf1ef;
   border-color: #dd4b39;
 }
+.bs-callout-danger h4 {
+  color: #c23321;
+}
 .bs-callout-warning {
   background-color: #fefbed;
   border-color: #f1e7bc;
 }
+.bs-callout-warning h4 {
+  color: #ba9e27;
+}
 .bs-callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0;
+}
+.bs-callout-info h4 {
+  color: #3b86b9;
+}
+
+
+/*
+ * Team members
+ *
+ * Avatars, names, and usernames for core team.
+ */
+
+.bs-team .team-member {
+  color: #555;
+  line-height: 32px;
+}
+.bs-team .team-member:hover {
+  color: #333;
+  text-decoration: none;
+}
+.bs-team iframe {
+  float: right;
+  margin-top: 6px;
+}
+.bs-team img {
+  float: left;
+  width: 32px;
+  margin-right: 10px;
+  border-radius: 4px;
 }
 
 
@@ -460,7 +506,7 @@ h1[id] {
 }
 
 /* Make the examples and snippets not full-width */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .bs-example {
     margin-left: 0;
     margin-right: 0;
@@ -733,7 +779,7 @@ h1[id] {
 }
 
 /* Show code snippets when we have the space */
-@media screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .highlight {
     display: block;
   }
@@ -944,6 +990,11 @@ h1[id] {
  *
  * Odds and ends for optimum docs display.
  */
+
+ /* About page */
+ .bs-about {
+  font-size: 16px;
+ }
 
 /* Examples gallery: space out content better */
 .bs-examples h4 {
