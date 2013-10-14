@@ -224,7 +224,7 @@ table {
   border-color: #eeb956;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .table-responsive {
     border: 1px solid #dddddd;
   }
