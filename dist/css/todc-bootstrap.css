@@ -3785,14 +3785,44 @@ a.thumbnail.active {
   border-bottom-left-radius: 0;
 }
 
-a.list-group-item,
-li.list-group-item > a {
-  color: #222222;
+a.list-group-item.active,
+li.list-group-item.active,
+a.list-group-item.active:hover,
+li.list-group-item.active:hover,
+a.list-group-item.active:focus,
+li.list-group-item.active:focus {
+  font-weight: bold;
+  color: #dd4b39;
+  background-color: transparent;
+  border-left: 3px solid #dd4b39;
+  border-color: #e5e5e5;
+  border-left-color: #dd4b39;
 }
 
-a.list-group-item .list-group-item-heading,
-li.list-group-item > a .list-group-item-heading {
-  color: #333333;
+a.list-group-item.active .list-group-item-heading,
+li.list-group-item.active .list-group-item-heading,
+a.list-group-item.active:hover .list-group-item-heading,
+li.list-group-item.active:hover .list-group-item-heading,
+a.list-group-item.active:focus .list-group-item-heading,
+li.list-group-item.active:focus .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item.active .list-group-item-text,
+li.list-group-item.active .list-group-item-text,
+a.list-group-item.active:hover .list-group-item-text,
+li.list-group-item.active:hover .list-group-item-text,
+a.list-group-item.active:focus .list-group-item-text,
+li.list-group-item.active:focus .list-group-item-text {
+  font-weight: normal;
+  color: #888888;
+}
+
+a.list-group-item.active:hover,
+li.list-group-item.active:hover,
+a.list-group-item.active:focus,
+li.list-group-item.active:focus {
+  background-color: #eeeeee;
 }
 
 a.list-group-item:hover,
@@ -3801,6 +3831,14 @@ a.list-group-item:focus,
 li.list-group-item > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
+}
+
+a.list-group-item {
+  color: #555555;
+}
+
+a.list-group-item .list-group-item-heading {
+  color: #333333;
 }
 
 li.list-group-item {
@@ -3813,38 +3851,12 @@ li.list-group-item > a {
   padding: 0 15px;
   margin-right: -15px;
   margin-left: -15px;
+  color: #222222;
 }
 
 li.list-group-item.active > a {
   padding-left: 12px;
-}
-
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  font-weight: bold;
   color: #dd4b39;
-  background-color: transparent;
-  border-left: 3px solid #dd4b39;
-  border-color: #e5e5e5;
-}
-
-.list-group-item.active .list-group-item-heading,
-.list-group-item.active:hover .list-group-item-heading,
-.list-group-item.active:focus .list-group-item-heading {
-  color: inherit;
-}
-
-.list-group-item.active .list-group-item-text,
-.list-group-item.active:hover .list-group-item-text,
-.list-group-item.active:focus .list-group-item-text {
-  font-weight: normal;
-  color: #888888;
-}
-
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  background-color: #eeeeee;
 }
 
 .list-group-header {
