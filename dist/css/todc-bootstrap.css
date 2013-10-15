@@ -3604,7 +3604,8 @@ li.list-group-item.active a > .badge {
 }
 
 a.thumbnail:hover,
-a.thumbnail:focus {
+a.thumbnail:focus,
+a.thumbnail.active {
   border-color: #ffffff;
   -webkit-box-shadow: 0 0 0 1px #dedede;
           box-shadow: 0 0 0 1px #dedede;
