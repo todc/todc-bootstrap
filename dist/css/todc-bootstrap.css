@@ -446,7 +446,11 @@ textarea.input-lg {
 }
 
 .has-warning .help-block,
-.has-warning .control-label {
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline {
   color: #333333;
 }
 
@@ -469,7 +473,11 @@ textarea.input-lg {
 }
 
 .has-warning .help-block,
-.has-warning .control-label {
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline {
   color: #333333;
 }
 
@@ -498,7 +506,11 @@ textarea.input-lg {
 }
 
 .has-error .help-block,
-.has-error .control-label {
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
   color: #dd4b39;
 }
 
@@ -521,7 +533,11 @@ textarea.input-lg {
 }
 
 .has-error .help-block,
-.has-error .control-label {
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
   color: #dd4b39;
 }
 
@@ -550,7 +566,11 @@ textarea.input-lg {
 }
 
 .has-success .help-block,
-.has-success .control-label {
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
   color: #468847;
 }
 
@@ -573,7 +593,11 @@ textarea.input-lg {
 }
 
 .has-success .help-block,
-.has-success .control-label {
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
   color: #468847;
 }
 
@@ -676,7 +700,7 @@ textarea.input-lg {
   text-shadow: 0 1px 0 #fff;
   background-color: #f3f3f3;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -700,7 +724,7 @@ textarea.input-lg {
   background-color: #e4e4e4;
   background-color: #e4e4e4 \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #e4e4e4, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e4e4e4 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e4e4e4 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #e4e4e4 100%);
   background-repeat: repeat-x;
@@ -714,7 +738,7 @@ textarea.input-lg {
 .open .dropdown-toggle.btn-default {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#d8d8d8));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #d8d8d8, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #d8d8d8 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #d8d8d8 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #d8d8d8 100%);
   background-repeat: repeat-x;
@@ -749,7 +773,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #f5f5f5;
   background-color: #f5f5f5 \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -763,7 +787,7 @@ fieldset[disabled] .btn-default.active {
 .btn-default:hover {
   text-shadow: none;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f8f8f8), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f8f8f8, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 100%);
   background-position: 0 0;
@@ -781,7 +805,7 @@ fieldset[disabled] .btn-default.active {
   text-shadow: 0 1px 0 #fff;
   background-color: #e8e8e8;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f6f6f6), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f6f6f6, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f6f6f6 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -814,7 +838,7 @@ fieldset[disabled] .btn-default:active {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4d90fe), to(#4787ed));
-  background-image: -webkit-linear-gradient(top, #4d90fe, 0%, #4787ed, 100%);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image: -moz-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image: linear-gradient(to bottom, #4d90fe 0%, #4787ed 100%);
   background-repeat: repeat-x;
@@ -838,7 +862,7 @@ fieldset[disabled] .btn-default:active {
   background-color: #3078eb;
   background-color: #3078eb \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4d90fe), to(#3078eb));
-  background-image: -webkit-linear-gradient(top, #4d90fe, 0%, #3078eb, 100%);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0%, #3078eb 100%);
   background-image: -moz-linear-gradient(top, #4d90fe 0%, #3078eb 100%);
   background-image: linear-gradient(to bottom, #4d90fe 0%, #3078eb 100%);
   background-repeat: repeat-x;
@@ -852,7 +876,7 @@ fieldset[disabled] .btn-default:active {
 .open .dropdown-toggle.btn-primary {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4d90fe), to(#1969e8));
-  background-image: -webkit-linear-gradient(top, #4d90fe, 0%, #1969e8, 100%);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0%, #1969e8 100%);
   background-image: -moz-linear-gradient(top, #4d90fe 0%, #1969e8 100%);
   background-image: linear-gradient(to bottom, #4d90fe 0%, #1969e8 100%);
   background-repeat: repeat-x;
@@ -887,7 +911,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #4d90fe;
   background-color: #4d90fe \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4d90fe), to(#4787ed));
-  background-image: -webkit-linear-gradient(top, #4d90fe, 0%, #4787ed, 100%);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image: -moz-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image: linear-gradient(to bottom, #4d90fe 0%, #4787ed 100%);
   background-repeat: repeat-x;
@@ -902,7 +926,7 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#dd4b39), to(#d14836));
-  background-image: -webkit-linear-gradient(top, #dd4b39, 0%, #d14836, 100%);
+  background-image: -webkit-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image: -moz-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image: linear-gradient(to bottom, #dd4b39 0%, #d14836 100%);
   background-repeat: repeat-x;
@@ -926,7 +950,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #c13e2c;
   background-color: #c13e2c \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#dd4b39), to(#c13e2c));
-  background-image: -webkit-linear-gradient(top, #dd4b39, 0%, #c13e2c, 100%);
+  background-image: -webkit-linear-gradient(top, #dd4b39 0%, #c13e2c 100%);
   background-image: -moz-linear-gradient(top, #dd4b39 0%, #c13e2c 100%);
   background-image: linear-gradient(to bottom, #dd4b39 0%, #c13e2c 100%);
   background-repeat: repeat-x;
@@ -940,7 +964,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-danger {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#dd4b39), to(#ad3727));
-  background-image: -webkit-linear-gradient(top, #dd4b39, 0%, #ad3727, 100%);
+  background-image: -webkit-linear-gradient(top, #dd4b39 0%, #ad3727 100%);
   background-image: -moz-linear-gradient(top, #dd4b39 0%, #ad3727 100%);
   background-image: linear-gradient(to bottom, #dd4b39 0%, #ad3727 100%);
   background-repeat: repeat-x;
@@ -975,7 +999,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #dd4b39;
   background-color: #dd4b39 \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#dd4b39), to(#d14836));
-  background-image: -webkit-linear-gradient(top, #dd4b39, 0%, #d14836, 100%);
+  background-image: -webkit-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image: -moz-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image: linear-gradient(to bottom, #dd4b39 0%, #d14836 100%);
   background-repeat: repeat-x;
@@ -990,7 +1014,7 @@ fieldset[disabled] .btn-danger.active {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fbb450), to(#faa937));
-  background-image: -webkit-linear-gradient(top, #fbb450, 0%, #faa937, 100%);
+  background-image: -webkit-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image: -moz-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image: linear-gradient(to bottom, #fbb450 0%, #faa937 100%);
   background-repeat: repeat-x;
@@ -1014,7 +1038,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #f99e1e;
   background-color: #f99e1e \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fbb450), to(#f99e1e));
-  background-image: -webkit-linear-gradient(top, #fbb450, 0%, #f99e1e, 100%);
+  background-image: -webkit-linear-gradient(top, #fbb450 0%, #f99e1e 100%);
   background-image: -moz-linear-gradient(top, #fbb450 0%, #f99e1e 100%);
   background-image: linear-gradient(to bottom, #fbb450 0%, #f99e1e 100%);
   background-repeat: repeat-x;
@@ -1028,7 +1052,7 @@ fieldset[disabled] .btn-danger.active {
 .open .dropdown-toggle.btn-warning {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fbb450), to(#f89306));
-  background-image: -webkit-linear-gradient(top, #fbb450, 0%, #f89306, 100%);
+  background-image: -webkit-linear-gradient(top, #fbb450 0%, #f89306 100%);
   background-image: -moz-linear-gradient(top, #fbb450 0%, #f89306 100%);
   background-image: linear-gradient(to bottom, #fbb450 0%, #f89306 100%);
   background-repeat: repeat-x;
@@ -1063,7 +1087,7 @@ fieldset[disabled] .btn-warning.active {
   background-color: #fbb450;
   background-color: #fbb450 \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fbb450), to(#faa937));
-  background-image: -webkit-linear-gradient(top, #fbb450, 0%, #faa937, 100%);
+  background-image: -webkit-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image: -moz-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image: linear-gradient(to bottom, #fbb450 0%, #faa937 100%);
   background-repeat: repeat-x;
@@ -1078,7 +1102,7 @@ fieldset[disabled] .btn-warning.active {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#35aa47), to(#35aa47));
-  background-image: -webkit-linear-gradient(top, #35aa47, 0%, #35aa47, 100%);
+  background-image: -webkit-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image: -moz-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image: linear-gradient(to bottom, #35aa47 0%, #35aa47 100%);
   background-repeat: repeat-x;
@@ -1102,7 +1126,7 @@ fieldset[disabled] .btn-warning.active {
   background-color: #2f973f;
   background-color: #2f973f \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#35aa47), to(#2f973f));
-  background-image: -webkit-linear-gradient(top, #35aa47, 0%, #2f973f, 100%);
+  background-image: -webkit-linear-gradient(top, #35aa47 0%, #2f973f 100%);
   background-image: -moz-linear-gradient(top, #35aa47 0%, #2f973f 100%);
   background-image: linear-gradient(to bottom, #35aa47 0%, #2f973f 100%);
   background-repeat: repeat-x;
@@ -1116,7 +1140,7 @@ fieldset[disabled] .btn-warning.active {
 .open .dropdown-toggle.btn-success {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#35aa47), to(#298337));
-  background-image: -webkit-linear-gradient(top, #35aa47, 0%, #298337, 100%);
+  background-image: -webkit-linear-gradient(top, #35aa47 0%, #298337 100%);
   background-image: -moz-linear-gradient(top, #35aa47 0%, #298337 100%);
   background-image: linear-gradient(to bottom, #35aa47 0%, #298337 100%);
   background-repeat: repeat-x;
@@ -1151,7 +1175,7 @@ fieldset[disabled] .btn-success.active {
   background-color: #35aa47;
   background-color: #35aa47 \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#35aa47), to(#35aa47));
-  background-image: -webkit-linear-gradient(top, #35aa47, 0%, #35aa47, 100%);
+  background-image: -webkit-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image: -moz-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image: linear-gradient(to bottom, #35aa47 0%, #35aa47 100%);
   background-repeat: repeat-x;
@@ -1166,7 +1190,7 @@ fieldset[disabled] .btn-success.active {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#5bc0de), to(#5bc0de));
-  background-image: -webkit-linear-gradient(top, #5bc0de, 0%, #5bc0de, 100%);
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image: -moz-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image: linear-gradient(to bottom, #5bc0de 0%, #5bc0de 100%);
   background-repeat: repeat-x;
@@ -1190,7 +1214,7 @@ fieldset[disabled] .btn-success.active {
   background-color: #46b8da;
   background-color: #46b8da \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#5bc0de), to(#46b8da));
-  background-image: -webkit-linear-gradient(top, #5bc0de, 0%, #46b8da, 100%);
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #46b8da 100%);
   background-image: -moz-linear-gradient(top, #5bc0de 0%, #46b8da 100%);
   background-image: linear-gradient(to bottom, #5bc0de 0%, #46b8da 100%);
   background-repeat: repeat-x;
@@ -1204,7 +1228,7 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-info {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#5bc0de), to(#31b0d5));
-  background-image: -webkit-linear-gradient(top, #5bc0de, 0%, #31b0d5, 100%);
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image: -moz-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
   background-repeat: repeat-x;
@@ -1239,7 +1263,7 @@ fieldset[disabled] .btn-info.active {
   background-color: #5bc0de;
   background-color: #5bc0de \9;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#5bc0de), to(#5bc0de));
-  background-image: -webkit-linear-gradient(top, #5bc0de, 0%, #5bc0de, 100%);
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image: -moz-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image: linear-gradient(to bottom, #5bc0de 0%, #5bc0de 100%);
   background-repeat: repeat-x;
@@ -1343,7 +1367,7 @@ fieldset[disabled] .btn-link:focus {
   color: #333333;
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eeeeee), to(#eeeeee));
-  background-image: -webkit-linear-gradient(top, #eeeeee, 0%, #eeeeee, 100%);
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
   background-image: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
   background-image: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
   background-repeat: repeat-x;
@@ -1356,7 +1380,7 @@ fieldset[disabled] .btn-link:focus {
   color: #333333;
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eeeeee), to(#eeeeee));
-  background-image: -webkit-linear-gradient(top, #eeeeee, 0%, #eeeeee, 100%);
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
   background-image: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
   background-image: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
   background-repeat: repeat-x;
@@ -1826,7 +1850,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar {
   position: relative;
-  z-index: 1000;
   min-height: 28px;
   margin-bottom: 18px;
   border: 1px solid transparent;
@@ -1901,7 +1924,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     overflow: visible !important;
   }
   .navbar-collapse.in {
-    overflow-y: visible;
+    overflow-y: auto;
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -15px;
@@ -1929,6 +1952,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-static-top {
+  z-index: 1000;
   border-width: 0 0 1px;
 }
 
@@ -1943,7 +1967,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: fixed;
   right: 0;
   left: 0;
-  border-width: 0 0 1px;
+  z-index: 1030;
 }
 
 @media (min-width: 768px) {
@@ -1955,12 +1979,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-top {
   top: 0;
-  z-index: 1030;
+  border-width: 0 0 1px;
 }
 
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
+  border-width: 1px 0 0;
 }
 
 .navbar-brand {
@@ -2401,7 +2426,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-masthead {
-  z-index: 1005;
   min-height: 44px;
   margin-bottom: 18px;
 }
@@ -2442,7 +2466,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-left: -15px;
 }
 
-.navbar-masthead .navbar-fixed-top {
+.navbar-masthead .navbar-static-top {
+  z-index: 1005;
+}
+
+.navbar-masthead .navbar-fixed-top,
+.navbar-masthead .navbar-fixed-bottom {
   z-index: 1029;
 }
 
@@ -2773,7 +2802,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-toolbar {
-  z-index: 1005;
   min-height: 36px;
   margin-bottom: 18px;
 }
@@ -2814,8 +2842,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-left: -15px;
 }
 
-.navbar-toolbar .navbar-fixed-top {
-  z-index: 1029;
+.navbar-toolbar .navbar-static-top {
+  z-index: 1008;
+}
+
+.navbar-toolbar .navbar-fixed-top,
+.navbar-toolbar .navbar-fixed-bottom {
+  z-index: 1028;
 }
 
 .navbar-toolbar .navbar-brand {
@@ -3279,7 +3312,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-bottom: 18px;
   background-color: #f3f3f3;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3332,7 +3365,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > a:active {
   background-color: #f4f4f4;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f6f6f6), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f6f6f6, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f6f6f6 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3365,7 +3398,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-shadow: none;
   background-color: #f3f3f3;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3428,7 +3461,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   cursor: default;
   background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3442,7 +3475,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pager li > a:focus {
   background-color: #f1f1f1;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f8f8f8), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f8f8f8, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3456,7 +3489,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pager li > a:active {
   background-color: #f1f1f1;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f6f6f6), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f6f6f6, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f6f6f6 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f6f6f6 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3474,7 +3507,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-shadow: none;
   background-color: #f3f3f3;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #f1f1f1, 100%);
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: -moz-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   background-repeat: repeat-x;
@@ -3941,6 +3974,10 @@ li.list-group-header {
   border-top-color: #dddddd;
 }
 
+.panel-default > .panel-heading > .dropdown .caret {
+  border-color: #333333 transparent;
+}
+
 .panel-default > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #dddddd;
 }
@@ -3957,6 +3994,10 @@ li.list-group-header {
 
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #4d90fe;
+}
+
+.panel-primary > .panel-heading > .dropdown .caret {
+  border-color: #ffffff transparent;
 }
 
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
@@ -3977,6 +4018,10 @@ li.list-group-header {
   border-top-color: #a3d48e;
 }
 
+.panel-success > .panel-heading > .dropdown .caret {
+  border-color: #468847 transparent;
+}
+
 .panel-success > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #a3d48e;
 }
@@ -3993,6 +4038,10 @@ li.list-group-header {
 
 .panel-warning > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #f0c36d;
+}
+
+.panel-warning > .panel-heading > .dropdown .caret {
+  border-color: #333333 transparent;
 }
 
 .panel-warning > .panel-footer + .panel-collapse .panel-body {
@@ -4013,6 +4062,10 @@ li.list-group-header {
   border-top-color: #d59595;
 }
 
+.panel-danger > .panel-heading > .dropdown .caret {
+  border-color: #b94a48 transparent;
+}
+
 .panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d59595;
 }
@@ -4029,6 +4082,10 @@ li.list-group-header {
 
 .panel-info > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #85c5e5;
+}
+
+.panel-info > .panel-heading > .dropdown .caret {
+  border-color: #3a87ad transparent;
 }
 
 .panel-info > .panel-footer + .panel-collapse .panel-body {
@@ -4106,7 +4163,7 @@ li.list-group-header {
 }
 
 .modal-content {
-  color: #222;
+  color: #222222;
   border: 1px solid #aaaaaa;
   border: 1px solid rgba(0, 0, 0, 0.333);
   border-radius: 0;
