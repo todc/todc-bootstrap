@@ -10,8 +10,7 @@
 
 .navbar-toolbar {
   // position: relative;
-  z-index: @zindex-masthead;
-  min-height: @navbar-toolbar-height; // Ensure a masthead always shows (e.g., without a .navbar-brand in collapsed mode)
+  min-height: @navbar-toolbar-height; // Ensure a toolbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-toolbar-margin-bottom;
   // border: 1px solid transparent;
 
@@ -115,33 +114,36 @@
 // bottom of the page.
 
 // Static top (unfixed, but 100% wide) navbar
-// .navbar-toolbar .navbar-static-top {
-//   border-width: 0 0 1px;
-//   @media (min-width: @grid-float-breakpoint) {
-//     border-radius: 0;
-//   }
-// }
+.navbar-toolbar .navbar-static-top {
+  z-index: @zindex-toolbar;
+  // border-width: 0 0 1px;
+
+  // @media (min-width: @grid-float-breakpoint) {
+  //   border-radius: 0;
+  // }
+}
 
 // Fix the top/bottom navbars when screen real estate supports it
-// .navbar-toolbar .navbar-fixed-top,
-// .navbar-toolbar .navbar-fixed-bottom {
-//   position: fixed;
-//   right: 0;
-//   left: 0;
-//   border-width: 0 0 1px;
+.navbar-toolbar .navbar-fixed-top,
+.navbar-toolbar .navbar-fixed-bottom {
+  // position: fixed;
+  // right: 0;
+  // left: 0;
+  z-index: @zindex-toolbar-fixed;
 
-//   // Undo the rounded corners
-//   @media (min-width: @grid-float-breakpoint) {
-//     border-radius: 0;
-//   }
-// }
-.navbar-toolbar .navbar-fixed-top {
-  z-index: @zindex-masthead-fixed;
-  // top: 0;
+  // // Undo the rounded corners
+  // @media (min-width: @grid-float-breakpoint) {
+  //   border-radius: 0;
+  // }
 }
+// .navbar-toolbar .navbar-fixed-top {
+//   top: 0;
+//   border-width: 0 0 1px;
+// }
 // .navbar-toolbar .navbar-fixed-bottom {
 //   bottom: 0;
 //   margin-bottom: 0; // override .navbar defaults
+//   border-width: 1px 0 0;
 // }
 
 
@@ -153,6 +155,7 @@
   font-size: @navbar-toolbar-brand-font-size;
   font-weight: bold;
   // line-height: @line-height-computed;
+  //
   // &:hover,
   // &:focus {
   //   text-decoration: none;
