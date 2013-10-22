@@ -382,7 +382,7 @@ select:focus:required:invalid:focus {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 0 0 6px 0;
+  padding: 6px 0;
   margin: 1px 0 0;
   list-style: none;
   background-color: #ffffff;
