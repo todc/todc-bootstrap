@@ -1331,7 +1331,7 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .dropdown-menu {
-  padding: 0 0 6px 0;
+  padding: 6px 0;
   margin: 1px 0 0;
   font-size: 13px;
   background-color: #ffffff;
