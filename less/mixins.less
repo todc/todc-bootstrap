@@ -8,12 +8,13 @@
 
 // Alerts - Override Bootstrap's mixin
 // -------------------------
-// TODO: Review this when Bootstrap moves to Less 4 to see if using the same mixin name still causes duplicated CSS
+// TODO: Review this when Bootstrap moves to Less 1.4 to see if using the same mixin name still causes duplicated CSS
 // .alert-variant(@background, @border, @text-color) {
 .alert-variant-todc(@background; @border; @text-color) {
   background-color: @background;
   border-color: @border;
   color: @text-color;
+
   hr {
     border-top-color: darken(@border, 5%);
   }
