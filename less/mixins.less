@@ -2,26 +2,11 @@
 // Snippets of reusable CSS to develop faster and keep code readable
 // -----------------------------------------------------------------
 
+// TODO: When Bootstrap moves to Less >= 1.4 to see if using the same mixin name, with the same signature,
+//       still causes duplicated CSS
 
 // COMPONENT MIXINS
 // --------------------------------------------------
-
-// Alerts - Override Bootstrap's mixin
-// -------------------------
-// TODO: Review this when Bootstrap moves to Less 1.4 to see if using the same mixin name still causes duplicated CSS
-// .alert-variant(@background, @border, @text-color) {
-.alert-variant-todc(@background; @border; @text-color) {
-  background-color: @background;
-  border-color: @border;
-  color: @text-color;
-
-  hr {
-    border-top-color: darken(@border, 5%);
-  }
-  .alert-link {
-    color: darken(@text-color, 15%);
-  }
-}
 
 // Button variants - Overload Bootstrap's mixin
 // -------------------------
