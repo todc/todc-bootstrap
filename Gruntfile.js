@@ -18,7 +18,7 @@ module.exports = function(grunt) {
               ' * This is a Google style theme that is intended to be used on top of Bootstrap.\n' +
               ' *\n' +
               ' * Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
-              ' */\n',
+              ' */\n\n',
     jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
     // Bootstrap variables
