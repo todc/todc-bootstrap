@@ -796,7 +796,8 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-default:active,
-.btn-default.active {
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
   text-shadow: 0 1px 0 #fff;
   background-color: #e8e8e8;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f6f6f6), to(#f1f1f1));
