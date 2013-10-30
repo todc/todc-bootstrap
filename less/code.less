@@ -1,0 +1,20 @@
+//
+// Code (inline and block)
+// --------------------------------------------------
+
+
+// Inline code
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  border-radius: 0;
+}
+
+// Blocks of code
+pre {
+  padding: (@line-height-computed / 2);
+  margin: 0 0( @line-height-computed / 2);
+  font-size: (@font-size-base - 1); // 14px to 13px
+  line-height: @line-height-base;
+  border-radius: 0;
+}

@@ -6,6 +6,11 @@
 .scrollable::-webkit-scrollbar {
   height: 16px;
   width: 10px;
+
+  &:hover {
+    background-color: #f3f3f3;
+    border: 1px solid #dbdbdb;
+  }
 }
 .scrollable::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
@@ -21,16 +26,7 @@
 }
 .scrollable::-webkit-scrollbar-track-piece {
   background-color: transparent;
-  .border-radius(0);
-}
-.scrollable::-webkit-scrollbar:hover {
-  background-color: #f3f3f3;
-  border: 1px solid #dbdbdb;
-}
-.scrollable::-webkit-scrollbar-thumb:vertical,
-.scrollable::-webkit-scrollbar-thumb:horizontal {
-  background-color: #c6c6c6;
-  .border-radius(0);
+  border-radius: 0;
 }
 .scrollable::-webkit-scrollbar-thumb {
   background-color: rgba(0,0,0,0.2);
@@ -38,11 +34,18 @@
   border-width: 0;
   .box-shadow(~"inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07)");
   background-clip: padding-box;
-}
-.scrollable::-webkit-scrollbar-thumb:hover {
-  background-color: #949494;
-}
-.scrollable::-webkit-scrollbar-thumb:active{
-  background-color: rgba(0,0,0,0.5);
-  .box-shadow(inset 1px 1px 3px rgba(0,0,0,0.35));
+
+  &:hover {
+    background-color: #949494;
+  }
+  &:active {
+    background-color: rgba(0,0,0,0.5);
+    .box-shadow(inset 1px 1px 3px rgba(0,0,0,0.35));
+  }
+
+  &:vertical,
+  &:horizontal {
+    background-color: #c6c6c6;
+    border-radius: 0;
+  }
 }

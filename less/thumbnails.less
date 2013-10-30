@@ -3,22 +3,28 @@
 // --------------------------------------------------
 
 
-// The actual thumbnail (can be `a` or `div`)
+// Mixin and adjust the regular image class
 .thumbnail {
-  padding: 0;
-  border: 3px solid #ffffff;
-  .border-radius(0);
-  .box-shadow(0 0 0 1px #aaaaaa);
-  .transition(none);
+  .img-thumbnail();
+  display: block; // Override the inline-block from `.img-thumbnail`
+  margin-bottom: @line-height-computed;
+
+  > img {
+    .img-responsive();
+  }
 }
+
+
 // Add a hover state for linked versions only
-a.thumbnail:hover {
-  border-color: #ffffff;
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: @thumbnail-border;
   .box-shadow(0 0 0 1px #dedede);
 }
 
 // Images and captions
 .thumbnail .caption {
-  padding: 9px 4px;
-  color: #000000;
+  padding: @thumbnail-caption-padding;
+  color: @thumbnail-caption-color;
 }

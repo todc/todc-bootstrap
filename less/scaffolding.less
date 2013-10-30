@@ -4,34 +4,57 @@
 
 
 // Body reset
-// -------------------------
 
 body {
-  font-family: @baseFontFamily;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  color: @textColor;
-  background-color: @bodyBackground;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a {
+  color: @link-color;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+  }
 }
 
 
 // Images
-// -------------------------
 
 // Rounded corners
 .img-rounded {
-  .border-radius(4px);
+  border-radius: @border-radius-large;
 }
 
-// Add polaroid-esque trim
-.img-polaroid {
-  padding: 0;
-  background-color: #fff;
-  border: 3px solid #FFFFFF;
-  .box-shadow(0 0 0 1px #AAAAAA);
-}
-// Add a hover state for linked versions only
-a.img-polaroid:hover {
-  border-color: #FFFFFF;
-  .box-shadow(0 0 0 1px #dedede);
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  padding: @thumbnail-padding;
+  line-height: @line-height-base;
+  background-color: @thumbnail-bg;
+  border: 3px solid @thumbnail-border;
+  border-radius: @thumbnail-border-radius;
+  .box-shadow(0 0 0 1px #aaaaaa);
+  .transition(none);
+
+  // Keep them at most 100% wide
+  .img-responsive(inline-block);
 }

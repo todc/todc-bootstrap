@@ -4,47 +4,28 @@
 
 
 // The dropdown menu (ul)
-// ----------------------
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: @zindexDropdown;
-  display: none; // none by default, but block on "open" of the menu
-  float: left;
-  min-width: 160px;
   padding: 6px 0;
   margin: 1px 0 0; // override default ul
-  list-style: none;
-  background-color: @dropdownBackground;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
-  .border-radius(0);
-  .box-shadow(0 2px 4px rgba(0,0,0,.2));
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
-
-  // Aligns the dropdown menu to right
-  &.pull-right {
-    right: 0;
-    left: auto;
-  }
+  font-size: @font-size-base;
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  border-radius: 0;
+  .box-shadow(0 2px 4px @dropdown-border);
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    .nav-divider(@dropdownDividerTop, @dropdownDividerBottom);
+    .nav-divider(@dropdown-divider-bg);
   }
 
   // Links within the dropdown menu
-  li > a {
+  > li > a {
     padding: 3px 30px;
     position: relative;
 
     // icon within the menu item
-    i {
+    .glyphicon {
       position: absolute;
       left: 7px;
       top: 4px;
@@ -52,50 +33,72 @@
   }
 }
 
-// Hover state
-// -----------
+// Hover/Focus state
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
-  color: @dropdownLinkColorHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: @dropdown-link-hover-color;
+  #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: @dropdown-link-hover-bg);
+  background-color: @gray-lighter;
 }
 
 // Active state
-// ------------
-.dropdown-menu .active > a,
-.dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorActive;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundHover);
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @dropdown-link-active-color;
+    #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: @dropdown-link-hover-bg);
+    background-color: @gray-lighter;
+  }
 }
 
-// Open state for the dropdown
-// ---------------------------
-.open {
-  // IE7's z-index only goes to the nearest positioned ancestor, which would
-  // make the menu appear below buttons that appeared later on the page
-  *z-index: @zindexDropdown;
-
-  & > .dropdown-menu {
-    display: block;
-  }
+// Dropdown section headers
+.dropdown-header {
+  color: @gray-light;
 }
 
 // Sub menus
 // ---------------------------
+
+// Original Bootstrap sub menus
+.dropdown-submenu {
+  position: relative;
+}
 // Default dropdowns
 .dropdown-submenu > .dropdown-menu {
-  .border-radius(0);
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
 
 // Dropups
 .dropup .dropdown-submenu > .dropdown-menu {
-  .border-radius(0);
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: -2px;
+  border-radius: 0;
 }
 
 // Caret to indicate there is a submenu
 .dropdown-submenu > a:after {
-  border-left-color: darken(@dropdownBackground, 50%);
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: darken(@dropdown-bg, 50%);
+  margin-top: 5px;
   margin-right: -20px;
 }
 .dropdown-submenu:hover > a:after {
@@ -104,14 +107,14 @@
 
 // Left aligned submenus
 .dropdown-submenu.pull-left {
-  > .dropdown-menu {
-    .border-radius(0);
-    margin-left: 18px;
-  }
-}
+  // Undo the float
+  // Yes, this is awkward since .pull-left adds a float, but it sticks to our conventions elsewhere.
+  float: none !important;
 
-// Typeahead
-// ---------
-.typeahead {
-  .border-radius(0);
+  // Positioning the submenu
+  > .dropdown-menu {
+    left: -100%;
+    margin-left: 18px;
+    border-radius: 0;
+  }
 }
