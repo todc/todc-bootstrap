@@ -1,3 +1,14 @@
+# Ignore compiled docs
+_gh_pages
+
+# OS or Editor folders
+.DS_Store
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# Folders to ignore
+node_modules
+
 bootstrap/
-dist/
-docs/
