@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- TODC Bootstrap core CSS -->
+    <link href="../../dist/css/todc-bootstrap.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 
@@ -30,15 +33,28 @@
 
     <div class="container">
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+      <h2 class="form-signin-heading text-center">Sign in with your Account</h2>
+
+      <div class="card card-signin">
+        <img class="img-circle profile-img" src="avatar.png" alt="">
+        <form class="form-signin">
+          <input type="text" class="form-control" placeholder="Email" required autofocus>
+          <input type="password" class="form-control" placeholder="Password" required>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+          <div>
+            <a class="pull-right">Need help?</a>
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me"> Stay signed in
+            </label>
+          </div>
+
+        </form>
+      </div>
+
+      <p class="text-center">
+        <a>Create an account</a>
+      </p>
 
     </div> <!-- /container -->
 
