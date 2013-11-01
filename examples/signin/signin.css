@@ -1,7 +1,7 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .form-signin {
@@ -9,11 +9,14 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
+.form-signin-heading {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 15px;
 }
 .form-signin .checkbox {
+  margin-bottom: 10px;
   font-weight: normal;
 }
 .form-signin .form-control {
@@ -29,12 +32,30 @@ body {
   z-index: 2;
 }
 .form-signin input[type="text"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  margin-bottom: 10px;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+}
+.card {
+  background-color: #F7F7F7;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 25px;
+  padding: 20px 25px 30px;
+  width: 304px;
+}
+.card-signin {
+  padding: 40px;
+  width: 354px;
+}
+.card-signin .profile-img {
+  display: block;
+  height: 96px;
+  margin: 0 auto 10px;
+  width: 96px;
 }
