@@ -56,9 +56,29 @@ This is a convenience method for watching just Less files and automatically buil
 Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
 
 
+
 ## Demo ##
 
 http://todc.github.io/todc-bootstrap/index.html
+
+
+
+## Versioning
+
+TODC Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
+
+Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
+* Bug fixes and misc changes bumps the patch
+
+For more information on SemVer, please visit <http://semver.org/>.
+
 
 
 ## License ##
@@ -66,6 +86,7 @@ http://todc.github.io/todc-bootstrap/index.html
 MIT License - http://www.opensource.org/licenses/mit-license.php
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
+
 
 
 ## Acknowledgements ##
