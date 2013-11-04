@@ -3,6 +3,8 @@
 module.exports = function(grunt) {
   "use strict";
 
+  RegExp.quote = require('regexp-quote')
+
   // Project configuration.
   grunt.initConfig({
 
@@ -10,7 +12,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
               ' * TODC Bootstrap v<%= pkg.version %> by todc\n' +
-              ' *\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               ' * Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
               ' * <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
@@ -122,6 +123,17 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+
+    sed: {
+      versionNumber: {
+        pattern: (function () {
+          var old = grunt.option('oldver')
+          return old ? RegExp.quote(old) : old
+        })(),
+        replacement: grunt.option('newver'),
+        recursive: true
+      }
     }
   });
 
@@ -134,6 +146,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-sed');
   grunt.loadNpmTasks('grunt-shell');
 
   // Clone bootstrap and checkout the appropriate tag task.
@@ -151,4 +164,9 @@ module.exports = function(grunt) {
 
   // // Default task.
   grunt.registerTask('default', ['dist']);
+
+  // Version numbering task.
+  // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
+  // This can be overzealous, so its changes should always be manually reviewed!
+  grunt.registerTask('change-version-number', ['sed']);
 };
