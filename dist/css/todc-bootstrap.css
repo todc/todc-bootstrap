@@ -3822,7 +3822,7 @@ li.list-group-item.active:focus {
   font-weight: bold;
   color: #dd4b39;
   background-color: transparent;
-  border-left: 3px solid #dd4b39;
+  border-left: 4px solid #dd4b39;
   border-color: #e5e5e5;
   border-left-color: #dd4b39;
 }
@@ -3879,6 +3879,7 @@ li.list-group-item > a {
   padding: 0 15px;
   margin-right: -15px;
   margin-left: -15px;
+  line-height: 28px;
   color: #222222;
 }
 
