@@ -12,19 +12,18 @@
   > img {
     .img-responsive();
   }
-}
 
+  // Add a hover state for linked versions only
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: @thumbnail-border;
+    .box-shadow(0 0 0 1px #dedede);
+  }
 
-// Add a hover state for linked versions only
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: @thumbnail-border;
-  .box-shadow(0 0 0 1px #dedede);
-}
-
-// Images and captions
-.thumbnail .caption {
-  padding: @thumbnail-caption-padding;
-  color: @thumbnail-caption-color;
+  // Image captions
+  .caption {
+    padding: @thumbnail-caption-padding;
+    color: @thumbnail-caption-color;
+  }
 }
