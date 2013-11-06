@@ -4,6 +4,11 @@
   , "keywords": ["bootstrap", "css", "theme", "google"]
   , "homepage": "http://todc.github.io/todc-bootstrap/"
   , "authors": [{"name":"Tim O'Donnell", "homepage":"https://github.com/todc/"}]
-  , "license": "MIT"
   , "support":{"issues":"https://github.com/todc/todc-bootstrap/issues"}
+  , "license": "MIT"
+  , "extra": {
+      "branch-alias": {
+        "dev-master": "3.0.x-dev"
+      }
+    }
 }
