@@ -1,6 +1,5 @@
 /*!
- * TODC Bootstrap v3.0.1 by todc
- *
+ * TODC Bootstrap v3.0.2 by todc
  * Copyright 2013 Tim O'Donnell
  * Licensed under the MIT License
  * http://www.opensource.org/licenses/mit-license.php
@@ -3119,8 +3118,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-toolbar.navbar-inverse .navbar-brand > .caret {
-  border-top-color: #dd4b39;
-  border-bottom-color: #dd4b39;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .navbar-toolbar.navbar-inverse .navbar-text {
@@ -3815,42 +3814,31 @@ a.thumbnail.active {
 }
 
 a.list-group-item.active,
-li.list-group-item.active,
 a.list-group-item.active:hover,
-li.list-group-item.active:hover,
-a.list-group-item.active:focus,
-li.list-group-item.active:focus {
+a.list-group-item.active:focus {
   font-weight: bold;
   color: #dd4b39;
   background-color: transparent;
-  border-left: 3px solid #dd4b39;
+  border-left: 4px solid #dd4b39;
   border-color: #e5e5e5;
   border-left-color: #dd4b39;
 }
 
 a.list-group-item.active .list-group-item-heading,
-li.list-group-item.active .list-group-item-heading,
 a.list-group-item.active:hover .list-group-item-heading,
-li.list-group-item.active:hover .list-group-item-heading,
-a.list-group-item.active:focus .list-group-item-heading,
-li.list-group-item.active:focus .list-group-item-heading {
+a.list-group-item.active:focus .list-group-item-heading {
   color: inherit;
 }
 
 a.list-group-item.active .list-group-item-text,
-li.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,
-li.list-group-item.active:hover .list-group-item-text,
-a.list-group-item.active:focus .list-group-item-text,
-li.list-group-item.active:focus .list-group-item-text {
+a.list-group-item.active:focus .list-group-item-text {
   font-weight: normal;
   color: #888888;
 }
 
 a.list-group-item.active:hover,
-li.list-group-item.active:hover,
-a.list-group-item.active:focus,
-li.list-group-item.active:focus {
+a.list-group-item.active:focus {
   background-color: #eeeeee;
 }
 
@@ -3871,20 +3859,26 @@ a.list-group-item .list-group-item-heading {
 }
 
 li.list-group-item {
-  padding: 1px 30px 1px 15px;
+  padding: 1px 15px;
   border: 0 none;
+  border-left: 4px solid transparent;
 }
 
 li.list-group-item > a {
   display: block;
-  padding: 0 15px;
+  padding: 4px 15px;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -5px;
   color: #222222;
 }
 
+li.list-group-item.active {
+  font-weight: bold;
+  background-color: transparent;
+  border-left-color: #dd4b39;
+}
+
 li.list-group-item.active > a {
-  padding-left: 12px;
   color: #dd4b39;
 }
 
@@ -3910,6 +3904,8 @@ li.list-group-header {
 .list-group .divider {
   height: 1px;
   margin: 8px 0;
+  margin-right: 15px;
+  margin-left: 15px;
   overflow: hidden;
   background-color: #e5e5e5;
 }

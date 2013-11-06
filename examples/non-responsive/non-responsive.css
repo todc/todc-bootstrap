@@ -6,7 +6,7 @@
 
 /* Account for fixed navbar */
 body {
-  padding-top: 70px;
+  padding-top: 46px;
   padding-bottom: 30px;
 }
 
@@ -37,8 +37,8 @@ body {
   padding-bottom: 15px;
   background-color: #eee;
   border: 1px solid #ddd;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid rgba(86,61,124,.2);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
 }
 
 .container .navbar-header,
@@ -75,9 +75,6 @@ body {
 }
 .navbar-nav > li {
   float: left;
-}
-.navbar-nav > li > a {
-  padding: 15px;
 }
 
 /* Redeclare since we override the float above */
