@@ -11,11 +11,11 @@ exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json",
 port:             9002
 
 # Custom vars
-current_version:      3.0.2
+current_version:      3.0.2-3.0.2
 repo:                 https://github.com/todc/todc-bootstrap
 
-download_source:      https://github.com/todc/todc-bootstrap/archive/v3.0.2.zip
-download_dist:        https://github.com/todc/todc-bootstrap/releases/download/v3.0.2/todc-bootstrap-3.0.2-dist.zip
+download_source:      https://github.com/todc/todc-bootstrap/archive/v3.0.2-3.0.2.zip
+download_dist:        https://github.com/todc/todc-bootstrap/releases/download/v3.0.2/todc-bootstrap-3.0.2-3.0.2-dist.zip
 
 bs_repo:              https://github.com/twbs/bootstrap
 bs_download_source:   https://github.com/twbs/bootstrap/archive/v3.0.2.zip
