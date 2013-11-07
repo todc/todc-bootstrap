@@ -65,10 +65,12 @@ table {
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
-.table-striped > tbody > tr:nth-child(odd) {
-  > td,
-  > th {
-    background-color: @table-bg-accent;
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: @table-bg-accent;
+    }
   }
 }
 
@@ -78,10 +80,12 @@ table {
 //
 // Placed here since it has to come after the potential zebra striping
 
-.table-hover > tbody > tr:hover {
-  > td,
-  > th {
-    background-color: @table-bg-hover;
+.table-hover {
+  > tbody > tr:hover {
+    > td,
+    > th {
+      background-color: @table-bg-hover;
+    }
   }
 }
 
