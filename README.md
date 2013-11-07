@@ -69,7 +69,9 @@ TODC Bootstrap will be maintained under the Semantic Versioning guidelines as mu
 
 Releases will be numbered with the following format:
 
-`<major>.<minor>.<patch>`
+`<major>.<minor>.<patch>-<major>.<minor>.<patch>`
+
+The first set of `<major>.<minor>.<patch>` is the Bootstrap version while the second set is the todc-bootstrap version.
 
 And constructed with the following guidelines:
 
