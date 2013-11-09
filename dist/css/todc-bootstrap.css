@@ -2881,6 +2881,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-decoration: underline;
 }
 
+.navbar-toolbar .navbar-nav > li > .dropdown-menu {
+  margin-top: 1px;
+}
+
 .navbar-toolbar .navbar-nav > .active > a {
   font-weight: bold;
 }
@@ -2950,6 +2954,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-toolbar .navbar-form .form-control {
   height: 30px;
   padding: 5px 8px;
+}
+
+.navbar-toolbar .dropdown-menu {
+  border-top: 1px none;
 }
 
 .navbar-toolbar.navbar-btn,
