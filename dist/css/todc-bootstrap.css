@@ -254,6 +254,7 @@ output {
           box-shadow: none;
   -webkit-transition: none;
           transition: none;
+  -webkit-appearance: none;
 }
 
 .form-control:hover {
