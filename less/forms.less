@@ -53,7 +53,6 @@ output {
 // input[type="color"]
 
 .form-control {
-  -webkit-appearance: none; // remove ios input shadow
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: @padding-base-vertical @padding-base-horizontal;
   font-size: @font-size-base;
@@ -64,6 +63,7 @@ output {
   border-radius: @input-border-radius;
   .box-shadow(none);
   .transition(none);
+  -webkit-appearance: none; // remove ios input shadow
 
   &:hover {
     border: 1px solid #b9b9b9;
@@ -119,14 +119,14 @@ input[type="radio"],
 input[type="checkbox"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
+  position: relative;
   width: 13px;
   height: 13px;
   background: white;
   border: 1px solid #dcdcdc;
   border-radius: 1px;
-  position: relative;
+  -webkit-appearance: none;
+          appearance: none;
 
   // override styles for IE
   border-width: 0\0;
