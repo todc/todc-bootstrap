@@ -57,3 +57,15 @@ We only accept issues that are bug reports or feature requests. Bugs must be iso
 ## License
 
 By contributing your code, you agree to license your contribution under the terms of the MIT license: http://www.opensource.org/licenses/mit-license.php
+
+
+
+## Release checklist
+
+1. Update version numbers using `grunt change-version-number --oldver=A.B.C --newver=X.Y.Z`. Review the changes and stage them manually.
+2. Run `grunt` one last time.
+3. Push to `master` branch.
+4. Merge `master` into `gh-pages`.
+5. Generate `todc-bootstrap-A.B.C-X.Y.Z-dist.zip` file for release using `grunt compress`.
+6. Create release on GitHub with `/dist/` folder and release notes.
+7. Push `gh-pages`.
