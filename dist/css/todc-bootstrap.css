@@ -3823,9 +3823,9 @@ a.thumbnail.active {
 }
 
 .list-group-item .dropdown-toggle {
+  display: none;
   padding-right: 6px;
   padding-left: 6px;
-  visibility: hidden;
 }
 
 a.list-group-item.active,
@@ -3919,7 +3919,7 @@ li.list-group-header {
 .list-group-item:hover > a.dropdown-toggle,
 .list-group-item.open > a.dropdown-toggle,
 .collapse-caret.dropdown-toggle {
-  visibility: visible;
+  display: inline-block;
 }
 
 .list-group-collapse > .dropdown-menu {
