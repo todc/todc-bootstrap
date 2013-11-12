@@ -3940,12 +3940,8 @@ li.list-group-header {
   line-height: 1.4;
 }
 
-.collapse-submenu > .dropdown-menu {
+.collapse-submenu .dropdown-menu {
   margin-left: 10px;
-}
-
-.collapse-submenu > .dropdown-menu > li > a {
-  padding-left: 25px;
 }
 
 .collapse-submenu > .collapse-caret {
