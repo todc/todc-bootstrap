@@ -18,6 +18,13 @@
     margin-bottom: 0;
     .border-bottom-radius(@list-group-border-radius);
   }
+
+  // Hide the dropdown-toggle
+  .dropdown-toggle {
+    padding-right: 6px;
+    padding-left: 6px;
+    visibility: hidden;
+  }
 }
 
 // Linked list items
@@ -107,13 +114,85 @@ li.list-group-item {
   }
 }
 
+// TODO: Put these somewhere
+.list-group-item:hover > a.dropdown-toggle,
+.list-group-item.open > a.dropdown-toggle,
+.collapse-caret.dropdown-toggle {
+  visibility: visible;
+}
+
+// List group collapse
+// -------------------------
+
+.list-group-collapse > .dropdown-menu {
+  position: static;
+  display: block;
+  float: none;
+  padding-top: 0;
+  margin: 0;
+  border: medium none;
+  border-radius: 0 0 0 0;
+  box-shadow: none;
+  > li > a {
+    position: relative;
+    padding: @padding-base-vertical 25px;
+    margin-left: -5px;
+    line-height: @line-height-base;
+  }
+}
+
+// Collapsible submenu
+.collapse-submenu > .dropdown-menu {
+  margin-left: 10px;
+  > li > a {
+    padding-left: 25px;
+  }
+}
+.collapse-submenu > .collapse-caret {
+  margin-left: @padding-base-vertical;
+}
+
+// Caret
+.collapse-caret {
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+  display: inline-block;
+  width: 17px;
+  height: 28px;
+  margin-left: -2px;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-bottom: 0 dotted;
+    border-left: 4px solid transparent;
+  }
+  &:hover {
+    background-color: #eeeeee;
+  }
+
+  &.collapsed:before {
+    top: 9px;
+    left: 6px;
+    border-top: 4px solid transparent;
+    border-right: 0 dotted;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #000000;
+  }
+}
+
 // Dividers (basically an hr) within the list group
 .list-group .divider {
   .nav-divider();
     margin-right: 15px;
     margin-left: 15px;
 }
-
 
 
 
