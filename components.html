@@ -4397,7 +4397,44 @@ body { padding-bottom: 45px; }
         <li class="list-group-item"><a href="#">Applications</a></li>
         <li class="list-group-header">Another list header</li>
         <li class="list-group-item"><a href="#">Profile</a></li>
-        <li class="list-group-item"><a href="#">Settings</a></li>
+        <li class="list-group-item">
+          <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" class="dropdown-toggle"><span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu pull-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+
+          <span class="collapse-caret collapsed dropdown-toggle" data-toggle="collapse" data-target="#settings"></span>
+          <a href="#">
+            Settings
+          </a>
+        </li>
+        <li class="list-group-item">
+          <div id="settings" class="list-group-collapse collapse">
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="collapse-submenu">
+                <span class="collapse-caret collapsed" data-toggle="collapse" data-target="#sub-settings" class="dropdown-toggle"></span>
+                <a href="#">
+                  Separated link
+                </a>
+                <div class="list-group-collapse collapse" id="sub-settings">
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li class="divider"></li>
         <li class="list-group-item"><a href="#">Help</a></li>
       </ul>
@@ -4410,11 +4447,58 @@ body { padding-bottom: 45px; }
   <li class="list-group-item"><a href="#">Applications</a></li>
   <li class="list-group-header">Another list header</li>
   <li class="list-group-item"><a href="#">Profile</a></li>
-  <li class="list-group-item"><a href="#">Settings</a></li>
+  <li class="list-group-item">
+    <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" class="dropdown-toggle"><span class="caret"></span></a>
+    <ul role="menu" class="dropdown-menu pull-right">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+
+    <span class="collapse-caret collapsed dropdown-toggle" data-toggle="collapse" data-target="#settings"></span>
+    <a href="#">
+      Settings
+    </a>
+  </li>
+  <li class="list-group-item">
+    <div id="settings" class="list-group-collapse collapse">
+      <ul role="menu" class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li class="collapse-submenu">
+          <span class="collapse-caret collapsed" data-toggle="collapse" data-target="#sub-settings" class="dropdown-toggle"></span>
+          <a href="#">
+            Separated link
+          </a>
+          <div class="list-group-collapse collapse" id="sub-settings">
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action 1</a></li>
+              <li><a href="#">Action 2</a></li>
+              <li><a href="#">Action 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
   <li class="divider"></li>
   <li class="list-group-item"><a href="#">Help</a></li>
 </ul>
 {% endhighlight %}
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>Plugin dependency</h4>
+      <p>The list group collapsible menu requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+    </div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>Make list group collapsible menus accessible</h4>
+      <p>Be sure to add a <code>role="menu"</code> to every dropdown-menu to help with accessibility.</p>
+    </div>
 
     <h3 id="list-group-custom-content">Custom content</h3>
     <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
