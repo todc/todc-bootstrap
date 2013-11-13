@@ -20,10 +20,10 @@
   }
 
   // Hide the dropdown-toggle
-  .dropdown-toggle {
+  .dropdown-toggle.pull-right {
     display: none;
     padding-right: 6px;
-    padding-left: 6px;
+    padding-left: 5px;
   }
 }
 
@@ -115,9 +115,8 @@ li.list-group-item {
 }
 
 // TODO: Put these somewhere
-.list-group-item:hover > a.dropdown-toggle,
-.list-group-item.open > a.dropdown-toggle,
-.collapse-caret.dropdown-toggle {
+.list-group-item:hover .dropdown-toggle.pull-right,
+.list-group-item.open > .dropdown-toggle.pull-right {
   display: inline-block;
 }
 

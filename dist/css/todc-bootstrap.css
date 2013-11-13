@@ -3822,10 +3822,10 @@ a.thumbnail.active {
   border-bottom-left-radius: 0;
 }
 
-.list-group-item .dropdown-toggle {
+.list-group-item .dropdown-toggle.pull-right {
   display: none;
   padding-right: 6px;
-  padding-left: 6px;
+  padding-left: 5px;
 }
 
 a.list-group-item.active,
@@ -3916,9 +3916,8 @@ li.list-group-header {
   margin-top: 9px;
 }
 
-.list-group-item:hover > a.dropdown-toggle,
-.list-group-item.open > a.dropdown-toggle,
-.collapse-caret.dropdown-toggle {
+.list-group-item:hover .dropdown-toggle.pull-right,
+.list-group-item.open > .dropdown-toggle.pull-right {
   display: inline-block;
 }
 
