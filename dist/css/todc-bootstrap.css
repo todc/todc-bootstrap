@@ -3881,7 +3881,7 @@ li.list-group-item {
 
 li.list-group-item > a {
   display: block;
-  padding: 4px 15px;
+  padding: 4px 17px;
   margin-right: -15px;
   margin-left: -5px;
   color: #222222;
@@ -3935,7 +3935,7 @@ li.list-group-header {
 
 .list-group-collapse > .dropdown-menu > li > a {
   position: relative;
-  padding: 5px 25px;
+  padding: 5px 30px;
   margin-left: -5px;
   line-height: 1.4;
 }
@@ -3945,17 +3945,16 @@ li.list-group-header {
 }
 
 .collapse-submenu > .collapse-caret {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .collapse-caret {
   position: absolute;
-  left: 10px;
   z-index: 1;
   display: inline-block;
   width: 17px;
   height: 28px;
-  margin-left: -2px;
+  margin-left: -5px;
 }
 
 .collapse-caret:before {
