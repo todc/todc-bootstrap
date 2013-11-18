@@ -2163,13 +2163,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-text {
-  float: left;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
   .navbar-text {
+    float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -2539,13 +2539,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-masthead .navbar-text {
-  float: left;
   margin-top: 13px;
   margin-bottom: 13px;
 }
 
 @media (min-width: 768px) {
   .navbar-masthead .navbar-text {
+    float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -2969,13 +2969,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-toolbar .navbar-text {
-  float: left;
   margin-top: 9px;
   margin-bottom: 9px;
 }
 
 @media (min-width: 768px) {
   .navbar-toolbar .navbar-text {
+    float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
