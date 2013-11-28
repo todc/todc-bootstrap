@@ -392,15 +392,8 @@
     border-color: darken(@navbar-masthead-default-bg, 7%);
   }
 
-  // Dropdown menu items and carets
+  // Dropdown menu items
   .navbar-nav {
-    // Caret should match text color on hover
-    > .dropdown > a:hover .caret,
-    > .dropdown > a:focus .caret {
-      border-top-color: @navbar-masthead-default-link-hover-color;
-      border-bottom-color: @navbar-masthead-default-link-hover-color;
-    }
-
     // Remove background color from open dropdown
     > .open > a {
       &,
@@ -408,17 +401,8 @@
       &:focus {
         background-color: @navbar-masthead-default-link-active-bg;
         color: @navbar-masthead-default-link-active-color;
-        .caret {
-          border-top-color: @navbar-masthead-default-link-active-color;
-          border-bottom-color: @navbar-masthead-default-link-active-color;
-        }
       }
     }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-masthead-default-link-color;
-      border-bottom-color: @navbar-masthead-default-link-color;
-    }
-
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display when collapsed
@@ -541,24 +525,6 @@
       &:focus {
         background-color: @navbar-masthead-inverse-link-active-bg;
         color: @navbar-masthead-inverse-link-active-color;
-      }
-    }
-    > .dropdown > a:hover .caret {
-      border-top-color: @navbar-masthead-inverse-link-hover-color;
-      border-bottom-color: @navbar-masthead-inverse-link-hover-color;
-    }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-masthead-inverse-link-color;
-      border-bottom-color: @navbar-masthead-inverse-link-color;
-    }
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        .caret {
-          border-top-color: @navbar-masthead-inverse-link-active-color;
-          border-bottom-color: @navbar-masthead-inverse-link-active-color;
-        }
       }
     }
 
