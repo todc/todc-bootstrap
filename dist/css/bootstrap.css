@@ -692,13 +692,15 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
-blockquote small {
+blockquote small,
+blockquote .small {
   display: block;
   line-height: 1.428571429;
   color: #999999;
 }
 
-blockquote small:before {
+blockquote small:before,
+blockquote .small:before {
   content: '\2014 \00A0';
 }
 
@@ -805,6 +807,24 @@ pre code {
 
 .container:after {
   clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .row {
@@ -1105,9 +1125,6 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -1277,9 +1294,6 @@ pre code {
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -1449,9 +1463,6 @@ pre code {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -6354,6 +6365,7 @@ button.close {
 .carousel-control:focus {
   color: #ffffff;
   text-decoration: none;
+  outline: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
