@@ -32,4 +32,15 @@
     , "grunt-shell": "~0.6.0"
     , "regexp-quote": "~0.0.0"
   }
+  , "jspm": {
+      "main": "js/todc-bootstrap"
+    , "directories": { "lib": "dist" }
+    , "shim": {
+        "js/todc-bootstrap": {
+            "imports": "jquery"
+          , "exports": "$"
+        }
+    }
+    , "buildConfig": { "uglify": true }
+  }
 }
