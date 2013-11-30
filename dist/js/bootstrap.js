@@ -1,9 +1,7 @@
 /*!
- * Bootstrap v3.0.2 by @fat and @mdo
+ * Bootstrap v3.0.2 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @mdo and @fat.
  */
 
 if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }
@@ -351,7 +349,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
     if (pos > (this.$items.length - 1) || pos < 0) return
 
-    if (this.sliding)       return this.$element.one('slid', function () { that.to(pos) })
+    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) })
     if (activeIndex == pos) return this.pause().cycle()
 
     return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))
@@ -403,7 +401,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
     if (this.$indicators.length) {
       this.$indicators.find('.active').removeClass('active')
-      this.$element.one('slid', function () {
+      this.$element.one('slid.bs.carousel', function () {
         var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
         $nextIndicator && $nextIndicator.addClass('active')
       })
@@ -421,7 +419,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
           $next.removeClass([type, direction].join(' ')).addClass('active')
           $active.removeClass(['active', direction].join(' '))
           that.sliding = false
-          setTimeout(function () { that.$element.trigger('slid') }, 0)
+          setTimeout(function () { that.$element.trigger('slid.bs.carousel') }, 0)
         })
         .emulateTransitionEnd(600)
     } else {
@@ -430,7 +428,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
       $active.removeClass('active')
       $next.addClass('active')
       this.sliding = false
-      this.$element.trigger('slid')
+      this.$element.trigger('slid.bs.carousel')
     }
 
     isCycling && this.cycle()
@@ -721,7 +719,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we we use a backdrop because click events don't delegate
+        // if mobile we use a backdrop because click events don't delegate
         $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
       }
 
@@ -803,9 +801,9 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
   $.fn.dropdown = function (option) {
     return this.each(function () {
       var $this = $(this)
-      var data  = $this.data('dropdown')
+      var data  = $this.data('bs.dropdown')
 
-      if (!data) $this.data('dropdown', (data = new Dropdown(this)))
+      if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
       if (typeof option == 'string') data[option].call($this)
     })
   }
@@ -1700,7 +1698,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         .addClass('active')
     }
 
-    active.trigger('activate')
+    active.trigger('activate.bs.scrollspy')
   }
 
 

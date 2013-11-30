@@ -181,6 +181,7 @@
   // padding: @padding-base-vertical 10px;
   .navbar-vertical-align(@input-height-base, @navbar-toolbar-height);
   // background-color: transparent;
+  // background-image: none; // Fix for at least Firefox on Android, per #11468
   // border: 1px solid transparent;
   // border-radius: @border-radius-base;
 
@@ -353,10 +354,10 @@
 // Add a class to make any element properly align itself vertically within the navbars.
 
 .navbar-toolbar .navbar-text {
-  float: left;
   .navbar-vertical-align(@line-height-computed, @navbar-toolbar-height);
 
   @media (min-width: @grid-float-breakpoint) {
+    float: left;
     margin-left: @navbar-toolbar-padding-horizontal;
     margin-right: @navbar-toolbar-padding-horizontal;
   }
@@ -437,15 +438,8 @@
     border-color: darken(@navbar-toolbar-default-bg, 7%);
   }
 
-  // Dropdown menu items and carets
+  // Dropdown menu items
   .navbar-nav {
-    // Caret should match text color on hover
-    > .dropdown > a:hover .caret,
-    > .dropdown > a:focus .caret {
-      border-top-color: @navbar-toolbar-default-link-hover-color;
-      border-bottom-color: @navbar-toolbar-default-link-hover-color;
-    }
-
     // Remove background color from open dropdown
     > .open > a {
       &,
@@ -453,17 +447,8 @@
       &:focus {
         background-color: @navbar-toolbar-default-link-active-bg;
         color: @navbar-toolbar-default-link-active-color;
-        .caret {
-          border-top-color: @navbar-toolbar-default-link-active-color;
-          border-bottom-color: @navbar-toolbar-default-link-active-color;
-        }
       }
     }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-toolbar-default-link-color;
-      border-bottom-color: @navbar-toolbar-default-link-color;
-    }
-
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display when collapsed
@@ -594,30 +579,15 @@
         color: @navbar-toolbar-inverse-link-active-color;
       }
     }
-    > .dropdown > a:hover .caret {
-      border-top-color: @navbar-toolbar-inverse-link-hover-color;
-      border-bottom-color: @navbar-toolbar-inverse-link-hover-color;
-    }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-toolbar-inverse-link-color;
-      border-bottom-color: @navbar-toolbar-inverse-link-color;
-    }
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        .caret {
-          border-top-color: @navbar-toolbar-inverse-link-active-color;
-          border-bottom-color: @navbar-toolbar-inverse-link-active-color;
-        }
-      }
-    }
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display
       .open .dropdown-menu {
         > .dropdown-header {
           border-color: @navbar-toolbar-inverse-border;
+        }
+        .divider {
+          background-color: @navbar-toolbar-inverse-border;
         }
         > li > a {
           color: @navbar-toolbar-inverse-link-color;

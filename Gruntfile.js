@@ -11,14 +11,10 @@ module.exports = function(grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-              ' * TODC Bootstrap v<%= pkg.version %> by todc\n' +
+              ' * TODC Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               ' * Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
               ' * <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
-              ' *\n' +
-              ' * This is a Google style theme that is intended to be used on top of Bootstrap.\n' +
-              ' *\n' +
-              ' * Constructed by Tim O\'Donnell (http://github.com/todc)\n' +
               ' */\n\n',
     jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
@@ -87,8 +83,8 @@ module.exports = function(grunt) {
       options: {
         reset: true,
         relaxerror: [
-            "Bad value X-UA-Compatible for attribute http-equiv on element meta.",
-            "Element img is missing required attribute src."
+          "Bad value X-UA-Compatible for attribute http-equiv on element meta.",
+          "Element img is missing required attribute src."
         ]
       },
       files: {
