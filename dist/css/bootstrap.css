@@ -914,7 +914,8 @@ pre code {
 .col-xs-8,
 .col-xs-9,
 .col-xs-10,
-.col-xs-11 {
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 
@@ -1133,7 +1134,8 @@ pre code {
   .col-sm-8,
   .col-sm-9,
   .col-sm-10,
-  .col-sm-11 {
+  .col-sm-11,
+  .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -1302,7 +1304,8 @@ pre code {
   .col-md-8,
   .col-md-9,
   .col-md-10,
-  .col-md-11 {
+  .col-md-11,
+  .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -1471,7 +1474,8 @@ pre code {
   .col-lg-8,
   .col-lg-9,
   .col-lg-10,
-  .col-lg-11 {
+  .col-lg-11,
+  .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -3860,7 +3864,7 @@ input[type="button"].btn-block {
   border-collapse: separate;
 }
 
-.input-group.col {
+.input-group[class*="col-"] {
   float: none;
   padding-right: 0;
   padding-left: 0;
@@ -5899,8 +5903,6 @@ button.close {
   z-index: 1050;
   width: auto;
   margin: 10px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .modal-content {
@@ -5998,8 +6000,7 @@ button.close {
 @media screen and (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
