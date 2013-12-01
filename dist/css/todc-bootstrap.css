@@ -766,6 +766,11 @@ fieldset[disabled] .btn-default.active {
           box-shadow: none;
 }
 
+.btn-default .badge {
+  color: #dcdcdc;
+  background-color: #fff;
+}
+
 .btn-default:hover {
   text-shadow: none;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f8f8f8), to(#f1f1f1));
@@ -905,6 +910,11 @@ fieldset[disabled] .btn-primary.active {
           box-shadow: none;
 }
 
+.btn-primary .badge {
+  color: #3079ed;
+  background-color: #fff;
+}
+
 .btn-danger {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -991,6 +1001,11 @@ fieldset[disabled] .btn-danger.active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.btn-danger .badge {
+  color: #c6322a;
+  background-color: #fff;
 }
 
 .btn-warning {
@@ -1081,6 +1096,11 @@ fieldset[disabled] .btn-warning.active {
           box-shadow: none;
 }
 
+.btn-warning .badge {
+  color: #faa328;
+  background-color: #fff;
+}
+
 .btn-success {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -1169,6 +1189,11 @@ fieldset[disabled] .btn-success.active {
           box-shadow: none;
 }
 
+.btn-success .badge {
+  color: #359947;
+  background-color: #fff;
+}
+
 .btn-info {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -1255,6 +1280,11 @@ fieldset[disabled] .btn-info.active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.btn-info .badge {
+  color: #46b8da;
+  background-color: #fff;
 }
 
 .btn-link {
