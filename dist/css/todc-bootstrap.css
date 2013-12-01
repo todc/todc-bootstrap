@@ -822,6 +822,10 @@ fieldset[disabled] .btn-default:active {
   background-color: #f3f3f3;
 }
 
+.btn-default .badge {
+  color: #333333;
+}
+
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
