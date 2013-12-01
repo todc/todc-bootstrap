@@ -649,6 +649,11 @@ textarea.input-lg {
   padding-top: 6px;
 }
 
+.form-horizontal .radio,
+.form-horizontal .checkbox {
+  min-height: 24px;
+}
+
 .form-horizontal .form-control-static {
   padding-top: 6px;
 }
