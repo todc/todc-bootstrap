@@ -151,7 +151,7 @@
 
 .navbar-brand {
   float: left;
-  padding: (@navbar-padding-vertical + 1) @navbar-padding-horizontal;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
 
@@ -207,11 +207,11 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+  margin: floor(@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top:    (@navbar-padding-vertical + 1);
-    padding-bottom: (@navbar-padding-vertical + 1);
+    padding-top:    @navbar-padding-vertical;
+    padding-bottom: @navbar-padding-vertical;
     line-height: @line-height-computed;
   }
 
@@ -247,8 +247,10 @@
     > li {
       float: left;
       > a {
-        padding-top: ((@navbar-height - @line-height-computed) / 2);
-        padding-bottom: ((@navbar-height - @line-height-computed) / 2);
+        padding-top:    @navbar-padding-vertical;
+        padding-bottom: @navbar-padding-vertical;
+        // padding-top: ((@navbar-height - @line-height-computed) / 2);
+        // padding-bottom: ((@navbar-height - @line-height-computed) / 2);
       }
     }
   }
