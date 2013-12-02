@@ -77,16 +77,14 @@
     //   overflow-y: auto;
     // }
 
-    // Account for first and last children spacing
-    .navbar-nav.navbar-left:first-child {
-      margin-left: -@navbar-toolbar-padding-horizontal;
+    // Undo the collapse side padding for navbars with containers to ensure
+    // alignment of right-aligned contents.
+    .navbar-fixed-top &,
+    .navbar-static-top &,
+    .navbar-fixed-bottom & {
+      padding-left: 0;
+      padding-right: 0;
     }
-    .navbar-nav.navbar-right:last-child {
-      margin-right: -@navbar-toolbar-padding-horizontal;
-    }
-    // .navbar-text:last-child {
-    //   margin-right: 0;
-    // }
   }
 }
 
@@ -288,8 +286,11 @@
         padding-bottom: @navbar-toolbar-padding-vertical;
       }
     }
-  }
 
+    &.navbar-right:last-child {
+      margin-right: -@navbar-toolbar-padding-horizontal;
+    }
+  }
 }
 
 
@@ -322,6 +323,11 @@
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+      margin-right: -@navbar-toolbar-padding-horizontal;
+    }
   }
 
   .form-control {
@@ -369,6 +375,11 @@
     float: left;
     margin-left: @navbar-toolbar-padding-horizontal;
     margin-right: @navbar-toolbar-padding-horizontal;
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+      margin-right: 0;
+    }
   }
 }
 

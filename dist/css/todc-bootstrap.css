@@ -1893,14 +1893,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-collapse.in {
     overflow-y: visible;
   }
-  .navbar-collapse .navbar-nav.navbar-left:first-child {
-    margin-left: -15px;
-  }
-  .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
-  }
-  .navbar-collapse .navbar-text:last-child {
-    margin-right: 0;
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -2048,6 +2045,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
 }
 
 .navbar-form {
@@ -2106,6 +2106,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .navbar-form.navbar-right:last-child {
+    margin-right: -15px;
+  }
 }
 
 .navbar-form .form-control {
@@ -2159,6 +2162,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .navbar-text.navbar-right:last-child {
+    margin-right: 0;
   }
 }
 
@@ -2403,11 +2409,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-masthead .navbar-collapse .navbar-nav.navbar-left:first-child {
-    margin-left: -15px;
-  }
-  .navbar-masthead .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
+  .navbar-fixed-top .navbar-masthead .navbar-collapse,
+  .navbar-static-top .navbar-masthead .navbar-collapse,
+  .navbar-fixed-bottom .navbar-masthead .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -2456,6 +2462,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-top: 8px;
     padding-bottom: 6px;
   }
+  .navbar-masthead .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
 }
 
 .navbar-masthead .navbar-form {
@@ -2478,6 +2487,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-bottom: 0;
     margin-right: 0;
     margin-left: 0;
+  }
+  .navbar-masthead .navbar-form.navbar-right:last-child {
+    margin-right: -15px;
   }
 }
 
@@ -2517,6 +2529,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .navbar-masthead .navbar-text.navbar-right:last-child {
+    margin-right: 0;
   }
 }
 
@@ -2761,11 +2776,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-toolbar .navbar-collapse .navbar-nav.navbar-left:first-child {
-    margin-left: -15px;
-  }
-  .navbar-toolbar .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
+  .navbar-fixed-top .navbar-toolbar .navbar-collapse,
+  .navbar-static-top .navbar-toolbar .navbar-collapse,
+  .navbar-fixed-bottom .navbar-toolbar .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -2864,6 +2879,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-top: 9px;
     padding-bottom: 9px;
   }
+  .navbar-toolbar .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
 }
 
 .navbar-toolbar .navbar-form {
@@ -2886,6 +2904,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-bottom: 0;
     margin-right: 0;
     margin-left: 0;
+  }
+  .navbar-toolbar .navbar-form.navbar-right:last-child {
+    margin-right: -15px;
   }
 }
 
@@ -2929,6 +2950,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .navbar-toolbar .navbar-text.navbar-right:last-child {
+    margin-right: 0;
   }
 }
 
