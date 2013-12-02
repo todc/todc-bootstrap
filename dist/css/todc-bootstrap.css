@@ -3506,7 +3506,8 @@ li.list-group-item.active a > .badge {
   border-radius: 0;
 }
 
-.thumbnail > img {
+.thumbnail > img,
+.thumbnail a > img {
   display: block;
   height: auto;
   max-width: 100%;
