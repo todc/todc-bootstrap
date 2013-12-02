@@ -2137,6 +2137,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-bottom: 1px;
 }
 
+.navbar-btn.btn-sm,
+.navbar .btn.btn-sm {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.navbar-btn.btn-xs,
+.navbar .btn.btn-xs {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .navbar-text {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -2479,6 +2491,20 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 5px 8px;
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+.navbar-masthead.navbar-btn.btn-sm,
+.navbar-masthead.navbar .btn.btn-sm {
+  padding: 3px 8px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.navbar-masthead.navbar-btn.btn-xs,
+.navbar-masthead.navbar .btn.btn-xs {
+  padding: 2px 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .navbar-masthead .navbar-text {
@@ -2877,6 +2903,20 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 5px 8px;
   margin-top: 3px;
   margin-bottom: 3px;
+}
+
+.navbar-toolbar.navbar-btn.btn-sm,
+.navbar-toolbar.navbar .btn.btn-sm {
+  padding: 3px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar-toolbar.navbar-btn.btn-xs,
+.navbar-toolbar.navbar .btn.btn-xs {
+  padding: 2px 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .navbar-toolbar .navbar-text {

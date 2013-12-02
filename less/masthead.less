@@ -306,6 +306,15 @@
   &.navbar .btn {
     padding: @padding-base-vertical @padding-base-horizontal;
     .navbar-vertical-align(@input-height-base, @navbar-masthead-height);
+
+    &.btn-sm {
+      padding: @padding-small-vertical @padding-small-horizontal;
+      .navbar-vertical-align(@input-height-small, @navbar-masthead-height);
+    }
+    &.btn-xs {
+      padding: 2px 6px;
+      .navbar-vertical-align(20, @navbar-masthead-height);
+    }
   }
 }
 

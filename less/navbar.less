@@ -347,6 +347,13 @@
 .navbar .btn {
   padding: @padding-small-vertical @padding-small-horizontal;
   .navbar-vertical-align(@input-height-small);
+
+  &.btn-sm {
+    .navbar-vertical-align(@input-height-small);
+  }
+  &.btn-xs {
+    .navbar-vertical-align(22);
+  }
 }
 
 
