@@ -1348,8 +1348,8 @@ fieldset[disabled] .btn-link:focus {
 .btn-xs {
   padding: 2px 6px;
   font-size: 11px;
-  line-height: 14px;
-  border-radius: 2px;
+  line-height: 1.25;
+  border-radius: 1px;
 }
 
 .dropdown-menu {
@@ -1475,8 +1475,8 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-xs > .btn {
   padding: 2px 6px;
   font-size: 11px;
-  line-height: 14px;
-  border-radius: 2px;
+  line-height: 1.25;
+  border-radius: 1px;
 }
 
 .btn-group-sm > .btn {
