@@ -2148,8 +2148,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-btn.btn-xs,
 .navbar .btn.btn-xs {
-  margin-top: 3px;
-  margin-bottom: 3px;
+  padding: 2px 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .navbar-text {
