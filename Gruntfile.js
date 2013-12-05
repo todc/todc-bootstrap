@@ -3,6 +3,9 @@
 module.exports = function(grunt) {
   "use strict";
 
+  // Force use of Unix newlines
+  grunt.util.linefeed = '\n';
+
   RegExp.quote = require('regexp-quote')
 
   // Project configuration.
@@ -21,7 +24,7 @@ module.exports = function(grunt) {
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
     bootstrapGit: 'https://github.com/twbs/bootstrap.git',
-    bootstrapVersion: 'v3.0.2',
+    bootstrapVersion: 'v3.0.3',
 
     // Task configuration.
     clean: {

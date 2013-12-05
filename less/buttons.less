@@ -6,7 +6,6 @@
 // Base styles
 // --------------------------------------------------
 
-// Core styles
 .btn {
   font-weight: bold;
   cursor: default;
@@ -69,6 +68,10 @@
       background-color: @btn-default-bg;
       text-shadow: none;
     }
+  }
+
+  .badge {
+    color: @btn-default-color;
   }
 }
 
@@ -151,5 +154,5 @@
   .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-base);
 }
 .btn-xs {
-  .button-size(2px; 6px; @font-size-mini; 14px; @border-radius-base);
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-mini; @line-height-xs; @border-radius-small);
 }

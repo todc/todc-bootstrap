@@ -85,8 +85,12 @@
 @padding-small-vertical:         3px;
 @padding-small-horizontal:       8px;
 
+@padding-xs-vertical:            2px;
+@padding-xs-horizontal:          6px;
+
 @line-height-large:              1.3;
 @line-height-small:              1.5;
+@line-height-xs:                 1.25;
 
 @border-radius-base:             2px;
 @border-radius-large:            4px;
@@ -250,8 +254,13 @@
 @grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
 @grid-gutter-width:         30px;
-// Point at which the navbar stops collapsing
+
+// Navbar collapse
+
+// Point at which the navbar becomes uncollapsed
 @grid-float-breakpoint:     @screen-sm-min;
+// Point at which the navbar begins collapsing
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
 
 // Navbar
@@ -262,7 +271,7 @@
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
-@navbar-padding-vertical:          (floor((@navbar-height - @line-height-computed) / 2) - 1);
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             @gray-light;
 @navbar-default-bg:                #2d2d2d;
@@ -324,7 +333,7 @@
 @navbar-masthead-margin-bottom:             @line-height-computed;
 @navbar-masthead-border-radius:             @border-radius-base;
 @navbar-masthead-padding-horizontal:        (floor(@grid-gutter-width / 2));
-@navbar-masthead-padding-vertical:          (floor((@navbar-masthead-height - @line-height-computed) / 2) - 1);
+@navbar-masthead-padding-vertical:          ((@navbar-masthead-height - @line-height-computed) / 2);
 
 @navbar-masthead-default-color:             #777;
 @navbar-masthead-default-bg:                #f1f1f1;
@@ -386,7 +395,7 @@
 @navbar-toolbar-margin-bottom:             @line-height-computed;
 @navbar-toolbar-border-radius:             @border-radius-base;
 @navbar-toolbar-padding-horizontal:        (floor(@grid-gutter-width / 2));
-@navbar-toolbar-padding-vertical:          (floor((@navbar-toolbar-height - @line-height-computed) / 2) - 1);
+@navbar-toolbar-padding-vertical:          ((@navbar-toolbar-height - @line-height-computed) / 2);
 
 @navbar-toolbar-default-color:             #777;
 @navbar-toolbar-default-bg:                #fff;
