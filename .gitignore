@@ -42,6 +42,5 @@ validation-report.json
 # Folders to ignore
 node_modules
 bower_components
-/docs-assets/js/customize.js
 
 bootstrap/
