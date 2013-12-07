@@ -765,7 +765,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-default .badge {
   color: #dcdcdc;
-  background-color: #fff;
+  background-color: #333333;
 }
 
 .btn-default:hover {
@@ -816,7 +816,8 @@ fieldset[disabled] .btn-default:active {
 }
 
 .btn-default .badge {
-  color: #333333;
+  color: #f3f3f3;
+  text-shadow: none;
 }
 
 .btn-primary {
@@ -901,7 +902,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-primary .badge {
   color: #3079ed;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-danger {
@@ -986,7 +987,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-danger .badge {
   color: #c6322a;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-warning {
@@ -1071,7 +1072,7 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-warning .badge {
   color: #faa328;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-success {
@@ -1156,7 +1157,7 @@ fieldset[disabled] .btn-success.active {
 
 .btn-success .badge {
   color: #359947;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-info {
@@ -1241,7 +1242,7 @@ fieldset[disabled] .btn-info.active {
 
 .btn-info .badge {
   color: #46b8da;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-link {
