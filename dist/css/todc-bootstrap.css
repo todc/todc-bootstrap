@@ -72,6 +72,10 @@ code {
   border-radius: 0;
 }
 
+kbd {
+  border-radius: 1px;
+}
+
 pre {
   padding: 9px;
   margin: 0 0 9px;
