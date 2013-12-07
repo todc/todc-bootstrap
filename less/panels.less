@@ -5,10 +5,17 @@
 
 // Base class
 .panel {
+  word-wrap: break-word;
   background-color: @panel-bg;
   border: 1px solid transparent;
+  border-bottom-width: 2px;
   border-radius: @panel-border-radius;
   .box-shadow(none);
+}
+
+// Panel contents
+.panel-body {
+  padding: 15px 20px;
 }
 
 
@@ -27,6 +34,7 @@
 
 // Optional heading
 .panel-heading {
+  padding: 15px 20px;
   border-bottom: 1px solid transparent;
   .border-top-radius(@panel-border-radius);
 }
@@ -38,6 +46,7 @@
 
 // Optional footer (stays gray in every modifier class)
 .panel-footer {
+  padding: 15px 20px;
   background-color: @panel-footer-bg;
   border-top: 1px solid @panel-inner-border;
   .border-bottom-radius(@panel-border-radius);
@@ -69,7 +78,7 @@
 
 // Contextual variations
 .panel-default {
-  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-heading-bg);
 }
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
@@ -85,4 +94,22 @@
 }
 .panel-info {
   .panel-variant(@panel-info-border; @panel-info-text; @panel-info-heading-bg; @panel-info-border);
+}
+.panel-card {
+  // .panel-variant(@panel-card-border; @panel-card-text; @panel-card-heading-bg; @panel-card-inner-border);
+
+  // Panel contents
+  // > .panel-body {
+  //   padding: 10px 20px;
+  //   // margin-bottom: 20px;
+  // }
+  //
+  // > .panel-heading {
+  //   padding: 20px;
+  // }
+  //
+  // > .panel-footer {
+  //   padding: 20px;
+  //   border-top: 1px solid @panel-card-border;
+  // }
 }
