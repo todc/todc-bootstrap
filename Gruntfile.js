@@ -1,7 +1,7 @@
 /* jshint node: true */
 
 module.exports = function (grunt) {
-  "use strict";
+  'use strict';
 
   // Force use of Unix newlines
   grunt.util.linefeed = '\n';
@@ -34,6 +34,9 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: 'js/.jshintrc'
+      },
+      gruntfile: {
+        src: 'Gruntfile.js'
       },
       assets: {
         src: 'docs-assets/js/application.js'
@@ -73,7 +76,7 @@ module.exports = function (grunt) {
     copy: {
       images: {
         expand: true,
-        src: ["img/*"],
+        src: ['img/*'],
         dest: 'dist/'
       },
       bootstrap: {
@@ -107,12 +110,12 @@ module.exports = function (grunt) {
       options: {
         reset: true,
         relaxerror: [
-          "Bad value X-UA-Compatible for attribute http-equiv on element meta.",
-          "Element img is missing required attribute src."
+          'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
+          'Element img is missing required attribute src.'
         ]
       },
       files: {
-        src: ["_gh_pages/**/*.html"]
+        src: ['_gh_pages/**/*.html']
       }
     },
 
