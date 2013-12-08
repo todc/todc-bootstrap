@@ -31,6 +31,27 @@ module.exports = function (grunt) {
       dist: ['dist']
     },
 
+    jshint: {
+      options: {
+        jshintrc: 'js/.jshintrc'
+      },
+      assets: {
+        src: 'docs-assets/js/application.js'
+      }
+    },
+
+    jscs: {
+      options: {
+        config: 'js/.jscs.json',
+      },
+      gruntfile: {
+        src: ['Gruntfile.js']
+      },
+      src: {
+        src: ['docs-assets/js/application.js']
+      }
+    },
+
     recess: {
       options: {
         compile: true,
@@ -141,9 +162,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-jscs-checker');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-sed');
   grunt.loadNpmTasks('grunt-shell');
@@ -154,6 +177,10 @@ module.exports = function (grunt) {
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
+  // Test task.
+  var testSubtasks = ['dist-css', 'jshint', 'jscs', 'validate-html'];
+  grunt.registerTask('test', testSubtasks);
+
   // CSS distribution task.
   grunt.registerTask('dist-css', ['recess']);
 
@@ -162,7 +189,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   // // Default task.
-  grunt.registerTask('default', ['dist']);
+  grunt.registerTask('default', ['test', 'dist']);
 
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
