@@ -152,21 +152,25 @@ table {
   background-color: #ffffcc;
 }
 
-.table > thead > tr > .warning,
-.table > tbody > tr > .warning,
-.table > tfoot > tr > .warning,
-.table > thead > .warning > td,
-.table > tbody > .warning > td,
-.table > tfoot > .warning > td,
-.table > thead > .warning > th,
-.table > tbody > .warning > th,
-.table > tfoot > .warning > th {
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
   background-color: #f9edbe;
 }
 
-.table-hover > tbody > tr > .warning:hover,
-.table-hover > tbody > .warning:hover > td,
-.table-hover > tbody > .warning:hover > th {
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr.warning:hover > th {
   background-color: #f7e7a7;
 }
 
@@ -590,6 +594,7 @@ textarea.input-lg {
   }
   .form-inline .form-control {
     display: inline-block;
+    vertical-align: middle;
   }
   .form-inline select.form-control {
     width: auto;
@@ -600,6 +605,7 @@ textarea.input-lg {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    vertical-align: middle;
   }
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
@@ -1815,14 +1821,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .container > .navbar-header,
-.container > .navbar-collapse {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 
 @media (min-width: 768px) {
   .container > .navbar-header,
-  .container > .navbar-collapse {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -1878,7 +1888,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -1983,6 +1994,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-form .form-control {
     display: inline-block;
+    vertical-align: middle;
   }
   .navbar-form select.form-control {
     width: auto;
@@ -1993,6 +2005,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    vertical-align: middle;
   }
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
@@ -2332,7 +2345,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-masthead > .container > .navbar-header,
-.navbar-masthead > .container > .navbar-collapse {
+.navbar-masthead > .container-fluid > .navbar-header,
+.navbar-masthead > .container > .navbar-collapse,
+.navbar-masthead > .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -2352,7 +2367,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-masthead .navbar-brand {
+  .navbar > .container .navbar-masthead .navbar-brand,
+  .navbar > .container-fluid .navbar-masthead .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -2699,7 +2715,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-toolbar > .container > .navbar-header,
-.navbar-toolbar > .container > .navbar-collapse {
+.navbar-toolbar > .container-fluid > .navbar-header,
+.navbar-toolbar > .container > .navbar-collapse,
+.navbar-toolbar > .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -2720,7 +2738,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-toolbar .navbar-brand {
+  .navbar > .container .navbar-toolbar .navbar-brand,
+  .navbar > .container-fluid .navbar-toolbar .navbar-brand {
     margin-left: -15px;
   }
 }
