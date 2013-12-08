@@ -93,15 +93,18 @@
 //
 // When a container is present, change the behavior of the header and collapse.
 
-.navbar-masthead > .container > .navbar-header,
-.navbar-masthead > .container > .navbar-collapse {
-  margin-right: -@navbar-masthead-padding-horizontal;
-  margin-left:  -@navbar-masthead-padding-horizontal;
+.navbar-masthead > .container,
+.navbar-masthead > .container-fluid {
+  > .navbar-header,
+  > .navbar-collapse {
+    margin-right: -@navbar-masthead-padding-horizontal;
+    margin-left:  -@navbar-masthead-padding-horizontal;
 
-  // @media (min-width: @grid-float-breakpoint) {
-  //   margin-right: 0;
-  //   margin-left:  0;
-  // }
+    // @media (min-width: @grid-float-breakpoint) {
+    //   margin-right: 0;
+    //   margin-left:  0;
+    // }
+  }
 }
 
 
@@ -159,7 +162,8 @@
   // }
 
   @media (min-width: @grid-float-breakpoint) {
-    .navbar > .container & {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
       margin-left: -@navbar-masthead-padding-horizontal;
     }
   }
