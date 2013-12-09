@@ -3732,26 +3732,25 @@ a.list-group-item .list-group-item-heading {
 }
 
 li.list-group-item {
-  padding: 1px 15px;
+  padding: 0;
   border: 0 none;
-  border-left: 4px solid transparent;
 }
 
 li.list-group-item > a {
   display: block;
-  padding: 4px 17px;
-  margin-right: -15px;
-  margin-left: -5px;
+  padding: 5px 17px;
+  margin: 0 0 0 14px;
   color: #222222;
 }
 
 li.list-group-item.active {
   font-weight: bold;
   background-color: transparent;
-  border-left-color: #dd4b39;
+  border-left: 4px solid #DD4B39;
 }
 
 li.list-group-item.active > a {
+  margin-left: 10px;
   color: #dd4b39;
 }
 
@@ -3784,6 +3783,7 @@ li.list-group-header {
   display: block;
   float: none;
   padding-top: 0;
+  padding-bottom: 0;
   margin: 0;
   border: medium none;
   border-radius: 0 0 0 0;
@@ -3793,16 +3793,21 @@ li.list-group-header {
 .list-group-collapse > .dropdown-menu > li > a {
   position: relative;
   padding: 5px 30px;
-  margin-left: -5px;
+  margin: 0 0 0 14px;
   line-height: 1.4;
 }
 
+.list-group-collapse > .dropdown-menu li li > a {
+  padding-left: 44px;
+}
+
 .collapse-submenu .dropdown-menu {
-  margin-left: 10px;
+  padding-bottom: 0;
+  margin-left: 0;
 }
 
 .collapse-submenu > .collapse-caret {
-  margin-left: 8px;
+  margin-left: 28px;
 }
 
 .collapse-caret {
@@ -3811,7 +3816,7 @@ li.list-group-header {
   display: inline-block;
   width: 17px;
   height: 28px;
-  margin-left: -5px;
+  margin-left: 14px;
 }
 
 .collapse-caret:before {
