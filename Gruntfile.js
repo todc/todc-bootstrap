@@ -55,21 +55,53 @@ module.exports = function (grunt) {
       }
     },
 
-    recess: {
+    csslint: {
       options: {
-        compile: true,
-        banner: '<%= banner %>'
+        csslintrc: '.csslintrc'
       },
-      todc_bootstrap: {
-        src: ['less/todc-bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.css'
+      src: ['dist/css/todc-bootstrap.css']
+    },
+
+    less: {
+      compile: {
+        files: {
+          'dist/css/<%= pkg.name %>.css': 'less/todc-bootstrap.less'
+        }
       },
-      min: {
+      minify: {
         options: {
-          compress: true
+          cleancss: true,
+          report: 'min'
         },
-        src: ['less/todc-bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        files: {
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+        }
+      }
+    },
+
+    usebanner: {
+      dist: {
+        options: {
+          position: 'top',
+          banner: '<%= banner %>'
+        },
+        files: {
+          src: [
+            'dist/css/<%= pkg.name %>.css',
+            'dist/css/<%= pkg.name %>.min.css',
+          ]
+        }
+      }
+    },
+
+    csscomb: {
+      sort: {
+        options: {
+          sortOrder: '.csscomb.json'
+        },
+        files: {
+          'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css'],
+        }
       }
     },
 
@@ -120,9 +152,9 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      recess: {
+      less: {
         files: 'less/*.less',
-        tasks: ['recess']
+        tasks: ['less']
       }
     },
 
@@ -162,15 +194,18 @@ module.exports = function (grunt) {
 
 
   // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-jscs-checker');
-  grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-sed');
   grunt.loadNpmTasks('grunt-shell');
 
@@ -185,7 +220,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', testSubtasks);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['recess']);
+  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
