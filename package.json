@@ -36,6 +36,7 @@
     , "grunt-sed": "~0.1.1"
     , "grunt-shell": "~0.6.0"
     , "regexp-quote": "~0.0.0"
+    , "load-grunt-tasks": "~0.2.0"
   }
   , "jspm": {
       "main": "js/todc-bootstrap"
