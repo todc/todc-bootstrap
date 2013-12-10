@@ -64,6 +64,9 @@ module.exports = function (grunt) {
 
     less: {
       compile: {
+        options: {
+          strictMath: true
+        },
         files: {
           'dist/css/<%= pkg.name %>.css': 'less/todc-bootstrap.less'
         }
