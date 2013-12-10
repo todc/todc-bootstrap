@@ -1528,26 +1528,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-bottom: 18px;
   border: 1px solid transparent;
 }
-.navbar:before,
-.navbar:after {
-  display: table;
-  content: " ";
-}
-.navbar:after {
-  clear: both;
-}
 @media (min-width: 768px) {
   .navbar {
     border-radius: 2px;
   }
-}
-.navbar-header:before,
-.navbar-header:after {
-  display: table;
-  content: " ";
-}
-.navbar-header:after {
-  clear: both;
 }
 @media (min-width: 768px) {
   .navbar-header {
@@ -1562,14 +1546,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
   -webkit-overflow-scrolling: touch;
-}
-.navbar-collapse:before,
-.navbar-collapse:after {
-  display: table;
-  content: " ";
-}
-.navbar-collapse:after {
-  clear: both;
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -2023,14 +1999,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 44px;
   margin-bottom: 18px;
 }
-.navbar-masthead:before,
-.navbar-masthead:after {
-  display: table;
-  content: " ";
-}
-.navbar-masthead:after {
-  clear: both;
-}
 @media (min-width: 768px) {
   .navbar-masthead {
     border-radius: 2px;
@@ -2335,14 +2303,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-toolbar {
   min-height: 36px;
   margin-bottom: 18px;
-}
-.navbar-toolbar:before,
-.navbar-toolbar:after {
-  display: table;
-  content: " ";
-}
-.navbar-toolbar:after {
-  clear: both;
 }
 @media (min-width: 768px) {
   .navbar-toolbar {
