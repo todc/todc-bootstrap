@@ -209,7 +209,7 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-masthead .navbar-nav {
-  margin: floor(@navbar-masthead-padding-vertical / 2) -@navbar-masthead-padding-horizontal;
+  margin: floor((@navbar-masthead-padding-vertical / 2)) -@navbar-masthead-padding-horizontal;
 
   // > li > a {
   //   padding-top:    10px;
@@ -244,13 +244,13 @@
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
     float: left;
-    margin: floor(@navbar-masthead-padding-vertical / 2) 0;
+    margin: floor((@navbar-masthead-padding-vertical / 2)) 0;
 
     > li {
       // float: left;
       > a {
-        padding-top: floor((@navbar-masthead-padding-vertical / 2) + 2);
-        padding-bottom: floor(@navbar-masthead-padding-vertical / 2);
+        padding-top: (floor(@navbar-masthead-padding-vertical / 2) + 2);
+        padding-bottom: floor((@navbar-masthead-padding-vertical / 2));
       }
     }
 
