@@ -3686,6 +3686,14 @@ a.thumbnail.active {
   color: #222222;
 }
 
+a.list-group-item {
+  color: #555555;
+}
+
+a.list-group-item .list-group-item-heading {
+  color: #333333;
+}
+
 a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus {
@@ -3721,14 +3729,6 @@ a.list-group-item:focus,
 li.list-group-item a:focus {
   text-decoration: none;
   background-color: #eeeeee;
-}
-
-a.list-group-item {
-  color: #555555;
-}
-
-a.list-group-item .list-group-item-heading {
-  color: #333333;
 }
 
 li.list-group-item {

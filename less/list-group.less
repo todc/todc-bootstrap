@@ -28,6 +28,12 @@
 
 // Linked list items
 a.list-group-item {
+  color: @list-group-link-color;
+
+  .list-group-item-heading {
+    color: @list-group-link-heading-color;
+  }
+
   // Active class on item itself, not parent
   &.active,
   &.active:hover,
@@ -60,13 +66,6 @@ li.list-group-item a {
   &:focus {
     text-decoration: none;
     background-color: @list-group-hover-bg;
-  }
-}
-a.list-group-item {
-  color: @list-group-link-color;
-
-  .list-group-item-heading {
-    color: @list-group-link-heading-color;
   }
 }
 li.list-group-item {
