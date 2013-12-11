@@ -4414,6 +4414,17 @@ body { padding-bottom: 45px; }
 
     <h4 id="list-group-linked-alternate">Linked list group using list items</h4>
     <p>Linkify list group items by using list items instead of anchor tags.</p>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>Plugin dependency</h4>
+      <p>The list group collapsible menu requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+    </div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>Make list group collapsible menus accessible</h4>
+      <p>Be sure to add a <code>role="menu"</code> to every <code>collapse-menu</code> and <code>dropdown-menu</code> to help with accessibility.</p>
+    </div>
+
     <div class="bs-example">
       <ul class="list-group">
         <li class="list-group-header">List header</li>
@@ -4648,16 +4659,6 @@ body { padding-bottom: 45px; }
   <li class="list-group-item"><a href="#">Help</a></li>
 </ul>
 {% endhighlight %}
-
-    <div class="bs-callout bs-callout-danger">
-      <h4>Plugin dependency</h4>
-      <p>The list group collapsible menu requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
-    </div>
-
-    <div class="bs-callout bs-callout-warning">
-      <h4>Make list group collapsible menus accessible</h4>
-      <p>Be sure to add a <code>role="menu"</code> to every dropdown-menu to help with accessibility.</p>
-    </div>
 
     <h3 id="list-group-custom-content">Custom content</h3>
     <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
