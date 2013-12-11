@@ -3774,11 +3774,6 @@ li.list-group-header {
   margin-top: 9px;
 }
 
-.list-group-item:hover .dropdown-toggle.pull-right,
-.list-group-item.open > .dropdown-toggle.pull-right {
-  display: inline-block;
-}
-
 .list-group-collapse > .dropdown-menu {
   position: static;
   display: block;
