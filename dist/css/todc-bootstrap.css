@@ -3680,10 +3680,10 @@ a.thumbnail.active {
   border-bottom-left-radius: 0;
 }
 
-.list-group-item .dropdown-toggle.pull-right {
-  display: none;
-  padding-right: 6px;
-  padding-left: 5px;
+.list-group-item .dropdown-toggle {
+  display: inline-block;
+  padding: 5px 6px 5px 5px;
+  color: #222222;
 }
 
 a.list-group-item.active,
@@ -3716,9 +3716,9 @@ a.list-group-item.active:focus {
 }
 
 a.list-group-item:hover,
-li.list-group-item > a:hover,
+li.list-group-item a:hover,
 a.list-group-item:focus,
-li.list-group-item > a:focus {
+li.list-group-item a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
@@ -3733,6 +3733,7 @@ a.list-group-item .list-group-item-heading {
 
 li.list-group-item {
   padding: 0;
+  margin-bottom: 0;
   border: 0 none;
 }
 
@@ -3801,13 +3802,26 @@ li.list-group-header {
   padding-left: 44px;
 }
 
-.collapse-submenu .dropdown-menu {
-  padding-bottom: 0;
-  margin-left: 0;
+.collapse-menu {
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.collapse-submenu > .collapse-caret {
+.collapse-menu > .list-group-item > a {
+  padding: 5px 30px;
+  margin: 0 0 0 14px;
+}
+
+.collapse-menu > .list-group-item .collapse-caret {
   margin-left: 28px;
+}
+
+.collapse-menu > .list-group-item .list-group-item > a {
+  padding-left: 44px;
 }
 
 .collapse-caret {
@@ -3821,7 +3835,7 @@ li.list-group-header {
 
 .collapse-caret:before {
   position: absolute;
-  top: 11px;
+  top: 12px;
   left: 5px;
   width: 0;
   height: 0;
@@ -3837,7 +3851,7 @@ li.list-group-header {
 }
 
 .collapse-caret.collapsed:before {
-  top: 9px;
+  top: 10px;
   left: 6px;
   border-top: 4px solid transparent;
   border-right: 0 dotted;
