@@ -76,7 +76,7 @@ li.list-group-item {
   > a {
     color: @gray-darker;
     display: block;
-    padding: 5px 17px;
+    padding: @padding-base-vertical 17px;
     margin: 0 0 0 14px;
   }
 
@@ -113,31 +113,6 @@ li.list-group-item {
   }
 }
 
-// List group collapse
-// -------------------------
-
-.list-group-collapse > .dropdown-menu {
-  position: static;
-  display: block;
-  float: none;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
-  border: medium none;
-  border-radius: 0 0 0 0;
-  box-shadow: none;
-  > li > a {
-    position: relative;
-    padding: @padding-base-vertical 30px;
-    margin: 0 0 0 14px;
-    line-height: @line-height-base;
-  }
-  li li > a {
-    padding-left: 44px;
-  }
-}
-
-
 // Collapsible menu
 .collapse-menu {
   // No need to set list-style: none; since .list-group-item is block level
@@ -149,7 +124,8 @@ li.list-group-item {
 
   > .list-group-item {
     > a {
-      padding: 5px 30px;
+      // TODO: Use padding-left & padding-right. padding-top/bottom should be inherited
+      padding: @padding-base-vertical 30px;
       margin: 0 0 0 14px;
     }
     .collapse-caret {

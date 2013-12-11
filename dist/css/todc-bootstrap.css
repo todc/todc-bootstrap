@@ -3774,29 +3774,6 @@ li.list-group-header {
   margin-top: 9px;
 }
 
-.list-group-collapse > .dropdown-menu {
-  position: static;
-  display: block;
-  float: none;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
-  border: medium none;
-  border-radius: 0 0 0 0;
-  box-shadow: none;
-}
-
-.list-group-collapse > .dropdown-menu > li > a {
-  position: relative;
-  padding: 5px 30px;
-  margin: 0 0 0 14px;
-  line-height: 1.4;
-}
-
-.list-group-collapse > .dropdown-menu li li > a {
-  padding-left: 44px;
-}
-
 .collapse-menu {
   padding: 0;
   margin: 0;
