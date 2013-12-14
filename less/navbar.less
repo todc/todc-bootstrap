@@ -161,6 +161,11 @@
     text-decoration: none;
   }
 
+  // Prevent Glyphicons from increasing height of navbar
+  > .glyphicon {
+    margin-top: 0;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
