@@ -2962,19 +2962,22 @@ li.list-group-item.active a > .badge {
   background-color: #fff;
 }
 .jumbotron {
-  font-size: 20px;
-  line-height: 2.0999999999999996;
   color: inherit;
   background-color: #eee;
 }
-.jumbotron h1 {
+.jumbotron h1,
+.jumbotron .h1 {
   color: inherit;
+}
+.jumbotron p {
+  font-size: 20px;
 }
 .container .jumbotron {
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron h1 {
+  .jumbotron h1,
+  .jumbotron .h1 {
     font-size: 58.5px;
   }
 }
