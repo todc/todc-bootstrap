@@ -417,6 +417,35 @@ h1[id] {
 
 
 /*
+ * Color swatches
+ *
+ * Color swatches and associated values for our grayscale and brand colors.
+ */
+
+.color-swatches {
+  margin: 0 -5px;
+  overflow: hidden; /* clearfix */
+}
+.color-swatch {
+  float: left;
+  width:  100px;
+  height: 100px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+.color-swatches .gray-darker   { background-color: #222; }
+.color-swatches .gray-dark     { background-color: #333; }
+.color-swatches .gray          { background-color: #555; }
+.color-swatches .gray-light    { background-color: #999; }
+.color-swatches .gray-lighter  { background-color: #eee; }
+.color-swatches .brand-primary { background-color: #4d90fe; }
+.color-swatches .brand-success { background-color: #35aa47; }
+.color-swatches .brand-warning { background-color: #faa937; }
+.color-swatches .brand-danger  { background-color: #d84a38; }
+.color-swatches .brand-info    { background-color: #5bc0de; }
+
+
+/*
  * Team members
  *
  * Avatars, names, and usernames for core team.
