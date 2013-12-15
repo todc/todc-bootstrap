@@ -1226,10 +1226,9 @@ fieldset[disabled] .btn-link:focus {
   margin-left: 18px;
   border-radius: 0;
 }
-.btn-toolbar > .btn + .btn,
-.btn-toolbar > .btn-group + .btn,
-.btn-toolbar > .btn + .btn-group,
-.btn-toolbar > .btn-group + .btn-group {
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group,
+.btn-toolbar > .input-group {
   margin-left: 16px;
 }
 .btn-group-xs > .btn {
