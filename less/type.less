@@ -19,3 +19,22 @@
     color: darken(@state-warning-text, 10%);
   }
 }
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have it's color inverted
+  // automatically.
+  color: #fff;
+  background-color: @brand-primary;
+  a&:hover {
+    background-color: darken(@brand-primary, 10%);
+  }
+}
+.bg-warning {
+  background-color: @state-warning-bg;
+  a&:hover {
+    background-color: darken(@state-warning-bg, 10%);
+  }
+}
