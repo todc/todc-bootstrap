@@ -14,8 +14,8 @@
   margin-bottom: @navbar-toolbar-margin-bottom;
   // border: 1px solid transparent;
 
-  // Prevent floats from breaking the navbar
-  .clearfix();
+  // // Prevent floats from breaking the navbar
+  // .clearfix();
 
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-toolbar-border-radius;
@@ -93,15 +93,18 @@
 //
 // When a container is present, change the behavior of the header and collapse.
 
-.navbar-toolbar > .container > .navbar-header,
-.navbar-toolbar > .container > .navbar-collapse {
-  margin-right: -@navbar-toolbar-padding-horizontal;
-  margin-left:  -@navbar-toolbar-padding-horizontal;
+.navbar-toolbar > .container,
+.navbar-toolbar > .container-fluid {
+  > .navbar-header,
+  > .navbar-collapse {
+    margin-right: -@navbar-toolbar-padding-horizontal;
+    margin-left:  -@navbar-toolbar-padding-horizontal;
 
-  // @media (min-width: @grid-float-breakpoint) {
-  //   margin-right: 0;
-  //   margin-left:  0;
-  // }
+    // @media (min-width: @grid-float-breakpoint) {
+    //   margin-right: 0;
+    //   margin-left:  0;
+    // }
+  }
 }
 
 
@@ -160,7 +163,8 @@
   // }
 
   @media (min-width: @grid-float-breakpoint) {
-    .navbar > .container & {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
       margin-left: -@navbar-toolbar-padding-horizontal;
     }
   }
@@ -202,11 +206,11 @@
 
 // Navbar nav links
 //
-// Builds on top of the `.nav` components with it's own modifier class to make
+// Builds on top of the `.nav` components with its own modifier class to make
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-toolbar .navbar-nav {
-  margin: floor(@navbar-toolbar-padding-vertical / 2) -@navbar-toolbar-padding-horizontal;
+  margin: floor((@navbar-toolbar-padding-vertical / 2)) -@navbar-toolbar-padding-horizontal;
 
   > li {
     position: relative;

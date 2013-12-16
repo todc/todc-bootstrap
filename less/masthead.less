@@ -14,8 +14,8 @@
   margin-bottom: @navbar-masthead-margin-bottom;
   // border: 1px solid transparent;
 
-  // Prevent floats from breaking the navbar
-  .clearfix();
+  // // Prevent floats from breaking the navbar
+  // .clearfix();
 
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-masthead-border-radius;
@@ -93,15 +93,18 @@
 //
 // When a container is present, change the behavior of the header and collapse.
 
-.navbar-masthead > .container > .navbar-header,
-.navbar-masthead > .container > .navbar-collapse {
-  margin-right: -@navbar-masthead-padding-horizontal;
-  margin-left:  -@navbar-masthead-padding-horizontal;
+.navbar-masthead > .container,
+.navbar-masthead > .container-fluid {
+  > .navbar-header,
+  > .navbar-collapse {
+    margin-right: -@navbar-masthead-padding-horizontal;
+    margin-left:  -@navbar-masthead-padding-horizontal;
 
-  // @media (min-width: @grid-float-breakpoint) {
-  //   margin-right: 0;
-  //   margin-left:  0;
-  // }
+    // @media (min-width: @grid-float-breakpoint) {
+    //   margin-right: 0;
+    //   margin-left:  0;
+    // }
+  }
 }
 
 
@@ -158,8 +161,14 @@
   //   text-decoration: none;
   // }
 
+  // Prevent Glyphicons from increasing height of navbar
+  > .glyphicon {
+    margin-top: -3px;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
-    .navbar > .container & {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
       margin-left: -@navbar-masthead-padding-horizontal;
     }
   }
@@ -201,11 +210,11 @@
 
 // Navbar nav links
 //
-// Builds on top of the `.nav` components with it's own modifier class to make
+// Builds on top of the `.nav` components with its own modifier class to make
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-masthead .navbar-nav {
-  margin: floor(@navbar-masthead-padding-vertical / 2) -@navbar-masthead-padding-horizontal;
+  margin: floor((@navbar-masthead-padding-vertical / 2)) -@navbar-masthead-padding-horizontal;
 
   // > li > a {
   //   padding-top:    10px;
@@ -240,13 +249,13 @@
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
     float: left;
-    margin: floor(@navbar-masthead-padding-vertical / 2) 0;
+    margin: floor((@navbar-masthead-padding-vertical / 2)) 0;
 
     > li {
       // float: left;
       > a {
-        padding-top: floor((@navbar-masthead-padding-vertical / 2) + 2);
-        padding-bottom: floor(@navbar-masthead-padding-vertical / 2);
+        padding-top: (floor(@navbar-masthead-padding-vertical / 2) + 2);
+        padding-bottom: floor((@navbar-masthead-padding-vertical / 2));
       }
     }
 

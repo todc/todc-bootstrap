@@ -71,7 +71,8 @@
   }
 
   .badge {
-    color: @btn-default-color;
+    color: @btn-default-bg;
+    text-shadow: none;
   }
 }
 
@@ -81,10 +82,10 @@
   .button-variant(@brand-primary; #4787ed; @btn-primary-color; @btn-primary-border);
 }
 
-// Danger Button
+// Success Button
 // -------------------------
-.btn-danger {
-  .button-variant(#dd4b39; #d14836; @btn-danger-color; @btn-danger-border);
+.btn-success {
+  .button-variant(@brand-success; @brand-success; @btn-success-color; @btn-success-border);
 }
 
 // Warning Button
@@ -93,10 +94,10 @@
   .button-variant(lighten(@brand-warning, 5%); @brand-warning; @btn-warning-color; @btn-warning-border);
 }
 
-// Success Button
+// Danger Button
 // -------------------------
-.btn-success {
-  .button-variant(@brand-success; @brand-success; @btn-success-color; @btn-success-border);
+.btn-danger {
+  .button-variant(#dd4b39; #d14836; @btn-danger-color; @btn-danger-border);
 }
 
 // Info Button

@@ -1,12 +1,14 @@
 /* jshint node: true */
 
-module.exports = function(grunt) {
-  "use strict";
+module.exports = function (grunt) {
+  'use strict';
 
   // Force use of Unix newlines
   grunt.util.linefeed = '\n';
 
-  RegExp.quote = require('regexp-quote')
+  RegExp.quote = function (string) {
+    return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&')
+  }
 
   // Project configuration.
   grunt.initConfig({
@@ -31,28 +33,87 @@ module.exports = function(grunt) {
       dist: ['dist']
     },
 
-    recess: {
+    jshint: {
       options: {
-        compile: true,
-        banner: '<%= banner %>'
+        jshintrc: 'js/.jshintrc'
       },
-      todc_bootstrap: {
-        src: ['less/todc-bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.css'
+      gruntfile: {
+        src: 'Gruntfile.js'
       },
-      min: {
+      assets: {
+        src: 'docs-assets/js/application.js'
+      }
+    },
+
+    jscs: {
+      options: {
+        config: 'js/.jscs.json',
+      },
+      gruntfile: {
+        src: ['Gruntfile.js']
+      },
+      src: {
+        src: ['docs-assets/js/application.js']
+      }
+    },
+
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      src: ['dist/css/todc-bootstrap.css']
+    },
+
+    less: {
+      compile: {
         options: {
-          compress: true
+          strictMath: true
         },
-        src: ['less/todc-bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        files: {
+          'dist/css/<%= pkg.name %>.css': 'less/todc-bootstrap.less'
+        }
+      },
+      minify: {
+        options: {
+          cleancss: true,
+          report: 'min'
+        },
+        files: {
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+        }
+      }
+    },
+
+    usebanner: {
+      dist: {
+        options: {
+          position: 'top',
+          banner: '<%= banner %>'
+        },
+        files: {
+          src: [
+            'dist/css/<%= pkg.name %>.css',
+            'dist/css/<%= pkg.name %>.min.css',
+          ]
+        }
+      }
+    },
+
+    csscomb: {
+      sort: {
+        options: {
+          sortOrder: '.csscomb.json'
+        },
+        files: {
+          'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css'],
+        }
       }
     },
 
     copy: {
       images: {
         expand: true,
-        src: ["img/*"],
+        src: ['img/*'],
         dest: 'dist/'
       },
       bootstrap: {
@@ -84,21 +145,23 @@ module.exports = function(grunt) {
 
     validation: {
       options: {
+        charset: 'utf-8',
+        doctype: 'HTML5',
         reset: true,
         relaxerror: [
-          "Bad value X-UA-Compatible for attribute http-equiv on element meta.",
-          "Element img is missing required attribute src."
+          'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
+          'Element img is missing required attribute src.'
         ]
       },
       files: {
-        src: ["_gh_pages/**/*.html"]
+        src: ['_gh_pages/**/*.html']
       }
     },
 
     watch: {
-      recess: {
+      less: {
         files: 'less/*.less',
-        tasks: ['recess']
+        tasks: ['less']
       }
     },
 
@@ -138,15 +201,7 @@ module.exports = function(grunt) {
 
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-html-validation');
-  grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-recess');
-  grunt.loadNpmTasks('grunt-sed');
-  grunt.loadNpmTasks('grunt-shell');
+  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', ['shell']);
@@ -154,15 +209,19 @@ module.exports = function(grunt) {
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
+  // Test task.
+  var testSubtasks = ['dist-css', 'jshint', 'jscs', 'validate-html'];
+  grunt.registerTask('test', testSubtasks);
+
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['recess']);
+  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   // // Default task.
-  grunt.registerTask('default', ['dist']);
+  grunt.registerTask('default', ['test', 'dist']);
 
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
