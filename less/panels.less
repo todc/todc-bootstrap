@@ -29,6 +29,19 @@
   > .panel-body + .table-responsive {
     border-top: 1px solid @table-border-color;
   }
+  > .table-striped,
+  > .table-responsive > .table-striped {
+    > tbody > tr:last-child {
+      td:first-child,
+      th:first-child {
+        border-bottom-left-radius: (@panel-border-radius - 1);
+      }
+      td:last-child,
+      th:last-child {
+        border-bottom-left-radius: (@panel-border-radius - 1);
+      }
+    }
+  }
 }
 
 
