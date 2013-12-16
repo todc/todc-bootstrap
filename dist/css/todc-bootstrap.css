@@ -3680,10 +3680,45 @@ a.thumbnail.active {
   border-bottom-left-radius: 0;
 }
 
+.list-group-item .dropdown {
+  display: none;
+}
+
 .list-group-item .dropdown-toggle {
   display: inline-block;
   padding: 5px 6px 5px 5px;
   color: #222222;
+}
+
+.list-group-item > .menu-item {
+  margin-left: 14px;
+}
+
+.list-group-item > .menu-item:hover > .dropdown {
+  display: block;
+}
+
+.list-group-item > .menu-item > a {
+  display: block;
+  padding: 5px 17px;
+  margin: 0;
+  color: #222222;
+}
+
+.list-group-item > .menu-item > .dropdown:hover + a {
+  background-color: #eeeeee;
+}
+
+.list-group-item > .menu-item > .dropdown.open {
+  display: block;
+}
+
+.list-group-item > .menu-item > .dropdown.open + a {
+  background-color: #eeeeee;
+}
+
+.list-group-item > .menu-item > .dropdown > .dropdown-menu {
+  margin-top: 0;
 }
 
 a.list-group-item {
@@ -3783,17 +3818,16 @@ li.list-group-header {
           box-shadow: none;
 }
 
-.collapse-menu > .list-group-item > a {
-  padding: 5px 30px;
-  margin: 0 0 0 14px;
+.collapse-menu .menu-item > a {
+  padding-left: 30px;
+}
+
+.collapse-menu .collapse-menu .menu-item > a {
+  padding-left: 44px;
 }
 
 .collapse-menu > .list-group-item .collapse-caret {
   margin-left: 28px;
-}
-
-.collapse-menu > .list-group-item .list-group-item > a {
-  padding-left: 44px;
 }
 
 .collapse-caret {

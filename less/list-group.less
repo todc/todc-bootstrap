@@ -19,10 +19,42 @@
     .border-bottom-radius(@list-group-border-radius);
   }
 
+  .dropdown {
+    display: none;
+  }
   .dropdown-toggle {
     display: inline-block;
     padding: 5px 6px 5px 5px;
     color: @gray-darker;
+  }
+  > .menu-item {
+    margin-left: 14px;
+    &:hover > .dropdown {
+      display: block;
+    }
+    > a {
+      display: block;
+      padding: 5px 17px;
+      margin: 0;
+      color: @gray-darker;
+      // &:hover {
+      //   background-color: @gray-lighter !important;
+      // }
+    }
+    > .dropdown {
+      &:hover + a {
+        background-color: @gray-lighter;
+      }
+      &.open {
+        display: block;
+        + a {
+          background-color: @gray-lighter;
+        }
+      }
+      > .dropdown-menu {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -121,17 +153,15 @@ li.list-group-item {
   border-radius: 0;
   .box-shadow(none);
 
+  .menu-item > a {
+    padding-left: 30px;
+  }
+  .collapse-menu .menu-item > a {
+    padding-left: 44px;
+  }
   > .list-group-item {
-    > a {
-      // TODO: Use padding-left & padding-right. padding-top/bottom should be inherited
-      padding: @padding-base-vertical 30px;
-      margin: 0 0 0 14px;
-    }
     .collapse-caret {
       margin-left: 28px;
-    }
-    .list-group-item > a {
-      padding-left: 44px;
     }
   }
 }
