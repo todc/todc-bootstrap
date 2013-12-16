@@ -244,6 +244,9 @@ fieldset[disabled] .form-control:active {
 textarea.form-control {
   padding-right: 4px;
 }
+input[type="date"] {
+  line-height: 30px;
+}
 .radio,
 .checkbox {
   min-height: 18px;
@@ -356,6 +359,15 @@ select.input-lg {
 textarea.input-lg {
   height: auto;
 }
+.has-feedback .form-control {
+  padding-right: 37.5px;
+}
+.has-feedback .form-control-feedback {
+  top: 23px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
 .has-warning .help-block,
 .has-warning .control-label,
 .has-warning .radio,
@@ -379,16 +391,10 @@ textarea.input-lg {
   background-color: #f9edbe;
   border-color: #333;
 }
-.has-warning .help-block,
-.has-warning .control-label,
-.has-warning .radio,
-.has-warning .checkbox,
-.has-warning .radio-inline,
-.has-warning .checkbox-inline {
+.has-warning .form-control-feedback {
   color: #333;
 }
 .has-warning .form-control {
-  border-color: #333;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -401,11 +407,6 @@ textarea.input-lg {
   border-color: #333;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
           box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
-}
-.has-warning .input-group-addon {
-  color: #333;
-  background-color: #f9edbe;
-  border-color: #333;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -430,16 +431,10 @@ textarea.input-lg {
   background-color: #f2dede;
   border-color: #dd4b39;
 }
-.has-error .help-block,
-.has-error .control-label,
-.has-error .radio,
-.has-error .checkbox,
-.has-error .radio-inline,
-.has-error .checkbox-inline {
+.has-error .form-control-feedback {
   color: #dd4b39;
 }
 .has-error .form-control {
-  border-color: #dd4b39;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -452,62 +447,6 @@ textarea.input-lg {
   border-color: #dd4b39;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
           box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
-}
-.has-error .input-group-addon {
-  color: #dd4b39;
-  background-color: #f2dede;
-  border-color: #dd4b39;
-}
-.has-success .help-block,
-.has-success .control-label,
-.has-success .radio,
-.has-success .checkbox,
-.has-success .radio-inline,
-.has-success .checkbox-inline {
-  color: #3c763d;
-}
-.has-success .form-control {
-  border-color: #3c763d;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-}
-.has-success .form-control:focus {
-  border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-}
-.has-success .input-group-addon {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #3c763d;
-}
-.has-success .help-block,
-.has-success .control-label,
-.has-success .radio,
-.has-success .checkbox,
-.has-success .radio-inline,
-.has-success .checkbox-inline {
-  color: #3c763d;
-}
-.has-success .form-control {
-  border-color: #3c763d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.has-success .form-control:hover {
-  border-color: #3c763d;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
-          box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
-}
-.has-success .form-control:focus {
-  border-color: #3c763d;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
-          box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
-}
-.has-success .input-group-addon {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #3c763d;
 }
 .help-block {
   color: #777;
@@ -525,10 +464,12 @@ textarea.input-lg {
   }
   .form-inline .form-control {
     display: inline-block;
+    width: auto;
     vertical-align: middle;
   }
-  .form-inline select.form-control {
-    width: auto;
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
   }
   .form-inline .radio,
   .form-inline .checkbox {
@@ -543,6 +484,9 @@ textarea.input-lg {
     float: none;
     margin-bottom: -2px;
     margin-left: 0;
+  }
+  .form-inline .has-feedback .form-control-feedback {
+    top: 0;
   }
 }
 .form-horizontal .control-label,
@@ -1741,10 +1685,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-form .form-control {
     display: inline-block;
+    width: auto;
     vertical-align: middle;
   }
-  .navbar-form select.form-control {
-    width: auto;
+  .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
   }
   .navbar-form .radio,
   .navbar-form .checkbox {
@@ -1759,6 +1705,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: none;
     margin-bottom: -2px;
     margin-left: 0;
+  }
+  .navbar-form .has-feedback .form-control-feedback {
+    top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3383,6 +3332,18 @@ li.list-group-header {
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive {
   border-top: 1px solid #ddd;
+}
+.panel > .table-striped > tbody > tr:last-child td:first-child,
+.panel > .table-responsive > .table-striped > tbody > tr:last-child td:first-child,
+.panel > .table-striped > tbody > tr:last-child th:first-child,
+.panel > .table-responsive > .table-striped > tbody > tr:last-child th:first-child {
+  border-bottom-left-radius: 2px;
+}
+.panel > .table-striped > tbody > tr:last-child td:last-child,
+.panel > .table-responsive > .table-striped > tbody > tr:last-child td:last-child,
+.panel > .table-striped > tbody > tr:last-child th:last-child,
+.panel > .table-responsive > .table-striped > tbody > tr:last-child th:last-child {
+  border-bottom-left-radius: 2px;
 }
 .panel-heading {
   padding: 15px 20px;
