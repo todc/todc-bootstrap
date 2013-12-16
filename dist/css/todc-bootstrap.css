@@ -3809,7 +3809,7 @@ li.list-group-header {
   margin-top: 9px;
 }
 
-.collapse-menu {
+.list-group-item-menu {
   padding: 0;
   margin: 0;
   border: 0 none;
@@ -3818,15 +3818,15 @@ li.list-group-header {
           box-shadow: none;
 }
 
-.collapse-menu .list-group-item-wrapper > a {
+.list-group-item-menu .list-group-item-wrapper > a {
   padding-left: 30px;
 }
 
-.collapse-menu .collapse-menu .list-group-item-wrapper > a {
+.list-group-item-menu .list-group-item-menu .list-group-item-wrapper > a {
   padding-left: 44px;
 }
 
-.collapse-menu > .list-group-item .collapse-caret {
+.list-group-item-menu > .list-group-item .collapse-caret {
   margin-left: 28px;
 }
 
