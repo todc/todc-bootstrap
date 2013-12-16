@@ -27,35 +27,6 @@
     padding: 5px 6px 5px 5px;
     color: @gray-darker;
   }
-  > .menu-item {
-    margin-left: 14px;
-    &:hover > .dropdown {
-      display: block;
-    }
-    > a {
-      display: block;
-      padding: 5px 17px;
-      margin: 0;
-      color: @gray-darker;
-      // &:hover {
-      //   background-color: @gray-lighter !important;
-      // }
-    }
-    > .dropdown {
-      &:hover + a {
-        background-color: @gray-lighter;
-      }
-      &.open {
-        display: block;
-        + a {
-          background-color: @gray-lighter;
-        }
-      }
-      > .dropdown-menu {
-        margin-top: 0;
-      }
-    }
-  }
 }
 
 // Linked list items
@@ -122,6 +93,39 @@ li.list-group-item {
   }
 }
 
+// List group item wrapper
+// -------------------------
+
+.list-group-item-wrapper {
+  margin-left: 14px;
+  &:hover > .dropdown {
+    display: block;
+  }
+  > a {
+    display: block;
+    padding: 5px 17px;
+    margin: 0;
+    color: @gray-darker;
+    // &:hover {
+    //   background-color: @gray-lighter !important;
+    // }
+  }
+  > .dropdown {
+    &:hover + a {
+      background-color: @gray-lighter;
+    }
+    &.open {
+      display: block;
+      + a {
+        background-color: @gray-lighter;
+      }
+    }
+    > .dropdown-menu {
+      margin-top: 0;
+    }
+  }
+}
+
 // List group headers
 // -------------------------
 
@@ -153,10 +157,10 @@ li.list-group-item {
   border-radius: 0;
   .box-shadow(none);
 
-  .menu-item > a {
+  .list-group-item-wrapper > a {
     padding-left: 30px;
   }
-  .collapse-menu .menu-item > a {
+  .collapse-menu .list-group-item-wrapper > a {
     padding-left: 44px;
   }
   > .list-group-item {
