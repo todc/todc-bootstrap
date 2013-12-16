@@ -106,6 +106,6 @@
       minimumResultsForSearch: 20
       })
     })
-})
+  })
 
 }(jQuery)

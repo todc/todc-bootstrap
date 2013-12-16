@@ -19,16 +19,24 @@
     .border-bottom-radius(@list-group-border-radius);
   }
 
-  // Hide the dropdown-toggle
-  .dropdown-toggle.pull-right {
+  .dropdown {
     display: none;
-    padding-right: 6px;
-    padding-left: 5px;
+  }
+  .dropdown-toggle {
+    display: inline-block;
+    padding: 5px 6px 5px 5px;
+    color: @gray-darker;
   }
 }
 
 // Linked list items
 a.list-group-item {
+  color: @list-group-link-color;
+
+  .list-group-item-heading {
+    color: @list-group-link-heading-color;
+  }
+
   // Active class on item itself, not parent
   &.active,
   &.active:hover,
@@ -55,7 +63,7 @@ a.list-group-item {
   }
 }
 a.list-group-item,
-li.list-group-item > a {
+li.list-group-item a {
   // Hover state
   &:hover,
   &:focus {
@@ -63,31 +71,57 @@ li.list-group-item > a {
     background-color: @list-group-hover-bg;
   }
 }
-a.list-group-item {
-  color: @list-group-link-color;
-
-  .list-group-item-heading {
-    color: @list-group-link-heading-color;
-  }
-}
 li.list-group-item {
-  padding: 1px 15px;
+  padding: 0;
+  margin-bottom: 0;
   border: 0 none;
-  border-left: 4px solid transparent;
   > a {
     color: @gray-darker;
     display: block;
-    padding: 4px 17px;
-    margin-left: -5px;
-    margin-right: -15px;
+    padding: @padding-base-vertical 17px;
+    margin: 0 0 0 14px;
   }
 
   &.active {
     font-weight: bold;
     background-color: @list-group-active-bg;
-    border-left-color: @list-group-active-color;
+    border-left: 4px solid #DD4B39;
     > a {
+      margin-left: 10px;
       color: @list-group-active-color;
+    }
+  }
+}
+
+// List group item wrapper
+// -------------------------
+
+.list-group-item-wrapper {
+  margin-left: 14px;
+  &:hover > .dropdown {
+    display: block;
+  }
+  > a {
+    display: block;
+    padding: 5px 17px;
+    margin: 0;
+    color: @gray-darker;
+    // &:hover {
+    //   background-color: @gray-lighter !important;
+    // }
+  }
+  > .dropdown {
+    &:hover + a {
+      background-color: @gray-lighter;
+    }
+    &.open {
+      display: block;
+      + a {
+        background-color: @gray-lighter;
+      }
+    }
+    > .dropdown-menu {
+      margin-top: 0;
     }
   }
 }
@@ -114,38 +148,26 @@ li.list-group-item {
   }
 }
 
-// TODO: Put these somewhere
-.list-group-item:hover .dropdown-toggle.pull-right,
-.list-group-item.open > .dropdown-toggle.pull-right {
-  display: inline-block;
-}
-
-// List group collapse
-// -------------------------
-
-.list-group-collapse > .dropdown-menu {
-  position: static;
-  display: block;
-  float: none;
-  padding-top: 0;
+// Collapsible menu
+.list-group-item-menu {
+  // No need to set list-style: none; since .list-group-item is block level
+  padding: 0;
   margin: 0;
-  border: medium none;
-  border-radius: 0 0 0 0;
-  box-shadow: none;
-  > li > a {
-    position: relative;
-    padding: @padding-base-vertical 30px;
-    margin-left: -5px;
-    line-height: @line-height-base;
-  }
-}
+  border: 0 none;
+  border-radius: 0;
+  .box-shadow(none);
 
-// Collapsible submenu
-.collapse-submenu .dropdown-menu {
-  margin-left: 10px;
-}
-.collapse-submenu > .collapse-caret {
-  margin-left: 8px;
+  .list-group-item-wrapper > a {
+    padding-left: 30px;
+  }
+  .list-group-item-menu .list-group-item-wrapper > a {
+    padding-left: 44px;
+  }
+  > .list-group-item {
+    .collapse-caret {
+      margin-left: 28px;
+    }
+  }
 }
 
 // Caret
@@ -155,11 +177,11 @@ li.list-group-item {
   display: inline-block;
   width: 17px;
   height: 28px;
-  margin-left: -5px;
+  margin-left: 14px;
   &:before {
     content: ' ';
     position: absolute;
-    top: 11px;
+    top: 12px;
     left: 5px;
     width: 0;
     height: 0;
@@ -169,11 +191,11 @@ li.list-group-item {
     border-left: 4px solid transparent;
   }
   &:hover {
-    background-color: #eeeeee;
+    background-color: @gray-lighter;
   }
 
   &.collapsed:before {
-    top: 9px;
+    top: 10px;
     left: 6px;
     border-top: 4px solid transparent;
     border-right: 0 dotted;
