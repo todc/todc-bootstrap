@@ -230,7 +230,7 @@ input[type="checkbox"],
 
 // Feedback states
 .has-warning {
-  .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+  .form-control-validation(darken(@alert-warning-border, 20%); darken(@alert-warning-border, 20%); @state-warning-bg);
 }
 .has-error {
   .form-control-validation(#dd4b39; #dd4b39; @state-danger-bg);
