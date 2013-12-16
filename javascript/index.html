@@ -210,7 +210,7 @@
 
     <div class="bs-callout bs-callout-danger">
       <h4>Plugin dependencies</h4>
-      <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/todc/todc-bootstrap/blob/v3.0.2-3.0.2/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+      <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/todc/todc-bootstrap/blob/v3.0.3-3.1.0/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
     </div>
 
     <h3 id="js-data-attrs">Data attributes</h3>
@@ -226,13 +226,13 @@
 
     <h3 id="js-programmatic-api">Programmatic API</h3>
     <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.btn.danger&quot;</span><span class="p">).</span><span class="nx">button</span><span class="p">(</span><span class="s2">&quot;toggle&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;fat&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.btn.danger&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;fat&#39;</span><span class="p">)</span>
 </code></pre></div>
 
     <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myModal&quot;</span><span class="p">).</span><span class="nx">modal</span><span class="p">()</span>                      <span class="c1">// initialized with defaults</span>
-<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myModal&quot;</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span> <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span> <span class="p">})</span>   <span class="c1">// initialized with no keyboard</span>
-<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myModal&quot;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>                <span class="c1">// initializes and invokes show immediately&lt;/p&gt;</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">()</span>                      <span class="c1">// initialized with defaults</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span> <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span> <span class="p">})</span>   <span class="c1">// initialized with no keyboard</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>                <span class="c1">// initializes and invokes show immediately&lt;/p&gt;</span>
 </code></pre></div>
 
     <p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
@@ -480,17 +480,17 @@
 </code></pre></div>
 
     <h4>.modal('toggle')</h4>
-    <p>Manually toggles a modal.</p>
+    <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
     <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span>
 </code></pre></div>
 
     <h4>.modal('show')</h4>
-    <p>Manually opens a modal.</p>
+    <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
     <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
 </code></pre></div>
 
     <h4>.modal('hide')</h4>
-    <p>Manually hides a modal.</p>
+    <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
     <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span>
 </code></pre></div>
 
@@ -507,11 +507,11 @@
         <tbody>
          <tr>
            <td>show.bs.modal</td>
-           <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+           <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
          </tr>
          <tr>
            <td>shown.bs.modal</td>
-           <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete).</td>
+           <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
          </tr>
          <tr>
            <td>hide.bs.modal</td>
@@ -524,8 +524,8 @@
         </tbody>
       </table>
     </div><!-- /.table-responsive -->
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// do something…</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something...</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
@@ -703,6 +703,7 @@
 </code></pre></div>
   </div>
 
+
   <!-- ScrollSpy
   ================================================== -->
   <div class="bs-docs-section">
@@ -761,14 +762,20 @@
 
     <h3>Via data attributes</h3>
     <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">&quot;scroll&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#navbar-example&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">&quot;scroll&quot;</span> <span class="na">data-target=</span><span class="s">&quot;.navbar-example&quot;</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;navbar-example&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;nav nav-tabs&quot;</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
   ...
 <span class="nt">&lt;/body&gt;</span>
 </code></pre></div>
 
     <h3>Via JavaScript</h3>
     <p>Call the scrollspy via JavaScript:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span> <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;#navbar-example&#39;</span> <span class="p">})</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span> <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;.navbar-example&#39;</span> <span class="p">})</span>
 </code></pre></div>
 
     <div class="bs-callout bs-callout-danger">
@@ -1573,7 +1580,7 @@
 
     <h2 id="buttons-usage">Usage</h2>
     <p>Enable buttons via JavaScript:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.btn-group&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">()</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.btn&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">()</span>
 </code></pre></div>
 
     <h3>Markup</h3>
@@ -1752,7 +1759,7 @@
 
     <h3>Via JavaScript</h3>
     <p>Enable manually with:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.collapse&quot;</span><span class="p">).</span><span class="nx">collapse</span><span class="p">()</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.collapse&#39;</span><span class="p">).</span><span class="nx">collapse</span><span class="p">()</span>
 </code></pre></div>
 
     <h3>Options</h3>
@@ -2078,20 +2085,25 @@
     <hr class="bs-docs-separator">
 
     <h2 id="affix-usage">Usage</h2>
+    <p>Use the affix plugin via data attributes or manually with your own JavaScript. <strong>In both situations, you must provide CSS for the positioning of your content.</strong></p>
+
+    <h3>Positioning via CSS</h3>
+    <p>The affix plugin toggles between three classes, each representing a particular state: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code>. You must provide the styles for these classes yourself (independent of this plugin) to handle the actual positions.</p>
+    <p>Here's how the affix plugin works:</p>
+    <ol>
+      <li>To start, the plugin adds <code>.affix-top</code> to indicate the element is in it's top-most position. At this point no CSS positioning is required.</li>
+      <li>Scrolling past the element you want affixed should trigger the actual affixing. This is where <code>.affix</code> replaces <code>.affix-top</code> and sets <code>position: fixed;</code> (provided by Bootstrap's code CSS).</li>
+      <li>If a bottom offset is defined, scrolling past that should replace <code>.affix</code> with <code>.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position: absolute;</code> when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the elemtn from there.</li>
+    </ol>
+    <p>Follow the above steps to set your CSS for either of the usage options below.</p>
 
     <h3>Via data attributes</h3>
-    <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Then use offsets to define when to toggle the pinning of an element on and off.</p>
+    <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">data-spy=</span><span class="s">&quot;affix&quot;</span> <span class="na">data-offset-top=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">data-spy=</span><span class="s">&quot;affix&quot;</span> <span class="na">data-offset-top=</span><span class="s">&quot;60&quot;</span> <span class="na">data-offset-bottom=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
-
-    <div class="bs-callout bs-callout-warning">
-      <h4>Requires independent styling ;)</h4>
-      <p>
-        Affix toggles between three states/classes: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code>. You must provide the styles for these classes yourself (independent of this plugin).
-        The <code>.affix-top</code> class should be in the regular flow of the document. The <code>.affix</code> class should be <code>position: fixed</code>. And <code>.affix-bottom</code> should be <code>position: absolute</code>. Note: <code>.affix-bottom</code> is special in that the plugin will place the element with JS relative to the <code>offset: { bottom: number }</code> option you've provided.
-      </p>
-    </div>
 
     <h3>Via JavaScript</h3>
     <p>Call the affix plugin via JavaScript:</p>
@@ -2157,7 +2169,7 @@
         <p>Updated to support v3.0.0 by <a href="https://github.com/acmetech" target="_blank">acmetech</a>.</p>
         <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
-          <li>Currently v3.0.2-3.0.2</li>
+          <li>Currently v3.0.3-3.1.0</li>
           <li class="muted">&middot;</li>
           <li><a href="../2.3.2/">2.3.2 docs</a></li>
           <li class="muted">&middot;</li>
@@ -2180,16 +2192,25 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.js"></script>
 
-<script src="http://platform.twitter.com/widgets.js"></script>
 <script src="../docs-assets/js/holder.js"></script>
 
 <script src="../docs-assets/js/select2.min.js"></script>
 <script src="../docs-assets/js/application.js"></script>
 
 
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
 
 
   </body>

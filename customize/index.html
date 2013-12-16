@@ -125,7 +125,7 @@
         <p>Updated to support v3.0.0 by <a href="https://github.com/acmetech" target="_blank">acmetech</a>.</p>
         <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
-          <li>Currently v3.0.2-3.0.2</li>
+          <li>Currently v3.0.3-3.1.0</li>
           <li class="muted">&middot;</li>
           <li><a href="../2.3.2/">2.3.2 docs</a></li>
           <li class="muted">&middot;</li>
@@ -148,10 +148,9 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.js"></script>
 
-<script src="http://platform.twitter.com/widgets.js"></script>
 <script src="../docs-assets/js/holder.js"></script>
 
 <script src="../docs-assets/js/select2.min.js"></script>
@@ -165,6 +164,16 @@
 <script src="../docs-assets/js/raw-files.js"></script>
 <script src="../docs-assets/js/customizer.js"></script>
 
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
 
 
   </body>

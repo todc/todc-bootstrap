@@ -247,7 +247,8 @@
     <p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
 
     <h3 id="overview-container">Containers</h3>
-    <p>Easily center a page's contents by wrapping its contents in a <code>.container</code>. Containers set <code>max-width</code> at various media query breakpoints to match our grid system.</p>
+    <p>Easily center a page's contents by wrapping its contents in a <code>.container</code>. Containers set <code>width</code> at various media query breakpoints to match our grid system.</p>
+    <p>Note that, due to <code>padding</code> and fixed widths, containers are not nestable by default.</p>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/div&gt;</span>
@@ -368,13 +369,11 @@
           </tr>
           <tr>
             <th>Offsets</th>
-            <td colspan="1" class="text-muted">N/A</td>
-            <td colspan="3">Yes</td>
+            <td colspan="4">Yes</td>
           </tr>
           <tr>
             <th>Column ordering</th>
-            <td class="text-muted">N/A</td>
-            <td colspan="3">Yes</td>
+            <td colspan="4">Yes</td>
           </tr>
         </tbody>
       </table>
@@ -1036,7 +1035,7 @@
     <p>Style and content changes for simple variations on a standard <code>&lt;blockquote&gt;</code>.</p>
 
     <h4>Naming a source</h4>
-    <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+    <p>Add <code>&lt;small&gt;</code> tag or <code>.small</code> class for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
     <div class="bs-example">
       <blockquote>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -1714,7 +1713,7 @@
 
 
     <h2 id="forms-inline">Inline form</h2>
-    <p>Add <code>.form-inline</code> for left-aligned and inline-block controls for a compact layout.</p>
+    <p>Add <code>.form-inline</code> to your <code>&lt;form&gt;</code> for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
     <div class="bs-callout bs-callout-danger">
       <h4>Requires custom widths</h4>
       <p>Inputs, selects, and textareas are 100% wide by default in Bootstrap. To use the inline form, you'll have to set a width on the form controls used within.</p>
@@ -1763,7 +1762,7 @@
     <h2 id="forms-horizontal">Horizontal form</h2>
     <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
     <div class="bs-example">
-      <form class="form-horizontal">
+      <form class="form-horizontal" role="form">
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
           <div class="col-sm-10">
@@ -2836,7 +2835,7 @@
         <p>Updated to support v3.0.0 by <a href="https://github.com/acmetech" target="_blank">acmetech</a>.</p>
         <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
-          <li>Currently v3.0.2-3.0.2</li>
+          <li>Currently v3.0.3-3.1.0</li>
           <li class="muted">&middot;</li>
           <li><a href="../2.3.2/">2.3.2 docs</a></li>
           <li class="muted">&middot;</li>
@@ -2859,16 +2858,25 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.js"></script>
 
-<script src="http://platform.twitter.com/widgets.js"></script>
 <script src="../docs-assets/js/holder.js"></script>
 
 <script src="../docs-assets/js/select2.min.js"></script>
 <script src="../docs-assets/js/application.js"></script>
 
 
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
 
 
   </body>
