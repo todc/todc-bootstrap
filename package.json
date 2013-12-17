@@ -1,51 +1,51 @@
 {
-    "name": "todc-bootstrap"
-  , "description": "Google-styled theme for Bootstrap."
-  , "version": "3.0.3-3.1.0"
-  , "keywords": ["bootstrap", "css", "theme", "google"]
-  , "homepage": "http://todc.github.com/todc-bootstrap/"
-  , "author": "Tim O'Donnell"
-  , "scripts": { "test": "grunt test" }
-  , "repository": {
-      "type": "git"
-    , "url": "https://github.com/todc/todc-bootstrap.git"
-  }
-  , "bugs": {
-      "url": "https://github.com/todc/todc-bootstrap/issues"
-  }
-  , "licenses": [
+  "name": "todc-bootstrap",
+  "description": "Google-styled theme for Bootstrap.",
+  "version": "3.0.3-3.1.0",
+  "keywords": ["bootstrap", "css", "theme", "google"],
+  "homepage": "http://todc.github.com/todc-bootstrap/",
+  "author": "Tim O'Donnell",
+  "scripts": { "test": "grunt test" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/todc/todc-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/todc/todc-bootstrap/issues"
+  },
+  "licenses": [
     {
-        "type": "MIT"
-      , "url": "http://www.opensource.org/licenses/mit-license.php"
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
-  , "devDependencies": {
-      "grunt": "~0.4.1"
-    , "grunt-banner": "~0.2.0"
-    , "grunt-contrib-clean": "~0.5.0"
-    , "grunt-contrib-compress": "~0.5.0"
-    , "grunt-contrib-copy": "~0.4.1"
-    , "grunt-contrib-csslint": "~0.2.0"
-    , "grunt-contrib-jshint": "~0.7.0"
-    , "grunt-contrib-less": "~0.8.0"
-    , "grunt-contrib-watch": "~0.5.3"
-    , "grunt-csscomb": "~1.1.0"
-    , "grunt-html-validation": "~0.1.6"
-    , "grunt-jekyll": "~0.4.0"
-    , "grunt-jscs-checker": "~0.2.5"
-    , "grunt-sed": "~0.1.1"
-    , "grunt-shell": "~0.6.0"
-    , "load-grunt-tasks": "~0.2.0"
-  }
-  , "jspm": {
-      "main": "js/todc-bootstrap"
-    , "directories": { "lib": "dist" }
-    , "shim": {
-        "js/todc-bootstrap": {
-            "imports": "jquery"
-          , "exports": "$"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-less": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csscomb": "~1.1.0",
+    "grunt-html-validation": "~0.1.11",
+    "grunt-jekyll": "~0.4.0",
+    "grunt-jscs-checker": "~0.2.5",
+    "grunt-sed": "~0.1.1",
+    "grunt-shell": "~0.6.0",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "jspm": {
+    "main": "js/todc-bootstrap",
+    "directories": { "lib": "dist" },
+    "shim": {
+      "js/todc-bootstrap": {
+        "imports": "jquery",
+        "exports": "$"
         }
-    }
-    , "buildConfig": { "uglify": true }
+    },
+    "buildConfig": { "uglify": true }
   }
 }
