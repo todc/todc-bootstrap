@@ -65,9 +65,13 @@ module.exports = function (grunt) {
     },
 
     less: {
-      compile: {
+      compileCore: {
         options: {
-          strictMath: true
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: '<%= pkg.name %>.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
         files: {
           'dist/css/<%= pkg.name %>.css': 'less/todc-bootstrap.less'
