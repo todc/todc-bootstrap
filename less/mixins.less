@@ -80,7 +80,6 @@
 // Example: an element has a height of 30px and you want to vertically center it in a bar other than the navbar:
 //          .navbar-vertical-align(32px; @navbar-toolbar-height);
 .navbar-vertical-align(@element-height; @bar-height: @navbar-height) {
-  // margin-top: (@bar-height - @element-height) / 2;
   margin-top: ((@bar-height - @element-height) / 2);
   margin-bottom: ((@bar-height - @element-height) / 2);
 }
@@ -141,8 +140,8 @@
 
 .form-control-focus(@color: @input-border-focus) {
   &:focus {
-    border-color: @color;
-    outline: 0;
+    // border-color: @color;
+    // outline: 0;
     .box-shadow(inset 0 1px 2px rgba(0,0,0,0.3));
   }
 }
