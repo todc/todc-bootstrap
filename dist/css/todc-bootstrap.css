@@ -1332,12 +1332,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-group-vertical > .btn:first-child:not(:last-child) {
   border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 .btn-group-vertical > .btn:last-child:not(:first-child) {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   border-bottom-left-radius: 2px;
 }
 .input-group-lg > .form-control,
@@ -2967,7 +2963,6 @@ a.thumbnail.active {
 .alert {
   padding: 8px;
   margin-bottom: 18px;
-  border: 1px solid transparent;
   border-radius: 2px;
 }
 .alert .alert-link {
