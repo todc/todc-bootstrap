@@ -3089,7 +3089,6 @@ a.thumbnail.active {
   border-top-right-radius: 0;
 }
 .list-group-item:last-child {
-  margin-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3116,11 +3115,6 @@ a.list-group-item.active:focus {
   border-color: #e5e5e5;
   border-left: 4px solid #dd4b39;
   border-left-color: #dd4b39;
-}
-a.list-group-item.active .list-group-item-heading,
-a.list-group-item.active:hover .list-group-item-heading,
-a.list-group-item.active:focus .list-group-item-heading {
-  color: inherit;
 }
 a.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,

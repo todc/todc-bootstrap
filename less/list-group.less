@@ -16,7 +16,6 @@
     .border-top-radius(@list-group-border-radius);
   }
   &:last-child {
-    margin-bottom: 0;
     .border-bottom-radius(@list-group-border-radius);
   }
 
@@ -53,10 +52,6 @@ a.list-group-item {
     border-left: 4px solid @list-group-active-color;
     border-left-color: @list-group-active-color;
 
-    // Force color to inherit for custom content
-    .list-group-item-heading {
-      color: inherit;
-    }
     .list-group-item-text {
       font-weight: normal;
       color: @list-group-active-text-color;
