@@ -1386,11 +1386,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin: 0;
   border-radius: 0;
 }
-.input-group-addon:not(:first-child):not(:last-child),
-.input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
 .input-group-addon {
   padding: 5px 8px;
   font-size: 13px;
@@ -1412,31 +1407,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
   margin-bottom: -3px;
-}
-.input-group .form-control:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.input-group-addon:first-child {
-  border-right: 0;
-}
-.input-group .form-control:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.input-group-addon:last-child {
-  border-left: 0;
-}
-.input-group-btn > .btn:focus {
-  z-index: 2;
 }
 .nav > li.disabled > a {
   color: #999;

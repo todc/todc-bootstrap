@@ -22,10 +22,6 @@
 .input-group .form-control {
   margin: 0;
   border-radius: 0;
-
-  &:not(:first-child):not(:last-child) {
-    border-radius: 0;
-  }
 }
 
 // Text input groups
@@ -58,32 +54,6 @@
 }
 
 // Reset rounded corners
-.input-group .form-control:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-  .border-right-radius(0);
-}
-.input-group-addon:first-child {
-  border-right: 0;
-}
-.input-group .form-control:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child) {
-  .border-left-radius(0);
-}
-.input-group-addon:last-child {
-  border-left: 0;
-}
 
 // Button input groups
 // -------------------------
-.input-group-btn > .btn {
-  // Bring the "focus" button to the front
-  &:focus {
-    z-index: 2;
-  }
-}
