@@ -73,11 +73,13 @@ Releases will be numbered with the following format:
 
 The first set of `<major>.<minor>.<patch>` is the Bootstrap version while the second set is the todc-bootstrap version.
 
-And constructed with the following guidelines:
+Given a version number MAJOR.MINOR.PATCH, increment the:
 
-* Breaking backward compatibility bumps the major (and resets the minor and patch)
-* New additions without breaking backward compatibility bumps the minor (and resets the patch)
-* Bug fixes and misc changes bumps the patch
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards-compatible manner, and
+* PATCH version when you make backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 For more information on SemVer, please visit <http://semver.org/>.
 
