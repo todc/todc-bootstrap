@@ -3,6 +3,8 @@
 This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
 the look of these new UI elements for my own personal use.
 
+TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and maintained with the support and involvement of the community.
+
 ## Compatibility ##
 
 This is being tested in the latest versions of Chrome, Firefox, and IE8+.
