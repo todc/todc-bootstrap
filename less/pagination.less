@@ -34,8 +34,9 @@
     &:hover,
     &:focus {
       z-index: 2;
-      background-color: @pagination-active-bg;
-      border-color: darken(@pagination-border, 8.5%);
+      color: @pagination-color;
+      background-color: @pagination-hover-bg;
+      border-color: @pagination-hover-border;
 
       .box-shadow(0 1px 1px rgba(0,0,0,0.1));
      }
@@ -67,11 +68,11 @@
     > a:hover,
     > a:focus {
       color: @pagination-disabled-color;
-      border-color: darken(#fff, 15%);
+      border-color: @pagination-disabled-border;
 
       #gradient > .vertical(@start-color: #f5f5f5; @end-color: #f1f1f1);
       .reset-filter();
-      background-color: @pagination-bg;
+      background-color: @pagination-disabled-bg;
 
       .box-shadow(none);
       text-shadow: none;

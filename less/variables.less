@@ -500,13 +500,17 @@
 @pagination-padding-horizontal:        12px;
 @pagination-padding-vertical:          @padding-base-vertical;
 
-@pagination-hover-bg:                  #f1f1f1;
+@pagination-hover-color:               @pagination-color;
+@pagination-hover-bg:                  #f5f5f5;
+@pagination-hover-border:              darken(@pagination-border, 8.5%);
 
 @pagination-active-color:              @brand-primary;
 @pagination-active-bg:                 #f5f5f5;
 @pagination-active-border:             #c6c6c6;
 
 @pagination-disabled-color:            darken(#fff, 30%);
+@pagination-disabled-bg:               @pagination-bg;
+@pagination-disabled-border:           darken(#fff, 15%);
 
 
 // Pager
@@ -516,7 +520,7 @@
 @pager-border:                         @pagination-border;
 @pager-border-radius:                  15px;
 
-@pager-hover-bg:                       @pagination-hover-bg;
+@pager-hover-bg:                       #f1f1f1;
 
 @pager-active-bg:                      #f1f1f1;
 @pager-active-color:                   @pagination-active-color;
