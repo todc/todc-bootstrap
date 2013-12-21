@@ -1,4 +1,19 @@
-# Overview #
+## Table of contents
+
+ - [Overview](#overview)
+ - [Compatibility](#compatibility)
+ - [Requirements](#requirements)
+ - [Bugs and feature requests](#bugs-and-feature-requests)
+ - [Documentation](#documentation)
+ - [Compiling CSS and JavaScript](#compiling-css-and-javascript)
+ - [Contributing](#contributing)
+ - [Versioning](#versioning)
+ - [Authors](#authors)
+ - [Copyright and license](#copyright-and-license)
+ - [Acknowledgements](#acknowledgements)
+
+
+## Overview ##
 
 This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
 the look of these new UI elements for my own personal use.
@@ -18,6 +33,33 @@ The following projects are specifically designed for use with todc-bootstrap:
 
 * [LESS](http://lesscss.org) - for compiling `.less` files into CSS
 * [Bootstrap](http://github.com/twbs/bootstrap) - this will be automatically checked out, if necessary, during the build process
+
+
+
+## Bugs and feature requests
+
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues.  If your problem or idea is not addressed yet, [please open a new issue](https://github.com/todc/todc-bootstrap/issues/new).
+
+
+## Documentation
+
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at http://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+
+### Running documentation locally
+
+1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v1.x).
+  - **Windows users:** read [this unofficial guide](https://github.com/juthilo/run-jekyll-on-windows/) to get Jekyll up and running without problems.
+2. From the root `/todc-bootstrap` directory, run `jekyll serve` in the command line.
+  - **Windows users:** For Ruby 2.0.0 run `chcp 65001` first to change the command prompt's character encoding ([code page](http://en.wikipedia.org/wiki/Windows_code_page)) to UTF-8 so Jekyll runs without errors. For Ruby 1.9.3 you can alternatively do `SET LANG=en_EN.UTF-8`. In addition, ensure you have Python installed and added in your `PATH` or the build will fail due to our Pygments dependency.
+3. Open <http://localhost:9002> in your browser, and voilà.
+
+Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).
+
+### Documentation for previous releases
+
+Documentation for v2.3.2 has been made available for the time being at <http://todc.github.io/todc-bootstrap/2.3.2/> while folks transition to TODC Bootstrap 3.
+
+[Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
 
 
 
@@ -59,9 +101,13 @@ Should you encounter problems with installing dependencies or running Grunt comm
 
 
 
-## Demo ##
+## Contributing
 
-http://todc.github.io/todc-bootstrap/index.html
+Please read through our [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+
+More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
+
+Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 
 
@@ -87,9 +133,17 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 
 
-## License ##
+## Authors
 
-MIT License - http://www.opensource.org/licenses/mit-license.php
+**Tim O'Donnell**
+
+- <http://github.com/todc>
+
+
+
+## Copyright and license
+
+Copyright 2013 Tim O'Donnell under [the MIT license](http://www.opensource.org/licenses/mit-license.php).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 
@@ -97,4 +151,4 @@ MIT License - http://www.opensource.org/licenses/mit-license.php
 
 ## Acknowledgements ##
 
-Inspired by [Bootstrap](http://twbs.github.com/bootstrap/) and, of course, Google.
+Inspired by [Bootstrap](http://getbootstrap.com/) and, of course, Google.
