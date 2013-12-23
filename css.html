@@ -79,7 +79,7 @@ base_url: "../"
       <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
       <li>Use rows to create horizontal groups of columns.</li>
       <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-      <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. LESS mixins can also be used for more semantic layouts.</li>
+      <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
       <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
       <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
     </ul>
@@ -91,7 +91,7 @@ base_url: "../"
     </div>
 
     <h3 id="grid-media-queries">Media queries</h3>
-    <p>We use the following media queries in our LESS files to create the key breakpoints in our grid system.</p>
+    <p>We use the following media queries in our Less files to create the key breakpoints in our grid system.</p>
 {% highlight css %}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -447,8 +447,8 @@ base_url: "../"
 </div>
 {% endhighlight %}
 
-    <h3 id="grid-less">LESS mixins and variables</h3>
-    <p>In addition to <a href="#grid-example-basic">prebuilt grid classes</a> for fast layouts, Bootstrap includes LESS variables and mixins for quickly generating your own simple, semantic layouts.</p>
+    <h3 id="grid-less">Less mixins and variables</h3>
+    <p>In addition to <a href="#grid-example-basic">prebuilt grid classes</a> for fast layouts, Bootstrap includes Less variables and mixins for quickly generating your own simple, semantic layouts.</p>
 
     <h4>Variables</h4>
     <p>Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
@@ -726,9 +726,9 @@ base_url: "../"
 <p class="lead">...</p>
 {% endhighlight %}
 
-    <!-- Using LESS -->
+    <!-- Using Less -->
     <h3>Built with Less</h3>
-    <p>The typographic scale is based on two LESS variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height-base</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
+    <p>The typographic scale is based on two Less variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height-base</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
 
 
     <!-- Emphasis -->
@@ -2846,9 +2846,9 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   ================================================== -->
   <div class="bs-docs-section" id="less">
     <div class="page-header">
-      <h1>Using LESS</h1>
+      <h1>Using Less</h1>
     </div>
-    <p class="lead">Bootstrap's CSS is built on LESS, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source LESS files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework.</p>
+    <p class="lead">Bootstrap's CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source Less files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework.</p>
 
     <p>Grid variables and mixins are covered <a href="{{ page.base_url }}css/#grid-less">within the Grid system section</a>.</p>
 
@@ -2899,7 +2899,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   background-color: @brand-primary;
 }
 
-// Reassigned variables in LESS
+// Reassigned variables in Less
 @alert-message-background: @brand-info;
 .alert {
   background-color: @alert-message-background;
@@ -2932,7 +2932,7 @@ a {
   }
 }
 {% endhighlight %}
-    <p>Note that the <code>@link-color-hover</code> uses a function, another awesome tool from LESS, to automagically create the right hover color. You can use <code>darken</code>, <code>lighten</code>, <code>saturate</code>, and <code>desaturate</code>.</p>
+    <p>Note that the <code>@link-color-hover</code> uses a function, another awesome tool from Less, to automagically create the right hover color. You can use <code>darken</code>, <code>lighten</code>, <code>saturate</code>, and <code>desaturate</code>.</p>
 
     <h3 id="less-variables-typography">Typography</h3>
     <p>Easily set your type face, text size, leading, and more with a few quick variables. Bootstrap makes use of these as well to provide easy typographic mixins.</p>
