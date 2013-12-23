@@ -84,10 +84,10 @@ When completed, you'll be able to run the various Grunt commands provided from t
 `grunt checkout-bootstrap` - clones Bootstrap and checks out the version specified by the `bootstrapVersion` variable in Gruntfile.js.
 
 #### Build - `grunt`
-Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`. **Uses [recess](http://twitter.github.io/recess/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
+Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`. **Uses [Less](http://lesscss.org/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
 
 #### Only compile CSS and JavaScript - `grunt dist`
-`grunt dist` creates the `/dist` directory with compiled files. **Uses [recess](http://twitter.github.io/recess/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
+`grunt dist` creates the `/dist` directory with compiled files. **Uses [Less](http://lesscss.org/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
 
 #### Compress/zip - `grunt compress`
 Run `grunt compress` - compresses/zips the contents of the `/dist` folder to `todc-bootstrap-x.x.x-dist.zip` in the `/dist` folder.
