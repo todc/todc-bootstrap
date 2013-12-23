@@ -7,8 +7,26 @@ permalink:        pretty
 
 # Server
 destination:      ./_gh_pages
-exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less", "bootstrap", "codekit-config.json", "*.TODO"]
 port:             9002
+exclude:
+- ".editorconfig"
+- ".gitignore"
+- "*.TODO"
+- "bootstrap"
+- "bower.json"
+- "CNAME"
+- "codekit-config.json"
+- "composer.json"
+- "CONTRIBUTING.md"
+- "DOCS-LICENSE"
+- "Gruntfile.js"
+- "less"
+- "LICENSE"
+- "node_modules"
+- "package.json"
+- "README.md"
+- "sauce_browsers.yml"
+- "test-infra"
 
 # Custom vars
 current_version:      3.1.0-3.1.0
