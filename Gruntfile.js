@@ -105,7 +105,7 @@ module.exports = function (grunt) {
     csscomb: {
       sort: {
         options: {
-          sortOrder: '.csscomb.json'
+          config: '.csscomb.json'
         },
         files: {
           'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css'],
