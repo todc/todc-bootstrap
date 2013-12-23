@@ -18,9 +18,8 @@ module.exports = function (grunt) {
     banner: '/*!\n' +
               ' * TODC Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
-              ' * <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
-              ' */\n\n',
+              ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
+              ' */\n',
     jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
     // Bootstrap variables
