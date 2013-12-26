@@ -60,7 +60,10 @@ module.exports = function (grunt) {
       options: {
         csslintrc: '.csslintrc'
       },
-      src: ['dist/css/todc-bootstrap.css']
+      src: [
+        'dist/css/todc-bootstrap.css',
+        'docs-assets/css/docs.css'
+      ]
     },
 
     less: {
