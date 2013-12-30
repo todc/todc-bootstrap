@@ -10,6 +10,8 @@ module.exports = function (grunt) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&')
   }
 
+  var fs = require('fs')
+
   // Project configuration.
   grunt.initConfig({
 
@@ -236,8 +238,6 @@ module.exports = function (grunt) {
   grunt.registerTask('change-version-number', ['sed']);
 
   grunt.registerTask('build-glyphicons-data', function () {
-    var fs = require('fs')
-
     // Pass encoding, utf8, so `readFileSync` will return a string instead of a
     // buffer
     var glyphiconsFile = fs.readFileSync('bootstrap/less/glyphicons.less', 'utf8')
