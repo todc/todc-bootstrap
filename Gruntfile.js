@@ -119,17 +119,28 @@ module.exports = function (grunt) {
     },
 
     copy: {
+      docs: {
+        expand: true,
+        cwd: './dist',
+        src: [
+          // '{css,js}/*.min.*',
+          '{css}/*.min.*',
+          '{css}/*.map',
+          // 'fonts/*'
+        ],
+        dest: 'docs/dist'
+      },
       images: {
         expand: true,
         src: ['img/*'],
-        dest: 'dist/'
+        dest: 'docs/dist'
       },
       bootstrap: {
         expand: true,
         flatten: false,
         cwd: '<%= bootstrapDir %>/dist',
         src: '**',
-        dest: 'dist/'
+        dest: 'docs/dist'
       }
     },
 
@@ -224,6 +235,9 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner']);
+
+  // Fonts distribution task.
+  grunt.registerTask('dist-docs', ['copy:docs']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
