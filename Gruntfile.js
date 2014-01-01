@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         src: 'Gruntfile.js'
       },
       assets: {
-        src: 'docs-assets/js/application.js'
+        src: 'docs/assets/js/application.js'
       }
     },
 
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js']
       },
       src: {
-        src: ['docs-assets/js/application.js']
+        src: ['docs/assets/js/application.js']
       }
     },
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
       },
       src: [
         'dist/css/todc-bootstrap.css',
-        'docs-assets/css/docs.css'
+        'docs/assets/css/docs.css'
       ]
     },
 
@@ -119,27 +119,26 @@ module.exports = function (grunt) {
     },
 
     copy: {
+      bootstrap: {
+        expand: true,
+        flatten: false,
+        cwd: '<%= bootstrapDir %>/dist',
+        src: '**',
+        dest: 'dist'
+      },
       docs: {
         expand: true,
         cwd: './dist',
         src: [
-          // '{css,js}/*.min.*',
-          '{css}/*.min.*',
-          '{css}/*.map',
-          // 'fonts/*'
+          '{css,js}/*.min.*',
+          'css/*.map',
+          'fonts/*'
         ],
         dest: 'docs/dist'
       },
       images: {
         expand: true,
         src: ['img/*'],
-        dest: 'docs/dist'
-      },
-      bootstrap: {
-        expand: true,
-        flatten: false,
-        cwd: '<%= bootstrapDir %>/dist',
-        src: '**',
         dest: 'docs/dist'
       }
     },
@@ -237,11 +236,11 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner']);
 
   // Fonts distribution task.
-  grunt.registerTask('dist-docs', ['copy:docs']);
+  grunt.registerTask('dist-docs', ['copy']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-docs']);
 
   // // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data']);
@@ -270,8 +269,8 @@ module.exports = function (grunt) {
     }
 
     // Create the `_data` directory if it doesn't already exist
-    if (!fs.existsSync('_data')) fs.mkdirSync('_data')
+    if (!fs.existsSync('docs/_data')) fs.mkdirSync('docs/_data')
 
-    fs.writeFileSync('_data/glyphicons.yml', glyphiconsData)
+    fs.writeFileSync('docs/_data/glyphicons.yml', glyphiconsData)
   });
 };
