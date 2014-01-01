@@ -234,14 +234,14 @@ module.exports = function (grunt) {
   grunt.registerTask('test', testSubtasks);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner']);
+  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
-  grunt.registerTask('dist-docs', ['copy']);
+  grunt.registerTask('dist-docs', ['copy:docs']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-docs']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   // // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data']);
