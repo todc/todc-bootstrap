@@ -143,7 +143,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 ## Copyright and license
 
-Copyright 2013 Tim O'Donnell under [the MIT license](http://www.opensource.org/licenses/mit-license.php).
+Copyright 2014 Tim O'Donnell under [the MIT license](http://www.opensource.org/licenses/mit-license.php).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 
