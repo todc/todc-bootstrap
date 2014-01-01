@@ -132,14 +132,15 @@ module.exports = function (grunt) {
         src: [
           '{css,js}/*.min.*',
           'css/*.map',
-          'fonts/*'
+          'fonts/*',
+          'img/*'
         ],
         dest: 'docs/dist'
       },
       images: {
         expand: true,
         src: ['img/*'],
-        dest: 'docs/dist'
+        dest: 'dist'
       }
     },
 
