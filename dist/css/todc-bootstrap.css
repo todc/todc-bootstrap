@@ -3566,14 +3566,34 @@ li.list-group-header {
 .tooltip {
   font-size: 11px;
   font-weight: bold;
+  line-height: 1.25;
+  word-break: break-word;
 }
 .tooltip.in {
   filter: alpha(opacity=100);
   opacity: 1;
 }
 .tooltip-inner {
+  padding: 7px 9px;
   background-color: #2a2a2a;
+  border: 1px solid #fff;
   border-radius: 0;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+  bottom: 1px;
+}
+.tooltip.right .tooltip-arrow {
+  left: 1px;
+}
+.tooltip.left .tooltip-arrow {
+  right: 1px;
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+  top: 1px;
 }
 .popover {
   background-color: #fff;
