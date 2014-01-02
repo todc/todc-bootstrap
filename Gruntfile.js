@@ -113,7 +113,7 @@ module.exports = function (grunt) {
           config: 'less/.csscomb.json'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css'],
+          'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css']
         }
       }
     },
