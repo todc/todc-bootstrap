@@ -69,15 +69,15 @@
 
     // Actual tabs (as links)
     > a {
-      padding: @nav-tabs-google-link-padding;
+      padding: @nav-tabs-google-link-padding-vertical @nav-tabs-google-link-padding-horizontal;
       line-height: @line-height-base;
       color: @nav-tabs-google-link-color;
       border: 3px solid transparent;
       border-width: 3px 0;
       border-radius: 0;
-      margin:@nav-tabs-google-link-margin;
+      margin: @nav-tabs-google-link-margin-vertical @nav-tabs-google-link-margin-horizontal;
       &:first-of-type {
-        margin-left:0;
+        margin-left: 0;
       }
       &:hover,
       &:focus {
@@ -85,7 +85,7 @@
         border-top-color: transparent;
       }
       &:hover {
-        color:@nav-tabs-google-link-hover-color;
+        color: @nav-tabs-google-link-hover-color;
         border-bottom-color: transparent;
       }
       &:active {
