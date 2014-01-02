@@ -71,24 +71,23 @@
     > a {
       padding: @nav-tabs-google-link-padding;
       line-height: @line-height-base;
-      color: @gray-dark;
+      color: @nav-tabs-google-link-color;
       border: 3px solid transparent;
       border-width: 3px 0;
       border-radius: 0;
-      .opacity(.665);
       &:hover,
       &:focus {
         background-color: transparent;
         border-top-color: transparent;
       }
       &:hover {
-        .opacity(1);
+        color:@nav-tabs-google-link-hover-color;
       }
       &:active {
-        color: @nav-tabs-google-link-hover-border-color;
+        color: @nav-tabs-google-link-active-color;
       }
       &:focus {
-        color: @nav-tabs-google-link-hover-border-color;
+        color: @nav-tabs-google-link-focus-color;
         outline: 0;
       }
     }
@@ -101,13 +100,9 @@
       &:focus {
         border: 3px solid transparent;
         border-width: 3px 0;
-        color: @nav-tabs-google-link-hover-border-color;
-        border-bottom-color: @nav-tabs-google-link-hover-border-color;
-        .opacity(1);
+        color: @nav-tabs-google-link-active-border-color;
+        border-bottom-color: @nav-tabs-google-link-selected-color;
       }
-    }
-    &.active > a:focus {
-      border-color: @nav-tabs-google-link-focus-border-color;
     }
   }
 }
