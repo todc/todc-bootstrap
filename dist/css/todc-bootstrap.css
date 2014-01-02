@@ -3596,8 +3596,11 @@ li.list-group-header {
   top: 1px;
 }
 .popover {
+  padding: 0;
   background-color: #fff;
-  border-radius: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 }
 .popover-title {
   font-size: 13px;
