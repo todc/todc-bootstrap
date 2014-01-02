@@ -1460,11 +1460,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #000;
   outline: 0;
 }
-.nav-tabs-google > li > a:active,
 .nav-tabs-google > li.active > a,
-.nav-tabs-google > li > a:active:hover,
 .nav-tabs-google > li.active > a:hover,
-.nav-tabs-google > li > a:active:focus,
 .nav-tabs-google > li.active > a:focus {
   color: #dd4b39;
   border: 3px solid transparent;
