@@ -10,9 +10,21 @@
   .box-shadow(0 2px 10px rgba(0,0,0,.2));
 }
 
-.popover-title {
+.popover-title,
+.popover-footer {
+  padding: 10px;
   font-size: @font-size-base;
   background-color: @popover-title-bg;
-  border-bottom: 1px solid darken(@popover-title-bg, 5%);
+  border-bottom: 1px solid @popover-fallback-border-color;
+  border-bottom: 1px solid @popover-border-color;
   border-radius: 0;
+}
+.popover-footer {
+  border-top: 1px solid @popover-fallback-border-color;
+  border-top: 1px solid @popover-border-color;
+  border-bottom: none;
+}
+
+.popover-content {
+  padding: 10px;
 }

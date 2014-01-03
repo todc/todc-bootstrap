@@ -3636,10 +3636,21 @@ li.list-group-header {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
           box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 }
-.popover-title {
+.popover-title,
+.popover-footer {
+  padding: 10px;
   font-size: 13px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
   border-radius: 0;
+}
+.popover-footer {
+  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  border-bottom: none;
+}
+.popover-content {
+  padding: 10px;
 }
 /*# sourceMappingURL=todc-bootstrap.css.map */
