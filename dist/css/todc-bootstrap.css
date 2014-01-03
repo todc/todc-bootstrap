@@ -3579,21 +3579,55 @@ li.list-group-header {
   border: 1px solid #fff;
   border-radius: 0;
 }
+.tooltip-arrow:before {
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  border: 7px solid transparent;
+}
 .tooltip.top .tooltip-arrow,
 .tooltip.top-left .tooltip-arrow,
 .tooltip.top-right .tooltip-arrow {
   bottom: 1px;
 }
+.tooltip.top .tooltip-arrow:before,
+.tooltip.top-left .tooltip-arrow:before,
+.tooltip.top-right .tooltip-arrow:before {
+  top: -5px;
+  left: -7px;
+  border-top-color: #fff;
+  border-bottom: 0 dotted;
+}
 .tooltip.right .tooltip-arrow {
   left: 1px;
 }
+.tooltip.right .tooltip-arrow:before {
+  top: -7px;
+  right: -5px;
+  border-right-color: #fff;
+  border-left: 0 dotted;
+}
 .tooltip.left .tooltip-arrow {
   right: 1px;
+}
+.tooltip.left .tooltip-arrow:before {
+  top: -7px;
+  left: -5px;
+  border-right: 0 dotted;
+  border-left-color: #fff;
 }
 .tooltip.bottom .tooltip-arrow,
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
   top: 1px;
+}
+.tooltip.bottom .tooltip-arrow:before,
+.tooltip.bottom-left .tooltip-arrow:before,
+.tooltip.bottom-right .tooltip-arrow:before {
+  bottom: -5px;
+  left: -7px;
+  border-top: 0 dotted;
+  border-bottom-color: #fff;
 }
 .popover {
   padding: 0;
