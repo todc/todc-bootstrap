@@ -2749,6 +2749,31 @@ body { padding-bottom: 45px; }
   <li class="active">Data</li>
 </ol>
 {% endhighlight %}
+
+
+    <h2 id="breadcrumb-inverted">Inverted breadcrumbs</h2>
+    <p>Modify the look of the breadcrumbs by adding <code>.breadcrumb-inverse</code>.</p>
+    <div class="bs-example">
+      <ol class="breadcrumb breadcrumb-inverse">
+        <li class="active">Home</li>
+      </ol>
+      <ol class="breadcrumb breadcrumb-inverse">
+        <li><a href="#">Home</a></li>
+        <li class="active">Library</li>
+      </ol>
+      <ol class="breadcrumb breadcrumb-inverse" style="margin-bottom: 5px;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+{% highlight html %}
+<ol class="breadcrumb breadcrumb-inverse">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+{% endhighlight %}
   </div>
 
 

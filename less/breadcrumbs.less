@@ -7,7 +7,6 @@
   padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
   margin-bottom: @line-height-computed;
   background-color: @breadcrumb-bg;
-  #gradient > .vertical(@start-color: #f5f5f5; @end-color: #f1f1f1);
   border-radius: @border-radius-base;
 
   > li {
@@ -26,5 +25,23 @@
   > .active,
   > .active > a {
     color: @breadcrumb-active-color;
+  }
+}
+
+.breadcrumb-inverse {
+  background-color: @breadcrumb-inverse-bg;
+
+  > li {
+    > a {
+      color: @breadcrumb-inverse-color;
+      &:hover {
+        color: @breadcrumb-inverse-active-color;
+      }
+    }
+  }
+
+  > .active,
+  > .active > a {
+    color: @breadcrumb-inverse-active-color;
   }
 }
