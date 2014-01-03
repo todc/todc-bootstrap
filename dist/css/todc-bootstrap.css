@@ -2687,6 +2687,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #999;
 }
 .breadcrumb {
+  padding: 13px 15px;
   margin-bottom: 18px;
   background-color: #f3f3f3;
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
@@ -2696,7 +2697,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-radius: 2px;
 }
 .breadcrumb > li + li:before {
-  content: "/\00a0";
+  color: #999;
+  content: ">\00a0";
+}
+.breadcrumb > li > a {
+  color: #999;
+}
+.breadcrumb > li > a:hover {
+  color: #000;
+}
+.breadcrumb > .active,
+.breadcrumb > .active > a {
+  color: #000;
 }
 .pagination {
   margin: 18px 0;
