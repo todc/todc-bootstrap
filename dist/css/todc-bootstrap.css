@@ -5,7 +5,9 @@
  */
 
 .caret-right,
-.caret-left {
+.collapse-caret:before,
+.caret-left,
+.collapse-caret.collapsed:before {
   display: inline-block;
   width: 0;
   height: 0;
@@ -16,7 +18,8 @@
   border-left: 4px solid transparent;
 }
 .caret-right,
-.caret-left {
+.caret-left,
+.collapse-caret.collapsed:before {
   vertical-align: baseline;
   border-top: 4px solid transparent;
   border-right: 0 dotted;
@@ -3338,13 +3341,9 @@ li.list-group-header {
   position: absolute;
   top: 12px;
   left: 5px;
-  width: 0;
-  height: 0;
-  content: ' ';
-  border-top: 4px solid #000;
-  border-right: 4px solid transparent;
+  margin-left: 0;
+  content: '';
   border-bottom: 0 dotted;
-  border-left: 4px solid transparent;
 }
 .collapse-caret:hover {
   background-color: #eee;
@@ -3352,10 +3351,6 @@ li.list-group-header {
 .collapse-caret.collapsed:before {
   top: 10px;
   left: 6px;
-  border-top: 4px solid transparent;
-  border-right: 0 dotted;
-  border-bottom: 4px solid transparent;
-  border-left: 4px solid #000;
 }
 .list-group .divider {
   height: 1px;

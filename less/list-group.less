@@ -189,16 +189,13 @@ li.list-group-item {
   height: 28px;
   margin-left: 14px;
   &:before {
-    content: ' ';
+    content: '';
     position: absolute;
     top: 12px;
     left: 5px;
-    width: 0;
-    height: 0;
-    border-top: 4px solid #000000;
-    border-right: 4px solid transparent;
+    margin-left: 0;
+    &:extend(.caret);
     border-bottom: 0 dotted;
-    border-left: 4px solid transparent;
   }
   &:hover {
     background-color: @gray-lighter;
@@ -207,10 +204,7 @@ li.list-group-item {
   &.collapsed:before {
     top: 10px;
     left: 6px;
-    border-top: 4px solid transparent;
-    border-right: 0 dotted;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid #000000;
+    &:extend(.caret-right);
   }
 }
 
