@@ -524,14 +524,16 @@
 // Pager
 // -------------------------
 
-@pager-bg:                             #f5f5f5;
-@pager-border:                         @pagination-border;
+@pager-color:                          #777;
+@pager-bg:                             #fafafa;
+@pager-border:                         @pager-color;
 @pager-border-radius:                  @border-radius-base;
 
-@pager-hover-bg:                       #f1f1f1;
+@pager-hover-bg:                       @pager-bg;
+@pager-hover-color:                    darken(@pager-color, 20%);
 
-@pager-active-bg:                      #f1f1f1;
-@pager-active-color:                   @pagination-active-color;
+@pager-active-bg:                      @pager-bg;
+@pager-active-color:                   @pager-hover-color;
 
 @pager-disabled-color:                 darken(#fff, 30%);
 
