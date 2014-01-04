@@ -4,6 +4,31 @@
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
 
+.caret-right,
+.caret-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.caret-right,
+.caret-left {
+  vertical-align: baseline;
+  border-top: 4px solid transparent;
+  border-right: 0 dotted;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid;
+}
+.caret-left {
+  margin-right: 2px;
+  margin-left: 0;
+  border-right: 4px solid;
+  border-left: 0 dotted;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
