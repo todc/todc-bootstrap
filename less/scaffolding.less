@@ -62,6 +62,25 @@ a {
 
 // Miscellaneous
 
+// Additional carets
+.caret-right {
+  &:extend(.caret);
+  vertical-align: baseline;
+  border-top: @caret-width-base solid transparent;
+  border-right: 0 dotted;
+  border-bottom: @caret-width-base solid transparent;
+  border-left: @caret-width-base solid;
+}
+
+.caret-left {
+  &:extend(.caret-right);
+  margin-left: 0;
+  margin-right: 2px;
+  border-right: @caret-width-base solid;
+  border-left: 0 dotted;
+}
+
+
 // Scrollable shadow
 .scrollable-shadow {
   background:

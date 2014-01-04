@@ -17,21 +17,6 @@
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
-.caret-right,
-.caret-left,
-.collapse-caret.collapsed:before {
-  vertical-align: baseline;
-  border-top: 4px solid transparent;
-  border-right: 0 dotted;
-  border-bottom: 4px solid transparent;
-  border-left: 4px solid;
-}
-.caret-left {
-  margin-right: 2px;
-  margin-left: 0;
-  border-right: 4px solid;
-  border-left: 0 dotted;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -70,6 +55,21 @@ a:focus {
           box-shadow: 0 0 0 1px #aaa;
   -webkit-transition: none;
           transition: none;
+}
+.caret-right,
+.caret-left,
+.collapse-caret.collapsed:before {
+  vertical-align: baseline;
+  border-top: 4px solid transparent;
+  border-right: 0 dotted;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid;
+}
+.caret-left {
+  margin-right: 2px;
+  margin-left: 0;
+  border-right: 4px solid;
+  border-left: 0 dotted;
 }
 .scrollable-shadow {
   background: linear-gradient(#fff 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
