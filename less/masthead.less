@@ -47,65 +47,65 @@
 // vertically and include a `max-height` to overflow in case you have too much
 // content for the user's viewport.
 
-.navbar-masthead .navbar-collapse {
-  // max-height: 340px;
-  // overflow-x: visible;
-  padding-right: @navbar-masthead-padding-horizontal;
-  padding-left:  @navbar-masthead-padding-horizontal;
-  // border-top: 1px solid transparent;
-  // box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-  // .clearfix();
-  // -webkit-overflow-scrolling: touch;
+// .navbar-masthead .navbar-collapse {
+//   max-height: 340px;
+//   overflow-x: visible;
+//   padding-right: @navbar-masthead-padding-horizontal;
+//   padding-left:  @navbar-masthead-padding-horizontal;
+//   border-top: 1px solid transparent;
+//   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+//   .clearfix();
+//   -webkit-overflow-scrolling: touch;
 
-  // &.in {
-  //   overflow-y: auto;
-  // }
+//   &.in {
+//     overflow-y: auto;
+//   }
 
-  @media (min-width: @grid-float-breakpoint) {
-    // width: auto;
-    // border-top: 0;
-    // box-shadow: none;
+//   @media (min-width: @grid-float-breakpoint) {
+//     width: auto;
+//     border-top: 0;
+//     box-shadow: none;
 
-    // &.collapse {
-    //   display: block !important;
-    //   height: auto !important;
-    //   padding-bottom: 0; // Override default setting
-    //   overflow: visible !important;
-    // }
+//     &.collapse {
+//       display: block !important;
+//       height: auto !important;
+//       padding-bottom: 0; // Override default setting
+//       overflow: visible !important;
+//     }
 
-    // &.in {
-    //   overflow-y: auto;
-    // }
+//     &.in {
+//       overflow-y: auto;
+//     }
 
-    // Undo the collapse side padding for navbars with containers to ensure
-    // alignment of right-aligned contents.
-    .navbar-fixed-top &,
-    .navbar-static-top &,
-    .navbar-fixed-bottom & {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
+//     // Undo the collapse side padding for navbars with containers to ensure
+//     // alignment of right-aligned contents.
+//     .navbar-fixed-top &,
+//     .navbar-static-top &,
+//     .navbar-fixed-bottom & {
+//       padding-left: 0;
+//       padding-right: 0;
+//     }
+//   }
+// }
 
 
 // Both navbar header and collapse
 //
 // When a container is present, change the behavior of the header and collapse.
 
-.navbar-masthead > .container,
-.navbar-masthead > .container-fluid {
-  > .navbar-header,
-  > .navbar-collapse {
-    margin-right: -@navbar-masthead-padding-horizontal;
-    margin-left:  -@navbar-masthead-padding-horizontal;
+// .navbar-masthead > .container,
+// .navbar-masthead > .container-fluid {
+//   > .navbar-header,
+//   > .navbar-collapse {
+//     margin-right: -@navbar-masthead-padding-horizontal;
+//     margin-left:  -@navbar-masthead-padding-horizontal;
 
-    // @media (min-width: @grid-float-breakpoint) {
-    //   margin-right: 0;
-    //   margin-left:  0;
-    // }
-  }
-}
+//     @media (min-width: @grid-float-breakpoint) {
+//       margin-right: 0;
+//       margin-left:  0;
+//     }
+//   }
+// }
 
 
 //
@@ -248,7 +248,7 @@
 
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
+    // float: left;
     margin: floor((@navbar-masthead-padding-vertical / 2)) 0;
 
     > li {
@@ -341,16 +341,16 @@
 .navbar-masthead .navbar-text {
   .navbar-vertical-align(@line-height-computed, @navbar-masthead-height);
 
-  @media (min-width: @grid-float-breakpoint) {
-    float: left;
-    margin-left: @navbar-masthead-padding-horizontal;
-    margin-right: @navbar-masthead-padding-horizontal;
+  // @media (min-width: @grid-float-breakpoint) {
+  //   float: left;
+  //   margin-left: @navbar-masthead-padding-horizontal;
+  //   margin-right: @navbar-masthead-padding-horizontal;
 
-    // Outdent the form if last child to line up with content down the page
-    &.navbar-right:last-child {
-      margin-right: 0;
-    }
-  }
+  //   // Outdent the form if last child to line up with content down the page
+  //   &.navbar-right:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 // Alternate navbars
