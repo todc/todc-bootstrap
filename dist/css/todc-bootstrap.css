@@ -1499,111 +1499,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #4d90fe;
 }
 .navbar {
-  position: relative;
   min-height: 28px;
   margin-bottom: 18px;
-  border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
     border-radius: 2px;
   }
 }
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-  }
-}
-.navbar-collapse {
-  max-height: 340px;
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-}
-.navbar-collapse.in {
-  overflow-y: auto;
-}
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    box-shadow: none;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible;
-  }
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-.container > .navbar-header,
-.container-fluid > .navbar-header,
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.navbar-static-top {
-  z-index: 1000;
-  border-width: 0 0 1px;
-}
-@media (min-width: 768px) {
-  .navbar-static-top {
-    border-radius: 0;
-  }
-}
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-@media (min-width: 768px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    border-radius: 0;
-  }
-}
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px;
-}
-.navbar-fixed-bottom {
-  bottom: 0;
-  margin-bottom: 0;
-  border-width: 1px 0 0;
-}
 .navbar-brand {
-  float: left;
   padding: 5px 15px;
   font-size: 14px;
   line-height: 18px;
-}
-.navbar-brand:hover,
-.navbar-brand:focus {
-  text-decoration: none;
 }
 .navbar-brand > .glyphicon {
   margin-top: 0;
@@ -1615,33 +1522,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-toggle {
-  position: relative;
-  float: right;
   padding: 5px 10px;
   margin-top: 1px;
   margin-right: 15px;
   margin-bottom: 1px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
   border-radius: 2px;
-}
-.navbar-toggle:focus {
-  outline: none;
-}
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
-}
-@media (min-width: 768px) {
-  .navbar-toggle {
-    display: none;
-  }
 }
 .navbar-nav {
   margin: 2px -15px;
@@ -1652,34 +1537,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 18px;
 }
 @media (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 18px;
-  }
-  .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-image: none;
   }
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
     margin: 0;
-  }
-  .navbar-nav > li {
-    float: left;
   }
   .navbar-nav > li > a {
     padding-top: 5px;
@@ -1695,8 +1559,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-bottom: 0;
   margin-left: -15px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1733,38 +1595,17 @@ textarea.input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
-  .navbar-form .form-group {
-    margin-bottom: 5px;
-  }
-}
 @media (min-width: 768px) {
   .navbar-form {
-    width: auto;
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-    border: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .navbar-form.navbar-right:last-child {
-    margin-right: -15px;
   }
 }
 .navbar-form .form-control {
   height: 26px;
   padding: 3px 8px;
-}
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 .navbar-btn,
 .navbar .btn {
@@ -1786,16 +1627,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-text {
   margin-top: 5px;
   margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-  .navbar-text {
-    float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  .navbar-text.navbar-right:last-child {
-    margin-right: 0;
-  }
 }
 .navbar-default {
   background-color: #2d2d2d;
@@ -1986,25 +1817,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-radius: 2px;
   }
 }
-.navbar-masthead .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .navbar-fixed-top .navbar-masthead .navbar-collapse,
-  .navbar-static-top .navbar-masthead .navbar-collapse,
-  .navbar-fixed-bottom .navbar-masthead .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-.navbar-masthead > .container > .navbar-header,
-.navbar-masthead > .container-fluid > .navbar-header,
-.navbar-masthead > .container > .navbar-collapse,
-.navbar-masthead > .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
 .navbar-masthead .navbar-static-top {
   z-index: 1005;
 }
@@ -2035,7 +1847,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-masthead .navbar-nav {
-    float: left;
     margin: 6px 0;
   }
   .navbar-masthead .navbar-nav > li > a {
@@ -2094,16 +1905,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-masthead .navbar-text {
   margin-top: 13px;
   margin-bottom: 13px;
-}
-@media (min-width: 768px) {
-  .navbar-masthead .navbar-text {
-    float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  .navbar-masthead .navbar-text.navbar-right:last-child {
-    margin-right: 0;
-  }
 }
 .navbar-masthead.navbar-default {
   background-color: #f1f1f1;
@@ -2294,25 +2095,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-radius: 2px;
   }
 }
-.navbar-toolbar .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .navbar-fixed-top .navbar-toolbar .navbar-collapse,
-  .navbar-static-top .navbar-toolbar .navbar-collapse,
-  .navbar-fixed-bottom .navbar-toolbar .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-.navbar-toolbar > .container > .navbar-header,
-.navbar-toolbar > .container-fluid > .navbar-header,
-.navbar-toolbar > .container > .navbar-collapse,
-.navbar-toolbar > .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
 .navbar-toolbar .navbar-static-top {
   z-index: 1008;
 }
@@ -2381,7 +2163,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-toolbar .navbar-nav {
-    float: left;
     margin: 0;
   }
   .navbar-toolbar .navbar-nav > li > a {
@@ -2443,16 +2224,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-toolbar .navbar-text {
   margin-top: 9px;
   margin-bottom: 9px;
-}
-@media (min-width: 768px) {
-  .navbar-toolbar .navbar-text {
-    float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  .navbar-toolbar .navbar-text.navbar-right:last-child {
-    margin-right: 0;
-  }
 }
 .navbar-toolbar.navbar-default {
   background-color: #fff;
