@@ -79,6 +79,9 @@ body {
   text-align: center;
   border-top: 1px solid #e5e5e5;
 }
+.footer-links:nth-of-type(1) {
+  margin-bottom: -10px;
+}
 .footer-links {
   margin: 10px 0;
   padding-left: 0;
@@ -173,9 +176,12 @@ body {
 }
 
 /* Links to project-level content like the repo, Expo, etc */
+.bs-masthead-links:nth-of-type(1) {
+  margin-bottom: 0;
+}
 .bs-masthead-links {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  /*margin-top: 20px;*/
+  /*margin-bottom: 40px;*/
   padding: 0 15px;
   list-style: none;
   text-align: center;
