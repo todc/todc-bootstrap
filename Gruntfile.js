@@ -53,7 +53,7 @@ module.exports = function (grunt) {
       gruntfile: {
         src: ['Gruntfile.js']
       },
-      src: {
+      assets: {
         src: ['docs/assets/js/application.js']
       }
     },
