@@ -3169,15 +3169,6 @@ li.list-group-header {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.panel-group .panel {
-  border-radius: 3px;
-}
-.panel-group .panel-heading + .panel-collapse .panel-body {
-  border-top: 1px solid #e5e5e5;
-}
-.panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #e5e5e5;
-}
 .panel-default {
   border-color: #d8d8d8;
 }
@@ -3261,6 +3252,37 @@ li.list-group-header {
 }
 .panel-info > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #85c5e5;
+}
+.panel-group .panel {
+  border-color: transparent;
+  border-radius: 0;
+}
+.panel-group .panel + .panel {
+  margin-top: -3px;
+}
+.panel-group .panel-heading {
+  padding: 0 15px;
+  background-color: #fafafa;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+}
+.panel-group .panel-heading a {
+  display: block;
+  padding: 10px 0 9px;
+  color: #444;
+  text-decoration: none;
+}
+.panel-group .panel-heading a:focus {
+  outline: none;
+}
+.panel-group .panel-heading .panel-title {
+  font-size: 13px;
+}
+.panel-group .panel-heading + .panel-collapse .panel-body {
+  border-top: 0 none;
+}
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 0 none;
 }
 .well {
   background-color: #f1f1f1;
