@@ -16,6 +16,7 @@ url:              http://localhost:9002
 # Custom vars
 current_version:  3.1.0-3.1.0
 repo:             https://github.com/todc/todc-bootstrap
+sass_repo:        https://github.com/twbs/bootstrap-sass
 
 download:
   source:         https://github.com/todc/todc-bootstrap/archive/v3.1.0-3.1.0.zip
