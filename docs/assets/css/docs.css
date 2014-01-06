@@ -1,3 +1,4 @@
+/*csslint ids: false, overqualified-elements: false*/
 /*!
  * Copyright 2014 Twitter, Inc.
  *
@@ -923,7 +924,7 @@ h1[id] {
   word-wrap: break-word; /* Help out IE10+ with class names */
 }
 .bs-glyphicons li:hover {
-  background-color: rgba(238, 238, 238, 1);
+  background-color: rgb(238, 238, 238);
 }
 
 @media (min-width: 768px) {
