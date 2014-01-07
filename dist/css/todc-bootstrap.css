@@ -17,6 +17,19 @@
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+.panel-group .panel-heading a:before,
+.panel-group .panel-heading a.collapsed:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -3272,8 +3285,16 @@ li.list-group-header {
   color: #444;
   text-decoration: none;
 }
+.panel-group .panel-heading a:before {
+  margin-right: 7px;
+  content: "\e082";
+}
 .panel-group .panel-heading a:focus {
   outline: none;
+}
+.panel-group .panel-heading a.collapsed:before {
+  margin-right: 7px;
+  content: "\e081";
 }
 .panel-group .panel-heading .panel-title {
   font-size: 13px;

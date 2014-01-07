@@ -116,8 +116,21 @@
       padding: 10px 0 9px;
       color: #444;
       text-decoration: none;
+
+      &:before {
+        content: "\e082";
+        margin-right: 7px;
+        &:extend(.glyphicon);
+      }
+
       &:focus {
         outline: none;
+      }
+
+      &.collapsed:before {
+        content: "\e081";
+        margin-right: 7px;
+        &:extend(.glyphicon);
       }
     }
 
