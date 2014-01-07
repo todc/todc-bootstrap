@@ -2227,7 +2227,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-toolbar.navbar-default {
   background-color: #fff;
-  border-color: #d7d7d7;
+  border-color: #ebebeb;
 }
 .navbar-toolbar.navbar-default .navbar-brand {
   color: #dd4b39;
@@ -2259,7 +2259,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #f2f2f2;
 }
 .navbar-toolbar.navbar-default .navbar-nav > .active > a:before {
-  border-bottom: 8px solid #d7d7d7;
+  border-bottom: 8px solid #ebebeb;
 }
 .navbar-toolbar.navbar-default .navbar-nav > .active > a:after {
   border-bottom: 7px solid #fff;
