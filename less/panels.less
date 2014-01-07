@@ -69,30 +69,6 @@
   .border-bottom-radius(@panel-border-radius);
 }
 
-
-// Collapsable panels (aka, accordion)
-//
-// Wrap a series of panels in `.panel-group` to turn them into an accordion with
-// the help of our collapse JavaScript plugin.
-
-.panel-group {
-  // Tighten up margin so it's only between panels
-  .panel {
-    border-radius: @panel-border-radius;
-  }
-
-  .panel-heading {
-    + .panel-collapse .panel-body {
-      border-top: 1px solid @panel-inner-border;
-    }
-  }
-  .panel-footer {
-    + .panel-collapse .panel-body {
-      border-bottom: 1px solid @panel-inner-border;
-    }
-  }
-}
-
 // Contextual variations
 .panel-default {
   .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-heading-bg);
@@ -111,4 +87,68 @@
 }
 .panel-info {
   .panel-variant(@panel-info-border; @panel-info-text; @panel-info-heading-bg; @panel-info-border);
+}
+
+
+// Collapsable panels (aka, accordion)
+//
+// Wrap a series of panels in `.panel-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.panel-group {
+  // Tighten up margin so it's only between panels
+  .panel {
+    border-color: transparent;
+    border-radius: 0;
+    + .panel {
+      margin-top: -3px;
+    }
+  }
+
+  .panel-heading {
+    padding: 0 15px;
+    background-color: #fafafa;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+
+    a {
+      display: block;
+      padding: 10px 0 9px;
+      color: #444;
+      text-decoration: none;
+
+      &:before {
+        content: "\e082";
+        margin-right: 7px;
+        &:extend(.glyphicon);
+      }
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &.collapsed:before {
+        content: "\e081";
+        margin-right: 7px;
+        &:extend(.glyphicon);
+      }
+    }
+
+    .panel-title {
+      font-size: @font-size-base;
+    }
+
+    + .panel-collapse .panel-body {
+      border-top: 0 none;
+    }
+  }
+  .panel-footer {
+    + .panel-collapse .panel-body {
+      border-bottom: 0 none;
+    }
+  }
 }
