@@ -3289,6 +3289,9 @@ li.list-group-header {
   margin-right: 7px;
   content: "\e082";
 }
+.panel-group .panel-heading a:hover {
+  background-color: #f5f5f5;
+}
 .panel-group .panel-heading a:focus {
   outline: none;
 }
