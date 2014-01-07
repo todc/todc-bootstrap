@@ -75,35 +75,24 @@
     text-shadow: none;
   }
 }
-
-// Primary Button
-// -------------------------
 .btn-primary {
   .button-variant(@brand-primary; #4787ed; @btn-primary-color; @btn-primary-border);
 }
-
-// Success Button
-// -------------------------
+// Success appears as green
 .btn-success {
   .button-variant(@brand-success; @brand-success; @btn-success-color; @btn-success-border);
 }
-
-// Warning Button
-// -------------------------
+// Info appears as blue-green
+.btn-info {
+  .button-variant(@btn-info-bg; @btn-info-bg; @btn-info-color; @btn-info-border);
+}
+// Warning appears as orange
 .btn-warning {
   .button-variant(lighten(@brand-warning, 5%); @brand-warning; @btn-warning-color; @btn-warning-border);
 }
-
-// Danger Button
-// -------------------------
+// Danger and error appear as red
 .btn-danger {
   .button-variant(#dd4b39; #d14836; @btn-danger-color; @btn-danger-border);
-}
-
-// Info Button
-// -------------------------
-.btn-info {
-  .button-variant(@btn-info-bg; @btn-info-bg; @btn-info-color; @btn-info-border);
 }
 
 
