@@ -2504,6 +2504,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .breadcrumb-inverse > .active > a {
   color: #fff;
 }
+.breadcrumb-sm {
+  padding: 4px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.breadcrumb-sm.breadcrumb-inverse {
+  background-color: #393832;
+}
 .pagination {
   margin: 18px 0;
   border-radius: 2px;
