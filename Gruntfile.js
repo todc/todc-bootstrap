@@ -230,7 +230,7 @@ module.exports = function (grunt) {
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
   // Test task.
-  var testSubtasks = ['dist-css', 'jshint', 'jscs', 'validate-html'];
+  var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html'];
   grunt.registerTask('test', testSubtasks);
 
   // CSS distribution task.
