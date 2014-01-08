@@ -8,10 +8,10 @@
   li {
     > a,
     > span {
-      padding: 9px 14px;
+      padding: 11px 24px;
       overflow: visible;
       font-size: @font-size-large;
-      font-weight: normal;
+      // font-weight: normal;
       color: @pager-color;
       text-decoration: none;
       white-space: nowrap;
@@ -44,8 +44,8 @@
     > span {
       .box-shadow(none);
       color: @pager-disabled-color;
-      background-color: @btn-default-bg;
-      border-color: darken(#fff, 15%);
+      background-color: @pager-disabled-bg;
+      border-color: @pager-disabled-border;
       .reset-filter();
     }
   }

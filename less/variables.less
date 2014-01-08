@@ -525,7 +525,7 @@
 // -------------------------
 
 @pager-color:                          #777;
-@pager-bg:                             #fafafa;
+@pager-bg:                             #fff;
 @pager-border:                         @pager-color;
 @pager-border-radius:                  @border-radius-base;
 
@@ -535,7 +535,9 @@
 @pager-active-bg:                      @pager-bg;
 @pager-active-color:                   @pager-hover-color;
 
-@pager-disabled-color:                 darken(#fff, 30%);
+@pager-disabled-color:                 darken(@pager-bg, 30%);
+@pager-disabled-bg:                    darken(@pager-bg, 2%);
+@pager-disabled-border:                darken(@pager-bg, 15%);
 
 
 // Jumbotron
