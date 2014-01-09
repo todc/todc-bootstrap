@@ -11,6 +11,7 @@ module.exports = function (grunt) {
   }
 
   var fs = require('fs')
+  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js')
 
   // Project configuration.
   grunt.initConfig({
@@ -251,27 +252,5 @@ module.exports = function (grunt) {
   // This can be overzealous, so its changes should always be manually reviewed!
   grunt.registerTask('change-version-number', ['sed']);
 
-  grunt.registerTask('build-glyphicons-data', function () {
-    // Pass encoding, utf8, so `readFileSync` will return a string instead of a
-    // buffer
-    var glyphiconsFile = fs.readFileSync('bootstrap/less/glyphicons.less', 'utf8')
-    var glpyhiconsLines = glyphiconsFile.split('\n')
-
-    // Use any line that starts with ".glyphicon-" and capture the class name
-    var iconClassName = /^\.(glyphicon-[^\s]+)/
-    var glyphiconsData = '# This file is generated via Grunt task. **Do not edit directly.** \n' +
-                         '# See the \'build-glyphicons-data\' task in Gruntfile.js.\n\n';
-    for (var i = 0, len = glpyhiconsLines.length; i < len; i++) {
-      var match = glpyhiconsLines[i].match(iconClassName)
-
-      if (match != null) {
-        glyphiconsData += '- ' + match[1] + '\n'
-      }
-    }
-
-    // Create the `_data` directory if it doesn't already exist
-    if (!fs.existsSync('docs/_data')) fs.mkdirSync('docs/_data')
-
-    fs.writeFileSync('docs/_data/glyphicons.yml', glyphiconsData)
-  });
+  grunt.registerTask('build-glyphicons-data', generateGlyphiconsData);
 };
