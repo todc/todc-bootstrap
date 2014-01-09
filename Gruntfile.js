@@ -10,8 +10,11 @@ module.exports = function (grunt) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&')
   }
 
+  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js')
   var fs = require('fs')
   var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js')
+  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js')
+  var path = require('path')
 
   // Project configuration.
   grunt.initConfig({
@@ -44,6 +47,9 @@ module.exports = function (grunt) {
       },
       assets: {
         src: 'docs/assets/js/application.js'
+      },
+      docsGrunt: {
+        src: ['docs/grunt/*.js']
       }
     },
 
@@ -56,6 +62,9 @@ module.exports = function (grunt) {
       },
       assets: {
         src: ['docs/assets/js/application.js']
+       },
+      docsGrunt: {
+        src: ['docs/grunt/*.js']
       }
     },
 
@@ -163,6 +172,23 @@ module.exports = function (grunt) {
       docs: {}
     },
 
+    jade: {
+      compile: {
+        options: {
+          pretty: true,
+          data: function () {
+            var filePath = path.join(__dirname, 'less/variables.less');
+            var fileContent = fs.readFileSync(filePath, {encoding: 'utf8'});
+            var parser = new BsLessdocParser(fileContent);
+            return {sections: parser.parseFile()};
+          }
+        },
+        files: {
+          'docs/_includes/customizer-variables.html': 'docs/customizer-variables.jade'
+        }
+      }
+    },
+
     validation: {
       options: {
         charset: 'utf-8',
@@ -231,6 +257,7 @@ module.exports = function (grunt) {
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
   // Test task.
+  // var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html', 'build-customizer-vars-form'];
   var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html'];
   grunt.registerTask('test', testSubtasks);
 
@@ -253,4 +280,9 @@ module.exports = function (grunt) {
   grunt.registerTask('change-version-number', ['sed']);
 
   grunt.registerTask('build-glyphicons-data', generateGlyphiconsData);
+
+  // task for building customizer
+  grunt.registerTask('build-customizer', ['build-customizer-vars-form', 'build-raw-files']);
+  grunt.registerTask('build-customizer-vars-form', ['jade']);
+  grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', generateRawFilesJs);
 };
