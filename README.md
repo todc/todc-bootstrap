@@ -38,7 +38,7 @@ The following projects are specifically designed for use with todc-bootstrap:
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues.  If your problem or idea is not addressed yet, [please open a new issue](https://github.com/todc/todc-bootstrap/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/todc/todc-bootstrap/issues/new).
 
 
 ## Documentation
@@ -72,7 +72,7 @@ Bootstrap uses [Grunt](http://gruntjs.com/) with convenient methods for working 
 From the command line:
 
 1. Install `grunt-cli` globally with `npm install -g grunt-cli`.
-2. Navigate to the root `/todc-bootstrap` directory, then run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
+2. Navigate to the root `/todc-bootstrap` directory, then run `npm install`. npm will look at [package.json](https://github.com/todc/todc-bootstrap/blob/master/package.json) and automatically install the necessary local dependencies listed there.
 
 When completed, you'll be able to run the various Grunt commands provided from the command line.
 
@@ -107,7 +107,7 @@ Please read through our [contributing guidelines](https://github.com/todc/todc-b
 
 More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
 
-Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 
 
