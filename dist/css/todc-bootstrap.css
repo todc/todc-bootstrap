@@ -3273,6 +3273,9 @@ li.list-group-header {
 .panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d59595;
 }
+.panel-group {
+  margin-bottom: 18px;
+}
 .panel-group .panel {
   border-color: transparent;
   border-radius: 0;
