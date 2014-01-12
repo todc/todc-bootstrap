@@ -359,7 +359,7 @@ input[type="checkbox"]:checked::after,
   top: -6px;
   left: -5px;
   display: block;
-  content: url(../../img/checkmark.png);
+  content: url(../img/checkmark.png);
 }
 .input-sm {
   height: 26px;
