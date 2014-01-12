@@ -134,8 +134,8 @@ module.exports = function (grunt) {
         },
         src: [
           'docs/assets/css/docs.css',
-          'docs/assets/css/pygments-manni.css'
-          // 'docs/assets/css/select2.css' // Don't include becuase it must come after todc-bootstrap.css
+          'docs/assets/css/pygments-manni.css',
+          'docs/assets/css/select2.css'
         ],
         dest: 'docs/assets/css/pack.min.css'
       }
