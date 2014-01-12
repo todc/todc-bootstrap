@@ -26,7 +26,13 @@ module.exports = function (grunt) {
               ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
               ' */\n',
-    jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
+    bannerDocs: '/*!\n' +
+              ' * TODC Bootstrap Docs (<%= pkg.homepage %>)\n' +
+              ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+              ' * Licensed under the Creative Commons Attribution 3.0 Unported License. For\n' +
+              ' * details, see http://creativecommons.org/licenses/by/3.0/.\n' +
+              ' */\n',
+    jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'Bootstrap requires jQuery\') }\n\n',
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
@@ -78,6 +84,21 @@ module.exports = function (grunt) {
       ]
     },
 
+    uglify: {
+      docsJs: {
+        options: {
+          banner: '<%= bannerDocs %>',
+          report: 'min'
+        },
+        src: [
+          'docs/assets/js/holder.js',
+          'docs/assets/js/application.js',
+          'docs/assets/js/select2.min.js' // TODO: Use select2.js
+         ],
+        dest: 'docs/assets/js/docs.min.js'
+      }
+    },
+
     less: {
       compileCore: {
         options: {
@@ -99,6 +120,24 @@ module.exports = function (grunt) {
         files: {
           'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
         }
+      }
+    },
+
+    cssmin: {
+      compress: {
+        options: {
+          banner: '<%= bannerDocs %>',
+          keepSpecialComments: '*',
+          noAdvanced: true, // turn advanced optimizations off until it's fixed in clean-css
+          report: 'min',
+          selectorsMergeMode: 'ie8'
+        },
+        src: [
+          'docs/assets/css/docs.css',
+          'docs/assets/css/pygments-manni.css'
+          // 'docs/assets/css/select2.css' // Don't include becuase it must come after todc-bootstrap.css
+        ],
+        dest: 'docs/assets/css/pack.min.css'
       }
     },
 
@@ -261,15 +300,18 @@ module.exports = function (grunt) {
   var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html'];
   grunt.registerTask('test', testSubtasks);
 
+  // JS distribution task.
+  grunt.registerTask('dist-js', ['uglify']);
+
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner', 'dist-docs']);
+  grunt.registerTask('dist-css', ['less', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
   grunt.registerTask('dist-docs', ['copy:docs']);
 
   // // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'dist-js']);
 
   // // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data']);
