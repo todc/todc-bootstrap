@@ -88,6 +88,7 @@ module.exports = function (grunt) {
       docsJs: {
         options: {
           banner: '<%= bannerDocs %>',
+          preserveComments: 'some',
           report: 'min'
         },
         src: [
