@@ -4,19 +4,6 @@
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
 
-.caret-right,
-.collapse-caret:before,
-.caret-left,
-.collapse-caret.collapsed:before {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
 .panel-group .panel-heading a:before,
 .panel-group .panel-heading a.collapsed:before {
   position: relative;
@@ -29,6 +16,19 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.caret-right,
+.collapse-caret:before,
+.caret-left,
+.collapse-caret.collapsed:before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
