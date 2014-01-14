@@ -87,7 +87,6 @@ module.exports = function (grunt) {
     uglify: {
       docsJs: {
         options: {
-          banner: '<%= bannerDocs %>',
           preserveComments: 'some',
           report: 'min'
         },
