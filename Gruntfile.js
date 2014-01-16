@@ -94,7 +94,7 @@ module.exports = function (grunt) {
           'docs/assets/js/select2.js',
           'docs/assets/js/holder.js',
           'docs/assets/js/application.js'
-         ],
+        ],
         dest: 'docs/assets/js/docs.min.js'
       }
     },
@@ -308,11 +308,11 @@ module.exports = function (grunt) {
   // Docs distribution task.
   grunt.registerTask('dist-docs', ['copy:docs']);
 
-  // // Full distribution task.
+  // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'dist-js']);
 
-  // // Default task.
+  // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data']);
 
   // Version numbering task.
