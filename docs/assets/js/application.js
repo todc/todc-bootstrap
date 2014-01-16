@@ -32,7 +32,7 @@
     var $window = $(window)
     var $body   = $(document.body)
 
-    var navHeight = $('.navbar').outerHeight(true) + 10
+    var navHeight = $('.navbar').outerHeight(true) + 16
 
     $body.scrollspy({
       target: '.bs-sidebar',
@@ -86,8 +86,7 @@
     })
 
     // popover demo
-    $('[data-toggle=popover]')
-      .popover()
+    $('[data-toggle=popover]').popover()
 
     // button state demo
     $('#loading-example-btn')
