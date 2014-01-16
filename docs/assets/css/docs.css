@@ -68,7 +68,7 @@ body {
 .btn-outline-inverse {
   color: #fff;
   background-color: transparent;
-  border-color: #ccc;
+  border-color: #fff;
 }
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
