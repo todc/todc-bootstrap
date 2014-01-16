@@ -52,28 +52,28 @@ body {
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: #4e599e;
+  color: #4d90fe;
   background-color: transparent;
-  border-color: #bfc4e0;
+  border-color: #4d90fe;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #4e599e;
-  border-color: #bfc4e0;
+  background-color: #4d90fe;
+  border-color: #4d90fe;
 }
 
 /* Inverted outline button (white on dark) */
 .btn-outline-inverse {
   color: #fff;
   background-color: transparent;
-  border-color: #cdbfe3;
+  border-color: #ccc;
 }
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
-  color: #563d7c;
+  color: #2d87e2;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -162,14 +162,14 @@ body {
 .bs-header {
   position: relative;
   padding: 30px 15px;
-  color: #cdbfe3;
+  color: #b3d4f4;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #6f5499;
-  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-  background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  background-color: #2d87e2; // 2d87e2
+  background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
+  background-image: linear-gradient(to bottom, #1b6ec1 0%, #2d87e2 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6ec1', endColorstr='#2d87e2', GradientType=0);
 }
 
  /* Masthead (headings and download button) */
@@ -548,7 +548,7 @@ h1[id] {
 .color-swatches .brand-info    { background-color: #5bc0de; }
 
 /* Docs colors */
-.color-swatches .bs-purple          { background-color: #563d7c; }
+.color-swatches .bs-purple          { background-color: #1b6ec1; }
 .color-swatches .bs-purple-light    { background-color: #c7bfd3; }
 .color-swatches .bs-purple-lighter  { background-color: #e5e1ea; }
 .color-swatches .bs-gray            { background-color: #f9f9f9; }
@@ -1145,7 +1145,7 @@ h1[id] {
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
-  color: #563d7c;
+  color: #1b6ec1;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
@@ -1160,7 +1160,7 @@ h1[id] {
 }
 .bs-brand-logos .inverse {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #1b6ec1;
 }
 
 /* Heading content within */
