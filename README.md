@@ -1,6 +1,7 @@
 ## Table of contents
 
  - [Overview](#overview)
+ - [Quick start](#quick-start)
  - [Compatibility](#compatibility)
  - [Requirements](#requirements)
  - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -19,6 +20,16 @@ This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google
 the look of these new UI elements for my own personal use.
 
 TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and maintained with the support and involvement of the community.
+
+## Quick start
+
+Three quick start options are available:
+
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.1.0-3.1.0.zip).
+- Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
+- Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
+
+Read the [Getting Started page](http://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ## Compatibility ##
 
