@@ -7,14 +7,14 @@ module.exports = function (grunt) {
   grunt.util.linefeed = '\n';
 
   RegExp.quote = function (string) {
-    return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&')
-  }
+    return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
+  };
 
-  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js')
-  var fs = require('fs')
-  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js')
-  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js')
-  var path = require('path')
+  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js');
+  var fs = require('fs');
+  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js');
+  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js');
+  var path = require('path');
 
   // Project configuration.
   grunt.initConfig({
@@ -275,8 +275,8 @@ module.exports = function (grunt) {
     sed: {
       versionNumber: {
         pattern: (function () {
-          var old = grunt.option('oldver')
-          return old ? RegExp.quote(old) : old
+          var old = grunt.option('oldver');
+          return old ? RegExp.quote(old) : old;
         })(),
         replacement: grunt.option('newver'),
         recursive: true
