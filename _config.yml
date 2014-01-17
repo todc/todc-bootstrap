@@ -12,6 +12,7 @@ host:             0.0.0.0
 port:             9002
 baseurl:          /
 url:              http://localhost:9002
+encoding:         UTF-8
 
 # Custom vars
 current_version:  3.1.0-3.1.0
@@ -27,6 +28,7 @@ bs:
   download:
     source:         https://github.com/twbs/bootstrap/archive/v3.1.0.zip
     dist:           https://github.com/twbs/bootstrap/releases/download/v3.1.0/bootstrap-3.1.0-dist.zip
+    sass:           https://github.com/twbs/bootstrap-sass/archive/v3.1.0.0.tar.gz
   blog:             http://blog.getbootstrap.com
   expo:             http://expo.getbootstrap.com
   docs:             http://getbootstrap.com

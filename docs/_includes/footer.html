@@ -1,16 +1,54 @@
+<!-- Footer
+================================================== -->
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    {% include social-buttons.html %}
+
+    <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
+    <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <ul class="footer-links muted">
+      <li>Currently v{{ site.current_version }}</li>
+      <li>&middot;</li>
+      <li><a href="{{ site.baseurl }}2.3.2/">2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.repo }}">GitHub project</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.baseurl }}getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.repo }}/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.repo }}/releases">Releases</a></li>
+    </ul>
+    <ul class="footer-links muted">
+      <li>Bootstrap v{{ site.bs.current_version }}</li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.docs }}/2.3.2/">Bootstrap 2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.docs }}/about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.repo }}">GitHub project</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.docs }}/getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.expo }}">Expo</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.blog }}">Blog</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.repo }}/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="{{ site.bs.repo }}/releases">Releases</a></li>
+    </ul>
+  </div>
+</footer>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ site.baseurl }}dist/js/bootstrap.min.js"></script>
-
-<script src="{{ site.baseurl }}assets/js/holder.js"></script>
-
-<script src="{{ site.baseurl }}assets/js/select2.min.js"></script>
-<script src="{{ site.baseurl }}assets/js/application.js"></script>
-
+<script src="{{ site.baseurl }}assets/js/docs.min.js"></script>
 {% if page.slug == "customize" %}
-<script src="{{ site.baseurl }}assets/js/raw-files.js"></script>
 <script src="{{ site.baseurl }}assets/js/customize.min.js"></script>
 {% endif %}
 

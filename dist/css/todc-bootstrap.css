@@ -4,19 +4,6 @@
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
 
-.caret-right,
-.collapse-caret:before,
-.caret-left,
-.collapse-caret.collapsed:before {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
 .panel-group .panel-heading a:before,
 .panel-group .panel-heading a.collapsed:before {
   position: relative;
@@ -29,6 +16,20 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.caret-right,
+.collapse-caret:before,
+.caret-left,
+.dropdown-submenu > a:after,
+.collapse-caret.collapsed:before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +72,7 @@ a:focus {
 }
 .caret-right,
 .caret-left,
+.dropdown-submenu > a:after,
 .collapse-caret.collapsed:before {
   vertical-align: baseline;
   border-top: 4px solid transparent;
@@ -359,7 +361,7 @@ input[type="checkbox"]:checked::after,
   top: -6px;
   left: -5px;
   display: block;
-  content: url(../../img/checkmark.png);
+  content: url(../img/checkmark.png);
 }
 .input-sm {
   height: 26px;
@@ -1215,7 +1217,6 @@ fieldset[disabled] .btn-link:focus {
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
-  margin-top: -6px;
   margin-left: -1px;
   border-radius: 0;
 }
@@ -1230,20 +1231,10 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 0;
 }
 .dropdown-submenu > a:after {
-  display: block;
-  float: right;
-  width: 0;
-  height: 0;
+  position: absolute;
+  right: 10px;
   margin-top: 5px;
-  margin-right: -20px;
-  content: " ";
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #808080;
-}
-.dropdown-submenu:hover > a:after {
-  border-left-color: #000;
+  content: "";
 }
 .dropdown-submenu.pull-left {
   float: none !important;
@@ -3272,6 +3263,9 @@ li.list-group-header {
 }
 .panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d59595;
+}
+.panel-group {
+  margin-bottom: 18px;
 }
 .panel-group .panel {
   border-color: transparent;

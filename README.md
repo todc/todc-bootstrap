@@ -1,6 +1,7 @@
 ## Table of contents
 
  - [Overview](#overview)
+ - [Quick start](#quick-start)
  - [Compatibility](#compatibility)
  - [Requirements](#requirements)
  - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -19,6 +20,16 @@ This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google
 the look of these new UI elements for my own personal use.
 
 TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and maintained with the support and involvement of the community.
+
+## Quick start
+
+Three quick start options are available:
+
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.1.0-3.1.0.zip).
+- Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
+- Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
+
+Read the [Getting Started page](http://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ## Compatibility ##
 
@@ -43,14 +54,14 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 ## Documentation
 
-TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at http://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
 ### Running documentation locally
 
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v1.x).
-  - **Windows users:** read [this unofficial guide](https://github.com/juthilo/run-jekyll-on-windows/) to get Jekyll up and running without problems.
+  - **Windows users:** Read [this unofficial guide](https://github.com/juthilo/run-jekyll-on-windows/) to get Jekyll up and running without problems. We use Pygments for syntax highlighting, so make sure to read the sections on installing Python and Pygments.
 2. From the root `/todc-bootstrap` directory, run `jekyll serve` in the command line.
-  - **Windows users:** For Ruby 2.0.0 run `chcp 65001` first to change the command prompt's character encoding ([code page](http://en.wikipedia.org/wiki/Windows_code_page)) to UTF-8 so Jekyll runs without errors. For Ruby 1.9.3 you can alternatively do `SET LANG=en_EN.UTF-8`. In addition, ensure you have Python installed and added in your `PATH` or the build will fail due to our Pygments dependency.
+  - **Windows users:** While we use Jekyll's `encoding` setting, you might still need to change the command prompt's character encoding ([code page](http://en.wikipedia.org/wiki/Windows_code_page)) to UTF-8 so Jekyll runs without errors. For Ruby 2.0.0, run `chcp 65001` first. For Ruby 1.9.3, you can alternatively do `SET LANG=en_EN.UTF-8`.
 3. Open <http://localhost:9002> in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).

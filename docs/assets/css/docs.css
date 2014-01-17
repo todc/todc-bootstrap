@@ -1,7 +1,7 @@
-/*csslint ids: false, overqualified-elements: false*/
+/*csslint ids: false, overqualified-elements: false, fallback-colors: false*/
 /*!
- * Copyright 2014 Twitter, Inc.
- *
+ * Bootstrap Docs (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see http://creativecommons.org/licenses/by/3.0/.
  */
@@ -32,7 +32,6 @@
  * Miscellaneous
  */
 
-/*csslint ids: false, fallback-colors: false*/
 
 /*
  * Scaffolding
@@ -53,16 +52,31 @@ body {
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: #fff;
+  color: #4d90fe;
   background-color: transparent;
-  border-color: #bfc4e0;
+  border-color: #4d90fe;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #4e599e;
-  border-color: #bfc4e0;
+  background-color: #4d90fe;
+  border-color: #4d90fe;
+}
+
+/* Inverted outline button (white on dark) */
+.btn-outline-inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-outline-inverse:hover,
+.btn-outline-inverse:focus,
+.btn-outline-inverse:active {
+  color: #2d87e2;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 
@@ -86,6 +100,7 @@ body {
 .footer-links {
   margin: 10px 0;
   padding-left: 0;
+  color: #999;
 }
 .footer-links li {
   display: inline;
@@ -96,9 +111,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .bs-footer {
-    text-align: left;
-  }
   .bs-footer p {
     margin-bottom: 0;
   }
@@ -112,7 +124,6 @@ body {
  */
 
 .bs-social {
-  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -139,21 +150,6 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .bs-social {
-    text-align: left;
-  }
-  .bs-social-buttons li:first-child {
-    padding-left: 0;
-  }
-}
-
-
-/*
- * Topography, yo!
- *
- * Apply the map background via base64 and relevant colors where we need 'em.
- */
 
 /*
  * Homepage
@@ -161,62 +157,64 @@ body {
  * Tweaks to the custom homepage and the masthead (main jumbotron).
  */
 
- /* Masthead (headings and download button) */
-.bs-masthead {
+/* Share masthead with page headers */
+.bs-masthead,
+.bs-header {
   position: relative;
   padding: 30px 15px;
+  color: #b3d4f4;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
-}
-.bs-masthead h1 {
-  font-size: 50px;
-  line-height: 1;
-}
-.bs-masthead .btn-outline-inverse {
-  margin: 10px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  background-color: #2d87e2; // 2d87e2
+  background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
+  background-image: linear-gradient(to bottom, #1b6ec1 0%, #2d87e2 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6ec1', endColorstr='#2d87e2', GradientType=0);
 }
 
-/* Links to project-level content like the repo, Expo, etc */
-.bs-masthead-links:nth-of-type(1) {
-  margin-bottom: 0;
+ /* Masthead (headings and download button) */
+.bs-masthead .bs-booticon {
+  margin: 0 auto 30px;
 }
-.bs-masthead-links {
-  /*margin-top: 20px;*/
-  /*margin-bottom: 40px;*/
-  padding: 0 15px;
-  list-style: none;
-  text-align: center;
+.bs-masthead h1 {
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
 }
-.bs-masthead-links li {
-  display: inline;
-  color: #999;
+.bs-masthead .lead {
+  margin: 0 auto 30px;
+  font-size: 20px;
+  color: #fff;
 }
-.bs-masthead-links li + li {
-  margin-left: 20px;
+.bs-masthead .btn {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+@media (min-width: 480px) {
+  .bs-masthead .btn {
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) {
   .bs-masthead {
-    text-align: left;
-    padding-top:    60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .bs-masthead h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .bs-masthead .lead {
-    margin-right: 25%;
-    font-size: 28px;
+    font-size: 24px;
   }
-  .bs-masthead .btn-outline-inverse {
-    width: auto;
-    margin: 20px 5px 20px 0;
-    padding: 16px 22px;
-    font-size: 20px;
-  }
-  .bs-masthead-links {
-    padding: 0;
-    text-align: left;
+}
+
+@media (min-width: 992px) {
+  .bs-masthead .lead {
+    width: 80%;
+    font-size: 30px;
   }
 }
 
@@ -227,17 +225,19 @@ body {
  * Jumbotron-esque headers at the top of every page that's not the homepage.
  */
 
-
 /* Page headers */
 .bs-header {
-  padding: 10px 15px 20px; /* side padding builds on .container 15px, so 30px */
-  font-size: 16px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.bs-header h1 {
+  margin-top: 0;
+  color: #fff;
 }
 .bs-header p {
+  margin-bottom: 0;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 .bs-header .container {
   position: relative;
@@ -245,11 +245,13 @@ body {
 
 @media (min-width: 768px) {
   .bs-header {
-    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
     text-align: left;
   }
   .bs-header h1 {
-    font-size: 36px;
+    font-size: 60px;
     line-height: 1;
   }
 }
@@ -263,21 +265,95 @@ body {
 
 
 /*
- * Callout for 2.3.2 docs
+ * Homepage featurettes
  *
- * Only appears below page headers (not on the homepage). The homepage gets its
- * own link with the masthead links.
+ * Reasons to use Bootstrap, entries from the Expo, and more.
  */
 
-.bs-old-docs {
-  padding: 15px 20px;
-  color: #777;
-  background-color: #fefefe;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-}
-.bs-old-docs strong {
+.bs-featurette {
+  padding-top:    40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.5;
   color: #555;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bs-featurette + .bs-footer {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.bs-featurette-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 5px;
+}
+.half-rule {
+  width: 100px;
+  margin: 40px auto;
+}
+.bs-featurette h3 {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 5px;
+}
+.bs-featurette-img {
+  display: block;
+  margin-bottom: 20px;
+  color: #333;
+}
+.bs-featurette-img:hover {
+  text-decoration: none;
+  color: #428bca;
+}
+.bs-featurette-img img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Featured sites */
+.bs-featured-sites {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.bs-featured-sites .col-sm-3 {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+@media (min-width: 480px) {
+  .bs-featurette .img-responsive {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .bs-featurette {
+    padding-top:    100px;
+    padding-bottom: 100px;
+  }
+  .bs-featurette-title {
+    font-size: 40px;
+  }
+  .bs-featurette .lead {
+    margin-left:  auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+  .bs-featured-sites .col-sm-3:first-child img {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .bs-featured-sites .col-sm-3:last-child img {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .bs-featurette .img-responsive {
+    margin-top: 0;
+  }
 }
 
 
@@ -292,16 +368,23 @@ body {
 .bs-sidebar.affix {
   position: static;
 }
+@media (min-width: 768px) {
+  .bs-sidebar {
+    padding-left: 20px;
+  }
+}
 
 /* First level of nav */
 .bs-sidenav {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* All levels of nav */
 .bs-sidebar .nav > li > a {
   display: block;
+  font-size: 13px;
+  font-weight: 500;
   color: #222;
   padding: 5px 20px;
 }
@@ -326,7 +409,7 @@ body {
   padding-top:    3px;
   padding-bottom: 3px;
   padding-left: 30px;
-  font-size: 90%;
+  font-size: 12px;
 }
 
 /* Show and affix the side nav when space allows it */
@@ -368,14 +451,13 @@ body {
  */
 
 /* Space things out */
-.bs-docs-section + .bs-docs-section {
-  padding-top: 40px;
+.bs-docs-section {
+  margin-bottom: 60px;
 }
 
-/* Janky fix for preventing navbar from overlapping */
 h1[id] {
-  padding-top: 35px;
-  margin-top: -45px;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 
@@ -398,6 +480,10 @@ h1[id] {
 }
 .bs-callout p:last-child {
   margin-bottom: 0;
+}
+.bs-callout code {
+  background-color: #fff;
+  border-radius: 3px;
 }
 
 /* Variations */
@@ -436,11 +522,20 @@ h1[id] {
 }
 .color-swatch {
   float: left;
-  width:  100px;
-  height: 100px;
+  width:  60px;
+  height: 60px;
   margin: 0 5px;
   border-radius: 3px;
 }
+
+@media (min-width: 768px) {
+  .color-swatch {
+    width:  100px;
+    height: 100px;
+  }
+}
+
+/* Framework colors */
 .color-swatches .gray-darker   { background-color: #222; }
 .color-swatches .gray-dark     { background-color: #333; }
 .color-swatches .gray          { background-color: #555; }
@@ -451,6 +546,12 @@ h1[id] {
 .color-swatches .brand-warning { background-color: #faa937; }
 .color-swatches .brand-danger  { background-color: #d84a38; }
 .color-swatches .brand-info    { background-color: #5bc0de; }
+
+/* Docs colors */
+.color-swatches .bs-purple          { background-color: #1b6ec1; }
+.color-swatches .bs-purple-light    { background-color: #c7bfd3; }
+.color-swatches .bs-purple-lighter  { background-color: #e5e1ea; }
+.color-swatches .bs-gray            { background-color: #f9f9f9; }
 
 
 /*
@@ -949,7 +1050,7 @@ h1[id] {
 
 .bs-customizer .toggle {
   float: right;
-  margin-top: 85px; /* On account of ghetto navbar fix */
+  margin-top: 25px;
 }
 
 /* Headings and form contrls */
@@ -1033,17 +1134,83 @@ h1[id] {
 
 
 /*
+ * Brand guidelines
+ *
+ * Extra styles for displaying wordmarks, logos, etc.
+ */
+
+/* Logo series wrapper */
+.bs-brand-logos {
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: #1b6ec1;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Individual items */
+.bs-brand-item {
+  padding: 60px 0;
+  text-align: center;
+}
+.bs-brand-item + .bs-brand-item {
+  border-top: 1px solid #fff;
+}
+.bs-brand-logos .inverse {
+  color: #fff;
+  background-color: #1b6ec1;
+}
+
+/* Heading content within */
+.bs-brand-item h1,
+.bs-brand-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bs-brand-item .bs-booticon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the icons stand out on what is/isn't okay */
+.bs-brand-item .glyphicon {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto -10px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+.bs-brand-item .glyphicon-ok { background-color: #5cb85c; }
+.bs-brand-item .glyphicon-remove { background-color: #d9534f; }
+
+@media (min-width: 768px) {
+  .bs-brand-item {
+    display: table-cell;
+    width: 1%;
+  }
+  .bs-brand-item + .bs-brand-item {
+    border-top: 0;
+    border-left: 1px solid #fff;
+  }
+  .bs-brand-item h1 {
+    font-size: 60px;
+  }
+}
+
+
+/*
  * Miscellaneous
  *
  * Odds and ends for optimum docs display.
  */
 
- /* About page */
- .bs-about {
-  font-size: 16px;
- }
-
 /* Examples gallery: space out content better */
+.bs-examples .thumbnail {
+  margin-bottom: 10px;
+}
 .bs-examples h4 {
   margin-bottom: 5px;
 }

@@ -26,7 +26,13 @@ module.exports = function (grunt) {
               ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
               ' */\n',
-    jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
+    bannerDocs: '/*!\n' +
+              ' * TODC Bootstrap Docs (<%= pkg.homepage %>)\n' +
+              ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+              ' * Licensed under the Creative Commons Attribution 3.0 Unported License. For\n' +
+              ' * details, see http://creativecommons.org/licenses/by/3.0/.\n' +
+              ' */\n',
+    jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'Bootstrap requires jQuery\') }\n\n',
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
@@ -78,6 +84,21 @@ module.exports = function (grunt) {
       ]
     },
 
+    uglify: {
+      docsJs: {
+        options: {
+          preserveComments: 'some',
+          report: 'min'
+        },
+        src: [
+          'docs/assets/js/select2.js',
+          'docs/assets/js/holder.js',
+          'docs/assets/js/application.js'
+        ],
+        dest: 'docs/assets/js/docs.min.js'
+      }
+    },
+
     less: {
       compileCore: {
         options: {
@@ -99,6 +120,23 @@ module.exports = function (grunt) {
         files: {
           'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
         }
+      }
+    },
+
+    cssmin: {
+      compress: {
+        options: {
+          keepSpecialComments: '*',
+          noAdvanced: true, // turn advanced optimizations off until it's fixed in clean-css
+          report: 'min',
+          selectorsMergeMode: 'ie8'
+        },
+        src: [
+          'docs/assets/css/docs.css',
+          'docs/assets/css/pygments-manni.css',
+          'docs/assets/css/select2.css'
+        ],
+        dest: 'docs/assets/css/pack.min.css'
       }
     },
 
@@ -261,17 +299,20 @@ module.exports = function (grunt) {
   var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html'];
   grunt.registerTask('test', testSubtasks);
 
+  // JS distribution task.
+  grunt.registerTask('dist-js', ['uglify']);
+
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['less', 'csscomb', 'usebanner', 'dist-docs']);
+  grunt.registerTask('dist-css', ['less', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
   grunt.registerTask('dist-docs', ['copy:docs']);
 
-  // // Full distribution task.
+  // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'dist-js']);
 
-  // // Default task.
+  // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data']);
 
   // Version numbering task.
@@ -284,5 +325,8 @@ module.exports = function (grunt) {
   // task for building customizer
   grunt.registerTask('build-customizer', ['build-customizer-vars-form', 'build-raw-files']);
   grunt.registerTask('build-customizer-vars-form', ['jade']);
-  grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', generateRawFilesJs);
+  grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function () {
+    var banner = grunt.template.process('<%= banner %>');
+    generateRawFilesJs(banner);
+  });
 };
