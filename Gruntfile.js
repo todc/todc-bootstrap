@@ -91,8 +91,8 @@ module.exports = function (grunt) {
           report: 'min'
         },
         src: [
-          'docs/assets/js/select2.js',
-          'docs/assets/js/holder.js',
+          'docs/assets/js/vendor/select2.js',
+          'docs/assets/js/vendor/holder.js',
           'docs/assets/js/application.js'
         ],
         dest: 'docs/assets/js/docs.min.js'

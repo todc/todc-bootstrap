@@ -14,6 +14,8 @@ baseurl:          /
 url:              http://localhost:9002
 encoding:         UTF-8
 
+exclude:          ["vendor"]
+
 # Custom vars
 current_version:  3.1.0-3.1.0
 repo:             https://github.com/todc/todc-bootstrap
