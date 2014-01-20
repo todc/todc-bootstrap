@@ -10,11 +10,11 @@ module.exports = function (grunt) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
   };
 
-  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js');
   var fs = require('fs');
-  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js');
-  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js');
   var path = require('path');
+  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js');
+  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js');
+  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js');
 
   // Project configuration.
   grunt.initConfig({
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
-      dist: ['dist']
+      dist: 'dist'
     },
 
     jshint: {
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
         src: 'docs/assets/js/application.js'
       },
       docsGrunt: {
-        src: ['docs/grunt/*.js']
+        src: 'docs/grunt/*.js'
       }
     },
 
@@ -64,13 +64,13 @@ module.exports = function (grunt) {
         config: 'js/.jscs.json',
       },
       gruntfile: {
-        src: ['Gruntfile.js']
+        src: 'Gruntfile.js'
       },
       assets: {
-        src: ['docs/assets/js/application.js']
+        src: 'docs/assets/js/application.js'
        },
       docsGrunt: {
-        src: ['docs/grunt/*.js']
+        src: 'docs/grunt/*.js'
       }
     },
 
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
       compress: {
         options: {
           keepSpecialComments: '*',
-          noAdvanced: true, // turn advanced optimizations off until it's fixed in clean-css
+          noAdvanced: true, // turn advanced optimizations off until the issue is fixed in clean-css
           report: 'min',
           selectorsMergeMode: 'ie8'
         },
@@ -161,7 +161,7 @@ module.exports = function (grunt) {
           config: 'less/.csscomb.json'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css']
+          'dist/css/<%= pkg.name %>.css': 'dist/css/<%= pkg.name %>.css'
         }
       }
     },
@@ -187,7 +187,7 @@ module.exports = function (grunt) {
       },
       images: {
         expand: true,
-        src: ['img/*'],
+        src: 'img/*',
         dest: 'dist'
       }
     },
@@ -239,14 +239,14 @@ module.exports = function (grunt) {
         ]
       },
       files: {
-        src: ['_gh_pages/**/*.html']
+        src: '_gh_pages/**/*.html'
       }
     },
 
     watch: {
       less: {
         files: 'less/*.less',
-        tasks: ['less']
+        tasks: 'less'
       }
     },
 
@@ -289,7 +289,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Clone bootstrap and checkout the appropriate tag task.
-  grunt.registerTask('checkout-bootstrap', ['shell']);
+  grunt.registerTask('checkout-bootstrap', 'shell');
 
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
@@ -300,13 +300,13 @@ module.exports = function (grunt) {
   grunt.registerTask('test', testSubtasks);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['uglify']);
+  grunt.registerTask('dist-js', 'uglify');
 
   // CSS distribution task.
   grunt.registerTask('dist-css', ['less', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
-  grunt.registerTask('dist-docs', ['copy:docs']);
+  grunt.registerTask('dist-docs', 'copy:docs');
 
   // Full distribution task.
   // grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
@@ -318,13 +318,13 @@ module.exports = function (grunt) {
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
   // This can be overzealous, so its changes should always be manually reviewed!
-  grunt.registerTask('change-version-number', ['sed']);
+  grunt.registerTask('change-version-number', 'sed');
 
   grunt.registerTask('build-glyphicons-data', generateGlyphiconsData);
 
   // task for building customizer
   grunt.registerTask('build-customizer', ['build-customizer-vars-form', 'build-raw-files']);
-  grunt.registerTask('build-customizer-vars-form', ['jade']);
+  grunt.registerTask('build-customizer-vars-form', 'jade');
   grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function () {
     var banner = grunt.template.process('<%= banner %>');
     generateRawFilesJs(banner);
