@@ -14,7 +14,7 @@ baseurl:          /
 url:              http://localhost:9002
 encoding:         UTF-8
 
-exclude:          ["vendor", "grunt", "customizer-variables.jade"]
+exclude:          ["vendor", "grunt", "*.jade"]
 
 # Custom vars
 current_version:  3.1.0-3.1.0

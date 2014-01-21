@@ -228,7 +228,8 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'docs/_includes/customizer-variables.html': 'docs/customizer-variables.jade'
+          'docs/_includes/customizer-variables.html': 'docs/customizer-variables.jade',
+          'docs/_includes/nav-customize.html': 'docs/customizer-nav.jade'
         }
       }
     },
@@ -301,7 +302,7 @@ module.exports = function (grunt) {
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
   // Test task.
-  // var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html', 'build-customizer-vars-form'];
+  // var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html', 'build-customizer-html'];
   var testSubtasks = ['dist-css', 'csslint', 'jshint', 'jscs', 'validate-html'];
   grunt.registerTask('test', testSubtasks);
 
@@ -329,8 +330,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build-glyphicons-data', generateGlyphiconsData);
 
   // task for building customizer
-  grunt.registerTask('build-customizer', ['build-customizer-vars-form', 'build-raw-files']);
-  grunt.registerTask('build-customizer-vars-form', 'jade');
+  grunt.registerTask('build-customizer', ['build-customizer-html', 'build-raw-files']);
+  grunt.registerTask('build-customizer-html', 'jade');
   grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function () {
     var banner = grunt.template.process('<%= banner %>');
     generateRawFilesJs(banner);
