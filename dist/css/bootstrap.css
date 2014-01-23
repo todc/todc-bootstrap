@@ -213,9 +213,6 @@ table {
   img {
     max-width: 100% !important;
   }
-  @page {
-    margin: 2cm .5cm;
-  }
   p,
   h2,
   h3 {
@@ -1727,6 +1724,7 @@ output {
 fieldset[disabled] .form-control {
   cursor: not-allowed;
   background-color: #eee;
+  opacity: 1;
 }
 textarea.form-control {
   height: auto;
@@ -2028,6 +2026,7 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
   opacity: .65;
+  opacity: 1;
 }
 .btn-default {
   color: #333;
