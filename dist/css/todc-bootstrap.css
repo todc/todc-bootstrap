@@ -296,8 +296,6 @@ input[type="checkbox"],
   border: 1px solid #dcdcdc;
   border-width: 0\0;
   border-radius: 1px;
-
-          appearance: none;
 }
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
