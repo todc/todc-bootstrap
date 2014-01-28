@@ -36,7 +36,6 @@
     #gradient > .vertical(@start-color: @start-color; @end-color: darken(@end-color, 5%));
     .reset-filter();
     background-color: darken(@end-color, 5%);
-    background-color: darken(@end-color, 5%) e("\9");
   }
   &:active,
   &.active,
@@ -63,7 +62,6 @@
       #gradient > .vertical(@start-color: @start-color; @end-color: @end-color);
       .reset-filter();
       background-color: @start-color;
-      background-color: @start-color e("\9");
       .box-shadow(none)
     }
   }
