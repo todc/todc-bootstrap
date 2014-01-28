@@ -45,7 +45,7 @@
     "grunt-jekyll": "~0.4.1",
     "grunt-jscs-checker": "~0.3.0",
     "grunt-sed": "~0.1.1",
-    "grunt-shell": "~0.6.1",
+    "grunt-shell": "~0.6.4",
     "load-grunt-tasks": "~0.3.0",
     "markdown": "~0.5.0"
   },
