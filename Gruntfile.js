@@ -54,14 +54,11 @@ module.exports = function (grunt) {
       options: {
         jshintrc: 'js/.jshintrc'
       },
-      gruntfile: {
-        src: 'Gruntfile.js'
+      grunt: {
+        src: ['Gruntfile.js', 'docs/grunt/*.js']
       },
       assets: {
         src: 'docs/assets/js/application.js'
-      },
-      docsGrunt: {
-        src: 'docs/grunt/*.js'
       }
     },
 
@@ -69,15 +66,12 @@ module.exports = function (grunt) {
       options: {
         config: 'js/.jscs.json',
       },
-      gruntfile: {
-        src: 'Gruntfile.js'
+      grunt: {
+        src: ['Gruntfile.js', 'docs/grunt/*.js']
       },
       assets: {
         src: 'docs/assets/js/application.js'
-       },
-      docsGrunt: {
-        src: 'docs/grunt/*.js'
-      }
+       }
     },
 
     csslint: {
