@@ -135,7 +135,7 @@ module.exports = function (grunt) {
           'docs/assets/css/pygments-manni.css',
           'docs/assets/css/select2.css'
         ],
-        dest: 'docs/assets/css/pack.min.css'
+        dest: 'docs/assets/css/docs.min.css'
       }
     },
 
