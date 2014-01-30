@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.1.0-3.1.0 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.1.0-3.2.0 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2014 Tim O'Donnell
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -96,13 +96,13 @@ a:focus {
 .text-primary {
   color: #4d90fe;
 }
-.text-primary:hover {
+a.text-primary:hover {
   color: #1a70fe;
 }
 .text-warning {
   color: #333;
 }
-.text-warning:hover {
+a.text-warning:hover {
   color: #1a1a1a;
 }
 .bg-primary {
@@ -296,8 +296,6 @@ input[type="checkbox"],
   border: 1px solid #dcdcdc;
   border-width: 0\0;
   border-radius: 1px;
-
-          appearance: none;
 }
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
@@ -374,7 +372,8 @@ select.input-sm {
   height: 26px;
   line-height: 26px;
 }
-textarea.input-sm {
+textarea.input-sm,
+select[multiple].input-sm {
   height: auto;
 }
 .input-lg {
@@ -388,7 +387,8 @@ select.input-lg {
   height: 38px;
   line-height: 38px;
 }
-textarea.input-lg {
+textarea.input-lg,
+select[multiple].input-lg {
   height: auto;
 }
 .has-feedback .form-control {
@@ -619,7 +619,6 @@ textarea.input-lg {
 .open .dropdown-toggle.btn-default {
   color: #333;
   background-color: #e4e4e4;
-  background-color: #e4e4e4 \9;
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e4e4e4 100%);
   background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e4e4e4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe4e4e4', GradientType=0);
@@ -661,7 +660,6 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #f5f5f5;
-  background-color: #f5f5f5 \9;
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image:         linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
@@ -745,7 +743,6 @@ fieldset[disabled] .btn-default:active {
 .open .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #3078eb;
-  background-color: #3078eb \9;
   background-image: -webkit-linear-gradient(top, #4d90fe 0%, #3078eb 100%);
   background-image:         linear-gradient(to bottom, #4d90fe 0%, #3078eb 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4d90fe', endColorstr='#ff3078eb', GradientType=0);
@@ -787,7 +784,6 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #4d90fe;
-  background-color: #4d90fe \9;
   background-image: -webkit-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image:         linear-gradient(to bottom, #4d90fe 0%, #4787ed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4d90fe', endColorstr='#ff4787ed', GradientType=0);
@@ -823,7 +819,6 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-success {
   color: #fff;
   background-color: #2f973f;
-  background-color: #2f973f \9;
   background-image: -webkit-linear-gradient(top, #35aa47 0%, #2f973f 100%);
   background-image:         linear-gradient(to bottom, #35aa47 0%, #2f973f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff35aa47', endColorstr='#ff2f973f', GradientType=0);
@@ -865,7 +860,6 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #35aa47;
-  background-color: #35aa47 \9;
   background-image: -webkit-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image:         linear-gradient(to bottom, #35aa47 0%, #35aa47 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff35aa47', endColorstr='#ff35aa47', GradientType=0);
@@ -901,7 +895,6 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #46b8da;
-  background-color: #46b8da \9;
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #46b8da 100%);
   background-image:         linear-gradient(to bottom, #5bc0de 0%, #46b8da 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff46b8da', GradientType=0);
@@ -943,7 +936,6 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
   background-color: #5bc0de;
-  background-color: #5bc0de \9;
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image:         linear-gradient(to bottom, #5bc0de 0%, #5bc0de 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff5bc0de', GradientType=0);
@@ -979,7 +971,6 @@ fieldset[disabled] .btn-info.active {
 .open .dropdown-toggle.btn-warning {
   color: #fff;
   background-color: #f99e1e;
-  background-color: #f99e1e \9;
   background-image: -webkit-linear-gradient(top, #fbb450 0%, #f99e1e 100%);
   background-image:         linear-gradient(to bottom, #fbb450 0%, #f99e1e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff99e1e', GradientType=0);
@@ -1021,7 +1012,6 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
   background-color: #fbb450;
-  background-color: #fbb450 \9;
   background-image: -webkit-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image:         linear-gradient(to bottom, #fbb450 0%, #faa937 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fffaa937', GradientType=0);
@@ -1057,7 +1047,6 @@ fieldset[disabled] .btn-warning.active {
 .open .dropdown-toggle.btn-danger {
   color: #fff;
   background-color: #c13e2c;
-  background-color: #c13e2c \9;
   background-image: -webkit-linear-gradient(top, #dd4b39 0%, #c13e2c 100%);
   background-image:         linear-gradient(to bottom, #dd4b39 0%, #c13e2c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd4b39', endColorstr='#ffc13e2c', GradientType=0);
@@ -1099,7 +1088,6 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
   background-color: #dd4b39;
-  background-color: #dd4b39 \9;
   background-image: -webkit-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image:         linear-gradient(to bottom, #dd4b39 0%, #d14836 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd4b39', endColorstr='#ffd14836', GradientType=0);
@@ -1376,7 +1364,10 @@ select.input-group-lg > .input-group-btn > .btn {
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
-textarea.input-group-lg > .input-group-btn > .btn {
+textarea.input-group-lg > .input-group-btn > .btn,
+select[multiple].input-group-lg > .form-control,
+select[multiple].input-group-lg > .input-group-addon,
+select[multiple].input-group-lg > .input-group-btn > .btn {
   height: auto;
 }
 .input-group-sm > .form-control,
@@ -1396,7 +1387,10 @@ select.input-group-sm > .input-group-btn > .btn {
 }
 textarea.input-group-sm > .form-control,
 textarea.input-group-sm > .input-group-addon,
-textarea.input-group-sm > .input-group-btn > .btn {
+textarea.input-group-sm > .input-group-btn > .btn,
+select[multiple].input-group-sm > .form-control,
+select[multiple].input-group-sm > .input-group-addon,
+select[multiple].input-group-sm > .input-group-btn > .btn {
   height: auto;
 }
 .input-group-addon,
@@ -3140,24 +3134,52 @@ li.list-group-header {
 .panel-body {
   padding: 15px 20px;
 }
-.panel > .table > tbody:last-child > tr:last-child td:first-child,
-.panel > .table-responsive > .table > tbody:last-child > tr:last-child td:first-child,
-.panel > .table > tfoot:last-child > tr:last-child td:first-child,
-.panel > .table-responsive > .table > tfoot:last-child > tr:last-child td:first-child,
-.panel > .table > tbody:last-child > tr:last-child th:first-child,
-.panel > .table-responsive > .table > tbody:last-child > tr:last-child th:first-child,
-.panel > .table > tfoot:last-child > tr:last-child th:first-child,
-.panel > .table-responsive > .table > tfoot:last-child > tr:last-child th:first-child {
+.panel > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.panel > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-.panel > .table > tbody:last-child > tr:last-child td:last-child,
-.panel > .table-responsive > .table > tbody:last-child > tr:last-child td:last-child,
-.panel > .table > tfoot:last-child > tr:last-child td:last-child,
-.panel > .table-responsive > .table > tfoot:last-child > tr:last-child td:last-child,
-.panel > .table > tbody:last-child > tr:last-child th:last-child,
-.panel > .table-responsive > .table > tbody:last-child > tr:last-child th:last-child,
-.panel > .table > tfoot:last-child > tr:last-child th:last-child,
-.panel > .table-responsive > .table > tfoot:last-child > tr:last-child th:last-child {
+.panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+}
+.panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: 2px;
+}
+.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 2px;
+}
+.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
   border-bottom-right-radius: 2px;
 }
 .panel > .panel-body + .table,

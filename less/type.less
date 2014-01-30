@@ -8,16 +8,10 @@
 
 // Contextual emphasis
 .text-primary {
-  color: @brand-primary;
-  &:hover {
-    color: darken(@brand-primary, 10%);
-  }
+ .text-emphasis-variant(@brand-primary);
 }
 .text-warning {
-  color: @state-warning-text;
-  &:hover {
-    color: darken(@state-warning-text, 10%);
-  }
+  .text-emphasis-variant(@state-warning-text);
 }
 
 // Contextual backgrounds
@@ -27,14 +21,8 @@
   // Given the contrast here, this is the only class to have its color inverted
   // automatically.
   color: #fff;
-  background-color: @brand-primary;
-  a&:hover {
-    background-color: darken(@brand-primary, 10%);
-  }
+  .bg-variant(@brand-primary);
 }
 .bg-warning {
-  background-color: @state-warning-bg;
-  a&:hover {
-    background-color: darken(@state-warning-bg, 10%);
-  }
+  .bg-variant(@state-warning-bg);
 }

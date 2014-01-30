@@ -1,7 +1,7 @@
 {
   "name": "todc-bootstrap",
   "description": "Google-styled theme for Bootstrap.",
-  "version": "3.1.0-3.1.0",
+  "version": "3.1.0-3.2.0",
   "keywords": [
     "bootstrap",
     "css",
@@ -38,15 +38,15 @@
     "grunt-contrib-jade": "~0.9.1",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-less": "~0.9.0",
-    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-uglify": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-csscomb": "~2.0.1",
     "grunt-html-validation": "~0.1.13",
     "grunt-jekyll": "~0.4.1",
     "grunt-jscs-checker": "~0.3.0",
     "grunt-sed": "~0.1.1",
-    "grunt-shell": "~0.6.1",
-    "load-grunt-tasks": "~0.2.1",
+    "grunt-shell": "~0.6.4",
+    "load-grunt-tasks": "~0.3.0",
     "markdown": "~0.5.0"
   },
   "jspm": {

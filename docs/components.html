@@ -111,7 +111,7 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   </div>
   <div class="bs-callout bs-callout-warning">
     <h4>Deprecated <code>.pull-right</code> alignment</h4>
-    <p>As of v3.1, we've deprecated <code>.pull-right</code> on dropdown menus. To right-align a menu, use <code>.dropdown-menu-right</code>. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use <code>.dropdown-menu-left</code>.</p>
+    <p>As of v3.1.0, we've deprecated <code>.pull-right</code> on dropdown menus. To right-align a menu, use <code>.dropdown-menu-right</code>. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use <code>.dropdown-menu-left</code>.</p>
   </div>
 {% highlight html %}
 <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
@@ -468,19 +468,16 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 </div>
 {% endhighlight %}
 
-  <h3 id="btn-groups-justified">Justified link variation</h3>
-  <p>Make a group of buttons stretch at the same size to span the entire width of its parent. Also works with button dropdowns within the button group.</p>
+  <h3 id="btn-groups-justified">Justified button groups</h3>
+  <p>Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.</p>
 
   <div class="bs-callout bs-callout-warning">
     <h4>Handling borders</h4>
     <p>Due to the specific HTML and CSS used to justify buttons (namely <code>display: table-cell</code>), the borders between them are doubled. In regular button groups, <code>margin-left: -1px</code> is used to stack the borders instead of removing them. However, <code>margin</code> doesn't work with <code>display: table-cell</code>. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.</p>
   </div>
 
-  <div class="bs-callout bs-callout-warning">
-    <h4>Element-specific usage</h4>
-    <p>This only works with <code>&lt;a&gt;</code> elements as the <code>&lt;button&gt;</code> doesn't pick up the styles we use to justify content (some <code>display: table-cell;</code>-fu).</p>
-  </div>
-
+  <h4>With <code>&lt;a&gt;</code> elements</h4>
+  <p>Just wrap a series of <code>.btn</code>s in <code>.btn-group.btn-group-justified</code>.</p>
   <div class="bs-example">
     <div class="btn-group btn-group-justified">
       <a class="btn btn-default" role="button">Left</a>
@@ -508,6 +505,35 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 {% highlight html %}
 <div class="btn-group btn-group-justified">
   ...
+</div>
+{% endhighlight %}
+
+  <h4>With <code>&lt;button&gt;</code> elements</h4>
+  <p>To use justified button groups with <code>&lt;button&gt;</code> elements, <strong class="text-danger">you must wrap each button in a button group</strong>. Most browsers don't properly apply our CSS for justification to <code>&lt;button&gt;</code> elements, but since we support button dropdowns, we can workaround that.</p>
+  <div class="bs-example">
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default">Left</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default">Middle</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="btn-group btn-group-justified">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Left</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Middle</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
 </div>
 {% endhighlight %}
 </div>
@@ -1271,7 +1297,7 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 
 
   <h2 id="nav-disabled-links">Disabled links</h2>
-  <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>.</p>
+  <p>For any nav component (tabs or pills), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>.</p>
 
   <div class="bs-callout bs-callout-warning">
     <h4>Link functionality not impacted</h4>
@@ -1376,9 +1402,14 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   <h2 id="navbar-default">Default navbar</h2>
   <p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
 
-  <div class="bs-callout bs-callout-info">
-    <h4>Customize the collapsing point</h4>
-    <p>Depending on the content in your navbar, you might need to change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</p>
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow">
+    <h4>Overflowing content</h4>
+    <p>Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:</p>
+    <ol type="a">
+      <li>Reduce the amount or width of navbar items.</li>
+      <li>Hide certain navbar items at certain screen sizes using <a href="../css/#responsive-utilities">responsive utility classes</a>.</li>
+      <li>Change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</li>
+    </ol>
   </div>
   <div class="bs-callout bs-callout-danger">
     <h4>Requires JavaScript</h4>
@@ -3042,7 +3073,7 @@ body { padding-bottom: 45px; }
   </div>
 
   <h4>Adapts to active nav states</h4>
-  <p>Built-in styles are included for placing badges in active states in pill and list navigations.</p>
+  <p>Built-in styles are included for placing badges in active states in pill navigations.</p>
   <div class="bs-example">
     <ul class="nav nav-pills">
       <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
@@ -4315,7 +4346,7 @@ body { padding-bottom: 45px; }
       </div>
 
       <!-- List group -->
-      <ul class="list-group">
+      <ul class="list-group" style="padding: 0 20px 15px;">
         <li class="list-group-item">Cras justo odio</li>
         <li class="list-group-item">Dapibus ac facilisis in</li>
         <li class="list-group-item">Morbi leo risus</li>

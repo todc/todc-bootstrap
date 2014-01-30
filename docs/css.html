@@ -26,11 +26,11 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   <p>With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, <strong>Bootstrap is mobile first</strong>. Mobile first styles can be found throughout the entire library instead of in separate files.</p>
   <p>To ensure proper rendering and touch zooming, <strong>add the viewport meta tag</strong> to your <code>&lt;head&gt;</code>.</p>
 {% highlight html %}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 {% endhighlight %}
-  <p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall we don't recommend this on every site, so use caution!</p>
+  <p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!</p>
 {% highlight html %}
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 {% endhighlight %}
 
   <h3 id="overview-responsive-images">Responsive images</h3>
@@ -48,8 +48,8 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   </ul>
   <p>These styles can be found within <code>scaffolding.less</code>.</p>
 
-  <h3 id="overview-normalize">Normalize</h3>
-  <p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
+  <h3 id="overview-normalize">Normalize.css</h3>
+  <p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
 
   <h3 id="overview-container">Containers</h3>
   <p>Easily center a page's contents by wrapping its contents in a <code>.container</code>. Containers set <code>width</code> at various media query breakpoints to match our grid system.</p>
@@ -730,7 +730,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 
   <h3>Small text</h3>
   <p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
-  <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code></p>
+  <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
   <div class="bs-example">
     <p><small>This line of text is meant to be treated as fine print.</small></p>
   </div>
@@ -867,7 +867,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
   <h4>Alternate displays</h4>
-  <p>Add <code>.blockquote-reverse</code> for blockquote with right-aligned content.</p>
+  <p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
   <div class="bs-example" style="overflow: hidden;">
     <blockquote class="blockquote-reverse">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -1040,10 +1040,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   <h2 id="code-user-input">User input</h2>
   <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
 <div class="bs-example">
-  To switch directories, type <kbd>cd</kbd> followed the name of the directory.
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
 </div>
 {% highlight html %}
-  To switch directories, type <kbd>cd</kbd> followed the name of the directory.
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
 {% endhighlight %}
 
   <h2 id="code-block">Basic block</h2>
@@ -2270,7 +2270,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
 
   <h2 id="buttons-active">Active state</h2>
-  <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> <code>&lt;button&gt;</code>s should you need to replicate the active state progammatically.</p>
+  <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> on <code>&lt;button&gt;</code>s should you need to replicate the active state progammatically.</p>
 
   <h3>Button element</h3>
   <p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
@@ -2833,7 +2833,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
 
   <h2 id="less-bootstrap">Compiling Bootstrap</h2>
-  <p>Bootstrap can be used in at least two ways: with the compiled CSS or with the source LESS files. To compile the LESS files, <a href="https://github.com/twbs/bootstrap#compiling-css-and-javascript">visit the README</a> for how to setup your development environment to run the necessary commands.</p>
+  <p>Bootstrap can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, <a href="https://github.com/twbs/bootstrap#compiling-css-and-javascript">visit the README</a> for how to setup your development environment to run the necessary commands.</p>
   <p>Third party compilation tools may work with Bootstrap, but they are not supported by our core team.</p>
 
   <h2 id="less-variables">Variables</h2>
@@ -2985,7 +2985,7 @@ a {
 
 
   <h2 id="less-mixins-vendor">Vendor mixins</h2>
-  <p>Vendor mixins are mixins to help support multiple browsers by including all relevant vendor prefixs in your compiled CSS.</p>
+  <p>Vendor mixins are mixins to help support multiple browsers by including all relevant vendor prefixes in your compiled CSS.</p>
 
 
   <h3 id="less-mixins-box-sizing">Box-sizing</h3>
@@ -3020,7 +3020,8 @@ a {
 {% endhighlight %}
 
   <h3 id="less-mixins-box-shadow">Box (Drop) shadows</h3>
-  <p>If your target audience is using the latest and greatest browsers and devices, be sure to just use the <code>box-shadow</code> property on its own. If you need support for older Android (pre-v4) and iOS devices (pre-iOS 5), use the mixin to pick up the required <code>-webkit</code> prefix.</p>
+  <p>If your target audience is using the latest and greatest browsers and devices, be sure to just use the <code>box-shadow</code> property on its own. If you need support for older Android (pre-v4) and iOS devices (pre-iOS 5), use the <strong>deprecated</strong> mixin to pick up the required <code>-webkit</code> prefix.</p>
+  <p>The mixin is <strong>deprecated</strong> as of v3.1.0, since Bootstrap doesn't officially support the outdated platforms that don't support the standard property. To preserve backwards-compatibility, Bootstrap will continue to use the mixin internally until Bootstrap v4.</p>
   <p>Be sure to use <code>rgba()</code> colors in your box shadows so they blend as seamlessly as possible with backgrounds.</p>
 {% highlight css %}
 .box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
@@ -3057,7 +3058,7 @@ a {
 {% endhighlight %}
 
   <h3 id="less-mixins-transformations">Transformations</h3>
-  <p>Rorate, scale, translate (move), or skew any object.</p>
+  <p>Rotate, scale, translate (move), or skew any object.</p>
 {% highlight css %}
 .rotate(@degrees) {
   -webkit-transform: rotate(@degrees);
@@ -3113,7 +3114,7 @@ a {
 {% endhighlight %}
 
   <h3 id="less-mixins-animations">Animations</h3>
-  <p>A single mixin for using all CSS3's animation properties in one declarations and other mixins for individual properties.</p>
+  <p>A single mixin for using all of CSS3's animation properties in one declaration and other mixins for individual properties.</p>
 {% highlight css %}
 .animation(@animation) {
   -webkit-animation: @animation;
@@ -3203,7 +3204,7 @@ a {
 #gradient > .vertical-three-colors(#777; #333; .25; #000);
 #gradient > .horizontal-three-colors(#777; #333; .25; #000);
 {% endhighlight %}
-  <p><strong>Heads up!</strong> Should you ever need to remove a gradient, be sure to remove any IE-specific <code>filter</code> you may have added. You can do that by using <code>.reset-filter()</code> mixin alignside <code>background-image: none;</code>.</p>
+  <p><strong>Heads up!</strong> Should you ever need to remove a gradient, be sure to remove any IE-specific <code>filter</code> you may have added. You can do that by using the <code>.reset-filter()</code> mixin alongside <code>background-image: none;</code>.</p>
 
 
   <h2 id="less-mixins-utility">Utility mixins</h2>

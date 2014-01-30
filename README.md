@@ -25,7 +25,7 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Three quick start options are available:
 
-- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.1.0-3.1.0.zip).
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.1.0-3.2.0.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
 
@@ -116,7 +116,7 @@ Should you encounter problems with installing dependencies or running Grunt comm
 
 Please read through our [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
+Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
 
 Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
@@ -154,7 +154,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 ## Copyright and license
 
-Copyright 2011-2014 Tim O'Donnell under [the MIT license](http://www.opensource.org/licenses/mit-license.php).
+Copyright 2011-2014 Tim O'Donnell. Code released under [the MIT license](http://www.opensource.org/licenses/mit-license.php). Docs released under [Creative Commons](docs/LICENSE).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 

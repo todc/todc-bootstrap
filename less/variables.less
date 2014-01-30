@@ -59,7 +59,7 @@
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.4; // 18.2/13
-//** Computed "line-height" (`font-size` &times; `line-height`) for use with `margin`, `padding`, etc.
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~18px
 
 //** By default, this inherits from the `<body>`.
@@ -235,7 +235,7 @@
 //** Text color for headers within dropdown menus.
 @dropdown-header-color:          @gray-light;
 
-// Note: Deprecated @dropdown-caret-color as of v3.1
+// Note: Deprecated @dropdown-caret-color as of v3.1.0
 @dropdown-caret-color:           #000;
 
 
@@ -318,6 +318,7 @@
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @gray-light;
 @navbar-default-bg:                #2d2d2d;
@@ -713,7 +714,7 @@
 @modal-content-bg:                             #fff;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0, 0, 0, 0.333);
-//** Modal content border color <strong>for IE8</strong>
+//** Modal content border color **for IE8**
 @modal-content-fallback-border-color:          #aaa;
 
 //** Modal backdrop background color
@@ -726,6 +727,7 @@
 @modal-footer-border-color:   @modal-header-border-color;
 
 @modal-lg:                    900px;
+@modal-md:                    600px;
 @modal-sm:                    300px;
 
 
@@ -919,16 +921,19 @@
 //
 //##
 
-@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+@carousel-bg:                                 #f5f5f5;
+@carousel-text-shadow:                        none;
 
-@carousel-control-color:                      #fff;
+@carousel-control-color:                      #777;
 @carousel-control-width:                      15%;
-@carousel-control-opacity:                    .5;
+@carousel-control-opacity:                    .33;
 @carousel-control-font-size:                  20px;
 
-@carousel-indicator-active-bg:                #fff;
-@carousel-indicator-border-color:             #fff;
+@carousel-indicator-bg:                       #c2c2c2;
+@carousel-indicator-active-bg:                #444;
+@carousel-indicator-border-color:             @carousel-indicator-bg;
 
+@carousel-caption-bg:                         rgba(0, 0, 0, 0.55);
 @carousel-caption-color:                      #fff;
 
 

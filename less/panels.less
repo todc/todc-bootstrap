@@ -19,6 +19,28 @@
 }
 
 
+// List groups in panels
+//
+// By default, space out list group content from panel headings to account for
+// any kind of custom content between the two.
+
+.panel {
+  > .list-group {
+    // Add border top radius for first one
+    &:first-child {
+      .list-group-item:first-child {
+        .border-top-radius((@panel-border-radius - 1));
+      }
+    }
+    // Add border bottom radius for last one
+    &:last-child {
+      .list-group-item:last-child {
+        .border-bottom-radius((@panel-border-radius - 1));
+      }
+    }
+  }
+}
+
 // Tables in panels
 //
 // Place a non-bordered `.table` within a panel (not within a `.panel-body`) and
@@ -27,7 +49,27 @@
 .panel {
   > .table,
   > .table-responsive > .table {
-
+  }
+  // Add border top radius for first one
+  > .table:first-child,
+  > .table-responsive:first-child > .table:first-child {
+    > thead:first-child,
+    > tbody:first-child {
+      > tr:first-child {
+        td:first-child,
+        th:first-child {
+          border-top-left-radius: (@panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-top-right-radius: (@panel-border-radius - 1);
+        }
+      }
+    }
+  }
+  // Add border bottom radius for last one
+  > .table:last-child,
+  > .table-responsive:last-child > .table:last-child {
     > tbody:last-child,
     > tfoot:last-child {
       > tr:last-child {

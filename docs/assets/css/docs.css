@@ -1,4 +1,5 @@
 /*csslint ids: false, overqualified-elements: false, fallback-colors: false*/
+
 /*!
  * Bootstrap Docs (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -453,6 +454,9 @@ body {
 /* Space things out */
 .bs-docs-section {
   margin-bottom: 60px;
+}
+.bs-docs-section:last-child {
+  margin-bottom: 0;
 }
 
 h1[id] {
