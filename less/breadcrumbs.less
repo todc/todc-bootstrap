@@ -10,8 +10,16 @@
   border-radius: @border-radius-base;
 
   > li {
+    + li {
+      .chevron(right, 5px, @breadcrumb-bg, 9px, 1px, #777);
+      margin-left: 20px;
+    }
+    + li:before,
+    + li:after {
+      left: -16px;
+    }
     + li:before {
-      content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      content: "";
       color: @breadcrumb-color;
     }
     > a {
@@ -32,6 +40,13 @@
   background-color: @breadcrumb-inverse-bg;
 
   > li {
+    + li {
+      .chevron(right, 5px, @breadcrumb-inverse-bg, 9px, 1px, #666);
+    }
+    + li:before,
+    + li:after {
+      left: -16px;
+    }
     > a {
       color: @breadcrumb-inverse-color;
       &:hover {
