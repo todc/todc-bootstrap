@@ -3501,4 +3501,66 @@ li.list-group-header {
 .popover-content {
   padding: 10px;
 }
+.carousel {
+  width: 100%;
+  padding: 50px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #eee 0%, #f5f5f5 100%), -webkit-linear-gradient(bottom, #eee 0%, #f5f5f5 100%);
+  background-image:         linear-gradient(top, #eee 0%, #f5f5f5 100%), linear-gradient(bottom, #eee 0%, #f5f5f5 100%);
+  background-image:    -moz-linear-gradient(center top, #eee 0%, #f5f5f5 100%), -moz-linear-gradient(center bottom, #eee 0%, #f5f5f5 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 100%;
+  background-size: 100% 10px;
+}
+.carousel-control {
+  color: #777;
+  text-shadow: none;
+  filter: alpha(opacity=33);
+  opacity: .33;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #777;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 15%;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 15%;
+}
+.carousel-indicators {
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+}
+.carousel-indicators li {
+  background-color: #c2c2c2;
+  border: 1px solid #c2c2c2;
+}
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background-color: #444;
+  border: 1px solid #444;
+}
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, .55);
+}
 /*# sourceMappingURL=todc-bootstrap.css.map */
