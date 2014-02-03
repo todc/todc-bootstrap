@@ -1,0 +1,144 @@
+// Arrow
+// -------------------------
+// Based off of: https://github.com/HugoGiraudel/LESS-Mixin-for-CSS-arrows
+//
+// Create CSS arrows that can optionally have a border
+//
+// Example usage: .arrow(direction, size, color, offset, border-size, border-color);
+//
+// - direction: up, right, down, or left
+// - size: the width of the arrow
+// - color: the color of the arrow (plain color required)
+// - offset: the position of the arrow on its axis (px / em)
+// - border-size: the width of the border if there is one (optional; default "0")
+// - border-color: the color of the border if there is one (optional; default "inherit");
+//
+// Extra
+// Drop-shadows can be used on the element to create a shadow on the arrow as well
+
+.arrow(@_; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+
+  position: relative;
+  display: inline-block;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  &:before {
+    border: @total-size solid transparent;
+  }
+  &:after {
+    border: @size solid transparent;
+  }
+}
+
+.arrow(up; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+
+  &:before,
+  &:after {
+    bottom: 50%;
+    left: @offset;
+  }
+  &:before {
+    margin-left: -@total-size;
+    border-bottom: @total-size solid;
+    border-bottom-color: @border-color;
+  }
+  &:after {
+    margin-left: -@size;
+    border-bottom: @size solid @color;
+  }
+}
+
+.arrow(right; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+
+  &:before,
+  &:after {
+    left: 100%;
+    top: @offset;
+  }
+  &:before {
+    margin-top: -@total-size;
+    border-left: @total-size solid;
+    border-left-color: @border-color;
+  }
+  &:after {
+    margin-top: -@size;
+    border-left: @size solid @color;
+  }
+}
+
+.arrow(down; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+
+  &:before,
+  &:after {
+    top: 50%;
+    left: @offset;
+  }
+  &:before {
+    margin-left: -@total-size;
+    border-top: @total-size solid;
+    border-top-color: @border-color;
+  }
+  &:after {
+    margin-left: -@size;
+    border-top: @size solid @color;
+  }
+}
+
+.arrow(left; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+
+  &:before,
+  &:after {
+    right: 100%;
+    top: @offset;
+  }
+  &:before {
+    margin-top: -@total-size;
+    border-right: @total-size solid;
+    border-right-color: @border-color;
+  }
+  &:after {
+    margin-top: -@size;
+    border-right: @size solid @color;
+  }
+}
+
+// Chevron
+// -------------------------
+// Emulate Google chevrons without using images or a font
+// Adds a border-radius to an arrow
+//
+// Example usage: .chevron(direction, size, color, offset, border-size, border-color);
+
+.chevron(@_; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
+  @total-size: (@size + (@border-size * 2));
+  &:before {
+    border-radius: (@total-size - 2px);
+  }
+}
+
+.chevron(up; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
+  .arrow(up, @size, @color, @offset, @border-size, @border-color);
+}
+
+.chevron(right; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
+  .arrow(right, @size, @color, @offset, @border-size, @border-color);
+}
+
+.chevron(down; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
+  .arrow(down, @size, @color, @offset, @border-size, @border-color);
+}
+
+.chevron(left; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
+  .arrow(left, @size, @color, @offset, @border-size, @border-color);
+}

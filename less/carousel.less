@@ -36,12 +36,22 @@
 
   // Toggles
   .icon-prev,
-  .glyphicon-chevron-left {
-    left: @carousel-control-width;
+  .icon-next {
+    &:before {
+      content: '';
+    }
   }
-  .icon-next,
-  .glyphicon-chevron-right {
-    right: @carousel-control-width;
+  .icon-prev {
+    .chevron(left, 19px, #f5f5f5, 8px, 1.5px, #777);
+    position: absolute;
+    right: 0;
+    // left: 0;
+  }
+  .icon-next {
+    .chevron(right, 19px, #f5f5f5, 8px, 1.5px, #777);
+    position: absolute;
+    right: 0;
+    left: 50%;
   }
 }
 

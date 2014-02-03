@@ -2,7 +2,6 @@
 // Pager pagination
 // --------------------------------------------------
 
-
 .pager {
   margin: @line-height-computed 0;
   li {
@@ -35,6 +34,15 @@
       color: @pager-active-color;
       background-color: @pager-active-bg;
     }
+
+    .icon-prev {
+      .chevron(left, 4px, @pager-bg, -5px, 1.5px);
+      padding-right: 8px;
+    }
+    .icon-next {
+      .chevron(right, 4px, @pager-bg, -5px, 1.5px);
+      padding-left: 8px;
+    }
   }
 
   .disabled {
@@ -47,6 +55,15 @@
       background-color: @pager-disabled-bg;
       border-color: @pager-disabled-border;
       .reset-filter();
+    }
+
+    .icon-prev {
+      .chevron(left, 4px, @pager-disabled-bg, -5px, 1.5px, @pager-disabled-color);
+      padding-right: 8px;
+    }
+    .icon-next {
+      .chevron(right, 4px, @pager-disabled-bg, -5px, 1.5px, @pager-disabled-color);
+      padding-left: 8px;
     }
   }
 }
