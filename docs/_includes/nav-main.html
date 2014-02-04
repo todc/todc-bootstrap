@@ -7,24 +7,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../" class="navbar-brand">TODC Bootstrap</a>
+      <a href="{{ page.base_url }}" class="navbar-brand">TODC Bootstrap</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li{% if page.slug == "getting-started" %} class="active"{% endif %}>
-          <a href="../getting-started">Getting started</a>
+          <a href="{{ page.base_url }}getting-started">Getting started</a>
         </li>
         <li{% if page.slug == "css" %} class="active"{% endif %}>
-          <a href="../css">CSS</a>
+          <a href="{{ page.base_url }}css">CSS</a>
         </li>
         <li{% if page.slug == "components" %} class="active"{% endif %}>
-          <a href="../components">Components</a>
+          <a href="{{ page.base_url }}components">Components</a>
         </li>
         <li{% if page.slug == "js" %} class="active"{% endif %}>
-          <a href="../javascript">JavaScript</a>
+          <a href="{{ page.base_url }}javascript">JavaScript</a>
         </li>
         <li{% if page.slug == "customize" %} class="active"{% endif %}>
-          <a href="../customize">Customize</a>
+          <a href="{{ page.base_url }}customize">Customize</a>
         </li>
       </ul>
     </nav>
