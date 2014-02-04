@@ -167,6 +167,11 @@ module.exports = function (grunt) {
         src: '**',
         dest: 'dist'
       },
+      images: {
+        expand: true,
+        src: 'img/*',
+        dest: 'dist'
+      },
       docs: {
         expand: true,
         cwd: './dist',
@@ -177,11 +182,6 @@ module.exports = function (grunt) {
           'img/*'
         ],
         dest: 'docs/dist'
-      },
-      images: {
-        expand: true,
-        src: 'img/*',
-        dest: 'dist'
       }
     },
 
