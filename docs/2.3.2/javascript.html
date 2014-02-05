@@ -25,7 +25,7 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <link href="assets/css/todc-bootstrap.css" rel="stylesheet"></head>
+    <link href="assets/css/todc-bootstrap.css" rel="stylesheet">
 
   </head>
 
@@ -133,7 +133,7 @@
 <pre class="prettyprint linenums">
 $("#myModal").modal()                       // initialized with defaults
 $("#myModal").modal({ keyboard: false })   // initialized with no keyboard
-$("#myModal").modal('show')                // initializes and invokes show immediately</p>
+$("#myModal").modal('show')                // initializes and invokes show immediately
 </pre>
           <p>Each plugin also exposes its raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
 
@@ -260,10 +260,10 @@ $('#myModal').on('show', function (e) {
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
           </div>
 <pre class="prettyprint linenums">
-&lt!-- Button to trigger modal --&gt;
+&lt;!-- Button to trigger modal --&gt;
 &lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;Launch demo modal&lt;/a&gt;
 
-&lt!-- Modal --&gt;
+&lt;!-- Modal --&gt;
 &lt;div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
@@ -468,8 +468,8 @@ $('#myModal').on('hidden', function () {
                 </ul>
               </li>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
-                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                <a class="dropdown-toggle" id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
@@ -1478,11 +1478,11 @@ $('#myCollapsible').on('hidden', function () {
             </div>
 <pre class="prettyprint linenums">
 &lt;div id="myCarousel" class="carousel slide"&gt;
-  &lt;ol class="carousel-indicators"&gt
-    &lt;li data-target="#myCarousel" data-slide-to="0" class="active"&gt&lt;/li&gt
-    &lt;li data-target="#myCarousel" data-slide-to="1"&gt&lt;/li&gt
-    &lt;li data-target="#myCarousel" data-slide-to="2"&gt&lt;/li&gt
-  &lt;/ol&gt
+  &lt;ol class="carousel-indicators"&gt;
+    &lt;li data-target="#myCarousel" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#myCarousel" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#myCarousel" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ol&gt;
   &lt;!-- Carousel items --&gt;
   &lt;div class="carousel-inner"&gt;
     &lt;div class="active item"&gt;…&lt;/div&gt;
