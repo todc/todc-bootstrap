@@ -223,7 +223,7 @@ function draw(args) {
 }
 
 function render(mode, el, holder, src) {
-
+	
 	var dimensions = holder.dimensions,
 		theme = holder.theme,
 		text = holder.text ? decodeURIComponent(holder.text) : holder.text;
@@ -237,7 +237,7 @@ function render(mode, el, holder, src) {
 	el.setAttribute("data-src", src);
 	holder.theme = theme;
 	el.holder_data = holder;
-
+	
 	if (mode == "image") {
 		el.setAttribute("alt", text ? text : theme.text ? theme.text + " [" + dimensions_caption + "]" : dimensions_caption);
 		if (fallback || !holder.auto) {
@@ -248,12 +248,12 @@ function render(mode, el, holder, src) {
 			el.style.backgroundColor = theme.background;
 		} else {
 			el.setAttribute("src", draw({ctx: ctx, dimensions: dimensions, template: theme, ratio:ratio, holder: holder}));
-
+			
 			if(holder.textmode && holder.textmode == "exact"){
 				resizable_images.push(el);
 				resizable_update(el);
 			}
-
+			
 		}
 	} else if (mode == "background") {
 		if (!fallback) {
@@ -402,7 +402,7 @@ app.add_image = function (src, el) {
 };
 app.run = function (o) {
 	preempted = true;
-
+	
 	var options = extend(settings, o),
 		images = [],
 		imageNodes = [],
@@ -414,7 +414,7 @@ app.run = function (o) {
 	} else if (window.Node && options.images instanceof window.Node) {
 		imageNodes = [options.images];
 	}
-
+	
 	if (typeof (options.bgnodes) == "string") {
 		bgnodes = selector(options.bgnodes);
 	} else if (window.NodeList && options.elements instanceof window.NodeList) {
