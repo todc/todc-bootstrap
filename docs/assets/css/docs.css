@@ -1108,7 +1108,7 @@ h1[id] {
 /* Error handling */
 .bs-customizer-alert {
   position: fixed;
-  top: 51px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1030;
