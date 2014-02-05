@@ -16,8 +16,6 @@ h4 {
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #eee;
-  border: 1px solid #ddd;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
 }

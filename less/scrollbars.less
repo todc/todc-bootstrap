@@ -29,6 +29,7 @@
   border-radius: 0;
 }
 .scrollable::-webkit-scrollbar-thumb {
+  background-color: #515151; //old browsers fallback (ie8 etc)
   background-color: rgba(0,0,0,0.2);
   border: solid transparent;
   border-width: 0;
@@ -39,6 +40,7 @@
     background-color: #949494;
   }
   &:active {
+    background-color: #3b3b3b; //old browsers fallback (ie8 etc)
     background-color: rgba(0,0,0,0.5);
     .box-shadow(inset 1px 1px 3px rgba(0,0,0,0.35));
   }

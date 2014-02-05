@@ -294,7 +294,7 @@ input[type="checkbox"],
   -webkit-appearance: none;
   background: white;
   border: 1px solid #dcdcdc;
-  border-width: 0\0;
+  border-width: 0 \0;
   border-radius: 1px;
 }
 input[type="radio"]:focus,
@@ -2708,6 +2708,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   cursor: default;
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #5b5b5b;
   border: 1px solid rgba(0, 0, 0, .1);
   border-radius: 2px;
   outline: none;
@@ -3589,6 +3590,7 @@ li.list-group-header {
   border-radius: 0;
 }
 .scrollable::-webkit-scrollbar-thumb {
+  background-color: #515151;
   background-color: rgba(0, 0, 0, .2);
   background-clip: padding-box;
   border: solid transparent;
@@ -3600,6 +3602,7 @@ li.list-group-header {
   background-color: #949494;
 }
 .scrollable::-webkit-scrollbar-thumb:active {
+  background-color: #3b3b3b;
   background-color: rgba(0, 0, 0, .5);
   -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .35);
           box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .35);
@@ -3850,6 +3853,7 @@ li.list-group-header {
   padding: 10px;
   color: #fff;
   text-shadow: none;
+  background-color: #262626;
   background-color: rgba(0, 0, 0, .55);
 }
 /*# sourceMappingURL=todc-bootstrap.css.map */

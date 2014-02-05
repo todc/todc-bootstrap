@@ -73,7 +73,8 @@ module.exports = function (grunt) {
       },
       src: [
         'dist/css/todc-bootstrap.css',
-        'docs/assets/css/docs.css'
+        'docs/assets/css/docs.css',
+        'docs/examples/**/*.css'
       ]
     },
 
