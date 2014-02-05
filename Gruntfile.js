@@ -17,9 +17,9 @@ module.exports = function (grunt) {
 
   var fs = require('fs');
   var path = require('path');
-  var generateGlyphiconsData = require('./docs/grunt/bs-glyphicons-data-generator.js');
-  var BsLessdocParser = require('./docs/grunt/bs-lessdoc-parser.js');
-  var generateRawFilesJs = require('./docs/grunt/bs-raw-files-generator.js');
+  var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
+  var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
+  var generateRawFilesJs = require('./grunt/bs-raw-files-generator.js');
 
   // Project configuration.
   grunt.initConfig({
