@@ -79,10 +79,12 @@ module.exports = function (grunt) {
     },
 
     uglify: {
+      options: {
+        report: 'min'
+      },
       docsJs: {
         options: {
           preserveComments: 'some',
-          report: 'min'
         },
         src: [
           'docs/assets/js/vendor/select2.js',
