@@ -25,12 +25,10 @@
   "bugs": {
     "url": "https://github.com/todc/todc-bootstrap/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
   "devDependencies": {
     "btoa": "~1.1.1",
     "grunt": "~0.4.2",
