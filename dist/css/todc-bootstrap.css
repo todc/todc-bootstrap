@@ -2947,12 +2947,6 @@ li.list-group-item.active a > .badge {
   border: 1px solid #fff;
   border-radius: 0;
 }
-.thumbnail > img,
-.thumbnail a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
