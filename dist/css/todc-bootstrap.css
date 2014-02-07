@@ -245,18 +245,22 @@ output {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
+.form-control:disabled,
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background-color: #f1f1f1;
   border: 1px solid #e5e5e5;
 }
+.form-control:disabled:hover,
 .form-control[disabled]:hover,
 .form-control[readonly]:hover,
 fieldset[disabled] .form-control:hover,
+.form-control:disabled:focus,
 .form-control[disabled]:focus,
 .form-control[readonly]:focus,
 fieldset[disabled] .form-control:focus,
+.form-control:disabled:active,
 .form-control[disabled]:active,
 .form-control[readonly]:active,
 fieldset[disabled] .form-control:active {
