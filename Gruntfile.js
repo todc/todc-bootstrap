@@ -48,6 +48,9 @@ module.exports = function (grunt) {
         jshintrc: 'js/.jshintrc'
       },
       grunt: {
+        options: {
+          node: true
+        },
         src: ['Gruntfile.js', 'grunt/*.js']
       },
       assets: {
