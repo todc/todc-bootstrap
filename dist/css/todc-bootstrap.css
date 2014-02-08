@@ -3334,6 +3334,21 @@ li.list-group-header {
 .panel-body {
   padding: 15px 20px;
 }
+.panel-heading {
+  padding: 15px 20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-title {
+  font-size: 16px;
+}
+.panel-footer {
+  padding: 15px 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 .panel > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -3385,22 +3400,6 @@ li.list-group-header {
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive {
   border-top: 1px solid #ddd;
-}
-.panel-heading {
-  padding: 15px 20px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.panel-title {
-  font-size: 16px;
-}
-.panel-footer {
-  padding: 15px 20px;
-  background-color: #f8f8f8;
-  border-top: 1px solid #e5e5e5;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 .panel-default {
   border-color: #d8d8d8;
