@@ -14,7 +14,9 @@ baseurl:          /
 url:              http://localhost:9002
 encoding:         UTF-8
 
-exclude:          ["vendor", "grunt", "*.jade"]
+exclude:
+  - "jade"
+  - "vendor"
 
 # Custom vars
 current_version:  3.1.0-3.2.0
