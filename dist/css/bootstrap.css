@@ -584,15 +584,13 @@ ol ol {
 }
 .list-inline {
   padding-left: 0;
+  margin-left: -5px;
   list-style: none;
 }
 .list-inline > li {
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
-}
-.list-inline > li:first-child {
-  padding-left: 0;
 }
 dl {
   margin-top: 0;
@@ -4796,17 +4794,13 @@ a.list-group-item-danger.active:focus {
   border-width: 1px 0;
   border-radius: 0;
 }
-.panel > .list-group .list-group-item:first-child {
-  border-top: 0;
-}
-.panel > .list-group .list-group-item:last-child {
-  border-bottom: 0;
-}
 .panel > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 .panel > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
