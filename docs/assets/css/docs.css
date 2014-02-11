@@ -187,6 +187,11 @@ body {
   font-size: 20px;
   color: #fff;
 }
+.bs-docs-masthead .version {
+  margin-top: -15px;
+/*  margin-bottom: 30px;*/
+  color: #b3d4f4;
+}
 .bs-docs-masthead .btn {
   width: 100%;
   padding: 15px 30px;
