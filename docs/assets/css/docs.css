@@ -41,7 +41,7 @@
  */
 
 body {
-  position: relative; /* For scrollyspy */
+  position: relative; /* For scrollspy */
   padding-top: 46px; /* Account for fixed masthead */
 }
 
