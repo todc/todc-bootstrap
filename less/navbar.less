@@ -299,7 +299,11 @@
   .box-shadow(none);
 
   // Mixin behavior for optimum display
-  .form-inline();
+  &:extend(.form-inline all);
+  
+  > .input-group .form-control {
+    .navbar-vertical-align(@input-height-small);
+  }
 
   // .form-group {
   //   @media (max-width: @grid-float-breakpoint-max) {

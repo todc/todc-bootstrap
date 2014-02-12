@@ -529,22 +529,27 @@ select[multiple].input-lg {
   padding-top: 5px;
 }
 @media (min-width: 768px) {
-  .form-inline .form-group {
+  .form-inline .form-group,
+  .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control {
+  .form-inline .form-control,
+  .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .control-label {
+  .form-inline .control-label,
+  .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
   .form-inline .radio,
-  .form-inline .checkbox {
+  .form-inline .checkbox,
+  .navbar-form .radio,
+  .navbar-form .checkbox {
     display: inline-block;
     padding-left: 0;
     margin-top: 0;
@@ -552,12 +557,15 @@ select[multiple].input-lg {
     vertical-align: middle;
   }
   .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
+  .form-inline .checkbox input[type="checkbox"],
+  .navbar-form .radio input[type="radio"],
+  .navbar-form .checkbox input[type="checkbox"] {
     float: none;
     margin-bottom: -2px;
     margin-left: 0;
   }
-  .form-inline .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback,
+  .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
 }
@@ -1546,38 +1554,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-@media (min-width: 768px) {
-  .navbar-form .form-group {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-  .navbar-form .control-label {
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .radio,
-  .navbar-form .checkbox {
-    display: inline-block;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
-    float: none;
-    margin-bottom: -2px;
-    margin-left: 0;
-  }
-  .navbar-form .has-feedback .form-control-feedback {
-    top: 0;
-  }
+.navbar-form > .input-group .form-control {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 @media (min-width: 768px) {
   .navbar-form {
@@ -1848,6 +1827,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-bottom: 0;
   margin-left: -15px;
+}
+.navbar-masthead .navbar-form > .input-group .form-control {
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 @media (max-width: 767px) {
   .navbar-masthead .navbar-form .form-group {
@@ -2165,6 +2148,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-bottom: 0;
   margin-left: -15px;
+}
+.navbar-toolbar .navbar-form > .input-group .form-control {
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 @media (max-width: 767px) {
   .navbar-toolbar .navbar-form .form-group {

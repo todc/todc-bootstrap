@@ -280,6 +280,10 @@
   margin-left: -@navbar-masthead-padding-horizontal;
   margin-right: -@navbar-masthead-padding-horizontal;
   padding: 10px @navbar-masthead-padding-horizontal;
+  
+  > .input-group .form-control {
+    .navbar-vertical-align(@input-height-base, @navbar-masthead-height);
+  }
 
   .form-group {
     @media (max-width: @grid-float-breakpoint-max) {
