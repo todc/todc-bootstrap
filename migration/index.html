@@ -36,7 +36,7 @@
                                <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
   </head>
-  <body>
+  <body id="top">
     <a class="sr-only" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
@@ -75,7 +75,7 @@
 
 
     <!-- Docs page layout -->
-    <div class="bs-header" id="content">
+    <div class="bs-docs-header" id="content">
       <div class="container">
         <h1>Migrating to v3.x</h1>
         <p>Guidance on how to upgrade from Bootstrap v2.x to v3.x with emphasis on major changes, what's new, and what's been removed.</p>
@@ -430,6 +430,11 @@
           <td>No direct equivalent, but <a href="../css/#forms-controls">forms controls</a> are similar.</td>
         </tr>
         <tr>
+          <td>Inverse buttons</td>
+          <td><code>.btn-inverse</code></td>
+          <td class="text-muted">N/A</td>
+        </tr>
+        <tr>
           <td>Fluid row</td>
           <td><code>.row-fluid</code></td>
           <td><code>.row</code> (no more fixed grid)</td>
@@ -479,6 +484,11 @@
           <td><code>.nav-list</code> <code>.nav-header</code></td>
           <td>No direct equivalent, but <a href="../components/#list-group">list groups</a> and <a href="../javascript/#collapse"><code>.panel-group</code>s</a> are similar.</td>
         </tr>
+        <tr>
+          <td>Inline help for form controls</td>
+          <td><code>.help-inline</code></td>
+          <td>No exact equivalent, but <code>.help-block</code> is similar.</td>
+        </tr>
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
@@ -495,8 +505,8 @@
     <li>Images are no longer responsive by default. Use <code>.img-responsive</code> for fluid <code>&lt;img&gt;</code> size.</li>
     <li>The icons, now <code>.glyphicon</code>, are now font based. Icons also require a base and icon class (e.g. <code>.glyphicon .glyphicon-asterisk</code>).</li>
     <li>Typeahead has been dropped, in favor of using <a href="http://twitter.github.io/typeahead.js/">Twitter Typeahead</a>.</li>
-    <li>Modal markup has changed significantly. The <code>.modal-header</code>, <code>.modal-body</code>, and <code>.modal-footer</code> sections are now wrapped in <code>.modal-content</code> and <code>.modal-dialog</code> for better mobile styling and behavior.</li>
-    <li>The HTML loaded by the <code>remote</code> modal option is now injected into the <code>.modal</code> instead of into the <code>.modal-body</code>. This allows you to also easily vary the header and footer of the modal, not just the modal body.</li>
+    <li>Modal markup has changed significantly. The <code>.modal-header</code>, <code>.modal-body</code>, and <code>.modal-footer</code> sections are now wrapped in <code>.modal-content</code> and <code>.modal-dialog</code> for better mobile styling and behavior. Also, you should no longer apply <code>.hide</code> to <code>.modal</code> in your markup.</li>
+    <li>As of v3.1.0, the HTML loaded by the <code>remote</code> modal option is now injected into the <code>.modal-content</code> (from v3.0.0 to v3.0.3, into the <code>.modal</code>) instead of into the <code>.modal-body</code>. This allows you to also easily vary the header and footer of the modal, not just the modal body.</li>
     <li>JavaScript events are namespaced. For example, to handle the modal "show" event, use <code>'show.bs.modal'</code>. For tabs "shown" use <code>'shown.bs.tab'</code>, etc.</li>
   </ul>
   <p>For more information on upgrading to v3.0, and code snippets from the community, see <a href="http://bootply.com/">Bootply</a>.</p>
@@ -504,8 +514,8 @@
 
         </div>
         <div class="col-md-3">
-          <div class="bs-sidebar hidden-print" role="complementary">
-            <ul class="nav bs-sidenav">
+          <div class="bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav">
               
                 <li>
   <a href="#classes">Major class changes</a>
@@ -522,6 +532,9 @@
 
               
             </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
           </div>
         </div>
       </div>
@@ -530,10 +543,10 @@
 
     <!-- Footer
 ================================================== -->
-<footer class="bs-footer" role="contentinfo">
+<footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
-    <div class="bs-social">
-  <ul class="bs-social-buttons">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
     <li>
       <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=todc&amp;repo=todc-bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
     </li>
@@ -547,8 +560,8 @@
     <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
     <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-    <ul class="footer-links muted">
-      <li>Currently v3.1.0-3.2.0</li>
+    <ul class="bs-docs-footer-links muted">
+      <li>Currently v3.1.1-3.2.1</li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -560,8 +573,8 @@
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap/releases">Releases</a></li>
     </ul>
-    <ul class="footer-links muted">
-      <li>Bootstrap v3.1.0</li>
+    <ul class="bs-docs-footer-links muted">
+      <li>Bootstrap v3.1.1</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -585,7 +598,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
 

@@ -36,7 +36,7 @@
                                <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
   </head>
-  <body>
+  <body id="top">
     <a class="sr-only" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
@@ -75,7 +75,7 @@
 
 
     <!-- Docs page layout -->
-    <div class="bs-header" id="content">
+    <div class="bs-docs-header" id="content">
       <div class="container">
         <h1>Components</h1>
         <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
@@ -2309,7 +2309,7 @@
   <p>Easily make tabs or pills equal widths of their parent at screens wider than 768px with <code>.nav-justified</code>. On smaller screens, the nav links are stacked.</p>
   <div class="bs-callout bs-callout-warning">
     <h4>Safari and responsive justified navs</h4>
-    <p>Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href="../examples/justified-nav/">justified nav example</a>.</p>
+    <p>As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href="../examples/justified-nav/">justified nav example</a>.</p>
   </div>
   <div class="bs-example">
     <ul class="nav nav-tabs nav-justified">
@@ -2733,7 +2733,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 30px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-top</span><span class="o">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -2775,7 +2775,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 30px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-bottom</span><span class="o">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -3105,7 +3105,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-masthead-collapse-6">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3114,7 +3114,7 @@
           <a class="navbar-brand" href="#">Brand</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-masthead-collapse-6">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -3134,7 +3134,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed masthead will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 44px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span><span class="m">65px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-top</span><span class="o">:</span><span class="mi">65</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -3147,7 +3147,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-masthead-collapse-7">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3156,7 +3156,7 @@
           <a class="navbar-brand" href="#">Brand</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-masthead-collapse-7">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -3176,7 +3176,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed masthead will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 44px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">65px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-bottom</span><span class="o">:</span> <span class="mi">65</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -3190,7 +3190,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-masthead-collapse-8">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3200,7 +3200,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-masthead-collapse-8">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -3625,7 +3625,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-6">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3634,7 +3634,7 @@
           <a class="navbar-brand" href="#">Brand</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-6">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -3654,7 +3654,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed toolbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 38px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span> <span class="m">45px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-top</span><span class="o">:</span> <span class="mi">45</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -3667,7 +3667,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-7">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3676,7 +3676,7 @@
           <a class="navbar-brand" href="#">Brand</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-7">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -3696,7 +3696,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Body padding required</h4>
     <p>The fixed toolbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 38px high.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">45px</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="nt">body</span> <span class="p">{</span> <span class="na">padding-bottom</span><span class="o">:</span> <span class="mi">45</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
     <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
   </div>
@@ -3710,7 +3710,7 @@
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-8">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3720,7 +3720,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-8">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
@@ -4358,6 +4358,22 @@
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;60&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 60%;&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>60% Complete<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+  <h3 id="progress-label">With label</h3>
+  <p>Remove the <code>.sr-only</code> class from within the progress bar to show a visible percentage. For low percentages, consider adding a <code>min-width</code> to ensure the label's text is fully visible.</p>
+  <div class="bs-example">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+      </div>
+    </div>
+  </div>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;60&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 60%;&quot;</span><span class="nt">&gt;</span>
+    60%
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
@@ -5437,8 +5453,8 @@
 
         </div>
         <div class="col-md-3">
-          <div class="bs-sidebar hidden-print" role="complementary">
-            <ul class="nav bs-sidenav">
+          <div class="bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav">
               
                 <li>
   <a href="#glyphicons">Glyphicons</a>
@@ -5583,6 +5599,7 @@
   <a href="#progress">Progress bars</a>
   <ul class="nav">
     <li><a href="#progress-basic">Basic example</a></li>
+    <li><a href="#progress-label">With label</a></li>
     <li><a href="#progress-alternatives">Contextual alternatives</a></li>
     <li><a href="#progress-striped">Striped</a></li>
     <li><a href="#progress-animated">Animated</a></li>
@@ -5622,6 +5639,9 @@
 
               
             </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
           </div>
         </div>
       </div>
@@ -5630,10 +5650,10 @@
 
     <!-- Footer
 ================================================== -->
-<footer class="bs-footer" role="contentinfo">
+<footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
-    <div class="bs-social">
-  <ul class="bs-social-buttons">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
     <li>
       <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=todc&amp;repo=todc-bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
     </li>
@@ -5647,8 +5667,8 @@
     <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
     <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-    <ul class="footer-links muted">
-      <li>Currently v3.1.0-3.2.0</li>
+    <ul class="bs-docs-footer-links muted">
+      <li>Currently v3.1.1-3.2.1</li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -5660,8 +5680,8 @@
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap/releases">Releases</a></li>
     </ul>
-    <ul class="footer-links muted">
-      <li>Bootstrap v3.1.0</li>
+    <ul class="bs-docs-footer-links muted">
+      <li>Bootstrap v3.1.1</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -5685,7 +5705,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
 
