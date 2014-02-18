@@ -128,7 +128,7 @@ module.exports = function (grunt) {
           keepSpecialComments: '*',
           noAdvanced: true, // turn advanced optimizations off until the issue is fixed in clean-css
           report: 'min',
-          selectorsMergeMode: 'ie8'
+          compatibility: 'ie8'
         },
         src: [
           'docs/assets/css/docs.css',
