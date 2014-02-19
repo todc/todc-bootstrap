@@ -3625,6 +3625,7 @@ li.list-group-header {
 .tooltip.top-left .tooltip-arrow,
 .tooltip.top-right .tooltip-arrow {
   bottom: 1px;
+  border-top-color: #2a2a2a;
 }
 .tooltip.top .tooltip-arrow:before,
 .tooltip.top-left .tooltip-arrow:before,
@@ -3636,6 +3637,7 @@ li.list-group-header {
 }
 .tooltip.right .tooltip-arrow {
   left: 1px;
+  border-right-color: #2a2a2a;
 }
 .tooltip.right .tooltip-arrow:before {
   top: -7px;
@@ -3645,6 +3647,7 @@ li.list-group-header {
 }
 .tooltip.left .tooltip-arrow {
   right: 1px;
+  border-left-color: #2a2a2a;
 }
 .tooltip.left .tooltip-arrow:before {
   top: -7px;
@@ -3656,6 +3659,7 @@ li.list-group-header {
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
   top: 1px;
+  border-bottom-color: #2a2a2a;
 }
 .tooltip.bottom .tooltip-arrow:before,
 .tooltip.bottom-left .tooltip-arrow:before,

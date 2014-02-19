@@ -33,6 +33,7 @@
   &.top-left .tooltip-arrow,
   &.top-right .tooltip-arrow  {
     bottom: 1px;
+    border-top-color: @tooltip-arrow-color;
     &:before {
       top: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
@@ -42,6 +43,7 @@
   }
   &.right .tooltip-arrow {
     left: 1px;
+    border-right-color: @tooltip-arrow-color;
     &:before {
       top: -@tooltip-arrow-outer-width;
       right: -@tooltip-arrow-width;
@@ -51,6 +53,7 @@
   }
   &.left .tooltip-arrow {
     right: 1px;
+    border-left-color: @tooltip-arrow-color;
     &:before {
       top: -@tooltip-arrow-outer-width;
       left: -@tooltip-arrow-width;
@@ -62,6 +65,7 @@
   &.bottom-left .tooltip-arrow,
   &.bottom-right .tooltip-arrow {
     top: 1px;
+    border-bottom-color: @tooltip-arrow-color;
     &:before {
       bottom: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
