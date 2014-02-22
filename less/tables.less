@@ -106,8 +106,8 @@ table {
 // by enabling horizontal scrolling. Only applies <768px. Everything above that
 // will display normally.
 
-@media (max-width: @screen-xs-max) {
-  .table-responsive {
+.table-responsive {
+  @media (max-width: @screen-xs-max) {
     border: 1px solid @table-border-color;
   }
 }
