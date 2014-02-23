@@ -582,6 +582,7 @@ select[multiple].input-lg {
 }
 .form-horizontal .form-control-static {
   padding-top: 6px;
+  padding-bottom: 6px;
 }
 .btn {
   padding: 5px 12px;
