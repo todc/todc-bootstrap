@@ -280,7 +280,7 @@
   margin-left: -@navbar-masthead-padding-horizontal;
   margin-right: -@navbar-masthead-padding-horizontal;
   padding: 10px @navbar-masthead-padding-horizontal;
-  
+
   > .input-group .form-control {
     .navbar-vertical-align(@input-height-base, @navbar-masthead-height);
   }
@@ -482,6 +482,20 @@
     }
   }
 
+  .btn-link {
+    color: @navbar-masthead-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-masthead-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-masthead-default-link-disabled-color;
+      }
+    }
+  }
 }
 
 // Inverse navbar
@@ -607,4 +621,18 @@
     }
   }
 
+  .btn-link {
+    color: @navbar-masthead-inverse-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-masthead-inverse-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-masthead-inverse-link-disabled-color;
+      }
+    }
+  }
 }
