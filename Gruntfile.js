@@ -168,6 +168,11 @@ module.exports = function (grunt) {
         cwd: 'docs/examples/',
         src: ['**/*.css'],
         dest: 'docs/examples/'
+      },
+      docs: {
+        files: {
+          'docs/assets/css/docs.css': 'docs/assets/css/docs.css'
+        }
       }
     },
 
