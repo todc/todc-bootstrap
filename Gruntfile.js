@@ -75,10 +75,18 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       src: [
-        'dist/css/todc-bootstrap.css',
-        'docs/assets/css/docs.css',
+        'dist/css/todc-bootstrap.css'
+        ],
+      examples: [
         'docs/examples/**/*.css'
-      ]
+      ],
+      docs: {
+        options: {
+          'ids': false,
+          'overqualified-elements': false
+        },
+        src: ['docs/assets/css/docs.css']
+      }
     },
 
     uglify: {
