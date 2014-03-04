@@ -1,7 +1,18 @@
 {
   "name": "todc/todc-bootstrap",
   "description": "Google-styled theme for Bootstrap.",
-  "keywords": ["bootstrap", "css", "theme", "google"],
+  "keywords": [
+    "bootstrap",
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "web",
+    "theme",
+    "google"
+  ],
   "homepage": "http://todc.github.io/todc-bootstrap/",
   "authors": [
     {
