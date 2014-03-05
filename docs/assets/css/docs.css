@@ -1218,6 +1218,10 @@ h1[id] {
   color: #fff;
   background-color: #1b6ec1;
 }
+.bs-brand-item .svg {
+  width: 144px;
+  height: 144px;
+}
 
 /* Heading content within */
 .bs-brand-item h1,
