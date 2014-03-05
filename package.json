@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "btoa": "~1.1.1",
+    "css-flip": "~0.3.0",
     "grunt": "~0.4.2",
     "grunt-banner": "~0.2.1",
     "grunt-contrib-clean": "~0.5.0",
@@ -56,8 +57,7 @@
     "grunt-sed": "~0.1.1",
     "grunt-shell": "~0.6.4",
     "load-grunt-tasks": "~0.4.0",
-    "markdown": "~0.5.0",
-    "css-flip": "~0.3.0"
+    "markdown": "~0.5.0"
   },
   "jspm": {
     "main": "js/todc-bootstrap",

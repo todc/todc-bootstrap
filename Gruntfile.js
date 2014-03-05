@@ -95,7 +95,7 @@ module.exports = function (grunt) {
       },
       docsJs: {
         options: {
-          preserveComments: 'some',
+          preserveComments: 'some'
         },
         src: [
           'docs/assets/js/vendor/select2.js',
@@ -125,7 +125,16 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
+          'dist/css/<%= pkg.name %>-rtl.min.css': 'dist/css/<%= pkg.name %>-rtl.css'
+        }
+      }
+    },
+
+    cssFlip: {
+      rtl: {
+        files: {
+          'dist/css/<%= pkg.name %>-rtl.css': 'dist/css/<%= pkg.name %>.css'
         }
       }
     },
@@ -156,7 +165,9 @@ module.exports = function (grunt) {
         files: {
           src: [
             'dist/css/<%= pkg.name %>.css',
+            'dist/css/<%= pkg.name %>-rtl.css',
             'dist/css/<%= pkg.name %>.min.css',
+            'dist/css/<%= pkg.name %>-rtl.min.css'
           ]
         }
       }
@@ -168,7 +179,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/css/<%= pkg.name %>.css': 'dist/css/<%= pkg.name %>.css'
+          'dist/css/<%= pkg.name %>.css': 'dist/css/<%= pkg.name %>.css',
+          'dist/css/<%= pkg.name %>-rtl.css': 'dist/css/<%= pkg.name %>-rtl.css'
         }
       },
       examples: {
@@ -306,6 +318,7 @@ module.exports = function (grunt) {
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  grunt.loadTasks('./grunt/tasks/');
 
   // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', 'shell');
@@ -322,7 +335,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', 'uglify');
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['less', 'csscomb', 'cssmin', 'usebanner', 'dist-docs']);
+  grunt.registerTask('less-compile', ['less:compileCore']);
+  grunt.registerTask('dist-css', ['less-compile', 'cssFlip', 'less:minify', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
   grunt.registerTask('dist-docs', 'copy:docs');
