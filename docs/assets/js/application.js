@@ -101,7 +101,7 @@
     $('select').not('.input-lg').not('.input-sm').each(function () {
       var e = $(this)
       e.select2({
-      minimumResultsForSearch: 20
+        minimumResultsForSearch: 20
       })
     })
   })

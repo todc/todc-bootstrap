@@ -63,11 +63,14 @@ module.exports = function (grunt) {
         config: 'js/.jscsrc'
       },
       grunt: {
-        src: ['Gruntfile.js', 'grunt/*.js']
+        options: {
+          'requireParenthesesAroundIIFE': true
+        },
+        src: '<%= jshint.grunt.src %>'
       },
       assets: {
-        src: 'docs/assets/js/application.js'
-       }
+        src: '<%= jshint.assets.src %>'
+      }
     },
 
     csslint: {
@@ -76,7 +79,7 @@ module.exports = function (grunt) {
       },
       src: [
         'dist/css/todc-bootstrap.css'
-        ],
+      ],
       examples: [
         'docs/examples/**/*.css'
       ],
