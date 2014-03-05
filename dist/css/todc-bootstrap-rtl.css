@@ -458,11 +458,23 @@ select[multiple].input-lg {
   padding-left: 37.5px;
 }
 
-.has-feedback .form-control-feedback {
+.form-control-feedback {
   top: 23px;
   width: 30px;
   height: 30px;
   line-height: 30px;
+}
+
+.input-lg + .form-control-feedback {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.input-sm + .form-control-feedback {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
 }
 
 .has-success .help-block,
