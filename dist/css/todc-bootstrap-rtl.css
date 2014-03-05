@@ -3684,7 +3684,7 @@ a.thumbnail.active {
 }
 
 .progress-bar {
-  line-height: 18px;
+  line-height: 1.25;
   background-color: #6188f5;
   background-image: none;
   -webkit-box-shadow: none;
