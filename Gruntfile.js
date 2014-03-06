@@ -134,7 +134,7 @@ module.exports = function (grunt) {
       }
     },
 
-    cssFlip: {
+    css_flip: {
       rtl: {
         files: {
           'dist/css/<%= pkg.name %>-rtl.css': 'dist/css/<%= pkg.name %>.css'
@@ -321,7 +321,6 @@ module.exports = function (grunt) {
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-  grunt.loadTasks('./grunt/tasks/');
 
   // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', 'shell');
@@ -339,7 +338,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore']);
-  grunt.registerTask('dist-css', ['less-compile', 'cssFlip', 'less:minify', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
+  grunt.registerTask('dist-css', ['less-compile', 'css_flip', 'less:minify', 'cssmin', 'csscomb', 'usebanner', 'dist-docs']);
 
   // Docs distribution task.
   grunt.registerTask('dist-docs', 'copy:docs');
