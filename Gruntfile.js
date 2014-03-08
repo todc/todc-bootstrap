@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'grunt/*.js']
       },
       assets: {
-        src: 'docs/assets/js/application.js'
+        src: 'docs/assets/js/src/*.js'
       }
     },
 
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
           'ids': false,
           'overqualified-elements': false
         },
-        src: ['docs/assets/css/docs.css']
+        src: 'docs/assets/css/src/docs.css'
       }
     },
 
@@ -104,7 +104,7 @@ module.exports = function (grunt) {
         src: [
           'docs/assets/js/vendor/select2.js',
           'docs/assets/js/vendor/holder.js',
-          'docs/assets/js/application.js'
+          'docs/assets/js/src/application.js'
         ],
         dest: 'docs/assets/js/docs.min.js'
       }
@@ -152,9 +152,9 @@ module.exports = function (grunt) {
           compatibility: 'ie8'
         },
         src: [
-          'docs/assets/css/docs.css',
-          'docs/assets/css/pygments-manni.css',
-          'docs/assets/css/select2.css'
+          'docs/assets/css/src/docs.css',
+          'docs/assets/css/src/pygments-manni.css',
+          'docs/assets/css/src/select2.css'
         ],
         dest: 'docs/assets/css/docs.min.css'
       }
@@ -190,12 +190,12 @@ module.exports = function (grunt) {
       examples: {
         expand: true,
         cwd: 'docs/examples/',
-        src: ['**/*.css'],
+        src: '**/*.css',
         dest: 'docs/examples/'
       },
       docs: {
         files: {
-          'docs/assets/css/docs.css': 'docs/assets/css/docs.css'
+          'docs/assets/css/src/docs.css': 'docs/assets/css/src/docs.css'
         }
       }
     },
