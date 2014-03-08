@@ -166,6 +166,8 @@ body {
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
   background-color: #2d87e2;
   background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1b6ec1), to(#2d87e2));
+  background-image:      -o-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image:         linear-gradient(to bottom, #1b6ec1 0%, #2d87e2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6ec1', endColorstr='#2d87e2', GradientType=0);
   background-repeat: repeat-x;
@@ -671,7 +673,8 @@ h1[id] {
   border-color: #e5e5e5 #eee #eee;
   border-style: solid;
   border-width: 1px 0;
-  box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
 }
 /* Echo out a label for the example */
 .bs-example:after {
@@ -702,7 +705,8 @@ h1[id] {
     border-color: #ddd;
     border-width: 1px;
     border-radius: 4px 4px 0 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .bs-example + .highlight {
     margin-top: -16px;
@@ -1168,7 +1172,8 @@ h1[id] {
   color: #fff;
   background-color: #d9534f;
   border-bottom: 1px solid #b94441;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
 }
 .bs-customizer-alert .close {
   margin-top: -4px;
@@ -1185,7 +1190,8 @@ h1[id] {
   color: #fff;
   background-color: #a83c3a;
   border-color: #973634;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
 }
 
 
@@ -1287,8 +1293,8 @@ h1[id] {
   border: 1px solid #4d90fe !important;
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
-  -moz-box-shadow: none;
-       box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* Better spacing on download options in getting started */
