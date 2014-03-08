@@ -20,10 +20,10 @@
     "test": "grunt test"
   },
   "style": [
-    "./dist/css/bootstrap.css",
-    "./dist/css/todc-bootstrap.css"
+    "dist/css/bootstrap.css",
+    "dist/css/todc-bootstrap.css"
   ],
-  "less": "./less/todc-bootstrap.less",
+  "less": "less/todc-bootstrap.less",
   "repository": {
     "type": "git",
     "url": "https://github.com/todc/todc-bootstrap.git"
