@@ -3,18 +3,18 @@
 // --------------------------------------------------
 
 
-// Base classes
+// Base class
 .badge {
   font-size: @font-size-small;
-}
 
-// Account for counters in navs
-a.list-group-item.active > .badge,
-li.list-group-item.active a > .badge {
-  color: @badge-color;
-  background-color: @list-group-active-color;
-}
-.nav-pills > .active > a > .badge {
-  color: @link-color;
-  background-color: @badge-active-bg;
+  // Account for counters in navs
+  a.list-group-item.active > &,
+  li.list-group-item.active a > & {
+    color: @badge-color;
+    background-color: @list-group-active-color;
+  }
+  .nav-pills > .active > a > & {
+    color: @link-color;
+    background-color: @badge-active-bg;
+  }
 }
