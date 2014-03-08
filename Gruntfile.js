@@ -322,6 +322,7 @@ module.exports = function (grunt) {
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  require('time-grunt')(grunt);
 
   // Clone bootstrap and checkout the appropriate tag task.
   grunt.registerTask('checkout-bootstrap', 'shell');
