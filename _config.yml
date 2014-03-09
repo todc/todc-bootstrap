@@ -15,9 +15,9 @@ url:              http://todc.github.io/todc-bootstrap
 encoding:         UTF-8
 
 exclude:
-  - "jade"
-  - "src"
-  - "vendor"
+  - jade
+  - src
+  - vendor
 
 # Custom vars
 current_version:  3.1.1-3.2.1
