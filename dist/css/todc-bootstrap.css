@@ -289,6 +289,13 @@ textarea.form-control {
 }
 input[type="date"] {
   line-height: 30px;
+  line-height: 1.4 \0;
+}
+input[type="date"].input-sm {
+  line-height: 26px;
+}
+input[type="date"].input-lg {
+  line-height: 38px;
 }
 .radio,
 .checkbox {
