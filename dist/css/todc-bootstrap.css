@@ -323,7 +323,7 @@ input[type="checkbox"]:focus,
 .checkbox input[type="checkbox"]:focus,
 .checkbox-inline input[type="checkbox"]:focus {
   border-color: #4d90fe;
-  outline: none;
+  outline: 0;
 }
 input[type="radio"]:active,
 .radio input[type="radio"]:active,
@@ -2858,7 +2858,7 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
   border: 1px solid #5b5b5b;
   border: 1px solid rgba(0, 0, 0, .1);
   border-radius: 2px;
-  outline: none;
+  outline: 0;
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .1);
           box-shadow: 0 2px 1px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .1);
 }
@@ -3686,7 +3686,7 @@ li.list-group-header {
   background-color: #f5f5f5;
 }
 .panel-group .panel-heading a:focus {
-  outline: none;
+  outline: 0;
 }
 .panel-group .panel-heading a.collapsed:before {
   margin-right: 7px;
