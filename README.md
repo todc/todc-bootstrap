@@ -29,7 +29,7 @@ Three quick start options are available:
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
 
-Read the [Getting Started page](http://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](http://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ## Compatibility ##
 
