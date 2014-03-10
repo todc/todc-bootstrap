@@ -599,7 +599,6 @@ select[multiple].input-lg {
     top: 0;
   }
 }
-.form-horizontal .control-label,
 .form-horizontal .radio,
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
@@ -613,6 +612,11 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    padding-top: 6px;
+  }
 }
 .btn {
   padding: 5px 12px;
