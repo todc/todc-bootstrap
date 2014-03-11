@@ -165,13 +165,13 @@ module.exports = function (grunt) {
     },
 
     cssmin: {
-      compress: {
-        options: {
-          keepSpecialComments: '*',
-          noAdvanced: true, // turn advanced optimizations off until the issue is fixed in clean-css
-          report: 'min',
-          compatibility: 'ie8'
-        },
+      options: {
+        keepSpecialComments: '*',
+        noAdvanced: true, // turn advanced optimizations off until the issue is fixed in clean-css
+        report: 'min',
+        compatibility: 'ie8'
+      },
+      docs: {
         src: [
           'docs/assets/css/src/docs.css',
           'docs/assets/css/src/pygments-manni.css',
@@ -182,19 +182,12 @@ module.exports = function (grunt) {
     },
 
     usebanner: {
-      dist: {
-        options: {
-          position: 'top',
-          banner: '<%= banner %>'
-        },
-        files: {
-          src: [
-            'dist/css/<%= pkg.name %>.css',
-            'dist/css/<%= pkg.name %>-rtl.css',
-            'dist/css/<%= pkg.name %>.min.css',
-            'dist/css/<%= pkg.name %>-rtl.min.css'
-          ]
-        }
+      options: {
+        position: 'top',
+        banner: '<%= banner %>'
+      },
+      files: {
+        src: 'dist/css/*.css'
       }
     },
 
@@ -203,10 +196,10 @@ module.exports = function (grunt) {
         config: 'less/.csscomb.json'
       },
       dist: {
-        files: {
-          'dist/css/<%= pkg.name %>.css': 'dist/css/<%= pkg.name %>.css',
-          'dist/css/<%= pkg.name %>-rtl.css': 'dist/css/<%= pkg.name %>-rtl.css'
-        }
+        expand: true,
+        cwd: 'dist/css/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/'
       },
       examples: {
         expand: true,
