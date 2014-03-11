@@ -1,0 +1,18 @@
+// Gradients
+
+#gradient {
+
+  // Top and Bottom gradient
+  //
+  // Creates the same gradient and the top and bottom and uses the background color for the field.
+  .top-and-bottom(@start-color: @gray-lighter; @end-color: #f5f5f5; @start-percent: 0%; @end-percent: 100%) {
+    background-color: @end-color;
+    background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent), -webkit-linear-gradient(bottom, @start-color @start-percent, @end-color @end-percent);
+    background-image: -o-linear-gradient(top, @start-color @start-percent, @end-color @end-percent), -o-linear-gradient(bottom, @start-color @start-percent, @end-color @end-percent);
+    background-image: -moz-linear-gradient(center top , @start-color @start-percent, @end-color @end-percent), -moz-linear-gradient(center bottom , @start-color @start-percent, @end-color @end-percent);
+    background-image: linear-gradient(top, @start-color @start-percent, @end-color @end-percent), linear-gradient(bottom, @start-color @start-percent, @end-color @end-percent);
+    background-repeat: no-repeat;
+    background-position: 0 @start-percent, 0 @end-percent;
+    background-size: @end-percent 10px;
+  }
+}
