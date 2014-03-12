@@ -96,7 +96,9 @@
 }
 
 // Left aligned submenus
-.dropdown-submenu.pull-left {
+// NOTE: Deprecated .dropdown-submenu.pull-left
+.dropdown-submenu.pull-left,
+.dropdown-submenu.dropdown-menu-left {
   // Undo the float
   // Yes, this is awkward since .pull-left adds a float, but it sticks to our conventions elsewhere.
   float: none !important;

@@ -1504,11 +1504,13 @@ fieldset[disabled] .btn-link:focus {
   content: "";
 }
 
-.dropdown-submenu.pull-left {
+.dropdown-submenu.pull-left,
+.dropdown-submenu.dropdown-menu-left {
   float: none !important;
 }
 
-.dropdown-submenu.pull-left > .dropdown-menu {
+.dropdown-submenu.pull-left > .dropdown-menu,
+.dropdown-submenu.dropdown-menu-left > .dropdown-menu {
   right: -100%;
   margin-right: 18px;
   border-radius: 0;

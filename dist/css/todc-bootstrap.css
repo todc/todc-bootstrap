@@ -1328,10 +1328,12 @@ fieldset[disabled] .btn-link:focus {
   margin-top: 5px;
   content: "";
 }
-.dropdown-submenu.pull-left {
+.dropdown-submenu.pull-left,
+.dropdown-submenu.dropdown-menu-left {
   float: none !important;
 }
-.dropdown-submenu.pull-left > .dropdown-menu {
+.dropdown-submenu.pull-left > .dropdown-menu,
+.dropdown-submenu.dropdown-menu-left > .dropdown-menu {
   left: -100%;
   margin-left: 18px;
   border-radius: 0;
