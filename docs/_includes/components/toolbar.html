@@ -1,0 +1,531 @@
+<div class="bs-docs-section">
+  <h1 id="navbar-toolbar" class="page-header">Toolbar</h1>
+
+  <h2 id="navbar-toolbar-default">Default toolbar</h2>
+  <p>Toolbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Customize the collapsing point</h4>
+    <p>Depending on the content in your toolbar, you might need to change the point at which your toolbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</p>
+  </div>
+  <div class="bs-callout bs-callout-danger">
+    <h4>Requires JavaScript</h4>
+    <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
+  </div>
+
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">Brand <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+{% highlight html %}
+<nav class="navbar navbar-toolbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">Brand <b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+        <li class="divider"></li>
+        <li><a href="#">One more separated link</a></li>
+      </ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse bs-example-toolbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+</nav>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>The responsive toolbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Make toolbars accessible</h4>
+    <p>Be sure to add a <code>role="navigation"</code> to every toolbar to help with accessibility.</p>
+  </div>
+
+
+  <h2 id="navbar-toolbar-toolbar">Toolbar</h2>
+  <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> to create a toolbar.</p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-2">
+          <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group">
+              <a href="#" class="btn btn-danger">NEW</a>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn btn-default" title="Display All Events">All</a>
+              <a href="#" class="btn btn-default" title="Display Events by your Friends">Friends</a>
+              <a href="#" class="btn btn-default" title="Display Events by your Family">Family</a>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" title="More Filters">
+                More <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" title="Display Events by your Acquantances">Acquantances</a></li>
+                <li><a href="#" title="Display Events by who you are Following">Following</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group pull-right">
+              <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" title="Actions">
+                <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Dropdown header</li>
+                <li>
+                  <a href="#">
+                    <i class="glyphicon glyphicon-bookmark"></i> Bookmark
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#"><i class="glyphicon glyphicon-download"></i> Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+{% highlight html %}
+<nav class="navbar navbar-toolbar" role="navigation">
+  <div class="container-fluid">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <a href="#" class="btn btn-danger">NEW</a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn btn-default">All</a>
+        <a href="#" class="btn btn-default">Friends</a>
+        <a href="#" class="btn btn-default">Family</a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+          More <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acquantances</a></li>
+          <li><a href="#">Following</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group pull-right">
+        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Dropdown header</li>
+          <li>
+            <a href="#">
+              <i class="glyphicon glyphicon-bookmark"></i> Bookmark
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#"><i class="glyphicon glyphicon-download"></i> Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-forms">Forms</h2>
+  <p>Place form content within <code>.navbar-form</code> for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.</p>
+  <p>As a heads up, <code>.navbar-form</code> shares much of its code with <code>.form-inline</code> via mixin. <strong class="text-danger">Some form controls, like input groups, may require fixed widths to be show up properly within a toolbar.</strong></p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-3">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-buttons">Buttons</h2>
+  <p>Add the <code>.navbar-btn</code> class to <code>&lt;button&gt;</code> elements not residing in a <code>&lt;form&gt;</code> to vertically center them in the toolbar.</p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-4">
+          <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-text">Text</h2>
+  <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-5">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+      <div class="collapse navbar-collapse bs-example-toolbar-collapse-5">
+        <p class="navbar-text">Signed in as Mark Otto</p>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<p class="navbar-text">Signed in as Mark Otto</p>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-links">Non-nav links</h2>
+  <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-6">
+          <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-component-alignment">Component alignment</h2>
+  <p>Align nav links, forms, buttons, or text, using the <code>.navbar-left</code> or <code>.navbar-right</code> utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
+  <p>These classes are mixin-ed versions of <code>.pull-left</code> and <code>.pull-right</code>, but they're scoped to media queries for easier handling of navbar components across device sizes.</p>
+  <div class="bs-callout bs-callout-warning">
+    <h4>Right aligning multiple components</h4>
+    <p>Toolbars currently have a limitation with multiple <code>.navbar-right</code> classes. To properly space content, we use negative margin on the last <code>.navbar-right</code> element. When there are multiple elements using that class, these margins don't work as intended.</p>
+    <p>We'll revisit this when we can rewrite that component in v4.</p>
+  </div>
+
+
+  <h2 id="navbar-toolbar-fixed-top">Fixed to top</h2>
+  <p>Add <code>.navbar-fixed-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+  <div class="bs-example bs-navbar-top-example">
+    <nav class="navbar navbar-toolbar navbar-default navbar-fixed-top" role="navigation">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /example -->
+{% highlight html %}
+<nav class="navbar navbar-toolbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Body padding required</h4>
+    <p>The fixed toolbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 38px high.</p>
+{% highlight scss %}
+body { padding-top: 45px; }
+{% endhighlight %}
+    <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
+  </div>
+
+
+  <h2 id="navbar-toolbar-fixed-bottom">Fixed to bottom</h2>
+  <p>Add <code>.navbar-fixed-bottom</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+  <div class="bs-example bs-navbar-bottom-example">
+    <nav class="navbar navbar-toolbar navbar-default navbar-fixed-bottom" role="navigation">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-7">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-7">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /example -->
+{% highlight html %}
+<nav class="navbar navbar-toolbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Body padding required</h4>
+    <p>The fixed toolbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 38px high.</p>
+{% highlight scss %}
+body { padding-bottom: 45px; }
+{% endhighlight %}
+    <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
+  </div>
+
+
+  <h2 id="navbar-toolbar-static-top">Static top</h2>
+  <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+  <p>Unlike the <code>.navbar-fixed-*</code> classes, you do not need to change any padding on the <code>body</code>.</p>
+  <div class="bs-example bs-navbar-top-example">
+    <nav class="navbar navbar-toolbar navbar-default navbar-static-top" role="navigation">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-toolbar-collapse-8">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-toolbar-collapse-8">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /example -->
+{% highlight html %}
+<nav class="navbar navbar-toolbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+  <h2 id="navbar-toolbar-inverted">Inverted toolbar</h2>
+  <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
+  <div class="bs-example">
+    <nav class="navbar navbar-toolbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-toolbar-collapse-10">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse bs-example-toolbar-collapse-10">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div><!-- /example -->
+{% highlight html %}
+<nav class="navbar navbar-toolbar navbar-inverse" role="navigation">
+  ...
+</nav>
+{% endhighlight %}
+</div>
