@@ -4627,6 +4627,7 @@ li.list-group-header {
 }
 
 .carousel-control {
+  width: 100px;
   color: #777;
   text-shadow: none;
   filter: alpha(opacity=33);

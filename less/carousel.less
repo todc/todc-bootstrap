@@ -6,7 +6,7 @@
 // Wrapper for the slide container and indicators
 .carousel {
   width: 100%;
-  padding: 50px;
+  padding: @carousel-padding;
   overflow: hidden;
   #gradient > .top-and-bottom(@start-color: @gray-lighter; @end-color:  @carousel-bg);
 }
@@ -16,6 +16,7 @@
 // ---------------------------
 
 .carousel-control {
+  width: @carousel-control-width;
   .opacity(@carousel-control-opacity);
   color: @carousel-control-color;
   text-shadow: @carousel-text-shadow;
