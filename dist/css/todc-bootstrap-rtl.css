@@ -236,6 +236,7 @@ table {
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover,
 .table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
 .table-hover > tbody > tr.warning:hover > th {
   background-color: #f7e7a7;
 }
@@ -782,7 +783,7 @@ select[multiple].input-lg {
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
-.open .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {
   color: #333;
   background-color: #e4e4e4;
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e4e4e4 100%);
@@ -797,7 +798,7 @@ select[multiple].input-lg {
 
 .btn-default:active,
 .btn-default.active,
-.open .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #d8d8d8 100%);
   background-image:      -o-linear-gradient(top, #f5f5f5 0%, #d8d8d8 100%);
@@ -931,7 +932,7 @@ fieldset[disabled] .btn-default:active {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #3078eb;
   background-image: -webkit-linear-gradient(top, #4d90fe 0%, #3078eb 100%);
@@ -946,7 +947,7 @@ fieldset[disabled] .btn-default:active {
 
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.open > .dropdown-toggle.btn-primary {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #4d90fe 0%, #1969e8 100%);
   background-image:      -o-linear-gradient(top, #4d90fe 0%, #1969e8 100%);
@@ -1022,7 +1023,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active,
-.open .dropdown-toggle.btn-success {
+.open > .dropdown-toggle.btn-success {
   color: #fff;
   background-color: #2f973f;
   background-image: -webkit-linear-gradient(top, #35aa47 0%, #2f973f 100%);
@@ -1037,7 +1038,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-success:active,
 .btn-success.active,
-.open .dropdown-toggle.btn-success {
+.open > .dropdown-toggle.btn-success {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #35aa47 0%, #298337 100%);
   background-image:      -o-linear-gradient(top, #35aa47 0%, #298337 100%);
@@ -1113,7 +1114,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
-.open .dropdown-toggle.btn-info {
+.open > .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #46b8da;
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #46b8da 100%);
@@ -1128,7 +1129,7 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info:active,
 .btn-info.active,
-.open .dropdown-toggle.btn-info {
+.open > .dropdown-toggle.btn-info {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
@@ -1204,7 +1205,7 @@ fieldset[disabled] .btn-info.active {
 .btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active,
-.open .dropdown-toggle.btn-warning {
+.open > .dropdown-toggle.btn-warning {
   color: #fff;
   background-color: #f99e1e;
   background-image: -webkit-linear-gradient(top, #fbb450 0%, #f99e1e 100%);
@@ -1219,7 +1220,7 @@ fieldset[disabled] .btn-info.active {
 
 .btn-warning:active,
 .btn-warning.active,
-.open .dropdown-toggle.btn-warning {
+.open > .dropdown-toggle.btn-warning {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #fbb450 0%, #f89306 100%);
   background-image:      -o-linear-gradient(top, #fbb450 0%, #f89306 100%);
@@ -1295,7 +1296,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
-.open .dropdown-toggle.btn-danger {
+.open > .dropdown-toggle.btn-danger {
   color: #fff;
   background-color: #c13e2c;
   background-image: -webkit-linear-gradient(top, #dd4b39 0%, #c13e2c 100%);
@@ -1310,7 +1311,7 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-danger:active,
 .btn-danger.active,
-.open .dropdown-toggle.btn-danger {
+.open > .dropdown-toggle.btn-danger {
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   background-image: -webkit-linear-gradient(top, #dd4b39 0%, #ad3727 100%);
   background-image:      -o-linear-gradient(top, #dd4b39 0%, #ad3727 100%);
