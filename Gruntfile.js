@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'grunt/*.js']
       },
       assets: {
-        src: 'docs/assets/js/src/*.js'
+        src: 'docs/assets/js/_src/*.js'
       }
     },
 
@@ -83,9 +83,9 @@ module.exports = function (grunt) {
           preserveComments: 'some'
         },
         src: [
-          'docs/assets/js/vendor/select2.js',
-          'docs/assets/js/vendor/holder.js',
-          'docs/assets/js/src/application.js'
+          'docs/assets/js/_vendor/select2.js',
+          'docs/assets/js/_vendor/holder.js',
+          'docs/assets/js/_src/application.js'
         ],
         dest: 'docs/assets/js/docs.min.js'
       }
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       docs: {
-        src: 'docs/assets/css/src/docs.css'
+        src: 'docs/assets/css/_src/docs.css'
       },
       examples: {
         expand: true,
@@ -160,7 +160,7 @@ module.exports = function (grunt) {
           ids: false,
           'overqualified-elements': false
         },
-        src: 'docs/assets/css/src/docs.css'
+        src: 'docs/assets/css/_src/docs.css'
       }
     },
 
@@ -173,9 +173,9 @@ module.exports = function (grunt) {
       },
       docs: {
         src: [
-          'docs/assets/css/src/docs.css',
-          'docs/assets/css/src/pygments-manni.css',
-          'docs/assets/css/src/select2.css'
+          'docs/assets/css/_src/docs.css',
+          'docs/assets/css/_src/pygments-manni.css',
+          'docs/assets/css/_src/select2.css'
         ],
         dest: 'docs/assets/css/docs.min.css'
       }
@@ -209,7 +209,7 @@ module.exports = function (grunt) {
       },
       docs: {
         files: {
-          'docs/assets/css/src/docs.css': 'docs/assets/css/src/docs.css'
+          'docs/assets/css/_src/docs.css': 'docs/assets/css/_src/docs.css'
         }
       }
     },
@@ -270,8 +270,8 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'docs/_includes/customizer-variables.html': 'docs/jade/customizer-variables.jade',
-          'docs/_includes/nav/customize.html': 'docs/jade/customizer-nav.jade'
+          'docs/_includes/customizer-variables.html': 'docs/_jade/customizer-variables.jade',
+          'docs/_includes/nav/customize.html': 'docs/_jade/customizer-nav.jade'
         }
       }
     },
