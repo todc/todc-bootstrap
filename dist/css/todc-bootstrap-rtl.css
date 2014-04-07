@@ -4741,6 +4741,11 @@ li.list-group-header {
   border-right: 19px solid #f5f5f5;
 }
 
+.carousel-control .icon-next:after,
+.carousel-control .icon-next:before {
+  right: 50%;
+}
+
 .carousel-indicators {
   right: 0;
   bottom: 5px;

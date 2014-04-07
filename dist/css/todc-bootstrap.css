@@ -3996,6 +3996,10 @@ li.list-group-header {
   margin-top: -19px;
   border-left: 19px solid #f5f5f5;
 }
+.carousel-control .icon-next:after,
+.carousel-control .icon-next:before {
+  left: 50%;
+}
 .carousel-indicators {
   bottom: 5px;
   left: 0;
