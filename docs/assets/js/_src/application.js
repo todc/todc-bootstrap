@@ -72,7 +72,7 @@
 
     // tooltip demo
     $('.tooltip-demo').tooltip({
-      selector: '[data-toggle=tooltip]',
+      selector: '[data-toggle="tooltip"]',
       container: 'body'
     })
 
@@ -80,7 +80,7 @@
     $('.popover-test').popover()
 
     $('.bs-docs-navbar').tooltip({
-      selector: 'a[data-toggle=tooltip]',
+      selector: 'a[data-toggle="tooltip"]',
       container: '.bs-docs-navbar .nav'
     })
 
