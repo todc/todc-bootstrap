@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'grunt/*.js']
       },
       assets: {
-        src: 'docs/assets/js/_src/*.js'
+        src: ['docs/assets/js/_src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
       }
     },
 
