@@ -300,18 +300,11 @@ module.exports = function (grunt) {
     // checkout-bootstrap task
     shell: {
       gitclone: {
-        command: 'git clone <%= bootstrapGit %> <%= bootstrapDir %>',
-        options: {
-          failOnError: true,
-          stderr: true,
-          stdout: true
-        }
+        command: 'git clone <%= bootstrapGit %> <%= bootstrapDir %>'
       },
       gitcheckout: {
         command: 'git checkout tags/<%= bootstrapVersion %>',
         options: {
-          stderr: true,
-          stdout: true,
           execOptions: {
             cwd: '<%= bootstrapDir %>'
           }
