@@ -123,7 +123,11 @@
           <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown JavaScript plugin</a>.</p>
           <div class="bs-docs-example">
             <div class="dropdown clearfix">
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+              <button class="btn dropdown-toggle hidden" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                 <li><a tabindex="-1" href="#">Action</a></li>
                 <li><a tabindex="-1" href="#">Another action</a></li>
                 <li><a tabindex="-1" href="#">Something else here</a></li>
@@ -173,7 +177,11 @@
           <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
           <div class="bs-docs-example">
             <div class="dropdown clearfix">
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+              <button class="btn dropdown-toggle hidden" type="button" id="dropdownMenu2" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                 <li><a tabindex="-1" href="#">Regular link</a></li>
                 <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
                 <li><a tabindex="-1" href="#">Another link</a></li>
@@ -195,7 +203,11 @@
             <div class="pull-left">
               <p class="muted">Default</p>
               <div class="dropdown clearfix">
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <button class="btn dropdown-toggle hidden" type="button" id="dropdownMenu3" data-toggle="dropdown">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
                   <li><a tabindex="-1" href="#">Action</a></li>
                   <li><a tabindex="-1" href="#">Another action</a></li>
                   <li><a tabindex="-1" href="#">Something else here</a></li>
@@ -217,7 +229,11 @@
             <div class="pull-left">
               <p class="muted">Dropup</p>
               <div class="dropup">
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <button class="btn dropdown-toggle hidden" type="button" id="dropdownMenu4" data-toggle="dropdown">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
                   <li><a tabindex="-1" href="#">Action</a></li>
                   <li><a tabindex="-1" href="#">Another action</a></li>
                   <li><a tabindex="-1" href="#">Something else here</a></li>
@@ -239,7 +255,11 @@
             <div class="pull-left">
               <p class="muted">Left submenu</p>
               <div class="dropdown">
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <button class="btn dropdown-toggle hidden" type="button" id="dropdownMenu5" data-toggle="dropdown">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu5">
                   <li><a tabindex="-1" href="#">Action</a></li>
                   <li><a tabindex="-1" href="#">Another action</a></li>
                   <li><a tabindex="-1" href="#">Something else here</a></li>
@@ -3566,12 +3586,12 @@ class="clearfix"
 <pre class="prettyprint linenums">
 .clearfix {
   *zoom: 1;
-  &:before,
-  &:after {
+  &amp;:before,
+  &amp;:after {
     display: table;
     content: "";
   }
-  &:after {
+  &amp;:after {
     clear: both;
   }
 }
@@ -3581,11 +3601,10 @@ class="clearfix"
 
 
 
-      <!-- </div> -->
+      </div>
     </div>
 
   </div>
-
 
 
     <!-- Footer

@@ -239,6 +239,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   *display: inline;
   *zoom: 1;
 }
+/* Style the GitHub buttons via CSS instead of inline attributes */
+.github-btn {
+  overflow: hidden;
+  border: 0;
+}
 
 /* Subhead (other pages)
 ------------------------- */
