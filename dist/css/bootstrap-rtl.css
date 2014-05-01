@@ -1394,7 +1394,7 @@ p {
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
 }
 
@@ -3329,6 +3329,10 @@ select[multiple].input-lg {
 
 .has-error .form-control-feedback {
   color: #a94442;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0;
 }
 
 .form-control-static {
