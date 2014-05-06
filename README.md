@@ -17,7 +17,8 @@
 ## Overview ##
 
 This is a Google-styled theme for Bootstrap. Because I'm a fan of the new Google UI seen in Gmail, Docs, Calendar, etc, I decided to reproduce
-the look of these new UI elements for my own personal use.
+the look of these new UI elements for my own personal use. The project's goal isn't UI parity with Google Apps -- it's feature parity with
+Bootstrap, themed with Google's UI in mind.
 
 TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and maintained with the support and involvement of the community.
 
