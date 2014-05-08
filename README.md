@@ -6,7 +6,6 @@
  - [Requirements](#requirements)
  - [Bugs and feature requests](#bugs-and-feature-requests)
  - [Documentation](#documentation)
- - [Compiling CSS and JavaScript](#compiling-css-and-javascript)
  - [Contributing](#contributing)
  - [Versioning](#versioning)
  - [Authors](#authors)
@@ -71,44 +70,6 @@ Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com
 Documentation for v2.3.2 has been made available for the time being at <http://todc.github.io/todc-bootstrap/2.3.2/> while folks transition to TODC Bootstrap 3.
 
 [Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
-
-
-
-## Compiling CSS and JavaScript
-
-Bootstrap uses [Grunt](http://gruntjs.com/) with convenient methods for working with the framework. It's how we compile our code, run tests, and more. To use it, install the required dependencies as directed and then run some Grunt commands.
-
-### Install Grunt
-
-From the command line:
-
-1. Install `grunt-cli` globally with `npm install -g grunt-cli`.
-2. Navigate to the root `/todc-bootstrap` directory, then run `npm install`. npm will look at [package.json](https://github.com/todc/todc-bootstrap/blob/master/package.json) and automatically install the necessary local dependencies listed there.
-
-When completed, you'll be able to run the various Grunt commands provided from the command line.
-
-**Unfamiliar with npm? Don't have node installed?** That's a-okay. npm stands for [node packaged modules](http://npmjs.org/) and is a way to manage development dependencies through node.js. [Download and install node.js](http://nodejs.org/download/) before proceeding.
-
-### Available Grunt commands
-
-#### Get Bootstrap - `grunt checkout-bootstrap`
-`grunt checkout-bootstrap` - clones Bootstrap and checks out the version specified by the `bootstrapVersion` variable in Gruntfile.js.
-
-#### Build - `grunt`
-Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`. **Uses [Less](http://lesscss.org/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
-
-#### Only compile CSS and JavaScript - `grunt dist`
-`grunt dist` creates the `/dist` directory with compiled files. **Uses [Less](http://lesscss.org/) and [UglifyJS](http://lisperator.net/uglifyjs/).**
-
-#### Compress/zip - `grunt compress`
-Run `grunt compress` - compresses/zips the contents of the `/dist` folder to `todc-bootstrap-x.x.x-dist.zip` in the `/dist` folder.
-
-#### Watch - `grunt watch`
-This is a convenience method for watching just Less files and automatically building them whenever you save.
-
-### Troubleshooting dependencies
-
-Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
 
 
 
