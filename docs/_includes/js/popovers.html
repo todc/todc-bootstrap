@@ -152,6 +152,33 @@ $('.popover-dismiss').popover({
           <td>Apply a CSS fade transition to the popover</td>
         </tr>
         <tr>
+          <td>container</td>
+          <td>string | false</td>
+          <td>false</td>
+          <td>
+           <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>string | function</td>
+          <td>''</td>
+          <td>
+            <p>Default content value if <code>data-content</code> attribute isn't present.</p>
+            <p>If a function is given, it will be called with 1 argument, which is the element that the popover is attached to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>delay</td>
+          <td>number | object</td>
+          <td>0</td>
+          <td>
+           <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
+           <p>If a number is supplied, delay is applied to both hide/show</p>
+           <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+          </td>
+        </tr>
+        <tr>
           <td>html</td>
           <td>boolean</td>
           <td>false</td>
@@ -170,18 +197,6 @@ $('.popover-dismiss').popover({
           <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="http://jsfiddle.net/fScua/">an informative example</a>.</td>
         </tr>
         <tr>
-          <td>trigger</td>
-          <td>string</td>
-          <td>'click'</td>
-          <td>How popover is triggered - click | hover | focus | manual</td>
-        </tr>
-        <tr>
-          <td>title</td>
-          <td>string | function</td>
-          <td>''</td>
-          <td>Default title value if <code>title</code> attribute isn't present</td>
-        </tr>
-        <tr>
           <td>template</td>
           <td>string</td>
           <td><code>'&lt;div class="popover"&gt;&lt;div class="arrow"&gt;&lt;/div&gt;&lt;h3 class="popover-title"&gt;&lt;/h3&gt;&lt;div class="popover-content"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
@@ -194,19 +209,17 @@ $('.popover-dismiss').popover({
           </td>
         </tr>
         <tr>
-          <td>content</td>
+          <td>title</td>
           <td>string | function</td>
           <td>''</td>
           <td>
-            <p>Default content value if <code>data-content</code> attribute isn't present.</p>
-            <p>If a function is given, it will be called with 1 argument, which is the element that the popover is attached to.</p>
-          </td>
+          <td>Default title value if <code>title</code> attribute isn't present</td>
         </tr>
         <tr>
-          <td>delay</td>
-          <td>number | object</td>
-          <td>0</td>
-          <td>
+          <td>trigger</td>
+          <td>string</td>
+          <td>'click'</td>
+          <td>How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.</td>
            <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
            <p>If a number is supplied, delay is applied to both hide/show</p>
            <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
