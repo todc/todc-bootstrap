@@ -220,19 +220,15 @@ $('.popover-dismiss').popover({
           <td>string</td>
           <td>'click'</td>
           <td>How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.</td>
-           <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
-           <p>If a number is supplied, delay is applied to both hide/show</p>
-           <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
-          </td>
         </tr>
         <tr>
-          <td>container</td>
-          <td>string | false</td>
-          <td>false</td>
-          <td>
-           <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
-          </td>
-        </tr>
+         <td>viewport</td>
+         <td>string | object</td>
+         <td>{ selector: 'body', padding: 0 }</td>
+         <td>
+          <p>Keeps the popover within the bounds of this element. Example: <code>viewport: '#viewport'</code> or <code>{ selector: '#viewport', padding: 0 }</code></p>
+         </td>
+       </tr>
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
