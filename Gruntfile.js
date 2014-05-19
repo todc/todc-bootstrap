@@ -103,14 +103,6 @@ module.exports = function (grunt) {
         files: {
           'dist/css/<%= pkg.name %>.css': 'less/todc-bootstrap.less'
         }
-      },
-      minify: {
-        options: {
-          cleancss: true
-        },
-        files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
-        }
       }
     },
 
@@ -158,6 +150,11 @@ module.exports = function (grunt) {
       options: {
         compatibility: 'ie8',
         keepSpecialComments: '*'
+      },
+      core: {
+        files: {
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+        }
       },
       docs: {
         src: [
@@ -335,7 +332,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer', 'usebanner', 'csscomb', 'less:minify', 'cssmin', 'dist-docs']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer', 'usebanner', 'csscomb', 'cssmin', 'dist-docs']);
 
   // Docs distribution task.
   grunt.registerTask('dist-docs', 'copy:docs');
