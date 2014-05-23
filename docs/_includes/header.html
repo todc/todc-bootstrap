@@ -15,6 +15,10 @@
 
 <!-- Bootstrap core CSS -->
 <link href="{{ page.base_url }}dist/css/bootstrap.min.css" rel="stylesheet">
+{% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+  <!-- Optional Bootstrap Theme -->
+  <link href="data:text/css;charset=utf-8," data-href="../dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+{% endif %}
 
 <!-- TODC Bootstrap core CSS -->
 <link href="{{ page.base_url }}dist/css/todc-bootstrap.min.css" rel="stylesheet">
