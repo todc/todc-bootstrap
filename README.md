@@ -8,7 +8,7 @@
  - [Documentation](#documentation)
  - [Contributing](#contributing)
  - [Versioning](#versioning)
- - [Authors](#authors)
+ - [Creators](#creators)
  - [Copyright and license](#copyright-and-license)
  - [Acknowledgements](#acknowledgements)
 
