@@ -63,10 +63,6 @@ module.exports = function (grunt) {
         config: 'js/.jscsrc'
       },
       grunt: {
-        options: {
-          requireCamelCaseOrUpperCaseIdentifiers: null,
-          requireParenthesesAroundIIFE: true
-        },
         src: '<%= jshint.grunt.src %>'
       },
       assets: {
