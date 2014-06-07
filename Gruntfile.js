@@ -245,9 +245,9 @@ module.exports = function (grunt) {
           pretty: true,
           data: function () {
             var filePath = path.join(__dirname, 'less/variables.less');
-            var fileContent = fs.readFileSync(filePath, {encoding: 'utf8'});
+            var fileContent = fs.readFileSync(filePath, { encoding: 'utf8' });
             var parser = new BsLessdocParser(fileContent);
-            return {sections: parser.parseFile()};
+            return { sections: parser.parseFile() };
           }
         },
         files: {
@@ -309,7 +309,7 @@ module.exports = function (grunt) {
 
 
   // These plugins provide necessary tasks.
-  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
   require('time-grunt')(grunt);
 
   // Clone bootstrap and checkout the appropriate tag task.
