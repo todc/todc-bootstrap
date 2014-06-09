@@ -3712,7 +3712,7 @@ li.list-group-header {
 .panel-group .panel-heading .panel-title {
   font-size: 13px;
 }
-.panel-group .panel-heading + .panel-collapse .panel-body {
+.panel-group .panel-heading + .panel-collapse > .panel-body {
   border-top: 0 none;
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
