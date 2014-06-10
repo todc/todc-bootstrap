@@ -895,7 +895,8 @@ h1[id] {
 }
 
 /* Example dropdowns */
-.bs-example > .dropdown > .dropdown-toggle {
+.bs-example > .dropdown > .dropdown-toggle,
+.bs-example .dropup > .dropdown-toggle {
   float: left;
 }
 .bs-example > .dropdown > .dropdown-menu,
