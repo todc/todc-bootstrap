@@ -157,7 +157,9 @@ input[type="checkbox"],
   -webkit-appearance: none;
 
   // override styles for IE
-  border-width: 0 \0;
+  width: 16px ~"\0";
+  height: 16px ~"\0";
+  border: 1px solid transparent ~"\0";
 
   &:focus {
     outline: 0;
@@ -181,6 +183,10 @@ input[type="radio"],
   border-radius: 1em;
   width: 15px;
   height: 15px;
+
+  // override styles for IE
+  width: 18px ~"\0";
+  height: 18px ~"\0";
 
   &:checked::after {
     content: '';
