@@ -319,11 +319,13 @@ input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: relative;
   width: 13px;
+  width: 16px \0;
   height: 13px;
+  height: 16px \0;
   -webkit-appearance: none;
   background: white;
   border: 1px solid #dcdcdc;
-  border-width: 0 \0;
+  border: 1px solid transparent \0;
   border-radius: 1px;
 }
 input[type="radio"]:focus,
@@ -357,7 +359,9 @@ input[type="radio"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
   width: 15px;
+  width: 18px \0;
   height: 15px;
+  height: 18px \0;
   border-radius: 1em;
 }
 input[type="radio"]:checked::after,
