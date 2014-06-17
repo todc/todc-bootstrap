@@ -3149,7 +3149,8 @@ a.thumbnail.active {
 .alert .alert-link {
   font-weight: bold;
 }
-.alert-dismissable {
+.alert-dismissable,
+.alert-dismissible {
   padding-right: 28px;
 }
 .alert-success {
