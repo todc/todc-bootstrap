@@ -75,10 +75,10 @@ module.exports = function (grunt) {
     },
 
     uglify: {
+      options: {
+        preserveComments: 'some'
+      },
       docsJs: {
-        options: {
-          preserveComments: 'some'
-        },
         src: [
           'docs/assets/js/_vendor/select2.js',
           'docs/assets/js/_vendor/holder.js',
