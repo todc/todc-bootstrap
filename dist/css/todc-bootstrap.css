@@ -565,6 +565,10 @@ select[multiple].input-lg {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
           box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
 }
+.form-control-static {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
 .help-block {
   color: #777;
 }
@@ -628,10 +632,6 @@ select[multiple].input-lg {
 .form-horizontal .radio,
 .form-horizontal .checkbox {
   min-height: 24px;
-}
-.form-horizontal .form-control-static {
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
