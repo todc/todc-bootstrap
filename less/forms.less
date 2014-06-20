@@ -221,6 +221,18 @@ input[type="checkbox"],
 }
 
 
+// Static form control text
+//
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  // Size it appropriately next to real form controls
+  padding-top: (@padding-base-vertical + 1);
+  padding-bottom: (@padding-base-vertical + 1);
+}
+
+
 // Form control sizing
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
@@ -273,18 +285,6 @@ input[type="checkbox"],
 }
 .has-error {
   .form-control-validation(#dd4b39; #dd4b39; @state-danger-bg);
-}
-
-
-// Static form control text
-//
-// Apply class to a `p` element to make any string of text align with labels in
-// a horizontal form layout.
-
-.form-control-static {
-  // Size it appropriately next to real form controls
-  padding-top: (@padding-base-vertical + 1);
-  padding-bottom: (@padding-base-vertical + 1);
 }
 
 

@@ -396,6 +396,10 @@ input[type="checkbox"]:checked::after,
   display: block;
   content: url(../img/checkmark.png);
 }
+.form-control-static {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
 .input-sm,
 .form-horizontal .form-group-sm .form-control {
   height: 26px;
@@ -566,10 +570,6 @@ select[multiple].input-lg {
   border-color: #dd4b39;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
           box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
-}
-.form-control-static {
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 .help-block {
   color: #777;
