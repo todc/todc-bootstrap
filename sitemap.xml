@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/browser-bugs/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/components/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/css/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/customize/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/getting-started/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/javascript/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://todc.github.io/todc-bootstrap/migration/</loc>
+    <lastmod>2014-06-26T13:20:31-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>
