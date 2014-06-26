@@ -616,7 +616,7 @@ select[multiple].input-lg {
   .form-inline .checkbox input[type="checkbox"],
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
-    float: none;
+    position: relative;
     margin-bottom: -2px;
     margin-left: 0;
   }
