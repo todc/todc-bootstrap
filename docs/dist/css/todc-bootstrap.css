@@ -456,7 +456,11 @@ select[multiple].input-lg {
 .has-success .radio,
 .has-success .checkbox,
 .has-success .radio-inline,
-.has-success .checkbox-inline {
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
   color: #3c763d;
 }
 .has-success .form-control {
@@ -496,7 +500,11 @@ select[multiple].input-lg {
 .has-warning .radio,
 .has-warning .checkbox,
 .has-warning .radio-inline,
-.has-warning .checkbox-inline {
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
   color: #e09b17;
 }
 .has-warning .form-control {
@@ -536,7 +544,11 @@ select[multiple].input-lg {
 .has-error .radio,
 .has-error .checkbox,
 .has-error .radio-inline,
-.has-error .checkbox-inline {
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
   color: #dd4b39;
 }
 .has-error .form-control {
@@ -570,6 +582,9 @@ select[multiple].input-lg {
   border-color: #dd4b39;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
           box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
+}
+.has-feedback label ~ .form-control-feedback {
+  top: 23px;
 }
 .help-block {
   color: #777;
