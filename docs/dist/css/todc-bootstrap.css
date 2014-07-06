@@ -178,12 +178,10 @@ table {
 .table-bordered > tfoot > tr > td {
   border: 1px solid #ddd;
 }
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
+.table-striped > tbody > tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
+.table-hover > tbody > tr:hover {
   background-color: #ffc;
 }
 .table > thead > tr > td.warning,
