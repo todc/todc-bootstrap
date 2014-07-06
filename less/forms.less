@@ -140,7 +140,9 @@ input[type="month"] {
 
 .radio,
 .checkbox {
-  min-height: @line-height-computed; // clear the floating input if there is no label text
+  label {
+    min-height: @line-height-computed; // Ensure the input doens't jump when no text
+  }
 }
 input[type="radio"],
 .radio input[type="radio"],

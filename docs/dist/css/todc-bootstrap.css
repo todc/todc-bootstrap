@@ -306,8 +306,8 @@ input[type="datetime-local"].input-lg,
 input[type="month"].input-lg {
   line-height: 38px;
 }
-.radio,
-.checkbox {
+.radio label,
+.checkbox label {
   min-height: 18px;
 }
 input[type="radio"],
