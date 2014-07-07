@@ -291,16 +291,8 @@
         padding-bottom: @navbar-toolbar-padding-vertical;
       }
     }
-
-    &.navbar-right:first-child {
-      margin-right: -@navbar-toolbar-padding-horizontal;
-    }
   }
 }
-
-
-// Component alignment
-//
 
 
 // Navbar form
@@ -332,11 +324,6 @@
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-
-    // Outdent the form if first child to line up with content down the page
-    &.navbar-right:first-child {
-      margin-right: -@navbar-toolbar-padding-horizontal;
-    }
   }
 
   .form-control {
@@ -384,13 +371,29 @@
   //   float: left;
   //   margin-left: @navbar-toolbar-padding-horizontal;
   //   margin-right: @navbar-toolbar-padding-horizontal;
-
-  //   // Outdent the form if first child to line up with content down the page
-  //   &.navbar-right:first-child {
-  //     margin-right: 0;
-  //   }
-  // }
 }
+
+
+// Component alignment
+//
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
+// issues with parents and chaining. Only do this when the navbar is uncollapsed
+// though so that navbar contents properly stack and align in mobile.
+//
+// Declared after the navbar components to ensure more specificity on the margins.
+
+// @media (min-width: @grid-float-breakpoint) {
+//   .navbar-left  { .pull-left(); }
+//   .navbar-right {
+//     .pull-right();
+//     margin-right: -@navbar-toolbar-padding-horizontal;
+
+//     ~ .navbar-right {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
 
 // Alternate navbars
 // --------------------------------------------------

@@ -1687,9 +1687,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .navbar-nav.navbar-right:first-child {
-    margin-right: -15px;
-  }
 }
 .navbar-form {
   padding: 10px 15px;
@@ -1989,9 +1986,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding-top: 8px;
     padding-bottom: 6px;
   }
-  .navbar-masthead .navbar-nav.navbar-right:first-child {
-    margin-right: -15px;
-  }
 }
 .navbar-masthead .navbar-form {
   padding: 10px 15px;
@@ -2015,9 +2009,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-  }
-  .navbar-masthead .navbar-form.navbar-right:first-child {
-    margin-right: -15px;
   }
 }
 .navbar-masthead .navbar-form .form-control {
@@ -2336,9 +2327,6 @@ fieldset[disabled] .navbar-masthead.navbar-inverse .btn-link:focus {
     padding-top: 9px;
     padding-bottom: 9px;
   }
-  .navbar-toolbar .navbar-nav.navbar-right:first-child {
-    margin-right: -15px;
-  }
 }
 .navbar-toolbar .navbar-form {
   padding: 10px 15px;
@@ -2362,9 +2350,6 @@ fieldset[disabled] .navbar-masthead.navbar-inverse .btn-link:focus {
     padding-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-  }
-  .navbar-toolbar .navbar-form.navbar-right:first-child {
-    margin-right: -15px;
   }
 }
 .navbar-toolbar .navbar-form .form-control {
