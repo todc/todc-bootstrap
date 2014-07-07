@@ -51,7 +51,8 @@
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
   }
 
-  &:focus {
+  &:focus,
+  &.focus {
     /* Blue border on button focus. */
     border-color: @brand-primary;
     outline-style: none;
@@ -64,6 +65,7 @@
   fieldset[disabled] & {
     &:hover,
     &:focus,
+    &.focus,
     &:active {
       background-color: @btn-default-bg;
       text-shadow: none;
@@ -113,11 +115,13 @@
   &,
   &:hover,
   &:focus,
+  &.focus,
   &:active {
     border-color: transparent;
   }
   &:hover,
-  &:focus {
+  &:focus,
+  &.focus {
     color: @link-hover-color;
     background-color: transparent;
     .box-shadow(none);
@@ -125,7 +129,8 @@
   &[disabled],
   fieldset[disabled] & {
     &:hover,
-    &:focus {
+    &:focus
+    &.focus {
       color: @btn-link-disabled-color;
     }
   }
