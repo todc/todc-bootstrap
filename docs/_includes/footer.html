@@ -46,8 +46,19 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+{% if site.github %}
 <script src="{{ page.base_url }}dist/js/bootstrap.min.js"></script>
+{% else %}
+<script src="{{ page.base_url }}dist/js/bootstrap.js"></script>
+{% endif %}
+{% if site.github %}
 <script src="{{ page.base_url }}assets/js/docs.min.js"></script>
+{% else %}
+<script src="{{ page.base_url }}assets/js/vendor/select2.js"></script>
+<script src="{{ page.base_url }}assets/js/vendor/holder.js"></script>
+<script src="{{ page.base_url }}assets/js/vendor/ZeroClipboard.min.js"></script>
+<script src="{{ page.base_url }}assets/js/src/application.js"></script>
+{% endif %}
 {% if page.slug == "customize" %}
 <script src="{{ page.base_url }}assets/js/customize.min.js"></script>
 {% endif %}

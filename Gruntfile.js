@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'grunt/*.js']
       },
       assets: {
-        src: ['docs/assets/js/_src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
+        src: ['docs/assets/js/src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
       }
     },
 
@@ -78,11 +78,12 @@ module.exports = function (grunt) {
         preserveComments: 'some'
       },
       docsJs: {
+        // NOTE: This src list is duplicated in footer.html; if making changes here, be sure to update the other copy too.
         src: [
-          'docs/assets/js/_vendor/select2.js',
-          'docs/assets/js/_vendor/holder.js',
-          'docs/assets/js/_vendor/ZeroClipboard.min.js',
-          'docs/assets/js/_src/application.js'
+          'docs/assets/js/vendor/select2.js',
+          'docs/assets/js/vendor/holder.js',
+          'docs/assets/js/vendor/ZeroClipboard.min.js',
+          'docs/assets/js/src/application.js'
         ],
         dest: 'docs/assets/js/docs.min.js'
       }
@@ -123,7 +124,7 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       docs: {
-        src: 'docs/assets/css/_src/docs.css'
+        src: 'docs/assets/css/src/docs.css'
       },
       examples: {
         expand: true,
@@ -148,7 +149,7 @@ module.exports = function (grunt) {
           ids: false,
           'overqualified-elements': false
         },
-        src: 'docs/assets/css/_src/docs.css'
+        src: 'docs/assets/css/src/docs.css'
       }
     },
 
@@ -166,9 +167,9 @@ module.exports = function (grunt) {
       },
       docs: {
         src: [
-          'docs/assets/css/_src/docs.css',
-          'docs/assets/css/_src/pygments-manni.css',
-          'docs/assets/css/_src/select2.css'
+          'docs/assets/css/src/docs.css',
+          'docs/assets/css/src/pygments-manni.css',
+          'docs/assets/css/src/select2.css'
         ],
         dest: 'docs/assets/css/docs.min.css'
       }
@@ -202,7 +203,7 @@ module.exports = function (grunt) {
       },
       docs: {
         files: {
-          'docs/assets/css/_src/docs.css': 'docs/assets/css/_src/docs.css'
+          'docs/assets/css/src/docs.css': 'docs/assets/css/src/docs.css'
         }
       }
     },
