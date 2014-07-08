@@ -58,7 +58,6 @@ a:focus {
 }
 .img-thumbnail {
   display: inline-block;
-  width: 100% \9;
   max-width: 100%;
   height: auto;
   padding: 0;
