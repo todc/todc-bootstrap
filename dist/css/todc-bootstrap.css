@@ -145,6 +145,9 @@ pre {
 table {
   background-color: transparent;
 }
+caption {
+  color: #999;
+}
 .table {
   margin-bottom: 18px;
 }
