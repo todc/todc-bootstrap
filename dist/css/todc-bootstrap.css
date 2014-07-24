@@ -615,6 +615,10 @@ select[multiple].form-group-lg .form-control {
     width: auto;
     vertical-align: middle;
   }
+  .form-inline .form-control-static,
+  .navbar-form .form-control-static {
+    display: inline-block;
+  }
   .form-inline .control-label,
   .navbar-form .control-label {
     margin-bottom: 0;
