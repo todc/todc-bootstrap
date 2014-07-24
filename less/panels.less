@@ -67,6 +67,15 @@
 // watch it go full width.
 
 .panel {
+  > .table,
+  > .table-responsive > .table,
+  > .panel-collapse > .table {
+
+    caption {
+      padding-left: @panel-body-padding;
+      padding-right: @panel-body-padding;
+    }
+  }
   // Add border top radius for first one
   > .table:first-child,
   > .table-responsive:first-child > .table:first-child {

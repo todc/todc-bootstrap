@@ -3614,6 +3614,12 @@ li.list-group-header {
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
+.panel > .table caption,
+.panel > .table-responsive > .table caption,
+.panel > .panel-collapse > .table caption {
+  padding-right: 15px 20px;
+  padding-left: 15px 20px;
+}
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
