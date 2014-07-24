@@ -1357,6 +1357,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
+  font-weight: bold;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2408,12 +2409,14 @@ input[type="time"].input-sm,
 input[type="datetime-local"].input-sm,
 input[type="month"].input-sm {
   line-height: 30px;
+  line-height: 1.5 \0;
 }
 input[type="date"].input-lg,
 input[type="time"].input-lg,
 input[type="datetime-local"].input-lg,
 input[type="month"].input-lg {
   line-height: 46px;
+  line-height: 1.33 \0;
 }
 .form-group {
   margin-bottom: 15px;
@@ -2667,6 +2670,9 @@ select[multiple].form-group-lg .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+  }
+  .form-inline .form-control-static {
+    display: inline-block;
   }
   .form-inline .input-group {
     display: inline-table;
@@ -4042,6 +4048,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: auto;
     vertical-align: middle;
   }
+  .navbar-form .form-control-static {
+    display: inline-block;
+  }
   .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
@@ -5100,6 +5109,12 @@ a.list-group-item-danger.active:focus {
 .panel > .table-responsive > .table,
 .panel > .panel-collapse > .table {
   margin-bottom: 0;
+}
+.panel > .table caption,
+.panel > .table-responsive > .table caption,
+.panel > .panel-collapse > .table caption {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
