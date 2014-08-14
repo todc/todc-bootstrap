@@ -18,6 +18,12 @@ module.exports = function (grunt) {
   var fs = require('fs');
   var path = require('path');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
+  var getLessVarsData = function () {
+    var filePath = path.join(__dirname, 'less/variables.less');
+    var fileContent = fs.readFileSync(filePath, { encoding: 'utf8' });
+    var parser = new BsLessdocParser(fileContent);
+    return { sections: parser.parseFile() };
+  };
   var generateRawFiles = require('./grunt/bs-raw-files-generator.js');
 
   // Project configuration.
@@ -159,10 +165,9 @@ module.exports = function (grunt) {
         noAdvanced: true
 
       },
-      core: {
-        files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
-        }
+      minifyCore: {
+        src: 'dist/css/<%= pkg.name %>.css',
+        dest: 'dist/css/<%= pkg.name %>.min.css'
       },
       docs: {
         src: [
@@ -251,20 +256,17 @@ module.exports = function (grunt) {
     },
 
     jade: {
-      compile: {
-        options: {
-          pretty: true,
-          data: function () {
-            var filePath = path.join(__dirname, 'less/variables.less');
-            var fileContent = fs.readFileSync(filePath, { encoding: 'utf8' });
-            var parser = new BsLessdocParser(fileContent);
-            return { sections: parser.parseFile() };
-          }
-        },
-        files: {
-          'docs/_includes/customizer-variables.html': 'docs/_jade/customizer-variables.jade',
-          'docs/_includes/nav/customize.html': 'docs/_jade/customizer-nav.jade'
-        }
+      options: {
+        pretty: true,
+        data: getLessVarsData
+      },
+      customizerVars: {
+        src: 'docs/_jade/customizer-variables.jade',
+        dest: 'docs/_includes/customizer-variables.html'
+      },
+      customizerNav: {
+        src: 'docs/_jade/customizer-nav.jade',
+        dest: 'docs/_includes/nav/customize.html'
       }
     },
 
