@@ -84,6 +84,8 @@ module.exports = function (grunt) {
       options: {
         preserveComments: 'some'
       },
+      core: {
+      },
       docsJs: {
         // NOTE: This src list is duplicated in footer.html; if making changes here, be sure to update the other copy too.
         src: [
@@ -334,6 +336,13 @@ module.exports = function (grunt) {
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
+  var runSubset = function (subset) {
+    return !process.env.TWBS_TEST || process.env.TWBS_TEST === subset;
+  };
+  var isUndefOrNonZero = function (val) {
+    return val === undefined || val !== '0';
+  };
+
   // Test task.
   var testSubtasks = [];
   // Skip core tests if running a different subset of the test suite
@@ -349,7 +358,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', testSubtasks);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', 'uglify');
+  grunt.registerTask('dist-js', 'uglify:core');
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore']);
@@ -379,5 +388,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
-  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-customizer']);
+  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
 };
