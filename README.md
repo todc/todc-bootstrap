@@ -1,16 +1,16 @@
 ## Table of contents
 
- - [Overview](#overview)
- - [Quick start](#quick-start)
- - [Compatibility](#compatibility)
- - [Requirements](#requirements)
- - [Bugs and feature requests](#bugs-and-feature-requests)
- - [Documentation](#documentation)
- - [Contributing](#contributing)
- - [Versioning](#versioning)
- - [Creators](#creators)
- - [Copyright and license](#copyright-and-license)
- - [Acknowledgements](#acknowledgements)
+- [Overview](#overview)
+- [Quick start](#quick-start)
+- [Compatibility](#compatibility)
+- [Requirements](#requirements)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
+- [Acknowledgements](#acknowledgements)
 
 
 ## Overview ##
@@ -29,7 +29,7 @@ Three quick start options are available:
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
 
-Read the [Getting started page](http://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ## Compatibility ##
 
@@ -37,13 +37,13 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 The following projects are specifically designed for use with todc-bootstrap:
 
-* [todc-select2](http://github.com/todc/todc-select2) - Google-themed select menus
-* [todc-datepicker](http://github.com/todc/todc-datepicker) - Google-themed datepicker component
+* [todc-select2](https://github.com/todc/todc-select2) - Google-themed select menus
+* [todc-datepicker](https://github.com/todc/todc-datepicker) - Google-themed datepicker component
 
 ## Requirements ##
 
 * [LESS](http://lesscss.org) - for compiling `.less` files into CSS
-* [Bootstrap](http://github.com/twbs/bootstrap) - this will be automatically checked out, if necessary, during the build process
+* [Bootstrap](https://github.com/twbs/bootstrap) - this will be automatically checked out, if necessary, during the build process
 
 
 
@@ -54,7 +54,7 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 ## Documentation
 
-TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
 ### Running documentation locally
 
@@ -68,7 +68,7 @@ Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com
 
 ### Documentation for previous releases
 
-Documentation for v2.3.2 has been made available for the time being at <http://todc.github.io/todc-bootstrap/2.3.2/> while folks transition to TODC Bootstrap 3.
+Documentation for v2.3.2 has been made available for the time being at <https://todc.github.io/todc-bootstrap/2.3.2/> while folks transition to TODC Bootstrap 3.
 
 [Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
 
@@ -78,7 +78,7 @@ Documentation for v2.3.2 has been made available for the time being at <http://t
 
 Please read through our [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
+Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
 Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
@@ -110,7 +110,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 **Tim O'Donnell**
 
-- <http://github.com/todc>
+- <https://github.com/todc>
 
 
 
