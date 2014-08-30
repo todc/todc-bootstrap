@@ -219,24 +219,16 @@ module.exports = function (grunt) {
         expand: true,
         flatten: false,
         cwd: '<%= bootstrapDir %>/dist',
-        src: '**',
+        src: '*/*',
         dest: 'dist'
       },
       images: {
-        expand: true,
         src: 'img/*',
-        dest: 'dist'
+        dest: 'dist/'
       },
       docs: {
-        expand: true,
-        cwd: './dist',
-        src: [
-          'css/*',
-          'js/*',
-          'fonts/*',
-          'img/*'
-        ],
-        dest: 'docs/dist'
+        src: 'dist/*/*',
+        dest: 'docs/'
       }
     },
 
