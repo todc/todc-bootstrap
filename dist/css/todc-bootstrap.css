@@ -3223,7 +3223,8 @@ li.list-group-item.active a > .badge {
 .jumbotron p {
   font-size: 20px;
 }
-.container .jumbotron {
+.container .jumbotron,
+.container-fluid .jumbotron {
   border-radius: 1px;
 }
 @media screen and (min-width: 768px) {
