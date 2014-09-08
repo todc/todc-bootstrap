@@ -1483,6 +1483,10 @@ fieldset[disabled] .btn-link:focus fieldset[disabled] .btn-link.focus {
   margin-left: 18px;
   border-radius: 0;
 }
+.btn-group > .btn:focus,
+.btn-group-vertical > .btn:focus {
+  z-index: 3;
+}
 .btn-toolbar > .btn,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
