@@ -2,6 +2,15 @@
 // Button groups
 // --------------------------------------------------
 
+// Make the div behave like a button
+.btn-group,
+.btn-group-vertical {
+  // Border of a focused button shouldn't get hidden when the next button in the group is hovered
+  > .btn:focus {
+    z-index: 3;
+  }
+}
+
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
   // Space out series of button groups
@@ -9,14 +18,6 @@
   > .btn-group,
   > .input-group {
     margin-left: 16px;
-  }
-}
-
-// Border of a focused button shouldn't get hidden when the next button in the group is hovered
-.btn-group,
-.btn-group-vertical {
-  > .btn:focus {
-    z-index: 3;
   }
 }
 
