@@ -12,6 +12,13 @@
   }
 }
 
+// Border of a focused button shouldn't get hidden when the next button in the group is hovered
+.btn-group,
+.btn-group-vertical {
+  > .btn:focus {
+    z-index: 3;
+  }
+}
 
 // Sizing
 //
