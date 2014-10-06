@@ -162,6 +162,7 @@
   .panel {
     border-color: transparent;
     border-radius: 0;
+
     + .panel {
       margin-top: -3px;
     }
@@ -204,10 +205,12 @@
       font-size: @font-size-base;
     }
 
-    + .panel-collapse > .panel-body {
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
       border-top: 0 none;
     }
   }
+
   .panel-footer {
     + .panel-collapse .panel-body {
       border-bottom: 0 none;
