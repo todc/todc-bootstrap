@@ -52,6 +52,11 @@ module.exports = function (grunt) {
       '}(jQuery);\n\n'
     ].join('\n'),
 
+    // Bootstrap variables
+    bootstrapDir: 'bootstrap',
+    bootstrapGit: 'https://github.com/twbs/bootstrap.git',
+    bootstrapVersion: 'v3.2.0',
+
     // Task configuration.
     clean: {
       dist: 'dist',
