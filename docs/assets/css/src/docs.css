@@ -717,7 +717,8 @@ h1[id] {
 }
 
 /* Tweak display of the code snippets when following an example */
-.bs-example + .highlight {
+.bs-example + .highlight,
+.bs-example + .zero-clipboard + .highlight {
   margin: -15px -15px 15px;
   border-width: 0 0 1px;
   border-radius: 0;
@@ -735,7 +736,8 @@ h1[id] {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .bs-example + .highlight {
+  .bs-example + .highlight,
+  .bs-example + .zero-clipboard + .highlight {
     margin-top: -16px;
     margin-right: 0;
     margin-left: 0;
@@ -1361,6 +1363,10 @@ h1[id] {
 @media (min-width: 768px) {
   .zero-clipboard {
     display: block;
+  }
+  .bs-example + .zero-clipboard .btn-clipboard {
+    top: -16px;
+    border-top-right-radius: 0;
   }
 }
 
