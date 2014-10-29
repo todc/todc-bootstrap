@@ -60,18 +60,22 @@
 <script src="{{ page.base_url }}assets/js/src/application.js"></script>
 {% endif %}
 {% if page.slug == "customize" %}
-{% if site.github %}
-<script src="{{ page.base_url }}assets/js/customize.min.js"></script>
+  {% if site.github %}
+    <script src="{{ page.base_url }}assets/js/customize.min.js"></script>
+  {% else %}
+    {% comment %}
+      This list will be repeated in our Gruntfile if customization is added—update both when making changes.
+    {% endcomment %}
+    <script src="../assets/js/vendor/less.min.js"></script>
+    <script src="../assets/js/vendor/jszip.min.js"></script>
+    <script src="../assets/js/vendor/uglify.min.js"></script>
+    <script src="../assets/js/vendor/Blob.js"></script>
+    <script src="../assets/js/vendor/FileSaver.js"></script>
+    <script src="../assets/js/raw-files.min.js"></script>
+    <script src="../assets/js/src/customizer.js"></script>
+  {% endif %}
 {% endif %}
-{% else %}
-<script src="../assets/js/vendor/less.min.js"></script>
-<script src="../assets/js/vendor/jszip.min.js"></script>
-<script src="../assets/js/vendor/uglify.min.js"></script>
-<script src="../assets/js/vendor/Blob.js"></script>
-<script src="../assets/js/vendor/FileSaver.js"></script>
-<script src="../assets/js/raw-files.min.js"></script>
-<script src="../assets/js/src/customizer.js"></script>
-{% endif %}
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ page.base_url }}assets/js/ie10-viewport-bug-workaround.js"></script>
 
