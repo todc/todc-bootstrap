@@ -16,27 +16,33 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../dist/css/bootstrap.css" rel="stylesheet">
+
 
 
 <!-- TODC Bootstrap core CSS -->
-<link href="../dist/css/todc-bootstrap.min.css" rel="stylesheet">
+
+<link href="../dist/css/todc-bootstrap.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
-<link href="../assets/css/docs.min.css" rel="stylesheet">
+
+<link href="../assets/css/src/docs.css" rel="stylesheet">
+<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="../assets/css/src/select2.css" rel="stylesheet">
+
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="icon" href="../favicon.ico">
 
   </head>
@@ -47,7 +53,7 @@
     <header class="navbar navbar-masthead navbar-default navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -58,19 +64,19 @@
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="../getting-started">Getting started</a>
+          <a href="../getting-started/">Getting started</a>
         </li>
         <li>
-          <a href="../css">CSS</a>
+          <a href="../css/">CSS</a>
         </li>
         <li>
-          <a href="../components">Components</a>
+          <a href="../components/">Components</a>
         </li>
         <li>
-          <a href="../javascript">JavaScript</a>
+          <a href="../javascript/">JavaScript</a>
         </li>
         <li>
-          <a href="../customize">Customize</a>
+          <a href="../customize/">Customize</a>
         </li>
       </ul>
     </nav>
@@ -108,16 +114,22 @@
       </thead>
       <tbody>
         <tr>
+          <td>Internet Explorer 11</td>
+          <td>Hovered element still remains in <code>:hover</code> state after scrolling away</td>
+          <td><a href="https://connect.microsoft.com/IE/feedback/details/926665/ie-11-hovering-over-an-element-and-then-scrolling-without-moving-the-mouse-pointer-leaves-the-element-in-hover-state">IE bug #926665</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/14211">#14211</a></td>
+        </tr>
+        <tr>
+          <td>Internet Explorer 11</td>
+          <td>When hovering over a <code>&lt;select&gt;</code> menu item, the cursor for the element underneath the menu is displayed</td>
+          <td><a href="https://connect.microsoft.com/IE/feedbackdetail/view/963961">IE bug #963961</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/14528">#14528</a></td>
+        </tr>
+        <tr>
           <td>Firefox</td>
           <td><code>.table-bordered</code> with an empty <code>&lt;tbody&gt;</code> is missing borders</td>
           <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1023761">Mozilla bug #1023761</a></td>
           <td><a href="https://github.com/twbs/bootstrap/issues/13453">#13453</a></td>
-        </tr>
-        <tr>
-          <td>Firefox</td>
-          <td>Unusual default form control styles on Android</td>
-          <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=900871">Closed Mozilla bug #900871</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=763671">Open Mozilla bug #763671</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/8702">#8702</a></td>
         </tr>
         <tr>
           <td>Firefox</td>
@@ -126,40 +138,34 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/10690">#10690</a></td>
         </tr>
         <tr>
-          <td>Firefox <strong>&lt;31</strong></td>
-          <td><code>position: relative;</code> doesn't work inside tables</td>
-          <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=63895">Mozilla bug #63895</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/12467">#12467</a></td>
+          <td>Firefox</td>
+          <td>Java applets that are descendants of elements with forced hardware acceleration using <code>translate3d(0,0,0)</code> are invisible on Windows</td>
+          <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1048279">Mozilla bug #1048279</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/14124">#14124</a></td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>Button elements with <code>width: 100%</code> become cropped in long tables.</td>
+          <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1060131">Mozilla bug #1060131</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/14320">#14320</a></td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>If the disabled state of a form control is changed via JavaScript, the normal state doesn't return after refreshing the page.</td>
+          <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">Mozilla bug #654072</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/793">#793</a></td>
         </tr>
         <tr>
           <td>Chrome</td>
-          <td>Weird button behavior with some number <code>&lt;input&gt;</code>s</td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/8350">#8350</a>, <a href="https://github.com/necolas/normalize.css/issues/283">Normalize #283</a></td>
-        </tr>
-        <tr>
-          <td>Chrome</td>
-          <td>Navbar rendering problem on Windows after several clicks</td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=272750">Chromium issue #272750</a>, <a href="https://bugs.webkit.org/show_bug.cgi?id=119793">WebKit bug #119793</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/9226">#9226</a></td>
+          <td>Clicking above <code>&lt;input type="number"&gt;</code> increment button flashes the decrement button</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=419108"></a></td>
+          <td>Offshoot of <a href="https://github.com/twbs/bootstrap/issues/8350">#8350</a> &amp; <a href="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a></td>
         </tr>
         <tr>
           <td>Chrome</td>
           <td><code>display: table;</code> within <code>display: block;</code> forces sibling content to new line</td>
           <td><a href="https://code.google.com/p/chromium/issues/detail?id=309483">Chromium issue #309483</a></td>
           <td><a href="https://github.com/twbs/bootstrap/issues/9950">#9950</a></td>
-        </tr>
-        <tr>
-          <td>Chrome</td>
-          <td>Unwanted vertical lines when printing styled <code>&lt;select&gt;</code> on OS X</td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=282918">Chromium issue #282918</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/11245">#11245</a></td>
-        </tr>
-        <tr>
-          <td>Chrome</td>
-          <td>inline-block element collapses white-space on Windows</td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=329574">Chromium issue #329574</a></td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/11885">#11885</a></td>
         </tr>
         <tr>
           <td>Chrome</td>
@@ -180,21 +186,32 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/12548">#12548</a></td>
         </tr>
         <tr>
-          <td>Safari</td>
-          <td>Insufficient CSS percentage precision</td>
-          <td>(No public bug tracker)</td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/9282">#9282</a></td>
+          <td>Chrome</td>
+          <td><code>&lt;input type="password"&gt;</code> sporadically causes bad widths on floated elements</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=377346">Chrome issue #377346</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/13892">#13892</a></td>
         </tr>
         <tr>
           <td>Safari</td>
-          <td>Justified nav rendering bug</td>
-          <td>(No public bug tracker)</td>
+          <td>Weird button behavior with some number <code>&lt;input&gt;</code>s</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=137269">WebKit bug #137269</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/8350">#8350</a>, <a href="https://github.com/necolas/normalize.css/issues/283">Normalize #283</a>, <a href="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a></td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td><code>display: table-cell;</code> within media query renders incorrectly when resizing the window</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138167">WebKit bug #138167</a></td>
           <td><a href="https://github.com/twbs/bootstrap/issues/9774">#9774</a></td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td><code>transform: translate3d(0, 0, 0);</code> iOS bug</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138162">WebKit bug #138162</a>, <a href="http://openradar.appspot.com/18804973">Apple Safari Radar #18804973</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/pull/14603">#14603</a></td>
         </tr>
       </tbody>
     </table>
   </div>
-
 </div>
 
         </div>
@@ -232,7 +249,7 @@
     <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.2.0-3.3.0</li>
+      <li>Currently v3.3.0-3.3.0</li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -240,12 +257,12 @@
       <li>&middot;</li>
       <li><a href="../2.3.2/">v2.3.2 docs</a></li>
       <li>&middot;</li>
-      <li><a href="https://github.com/todc/todc-bootstrap/issues?state=open">Issues</a></li>
+      <li><a href="https://github.com/todc/todc-bootstrap/issues">Issues</a></li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap/releases">Releases</a></li>
     </ul>
     <ul class="bs-docs-footer-links muted">
-      <li>Bootstrap v3.2.0</li>
+      <li>Bootstrap v3.3.0</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -259,7 +276,7 @@
       <li>&middot;</li>
       <li><a href="http://blog.getbootstrap.com">Blog</a></li>
       <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
     </ul>
@@ -270,9 +287,19 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="../dist/js/bootstrap.min.js"></script>
-<script src="../assets/js/docs.min.js"></script>
 
+<script src="../dist/js/bootstrap.js"></script>
+
+
+<script src="../assets/js/vendor/select2.js"></script>
+<script src="../assets/js/vendor/holder.js"></script>
+<script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
+<script src="../assets/js/src/application.js"></script>
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
 <script>
