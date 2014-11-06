@@ -25,6 +25,14 @@ module.exports = function (grunt) {
     return { sections: parser.parseFile() };
   };
   var generateRawFiles = require('./grunt/bs-raw-files-generator.js');
+  // var generateCommonJSModule = require('./grunt/bs-commonjs-generator.js');
+  var configBridge = grunt.file.readJSON('./grunt/configBridge.json', { encoding: 'utf8' });
+
+  Object.keys(configBridge.paths).forEach(function (key) {
+    configBridge.paths[key].forEach(function (val, i, arr) {
+      arr[i] = path.join('./docs/assets', val);
+    });
+  });
 
   // Project configuration.
   grunt.initConfig({
@@ -36,21 +44,8 @@ module.exports = function (grunt) {
             ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
             ' */\n',
-    // NOTE: This jqueryCheck/jqueryVersionCheck code is duplicated in customizer.js;
-    //       if making changes here, be sure to update the other copy too.
-    jqueryCheck: [
-      'if (typeof jQuery === \'undefined\') {',
-      '  throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery\')',
-      '}\n'
-    ].join('\n'),
-    jqueryVersionCheck: [
-      '+function ($) {',
-      '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')',
-      '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {',
-      '    throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery version 1.9.1 or higher\')',
-      '  }',
-      '}(jQuery);\n\n'
-    ].join('\n'),
+    jqueryCheck: configBridge.config.jqueryCheck.join('\n'),
+    jqueryVersionCheck: configBridge.config.jqueryVersionCheck.join('\n'),
 
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
@@ -99,14 +94,10 @@ module.exports = function (grunt) {
       },
       core: {
       },
+      customize: {
+      },
       docsJs: {
-        // NOTE: This src list is duplicated in footer.html; if making changes here, be sure to update the other copy too.
-        src: [
-          'docs/assets/js/vendor/select2.js',
-          'docs/assets/js/vendor/holder.js',
-          'docs/assets/js/vendor/ZeroClipboard.min.js',
-          'docs/assets/js/src/application.js'
-        ],
+        src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
       }
     },
@@ -127,16 +118,7 @@ module.exports = function (grunt) {
 
     autoprefixer: {
       options: {
-        browsers: [
-          'Android 2.3',
-          'Android >= 4',
-          'Chrome >= 20',
-          'Firefox >= 24', // Firefox 24 is the latest ESR
-          'Explorer >= 8',
-          'iOS >= 6',
-          'Opera >= 12',
-          'Safari >= 6'
-        ]
+        browsers: configBridge.config.autoprefixerBrowsers
       },
       core: {
         options: {
@@ -242,6 +224,10 @@ module.exports = function (grunt) {
       docs: {
         src: 'dist/*/*',
         dest: 'docs/'
+      },
+      configBridge: {
+        src: 'grunt/configBridge.json',
+        dest: 'docs/_data/configBridge.json'
       }
     },
 
@@ -394,5 +380,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
-  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
+  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'copy:configBridge']);
 };

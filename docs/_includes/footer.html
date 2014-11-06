@@ -51,28 +51,23 @@
 {% else %}
 <script src="{{ page.base_url }}dist/js/bootstrap.js"></script>
 {% endif %}
+
 {% if site.github %}
 <script src="{{ page.base_url }}assets/js/docs.min.js"></script>
 {% else %}
-<script src="{{ page.base_url }}assets/js/vendor/select2.js"></script>
-<script src="{{ page.base_url }}assets/js/vendor/holder.js"></script>
-<script src="{{ page.base_url }}assets/js/vendor/ZeroClipboard.min.js"></script>
-<script src="{{ page.base_url }}assets/js/src/application.js"></script>
+  {% for file in site.data.configBridge.paths.docsJs %}
+  <script src="{{ file }}"></script>
+  {% endfor %}
 {% endif %}
+
 {% if page.slug == "customize" %}
+  <script>var __configBridge = {{ site.data.configBridge.config | jsonify }}</script>
   {% if site.github %}
     <script src="{{ page.base_url }}assets/js/customize.min.js"></script>
   {% else %}
-    {% comment %}
-      This list will be repeated in our Gruntfile if customization is added—update both when making changes.
-    {% endcomment %}
-    <script src="../assets/js/vendor/less.min.js"></script>
-    <script src="../assets/js/vendor/jszip.min.js"></script>
-    <script src="../assets/js/vendor/uglify.min.js"></script>
-    <script src="../assets/js/vendor/Blob.js"></script>
-    <script src="../assets/js/vendor/FileSaver.js"></script>
-    <script src="../assets/js/raw-files.min.js"></script>
-    <script src="../assets/js/src/customizer.js"></script>
+    {% for file in site.data.configBridge.paths.customizerJs %}
+    <script src="{{ file }}"></script>
+    {% endfor %}
   {% endif %}
 {% endif %}
 
