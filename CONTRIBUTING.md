@@ -111,6 +111,13 @@ Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
+**Do not edit `todc-bootstrap.css` directly!** That file is automatically generated.
+You should edit the source files in [`/todc-bootstrap/less/`](https://github.com/todc/todc-bootstrap/tree/master/less) instead.
+
+Similarly, when contributing to TODC Bootstrap's documentation, you should edit the
+documentation source files in [the `/todc-bootstrap/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/docs).
+**Do not edit the `gh-pages` branch.** That branch is generated from the documentation source files and is managed separately.
+
 Adhering to the following process is the best way to get your work
 included in the project:
 
