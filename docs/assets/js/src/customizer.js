@@ -298,7 +298,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
     var prefixer = autoprefixer({ browsers: __configBridge.autoprefixerBrowsers })
 
     $.when(
-      compileLESS(bsLessSource, 'bootstrap', result)
+      compileLESS(bsLessSource, 'bootstrap', result),
       compileLESS(themeLessSource, 'bootstrap-theme', result)
     ).done(function () {
       for (var key in result) {
@@ -308,7 +308,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
     }).fail(function (err) {
       showError('<strong>Ruh roh!</strong> Could not parse less files.', err)
       promise.reject()
-    }
+    })
 
     return promise.promise()
   }
@@ -361,32 +361,26 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
     var file = (e.originalEvent.hasOwnProperty('dataTransfer')) ? e.originalEvent.dataTransfer.files[0] : e.originalEvent.target.files[0]
 
-    if (!file.type.match('application/json')) {
-      return showAlert('danger', '<strong>Ruh roh.</strong> We can only read <code>.json</code> files. Please try again.', importDropTarget)
-    }
-
     var reader = new FileReader()
 
-    reader.onload = (function () {
-      return function (e) {
-        var text = e.target.result
+    reader.onload = function (e) {
+      var text = e.target.result
 
-        try {
-          var json = JSON.parse(text)
+      try {
+        var json = JSON.parse(text)
 
-          if (typeof json != 'object') {
-            throw new Error('JSON data from config file is not an object.')
-          }
-
-          updateCustomizerFromJson(json)
-          showAlert('success', '<strong>Woohoo!</strong> Your configuration was successfully uploaded. Tweak your settings, then hit Download.', importDropTarget)
-        } catch (err) {
-          return showAlert('danger', '<strong>Shucks.</strong> We can only read valid <code>.json</code> files. Please try again.', importDropTarget)
+        if (!$.isPlainObject(json)) {
+          throw new Error('JSON data from config file is not an object.')
         }
-      }
-    })(file)
 
-    reader.readAsText(file)
+        updateCustomizerFromJson(json)
+        showAlert('success', '<strong>Woohoo!</strong> Your configuration was successfully uploaded. Tweak your settings, then hit Download.', importDropTarget)
+      } catch (err) {
+        return showAlert('danger', '<strong>Shucks.</strong> We can only read valid <code>.json</code> files. Please try again.', importDropTarget)
+      }
+    }
+
+    reader.readAsText(file, 'utf-8')
   }
 
   function handleConfigDragOver(e) {
