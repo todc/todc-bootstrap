@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.3.0-3.3.0 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.3.1-3.3.1 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2014 Tim O'Donnell
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -289,56 +289,25 @@ fieldset[disabled] .form-control:active {
 textarea.form-control {
   padding-right: 4px;
 }
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: 30px;
-  line-height: 1.4 \0;
-}
-input[type="date"].input-sm,
-input[type="time"].input-sm,
-input[type="datetime-local"].input-sm,
-input[type="month"].input-sm {
-  line-height: 26px;
-  line-height: 1.5 \0;
-}
-input[type="date"].input-lg,
-input[type="time"].input-lg,
-input[type="datetime-local"].input-lg,
-input[type="month"].input-lg {
-  line-height: 38px;
-  line-height: 1.3 \0;
-}
-_:-ms-fullscreen,
-:root input[type="date"],
-_:-ms-fullscreen,
-:root input[type="time"],
-_:-ms-fullscreen,
-:root input[type="datetime-local"],
-_:-ms-fullscreen,
-:root input[type="month"] {
-  line-height: 1.4;
-}
-_:-ms-fullscreen.input-sm,
-:root input[type="date"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="time"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="datetime-local"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="month"].input-sm {
-  line-height: 1.5;
-}
-_:-ms-fullscreen.input-lg,
-:root input[type="date"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="time"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="datetime-local"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="month"].input-lg {
-  line-height: 1.3;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    line-height: 30px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm {
+    line-height: 26px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg {
+    line-height: 38px;
+  }
 }
 .radio label,
 .checkbox label {
@@ -3207,7 +3176,7 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
 .badge {
   font-size: 12px;
 }
-a.list-group-item.active > .badge,
+.list-group-item.active > .badge,
 li.list-group-item.active a > .badge {
   color: #fff;
   background-color: #dd4b39;
@@ -3979,6 +3948,7 @@ li.list-group-header {
   padding: 15px;
 }
 .tooltip {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   font-weight: bold;
   line-height: 1.25;
@@ -4050,6 +4020,7 @@ li.list-group-header {
 }
 .popover {
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   background-color: #fff;
