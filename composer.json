@@ -26,7 +26,10 @@
   "license": "MIT",
   "extra": {
     "branch-alias": {
-      "dev-master": "3.2.x-dev"
+      "dev-master": "3.3.x-dev"
     }
+  },
+  "replace": {
+    "twitter/bootstrap": "self.version"
   }
 }
