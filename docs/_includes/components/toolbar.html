@@ -5,6 +5,15 @@
   <p>Toolbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
   <p><strong class="text-danger">Justified toolbar nav links are currently not supported.</strong></p>
 
+  <div class="bs-callout bs-callout-warning" id="callout-toolbar-overflow">
+    <h4>Overflowing content</h4>
+    <p>Since TODC Bootstrap doesn't know how much space the content in your toolbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:</p>
+    <ol type="a">
+      <li>Reduce the amount or width of toolbar items.</li>
+      <li>Hide certain navbar items at certain screen sizes using <a href="../css/#responsive-utilities">responsive utility classes</a>.</li>
+      <li>Change the point at which your toolbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</li>
+    </ol>
+  </div>
   <div class="bs-callout bs-callout-danger">
     <h4>Requires JavaScript plugin</h4>
     <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
