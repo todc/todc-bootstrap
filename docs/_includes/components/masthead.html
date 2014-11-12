@@ -5,13 +5,18 @@
   <p>Mastheads are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
   <p><strong class="text-danger">Justified masthead nav links are currently not supported.</strong></p>
 
+ <div class="bs-callout bs-callout-danger">
+    <h4>Requires JavaScript plugin</h4>
+    <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
+    <p>The responsive masthead requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
   <div class="bs-callout bs-callout-info">
     <h4>Customize the collapsing point</h4>
     <p>Depending on the content in your masthead, you might need to change the point at which your masthead switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</p>
   </div>
-  <div class="bs-callout bs-callout-danger">
-    <h4>Requires JavaScript</h4>
-    <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
+   <div class="bs-callout bs-callout-warning">
+    <h4>Make mastheads accessible</h4>
+    <p>Be sure to add a <code>role="navigation"</code> to every masthead to help with accessibility.</p>
   </div>
 
   <div class="bs-example">
@@ -124,16 +129,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 {% endhighlight %}
-
-  <div class="bs-callout bs-callout-danger">
-    <h4>Plugin dependency</h4>
-    <p>The responsive masthead requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
-  </div>
-
-  <div class="bs-callout bs-callout-warning">
-    <h4>Make mastheads accessible</h4>
-    <p>Be sure to add a <code>role="navigation"</code> to every masthead to help with accessibility.</p>
-  </div>
 
 
   <h2 id="navbar-masthead-brand-image">Brand image</h2>
