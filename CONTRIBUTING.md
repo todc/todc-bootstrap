@@ -169,7 +169,7 @@ included in the project:
     with a clear title and description against the `master` branch.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
-license your work under the terms of the [MIT License](LICENSE.md).
+license your work under the terms of the [MIT License](LICENSE).
 
 
 ## Code guidelines
@@ -203,7 +203,7 @@ Run `grunt test` before committing to ensure your changes follow our coding stan
 
 ## License
 
-By contributing your code, you agree to license your contribution under the terms of the MIT license: http://www.opensource.org/licenses/mit-license.php
+By contributing your code, you agree to license your contribution under the terms of the [MIT license](LICENSE)
 
 
 
