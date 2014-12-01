@@ -242,7 +242,15 @@ module.exports = function (grunt) {
     },
 
     jekyll: {
-      docs: {}
+      options: {
+        config: '_config.yml'
+      },
+      docs: {},
+      github: {
+        options: {
+          raw: 'github: true'
+        }
+      }
     },
 
     jade: {
@@ -320,7 +328,7 @@ module.exports = function (grunt) {
   grunt.registerTask('checkout-bootstrap', 'shell');
 
   // Docs HTML validation task
-  grunt.registerTask('validate-html', ['jekyll', 'validation']);
+  grunt.registerTask('validate-html', ['jekyll:docs', 'validation']);
 
   var runSubset = function (subset) {
     return !process.env.TWBS_TEST || process.env.TWBS_TEST === subset;
@@ -376,4 +384,6 @@ module.exports = function (grunt) {
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
+
+  grunt.registerTask('docs-github', ['jekyll:github']);
 };
