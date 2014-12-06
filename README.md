@@ -31,6 +31,38 @@ Three quick start options are available:
 
 Read the [Getting started page](https://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
+### What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+todc-bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.map
+│   ├── bootstrap-theme.min.css
+│   ├── todc-bootstrap.css
+│   ├── todc-bootstrap.css.map
+│   └── todc-bootstrap.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+├── fonts/
+│   ├── glyphicons-halflings-regular.eot
+│   ├── glyphicons-halflings-regular.svg
+│   ├── glyphicons-halflings-regular.ttf
+│   └── glyphicons-halflings-regular.woff
+└── img/
+    └── checkmark.png
+```
+
+We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developers.google.com/chrome-developer-tools/docs/css-preprocessors) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
+
+
+
 ## Compatibility ##
 
 This is being tested in the latest versions of Chrome, Firefox, and IE8+.
