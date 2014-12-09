@@ -378,7 +378,6 @@
 {% endhighlight %}
 
   <h3>Selects</h3>
-  <p>Use the default option, or add <code>multiple</code> to show multiple options at once.</p>
   <div class="bs-example" data-example-ids="select-form-control">
     <h4>Plugin dependency</h4>
     <p>
@@ -408,14 +407,6 @@
         <option value="Pear">Pear</option>
         <option value="Peach">Peach</option>
       </select>
-      <br>
-      <select multiple class="form-control">
-        <option value="Apple">Apple</option>
-        <option value="Banana">Banana</option>
-        <option value="Orange">Orange</option>
-        <option value="Pear">Pear</option>
-        <option value="Peach">Peach</option>
-      </select>
     </form>
   </div><!-- /.bs-example -->
 {% highlight html %}
@@ -426,7 +417,23 @@
   <option value="Pear">Pear</option>
   <option value="Peach">Peach</option>
 </select>
+{% endhighlight %}
 
+  <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+
+  <div class="bs-example" data-example-ids="select-multiple-form-control">
+    <form>
+      <select multiple class="form-control">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Orange">Orange</option>
+        <option value="Pear">Pear</option>
+        <option value="Peach">Peach</option>
+      </select>
+    </form>
+  </div><!-- /.bs-example -->
+
+{% highlight html %}
 <select multiple class="form-control">
   <option value="Apple">Apple</option>
   <option value="Banana">Banana</option>
