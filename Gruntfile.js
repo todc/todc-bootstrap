@@ -227,20 +227,6 @@ module.exports = function (grunt) {
       }
     },
 
-    compress: {
-      main: {
-        options: {
-          archive: 'dist/<%= pkg.name %>-<%= pkg.version %>-dist.zip',
-          mode: 'zip',
-          pretty: true
-        },
-        expand: true,
-        cwd: 'dist',
-        src: '**',
-        dest: 'todc-bootstrap/'
-      }
-    },
-
     jekyll: {
       options: {
         config: '_config.yml'
@@ -317,7 +303,27 @@ module.exports = function (grunt) {
         replacement: grunt.option('newver'),
         recursive: true
       }
+    },
+
+    compress: {
+      main: {
+        options: {
+          archive: '<%= pkg.name %>-<%= pkg.version %>-dist.zip',
+          mode: 'zip',
+          level: 9,
+          pretty: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'dist/',
+            src: ['**'],
+            dest: '<%= pkg.name %>-<%= pkg.version %>-dist'
+          }
+        ]
+      }
     }
+
   });
 
 
@@ -386,5 +392,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
 
-  grunt.registerTask('docs-github', ['jekyll:github']);
+  grunt.registerTask('prep-release', ['jekyll:github', 'compress']);
 };
