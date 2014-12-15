@@ -60,6 +60,26 @@ body {
 
 
 /*
+ * Fancy skip link
+ *
+ * Make it look a bit less "bare bones"
+ */
+
+#skippy {
+  display: block;
+  padding: 1em;
+  color: #777;
+  background-color: #f1f1f1;
+  outline: 0;
+}
+
+#skippy .skiplink-text {
+  padding: .5em;
+  outline: 1px dotted;
+}
+
+
+/*
  * Footer
  *
  * Separated section of content at the bottom of all pages, save the homepage.
