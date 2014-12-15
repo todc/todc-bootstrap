@@ -54,7 +54,8 @@ todc-bootstrap/
 │   ├── glyphicons-halflings-regular.eot
 │   ├── glyphicons-halflings-regular.svg
 │   ├── glyphicons-halflings-regular.ttf
-│   └── glyphicons-halflings-regular.woff
+│   ├── glyphicons-halflings-regular.woff
+│   └── glyphicons-halflings-regular.woff2
 └── img/
     └── checkmark.png
 ```
