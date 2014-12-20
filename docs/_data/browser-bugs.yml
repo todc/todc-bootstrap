@@ -163,13 +163,13 @@
 
 -
   browser: >
-    Safari (iOS)
+    Safari (OS X)
   summary: >
-    `transform: translate3d(0,0,0);` rendering bug.
+    Small font size when printing webpage with fixed-width `.container`.
   upstream_bug: >
-    WebKit#138162, Safari#18804973
+    WebKit#138192
   origin: >
-    Bootstrap#14603
+    Bootstrap#14868
 
 -
   browser: >
