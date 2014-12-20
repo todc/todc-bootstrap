@@ -185,6 +185,16 @@
   browser: >
     Safari (iOS)
   summary: >
+    `transform: translate3d(0,0,0);` rendering bug.
+  upstream_bug: >
+    WebKit#138162, Safari#18804973
+  origin: >
+    Bootstrap#14603
+
+-
+  browser: >
+    Safari (iOS)
+  summary: >
     Text input's cursor doesn't move while scrolling the page.
   upstream_bug: >
     WebKit#138201, Safari#18819624
