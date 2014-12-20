@@ -175,11 +175,11 @@
   browser: >
     Safari (OS X)
   summary: >
-    Small font size when printing webpage with fixed-width `.container`.
+    Alpha linear-gradient has dark line at its edge.
   upstream_bug: >
-    WebKit#138192
+    WebKit#139803  
   origin: >
-    Bootstrap#14868
+    Bootstrap#15205
 
 -
   browser: >
