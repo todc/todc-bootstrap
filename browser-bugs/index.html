@@ -10,9 +10,9 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <title>
-  
+
     Wall of browser bugs &middot; TODC Bootstrap
-  
+
 </title>
 
 <!-- Bootstrap core CSS -->
@@ -47,7 +47,7 @@
 
   </head>
   <body id="top">
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
 
     <!-- Docs master nav -->
     <header class="navbar navbar-masthead navbar-default navbar-fixed-top" role="banner">
@@ -61,7 +61,7 @@
       </button>
       <a href="../" class="navbar-brand">TODC Bootstrap</a>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
       <ul class="nav navbar-nav">
         <li>
           <a href="../getting-started/">Getting started</a>
@@ -113,7 +113,7 @@
         </tr>
       </thead>
       <tbody>
-        
+
         <tr>
           <td>Internet Explorer 11
 </td>
@@ -124,7 +124,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14211">#14211</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Internet Explorer 11
 </td>
@@ -135,7 +135,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14528">#14528</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Firefox
 </td>
@@ -146,7 +146,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/13453">#13453</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Firefox
 </td>
@@ -157,7 +157,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/10690">#10690</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Firefox (Windows)
 </td>
@@ -168,7 +168,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14124">#14124</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Firefox
 </td>
@@ -179,7 +179,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14320">#14320</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Firefox
 </td>
@@ -190,7 +190,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/793">#793</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Chrome (OS X)
 </td>
@@ -201,7 +201,7 @@
           <td>Offshoot of <a href="https://github.com/twbs/bootstrap/issues/8350">#8350</a> & <a href="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Chrome
 </td>
@@ -212,7 +212,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/9950">#9950</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Chrome
 </td>
@@ -223,29 +223,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/12078">#12078</a>
 </td>
         </tr>
-        
-        <tr>
-          <td>Safari (OS X)
-</td>
-          <td><p>Scrollbar clipped in <code>select[multiple]</code> with padding.</p>
-</td>
-          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=128489">WebKit bug #128489</a>
-</td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/12536">#12536</a>
-</td>
-        </tr>
-        
-        <tr>
-          <td>Chrome
-</td>
-          <td><p><code>display: table-cell; width: 100%;</code> doesn’t work correctly on <code>&lt;input type="date"&gt;</code>.</p>
-</td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=346051">Chromium issue #346051</a>
-</td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/12548">#12548</a>
-</td>
-        </tr>
-        
+
         <tr>
           <td>Chrome
 </td>
@@ -256,7 +234,7 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/13892">#13892</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Chrome
 </td>
@@ -267,40 +245,51 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14409">#14409</a>
 </td>
         </tr>
-        
+
+        <tr>
+          <td>Chrome (Windows)
+</td>
+          <td><p>Body content can be scrolled even though <code>overflow: hidden;</code> is applied to it.</p>
+</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=438064">Chromium issue #438064</a>
+</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=175502">Chromium issue #175502</a>, <a href="https://github.com/twbs/bootstrap/issues/14972">#14972</a>
+</td>
+        </tr>
+
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Scrollbar clipped in <code>select[multiple]</code> with padding.</p>
+</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=128489">WebKit bug #128489</a>, <a href="https://openradar.appspot.com/19208483">Apple Safari Radar #19208483</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/12536">#12536</a>
+</td>
+        </tr>
+
         <tr>
           <td>Safari (OS X)
 </td>
           <td><p>Weird button behavior with some <code>&lt;input type="number"&gt;</code> elements.</p>
 </td>
-          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=137269">WebKit bug #137269</a>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=137269">WebKit bug #137269</a>, <a href="https://openradar.appspot.com/18834768">Apple Safari Radar #18834768</a>
 </td>
           <td><a href="https://github.com/twbs/bootstrap/issues/8350">#8350</a>, <a href="https://github.com/necolas/normalize.css/issues/283">Normalize #283</a>, <a href="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a>
 </td>
         </tr>
-        
+
         <tr>
           <td>Safari (OS X)
 </td>
           <td><p><code>display: table-cell;</code> within media query renders incorrectly when resizing the window.</p>
 </td>
-          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138167">WebKit bug #138167</a>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138167">WebKit bug #138167</a>, <a href="https://openradar.appspot.com/18987206">Apple Safari Radar #18987206</a>
 </td>
           <td><a href="https://github.com/twbs/bootstrap/issues/9774">#9774</a>
 </td>
         </tr>
-        
-        <tr>
-          <td>Safari (iOS)
-</td>
-          <td><p><code>transform: translate3d(0,0,0);</code> rendering bug.</p>
-</td>
-          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138162">WebKit bug #138162</a>, <a href="https://openradar.appspot.com/18804973">Apple Safari Radar #18804973</a>
-</td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/14603">#14603</a>
-</td>
-        </tr>
-        
+
         <tr>
           <td>Safari (OS X)
 </td>
@@ -311,7 +300,29 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a>
 </td>
         </tr>
-        
+
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Alpha linear-gradient has dark line at its edge.</p>
+</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=139803">WebKit bug #139803</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/15205">#15205</a>
+</td>
+        </tr>
+
+        <tr>
+          <td>Safari (iOS)
+</td>
+          <td><p><code>transform: translate3d(0,0,0);</code> rendering bug.</p>
+</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=138162">WebKit bug #138162</a>, <a href="https://openradar.appspot.com/18804973">Apple Safari Radar #18804973</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/14603">#14603</a>
+</td>
+        </tr>
+
         <tr>
           <td>Safari (iOS)
 </td>
@@ -322,24 +333,25 @@
           <td><a href="https://github.com/twbs/bootstrap/issues/14708">#14708</a>
 </td>
         </tr>
-        
+
         <tr>
-          <td>Chrome (Windows & Linux)
+          <td>Safari (iOS)
 </td>
-          <td><p>Body content can be scrolled even though <code>overflow: hidden;</code> is applied to it.</p>
+          <td><p><code>display: block</code> causes text of temporal <code>&lt;input&gt;</code>s to become vertically misaligned</p>
 </td>
-          <td><a href="https://code.google.com/p/chromium/issues/detail?id=429604">Chromium issue #429604</a>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=139848">WebKit bug #139848</a>
 </td>
-          <td><a href="https://github.com/twbs/bootstrap/issues/14972">#14972</a></td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/11266">#11266</a>, <a href="https://github.com/twbs/bootstrap/issues/13098">#13098</a>
+</td>
         </tr>
-        
+
       </tbody>
     </table>
   </div>
 </div>
 
         </div>
-        
+
       </div>
     </div>
 
@@ -362,7 +374,7 @@
     <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
     <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-    <ul class="bs-docs-footer-links muted">
+    <ul class="bs-docs-footer-links text-muted">
       <li>Currently v3.3.1-3.3.1</li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap">GitHub</a></li>
@@ -406,15 +418,15 @@
 
 
 
-  
+
   <script src="../assets/js/vendor/select2.js"></script>
-  
+
   <script src="../assets/js/vendor/holder.js"></script>
-  
+
   <script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
-  
+
   <script src="../assets/js/src/application.js"></script>
-  
+
 
 
 
