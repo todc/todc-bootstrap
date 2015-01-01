@@ -149,7 +149,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 ## Copyright and license
 
-Copyright 2011-2014 Tim O'Donnell. Code released under [the MIT license](https://github.com/todc/todc-bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/todc/todc-bootstrap/blob/master/docs/LICENSE).
+Copyright 2011-2015 Tim O'Donnell. Code released under [the MIT license](https://github.com/todc/todc-bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/todc/todc-bootstrap/blob/master/docs/LICENSE).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 
