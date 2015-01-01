@@ -9,104 +9,13 @@
 // other navbar variations.
 
 .navbar-masthead {
-  // position: relative;
   min-height: @navbar-masthead-height; // Ensure a masthead always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-masthead-margin-bottom;
-  // border: 1px solid transparent;
-
-  // // Prevent floats from breaking the navbar
-  // .clearfix();
 
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-masthead-border-radius;
   }
 }
-
-
-// Navbar heading
-//
-// Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
-// styling of responsive aspects.
-
-// .navbar-header {
-//   .clearfix();
-
-//   @media (min-width: @grid-float-breakpoint) {
-//     float: left;
-//   }
-// }
-
-
-// Navbar collapse (body)
-//
-// Group your navbar content into this for easy collapsing and expanding across
-// various device sizes. By default, this content is collapsed when <768px, but
-// will expand past that for a horizontal display.
-//
-// To start (on mobile devices) the navbar links, forms, and buttons are stacked
-// vertically and include a `max-height` to overflow in case you have too much
-// content for the user's viewport.
-
-// .navbar-masthead .navbar-collapse {
-//   max-height: 340px;
-//   overflow-x: visible;
-//   padding-right: @navbar-masthead-padding-horizontal;
-//   padding-left:  @navbar-masthead-padding-horizontal;
-//   border-top: 1px solid transparent;
-//   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-//   .clearfix();
-//   -webkit-overflow-scrolling: touch;
-
-//   &.in {
-//     overflow-y: auto;
-//   }
-
-//   @media (min-width: @grid-float-breakpoint) {
-//     width: auto;
-//     border-top: 0;
-//     box-shadow: none;
-
-//     &.collapse {
-//       display: block !important;
-//       visibility: visible !important;
-//       height: auto !important;
-//       padding-bottom: 0; // Override default setting
-//       overflow: visible !important;
-//     }
-
-//     &.in {
-//       overflow-y: auto;
-//     }
-
-//     // Undo the collapse side padding for navbars with containers to ensure
-//     // alignment of right-aligned contents.
-//     .navbar-fixed-top &,
-//     .navbar-static-top &,
-//     .navbar-fixed-bottom & {
-//       padding-left: 0;
-//       padding-right: 0;
-//     }
-//   }
-// }
-
-
-// Both navbar header and collapse
-//
-// When a container is present, change the behavior of the header and collapse.
-
-// .navbar-masthead > .container,
-// .navbar-masthead > .container-fluid {
-//   > .navbar-header,
-//   > .navbar-collapse {
-//     margin-right: -@navbar-masthead-padding-horizontal;
-//     margin-left:  -@navbar-masthead-padding-horizontal;
-
-//     @media (min-width: @grid-float-breakpoint) {
-//       margin-right: 0;
-//       margin-left:  0;
-//     }
-//   }
-// }
 
 
 //
@@ -118,50 +27,21 @@
 // Static top (unfixed, but 100% wide) navbar
 .navbar-masthead .navbar-static-top {
   z-index: @zindex-masthead;
-  // border-width: 0 0 1px;
-
-  // @media (min-width: @grid-float-breakpoint) {
-  //   border-radius: 0;
-  // }
 }
 
 // Fix the top/bottom navbars when screen real estate supports it
 .navbar-masthead .navbar-fixed-top,
 .navbar-masthead .navbar-fixed-bottom {
-  // position: fixed;
-  // right: 0;
-  // left: 0;
   z-index: @zindex-masthead-fixed;
-
-  // // Undo the rounded corners
-  // @media (min-width: @grid-float-breakpoint) {
-  //   border-radius: 0;
-  // }
 }
-// .navbar-masthead .navbar-fixed-top {
-//   top: 0;
-//   border-width: 0 0 1px;
-// }
-// .navbar-masthead .navbar-fixed-bottom {
-//   bottom: 0;
-//   margin-bottom: 0; // override .navbar defaults
-//   border-width: 1px 0 0;
-// }
 
 
 // Brand/project name
 
 .navbar-masthead .navbar-brand {
-  // float: left;
   padding: @navbar-masthead-padding-vertical @navbar-masthead-padding-horizontal;
   font-size: @navbar-masthead-brand-font-size;
-  // line-height: @line-height-computed;
   height: @navbar-masthead-height;
-  //
-  // &:hover,
-  // &:focus {
-  //   text-decoration: none;
-  // }
 
   // Prevent Glyphicons from increasing height of navbar
   > .glyphicon {
@@ -183,30 +63,8 @@
 // JavaScript plugin.
 
 .navbar-masthead .navbar-toggle {
-  // position: relative;
-  // float: right;
   margin-right: @navbar-masthead-padding-horizontal;
-  // padding: @padding-base-vertical 10px;
   .navbar-vertical-align(@input-height-base, @navbar-masthead-height);
-  // background-color: transparent;
-  // background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  // border: 1px solid transparent;
-  // border-radius: @border-radius-base;
-
-  // // Bars
-  // .icon-bar {
-  //   display: block;
-  //   width: 22px;
-  //   height: 2px;
-  //   border-radius: 1px;
-  // }
-  // .icon-bar + .icon-bar {
-  //   margin-top: 4px;
-  // }
-
-  // @media (min-width: @grid-float-breakpoint) {
-  //   display: none;
-  // }
 }
 
 
@@ -218,43 +76,11 @@
 .navbar-masthead .navbar-nav {
   margin: floor((@navbar-masthead-padding-vertical / 2)) -@navbar-masthead-padding-horizontal;
 
-  // > li > a {
-  //   padding-top:    10px;
-  //   padding-bottom: 10px;
-  //   line-height: @line-height-computed;
-  // }
-
-  // @media (max-width: @grid-float-breakpoint-max) {
-  //   // Dropdowns get custom display when collapsed
-  //   .open .dropdown-menu {
-  //     position: static;
-  //     float: none;
-  //     width: auto;
-  //     margin-top: 0;
-  //     background-color: transparent;
-  //     border: 0;
-  //     box-shadow: none;
-  //     > li > a,
-  //     .dropdown-header {
-  //       padding: 5px 15px 5px 25px;
-  //     }
-  //     > li > a {
-  //       line-height: @line-height-computed;
-  //       &:hover,
-  //       &:focus {
-  //         background-image: none;
-  //       }
-  //     }
-  //   }
-  // }
-
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
-    // float: left;
     margin: floor((@navbar-masthead-padding-vertical / 2)) 0;
 
     > li {
-      // float: left;
       > a {
         padding-top: (floor(@navbar-masthead-padding-vertical / 2) + 2);
         padding-bottom: floor((@navbar-masthead-padding-vertical / 2));
@@ -333,33 +159,7 @@
 
 .navbar-masthead .navbar-text {
   .navbar-vertical-align(@line-height-computed, @navbar-masthead-height);
-
-  // @media (min-width: @grid-float-breakpoint) {
-  //   float: left;
-  //   margin-left: @navbar-masthead-padding-horizontal;
-  //   margin-right: @navbar-masthead-padding-horizontal;
 }
-
-
-// Component alignment
-//
-// Repurpose the pull utilities as their own navbar utilities to avoid specificity
-// issues with parents and chaining. Only do this when the navbar is uncollapsed
-// though so that navbar contents properly stack and align in mobile.
-//
-// Declared after the navbar components to ensure more specificity on the margins.
-
-// @media (min-width: @grid-float-breakpoint) {
-//   .navbar-left  { .pull-left(); }
-//   .navbar-right {
-//     .pull-right();
-//     margin-right: -@navbar-masthead-padding-horizontal;
-
-//     ~ .navbar-right {
-//       margin-right: 0;
-//     }
-//   }
-// }
 
 
 // Alternate navbars
