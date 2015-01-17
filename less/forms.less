@@ -64,7 +64,7 @@ output {
   background-color: @input-bg;
   border: 1px solid @input-border;
   border-top-color: darken(@input-border, 10%);
-  border-radius: @input-border-radius;
+  border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   .box-shadow(none);
   .transition(none);
   -webkit-appearance: none; // remove iOS input shadow
