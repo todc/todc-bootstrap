@@ -180,7 +180,7 @@ caption {
 .table-bordered > tfoot > tr > td {
   border: 1px solid #ddd;
 }
-.table-striped > tbody > tr:nth-child(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
