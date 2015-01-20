@@ -1,6 +1,6 @@
 /*!
  * Bootstrap Docs (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see http://creativecommons.org/licenses/by/3.0/.
  */
@@ -60,6 +60,26 @@ body {
 
 
 /*
+ * Fancy skip link
+ *
+ * Make it look a bit less "bare bones"
+ */
+
+#skippy {
+  display: block;
+  padding: 1em;
+  color: #777;
+  background-color: #f1f1f1;
+  outline: 0;
+}
+
+#skippy .skiplink-text {
+  padding: .5em;
+  outline: 1px dotted;
+}
+
+
+/*
  * Footer
  *
  * Separated section of content at the bottom of all pages, save the homepage.
@@ -79,7 +99,6 @@ body {
 .bs-docs-footer-links {
   padding-left: 0;
   margin: 10px 0;
-  color: #999;
 }
 .bs-docs-footer-links li {
   display: inline;
@@ -989,6 +1008,16 @@ h1[id] {
   overflow: auto;
 }
 
+/* Simple collapse example */
+#collapseExample .well {
+  margin-bottom: 0;
+}
+
+/* Don't wrap event names in Events tables in JS plugin docs */
+.bs-events-table > thead > tr > th:first-child,
+.bs-events-table > tbody > tr > td:first-child {
+  white-space: nowrap;
+}
 
 /*
  * Code snippets
@@ -1243,9 +1272,11 @@ h1[id] {
   border: 2px dashed #eee;
   border-radius: 4px;
 }
-.bs-dropzone h2 {
-  margin-top: 0;
+.bs-dropzone .import-header {
   margin-bottom: 5px;
+}
+.bs-dropzone .glyphicon-download-alt {
+  font-size: 40px;
 }
 .bs-dropzone hr {
   width: 100px;
@@ -1290,10 +1321,6 @@ h1[id] {
 .bs-brand-logos .inverse {
   color: #fff;
   background-color: #1b6ec1;
-}
-.bs-brand-item .svg {
-  width: 144px;
-  height: 144px;
 }
 
 /* Heading content within */

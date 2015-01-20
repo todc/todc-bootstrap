@@ -1,6 +1,6 @@
 /*!
- * TODC Bootstrap v3.3.1-3.3.1 (http://todc.github.com/todc-bootstrap/)
- * Copyright 2011-2014 Tim O'Donnell
+ * TODC Bootstrap v3.3.2-3.3.2 (http://todc.github.com/todc-bootstrap/)
+ * Copyright 2011-2015 Tim O'Donnell
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
 
@@ -88,12 +88,12 @@ a:focus {
   border-left: 0 dotted;
 }
 .scrollable-shadow {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fff), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, #fff)) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
-  background: -webkit-linear-gradient(#fff 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
-  background:      -o-linear-gradient(#fff 30%, rgba(255, 255, 255, 0)), -o-linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%, -o-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), -o-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
-  background:         linear-gradient(#fff 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fff), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, #fff)) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
-  background:         linear-gradient(#fff 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, white)) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background: -webkit-linear-gradient(white 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background:      -o-linear-gradient(white 30%, rgba(255, 255, 255, 0)), -o-linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, -o-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), -o-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background:         linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, white)) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background:         linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background-repeat: no-repeat;
   background-attachment: local, local, scroll, scroll;
   -webkit-background-size: 100% 40px, 100% 40px, 100% 6px, 100% 6px;
@@ -180,7 +180,7 @@ caption {
 .table-bordered > tfoot > tr > td {
   border: 1px solid #ddd;
 }
-.table-striped > tbody > tr:nth-child(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
@@ -299,13 +299,21 @@ textarea.form-control {
   input[type="date"].input-sm,
   input[type="time"].input-sm,
   input[type="datetime-local"].input-sm,
-  input[type="month"].input-sm {
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
     line-height: 26px;
   }
   input[type="date"].input-lg,
   input[type="time"].input-lg,
   input[type="datetime-local"].input-lg,
-  input[type="month"].input-lg {
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
     line-height: 38px;
   }
 }
@@ -401,7 +409,21 @@ input[type="checkbox"]:checked::after,
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.input-sm,
+.input-sm {
+  height: 26px;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+}
+select.input-sm {
+  height: 26px;
+  line-height: 26px;
+}
+textarea.input-sm,
+select[multiple].input-sm {
+  height: auto;
+}
 .form-group-sm .form-control {
   height: 26px;
   padding: 3px 8px;
@@ -409,18 +431,35 @@ input[type="checkbox"]:checked::after,
   line-height: 1.5;
   border-radius: 1px;
 }
-select.input-sm,
 select.form-group-sm .form-control {
   height: 26px;
   line-height: 26px;
 }
-textarea.input-sm,
 textarea.form-group-sm .form-control,
-select[multiple].input-sm,
 select[multiple].form-group-sm .form-control {
   height: auto;
 }
-.input-lg,
+.form-group-sm .form-control-static {
+  height: 26px;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.input-lg {
+  height: 38px;
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 1px;
+}
+select.input-lg {
+  height: 38px;
+  line-height: 38px;
+}
+textarea.input-lg,
+select[multiple].input-lg {
+  height: auto;
+}
 .form-group-lg .form-control {
   height: 38px;
   padding: 9px 14px;
@@ -428,16 +467,19 @@ select[multiple].form-group-sm .form-control {
   line-height: 1.3;
   border-radius: 1px;
 }
-select.input-lg,
 select.form-group-lg .form-control {
   height: 38px;
   line-height: 38px;
 }
-textarea.input-lg,
 textarea.form-group-lg .form-control,
-select[multiple].input-lg,
 select[multiple].form-group-lg .form-control {
   height: auto;
+}
+.form-group-lg .form-control-static {
+  height: 38px;
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
 }
 .has-feedback .form-control {
   padding-right: 37.5px;
