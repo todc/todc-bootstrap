@@ -3218,6 +3218,10 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
 .badge {
   font-size: 12px;
 }
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
+  font-size: 11px;
+}
 .list-group-item.active > .badge,
 li.list-group-item.active a > .badge {
   color: #fff;
