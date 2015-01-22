@@ -748,6 +748,10 @@ h1[id] {
   content: "Example";
 }
 
+.bs-example-padded-bottom {
+  padding-bottom: 24px;
+}
+
 /* Tweak display of the code snippets when following an example */
 .bs-example + .highlight,
 .bs-example + .zero-clipboard + .highlight {
@@ -931,6 +935,12 @@ h1[id] {
   margin-top: 0;
 }
 
+/* Scrollable */
+.bs-example > .scrollable {
+  height: 200px;
+  overflow-y: auto;
+}
+
 /* Example modals */
 .bs-example-modal {
   background-color: #f5f5f5;
@@ -1008,6 +1018,10 @@ h1[id] {
   overflow: auto;
 }
 
+.bs-example > .nav-pills-stacked-example {
+  max-width: 300px;
+}
+
 /* Simple collapse example */
 #collapseExample .well {
   margin-bottom: 0;
@@ -1017,6 +1031,19 @@ h1[id] {
 .bs-events-table > thead > tr > th:first-child,
 .bs-events-table > tbody > tr > td:first-child {
   white-space: nowrap;
+}
+
+.bs-events-table > thead > tr > th:first-child {
+  width: 150px;
+}
+
+.js-options-table > thead > tr > th:nth-child(1),
+.js-options-table > thead > tr > th:nth-child(2) {
+  width: 100px;
+}
+
+.js-options-table > thead > tr > th:nth-child(3) {
+  width: 50px;
 }
 
 /*
