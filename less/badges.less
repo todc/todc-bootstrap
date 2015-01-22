@@ -7,6 +7,11 @@
 .badge {
   font-size: @font-size-small;
 
+  .btn-xs &,
+  .btn-group-xs > .btn & {
+    font-size: @font-size-mini;
+  }
+
   // Account for badges in navs
   .list-group-item.active > &,
   li.list-group-item.active a > & {
