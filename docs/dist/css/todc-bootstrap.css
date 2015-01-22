@@ -3674,6 +3674,10 @@ li.list-group-header {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+.panel > .list-group {
+  padding: 15px 20px;
+  padding-top: 0;
+}
 .panel > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
