@@ -171,7 +171,6 @@ body {
   background-color: #2d87e2;
   background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1b6ec1), to(#2d87e2));
-  background-image:      -o-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image:         linear-gradient(to bottom, #1b6ec1 0%, #2d87e2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6ec1', endColorstr='#2d87e2', GradientType=0);
   background-repeat: repeat-x;
