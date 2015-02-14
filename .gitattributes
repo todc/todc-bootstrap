@@ -7,3 +7,9 @@
 *.md    text eol=lf
 *.svg   text eol=lf
 *.yml   text eol=lf
+
+bootstrap-theme.css linguist-vendored=false
+bootstrap.css linguist-vendored=false
+bootstrap.js linguist-vendored=false
+
+todc-bootstrap.css linguist-vendored=false
