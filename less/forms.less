@@ -234,6 +234,7 @@ input[type="checkbox"],
   // Size it appropriately next to real form controls
   padding-top: (@padding-base-vertical + 1);
   padding-bottom: (@padding-base-vertical + 1);
+  min-height: (@line-height-computed + @font-size-base);
 }
 
 
@@ -257,6 +258,7 @@ input[type="checkbox"],
     padding: @padding-small-vertical @padding-small-horizontal;
     font-size: @font-size-small;
     line-height: @line-height-small;
+    min-height: (@line-height-computed + @font-size-small);
   }
 }
 
@@ -272,6 +274,7 @@ input[type="checkbox"],
     padding: @padding-large-vertical @padding-large-horizontal;
     font-size: @font-size-large;
     line-height: @line-height-large;
+    min-height: (@line-height-computed + @font-size-large);
   }
 }
 
