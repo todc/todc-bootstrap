@@ -403,6 +403,7 @@ input[type="checkbox"]:checked::after,
   content: url(../img/checkmark.png);
 }
 .form-control-static {
+  min-height: 31px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -438,6 +439,7 @@ select[multiple].form-group-sm .form-control {
 }
 .form-group-sm .form-control-static {
   height: 26px;
+  min-height: 30px;
   padding: 3px 8px;
   font-size: 12px;
   line-height: 1.5;
@@ -474,6 +476,7 @@ select[multiple].form-group-lg .form-control {
 }
 .form-group-lg .form-control-static {
   height: 38px;
+  min-height: 32px;
   padding: 9px 14px;
   font-size: 14px;
   line-height: 1.3;
