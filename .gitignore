@@ -35,10 +35,6 @@ Thumbs.db
 .komodotools
 *.komodoproject
 
-# grunt-html-validation
-validation-report.json
-validation-status.json
-
 # Folders to ignore
 bower_components
 node_modules
