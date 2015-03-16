@@ -51,7 +51,7 @@ module.exports = function (grunt) {
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
     bootstrapGit: 'https://github.com/twbs/bootstrap.git',
-    bootstrapVersion: 'v3.3.2',
+    bootstrapVersion: 'v3.3.4',
 
     // Task configuration.
     clean: {
