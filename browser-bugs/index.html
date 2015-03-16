@@ -17,20 +17,18 @@
 
 <!-- Bootstrap core CSS -->
 
-<link href="../dist/css/bootstrap.css" rel="stylesheet">
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 
 <!-- TODC Bootstrap core CSS -->
 
-<link href="../dist/css/todc-bootstrap.css" rel="stylesheet">
+<link href="../dist/css/todc-bootstrap.min.css" rel="stylesheet">
 
 
 <!-- Documentation extras -->
 
-<link href="../assets/css/src/docs.css" rel="stylesheet">
-<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="../assets/css/src/select2.css" rel="stylesheet">
+<link href="../assets/css/docs.min.css" rel="stylesheet">
 
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -85,7 +83,7 @@
 
 
     <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content">
+    <div class="bs-docs-header" id="content" tabindex="-1">
       <div class="container">
         <h1>Wall of browser bugs</h1>
         <p>A list of the browser bugs that Bootstrap is currently grappling with.</p>
@@ -203,6 +201,17 @@
         </tr>
         
         <tr>
+          <td>Chrome (OS X)
+</td>
+          <td><p>Caps Lock indicator not shown in <code>&lt;input type="password"&gt;</code> with <code>display: block</code></p>
+</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=460200">Chromium issue #460200</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/15832">#15832</a>
+</td>
+        </tr>
+        
+        <tr>
           <td>Chrome
 </td>
           <td><p><code>display: table;</code> within <code>display: block;</code> forces sibling content to new line.</p>
@@ -232,6 +241,17 @@
           <td><a href="https://code.google.com/p/chromium/issues/detail?id=429375">Chromium issue #429375</a>
 </td>
           <td><a href="https://github.com/twbs/bootstrap/issues/14409">#14409</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p><code>:focus</code> <code>outline</code> style causes cursor to not be displayed when toggling a <code>readonly</code> <code>&lt;input&gt;</code> to read-write.</p>
+</td>
+          <td><a href="https://code.google.com/p/chromium/issues/detail?id=465274">Chromium issue #465274</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/16022">#16022</a>
 </td>
         </tr>
         
@@ -302,6 +322,17 @@
         </tr>
         
         <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Caps Lock indicator not shown in <code>&lt;input type="password"&gt;</code> with <code>display: block</code></p>
+</td>
+          <td><a href="https://bugs.webkit.org/show_bug.cgi?id=141804">WebKit bug #141804</a>, <a href="https://openradar.appspot.com/19892433">Apple Safari Radar #19892433</a>
+</td>
+          <td><a href="https://github.com/twbs/bootstrap/issues/15832">#15832</a>
+</td>
+        </tr>
+        
+        <tr>
           <td>Safari (iOS)
 </td>
           <td><p><code>transform: translate3d(0,0,0);</code> rendering bug.</p>
@@ -362,9 +393,9 @@
 
     <p>Forked from <a href="http://twbs.github.com/bootstrap/" target="_blank">Bootstrap</a> and built with all the love in the world by <a href="https://github.com/todc" target="_blank">todc</a>.</p>
     <p>Maintained with the help of <a href="https://github.com/todc/todc-bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p>Code licensed under <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <p>Code licensed under <a rel="license" href="https://github.com/todc/todc-bootstrap/blob/master/LICENSE" target="_blank">MIT License</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links text-muted">
-      <li>Currently v3.3.2-3.3.2</li>
+      <li>Currently v3.3.4-3.3.4</li>
       <li>&middot;</li>
       <li><a href="https://github.com/todc/todc-bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -377,7 +408,7 @@
       <li><a href="https://github.com/todc/todc-bootstrap/releases">Releases</a></li>
     </ul>
     <ul class="bs-docs-footer-links muted">
-      <li>Bootstrap v3.3.2</li>
+      <li>Bootstrap v3.3.4</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -403,19 +434,11 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<script src="../dist/js/bootstrap.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
 
 
 
-  
-  <script src="../assets/js/vendor/select2.js"></script>
-  
-  <script src="../assets/js/vendor/holder.js"></script>
-  
-  <script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
-  
-  <script src="../assets/js/src/application.js"></script>
-  
+<script src="../assets/js/docs.min.js"></script>
 
 
 

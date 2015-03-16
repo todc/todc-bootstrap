@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.3.2-3.3.2 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.3.4-3.3.4 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2015 Tim O'Donnell
  * Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -27,7 +27,7 @@
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -406,6 +406,7 @@ input[type="checkbox"]:checked::after,
   content: url(../img/checkmark.png);
 }
 .form-control-static {
+  min-height: 31px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -441,6 +442,7 @@ select[multiple].form-group-sm .form-control {
 }
 .form-group-sm .form-control-static {
   height: 26px;
+  min-height: 30px;
   padding: 3px 8px;
   font-size: 12px;
   line-height: 1.5;
@@ -477,6 +479,7 @@ select[multiple].form-group-lg .form-control {
 }
 .form-group-lg .form-control-static {
   height: 38px;
+  min-height: 32px;
   padding: 9px 14px;
   font-size: 14px;
   line-height: 1.3;
@@ -3218,6 +3221,10 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
 .badge {
   font-size: 12px;
 }
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
+  font-size: 11px;
+}
 .list-group-item.active > .badge,
 li.list-group-item.active a > .badge {
   color: #fff;
@@ -3669,6 +3676,10 @@ li.list-group-header {
   border-top: 1px solid #e5e5e5;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+.panel > .list-group {
+  padding: 15px 20px;
+  padding-top: 0;
 }
 .panel > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 2px;
