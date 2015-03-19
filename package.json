@@ -77,17 +77,12 @@
   ],
   "jspm": {
     "main": "js/todc-bootstrap",
-    "directories": {
-      "lib": "dist"
-    },
     "shim": {
       "js/todc-bootstrap": {
-        "imports": "jquery",
+        "deps": "jquery",
         "exports": "$"
-        }
+      }
     },
-    "buildConfig": {
-      "uglify": true
-    }
+    "files": ["css", "fonts", "img", "js"]
   }
 }
