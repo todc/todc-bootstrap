@@ -23,7 +23,7 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 ## Quick start
 
-Four quick start options are available:
+Several quick start options are available:
 
 - [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.3.4-3.3.4.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
