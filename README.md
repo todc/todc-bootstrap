@@ -23,11 +23,12 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 ## Quick start
 
-Three quick start options are available:
+Four quick start options are available:
 
 - [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.3.4-3.3.4.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
+- Install with [Composer](https://getcomposer.org): `composer require todc/todc-bootstrap`.
 
 Read the [Getting started page](https://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
