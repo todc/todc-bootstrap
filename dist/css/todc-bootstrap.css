@@ -106,13 +106,15 @@ mark,
 .text-primary {
   color: #4d90fe;
 }
-a.text-primary:hover {
+a.text-primary:hover,
+a.text-primary:focus {
   color: #1a70fe;
 }
 .text-warning {
   color: #333;
 }
-a.text-warning:hover {
+a.text-warning:hover,
+a.text-warning:focus {
   color: #1a1a1a;
 }
 .bg-primary {
