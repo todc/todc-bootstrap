@@ -121,13 +121,15 @@ a.text-warning:focus {
   color: #fff;
   background-color: #4d90fe;
 }
-a.bg-primary:hover {
+a.bg-primary:hover,
+a.bg-primary:focus {
   background-color: #1a70fe;
 }
 .bg-warning {
   background-color: #f9edbe;
 }
-a.bg-warning:hover {
+a.bg-warning:hover,
+a.bg-warning:focus {
   background-color: #f5e08f;
 }
 code {
