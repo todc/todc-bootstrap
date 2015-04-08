@@ -251,6 +251,26 @@ module.exports = function (grunt) {
       }
     },
 
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          minifyCSS: true,
+          minifyJS: true,
+          removeAttributeQuotes: true,
+          removeComments: true
+        },
+        expand: true,
+        cwd: '_gh_pages',
+        dest: '_gh_pages',
+        src: [
+          '**/*.html',
+          '!examples/**/*.html'
+        ]
+      }
+    },
+
     jade: {
       options: {
         pretty: true,
@@ -399,5 +419,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
 
-  grunt.registerTask('prep-release', ['jekyll:github', 'compress']);
+  grunt.registerTask('prep-release', ['jekyll:github', 'htmlmin', 'compress']);
 };
