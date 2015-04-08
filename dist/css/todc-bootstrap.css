@@ -443,7 +443,7 @@ select[multiple].input-sm {
 .form-group-sm .form-control-static {
   height: 26px;
   min-height: 30px;
-  padding: 3px 8px;
+  padding: 4px 8px;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -476,7 +476,7 @@ select[multiple].input-lg {
 .form-group-lg .form-control-static {
   height: 38px;
   min-height: 32px;
-  padding: 9px 14px;
+  padding: 10px 14px;
   font-size: 14px;
   line-height: 1.3;
 }
@@ -729,11 +729,13 @@ select[multiple].input-lg {
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 12.7px;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 4px;
+    font-size: 12px;
   }
 }
 .btn {
