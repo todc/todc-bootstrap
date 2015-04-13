@@ -4003,9 +4003,24 @@ li.list-group-header {
 .tooltip {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
   font-weight: bold;
+  line-height: 1.4;
   line-height: 1.25;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
   word-break: break-word;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+
+  line-break: auto;
 }
 .tooltip.in {
   filter: alpha(opacity=100);
@@ -4075,11 +4090,25 @@ li.list-group-header {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
   line-height: 1.4;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
   background-color: #fff;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
           box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+
+  line-break: auto;
 }
 .popover-title,
 .popover-footer {
