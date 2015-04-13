@@ -5,10 +5,11 @@
 
 .popover {
   padding: 0;
-  // Reset font and text properties given new insertion method
-  font-family: @font-family-base;
+  // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  .reset-text();
   font-size: @font-size-base;
-  line-height: @line-height-base;
+
   background-color: @popover-bg;
   border-radius: @border-radius-base;
   .box-shadow(0 2px 10px rgba(0,0,0,.2));

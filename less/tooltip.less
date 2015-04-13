@@ -5,11 +5,13 @@
 
 // Base class
 .tooltip {
-  // Reset font and text properties given new insertion method
-  font-family: @font-family-base;
+  // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  .reset-text();
   font-size: @font-size-mini;
   font-weight: bold;
   line-height: @line-height-xs;
+
   word-break: break-word;
 
   &.in     { .opacity(@tooltip-opacity); }
