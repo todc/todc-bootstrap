@@ -1,6 +1,6 @@
 # Contributing to TODC Bootstrap
 
-We welcome contributions from *everyone*. While contributing, please follow the project [code of conduct](https://github.com/todc-bootstrap/todc-bootstrap/blob/master/CODE_OF_CONDUCT.md), so that everyone can be included.
+We welcome contributions from *everyone*. While contributing, please follow the project [code of conduct](https://github.com/todc/todc-bootstrap/blob/master/CODE_OF_CONDUCT.md), so that everyone can be included.
 
 Looking to contribute something to TODC Bootstrap? **Here's how you can help.**
 
