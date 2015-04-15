@@ -110,6 +110,8 @@ Documentation for v2.3.2 has been made available for the time being at <https://
 
 ## Contributing
 
+We welcome contributions from *everyone*. While contributing, please follow the project [code of conduct](https://github.com/todc-bootstrap/todc-bootstrap/blob/master/CODE_OF_CONDUCT.md), so that everyone can be included.
+
 Please read through our [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
