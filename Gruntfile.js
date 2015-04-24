@@ -419,5 +419,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
 
-  grunt.registerTask('prep-release', ['jekyll:github', 'htmlmin', 'compress']);
+  grunt.registerTask('prep-release', ['dist', 'docs', 'jekyll:github', 'htmlmin', 'compress']);
 };
