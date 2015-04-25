@@ -16,9 +16,8 @@
   ],
   "homepage": "http://todc.github.io/todc-bootstrap",
   "main": [
+    "bootstrap/less/bootstrap.less",
     "less/todc-bootstrap.less",
-    "dist/css/bootstrap.css",
-    "dist/css/todc-bootstrap.css",
     "dist/js/bootstrap.js",
     "dist/js/todc-bootstrap.js"
   ],
