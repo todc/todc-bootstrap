@@ -326,6 +326,14 @@ module.exports = function (grunt) {
           return old ? RegExp.quote(old) : old;
         })(),
         replacement: grunt.option('newver'),
+        exclude: [
+          'dist/fonts',
+          'dist/img',
+          'docs/assets',
+          'fonts',
+          'img',
+          'node_modules'
+        ],
         recursive: true
       }
     },
