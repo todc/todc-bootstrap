@@ -15,6 +15,7 @@
     "google"
   ],
   "homepage": "http://todc.github.io/todc-bootstrap",
+  "moduleType": "globals",
   "main": [
     "bootstrap/less/bootstrap.less",
     "less/todc-bootstrap.less",
