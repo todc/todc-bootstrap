@@ -68,8 +68,7 @@
   "files": [
     "dist",
     "fonts",
-    "grunt/*.js",
-    "grunt/*.json",
+    "grunt",
     "img",
     "js/*.js",
     "less/**/*.less",
