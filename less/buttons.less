@@ -10,7 +10,7 @@
   font-weight: bold;
   cursor: default;
   background-clip: border-box;
-  .button-size(@padding-base-vertical; (@padding-base-horizontal + 4); @font-size-base; @line-height-computed; @border-radius-base);
+  .button-size(@padding-base-vertical; (@padding-base-horizontal + 4); @font-size-base; @line-height-computed; @btn-border-radius-base);
   .box-shadow(none);
 
   &:hover {
@@ -143,12 +143,12 @@
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-base);
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-base);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-base);
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-base);
 }
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-mini; @line-height-xs; @border-radius-small);
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-mini; @line-height-xs; @btn-border-radius-small);
 }
