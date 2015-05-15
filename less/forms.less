@@ -123,7 +123,9 @@ output {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: @input-height-base;
+    &.form-control {
+      line-height: @input-height-base;
+    }
 
     &.input-sm,
     .input-group-sm & {
