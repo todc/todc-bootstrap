@@ -132,7 +132,7 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       docs: {
-        src: ['docs/assets/css/anchor.css', 'docs/assets/css/src/docs.css']
+        src: ['docs/assets/css/src/docs.css']
       },
       examples: {
         expand: true,
@@ -177,7 +177,6 @@ module.exports = function (grunt) {
       docs: {
         src: [
           'docs/assets/css/src/pygments-manni.css',
-          'docs/assets/css/src/anchor.css',
           'docs/assets/css/src/select2.css',
           'docs/assets/css/src/docs.css'
         ],
