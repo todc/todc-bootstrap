@@ -124,7 +124,7 @@ documentation source files in [the `/todc-bootstrap/docs/` directory of the `mas
 Adhering to the following process is the best way to get your work
 included in the project:
 
-1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
+1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
 
    ```bash
