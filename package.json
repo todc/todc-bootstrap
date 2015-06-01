@@ -54,7 +54,7 @@
     "grunt-jscs": "~1.8.0",
     "grunt-sed": "twbs/grunt-sed#v0.2.0",
     "grunt-shell": "~1.1.2",
-    "load-grunt-tasks": "~3.1.0",
+    "load-grunt-tasks": "~3.2.0",
     "markdown-it": "^4.2.1",
     "time-grunt": "^1.2.0"
   },
