@@ -137,7 +137,7 @@ module.exports = function (grunt) {
       examples: {
         expand: true,
         cwd: 'docs/examples/',
-        src: '**/*.css',
+        src: ['**/*.css'],
         dest: 'docs/examples/'
       }
     },
