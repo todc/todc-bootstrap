@@ -78,9 +78,9 @@ output {
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
 
-  // Removes the border and background color around the caret in IE
+  // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
-    background-color: @input-bg;
+    background-color: transparent;
   }
 
   // Disabled and read-only inputs
@@ -90,8 +90,6 @@ output {
   // don't honor that edge case; we style them as disabled anyway.
   &[disabled],
   &[readonly],
-  &[disabled]::-ms-expand,
-  &[readonly]::-ms-expand,
   fieldset[disabled] & {
     background-color: @input-bg-disabled;
     border: 1px solid #e5e5e5;
