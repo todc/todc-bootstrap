@@ -78,6 +78,11 @@ output {
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
 
+  // Removes the border and background color around the caret in IE
+  &::-ms-expand {
+    background-color: @input-bg;
+  }
+
   // Disabled and read-only inputs
   //
   // HTML5 says that controls under a fieldset > legend:first-child won't be
@@ -85,6 +90,8 @@ output {
   // don't honor that edge case; we style them as disabled anyway.
   &[disabled],
   &[readonly],
+  &[disabled]::-ms-expand,
+  &[readonly]::-ms-expand,
   fieldset[disabled] & {
     background-color: @input-bg-disabled;
     border: 1px solid #e5e5e5;
