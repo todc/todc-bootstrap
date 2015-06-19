@@ -491,6 +491,11 @@ input[type="checkbox"],
     .control-label {
       padding-top: (@padding-base-vertical + 1); // Default padding plus a border
     }
+
+    // Re-override the feedback icon.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
   }
 
   // Form group sizes
