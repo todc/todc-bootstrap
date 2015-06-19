@@ -193,7 +193,7 @@ Version: 3.2 Timestamp: Mon Sep 10 10:38:04 PDT 2012
 }
 
 .select2-container .select2-choice div b {
-    background: url('../img/select2.png') no-repeat -30px 2px;
+    background: url('/assets/img/select2.png') no-repeat -30px 2px;
     display: block;
     width: 100%;
     height: 100%;
@@ -216,13 +216,13 @@ Version: 3.2 Timestamp: Mon Sep 10 10:38:04 PDT 2012
 }
 
 .select2-search input {
-    background: #fff url('../img/select2.png') no-repeat 100% -22px;
-    background: url('../img/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-    background: url('../img/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-    background: url('../img/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-    background: url('../img/select2.png') no-repeat 100% -22px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
-    background: url('../img/select2.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-    background: url('../img/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+    background: #fff url('/assets/img/select2.png') no-repeat 100% -22px;
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+    background: url('/assets/img/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
     padding: 4px 20px 4px 5px;
     outline: 0;
     border: 1px solid #aaa;
@@ -595,7 +595,7 @@ disabled look for already selected choices in the results dropdown
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   .select2-search input, .select2-container .select2-choice div b {
-    background-image: url('../img/select2x2.png') !important;
+    background-image: url('/assets/img/select2x2.png') !important;
     background-repeat: no-repeat !important;
     background-size: 60px 40px !important;
   }
