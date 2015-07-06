@@ -145,6 +145,8 @@ Additional labels for pre-release and build metadata are available as extensions
 
 For more information on SemVer, please visit <http://semver.org/>.
 
+See [the Releases section of our GitHub project](https://github.com/todc/todc-bootstrap/releases) for changelogs for each release version of TODC Bootstrap.
+
 
 
 ## Creators
