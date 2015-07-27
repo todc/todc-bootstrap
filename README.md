@@ -1,16 +1,16 @@
 ## Table of contents
 
-- [Overview](#overview)
-- [Quick start](#quick-start)
-- [Compatibility](#compatibility)
-- [Requirements](#requirements)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Copyright and license](#copyright-and-license)
-- [Acknowledgements](#acknowledgements)
+* [Overview](#overview)
+* [Quick start](#quick-start)
+* [Compatibility](#compatibility)
+* [Requirements](#requirements)
+* [Bugs and feature requests](#bugs-and-feature-requests)
+* [Documentation](#documentation)
+* [Contributing](#contributing)
+* [Versioning](#versioning)
+* [Creators](#creators)
+* [Copyright and license](#copyright-and-license)
+* [Acknowledgements](#acknowledgements)
 
 
 ## Overview ##
@@ -25,10 +25,10 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.3.5-3.3.5.zip).
-- Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
-- Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
-- Install with [Composer](https://getcomposer.org): `composer require todc/todc-bootstrap`.
+* [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.3.5-3.3.5.zip).
+* Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
+* Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
+* Install with [Composer](https://getcomposer.org): `composer require todc/todc-bootstrap`.
 
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap) source.
 
@@ -98,7 +98,7 @@ TODC Bootstrap's documentation, included in this repo in the root directory, is 
 ### Running documentation locally
 
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v2.5.x).
-  - **Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
+  **Note for Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
 2. Install the Ruby-based syntax highlighter, [Rouge](https://github.com/jneen/rouge), with `gem install rouge`.
 3. From the root `/todc-bootstrap` directory, run `jekyll serve` in the command line.
 4. Open <http://localhost:9002> in your browser, and voilà.
@@ -153,7 +153,7 @@ See [the Releases section of our GitHub project](https://github.com/todc/todc-bo
 
 **Tim O'Donnell**
 
-- <https://github.com/todc>
+* <https://github.com/todc>
 
 
 
