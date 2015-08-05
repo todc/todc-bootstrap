@@ -736,7 +736,7 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 12.7px;
+    padding-top: 10px;
     font-size: 14px;
   }
 }
@@ -824,9 +824,6 @@ select[multiple].input-lg {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
 .btn-default.disabled:hover,
 .btn-default[disabled]:hover,
 fieldset[disabled] .btn-default:hover,
@@ -835,13 +832,7 @@ fieldset[disabled] .btn-default:hover,
 fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
+fieldset[disabled] .btn-default.focus {
   background-color: #f5f5f5;
   background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
   background-image:      -o-linear-gradient(top, #f5f5f5 0%, #f1f1f1 100%);
@@ -970,9 +961,6 @@ fieldset[disabled] .btn-default:active {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,
@@ -981,13 +969,7 @@ fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
+fieldset[disabled] .btn-primary.focus {
   background-color: #4d90fe;
   background-image: -webkit-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
   background-image:      -o-linear-gradient(top, #4d90fe 0%, #4787ed 100%);
@@ -1059,9 +1041,6 @@ fieldset[disabled] .btn-primary.active {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-success.disabled,
-.btn-success[disabled],
-fieldset[disabled] .btn-success,
 .btn-success.disabled:hover,
 .btn-success[disabled]:hover,
 fieldset[disabled] .btn-success:hover,
@@ -1070,13 +1049,7 @@ fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
-fieldset[disabled] .btn-success.focus,
-.btn-success.disabled:active,
-.btn-success[disabled]:active,
-fieldset[disabled] .btn-success:active,
-.btn-success.disabled.active,
-.btn-success[disabled].active,
-fieldset[disabled] .btn-success.active {
+fieldset[disabled] .btn-success.focus {
   background-color: #35aa47;
   background-image: -webkit-linear-gradient(top, #35aa47 0%, #35aa47 100%);
   background-image:      -o-linear-gradient(top, #35aa47 0%, #35aa47 100%);
@@ -1148,9 +1121,6 @@ fieldset[disabled] .btn-success.active {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-info.disabled,
-.btn-info[disabled],
-fieldset[disabled] .btn-info,
 .btn-info.disabled:hover,
 .btn-info[disabled]:hover,
 fieldset[disabled] .btn-info:hover,
@@ -1159,13 +1129,7 @@ fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
 .btn-info.disabled.focus,
 .btn-info[disabled].focus,
-fieldset[disabled] .btn-info.focus,
-.btn-info.disabled:active,
-.btn-info[disabled]:active,
-fieldset[disabled] .btn-info:active,
-.btn-info.disabled.active,
-.btn-info[disabled].active,
-fieldset[disabled] .btn-info.active {
+fieldset[disabled] .btn-info.focus {
   background-color: #5bc0de;
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #5bc0de 100%);
@@ -1237,9 +1201,6 @@ fieldset[disabled] .btn-info.active {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-warning.disabled,
-.btn-warning[disabled],
-fieldset[disabled] .btn-warning,
 .btn-warning.disabled:hover,
 .btn-warning[disabled]:hover,
 fieldset[disabled] .btn-warning:hover,
@@ -1248,13 +1209,7 @@ fieldset[disabled] .btn-warning:hover,
 fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled.focus,
 .btn-warning[disabled].focus,
-fieldset[disabled] .btn-warning.focus,
-.btn-warning.disabled:active,
-.btn-warning[disabled]:active,
-fieldset[disabled] .btn-warning:active,
-.btn-warning.disabled.active,
-.btn-warning[disabled].active,
-fieldset[disabled] .btn-warning.active {
+fieldset[disabled] .btn-warning.focus {
   background-color: #fbb450;
   background-image: -webkit-linear-gradient(top, #fbb450 0%, #faa937 100%);
   background-image:      -o-linear-gradient(top, #fbb450 0%, #faa937 100%);
@@ -1326,9 +1281,6 @@ fieldset[disabled] .btn-warning.active {
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
 }
-.btn-danger.disabled,
-.btn-danger[disabled],
-fieldset[disabled] .btn-danger,
 .btn-danger.disabled:hover,
 .btn-danger[disabled]:hover,
 fieldset[disabled] .btn-danger:hover,
@@ -1337,13 +1289,7 @@ fieldset[disabled] .btn-danger:hover,
 fieldset[disabled] .btn-danger:focus,
 .btn-danger.disabled.focus,
 .btn-danger[disabled].focus,
-fieldset[disabled] .btn-danger.focus,
-.btn-danger.disabled:active,
-.btn-danger[disabled]:active,
-fieldset[disabled] .btn-danger:active,
-.btn-danger.disabled.active,
-.btn-danger[disabled].active,
-fieldset[disabled] .btn-danger.active {
+fieldset[disabled] .btn-danger.focus {
   background-color: #dd4b39;
   background-image: -webkit-linear-gradient(top, #dd4b39 0%, #d14836 100%);
   background-image:      -o-linear-gradient(top, #dd4b39 0%, #d14836 100%);
