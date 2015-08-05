@@ -45,12 +45,9 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    &,
     &:hover,
     &:focus,
-    &.focus,
-    &:active,
-    &.active {
+    &.focus {
       border: 1px solid @border-color;
       #gradient > .vertical(@start-color: @start-color; @end-color: @end-color);
       .reset-filter();
