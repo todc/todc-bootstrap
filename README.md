@@ -21,6 +21,7 @@ Bootstrap, themed with Google's UI in mind.
 
 TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and maintained with the support and involvement of the community.
 
+
 ## Quick start
 
 Several quick start options are available:
@@ -69,7 +70,6 @@ todc-bootstrap/
 We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
 
-
 ## Compatibility ##
 
 This is being tested in the latest versions of Chrome, Firefox, and IE8+.
@@ -79,11 +79,11 @@ The following projects are specifically designed for use with todc-bootstrap:
 * [todc-select2](https://github.com/todc/todc-select2) - Google-themed select menus
 * [todc-datepicker](https://github.com/todc/todc-datepicker) - Google-themed datepicker component
 
+
 ## Requirements ##
 
 * [LESS](http://lesscss.org) - for compiling `.less` files into CSS
 * [Bootstrap](https://github.com/twbs/bootstrap) - this will be automatically checked out, if necessary, during the build process
-
 
 
 ## Bugs and feature requests
@@ -112,7 +112,6 @@ Documentation for v2.3.2 has been made available for the time being at <https://
 [Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
 
 
-
 ## Contributing
 
 We welcome contributions from *everyone*. While contributing, please follow the project [code of conduct](https://github.com/todc/todc-bootstrap/blob/master/CODE_OF_CONDUCT.md), so that everyone can be included.
@@ -122,7 +121,6 @@ Please read through our [contributing guidelines](https://github.com/todc/todc-b
 Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
 Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-
 
 
 ## Versioning
@@ -148,7 +146,6 @@ For more information on SemVer, please visit <http://semver.org/>.
 See [the Releases section of our GitHub project](https://github.com/todc/todc-bootstrap/releases) for changelogs for each release version of TODC Bootstrap.
 
 
-
 ## Creators
 
 **Tim O'Donnell**
@@ -156,13 +153,11 @@ See [the Releases section of our GitHub project](https://github.com/todc/todc-bo
 * <https://github.com/todc>
 
 
-
 ## Copyright and license
 
 Copyright 2011-2015 Tim O'Donnell. Code released under [the MIT license](https://github.com/todc/todc-bootstrap/blob/master/LICENSE). Docs released under [Creative Commons Attribution 3.0 Unported](https://github.com/todc/todc-bootstrap/blob/master/docs/LICENSE).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
-
 
 
 ## Acknowledgements ##
