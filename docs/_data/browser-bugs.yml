@@ -283,9 +283,13 @@
 -
   browser: >
     Safari (iOS)
+    Safari (iOS 9+)
   summary: >
     Tapping below `<input>`s can focus them in some cases
+    Sometimes excessive automatic zoom is applied after opening a modal, and the user isn't allowed to zoom out
   upstream_bug: >
     WebKit#146244, Safari#21509310
+    WebKit#150715
   origin: >
     Bootstrap#15968
+    WebKit#138201
