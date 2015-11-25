@@ -90,6 +90,10 @@ The following projects are specifically designed for use with todc-bootstrap:
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/todc/todc-bootstrap/issues/new).
 
+Note that **feature requests must target [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev),** because TODC Bootstrap v3 is now in maintenance mode and is closed off to new features. This is so that we can focus our efforts on TODC Bootstrap v4.
+
+**NOTE:** The `v4-dev` branch is not yet avaiable.
+
 
 ## Documentation
 
@@ -120,7 +124,11 @@ Please read through our [contributing guidelines](https://github.com/todc/todc-b
 
 Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
+**TODC Bootstrap v3 is now closed off to new features.** It has gone into maintenance mode so that we can focus our efforts on [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev), the future of the theme. Pull requests which add new features (rather than fix bugs) should target [TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev) instead.
+
 Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+
+**NOTE:** The `v4-dev` branch is not yet avaiable.
 
 
 ## Versioning
