@@ -219,7 +219,7 @@ By contributing to the documentation, you agree to license your contribution und
 1. Update version numbers using `grunt change-version-number --oldver=A.B.C --newver=X.Y.Z`. Review the changes and stage them manually.
 2. Run `grunt` one last time.
 3. Push to `master` branch.
-4. Merge `master` into `gh-pages`.
-5. Generate `todc-bootstrap-A.B.C-X.Y.Z-dist.zip` file for release using `grunt compress`.
+4. Run grunt prep-release.
+5. Merge `master` into `gh-pages`.
 6. Create release on GitHub with `/dist/` folder and release notes.
 7. Push `gh-pages`.
