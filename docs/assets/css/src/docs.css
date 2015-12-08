@@ -20,7 +20,7 @@
 
 body {
   position: relative; /* For scrollspy */
-  padding-top: 46px; /* Account for fixed masthead */
+  padding-top: 94px; /* Account for fixed masthead */
 }
 
 /* Keep code small in tables on account of limited space */
@@ -1449,17 +1449,25 @@ h1[id] {
 
 /* v4 notice above main navbar */
 .v4-tease {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: block;
   padding: 15px 20px;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  background-color: #0275d8;
+  background-color: #1b6ec1;
 }
 .v4-tease:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #0269c2;
+  background-color: #2d87e2;
+}
+
+.bs-docs-navbar-masthead {
+  top: 48px;
 }
 
 /* Better spacing on download options in getting started */
