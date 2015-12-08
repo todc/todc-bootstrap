@@ -30,6 +30,7 @@ bs:
     sass:           https://github.com/twbs/bootstrap-sass/archive/v3.3.6.tar.gz
   blog:             http://blog.getbootstrap.com
   expo:             http://expo.getbootstrap.com
+  themes:           http://themes.getbootstrap.com
   docs:             http://getbootstrap.com
 
 sass_repo:        https://github.com/twbs/bootstrap-sass
