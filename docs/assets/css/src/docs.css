@@ -1453,6 +1453,7 @@ h1[id] {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1030;
   display: block;
   padding: 15px 20px;
   font-weight: bold;
