@@ -309,25 +309,6 @@ module.exports = function (grunt) {
       }
     },
 
-    sed: {
-      versionNumber: {
-        pattern: (function () {
-          var old = grunt.option('oldver');
-          return old ? RegExp.quote(old) : old;
-        })(),
-        replacement: grunt.option('newver'),
-        exclude: [
-          'dist/fonts',
-          'dist/img',
-          'docs/assets',
-          'fonts',
-          'img',
-          'node_modules'
-        ],
-        recursive: true
-      }
-    },
-
     compress: {
       main: {
         options: {
@@ -394,11 +375,6 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:bootstrap', 'copy:images', 'test']);
-
-  // Version numbering task.
-  // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
-  // This can be overzealous, so its changes should always be manually reviewed!
-  grunt.registerTask('change-version-number', 'sed');
 
   grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
 

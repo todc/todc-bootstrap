@@ -17,6 +17,7 @@
   "homepage": "http://todc.github.com/todc-bootstrap/",
   "author": "Tim O'Donnell",
   "scripts": {
+    "change-version": "node grunt/change-version.js",
     "test": "grunt test"
   },
   "style": [
@@ -52,10 +53,10 @@
     "grunt-html": "~5.0.1",
     "grunt-jekyll": "~0.4.2",
     "grunt-jscs": "~2.3.0",
-    "grunt-sed": "twbs/grunt-sed#v0.2.0",
     "grunt-shell": "~1.1.2",
     "load-grunt-tasks": "~3.3.0",
     "markdown-it": "^5.0.0",
+    "shelljs": "^0.5.3",
     "time-grunt": "^1.2.1"
   },
   "engines": {

@@ -233,7 +233,7 @@ By contributing to the documentation, you agree to license your contribution und
 
 ## Release checklist
 
-1. Update version numbers using `grunt change-version-number --oldver=A.B.C --newver=X.Y.Z`. Review the changes and stage them manually.
+1. Update version numbers using `npm run change-version-number old_version new_version`. Review the changes and stage them manually.
 2. Run `grunt` one last time.
 3. Push to `master` branch.
 4. Run grunt prep-release.
