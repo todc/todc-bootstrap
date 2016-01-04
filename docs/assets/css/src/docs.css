@@ -1467,6 +1467,13 @@ h1[id] {
   background-color: #2d87e2;
 }
 
+/* Nullify ill-advised printing of hrefs; see #18711 */
+@media print {
+  a[href]:after {
+    content: "" !important;
+  }
+}
+
 .bs-docs-navbar-masthead {
   top: 48px;
 }
