@@ -59,7 +59,7 @@
       $('.bs-top').affix()
     }, 100)
 
-    // theme toggler
+    // Theme toggler
     ;(function () {
       var $stylesheetLink = $('#bs-theme-stylesheet')
       var $themeBtn = $('.bs-docs-theme-toggle')
