@@ -231,7 +231,9 @@ module.exports = function (grunt) {
 
     jekyll: {
       options: {
-        config: '_config.yml'
+        bundleExec: true,
+        config: '_config.yml',
+        incremental: false
       },
       docs: {},
       github: {
