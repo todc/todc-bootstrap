@@ -31,7 +31,7 @@
     })
 
     // Kill links
-    $('.bs-docs-container [href=#]').click(function (e) {
+    $('.bs-docs-container [href="#"]').click(function (e) {
       e.preventDefault()
     })
 
