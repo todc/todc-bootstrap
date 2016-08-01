@@ -1,6 +1,6 @@
 /*!
  * Bootstrap Docs (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
@@ -20,7 +20,7 @@
 
 body {
   position: relative; /* For scrollspy */
-  padding-top: 46px; /* Account for fixed masthead */
+  padding-top: 94px; /* Account for fixed masthead */
 }
 
 /* Keep code small in tables on account of limited space */
@@ -652,6 +652,7 @@ h1[id] {
   width: 180px;
   height: 20px;
   margin-top: 6px;
+  border: none;
 }
 .bs-team img {
   float: left;
@@ -1445,6 +1446,37 @@ h1[id] {
   outline: thin dotted \9; /* IE6-9 */
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+/* v4 notice above main navbar */
+.v4-tease {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  display: block;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #1b6ec1;
+}
+.v4-tease:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2d87e2;
+}
+
+/* Nullify ill-advised printing of hrefs; see #18711 */
+@media print {
+  a[href]:after {
+    content: "" !important;
+  }
+}
+
+.bs-docs-navbar-masthead {
+  top: 48px;
 }
 
 /* Better spacing on download options in getting started */
