@@ -17,12 +17,12 @@ gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  3.3.7-3.3.7
+current_version:  3.3.7-3.3.8
 repo:             https://github.com/todc/todc-bootstrap
 
 download:
-  source:         https://github.com/todc/todc-bootstrap/archive/v3.3.7-3.3.7.zip
-  dist:           https://github.com/todc/todc-bootstrap/releases/download/v3.3.7-3.3.7/todc-bootstrap-3.3.7-3.3.7-dist.zip
+  source:         https://github.com/todc/todc-bootstrap/archive/v3.3.7-3.3.8.zip
+  dist:           https://github.com/todc/todc-bootstrap/releases/download/v3.3.7-3.3.8/todc-bootstrap-3.3.7-3.3.8-dist.zip
 
 bs:
   current_version:  3.3.7
