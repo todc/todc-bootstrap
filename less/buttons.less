@@ -13,6 +13,15 @@
   .button-size(@padding-base-vertical; (@padding-base-horizontal + 4); @font-size-base; @line-height-computed; @btn-border-radius-base);
   .box-shadow(none);
 
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
+
   &:hover {
     .box-shadow(0 1px 1px rgba(0,0,0,0.1));
   }
@@ -55,7 +64,6 @@
   &.focus {
     /* Blue border on button focus. */
     border-color: @brand-primary;
-    outline-style: none;
     background-color: @btn-default-bg;
   }
 
