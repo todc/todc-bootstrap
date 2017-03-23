@@ -1,6 +1,6 @@
 /*!
- * TODC Bootstrap v3.3.7-3.3.7 (http://todc.github.com/todc-bootstrap/)
- * Copyright 2011-2016 Tim O'Donnell
+ * TODC Bootstrap v3.3.7-3.3.8 (http://todc.github.com/todc-bootstrap/)
+ * Copyright 2011-2017 Tim O'Donnell
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license
  */
 .panel-group .panel-heading a:before,
@@ -758,6 +758,14 @@ select[multiple].input-lg {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
 .btn:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
@@ -885,7 +893,6 @@ fieldset[disabled] .btn-default.focus {
   background-color: #f3f3f3;
   /* Blue border on button focus. */
   border-color: #4d90fe;
-  outline-style: none;
 }
 .btn-default.disabled:hover,
 .btn-default[disabled]:hover,
