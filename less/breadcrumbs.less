@@ -66,7 +66,27 @@
   background-color: @breadcrumb-small-bg;
   border-bottom: 1px solid @breadcrumb-small-border;
 
+  > li {
+    + li {
+      .chevron(right, 5px, @breadcrumb-small-bg, 9px, 1px, #666);
+    }
+    + li:before,
+    + li:after {
+      left: -16px;
+    }
+  }
+
   &.breadcrumb-inverse {
     background-color: @breadcrumb-inverse-bg;
+
+  > li {
+    + li {
+      .chevron(right, 5px, @breadcrumb-inverse-bg, 9px, 1px, #666);
+    }
+    + li:before,
+    + li:after {
+      left: -16px;
+    }
   }
+}
 }

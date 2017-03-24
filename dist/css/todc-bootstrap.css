@@ -2843,8 +2843,84 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
 }
+.breadcrumb-sm > li + li {
+  position: relative;
+  display: inline-block;
+}
+.breadcrumb-sm > li + li:before {
+  border-radius: 5px;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+}
+.breadcrumb-sm > li + li:before {
+  border: 7px solid transparent;
+}
+.breadcrumb-sm > li + li:after {
+  border: 5px solid transparent;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  top: 9px;
+  left: 100%;
+}
+.breadcrumb-sm > li + li:before {
+  margin-top: -7px;
+  border-left: 7px solid;
+  border-left-color: #666;
+}
+.breadcrumb-sm > li + li:after {
+  margin-top: -5px;
+  border-left: 5px solid #fff;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  left: -16px;
+}
 .breadcrumb-sm.breadcrumb-inverse {
   background-color: #393832;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li {
+  position: relative;
+  display: inline-block;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  border-radius: 5px;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  border: 7px solid transparent;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  border: 5px solid transparent;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  top: 9px;
+  left: 100%;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  margin-top: -7px;
+  border-left: 7px solid;
+  border-left-color: #666;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  margin-top: -5px;
+  border-left: 5px solid #393832;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  left: -16px;
 }
 .pagination {
   margin: 18px 0;
