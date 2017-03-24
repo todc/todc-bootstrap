@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.3.7-3.3.8 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.3.7-3.3.9 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2017 Tim O'Donnell
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license
  */
@@ -410,7 +410,7 @@ input[type="checkbox"]:checked::after,
   top: -6px;
   left: -5px;
   display: block;
-  content: url(../img/checkmark.png);
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtklEQVQ4y2P4//8/A7Ux1Q0cxoaCADIbCUgCMTvVXAoE5kA8CYidyXYpGrAH4iVAHIXiCwoMDQTimUBcBsRMlBrKCsTpUANzkC0j11BuIK6EGlgKsoAkQ4FgChD7AzELVI8YEDdDDawDYk6YQaQY6gg1oAqILYC4D8oHGcyLbBAphoJAKtQgGO4EYiHk2CLHUJAXm6AG9gCxNHoSIMdQEJCFGqiALaGSayjMxQwUGzq0S6nhZygA2ojsbh6J67kAAAAASUVORK5CYII=);
 }
 .form-control-static {
   min-height: 31px;
@@ -2843,8 +2843,84 @@ fieldset[disabled] .navbar-toolbar.navbar-inverse .btn-link:focus {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
 }
+.breadcrumb-sm > li + li {
+  position: relative;
+  display: inline-block;
+}
+.breadcrumb-sm > li + li:before {
+  border-radius: 5px;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+}
+.breadcrumb-sm > li + li:before {
+  border: 7px solid transparent;
+}
+.breadcrumb-sm > li + li:after {
+  border: 5px solid transparent;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  top: 9px;
+  left: 100%;
+}
+.breadcrumb-sm > li + li:before {
+  margin-top: -7px;
+  border-left: 7px solid;
+  border-left-color: #666;
+}
+.breadcrumb-sm > li + li:after {
+  margin-top: -5px;
+  border-left: 5px solid #fff;
+}
+.breadcrumb-sm > li + li:before,
+.breadcrumb-sm > li + li:after {
+  left: -16px;
+}
 .breadcrumb-sm.breadcrumb-inverse {
   background-color: #393832;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li {
+  position: relative;
+  display: inline-block;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  border-radius: 5px;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  border: 7px solid transparent;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  border: 5px solid transparent;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  top: 9px;
+  left: 100%;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before {
+  margin-top: -7px;
+  border-left: 7px solid;
+  border-left-color: #666;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  margin-top: -5px;
+  border-left: 5px solid #393832;
+}
+.breadcrumb-sm.breadcrumb-inverse > li + li:before,
+.breadcrumb-sm.breadcrumb-inverse > li + li:after {
+  left: -16px;
 }
 .pagination {
   margin: 18px 0;
