@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.3.7-3.3.9 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.3.7-3.3.10 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2017 Tim O'Donnell
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license
  */
@@ -765,6 +765,8 @@ select[multiple].input-lg {
 .btn:active.focus,
 .btn.active.focus {
   outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .btn:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
