@@ -1,5 +1,5 @@
 /*!
- * TODC Bootstrap v3.3.7-3.3.11 (http://todc.github.com/todc-bootstrap/)
+ * TODC Bootstrap v3.3.7-3.3.12 (http://todc.github.com/todc-bootstrap/)
  * Copyright 2011-2017 Tim O'Donnell
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license
  */
@@ -411,6 +411,16 @@ input[type="checkbox"]:checked::after,
   left: -5px;
   display: block;
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtklEQVQ4y2P4//8/A7Ux1Q0cxoaCADIbCUgCMTvVXAoE5kA8CYidyXYpGrAH4iVAHIXiCwoMDQTimUBcBsRMlBrKCsTpUANzkC0j11BuIK6EGlgKsoAkQ4FgChD7AzELVI8YEDdDDawDYk6YQaQY6gg1oAqILYC4D8oHGcyLbBAphoJAKtQgGO4EYiHk2CLHUJAXm6AG9gCxNHoSIMdQEJCFGqiALaGSayjMxQwUGzq0S6nhZygA2ojsbh6J67kAAAAASUVORK5CYII=);
+}
+input[type="checkbox"]:indeterminate,
+.checkbox input[type="checkbox"]:indeterminate,
+.checkbox-inline input[type="checkbox"]:indeterminate {
+  background-color: #999;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'><path stroke='#fff' d='M0 2h4'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
 }
 .form-control-static {
   min-height: 31px;
