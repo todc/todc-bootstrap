@@ -123,10 +123,13 @@
   }
   &,
   &:hover,
-  &:focus,
-  &.focus,
   &:active {
     border-color: transparent;
+  }
+  &:focus,
+  &.focus, {
+    /* Blue border on button focus. */
+    border-color: @brand-primary;
   }
   &:hover,
   &:focus,
