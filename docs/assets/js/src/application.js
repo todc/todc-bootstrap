@@ -103,6 +103,9 @@
     // Popover demos
     $('.bs-docs-popover').popover()
 
+    // Indeterminate checkbox example
+    $('.bd-example-indeterminate [type="checkbox"]').prop('indeterminate', true)
+
     // Button state demo
     $('#loading-example-btn').on('click', function () {
       var $btn = $(this)

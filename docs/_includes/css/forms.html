@@ -327,6 +327,23 @@
 </div>
 {% endhighlight %}
 
+  <h4>Indeterminate Checkbox</h4>
+  <div class="bs-example" data-example-id="block-checkboxes-indeterminate">
+    <form>
+      <p>Checkboxes can also utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+      <div class="checkbox bd-example-indeterminate">
+        <label>
+          <input type="checkbox" value="">
+          Option three is indeterminate
+        </label>
+      </div>
+    </form>
+    <p>If you're using jQuery, something like this should suffice:</p>
+{% highlight js %}
+$('.your-checkbox').prop('indeterminate', true)
+{% endhighlight %}
+  </div><!-- /.bs-example -->
+
   <h4>Inline checkboxes and radios</h4>
   <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
   <div class="bs-example" data-example-id="inline-checkboxes-radios">

@@ -231,6 +231,14 @@ input[type="checkbox"],
     top: -6px;
     left: -5px;
   }
+
+  &:indeterminate {
+    background-color: @gray-light;
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'><path stroke='#fff' d='M0 2h4'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70% 70%;
+  }
 }
 
 
