@@ -765,8 +765,6 @@ select[multiple].input-lg {
 .btn:active.focus,
 .btn.active.focus {
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 .btn:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
@@ -828,8 +826,8 @@ select[multiple].input-lg {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-default:focus,
-.btn-default.focus {
+.btn-default:focus:not(:active):not(.active),
+.btn-default.focus:not(:active):not(.active) {
   border: 1px solid #dcdcdc;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
@@ -964,8 +962,8 @@ fieldset[disabled] .btn-default:active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-primary:focus,
-.btn-primary.focus {
+.btn-primary:focus:not(:active):not(.active),
+.btn-primary.focus:not(:active):not(.active) {
   border: 1px solid #3079ed;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
@@ -1044,8 +1042,8 @@ fieldset[disabled] .btn-primary.focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-success:focus,
-.btn-success.focus {
+.btn-success:focus:not(:active):not(.active),
+.btn-success.focus:not(:active):not(.active) {
   border: 1px solid #359947;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
@@ -1124,8 +1122,8 @@ fieldset[disabled] .btn-success.focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-info:focus,
-.btn-info.focus {
+.btn-info:focus:not(:active):not(.active),
+.btn-info.focus:not(:active):not(.active) {
   border: 1px solid #46b8da;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
@@ -1204,8 +1202,8 @@ fieldset[disabled] .btn-info.focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-warning:focus,
-.btn-warning.focus {
+.btn-warning:focus:not(:active):not(.active),
+.btn-warning.focus:not(:active):not(.active) {
   border: 1px solid #faa328;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
@@ -1284,8 +1282,8 @@ fieldset[disabled] .btn-warning.focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
 }
-.btn-danger:focus,
-.btn-danger.focus {
+.btn-danger:focus:not(:active):not(.active),
+.btn-danger.focus:not(:active):not(.active) {
   border: 1px solid #c6322a;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
