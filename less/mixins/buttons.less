@@ -28,6 +28,13 @@
     .reset-filter();
     background-color: darken(@end-color, 5%);
   }
+  &:not(.btn-default) {
+    &:focus,
+    &.focus {
+      border: 1px solid @border-color;
+      .box-shadow(inset 0 0 0 1px #fff);
+    }
+  }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
@@ -36,13 +43,6 @@
     #gradient > .vertical(@start-color: @start-color; @end-color: darken(@end-color, 10%));
     .reset-filter();
     .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.3));
-  }
-  &:focus,
-  &.focus {
-    &:not(:active):not(.active) {
-      border: 1px solid @border-color;
-      .box-shadow(inset 0 0 0 1px #fff);
-    }
   }
   &.disabled,
   &[disabled],
