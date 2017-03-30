@@ -1323,6 +1323,179 @@ fieldset[disabled] .btn-danger.focus {
   color: #c6322a;
   background-color: #fff;
 }
+.btn-flat-default {
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-default:hover {
+  color: #333;
+  background-color: #eee;
+}
+.btn-flat-default:hover:focus,
+.btn-flat-default:hover.focus,
+.btn-flat-default:hover:active,
+.btn-flat-default:hover.active {
+  color: #333;
+}
+.btn-flat-default:focus,
+.btn-flat-default.focus {
+  color: #333;
+  border: 1px solid #eee;
+}
+.btn-flat-default:active,
+.btn-flat-default.active {
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+.btn-flat-default:hover,
+.btn-flat-default:active,
+.btn-flat-default.active {
+  text-shadow: none;
+  border-color: #c6c6c6;
+}
+.btn-flat-default:focus,
+.btn-flat-default.focus {
+  /* Blue border on button focus. */
+  border-color: #4d90fe;
+}
+.btn-flat-primary {
+  color: #4d90fe;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-primary:hover {
+  color: #fff;
+  background-color: #4d90fe;
+}
+.btn-flat-primary:hover:focus,
+.btn-flat-primary:hover.focus,
+.btn-flat-primary:hover:active,
+.btn-flat-primary:hover.active {
+  color: #fff;
+}
+.btn-flat-primary:focus,
+.btn-flat-primary.focus {
+  color: #4d90fe;
+  border: 1px solid #4d90fe;
+}
+.btn-flat-primary:active,
+.btn-flat-primary.active {
+  border-color: #1a70fe;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+.btn-flat-success {
+  color: #35aa47;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-success:hover {
+  color: #fff;
+  background-color: #35aa47;
+}
+.btn-flat-success:hover:focus,
+.btn-flat-success:hover.focus,
+.btn-flat-success:hover:active,
+.btn-flat-success:hover.active {
+  color: #fff;
+}
+.btn-flat-success:focus,
+.btn-flat-success.focus {
+  color: #35aa47;
+  border: 1px solid #35aa47;
+}
+.btn-flat-success:active,
+.btn-flat-success.active {
+  border-color: #298337;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+.btn-flat-info {
+  color: #5bc0de;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-info:hover {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.btn-flat-info:hover:focus,
+.btn-flat-info:hover.focus,
+.btn-flat-info:hover:active,
+.btn-flat-info:hover.active {
+  color: #fff;
+}
+.btn-flat-info:focus,
+.btn-flat-info.focus {
+  color: #5bc0de;
+  border: 1px solid #5bc0de;
+}
+.btn-flat-info:active,
+.btn-flat-info.active {
+  border-color: #31b0d5;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+.btn-flat-warning {
+  color: #faa937;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-warning:hover {
+  color: #fff;
+  background-color: #faa937;
+}
+.btn-flat-warning:hover:focus,
+.btn-flat-warning:hover.focus,
+.btn-flat-warning:hover:active,
+.btn-flat-warning:hover.active {
+  color: #fff;
+}
+.btn-flat-warning:focus,
+.btn-flat-warning.focus {
+  color: #faa937;
+  border: 1px solid #faa937;
+}
+.btn-flat-warning:active,
+.btn-flat-warning.active {
+  border-color: #f89306;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+.btn-flat-danger {
+  color: #d84a38;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.btn-flat-danger:hover {
+  color: #fff;
+  background-color: #d84a38;
+}
+.btn-flat-danger:hover:focus,
+.btn-flat-danger:hover.focus,
+.btn-flat-danger:hover:active,
+.btn-flat-danger:hover.active {
+  color: #fff;
+}
+.btn-flat-danger:focus,
+.btn-flat-danger.focus {
+  color: #d84a38;
+  border: 1px solid #d84a38;
+}
+.btn-flat-danger:active,
+.btn-flat-danger.active {
+  border-color: #b93524;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
 .btn-link {
   color: #15c;
 }

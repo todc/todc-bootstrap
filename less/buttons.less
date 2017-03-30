@@ -106,6 +106,42 @@
 }
 
 
+// Flat buttons
+// --------------------------------------------------
+
+.btn-flat-default {
+  .button-flat-variant(@btn-default-color; @btn-default-color; @gray-lighter);
+
+  &:hover,
+  &:active,
+  &.active {
+    text-shadow: none;
+    border-color: #c6c6c6;
+  }
+
+  &:focus,
+  &.focus {
+    /* Blue border on button focus. */
+    border-color: @brand-primary;
+  }
+}
+.btn-flat-primary {
+  .button-flat-variant(@btn-primary-bg; @btn-primary-color);
+}
+.btn-flat-success {
+  .button-flat-variant(@btn-success-bg; @btn-success-color);
+}
+.btn-flat-info {
+  .button-flat-variant(@btn-info-bg; @btn-info-color);
+}
+.btn-flat-warning {
+  .button-flat-variant(@btn-warning-bg; @btn-warning-color);
+}
+.btn-flat-danger {
+  .button-flat-variant(@btn-danger-bg; @btn-danger-color);
+}
+
+
 // Link buttons
 // -------------------------
 
