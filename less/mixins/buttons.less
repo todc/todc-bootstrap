@@ -59,7 +59,7 @@
   }
 
   &.btn-flat {
-    .button-flat-variant(@start-color; @color)
+    .button-flat-variant(@start-color; @color);
   }
 
   .badge {
@@ -92,6 +92,13 @@
     color: @color;
     background-color: transparent;
     background-image: none;
-    // border: 1px solid @background-color-hover;
+  }
+
+  &:active,
+  &.active {
+    color: @color-hover;
+    #gradient > .vertical(@start-color: @background-color-hover; @end-color: darken(@background-color-hover, 5.75%));
+    .reset-filter();
+    background-color: darken(@background-color-hover, 5.75%);
   }
 }
