@@ -2220,7 +2220,11 @@ fieldset[disabled] .btn-link:focus fieldset[disabled] .btn-link.focus {
 .btn-group > .btn-warning.dropdown-toggle:hover,
 .btn-group > .btn-danger.dropdown-toggle:hover,
 .btn-group > .btn-success.dropdown-toggle:hover,
-.btn-group > .btn-flat-primary.dropdown-toggle:hover {
+.btn-group > .btn-flat-primary.dropdown-toggle:hover,
+.btn-group > .btn-flat-info.dropdown-toggle:hover,
+.btn-group > .btn-flat-warning.dropdown-toggle:hover,
+.btn-group > .btn-flat-danger.dropdown-toggle:hover,
+.btn-group > .btn-flat-success.dropdown-toggle:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
