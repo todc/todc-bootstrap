@@ -2565,6 +2565,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+.navbar .btn-flat-default,
+.navbar .btn-default.btn-flat {
+  color: #999;
+  text-shadow: none;
+}
+.navbar .btn-flat-default:hover,
+.navbar .btn-default.btn-flat:hover,
+.navbar .btn-flat-default:active,
+.navbar .btn-default.btn-flat:active,
+.navbar .btn-flat-default.active,
+.navbar .btn-default.btn-flat.active {
+  color: #333;
+}
 .navbar-text {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -2868,6 +2881,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+.navbar-masthead .btn-flat-default,
+.navbar-masthead .btn-default.btn-flat {
+  color: #333;
+}
+.navbar-masthead .btn-flat-default:hover,
+.navbar-masthead .btn-default.btn-flat:hover {
+  color: #333;
+}
 .navbar-masthead .navbar-text {
   margin-top: 13px;
   margin-bottom: 13px;
@@ -2988,6 +3009,20 @@ fieldset[disabled] .navbar-masthead.navbar-default .btn-link:focus {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+.navbar-masthead.navbar-inverse .btn-flat-default,
+.navbar-masthead.navbar-inverse .btn-default.btn-flat {
+  color: #fff;
+}
+.navbar-masthead.navbar-inverse .btn-flat-default:hover,
+.navbar-masthead.navbar-inverse .btn-default.btn-flat:hover,
+.navbar-masthead.navbar-inverse .btn-flat-default:active,
+.navbar-masthead.navbar-inverse .btn-default.btn-flat:active,
+.navbar-masthead.navbar-inverse .btn-flat-default.active,
+.navbar-masthead.navbar-inverse .btn-default.btn-flat.active,
+.open .dropdown-toggle.navbar-masthead.navbar-inverse .btn-flat-default,
+.open .dropdown-toggle.navbar-masthead.navbar-inverse .btn-default.btn-flat {
+  color: #333;
+}
 .navbar-masthead.navbar-inverse .navbar-text {
   color: #999;
 }
@@ -2998,6 +3033,10 @@ fieldset[disabled] .navbar-masthead.navbar-default .btn-link:focus {
 .navbar-masthead.navbar-inverse .navbar-nav > li > a:focus {
   color: #bbb;
   background-color: transparent;
+}
+.navbar-masthead.navbar-inverse .navbar-nav > li > a.btn-flat-default:hover,
+.navbar-masthead.navbar-inverse .navbar-nav > li > a.btn-default.btn-flat:hover {
+  color: #333;
 }
 .navbar-masthead.navbar-inverse .navbar-nav > .active > a,
 .navbar-masthead.navbar-inverse .navbar-nav > .active > a:hover,
@@ -3212,6 +3251,14 @@ fieldset[disabled] .navbar-masthead.navbar-inverse .btn-link:focus {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+.navbar-toolbar .btn-flat-default,
+.navbar-toolbar .btn-default.btn-flat {
+  color: #333;
+}
+.navbar-toolbar .btn-flat-default:hover,
+.navbar-toolbar .btn-default.btn-flat:hover {
+  color: #333;
+}
 .navbar-toolbar .navbar-text {
   margin-top: 9px;
   margin-bottom: 9px;
@@ -3338,6 +3385,20 @@ fieldset[disabled] .navbar-toolbar.navbar-default .btn-link:focus {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+.navbar-toolbar.navbar-inverse .btn-flat-default,
+.navbar-toolbar.navbar-inverse .btn-default.btn-flat {
+  color: #fff;
+}
+.navbar-toolbar.navbar-inverse .btn-flat-default:hover,
+.navbar-toolbar.navbar-inverse .btn-default.btn-flat:hover,
+.navbar-toolbar.navbar-inverse .btn-flat-default:active,
+.navbar-toolbar.navbar-inverse .btn-default.btn-flat:active,
+.navbar-toolbar.navbar-inverse .btn-flat-default.active,
+.navbar-toolbar.navbar-inverse .btn-default.btn-flat.active,
+.open .dropdown-toggle.navbar-toolbar.navbar-inverse .btn-flat-default,
+.open .dropdown-toggle.navbar-toolbar.navbar-inverse .btn-default.btn-flat {
+  color: #333;
+}
 .navbar-toolbar.navbar-inverse .navbar-text {
   color: #999;
 }
@@ -3348,6 +3409,10 @@ fieldset[disabled] .navbar-toolbar.navbar-default .btn-link:focus {
 .navbar-toolbar.navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
   background-color: transparent;
+}
+.navbar-toolbar.navbar-inverse .navbar-nav > li > a.btn-flat-default:hover,
+.navbar-toolbar.navbar-inverse .navbar-nav > li > a.btn-default.btn-flat:hover {
+  color: #333;
 }
 .navbar-toolbar.navbar-inverse .navbar-nav > .active > a,
 .navbar-toolbar.navbar-inverse .navbar-nav > .active > a:hover,

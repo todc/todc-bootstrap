@@ -187,6 +187,15 @@
       .navbar-vertical-align(20, @navbar-toolbar-height);
     }
   }
+
+  .btn-flat-default,
+  .btn-default.btn-flat {
+    color: @btn-default-color;
+
+    &:hover {
+      color: @btn-default-color;
+    }
+  }
 }
 
 
@@ -364,6 +373,22 @@
     }
   }
 
+  // Buttons in navbars
+  //
+  // Style for btn-flat-* and btn-flat
+
+  .btn-flat-default,
+  .btn-default.btn-flat {
+    color: @navbar-toolbar-inverse-link-color;
+
+    &:hover,
+    &:active,
+    &.active,
+    .open .dropdown-toggle& {
+      color: @btn-default-color
+    }
+  }
+
   .navbar-text {
     color: @navbar-toolbar-inverse-color;
   }
@@ -376,6 +401,13 @@
       &:focus {
         color: @navbar-toolbar-inverse-link-hover-color;
         background-color: @navbar-toolbar-inverse-link-hover-bg;
+      }
+
+      &.btn-flat-default,
+      &.btn-default.btn-flat {
+        &:hover {
+          color: @btn-default-color;
+        }
       }
     }
     > .active > a {
