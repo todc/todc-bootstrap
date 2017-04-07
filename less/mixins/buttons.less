@@ -58,8 +58,47 @@
     }
   }
 
+  &.btn-flat {
+    .button-flat-variant(@start-color; @color);
+  }
+
   .badge {
     color: @border-color;
     background-color: @color;
+  }
+}
+
+.button-flat-variant(@color; @color-hover: #fff; @background-color-hover: @color) {
+  color: @color;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+
+  &:hover {
+    color: @color-hover;
+    background-color: @background-color-hover;
+
+    &:focus,
+    &.focus {
+      color: @color-hover;
+      #gradient > .vertical(@start-color: @background-color-hover; @end-color: darken(@background-color-hover, 5.75%));
+      .reset-filter();
+      background-color: darken(@background-color-hover, 5.75%);
+    }
+  }
+
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  &:active,
+  &.active {
+    color: @color-hover;
+    #gradient > .vertical(@start-color: @background-color-hover; @end-color: darken(@background-color-hover, 5.75%));
+    .reset-filter();
+    background-color: darken(@background-color-hover, 5.75%);
   }
 }
