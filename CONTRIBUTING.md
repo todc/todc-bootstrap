@@ -245,3 +245,4 @@ By contributing to the documentation, you agree to license your contribution und
 5. Merge `master` into `gh-pages`.
 6. Create release on GitHub with `/dist/` folder and release notes.
 7. Push `gh-pages`.
+8. npm publish
