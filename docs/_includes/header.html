@@ -34,6 +34,10 @@
 <link href="{{ page.base_url }}dist/css/todc-bootstrap.css" rel="stylesheet">
 {% endif %}
 
+{% if page.slug == "getting-started" or page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+{% endif %}
+
 <!-- Documentation extras -->
 {% if site.github %}
 <link href="{{ page.base_url }}assets/css/docs.min.css" rel="stylesheet">
