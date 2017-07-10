@@ -193,7 +193,6 @@ module.exports = function (grunt) {
         src: 'docs/assets/css/docs.css',
         dest: 'docs/assets/css/docs.min.css'
       }
-      }
     },
 
     csscomb: {
