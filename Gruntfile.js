@@ -51,7 +51,7 @@ module.exports = function (grunt) {
     // Bootstrap variables
     bootstrapDir: 'bootstrap',
     bootstrapGit: 'https://github.com/twbs/bootstrap.git',
-    bootstrapVersion: 'v3.3.7',
+    bootstrapVersion: 'v3.4.0',
 
     // Task configuration.
     clean: {
@@ -118,6 +118,17 @@ module.exports = function (grunt) {
         },
         src: 'less/todc-bootstrap.less',
         dest: 'dist/css/<%= pkg.name %>.css'
+      },
+      compileDocs: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'docs.css.map',
+          sourceMapFilename: 'docs/assets/css/docs.css.map'
+        },
+        src: 'docs/assets/less/docs.less',
+        dest: 'docs/assets/css/docs.css'
       }
     },
 
@@ -132,7 +143,10 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       docs: {
-        src: ['docs/assets/css/src/docs.css']
+        options: {
+          map: true
+        },
+        src: 'docs/assets/css/src/docs.css'
       },
       examples: {
         expand: true,
@@ -309,6 +323,10 @@ module.exports = function (grunt) {
       less: {
         files: 'less/**/*.less',
         tasks: 'less'
+      },
+      docs: {
+        files: 'docs/assets/less/**/*.less',
+        tasks: ['less']
       }
     },
 
@@ -385,7 +403,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', 'uglify:core');
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileDocs']);
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'csscomb:dist', 'cssmin:minifyCore']);
 
   // Full distribution task.
