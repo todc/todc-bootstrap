@@ -16,6 +16,7 @@ encoding:         UTF-8
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-toc
 
 # Custom vars
 current_version:  3.3.7-3.3.13
