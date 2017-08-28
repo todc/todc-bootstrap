@@ -14,6 +14,7 @@ url:              http://todc.github.io/todc-bootstrap
 encoding:         UTF-8
 
 gems:
+  - jekyll-redirect-from
   - jekyll-sitemap
 
 # Custom vars
