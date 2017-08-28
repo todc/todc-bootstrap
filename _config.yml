@@ -1,50 +1,94 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:       kramdown
+highlighter:    rouge
+
+kramdown:
+  auto_ids:     true
 
 # Permalinks
-permalink:        pretty
+permalink:      pretty
 
 # Server
-source:           docs
-destination:      _gh_pages
-host:             0.0.0.0
-port:             9002
-url:              http://todc.github.io/todc-bootstrap
-encoding:         UTF-8
+source:         "."
+destination:    ./_gh_pages
+port:           9002
+baseurl:        ""
+url:            http://todc.github.io/todc-bootstrap
+encoding:       UTF-8
+exclude:
+  - .git
+  - .github
+  - assets/scss/
+  - bootstrap
+  - build
+  - js
+  - node_modules
+  - nuget
+  - scss
+  - vendor
+  - bower.json
+  - composer.json
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - package.js
+  - package.json
+  - package-lock.json
+  - sache.json
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-toc
 
-# Custom vars
-current_version:  3.3.7-3.3.13
-repo:             https://github.com/todc/todc-bootstrap
+# Social
+title:              TODC Bootstrap
+description:        "Google-styled theme for Bootstrap."
+twitter:
+authors:            "Tim O'Donnell, and the TODC Bootstrap contributors"
+social_image_path:  /assets/brand/todc-bootstrap-social.png
+social_logo_path:   /assets/brand/todc-bootstrap-social-logo.png
+
+# Custom variables
+current_version:    4.0.0-beta-4.0.0-alpha
+docs_version:       4.0
+repo:               https://github.com/todc/todc-bootstrap
+slack:              ""
 
 download:
   source:         https://github.com/todc/todc-bootstrap/archive/v3.3.7-3.3.13.zip
   dist:           https://github.com/todc/todc-bootstrap/releases/download/v3.3.7-3.3.13/todc-bootstrap-3.3.7-3.3.13-dist.zip
 
 bs:
-  current_version:  3.3.7
-  repo:             https://github.com/twbs/bootstrap
-  download:
-    source:         https://github.com/twbs/bootstrap/archive/v3.3.7.zip
-    dist:           https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip
-    sass:           https://github.com/twbs/bootstrap-sass/archive/v3.3.7.tar.gz
-  blog:             http://blog.getbootstrap.com
-  expo:             http://expo.getbootstrap.com
-  themes:           http://themes.getbootstrap.com
-  docs:             http://getbootstrap.com
+  # Social
+  title:              Bootstrap
+  description:        "The most popular HTML, CSS, and JS library in the world."
+  twitter:            getbootstrap
+  authors:            "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+  social_image_path:  /assets/brand/bootstrap-social.png
+  social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
-sass_repo:        https://github.com/twbs/bootstrap-sass
+  current_version:    4.0.0-beta
+  docs_version:       4.0
+  repo:               "https://github.com/twbs/bootstrap"
+  slack:              "https://bootstrap-slack.herokuapp.com"
+  download:
+    source:           "https://github.com/twbs/bootstrap/archive/v4.0.0-beta.zip"
+    dist:             "https://github.com/twbs/bootstrap/releases/download/v4.0.0-beta/bootstrap-4.0.0-beta-dist.zip"
+
+  blog:               "https://blog.getbootstrap.com"
+  expo:               "https://expo.getbootstrap.com"
+  jobs:               "https://jobs.getbootstrap.com"
+  themes:             "https://themes.getbootstrap.com"
+  docs:             http://getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:            https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-  css_hash:       "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-  css_theme:      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css
-  css_theme_hash: "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-  js:             https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
-  js_hash:        "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  css:              "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+  css_hash:         "sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+  js:               "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+  js_hash:          "sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+  jquery:           "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  jquery_hash:      "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  popper:           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+  popper_hash:      "sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"

@@ -1,21 +1,24 @@
 {
   "name": "todc-bootstrap",
   "description": "Google-styled theme for Bootstrap.",
-  "version": "3.3.7-3.3.13",
+  "version": "4.0.0-beta-4.0.0-alpha",
   "keywords": [
     "bootstrap",
     "css",
-    "js",
-    "less",
+    "sass",
     "mobile-first",
     "responsive",
     "front-end",
+    "framework",
     "web",
     "theme",
     "google"
   ],
   "homepage": "http://todc.github.com/todc-bootstrap/",
   "author": "Tim O'Donnell",
+  "contributors": [
+    "The TODC Bootstrap Contributors (https://github.com/twbs/bootstrap/graphs/contributors)"
+  ],
   "scripts": {
     "change-version": "node grunt/change-version.js",
     "test": "grunt test"
