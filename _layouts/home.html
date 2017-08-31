@@ -3,14 +3,18 @@
   <head>
     {% include header.html %}
   </head>
-  <body class="bs-docs-home">
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
-    <a href="http://blog.getbootstrap.com/2016/07/27/bootstrap-4-alpha-3/" class="v4-tease">Aww yeah, Bootstrap 4 is coming!</a>
+  <body class="bd-home">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
 
-    {% include nav/main.html %}
+    {% include docs-navbar.html %}
 
     {{ content }}
 
     {% include footer.html %}
+    {% include scripts.html %}
   </body>
 </html>
