@@ -1,8 +1,8 @@
 ---
 ---
 {
-    "name": "Bootstrap",
-    "short_name": "Bootstrap",
+    "name": "TODC Bootstrap",
+    "short_name": "TODC Bootstrap",
     "icons": [
         {
             "src": "{{ site.baseurl }}/assets/img/favicons/android-chrome-192x192.png",
@@ -16,7 +16,7 @@
         }
     ],
     "start_url": "/",
-    "theme_color": "#563d7c",
-    "background_color": "#563d7c",
+    "theme_color": "#4285f4;",
+    "background_color": "#4285f4;",
     "display": "standalone"
 }
