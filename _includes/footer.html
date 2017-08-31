@@ -45,17 +45,14 @@
 {% if site.github %}
 <script src="{{ page.base_url }}assets/js/docs.min.js"></script>
 {% else %}
-  {% for file in site.data.configBridge.paths.docsJs %}
   <script src="{{ file }}"></script>
   {% endfor %}
 {% endif %}
 
 {% if page.slug == "customize" %}
-  <script>var __configBridge = {{ site.data.configBridge.config | jsonify }}</script>
   {% if site.github %}
     <script src="{{ page.base_url }}assets/js/customize.min.js"></script>
   {% else %}
-    {% for file in site.data.configBridge.paths.customizerJs %}
     <script src="{{ file }}"></script>
     {% endfor %}
   {% endif %}
