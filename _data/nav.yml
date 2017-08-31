@@ -79,8 +79,8 @@
 
 - title: About
   pages:
-    - title: History
-    - title: Team
+    # - title: History
+    # - title: Team
     - title: Brand
     - title: License
-    - title: Translations
+    # - title: Translations
