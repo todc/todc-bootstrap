@@ -49,14 +49,5 @@
   {% endfor %}
 {% endif %}
 
-{% if page.slug == "customize" %}
-  {% if site.github %}
-    <script src="{{ page.base_url }}assets/js/customize.min.js"></script>
-  {% else %}
-    <script src="{{ file }}"></script>
-    {% endfor %}
-  {% endif %}
-{% endif %}
-
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ page.base_url }}assets/js/ie10-viewport-bug-workaround.js"></script>
