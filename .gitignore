@@ -1,7 +1,12 @@
 # Ignore docs files
 _gh_pages
 _site
+
+# Ignore ruby files
 .ruby-version
+.bundle
+vendor/cache
+vendor/bundle
 
 # Numerous always-ignore extensions
 *.diff
@@ -26,20 +31,24 @@ _site
 *.esproj
 *.sublime-project
 *.sublime-workspace
-*.TODO
 nbproject
 Thumbs.db
-/codekit-config.json
 
 # Komodo
 .komodotools
 *.komodoproject
 
-# Jekyll metadata
+# SCSS-Lint
+scss-lint-report.xml
+
+# grunt-contrib-sass cache
+.sass-cache
+
+# Jekyll metadata and extra config file for `github` script
 docs/.jekyll-metadata
+twbsconfig.yml
 
 # Folders to ignore
+bootstrap
 bower_components
 node_modules
-
-bootstrap/
