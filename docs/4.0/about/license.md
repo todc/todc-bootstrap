@@ -31,4 +31,4 @@ TODC Bootstrap is released under the MIT license and is copyright {{ site.time |
 - Include the source of TODC Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it
 - Submit changes that you make to TODC Bootstrap back to the TODC Bootstrap project (though such feedback is encouraged)
 
-The full TODC Bootstrap license is located [in the project repository]({{ site.repo }}/blob/master/LICENSE) for more information.
+The full TODC Bootstrap license is located [in the project repository]({{ site.repo }}/blob/v{{ site.current_version }}/LICENSE) for more information.
