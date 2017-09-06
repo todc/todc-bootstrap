@@ -5,7 +5,7 @@
 // TODO: Import the Bootstrap Mixins
 @import "../../bootstrap/scss/mixins";
 
-// // Utilities
+// Utilities
 // @import "mixins/breakpoints";
 // @import "mixins/hover";
 // @import "mixins/image";
@@ -19,17 +19,18 @@
 // @import "mixins/text-truncate";
 // @import "mixins/visibility";
 
-// // // Components
+// Components
 // @import "mixins/alert";
 // @import "mixins/buttons";
 // @import "mixins/pagination";
 // @import "mixins/lists";
 // @import "mixins/list-group";
+@import "mixins/navbar";
 // @import "mixins/nav-divider";
 // @import "mixins/forms";
 // @import "mixins/table-row";
 
-// // // Skins
+// Skins
 // @import "mixins/background-variant";
 // @import "mixins/border-radius";
 // @import "mixins/box-shadow";

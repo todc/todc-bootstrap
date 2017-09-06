@@ -1,0 +1,30 @@
+//
+// Navbar Sizes
+//
+
+.navbar-lg {
+  @include navbar-size($navbar-navbar-padding-y-lg, $navbar-padding-x);
+}
+
+.navbar-sm {
+  @include navbar-size($navbar-navbar-padding-y-sm, $navbar-padding-x);
+
+  font-size: $font-size-sm;
+  line-height: 1.1;
+
+  .btn,
+  .form-control {
+    font-size: $font-size-sm;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .navbar-brand {
+    font-size: $font-size-base;
+  }
+
+  .nav-link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
