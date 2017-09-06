@@ -1,4 +1,4 @@
 // Navbar sizes
-@mixin navbar-size($padding-y, $padding-x) {
+@mixin navbar-size($padding-y, $padding-x: $navbar-padding-x) {
   padding: $padding-y $padding-x;
 }

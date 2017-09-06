@@ -3,11 +3,11 @@
 //
 
 .navbar-lg {
-  @include navbar-size($navbar-navbar-padding-y-lg, $navbar-padding-x);
+  @include navbar-size($navbar-navbar-padding-y-lg);
 }
 
 .navbar-sm {
-  @include navbar-size($navbar-navbar-padding-y-sm, $navbar-padding-x);
+  @include navbar-size($navbar-navbar-padding-y-sm);
 
   font-size: $font-size-sm;
   line-height: 1.1;
