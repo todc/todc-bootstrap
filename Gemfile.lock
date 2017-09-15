@@ -57,7 +57,7 @@ DEPENDENCIES
   jekyll (~> 3.5.1)
   jekyll-redirect-from (~> 0.12.1)
   jekyll-sitemap (~> 1.1.1)
-  jekyll-toc (~> 0.3.0.pre1)
+  jekyll-toc (~> 0.3.0)
   scss_lint (~> 0.54.0)
 
 BUNDLED WITH
