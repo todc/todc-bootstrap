@@ -1,3 +1,5 @@
+- name: 50
+  hex: "#fafafa"
 - name: 100
   hex: "#f8f9fa"
 - name: 200
