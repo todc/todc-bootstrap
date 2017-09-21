@@ -12,8 +12,9 @@ permalink:      pretty
 source:         "."
 destination:    ./_gh_pages
 port:           9002
-baseurl:        ""
-url:            http://todc.github.io/todc-bootstrap
+# baseurl:        ""
+baseurl:        "/todc-bootstrap"
+url:            http://todc.github.io
 encoding:       UTF-8
 exclude:
   - .git
