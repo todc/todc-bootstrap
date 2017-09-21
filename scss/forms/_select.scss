@@ -1,0 +1,29 @@
+select.form-control {
+  display: inline-block;
+  max-width: 100%;
+  height: $input-height;
+  vertical-align: middle;
+  cursor: pointer;
+  @include select-indicator;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid rgba($black, .12);
+  border-radius: 0;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+
+    &::-ms-value {
+      // For visual consistency with other platforms/browsers,
+      // supress the default white text on blue background highlight given to
+      // the selected option text when the (still closed) <select> receives focus
+      // in IE and (under certain conditions) Edge.
+      // See https://github.com/twbs/bootstrap/issues/19398.
+      color: $input-color;
+      background-color: $input-bg;
+    }
+  }
+}
