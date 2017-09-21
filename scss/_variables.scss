@@ -589,16 +589,16 @@ $jumbotron-bg:                   $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:            .75rem !default;
-$card-spacer-x:            1.25rem !default;
+$card-spacer-y:            1rem;
+$card-spacer-x:            1rem;
 $card-border-width:        $border-width !default;
 $card-border-radius:       $border-radius;
-$card-border-color:        rgba($black,.125) !default;
-$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:              rgba($black, .03) !default;
+$card-border-color:        transparent;
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg:              transparent;
 $card-bg:                  $white !default;
 
-$card-img-overlay-padding: 1.25rem !default;
+$card-img-overlay-padding: 1rem;
 
 $card-group-margin:         ($grid-gutter-width / 2) !default;
 $card-deck-margin:          $card-group-margin !default;
