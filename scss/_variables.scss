@@ -327,6 +327,13 @@ $btn-transition:                 background-color .15s ease-in-out, border-color
 
 // Forms
 
+$select-padding-left:            0 !default;
+$select-padding-right:           1.5rem !default;
+$select-line-height:             1.75rem !default;
+$select-indicator-color:         $black !default;
+$select-border-width:            $border-width !default;
+$select-border-color:            rgba($black, .12) !default;
+
 $input-bg:                       $white !default;
 $input-disabled-bg:              $gray-200 !default;
 
