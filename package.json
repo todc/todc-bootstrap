@@ -84,13 +84,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
-    "babel-cli": "^7.0.0-beta.0",
-    "babel-eslint": "^8.0.0",
-    "babel-plugin-external-helpers": "^7.0.0-beta.0",
+    "babel-cli": "^7.0.0-beta.2",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-external-helpers": "^7.0.0-beta.2",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
-    "babel-preset-env": "^2.0.0-beta.0",
-    "clean-css-cli": "^4.1.9",
-    "eslint": "^4.7.0",
+    "babel-preset-env": "^2.0.0-beta.2",
+    "clean-css-cli": "^4.1.10",
+    "eslint": "^4.7.2",
+    "eslint-plugin-compat": "^1.0.4",
     "fs-extra": "^4.0.2",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
@@ -110,8 +111,8 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2",
-    "uglify-js": "^3.1.1",
-    "workbox-build": "^2.0.1"
+    "uglify-js": "^3.1.2",
+    "workbox-build": "^2.0.3"
   },
   "engines": {
     "node": ">=4"
