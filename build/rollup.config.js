@@ -44,6 +44,5 @@ module.exports = {
   * TODC Bootstrap v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}
   * Licensed under MIT (https://github.com/todc/todc-bootstrap/blob/master/LICENSE)
-  */
- `
+  */`
 }
