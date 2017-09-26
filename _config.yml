@@ -17,16 +17,16 @@ baseurl:        "/todc-bootstrap"
 url:            http://todc.github.io
 encoding:       UTF-8
 exclude:
-  - .git
-  - .github
+  - .git/
+  - .github/
   - assets/scss/
-  - bootstrap
-  - build
-  - js
-  - node_modules
-  - nuget
-  - scss
-  - vendor
+  - bootstrap/
+  - build/
+  - js/
+  - node_modules/
+  - nuget/
+  - scss/
+  - vendor/
   - bower.json
   - composer.json
   - Gemfile
@@ -36,6 +36,7 @@ exclude:
   - package.json
   - package-lock.json
   - sache.json
+  - twbsconfig.yml
 
 plugins:
   - jekyll-redirect-from
