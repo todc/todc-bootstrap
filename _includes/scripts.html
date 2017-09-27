@@ -24,7 +24,7 @@
 {% if page.layout == "docs" %}
 <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script>
-  var docsearch = docsearch({
+  docsearch({
     apiKey: 'e733f93dbde231dec8e69a6c7f5ae8ac',
     indexName: 'todc-bootstrap',
     inputSelector: '#search-input',
@@ -46,10 +46,10 @@
 {% endif %}
 
 <script>
-Holder.addTheme('gray', {
-  bg: '#777',
-  fg: 'rgba(255,255,255,.75)',
-  font: 'Helvetica',
-  fontweight: 'normal'
-});
+  Holder.addTheme('gray', {
+    bg: '#777',
+    fg: 'rgba(255,255,255,.75)',
+    font: 'Helvetica',
+    fontweight: 'normal'
+  });
 </script>
