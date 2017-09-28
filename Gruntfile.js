@@ -5,8 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
+'use strict'
+
 module.exports = function (grunt) {
-  'use strict';
 
   // Project configuration.
   grunt.initConfig({
