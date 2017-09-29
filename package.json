@@ -94,6 +94,7 @@
     "eslint-plugin-compat": "^1.0.4",
     "fs-extra": "^4.0.2",
     "htmllint-cli": "^0.0.6",
+    "jsunitsaucelabs": "^1.2.0",
     "node-sass": "^4.5.3",
     "nodegit": "^0.20.2",
     "nodemon": "^1.12.1",
