@@ -226,7 +226,7 @@ includes code changes) and under the terms of the
 
 ### Checking coding style
 
-Run `grunt test` before committing to ensure your changes follow our coding standards.
+Run `npm run test` before committing to ensure your changes follow our coding standards.
 
 
 ## License
