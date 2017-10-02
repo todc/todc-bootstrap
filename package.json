@@ -22,6 +22,7 @@
   "scripts": {
     "clone-bootstrap": "node build/clone-bootstrap.js",
     "bash": "bash",
+    "bundlesize": "bundlesize",
     "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
     "css-main": "npm-run-all --parallel css-lint css-compile --sequential css-prefix css-minify",
     "css-docs": "npm-run-all --parallel css-lint-docs css-compile-docs --sequential css-prefix-docs css-minify-docs",
@@ -91,6 +92,7 @@
     "babel-plugin-external-helpers": "^7.0.0-beta.2",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
     "babel-preset-env": "^2.0.0-beta.2",
+    "bundlesize": "^0.14.4",
     "clean-css-cli": "^4.1.10",
     "eslint": "^4.7.2",
     "eslint-plugin-compat": "^1.0.4",
@@ -138,6 +140,32 @@
     "Safari >= 9",
     "Android >= 4.4",
     "Opera >= 30"
+  ],
+  "bundlesize": [
+    {
+      "path": "./dist/css/todc-bootstrap*.css",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap*.css",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.bundle.js",
+      "maxSize": "50 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.bundle.min.js",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.js",
+      "maxSize": "20 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.min.js",
+      "maxSize": "15 kB"
+    }
   ],
   "jspm": {
     "registry": "npm",
