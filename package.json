@@ -143,16 +143,32 @@
   ],
   "bundlesize": [
     {
-      "path": "./dist/css/todc-bootstrap*.css",
+      "path": "./dist/css/bootstrap-grid.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-grid.min.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-reboot.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-reboot.min.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap.css",
       "maxSize": "25 kB"
     },
     {
-      "path": "./dist/css/bootstrap*.css",
-      "maxSize": "25 kB"
+      "path": "./dist/css/bootstrap.min.css",
+      "maxSize": "20 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.js",
-      "maxSize": "50 kB"
+      "maxSize": "45 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.min.js",
@@ -165,6 +181,14 @@
     {
       "path": "./dist/js/bootstrap.min.js",
       "maxSize": "15 kB"
+    },
+    {
+      "path": "./dist/css/todc-bootstrap.css",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/css/todc-bootstrap.min.css",
+      "maxSize": "20 kB"
     }
   ],
   "jspm": {
