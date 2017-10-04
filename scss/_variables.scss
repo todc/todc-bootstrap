@@ -8,6 +8,7 @@
 // Color system
 //
 
+// stylelint-disable
 $white:  #fff !default;
 $gray-50:  #fafafa;
 $gray-100: #f5f5f5;
@@ -74,6 +75,7 @@ $theme-colors: map-merge((
   "light": $gray-100,
   "dark": $gray-800
 ), $theme-colors);
+// stylelint-enable
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
@@ -203,9 +205,11 @@ $transition-collapse:    height .35s ease !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
+// stylelint-disable value-keyword-case
 $font-family-sans-serif: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 $font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
