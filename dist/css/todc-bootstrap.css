@@ -93,4 +93,28 @@ select.form-control:focus::-ms-value {
 .card-img-overlay {
   padding: 1rem;
 }
+
+.close {
+  font-weight: normal;
+}
+
+.modal-content {
+  border: 1px solid rgba(0, 0, 0, 0.333);
+  border-radius: 0.125rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop {
+  background-color: #fff;
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.modal-header {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+}
+
 /*# sourceMappingURL=todc-bootstrap.css.map */

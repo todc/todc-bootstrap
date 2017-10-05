@@ -687,13 +687,13 @@ $modal-dialog-margin-y-sm-up: 30px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 $modal-content-bg:               $white !default;
-$modal-content-border-color:     rgba($black,.2) !default;
+$modal-content-border-color:     rgba(0, 0, 0, .333) !default; // #aaa
 $modal-content-border-width:     $border-width !default;
-$modal-content-box-shadow-xs:    0 3px 9px rgba($black,.5) !default;
-$modal-content-box-shadow-sm-up: 0 5px 15px rgba($black,.5) !default;
+$modal-content-box-shadow-xs:    0 4px 16px rgba(0, 0, 0, .2) !default; // #ccc
+$modal-content-box-shadow-sm-up: 0 4px 16px rgba(0, 0, 0, .2) !default; // #ccc
 
-$modal-backdrop-bg:           $black !default;
-$modal-backdrop-opacity:      .5 !default;
+$modal-backdrop-bg:           $white !default;
+$modal-backdrop-opacity:      .75 !default;
 $modal-header-border-color:   $gray-200 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 $modal-header-border-width:   $modal-content-border-width !default;
@@ -812,7 +812,7 @@ $carousel-transition:           transform .6s ease !default;
 // Close
 
 $close-font-size:             $font-size-base * 1.5 !default;
-$close-font-weight:           $font-weight-bold !default;
+$close-font-weight:           $font-weight-normal !default;
 $close-color:                 $black !default;
 $close-text-shadow:           0 1px 0 $white !default;
 

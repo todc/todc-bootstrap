@@ -1,0 +1,26 @@
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+
+// Actual modal
+.modal-content {
+  border: $modal-content-border-width solid $modal-content-border-color;
+  @include border-radius($border-radius);
+  @include box-shadow($modal-content-box-shadow-xs);
+}
+
+// Modal background
+.modal-backdrop {
+  background-color: $modal-backdrop-bg;
+
+  // Fade for backdrop
+  &.show { opacity: $modal-backdrop-opacity; }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  @include border-top-radius($border-radius);
+}
