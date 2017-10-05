@@ -127,8 +127,8 @@
   }
 
   .algolia-docsearch-suggestion--highlight {
-    color: #5f2dab;
-    background-color: rgba(154, 132, 187, .12);
+    color: $gray-900;
+    background-color: $gray-300;
   }
 
   .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
@@ -136,6 +136,6 @@
   }
 
   .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--content {
-    background-color: rgba(208,189,236,.15) !important;
+    background-color: $gray-200 !important;
   }
 }
