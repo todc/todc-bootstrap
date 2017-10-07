@@ -4,31 +4,10 @@
 
 .card {
   @extend %font-setting-base;
-  border-color: $card-border-color;
-  @include border-radius($card-border-radius);
   @include box-shadow($shadow-2dp);
-}
-
-.card-body {
-  padding: $card-spacer-x;
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: $font-weight-light;
-}
-
-.card-header {
-  padding: $card-spacer-x;
-  background-color: $card-cap-bg;
-  border-bottom-color: $card-border-color;
-}
-
-.card-footer {
-  padding: $card-spacer-x;
-}
-
-// Card image
-.card-img-overlay {
-  padding: $card-img-overlay-padding;
 }

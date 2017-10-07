@@ -1,0 +1,115 @@
+// Checkboxes and radios
+//
+// Base class takes care of all the key behavioral aspects.
+
+.custom-control-input {
+  &:disabled {
+    ~ .custom-control-indicator {
+      background-color: $custom-control-indicator-disabled-bg;
+      border-color: $custom-control-indicator-disabled-border-color;
+    }
+
+    ~ .custom-control-description {
+      color: $custom-control-description-disabled-color;
+    }
+  }
+}
+
+
+// Custom indicator
+//
+// Generates a shadow element to create our makeshift checkbox/radio background.
+
+.custom-control-indicator {
+  top: (($line-height-base - $custom-control-indicator-size) / 2);
+  width: $custom-control-indicator-size;
+  height: $custom-control-indicator-size;
+  background-color: $custom-control-indicator-bg;
+  background-size: $custom-control-indicator-bg-size;
+  border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
+}
+
+// Custom description
+//
+// Generates a shadow element to create our makeshift checkbox/radio background.
+
+.custom-control-description {
+  padding-left: $custom-control-description-padding-left;
+}
+
+// Checkboxes
+//
+// Tweak just a few things for checkboxes.
+
+.custom-checkbox {
+  .custom-control-indicator {
+    @include border-radius($custom-checkbox-indicator-border-radius);
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: $custom-control-indicator-checked-bg;
+    background-image: $custom-checkbox-indicator-icon-checked;
+    border-color: $custom-control-indicator-checked-bg;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-indicator {
+    background-color: $custom-control-indicator-checked-disabled-bg;
+    border-color: $custom-checkbox-indicator-checked-disabled-border-color;
+  }
+
+  .custom-control-input:indeterminate ~ .custom-control-indicator {
+    background-color: $custom-checkbox-indicator-indeterminate-bg;
+    background-image: $custom-checkbox-indicator-icon-indeterminate;
+    border-color: $custom-control-indicator-checked-bg;
+    @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+  }
+}
+
+// Radios
+//
+// Tweak just a few things for radios.
+
+.custom-radio {
+  .custom-control-indicator {
+    background-color: $custom-control-indicator-bg;
+    border: .125rem solid $custom-radio-indicator-border-color;
+    border-radius: $custom-radio-indicator-border-radius;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-indicator {
+    background-image: $custom-radio-indicator-icon-checked-disabled;
+    border-color: $custom-control-indicator-checked-disabled-border-color;
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: $custom-control-indicator-bg;
+    background-image: $custom-radio-indicator-icon-checked;
+    border-color: $custom-radio-indicator-checked-border-color;
+  }
+}
+
+
+// Select
+//
+// Replaces the browser default select with a custom one, mostly pulled from
+// http://primercss.io.
+//
+
+.custom-select {
+  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+  // padding-right: $custom-select-padding-right;
+  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
+  background-size: $custom-select-bg-size;
+  border: $custom-select-border-width solid $custom-select-border-color;
+  border-radius: $custom-select-border-radius;
+
+  &:hover {
+    border-color: $input-hover-border-color;
+    @include box-shadow($input-hover-box-shadow);
+  }
+
+  &:focus {
+    border-color: $custom-select-focus-border-color;
+    @include box-shadow($custom-select-focus-box-shadow);
+  }
+}
