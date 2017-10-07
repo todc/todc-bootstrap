@@ -27,6 +27,7 @@
   background-color: $custom-control-indicator-bg;
   background-size: $custom-control-indicator-bg-size;
   border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
+  @include box-shadow($custom-control-indicator-box-shadow);
 }
 
 // Custom description
@@ -71,6 +72,8 @@
 
 .custom-radio {
   .custom-control-indicator {
+    width: $custom-radio-indicator-size;
+    height: $custom-radio-indicator-size;
     background-color: $custom-control-indicator-bg;
     border: .125rem solid $custom-radio-indicator-border-color;
     border-radius: $custom-radio-indicator-border-radius;
