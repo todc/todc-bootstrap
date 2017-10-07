@@ -352,14 +352,14 @@ $input-border-radius-sm:                $border-radius-sm !default;
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              theme-color("primary") !default;
 $input-focus-border-width:              .125rem !default;
-$input-focus-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, 0.3) !default;
+$input-focus-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, .3) !default;
 $input-focus-color:                     $input-color !default;
 
 $input-hover-border-color:              rgba(0,0,0,.3) !default;
-$input-hover-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, 0.1);
+$input-hover-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, .1);
 
-$input-placeholder-color:               rgba(0, 0, 0, 0.38) !default; // $gray-500
-$input-placeholder-focus-color:         rgba(0, 0, 0, 0.54) !default; // $gray-600
+$input-placeholder-color:               rgba(0, 0, 0, .38) !default; // $gray-500
+$input-placeholder-focus-color:         rgba(0, 0, 0, .54) !default; // $gray-600
 
 $input-disabled-border-color:           $input-border-color !default;
 $input-disabled-box-shadow:             none !default;
@@ -416,10 +416,10 @@ $custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      initial !default;
 $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black,.1) !default;
 
-$custom-control-indicator-border-color:         rgba(0, 0, 0, 0.54) !default; // $gray-600
+$custom-control-indicator-border-color:         rgba(0, 0, 0, .54) !default; // $gray-600
 $custom-control-indicator-border-radius:        $border-radius !default;
 
-$custom-control-indicator-disabled-border-color:rgba(0, 0, 0, 0.26) !default; //$$gray-400
+$custom-control-indicator-disabled-border-color:rgba(0, 0, 0, .26) !default; //$$gray-400
 $custom-control-indicator-disabled-bg:          $white !default;
 
 $custom-control-description-padding-left:       .5rem;
@@ -429,8 +429,8 @@ $custom-control-indicator-checked-color:        $white !default;
 $custom-control-indicator-checked-bg:           theme-color("primary") !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
 
-$custom-control-indicator-checked-disabled-border-color:  rgba(0, 0, 0, 0.26) !default;
-$custom-control-indicator-checked-disabled-bg:            rgba(0, 0, 0, 0.26) !default; //$$gray-400
+$custom-control-indicator-checked-disabled-border-color:  rgba(0, 0, 0, .26) !default;
+$custom-control-indicator-checked-disabled-bg:            rgba(0, 0, 0, .26) !default; //$$gray-400
 
 $custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, 0 0 0 3px theme-color("primary") !default;
 
@@ -448,7 +448,7 @@ $custom-checkbox-indicator-indeterminate-color: $custom-control-indicator-checke
 $custom-checkbox-indicator-icon-indeterminate:  str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
 $custom-checkbox-indicator-indeterminate-box-shadow: none !default;
 
-$custom-radio-indicator-border-color:           rgba(0, 0, 0, 0.54) !default;
+$custom-radio-indicator-border-color:           rgba(0, 0, 0, .54) !default;
 $custom-radio-indicator-checked-border-color:     theme-color("primary") !default;
 $custom-radio-indicator-checked-color:            $custom-radio-indicator-checked-border-color !default;
 $custom-radio-indicator-checked-disabled-color:   $custom-control-indicator-checked-disabled-bg !default;
@@ -475,7 +475,7 @@ $custom-select-border-color:        $input-border-color !default;
 $custom-select-border-radius:       $border-radius !default;
 
 $custom-select-focus-border-color:  theme-color("primary") !default;
-$custom-select-focus-box-shadow:    inset 0 1px 2px rgba(0, 0, 0, 0.3) !default;
+$custom-select-focus-box-shadow:    inset 0 1px 2px rgba(0, 0, 0, .3) !default;
 
 $custom-select-font-size-sm:        75% !default;
 $custom-select-height-sm:           $input-height-sm !default;
@@ -872,9 +872,10 @@ $pre-scrollable-max-height:         340px !default;
 // Shadows
 // Values from Material Design Lite, http://www.getmdl.io/
 
-$shadow-key-umbra-opacity:          0.2 !default;
-$shadow-key-penumbra-opacity:       0.14 !default;
-$shadow-ambient-shadow-opacity:     0.12 !default;
+// stylelint-disable indentation
+$shadow-key-umbra-opacity:          .2 !default;
+$shadow-key-penumbra-opacity:       .14 !default;
+$shadow-ambient-shadow-opacity:     .12 !default;
 
 $shadow-focus:                      0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
 

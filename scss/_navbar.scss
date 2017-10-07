@@ -14,9 +14,9 @@
 
   .btn,
   .form-control {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
     font-size: $font-size-sm;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
   }
 
   .navbar-brand {
@@ -24,7 +24,7 @@
   }
 
   .nav-link {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
   }
 }
