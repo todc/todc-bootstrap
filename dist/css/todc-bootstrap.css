@@ -4532,7 +4532,7 @@ tbody.collapse.show {
 
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.125rem;
@@ -4550,7 +4550,7 @@ tbody.collapse.show {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 0.5rem;
   color: inherit;
 }
 
@@ -8627,5 +8627,117 @@ input[type="radio"].form-check-input.position-static:checked::after {
 .card-title {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.alert-primary {
+  color: #22457f;
+  background-color: #d9e7fd;
+  border-color: #3d7ae0;
+}
+
+.alert-primary hr {
+  border-top-color: #276bdc;
+}
+
+.alert-primary .alert-link {
+  color: #172f57;
+}
+
+.alert-secondary {
+  color: #3d3d3d;
+  background-color: #e3e3e3;
+  border-color: #6c6c6c;
+}
+
+.alert-secondary hr {
+  border-top-color: #5f5f5f;
+}
+
+.alert-secondary .alert-link {
+  color: #242424;
+}
+
+.alert-success {
+  color: #285b2a;
+  background-color: #dbefdc;
+  border-color: #46a14a;
+}
+
+.alert-success hr {
+  border-top-color: #3e8f42;
+}
+
+.alert-success .alert-link {
+  color: #18381a;
+}
+
+.alert-info {
+  color: #00626e;
+  background-color: #ccf2f6;
+  border-color: #00adc3;
+}
+
+.alert-info hr {
+  border-top-color: #0096aa;
+}
+
+.alert-info .alert-link {
+  color: #00353b;
+}
+
+.alert-warning {
+  color: #857a1f;
+  background-color: #fffbd8;
+  border-color: #ebd836;
+}
+
+.alert-warning hr {
+  border-top-color: #e9d41f;
+}
+
+.alert-warning .alert-link {
+  color: #5c5415;
+}
+
+.alert-danger {
+  color: #7f231c;
+  background-color: #fdd9d7;
+  border-color: #e03e32;
+}
+
+.alert-danger hr {
+  border-top-color: #d82d21;
+}
+
+.alert-danger .alert-link {
+  color: #551713;
+}
+
+.alert-light {
+  color: #7f7f7f;
+  background-color: #fdfdfd;
+  border-color: #e1e1e1;
+}
+
+.alert-light hr {
+  border-top-color: #d4d4d4;
+}
+
+.alert-light .alert-link {
+  color: #666666;
+}
+
+.alert-dark {
+  color: #222222;
+  background-color: #d9d9d9;
+  border-color: #3d3d3d;
+}
+
+.alert-dark hr {
+  border-top-color: #303030;
+}
+
+.alert-dark .alert-link {
+  color: #090909;
 }
 /*# sourceMappingURL=todc-bootstrap.css.map */

@@ -367,7 +367,6 @@ $input-disabled-box-shadow:             none !default;
 $input-height-border:                   $input-btn-border-width * 2 !default;
 
 $input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
-// $input-height:                          1.5rem !default;
 $input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
 
 $input-height-inner-sm:                 ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
@@ -751,8 +750,8 @@ $modal-transition:                  transform .3s ease-out !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:                   .75rem !default;
-$alert-padding-x:                   1.25rem !default;
+$alert-padding-y:                   .5rem !default;
+$alert-padding-x:                   .5rem !default;
 $alert-margin-bottom:               1rem !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
