@@ -1897,7 +1897,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -3407,7 +3407,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
   padding: 0.375rem 2rem 0.375rem 0.5rem;
   line-height: 1.5;
   color: #616161;
@@ -3457,14 +3457,14 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
   margin-bottom: 0;
 }
 
 .custom-file-input {
   min-width: 14rem;
   max-width: 100%;
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -3479,7 +3479,7 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 5;
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #616161;
@@ -3505,7 +3505,7 @@ tbody.collapse.show {
   bottom: -1px;
   z-index: 6;
   display: block;
-  height: 1.5rem;
+  height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #616161;
@@ -8627,103 +8627,5 @@ input[type="radio"].form-check-input.position-static:checked::after {
 .card-title {
   font-size: 1.5rem;
   font-weight: 300;
-}
-
-.tbmd-form-control {
-  display: block;
-  width: 100%;
-  padding: 0 0 8px;
-  border: none;
-  border-radius: 0;
-  transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.tbmd-form-control:focus {
-  border-color: #4285f4;
-  outline: none;
-}
-
-.tbmd-form-control:focus::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.tbmd-form-control:focus:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.tbmd-form-control:focus::placeholder {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.tbmd-form-control:focus ~ .tbmd-form-control-bottom-line {
-  background-size: 100% 100%, 100% 100%;
-  transition-duration: .3s;
-}
-
-.tbmd-form-control::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.38);
-  transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-}
-
-.tbmd-form-control:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.38);
-  transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-}
-
-.tbmd-form-control::placeholder {
-  color: rgba(0, 0, 0, 0.38);
-  transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-}
-
-.tbmd-form-control-bottom-line {
-  display: block;
-  height: 0.125rem;
-  background: no-repeat center bottom, center calc(100% - 1px);
-  background-image: linear-gradient(to top, #4285f4 0.125rem, rgba(66, 133, 244, 0) 0.125rem), linear-gradient(to top, rgba(0, 0, 0, 0.12) 1px, transparent 1px);
-  background-size: 0 100%, 100% 100%;
-  transition: background 0s ease-out;
-}
-
-select.tbmd-form-control {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-select.tbmd-form-control:not([size]):not([multiple]) {
-  height: 1.5rem;
-  padding-right: 1.5rem;
-  cursor: pointer;
-  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%23%23000%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-clip: padding-box;
-}
-
-.tbmd-form-control[multiple],
-textarea.tbmd-form-control {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-.tbmd-form-control[multiple]:focus,
-textarea.tbmd-form-control:focus {
-  border-color: #4285f4;
-}
-
-.tbmd-control-indicator {
-  position: absolute;
-  top: 0.125rem;
-  left: 0;
-  display: block;
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 0.125rem solid rgba(0, 0, 0, 0.54);
-  border-radius: 0.125rem;
 }
 /*# sourceMappingURL=todc-bootstrap.css.map */

@@ -367,7 +367,8 @@ $input-disabled-box-shadow:             none !default;
 $input-height-border:                   $input-btn-border-width * 2 !default;
 
 $input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
-$input-height:                          1.5rem !default; // calc(#{$input-height-inner} + #{$input-height-border}) !default;
+// $input-height:                          1.5rem !default;
+$input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
 
 $input-height-inner-sm:                 ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
 $input-height-sm:                       calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
