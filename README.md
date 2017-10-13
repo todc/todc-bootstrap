@@ -63,10 +63,14 @@ todc-bootstrap/
 │   ├── bootstrap.css.map
 │   ├── bootstrap.min.css
 │   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   ├── bootstrap-theme.min.css.map
+│   ├── bootstrap-grid.css
+│   ├── bootstrap-grid.css.map
+│   ├── bootstrap-grid.min.css
+│   ├── bootstrap-grid.min.css.map
+│   ├── bootstrap-reboot.css
+│   ├── bootstrap-reboot.css.map
+│   ├── bootstrap-reboot.min.css
+│   ├── bootstrap-reboot.min.css.map
 │   ├── todc-bootstrap.css
 │   ├── todc-bootstrap.css.map
 │   ├── todc-bootstrap.min.css
@@ -74,14 +78,6 @@ todc-bootstrap/
 ├── js/
 │   ├── bootstrap.js
 │   └── bootstrap.min.js
-├── fonts/
-│   ├── glyphicons-halflings-regular.eot
-│   ├── glyphicons-halflings-regular.svg
-│   ├── glyphicons-halflings-regular.ttf
-│   ├── glyphicons-halflings-regular.woff
-│   └── glyphicons-halflings-regular.woff2
-└── img/
-    └── checkmark.png
 ```
 
 We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools.
