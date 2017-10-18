@@ -76,8 +76,10 @@ todc-bootstrap/
 │   ├── todc-bootstrap.min.css
 │   └── todc-bootstrap.min.css.map
 ├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
+    ├── bootstrap.bundle.js
+    ├── bootstrap.bundle.min.js
+    ├── bootstrap.js
+    └── bootstrap.min.js
 ```
 
 We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools.
