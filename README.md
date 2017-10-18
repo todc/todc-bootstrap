@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://todc.github.io/todc-bootstrap/">
-    <img src="https://todc.github.io/todc-bootstrap/assets/brand/todc-bootstrap-solid.svg" width=72 height=72>
+    <img src="https://todc.github.io/todc-bootstrap/assets/brand/todc-bootstrap-solid.svg" alt="" width=72 height=72>
   </a>
 
   <h3 align="center">TODC Bootstrap</h3>
@@ -8,7 +8,7 @@
   <p align="center">
     A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
     <br>
-    <a href="https://todc.github.io/todc-bootstrap/docs/4.0/"><strong>Explore TODC Bootstrap docs &raquo;</strong></a>
+    <a href="https://todc.github.io/todc-bootstrap/docs/4.0/"><strong>Explore TODC Bootstrap docs »</strong></a>
   </p>
 </p>
 
@@ -110,13 +110,13 @@ Note that **feature requests must target [TODC Bootstrap v4](https://github.com/
 
 ## Documentation
 
-TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
 Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in the `_scripts.html` include.
 
 ### Running documentation locally
 
-1. Run through the [tooling setup](https://github.com/todc/todc-bootstrap/blob/v4-dev/docs/4.0/getting-started/build-tools.md#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+1. Run through the [tooling setup](https://github.com/todc/todc-bootstrap/blob/v4-dev/docs/4.0/getting-started/build-tools#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 2. Run `npm install` to install Node.js dependencies.
 3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
 4. From the root `/todc-bootstrap` directory, run `npm run docs-serve` in the command line.
@@ -143,7 +143,7 @@ Moreover, if your pull request contains JavaScript patches or features, you must
 
 **TODC Bootstrap v3 is now closed off to new features.** It has gone into maintenance mode so that we can focus our efforts on [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev), the future of the theme. Pull requests which add new features (rather than fix bugs) should target [TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev) instead.
 
-Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org/>.
 
 **NOTE:** The `v4-dev` branch is not yet available.
 
