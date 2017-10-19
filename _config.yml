@@ -51,10 +51,11 @@ social_image_path:  /assets/brand/todc-bootstrap-social.png
 social_logo_path:   /assets/brand/todc-bootstrap-social-logo.png
 
 # Custom variables
-current_version:    4.0.0-beta.2-4.0.0-alpha
-docs_version:       4.0
-repo:               https://github.com/todc/todc-bootstrap
-slack:              ""
+current_version:      4.0.0-beta.2-4.0.0-alpha
+current_ruby_version: 4.0.0.beta2-4.0.0.alpha
+docs_version:         4.0
+repo:                 https://github.com/todc/todc-bootstrap
+slack:                ""
 
 download:
   source:         https://github.com/todc/todc-bootstrap/archive/v3.3.7-3.3.13.zip
@@ -69,14 +70,15 @@ bs:
   social_image_path:  /assets/brand/bootstrap-social.png
   social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
-  current_version:    4.0.0-beta.2
-  docs_version:       4.0
-  repo:               "https://github.com/twbs/bootstrap"
-  slack:              "https://bootstrap-slack.herokuapp.com"
-  blog:               "https://blog.getbootstrap.com"
-  expo:               "https://expo.getbootstrap.com"
-  jobs:               "https://jobs.getbootstrap.com"
-  themes:             "https://themes.getbootstrap.com"
+  current_version:      4.0.0-beta.2
+  current_ruby_version: 4.0.0.beta2
+  docs_version:         4.0
+  repo:                 "https://github.com/twbs/bootstrap"
+  slack:                "https://bootstrap-slack.herokuapp.com"
+  blog:                 "https://blog.getbootstrap.com"
+  expo:                 "https://expo.getbootstrap.com"
+  jobs:                 "https://jobs.getbootstrap.com"
+  themes:               "https://themes.getbootstrap.com"
 
   download:
     source:           "https://github.com/twbs/bootstrap/archive/v4.0.0-beta.2.zip"
