@@ -122,7 +122,7 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 2. Run `npm install` to install Node.js dependencies.
 3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
 4. From the root `/todc-bootstrap` directory, run `npm run docs-serve` in the command line.
-5. Open <http://localhost:9002> in your browser, and voilà.
+5. Open `http://localhost:9002` in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
 
