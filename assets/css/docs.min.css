@@ -398,7 +398,7 @@
   .bd-toc {
     position: sticky;
     top: 4rem;
-    max-height: calc(100vh - 4rem);
+    height: calc(100vh - 4rem);
     overflow-y: auto;
   }
 }
@@ -445,7 +445,7 @@
       position: sticky;
       top: 4rem;
       z-index: 1000;
-      max-height: calc(100vh - 4rem);
+      height: calc(100vh - 4rem);
     }
   }
 }
