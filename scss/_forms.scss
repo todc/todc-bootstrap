@@ -5,7 +5,7 @@
 
 .form-control {
   // border: $input-btn-border-width solid $input-border-color;
-  // border-radius: $input-border-radius;
+  // @include border-radius($input-border-radius);
 
   &:hover {
     border-color: $input-hover-border-color;
@@ -48,7 +48,7 @@ input[type="radio"].form-check-input {
   height: 13px;
   vertical-align: text-bottom;
   border: $input-btn-border-width solid $input-border-color;
-  border-radius: 0;
+  @include border-radius(0);
   appearance: none;
 
   &:hover {
@@ -98,7 +98,7 @@ input[type="checkbox"].form-check-input {
 input[type="radio"].form-check-input {
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  @include border-radius(50%);
 
   &:checked::after {
     position: relative;
@@ -109,7 +109,7 @@ input[type="radio"].form-check-input {
     height: 7px;
     content: "";
     background: #666;
-    border-radius: 1em;
+    @include border-radius(1em);
   }
 
   &[disabled],

@@ -76,7 +76,7 @@
     height: $custom-radio-indicator-size;
     background-color: $custom-control-indicator-bg;
     border: .125rem solid $custom-radio-indicator-border-color;
-    border-radius: $custom-radio-indicator-border-radius;
+    @include border-radius($custom-radio-indicator-border-radius);
   }
 
   .custom-control-input:disabled:checked ~ .custom-control-indicator {
@@ -104,7 +104,7 @@
   background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
   background-size: $custom-select-bg-size;
   border: $custom-select-border-width solid $custom-select-border-color;
-  border-radius: $custom-select-border-radius;
+  @include border-radius($custom-select-border-radius);
 
   &:hover {
     border-color: $input-hover-border-color;
