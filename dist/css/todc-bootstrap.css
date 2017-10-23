@@ -3200,7 +3200,9 @@ tbody.collapse.show {
 
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group .custom-select,
+.input-group .custom-file {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -3209,8 +3211,22 @@ tbody.collapse.show {
 
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group .custom-select:not(:first-child):not(:last-child),
+.input-group .custom-file:not(:first-child):not(:last-child) {
   border-radius: 0;
+}
+
+.input-group .custom-file {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.input-group .custom-select,
+.input-group .custom-file {
+  width: 100%;
 }
 
 .input-group-addon,
@@ -3253,6 +3269,8 @@ tbody.collapse.show {
 }
 
 .input-group .form-control:not(:last-child),
+.input-group .custom-select:not(:last-child),
+.input-group .custom-file:not(:last-child) .custom-file-control::before,
 .input-group-addon:not(:last-child),
 .input-group-btn:not(:last-child) > .btn,
 .input-group-btn:not(:last-child) > .btn-group > .btn,
@@ -3268,6 +3286,8 @@ tbody.collapse.show {
 }
 
 .input-group .form-control:not(:first-child),
+.input-group .custom-select:not(:first-child),
+.input-group .custom-file:not(:first-child) .custom-file-control,
 .input-group-addon:not(:first-child),
 .input-group-btn:not(:first-child) > .btn,
 .input-group-btn:not(:first-child) > .btn-group > .btn,
@@ -3278,7 +3298,9 @@ tbody.collapse.show {
   border-bottom-left-radius: 0;
 }
 
-.form-control + .input-group-addon:not(:first-child) {
+.form-control + .input-group-addon:not(:first-child),
+.custom-select + .input-group-addon:not(:first-child),
+.custom-file + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 

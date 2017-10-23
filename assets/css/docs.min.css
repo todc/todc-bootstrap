@@ -590,16 +590,16 @@
   margin-left: 1rem;
 }
 
-.bd-example-row .row + .row {
-  margin-top: 1rem;
-}
-
 .bd-example-row .row > .col,
 .bd-example-row .row > [class^="col-"] {
   padding-top: .75rem;
   padding-bottom: .75rem;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.bd-example-row .row + .row {
+  margin-top: 1rem;
 }
 
 .bd-example-row .flex-items-top,
@@ -801,7 +801,8 @@
 .bd-example-type h4,
 .bd-example-type h5,
 .bd-example-type h6 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bd-example-bg-classes p {
@@ -864,6 +865,19 @@
   margin-bottom: .5rem;
 }
 
+.modal {
+  z-index: 1072;
+}
+
+.modal .tooltip,
+.modal .popover {
+  z-index: 1073;
+}
+
+.modal-backdrop {
+  z-index: 1071;
+}
+
 .bd-example-modal {
   background-color: #fafafa;
 }
@@ -882,19 +896,6 @@
   left: auto;
   margin-right: auto;
   margin-left: auto;
-}
-
-.modal {
-  z-index: 1072;
-}
-
-.modal .tooltip,
-.modal .popover {
-  z-index: 1073;
-}
-
-.modal-backdrop {
-  z-index: 1071;
 }
 
 .bd-example-tabs .nav-tabs {
