@@ -333,6 +333,8 @@ $input-btn-line-height-lg:    $line-height-lg !default;
 
 $btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-focus-width:             $input-btn-focus-width !default;
+$btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-disabled-color:     $gray-600 !default;
@@ -369,6 +371,8 @@ $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              theme-color("primary") !default;
 $input-focus-border-width:              .125rem !default;
 $input-focus-color:                     $input-color !default;
+$input-focus-width:                     $input-btn-focus-width !default;
+$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
 $input-hover-border-color:              rgba(0, 0, 0, .3) !default;
 $input-hover-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, .1);
