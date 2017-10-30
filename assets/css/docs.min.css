@@ -1123,39 +1123,6 @@
   }
 }
 
-.bd-team {
-  margin-bottom: 1.5rem;
-}
-
-.bd-team .team-member {
-  line-height: 2rem;
-  color: #555;
-}
-
-.bd-team .team-member:hover,
-.bd-team .team-member:focus {
-  color: #333;
-}
-
-.bd-team .team-member:hover {
-  text-decoration: none;
-}
-
-.bd-team .github-btn {
-  float: right;
-  width: 180px;
-  height: 1.25rem;
-  margin-top: .25rem;
-  border: 0;
-}
-
-.bd-team img {
-  float: left;
-  width: 2rem;
-  margin-right: .5rem;
-  border-radius: .25rem;
-}
-
 .bd-browser-bugs td p {
   margin-bottom: 0;
 }
