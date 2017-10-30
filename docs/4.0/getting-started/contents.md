@@ -36,16 +36,18 @@ bootstrap/
 
 This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
 
-### Comparison of CSS files
+## CSS files
+
+Bootstrap includes a handful of options for including some or all of our compiled CSS.
 
 <table class="table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">CSS files</th>
-      <th scope="col" class="text-center">Layout</th>
-      <th scope="col" class="text-center">Content</th>
-      <th scope="col" class="text-center">Components</th>
-      <th scope="col" class="text-center">Utilities</th>
+      <th scope="col">Layout</th>
+      <th scope="col">Content</th>
+      <th scope="col">Components</th>
+      <th scope="col">Utilities</th>
     </tr>
   </thead>
   <tbody>
