@@ -39,9 +39,9 @@ module.exports = {
     format: 'iife'
   },
   name: 'todc-bootstrap',
-  external: external,
-  globals: globals,
-  plugins: plugins,
+  external,
+  globals,
+  plugins,
   banner: `/*!
   * TODC Bootstrap v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}
