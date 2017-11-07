@@ -1026,25 +1026,25 @@
   color: #999;
 }
 
-.btn-bd-purple {
+.btn-bd-primary {
   font-weight: 500;
   color: #2451b2;
   border-color: #2451b2;
 }
 
-.btn-bd-purple:hover, .btn-bd-purple:active {
+.btn-bd-primary:hover, .btn-bd-primary:active {
   color: #fff;
   background-color: #2451b2;
   border-color: #2451b2;
 }
 
-.btn-bd-yellow {
+.btn-bd-download {
   font-weight: 500;
   color: #fff;
   border-color: #fff;
 }
 
-.btn-bd-yellow:hover, .btn-bd-yellow:active {
+.btn-bd-download:hover, .btn-bd-download:active {
   color: #2a2730;
   background-color: #fff;
   border-color: #fff;
