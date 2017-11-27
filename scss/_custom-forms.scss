@@ -124,11 +124,11 @@
 
   &:hover {
     border-color: $input-hover-border-color;
-    @include box-shadow($input-hover-box-shadow);
+    box-shadow: $input-hover-box-shadow;
   }
 
   &:focus {
     border-color: $custom-select-focus-border-color;
-    @include box-shadow($custom-select-focus-box-shadow);
+    box-shadow: $custom-select-focus-box-shadow;
   }
 }
