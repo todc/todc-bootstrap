@@ -132,15 +132,9 @@
     "node": ">=6"
   },
   "files": [
-    ".babelrc",
-    ".eslintignore",
-    "Gemfile",
-    "dist",
-    "build",
-    "js/.eslintrc.json",
-    "js/**/*.js",
-    "js/**/*.js.map",
-    "scss/**/*.scss"
+    "dist/",
+    "js/{src,dist}/",
+    "scss/"
   ],
   "browserslist": [
     "Chrome >= 45",
