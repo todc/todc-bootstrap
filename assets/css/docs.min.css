@@ -11,7 +11,7 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.99px) {
   .bd-navbar {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -117,11 +117,6 @@
   }
 }
 
-.bd-pretext {
-  overflow: hidden;
-  resize: none;
-}
-
 .half-rule {
   width: 6rem;
   margin: 2.5rem 0;
@@ -134,30 +129,6 @@
 .masthead-followup .highlight {
   padding: .5rem 0;
   background-color: transparent;
-}
-
-.bd-featured-sites {
-  margin-right: -1px;
-  margin-left: -1px;
-}
-
-.bd-featured-sites .col-6 {
-  padding: 1px;
-}
-
-.bd-featured-sites .img-fluid {
-  margin-top: 0;
-}
-
-@media (min-width: 768px) {
-  .bd-featured-sites .col-sm-3:first-child img {
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem;
-  }
-  .bd-featured-sites .col-sm-3:last-child img {
-    border-top-right-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-  }
 }
 
 #carbonads {
@@ -230,7 +201,7 @@
   margin-bottom: 1rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.99px) {
   .bd-content > table {
     display: block;
     overflow-x: auto;
@@ -314,64 +285,6 @@
 
 .bd-text-purple-bright {
   color: #2451b2;
-}
-
-.bd-pageheader {
-  padding: 2rem 15px;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  text-align: center;
-  background-color: #3367d6;
-}
-
-.bd-pageheader .container {
-  position: relative;
-}
-
-.bd-pageheader h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-.bd-pageheader p {
-  margin-bottom: 0;
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-@media (min-width: 576px) {
-  .bd-pageheader {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 3rem;
-    text-align: left;
-  }
-  .bd-pageheader .carbonad {
-    margin: 2rem 0 0 !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .bd-pageheader h1 {
-    font-size: 4rem;
-  }
-  .bd-pageheader p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .bd-pageheader h1,
-  .bd-pageheader p {
-    margin-right: 380px;
-  }
-  .bd-pageheader .carbonad {
-    position: absolute;
-    top: 0;
-    right: .75rem;
-    margin: 0 !important;
-  }
 }
 
 #skippy {
@@ -716,6 +629,7 @@
   position: relative;
   padding: 1rem;
   margin: 1rem -15px;
+  overflow: auto;
   border: solid #f7f7f9;
   border-width: .2rem 0 0;
 }
@@ -1014,16 +928,6 @@
 .highlight pre code {
   font-size: inherit;
   color: #212121;
-}
-
-.table-responsive .highlight pre {
-  white-space: normal;
-}
-
-.bd-table th small {
-  display: block;
-  font-weight: 400;
-  color: #999;
 }
 
 .btn-bd-primary {
