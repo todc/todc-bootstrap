@@ -5,12 +5,12 @@
 .custom-control-input {
   &:disabled {
     ~ .custom-control-label {
-      background-color: $custom-control-indicator-disabled-bg;
-      border-color: $custom-control-indicator-disabled-border-color;
-    }
-
-    ~ .custom-control-label {
       color: $custom-control-label-disabled-color;
+      border-color: $custom-control-indicator-disabled-border-color;
+
+      &::before {
+        background-color: $custom-control-indicator-disabled-bg;
+      }
     }
   }
 }
