@@ -447,12 +447,12 @@ $select-indicator:                      str-replace(url("data:image/svg+xml;char
 
 $form-text-margin-top:                  .25rem !default;
 
-$form-check-margin-bottom:              .5rem !default;
 $form-check-input-gutter:               1.25rem !default;
-$form-check-input-margin-y:             .25rem !default;
+$form-check-input-margin-y:             .3rem !default;
 $form-check-input-margin-x:             .25rem !default;
 
 $form-check-inline-margin-x:            .75rem !default;
+$form-check-inline-input-margin-x:      .3125rem !default;
 
 $form-group-margin-bottom:              1rem !default;
 
@@ -461,7 +461,6 @@ $input-group-addon-bg:                  $gray-200 !default;
 $input-group-addon-border-color:        $input-border-color !default;
 
 $custom-control-gutter:                 1.5rem !default;
-$custom-control-spacer-y:               .25rem !default;
 $custom-control-spacer-x:               1rem !default;
 
 $custom-control-indicator-size:         1.125rem !default;
@@ -475,8 +474,8 @@ $custom-control-indicator-border-radius:        $border-radius !default;
 $custom-control-indicator-disabled-border-color:rgba(0, 0, 0, .26) !default; //$$gray-400
 $custom-control-indicator-disabled-bg:          $white !default;
 
-$custom-control-description-padding-left:       .5rem;
-$custom-control-description-disabled-color:     $gray-600 !default;
+$custom-control-label-padding-left:             .5rem;
+$custom-control-label-disabled-color:           $gray-600 !default;
 
 $custom-control-indicator-checked-color:        $white !default;
 $custom-control-indicator-checked-bg:           theme-color("primary") !default;

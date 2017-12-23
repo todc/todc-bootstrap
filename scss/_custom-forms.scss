@@ -4,60 +4,60 @@
 
 .custom-control-input {
   &:disabled {
-    ~ .custom-control-indicator {
+    ~ .custom-control-label {
       background-color: $custom-control-indicator-disabled-bg;
       border-color: $custom-control-indicator-disabled-border-color;
     }
 
-    ~ .custom-control-description {
-      color: $custom-control-description-disabled-color;
+    ~ .custom-control-label {
+      color: $custom-control-label-disabled-color;
     }
   }
 }
 
 
-// Custom indicator
+// Custom control indicators
 //
-// Generates a shadow element to create our makeshift checkbox/radio background.
+// Build the custom controls out of psuedo-elements.
 
-.custom-control-indicator {
-  top: (($line-height-base - $custom-control-indicator-size) / 2);
-  width: $custom-control-indicator-size;
-  height: $custom-control-indicator-size;
-  background-color: $custom-control-indicator-bg;
-  border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
-  @include box-shadow($custom-control-indicator-box-shadow);
+.custom-control-label {
 
+  // Background-color and (when enabled) gradient
   &::before {
+    top: (($line-height-base - $custom-control-indicator-size) / 2);
+    width: $custom-control-indicator-size;
+    height: $custom-control-indicator-size;
+    background-color: $custom-control-indicator-bg;
+    border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
+    @include box-shadow($custom-control-indicator-box-shadow);
+  }
+
+  // Foreground (icon)
+  &::after {
+    top: (($line-height-base - $custom-control-indicator-size) / 2);
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     background-size: $custom-control-indicator-bg-size;
   }
 }
 
-// Custom description
-//
-// Generates a shadow element to create our makeshift checkbox/radio background.
-
-.custom-control-description {
-  padding-left: $custom-control-description-padding-left;
-}
 
 // Checkboxes
 //
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
-  .custom-control-indicator {
+  .custom-control-label::before {
     @include border-radius($custom-checkbox-indicator-border-radius);
   }
 
-  .custom-control-input:checked ~ .custom-control-indicator {
-    @include gradient-bg($custom-control-indicator-checked-bg);
-    background-image: $custom-checkbox-indicator-icon-checked;
+  .custom-control-input:checked ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
 
     &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+    &::after {
       background-image: $custom-checkbox-indicator-icon-checked;
     }
   }
@@ -67,13 +67,14 @@
     border-color: $custom-checkbox-indicator-checked-disabled-border-color;
   }
 
-  .custom-control-input:indeterminate ~ .custom-control-indicator {
-    @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
-    @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
-
+  .custom-control-input:indeterminate ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
 
     &::before {
+      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
+      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+    }
+    &::after {
       background-image: $custom-checkbox-indicator-icon-indeterminate;
     }
   }
@@ -84,7 +85,7 @@
 // Tweak just a few things for radios.
 
 .custom-radio {
-  .custom-control-indicator {
+  .custom-control-label::before {
     width: $custom-radio-indicator-size;
     height: $custom-radio-indicator-size;
     background-color: $custom-control-indicator-bg;
@@ -92,16 +93,21 @@
     @include border-radius($custom-radio-indicator-border-radius);
   }
 
-  .custom-control-input:disabled:checked ~ .custom-control-indicator {
-    background-image: $custom-radio-indicator-icon-checked-disabled;
+  .custom-control-input:disabled:checked ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-disabled-border-color;
+
+    &::after {
+      background-image: $custom-radio-indicator-icon-checked-disabled;
+    }
   }
 
-  .custom-control-input:checked ~ .custom-control-indicator {
-    @include gradient-bg($custom-control-indicator-bg);
+  .custom-control-input:checked ~ .custom-control-label {
     border-color: $custom-radio-indicator-checked-border-color;
 
     &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+    &::after {
       background-image: $custom-radio-indicator-icon-checked;
     }
   }
