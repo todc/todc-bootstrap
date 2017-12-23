@@ -50,7 +50,7 @@ Several quick start options are available:
 
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
-Read the [Getting started page](https://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/4.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
