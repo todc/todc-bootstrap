@@ -5577,7 +5577,7 @@ button.close {
 .tooltip .arrow {
   position: absolute;
   display: block;
-  width: 0.4rem;
+  width: 0.8rem;
   height: 0.4rem;
 }
 
@@ -5598,7 +5598,7 @@ button.close {
 
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
-  border-width: 0.4rem 0.2rem 0;
+  border-width: 0.4rem 0.4rem 0;
   border-top-color: #000;
 }
 
@@ -5609,12 +5609,12 @@ button.close {
 .bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow {
   left: 0;
   width: 0.4rem;
-  height: 0.4rem;
+  height: 0.8rem;
 }
 
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   right: 0;
-  border-width: 0.2rem 0.4rem 0.2rem 0;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
   border-right-color: #000;
 }
 
@@ -5628,7 +5628,7 @@ button.close {
 
 .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
   bottom: 0;
-  border-width: 0 0.2rem 0.4rem;
+  border-width: 0 0.4rem 0.4rem;
   border-bottom-color: #000;
 }
 
@@ -5639,12 +5639,12 @@ button.close {
 .bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^="left"] .arrow {
   right: 0;
   width: 0.4rem;
-  height: 0.4rem;
+  height: 0.8rem;
 }
 
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
   left: 0;
-  border-width: 0.2rem 0 0.2rem 0.4rem;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
   border-left-color: #000;
 }
 
@@ -5690,8 +5690,8 @@ button.close {
 .popover .arrow {
   position: absolute;
   display: block;
-  width: 0.8rem;
-  height: 0.4rem;
+  width: 1rem;
+  height: 0.5rem;
   margin: 0 0.3rem;
 }
 
@@ -5704,16 +5704,16 @@ button.close {
 }
 
 .bs-popover-top, .bs-popover-auto[x-placement^="top"] {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .bs-popover-top .arrow, .bs-popover-auto[x-placement^="top"] .arrow {
-  bottom: calc((0.4rem + 1px) * -1);
+  bottom: calc((0.5rem + 1px) * -1);
 }
 
 .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before,
 .bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
-  border-width: 0.4rem 0.4rem 0;
+  border-width: 0.5rem 0.5rem 0;
 }
 
 .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
@@ -5727,19 +5727,19 @@ button.close {
 }
 
 .bs-popover-right, .bs-popover-auto[x-placement^="right"] {
-  margin-left: 0.4rem;
+  margin-left: 0.5rem;
 }
 
 .bs-popover-right .arrow, .bs-popover-auto[x-placement^="right"] .arrow {
-  left: calc((0.4rem + 1px) * -1);
-  width: 0.4rem;
-  height: 0.8rem;
+  left: calc((0.5rem + 1px) * -1);
+  width: 0.5rem;
+  height: 1rem;
   margin: 0.3rem 0;
 }
 
 .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before,
 .bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
-  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
@@ -5753,16 +5753,16 @@ button.close {
 }
 
 .bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .bs-popover-bottom .arrow, .bs-popover-auto[x-placement^="bottom"] .arrow {
-  top: calc((0.4rem + 1px) * -1);
+  top: calc((0.5rem + 1px) * -1);
 }
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
 .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  border-width: 0 0.4rem 0.4rem 0.4rem;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
@@ -5780,26 +5780,26 @@ button.close {
   top: 0;
   left: 50%;
   display: block;
-  width: 0.8rem;
-  margin-left: -0.4rem;
+  width: 1rem;
+  margin-left: -0.5rem;
   content: "";
   border-bottom: 1px solid #f7f7f7;
 }
 
 .bs-popover-left, .bs-popover-auto[x-placement^="left"] {
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
 }
 
 .bs-popover-left .arrow, .bs-popover-auto[x-placement^="left"] .arrow {
-  right: calc((0.4rem + 1px) * -1);
-  width: 0.4rem;
-  height: 0.8rem;
+  right: calc((0.5rem + 1px) * -1);
+  width: 0.5rem;
+  height: 1rem;
   margin: 0.3rem 0;
 }
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
 .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
-  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
