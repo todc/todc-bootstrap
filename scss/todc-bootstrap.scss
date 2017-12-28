@@ -11,7 +11,6 @@
 // @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 @import "../bootstrap/scss/root";
-@import "../bootstrap/scss/print";
 @import "../bootstrap/scss/reboot";
 @import "../bootstrap/scss/type";
 @import "../bootstrap/scss/images";
@@ -42,6 +41,7 @@
 @import "../bootstrap/scss/popover";
 @import "../bootstrap/scss/carousel";
 @import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/print";
 
 
 // Extend the default Bootstrap functionality
@@ -50,7 +50,6 @@
 // @import "variables";
 @import "mixins";
 // @import "root";
-// @import "print";
 // @import "reboot";
 @import "type";
 // @import "images";
@@ -81,3 +80,4 @@
 // @import "popover";
 // @import "carousel";
 // @import "utilities";
+// @import "print";
