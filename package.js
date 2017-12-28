@@ -5,7 +5,7 @@
 Package.describe({
   name: 'todc:todc-bootstrap',  // https://atmospherejs.com/todc/todc-bootstrap
   summary: 'Google-styled theme for Bootstrap.',
-  version: '4.0.0-beta-4.0.0-alpha',
+  version: '4.0.0-beta.3-4.0.0-alpha',
   git: 'https://github.com/todc/todc-bootstrap.git'
 });
 
