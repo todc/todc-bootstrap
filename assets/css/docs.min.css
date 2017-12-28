@@ -217,7 +217,7 @@
 .bd-content > table > tfoot > tr > td {
   padding: 0.75rem;
   vertical-align: top;
-  border: 1px solid #eeeeee;
+  border: 1px solid #e0e0e0;
 }
 
 .bd-content > table > thead > tr > th > p:last-child,
