@@ -25,5 +25,6 @@
     <file src="scss\**\*.scss" target="content\Content\bootstrap" />
     <file src="scss\**\*.scss" target="content\Content\todc-bootstrap" />
     <file src="dist\js\bootstrap*.js" target="content\Scripts" />
+    <file src="dist\js\bootstrap*.js.map" target="content\Scripts" />
   </files>
 </package>
