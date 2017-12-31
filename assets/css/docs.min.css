@@ -368,7 +368,7 @@
 
 @media (min-width: 1200px) {
   .bd-sidebar {
-    max-width: 320px;
+    flex: 0 1 320px;
   }
 }
 
@@ -631,7 +631,7 @@
 .bd-example {
   position: relative;
   padding: 1rem;
-  margin: 1rem -15px;
+  margin: 1rem -15px 0;
   border: solid #f7f7f9;
   border-width: .2rem 0 0;
 }
@@ -646,7 +646,6 @@
   .bd-example {
     padding: 1.5rem;
     margin-right: 0;
-    margin-bottom: 0;
     margin-left: 0;
     border-width: .2rem;
   }
