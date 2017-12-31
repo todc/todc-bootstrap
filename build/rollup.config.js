@@ -36,16 +36,16 @@ if (BUNDLE) {
 module.exports = {
   input: path.resolve(__dirname, '../js/src/index.js'),
   output: {
-    file: path.resolve(__dirname, `../dist/js/${fileDest}`),
-    format: 'umd'
-  },
-  name: 'todc-bootstrap',
-  external,
-  globals,
-  plugins,
-  banner: `/*!
+    banner: `/*!
   * TODC Bootstrap v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}
   * Licensed under MIT (https://github.com/todc/todc-bootstrap/blob/master/LICENSE)
-  */`
+  */`,
+    file: path.resolve(__dirname, `../dist/js/${fileDest}`),
+    format: 'umd',
+    globals,
+    name: 'todc-bootstrap'
+  },
+  external,
+  plugins
 }
