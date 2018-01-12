@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-"use strict"
+'use strict'
 
 /*!
  * Script to clone and checkout Bootstrap.
@@ -9,49 +9,49 @@
  */
 
 /* global Set */
-var path = require("path")
-var git = require("nodegit")
-var fse = require("fs-extra")
-var newLine = "\n"
-var bootstrapDir = path.resolve("./bootstrap")
-var bootstrapGit = "https://github.com/twbs/bootstrap.git"
-// var bootstrapVersion = "refs/tags/v4.0.0-beta"
-var bootstrapVersion = "v4-dev"
+const path = require('path')
+const git = require('nodegit')
+const fse = require('fs-extra')
+const newLine = '\n'
+const bootstrapDir = path.resolve('./bootstrap')
+const bootstrapGit = 'https://github.com/twbs/bootstrap.git'
+// const bootstrapVersion = 'refs/tags/v4.0.0-beta'
+const bootstrapVersion = 'v4-dev'
 
-var checkoutBranch = function (repository) {
+const checkoutBranch = function (repository) {
   return repository.getReference(bootstrapVersion)
-    .then(function (reference) {
-      console.log("Checking out: " + reference.name())
+    .then((reference) => {
+      console.log(`Checking out: ${reference.name()}`)
       return repository.checkoutRef(reference)
     })
 }
 
-console.log("Removing directory " + bootstrapDir + "...")
+console.log(`Removing directory ${bootstrapDir} ${'...'}`)
 
-fse.remove(bootstrapDir).then(function () {
-  console.log("Removed " + bootstrapDir + newLine)
-  console.log("Cloning " + bootstrapGit + " to " + bootstrapDir + "...")
+fse.remove(bootstrapDir).then(() => {
+  console.log(`Removed ${bootstrapDir} ${newLine}`)
+  console.log(`Cloning ${bootstrapGit} ${'to'} ${bootstrapDir} ${'...'}`)
 
-  git.Clone(bootstrapGit, bootstrapDir).then(function (repository) {
+  git.Clone(bootstrapGit, bootstrapDir).then(() => {
     // Checkout `bootstrapVersion` from `bootstrapDir`
     git.Repository.open(bootstrapDir)
       .then(checkoutBranch)
-      .catch(err => {
-        console.log("Checkout Error:")
+      .catch((err) => {
+        console.log('Checkout Error:')
         console.error(err)
       })
-      .done(function () {
-        console.log("Finished checking out " + bootstrapVersion)
+      .done(() => {
+        console.log(`Finished checking out ${bootstrapVersion}`)
       })
   })
-  .catch(err => {
-    console.log("Cloning Error:")
+    .catch((err) => {
+      console.log('Cloning Error:')
+      console.error(err)
+    })
+    .done(() => {
+      console.log(`Completed cloning ${bootstrapGit} ${newLine}`)
+    })
+})
+  .catch((err) => {
     console.error(err)
   })
-  .done(function () {
-    console.log("Completed cloning " + bootstrapGit + newLine)
-  })
-})
-.catch(err => {
-  console.error(err)
-})
