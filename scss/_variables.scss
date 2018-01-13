@@ -409,11 +409,11 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-hover-border-color:              rgba(0, 0, 0, .3) !default;
-$input-hover-box-shadow:                inset 0 1px 2px rgba(0, 0, 0, .1);
+$input-hover-border-color:              rgba($black, .3) !default;
+$input-hover-box-shadow:                inset 0 1px 2px rgba($black, .1);
 
-$input-placeholder-color:               rgba(0, 0, 0, .38) !default; // $gray-500
-$input-placeholder-focus-color:         rgba(0, 0, 0, .54) !default; // $gray-600
+$input-placeholder-color:               rgba($black, .38) !default; // $gray-500
+$input-placeholder-focus-color:         rgba($black, .54) !default; // $gray-600
 
 $input-disabled-border-color:           $input-border-color !default;
 $input-disabled-box-shadow:             none !default;
@@ -786,8 +786,8 @@ $modal-title-line-height:           $line-height-base !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba(0, 0, 0, .333) !default; // #aaa
 $modal-content-border-width:        $border-width !default;
-$modal-content-box-shadow-xs:       0 .25rem 1.143rem rgba(0, 0, 0, .2) !default; // #ccc
-$modal-content-box-shadow-sm-up:    0 .25rem 1.143rem rgba(0, 0, 0, .2) !default; // #ccc
+$modal-content-box-shadow-xs:       0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
+$modal-content-box-shadow-sm-up:    0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
 
 $modal-backdrop-bg:                 $white !default;
 $modal-backdrop-opacity:            .75 !default;
@@ -944,32 +944,32 @@ $shadow-key-umbra-opacity:          .2 !default;
 $shadow-key-penumbra-opacity:       .14 !default;
 $shadow-ambient-shadow-opacity:     .12 !default;
 
-$shadow-focus:                      0 0 8px rgba(0, 0, 0, .18),0 8px 16px rgba(0, 0, 0, .36);
+$shadow-focus:                      0 0 8px rgba($black, .18), 0 8px 16px rgba($black, .36);
 
-$shadow-2dp:                        0 2px 2px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 3px 1px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-                                    0 1px 5px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+$shadow-2dp:                        0 2px 2px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 1px -2px rgba($black, $shadow-key-umbra-opacity),
+                                    0 1px 5px 0 rgba($black, $shadow-ambient-shadow-opacity);
 
-$shadow-3dp:                        0 3px 4px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 3px 3px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-                                    0 1px 8px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+$shadow-3dp:                        0 3px 4px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 3px -2px rgba($black, $shadow-key-umbra-opacity),
+                                    0 1px 8px 0 rgba($black, $shadow-ambient-shadow-opacity);
 
-$shadow-4dp:                        0 4px 5px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 1px 10px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-                                    0 2px 4px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+$shadow-4dp:                        0 4px 5px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 1px 10px 0 rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 2px 4px -1px rgba($black, $shadow-key-umbra-opacity);
 
-$shadow-6dp:                        0 6px 10px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 1px 18px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-                                    0 3px 5px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+$shadow-6dp:                        0 6px 10px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 1px 18px 0 rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 3px 5px -1px rgba($black, $shadow-key-umbra-opacity);
 
-$shadow-8dp:                        0 8px 10px 1px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 3px 14px 2px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-                                    0 5px 5px -3px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+$shadow-8dp:                        0 8px 10px 1px rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 14px 2px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 5px 5px -3px rgba($black, $shadow-key-umbra-opacity);
 
-$shadow-16dp:                       0 16px 24px 2px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0  6px 30px 5px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-                                    0  8px 10px -5px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+$shadow-16dp:                       0 16px 24px 2px rgba($black, $shadow-key-penumbra-opacity),
+                                    0  6px 30px 5px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0  8px 10px -5px rgba($black, $shadow-key-umbra-opacity);
 
-$shadow-24dp:                       0  9px 46px  8px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                                    0 11px 15px -7px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-                                    0 24px 38px  3px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+$shadow-24dp:                       0  9px 46px  8px rgba($black, $shadow-key-penumbra-opacity),
+                                    0 11px 15px -7px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 24px 38px  3px rgba($black, $shadow-key-umbra-opacity);
