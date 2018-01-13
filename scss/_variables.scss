@@ -940,11 +940,15 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 // Values from Material Design Lite, http://www.getmdl.io/
 
 // stylelint-disable indentation
+$shadow-focus-umbra-opacity:        .36 !default;
+$shadow-focus-penumbra-opacity:     .18 !default;
+
 $shadow-key-umbra-opacity:          .2 !default;
 $shadow-key-penumbra-opacity:       .14 !default;
 $shadow-ambient-shadow-opacity:     .12 !default;
 
-$shadow-focus:                      0 0 8px rgba($black, .18), 0 8px 16px rgba($black, .36);
+$shadow-focus:                      0 0 8px rgba($black, $shadow-focus-penumbra-opacity),
+                                    0 8px 16px rgba($black, $shadow-focus-umbra-opacity);
 
 $shadow-2dp:                        0 2px 2px 0 rgba($black, $shadow-key-penumbra-opacity),
                                     0 3px 1px -2px rgba($black, $shadow-key-umbra-opacity),
