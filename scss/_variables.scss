@@ -324,7 +324,7 @@ $input-btn-padding-x:         .75rem !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
-$input-btn-focus-color:       rgba(theme-color("primary"), .25) !default;
+$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
@@ -403,7 +403,7 @@ $input-border-radius-lg:                $border-radius-lg !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 
 $input-focus-bg:                        $input-bg !default;
-$input-focus-border-color:              theme-color("primary") !default;
+$input-focus-border-color:              $component-active-bg !default;
 $input-focus-border-width:              .125rem !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
@@ -477,8 +477,8 @@ $custom-control-indicator-disabled-bg:          $white !default;
 $custom-control-label-padding-left:             .5rem;
 $custom-control-label-disabled-color:           $gray-600 !default;
 
-$custom-control-indicator-checked-color:        $white !default;
-$custom-control-indicator-checked-bg:           theme-color("primary") !default;
+$custom-control-indicator-checked-color:        $component-active-color !default;
+$custom-control-indicator-checked-bg:           $component-active-bg !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
 
 $custom-control-indicator-checked-disabled-border-color:  rgba(0, 0, 0, .26) !default;
@@ -486,8 +486,8 @@ $custom-control-indicator-checked-disabled-bg:            rgba(0, 0, 0, .26) !de
 
 $custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
 
-$custom-control-indicator-active-color:         $white !default;
-$custom-control-indicator-active-bg:            lighten(theme-color("primary"), 35%) !default;
+$custom-control-indicator-active-color:         $component-active-color !default;
+$custom-control-indicator-active-bg:            lighten($component-active-bg, 35%) !default;
 $custom-control-indicator-active-box-shadow:    none !default;
 
 $custom-checkbox-indicator-border-radius:       $border-radius !default;
@@ -495,7 +495,7 @@ $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+
 
 $custom-checkbox-indicator-checked-disabled-border-color: transparent !default;
 
-$custom-checkbox-indicator-indeterminate-bg:    theme-color("primary") !default;
+$custom-checkbox-indicator-indeterminate-bg:    $component-active-bg !default;
 $custom-checkbox-indicator-indeterminate-color: $custom-control-indicator-checked-color !default;
 $custom-checkbox-indicator-icon-indeterminate:  str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
 $custom-checkbox-indicator-indeterminate-box-shadow: none !default;
@@ -528,7 +528,7 @@ $custom-select-border-color:        $input-border-color !default;
 $custom-select-border-radius:       $border-radius !default;
 
 $custom-select-focus-border-color:  $input-focus-border-color !default;
-$custom-select-focus-box-shadow:    inset 0 1px 2px rgba(0, 0, 0, .3) !default;
+$custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .3) !default;
 
 $custom-select-font-size-sm:        75% !default;
 $custom-select-height-sm:           $input-height-sm !default;
@@ -680,9 +680,9 @@ $pagination-hover-color:            $link-hover-color !default;
 $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
-$pagination-active-color:           $white !default;
-$pagination-active-bg:              theme-color("primary") !default;
-$pagination-active-border-color:    theme-color("primary") !default;
+$pagination-active-color:           $component-active-color !default;
+$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
 $pagination-disabled-bg:            $white !default;
