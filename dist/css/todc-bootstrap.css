@@ -2490,6 +2490,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
   background-color: #4285f4;
   border-color: #4285f4;
 }
@@ -2524,6 +2525,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
+  color: #212121;
   background-color: #9e9e9e;
   border-color: #9e9e9e;
 }
@@ -2558,6 +2560,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-success.disabled, .btn-success:disabled {
+  color: #fff;
   background-color: #4caf50;
   border-color: #4caf50;
 }
@@ -2592,6 +2595,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-info.disabled, .btn-info:disabled {
+  color: #fff;
   background-color: #00bcd4;
   border-color: #00bcd4;
 }
@@ -2626,6 +2630,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
+  color: #212121;
   background-color: #ffeb3b;
   border-color: #ffeb3b;
 }
@@ -2660,6 +2665,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
+  color: #fff;
   background-color: #f44336;
   border-color: #f44336;
 }
@@ -2694,6 +2700,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-light.disabled, .btn-light:disabled {
+  color: #212121;
   background-color: #f5f5f5;
   border-color: #f5f5f5;
 }
@@ -2728,6 +2735,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
+  color: #fff;
   background-color: #424242;
   border-color: #424242;
 }
@@ -3441,9 +3449,9 @@ tbody.collapse.show {
   width: 100%;
 }
 
-.input-group .form-control,
-.input-group .custom-select,
-.input-group .custom-file {
+.input-group > .form-control,
+.input-group > .custom-select,
+.input-group > .custom-file {
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -3452,37 +3460,37 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.input-group .form-control:focus,
-.input-group .custom-select:focus,
-.input-group .custom-file:focus {
+.input-group > .form-control:focus,
+.input-group > .custom-select:focus,
+.input-group > .custom-file:focus {
   z-index: 3;
 }
 
-.input-group .form-control + .form-control,
-.input-group .form-control + .custom-select,
-.input-group .form-control + .custom-file,
-.input-group .custom-select + .form-control,
-.input-group .custom-select + .custom-select,
-.input-group .custom-select + .custom-file,
-.input-group .custom-file + .form-control,
-.input-group .custom-file + .custom-select,
-.input-group .custom-file + .custom-file {
+.input-group > .form-control + .form-control,
+.input-group > .form-control + .custom-select,
+.input-group > .form-control + .custom-file,
+.input-group > .custom-select + .form-control,
+.input-group > .custom-select + .custom-select,
+.input-group > .custom-select + .custom-file,
+.input-group > .custom-file + .form-control,
+.input-group > .custom-file + .custom-select,
+.input-group > .custom-file + .custom-file {
   margin-left: -1px;
 }
 
-.input-group .form-control:not(:last-child),
-.input-group .custom-select:not(:last-child) {
+.input-group > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group .form-control:not(:first-child),
-.input-group .custom-select:not(:first-child) {
+.input-group > .form-control:not(:first-child),
+.input-group > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group .custom-file {
+.input-group > .custom-file {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3491,14 +3499,14 @@ tbody.collapse.show {
   align-items: center;
 }
 
-.input-group .custom-file:not(:last-child) .custom-file-label,
-.input-group .custom-file:not(:last-child) .custom-file-label::before {
+.input-group > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label::before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group .custom-file:not(:first-child) .custom-file-label,
-.input-group .custom-file:not(:first-child) .custom-file-label::before {
+.input-group > .custom-file:not(:first-child) .custom-file-label,
+.input-group > .custom-file:not(:first-child) .custom-file-label::before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
