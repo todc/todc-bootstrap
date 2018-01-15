@@ -468,10 +468,10 @@ $custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      initial !default;
 $custom-control-indicator-box-shadow:   none !default;
 
-$custom-control-indicator-border-color:         rgba(0, 0, 0, .54) !default; // $gray-600
+$custom-control-indicator-border-color:         rgba($black, .54) !default; // $gray-600
 $custom-control-indicator-border-radius:        $border-radius !default;
 
-$custom-control-indicator-disabled-border-color:rgba(0, 0, 0, .26) !default; //$$gray-400
+$custom-control-indicator-disabled-border-color:rgba($black, .26) !default; //$$gray-400
 $custom-control-indicator-disabled-bg:          $white !default;
 
 $custom-control-label-padding-left:             .5rem;
@@ -481,8 +481,8 @@ $custom-control-indicator-checked-color:        $component-active-color !default
 $custom-control-indicator-checked-bg:           $component-active-bg !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
 
-$custom-control-indicator-checked-disabled-border-color:  rgba(0, 0, 0, .26) !default;
-$custom-control-indicator-checked-disabled-bg:            rgba(0, 0, 0, .26) !default; //$$gray-400
+$custom-control-indicator-checked-disabled-border-color:  rgba($black, .26) !default;
+$custom-control-indicator-checked-disabled-bg:            rgba($black, .26) !default; //$$gray-400
 
 $custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
 
@@ -501,7 +501,7 @@ $custom-checkbox-indicator-icon-indeterminate:  str-replace(url("data:image/svg+
 $custom-checkbox-indicator-indeterminate-box-shadow: none !default;
 
 $custom-radio-indicator-size:                     1.25rem !default;
-$custom-radio-indicator-border-color:             rgba(0, 0, 0, .54) !default;
+$custom-radio-indicator-border-color:             rgba($black, .54) !default;
 $custom-radio-indicator-checked-border-color:     theme-color("primary") !default;
 $custom-radio-indicator-checked-color:            $custom-radio-indicator-checked-border-color !default;
 $custom-radio-indicator-checked-disabled-color:   $custom-control-indicator-checked-disabled-bg !default;
@@ -784,7 +784,7 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba(0, 0, 0, .333) !default; // #aaa
+$modal-content-border-color:        rgba($black, .333) !default; // #aaa
 $modal-content-border-width:        $border-width !default;
 $modal-content-box-shadow-xs:       0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
 $modal-content-box-shadow-sm-up:    0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
