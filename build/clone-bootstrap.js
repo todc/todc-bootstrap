@@ -4,7 +4,7 @@
 
 /*!
  * Script to clone and checkout Bootstrap.
- * Copyright 2017 The TODC Bootstrap Authors
+ * Copyright 2018 The TODC Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
