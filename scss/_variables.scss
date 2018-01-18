@@ -422,7 +422,7 @@ $input-placeholder-focus-color:         rgba($black, .54) !default; // $gray-600
 $input-disabled-border-color:           $input-border-color !default;
 $input-disabled-box-shadow:             none !default;
 
-$input-height-border:                   $input-btn-border-width * 2 !default;
+$input-height-border:                   $input-border-width * 2 !default;
 
 $input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
 $input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
