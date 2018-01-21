@@ -1714,6 +1714,13 @@ pre code {
   border-bottom-width: 2px;
 }
 
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -6609,6 +6616,12 @@ button.bg-dark:focus {
   flex-wrap: wrap-reverse !important;
 }
 
+.flex-fill {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+}
+
 .justify-content-start {
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
@@ -6765,6 +6778,11 @@ button.bg-dark:focus {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+  .flex-sm-fill {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
   .justify-content-sm-start {
     -webkit-box-pack: start !important;
     -ms-flex-pack: start !important;
@@ -6900,6 +6918,11 @@ button.bg-dark:focus {
   .flex-md-wrap-reverse {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
+  }
+  .flex-md-fill {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
   }
   .justify-content-md-start {
     -webkit-box-pack: start !important;
@@ -7037,6 +7060,11 @@ button.bg-dark:focus {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+  .flex-lg-fill {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
   .justify-content-lg-start {
     -webkit-box-pack: start !important;
     -ms-flex-pack: start !important;
@@ -7172,6 +7200,11 @@ button.bg-dark:focus {
   .flex-xl-wrap-reverse {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
+  }
+  .flex-xl-fill {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
   }
   .justify-content-xl-start {
     -webkit-box-pack: start !important;
@@ -7418,6 +7451,10 @@ button.bg-dark:focus {
   width: 100% !important;
 }
 
+.w-auto {
+  width: auto !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -7432,6 +7469,10 @@ button.bg-dark:focus {
 
 .h-100 {
   height: 100% !important;
+}
+
+.h-auto {
+  height: auto !important;
 }
 
 .mw-100 {
