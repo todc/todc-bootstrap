@@ -4,8 +4,7 @@
 //
 
 .form-control {
-  // border: $input-btn-border-width solid $input-border-color;
-  // @include border-radius($input-border-radius);
+  height: $input-height;
 
   &:hover {
     border-color: $input-hover-border-color;
@@ -35,6 +34,23 @@ select.form-control {
   }
 
   appearance: none;
+}
+
+
+// Form control sizing
+//
+// Build on `.form-control` with modifier classes to decrease or increase the
+// height and font-size of form controls.
+//
+// The `.form-group-* form-control` variations are sadly duplicated to avoid the
+// issue documented in https://github.com/twbs/bootstrap/issues/15074.
+
+.form-control-sm {
+  height: $input-height-sm;
+}
+
+.form-control-lg {
+  height: $input-height-lg;
 }
 
 
