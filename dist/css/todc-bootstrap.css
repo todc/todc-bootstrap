@@ -9369,7 +9369,13 @@ input[type="radio"].form-check-input.position-static:checked::after {
 
 .card-title {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  margin-top: -0.666667rem;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .alert-primary {
