@@ -11,4 +11,12 @@
     vertical-align: top;
     content: $breadcrumb-divider;
   }
+
+  > a {
+    color: $breadcrumb-divider-color;
+  }
+
+  &.active {
+    font-weight: $breadcrumb-active-font-weight;
+  }
 }
