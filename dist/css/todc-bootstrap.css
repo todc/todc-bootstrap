@@ -9368,6 +9368,10 @@ input[type="radio"].form-check-input.position-static:checked::after {
   left: 3px;
 }
 
+.dropdown-menu {
+  font-size: 0.875rem;
+}
+
 .custom-control-input:disabled ~ .custom-control-label {
   color: #757575;
   border-color: rgba(0, 0, 0, 0.26);
