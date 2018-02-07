@@ -5,7 +5,6 @@
 //
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
 
-
-html {
-  font-size: 14px;
+body {
+  font-size: $font-size-sm;
 }
