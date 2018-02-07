@@ -122,6 +122,11 @@
   margin: 2.5rem 0;
 }
 
+.masthead-followup {
+  line-height: 1.25;
+  letter-spacing: .04em;
+}
+
 .masthead-followup .bd-clipboard {
   display: none;
 }
@@ -234,6 +239,11 @@
 
 .bd-content > table td:first-child > code {
   white-space: nowrap;
+}
+
+.bd-content p {
+  line-height: 1.25;
+  letter-spacing: .04em;
 }
 
 .bd-content > h2:not(:first-child) {
@@ -470,7 +480,9 @@
 
 .bd-footer {
   font-size: 85%;
+  line-height: 1.25;
   text-align: center;
+  letter-spacing: .04em;
   background-color: #f7f7f7;
 }
 
