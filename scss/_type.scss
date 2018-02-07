@@ -2,3 +2,137 @@
   font-size: $font-size-sm;
   font-weight: $font-weight-normal;
 }
+
+
+// Type styles compatible with Google's Material Design
+.display4 {
+  margin: -1rem 0 3.5rem -.085em;
+  font-size: 7rem; // 112sp
+  font-weight: $font-weight-light;
+  line-height: 7rem; // 112sp
+  color: $gray-600;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: -.04em;
+}
+
+.display3 {
+  margin: -8px 0 64px -.07em;
+  font-size: 3.5rem; // 56px
+  font-weight: $font-weight-regular;
+  line-height: 3.5rem; // 56px
+  color: $gray-600;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: -.02em;
+}
+
+.display2 {
+  margin: -.5rem 0 4rem -.07em;
+  font-size: 2.8125rem; // 45px
+  font-weight: $font-weight-regular;
+  line-height: 3rem; // 48px
+  color: $gray-600;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: normal;
+}
+
+.display1 {
+  margin: -.5rem 0 4rem -.07em;
+  font-size: 2.125rem; // 34sp
+  font-weight: $font-weight-regular;
+  line-height: 2.5rem; // 40sp
+  color: $gray-600;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: normal;
+}
+
+.headline {
+  margin: -.5rem 0 1rem -.06em;
+  font-size: 1.5rem; // 24px
+  font-weight: $font-weight-regular;
+  line-height: 2rem; // 32px
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: normal;
+}
+
+.title {
+  margin: -.5rem 0 1rem -.05em;
+  font-size: 1.25rem; // 20px
+  font-weight: $font-weight-medium;
+  line-height: 2rem; // 32px/
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .02em;
+}
+
+.subheading2 {
+  margin: -.5rem 0 1rem -.06em;
+  font-size: 1rem; // 16px
+  font-weight: $font-weight-regular;
+  line-height: 1.75rem; // 28px
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .04em;
+}
+
+.subheading1 {
+  margin: -.313rem 0 .813rem -.06em;
+  font-size: .938rem; // 15px
+  font-weight: $font-weight-regular;
+  line-height: 1.5rem; // 24px
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .04em;
+}
+
+.body2 {
+  margin: -.25rem 0 .75rem 0;
+  font-size: $font-size-sm; // 14px
+  font-weight: $font-weight-medium;
+  line-height: 1.5rem; // 24px
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .04em;
+}
+
+.body1 {
+  margin: -.25rem 0 .75rem 0;
+  font-size: $font-size-sm; // 14px
+  font-weight: $font-weight-regular;
+  line-height: 1.25rem; // 20px
+  color: $gray-900;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .04em;
+}
+
+.caption {
+  margin: -.5rem 0 1rem -.04em;
+  font-size: .75rem; // 12px
+  font-weight: $font-weight-regular;
+  line-height: 1.25rem; // 20px
+  color: $gray-600;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: .08em;
+}
+
+.button {
+  margin: inherit;
+  font-size: $font-size-sm; // 14px
+  font-weight: $font-weight-medium;
+  line-height: 2.25rem; // 36px
+  color: $gray-900;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
