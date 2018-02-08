@@ -199,6 +199,50 @@ $container-max-widths: (
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
 
+
+// Shadows
+// Values from Material Design Lite, http://www.getmdl.io/
+
+// stylelint-disable indentation
+$shadow-focus-umbra-opacity:        .36 !default;
+$shadow-focus-penumbra-opacity:     .18 !default;
+
+$shadow-key-umbra-opacity:          .2 !default;
+$shadow-key-penumbra-opacity:       .14 !default;
+$shadow-ambient-shadow-opacity:     .12 !default;
+
+$shadow-focus:                      0 0 8px rgba($black, $shadow-focus-penumbra-opacity),
+                                    0 8px 16px rgba($black, $shadow-focus-umbra-opacity) !default;
+
+$shadow-2dp:                        0 2px 2px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 1px -2px rgba($black, $shadow-key-umbra-opacity),
+                                    0 1px 5px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
+
+$shadow-3dp:                        0 3px 4px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 3px -2px rgba($black, $shadow-key-umbra-opacity),
+                                    0 1px 8px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
+
+$shadow-4dp:                        0 4px 5px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 1px 10px 0 rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 2px 4px -1px rgba($black, $shadow-key-umbra-opacity) !default;
+
+$shadow-6dp:                        0 6px 10px 0 rgba($black, $shadow-key-penumbra-opacity),
+                                    0 1px 18px 0 rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 3px 5px -1px rgba($black, $shadow-key-umbra-opacity) !default;
+
+$shadow-8dp:                        0 8px 10px 1px rgba($black, $shadow-key-penumbra-opacity),
+                                    0 3px 14px 2px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 5px 5px -3px rgba($black, $shadow-key-umbra-opacity) !default;
+
+$shadow-16dp:                       0 16px 24px 2px rgba($black, $shadow-key-penumbra-opacity),
+                                    0  6px 30px 5px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0  8px 10px -5px rgba($black, $shadow-key-umbra-opacity) !default;
+
+$shadow-24dp:                       0  9px 46px  8px rgba($black, $shadow-key-penumbra-opacity),
+                                    0 11px 15px -7px rgba($black, $shadow-ambient-shadow-opacity),
+                                    0 24px 38px  3px rgba($black, $shadow-key-umbra-opacity) !default;
+
+
 // Components
 //
 // Define common padding and border radius sizes and more.
@@ -336,7 +380,7 @@ $input-btn-line-height:       2.375 !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow:  $shadow-focus !default;
 
 $input-btn-padding-y-sm:      0 !default;
 $input-btn-padding-x-sm:      .5rem !default;
@@ -368,11 +412,11 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 $btn-border-width:            $input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-box-shadow:              $shadow-2dp !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        .65 !default;
-$btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+$btn-active-box-shadow:       $shadow-8dp !default;
 
 $btn-link-disabled-color:     $gray-600 !default;
 
@@ -383,7 +427,7 @@ $btn-border-radius:           $border-radius !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
-$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$btn-transition:              box-shadow .28s cubic-bezier(.4, 0, .2, 1) !default;
 
 
 // Forms
@@ -946,46 +990,3 @@ $pre-scrollable-max-height:         340px !default;
 // Printing
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
-
-
-// Shadows
-// Values from Material Design Lite, http://www.getmdl.io/
-
-// stylelint-disable indentation
-$shadow-focus-umbra-opacity:        .36 !default;
-$shadow-focus-penumbra-opacity:     .18 !default;
-
-$shadow-key-umbra-opacity:          .2 !default;
-$shadow-key-penumbra-opacity:       .14 !default;
-$shadow-ambient-shadow-opacity:     .12 !default;
-
-$shadow-focus:                      0 0 8px rgba($black, $shadow-focus-penumbra-opacity),
-                                    0 8px 16px rgba($black, $shadow-focus-umbra-opacity) !default;
-
-$shadow-2dp:                        0 2px 2px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 1px -2px rgba($black, $shadow-key-umbra-opacity),
-                                    0 1px 5px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
-
-$shadow-3dp:                        0 3px 4px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 3px -2px rgba($black, $shadow-key-umbra-opacity),
-                                    0 1px 8px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
-
-$shadow-4dp:                        0 4px 5px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 1px 10px 0 rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 2px 4px -1px rgba($black, $shadow-key-umbra-opacity) !default;
-
-$shadow-6dp:                        0 6px 10px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 1px 18px 0 rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 3px 5px -1px rgba($black, $shadow-key-umbra-opacity) !default;
-
-$shadow-8dp:                        0 8px 10px 1px rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 14px 2px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 5px 5px -3px rgba($black, $shadow-key-umbra-opacity) !default;
-
-$shadow-16dp:                       0 16px 24px 2px rgba($black, $shadow-key-penumbra-opacity),
-                                    0  6px 30px 5px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0  8px 10px -5px rgba($black, $shadow-key-umbra-opacity) !default;
-
-$shadow-24dp:                       0  9px 46px  8px rgba($black, $shadow-key-penumbra-opacity),
-                                    0 11px 15px -7px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 24px 38px  3px rgba($black, $shadow-key-umbra-opacity) !default;

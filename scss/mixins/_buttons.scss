@@ -1,0 +1,49 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-flat-variant($color, $color-hover: $color, $active-background: rgba($color, .16), $active-border: rgba($color, .16)) {
+  color: $color;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+  @include box-shadow(none);
+
+  &:hover {
+    color: $color-hover;
+    background-color: rgba($color, .04);
+    border-color: rgba($color, .04);
+  }
+
+  &:focus,
+  &.focus {
+    background-color: rgba($color, .12);
+    border-color: rgba($color, .04);
+    @include box-shadow(none);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $color;
+    background-color: $active-background;
+    border-color: $active-border;
+    @include box-shadow(none);
+
+    &:focus {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $enable-shadows and $btn-active-box-shadow != none {
+        @include box-shadow(none);
+      } @else {
+        @include box-shadow(none);
+      }
+    }
+  }
+}

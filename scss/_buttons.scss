@@ -1,0 +1,19 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+// .btn {
+// }
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-flat-#{$color} {
+    @include button-flat-variant($value);
+  }
+}
