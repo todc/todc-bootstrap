@@ -982,11 +982,11 @@
 }
 
 .bd-callout-warning {
-  border-left-color: #ffeb3b;
+  border-left-color: #ff9800;
 }
 
 .bd-callout-warning h4 {
-  color: #ffeb3b;
+  color: #ff9800;
 }
 
 .bd-callout-danger {
@@ -1201,7 +1201,7 @@
 
 .swatch-warning {
   color: #212121;
-  background-color: #ffeb3b;
+  background-color: #ff9800;
 }
 
 .swatch-danger {
