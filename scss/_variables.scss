@@ -330,21 +330,21 @@ $table-striped-order:         odd !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-y:         0 !default;
 $input-btn-padding-x:         1rem !default;
-$input-btn-line-height:       $line-height-base !default;
+$input-btn-line-height:       2.375 !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-y-sm:      0 !default;
 $input-btn-padding-x-sm:      .5rem !default;
-$input-btn-line-height-sm:    $line-height-sm !default;
+$input-btn-line-height-sm:    2 !default;
 
-$input-btn-padding-y-lg:      .25rem !default;
+$input-btn-padding-y-lg:      0 !default;
 $input-btn-padding-x-lg:      .5rem !default;
-$input-btn-line-height-lg:    $line-height-lg !default;
+$input-btn-line-height-lg:    2.1 !default;
 
 $input-btn-border-width:      $border-width !default;
 
@@ -392,9 +392,9 @@ $input-padding-x:                       .5rem !default;
 $input-padding-y:                       .25rem !default;
 $input-line-height:                     $line-height-base !default;
 
-$input-padding-y-sm:                    $input-padding-y !default;
+$input-padding-y-sm:                    0 !default;
 $input-padding-x-sm:                    $input-padding-x !default;
-$input-line-height-sm:                  $input-line-height !default;
+$input-line-height-sm:                  2 !default;
 
 $input-padding-y-lg:                    $input-padding-y !default;
 $input-padding-x-lg:                    $input-padding-x !default;
