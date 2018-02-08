@@ -27,6 +27,12 @@
     - title: Tables
     - title: Figures
 
+- title: TODC Bootstrap
+  pages:
+    - title: Buttons
+    - title: Navbar
+    - title: Migration
+
 - title: Components
   pages:
     - title: Alerts
