@@ -201,46 +201,74 @@ $grid-gutter-width:           30px !default;
 
 
 // Shadows
-// Values from Material Design Lite, http://www.getmdl.io/
+// Values from Material Components, https://material.io/components/web/
 
 // stylelint-disable indentation
-$shadow-focus-umbra-opacity:        .36 !default;
-$shadow-focus-penumbra-opacity:     .18 !default;
+$shadow-focus-umbra-opacity:    .36 !default;
+$shadow-focus-penumbra-opacity: .18 !default;
 
-$shadow-key-umbra-opacity:          .2 !default;
-$shadow-key-penumbra-opacity:       .14 !default;
-$shadow-ambient-shadow-opacity:     .12 !default;
+$shadow-umbra-opacity:          .2 !default;
+$shadow-penumbra-opacity:       .14 !default;
+$shadow-ambient-opacity:        .12 !default;
 
-$shadow-focus:                      0 0 8px rgba($black, $shadow-focus-penumbra-opacity),
-                                    0 8px 16px rgba($black, $shadow-focus-umbra-opacity) !default;
+$shadow-focus:                  0 0 8px rgba($black, $shadow-focus-penumbra-opacity),
+                                0 8px 16px rgba($black, $shadow-focus-umbra-opacity) !default;
 
-$shadow-2dp:                        0 2px 2px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 1px -2px rgba($black, $shadow-key-umbra-opacity),
-                                    0 1px 5px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
+$shadow-0dp:                    0 0 0 0 rgba($black, $shadow-penumbra-opacity),
+                                0 0 0 0 rgba($black, $shadow-umbra-opacity),
+                                0 0 0 0 rgba($black, $shadow-ambient-opacity) !default;
 
-$shadow-3dp:                        0 3px 4px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 3px -2px rgba($black, $shadow-key-umbra-opacity),
-                                    0 1px 8px 0 rgba($black, $shadow-ambient-shadow-opacity) !default;
+$shadow-1dp:                    0 1px 1px 0 rgba($black, $shadow-penumbra-opacity),
+                                0 2px 1px -1px rgba($black, $shadow-umbra-opacity),
+                                0 1px 3px 0 rgba($black, $shadow-ambient-opacity) !default;
 
-$shadow-4dp:                        0 4px 5px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 1px 10px 0 rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 2px 4px -1px rgba($black, $shadow-key-umbra-opacity) !default;
+$shadow-2dp:                    0 2px 2px 0 rgba($black, $shadow-penumbra-opacity),
+                                0 3px 1px -2px rgba($black, $shadow-umbra-opacity),
+                                0 1px 5px 0 rgba($black, $shadow-ambient-opacity) !default;
 
-$shadow-6dp:                        0 6px 10px 0 rgba($black, $shadow-key-penumbra-opacity),
-                                    0 1px 18px 0 rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 3px 5px -1px rgba($black, $shadow-key-umbra-opacity) !default;
+$shadow-3dp:                    0 3px 4px 0 rgba($black, $shadow-penumbra-opacity),
+                                0 3px 3px -2px rgba($black, $shadow-umbra-opacity),
+                                0 1px 8px 0 rgba($black, $shadow-ambient-opacity) !default;
 
-$shadow-8dp:                        0 8px 10px 1px rgba($black, $shadow-key-penumbra-opacity),
-                                    0 3px 14px 2px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 5px 5px -3px rgba($black, $shadow-key-umbra-opacity) !default;
+$shadow-4dp:                    0 4px 5px 0 rgba($black, $shadow-penumbra-opacity),
+                                0 1px 10px 0 rgba($black, $shadow-ambient-opacity),
+                                0 2px 4px -1px rgba($black, $shadow-umbra-opacity) !default;
 
-$shadow-16dp:                       0 16px 24px 2px rgba($black, $shadow-key-penumbra-opacity),
-                                    0  6px 30px 5px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0  8px 10px -5px rgba($black, $shadow-key-umbra-opacity) !default;
+$shadow-6dp:                    0 6px 10px 0 rgba($black, $shadow-penumbra-opacity),
+                                0 1px 18px 0 rgba($black, $shadow-ambient-opacity),
+                                0 3px 5px -1px rgba($black, $shadow-umbra-opacity) !default;
 
-$shadow-24dp:                       0  9px 46px  8px rgba($black, $shadow-key-penumbra-opacity),
-                                    0 11px 15px -7px rgba($black, $shadow-ambient-shadow-opacity),
-                                    0 24px 38px  3px rgba($black, $shadow-key-umbra-opacity) !default;
+$shadow-8dp:                    0 8px 10px 1px rgba($black, $shadow-penumbra-opacity),
+                                0 3px 14px 2px rgba($black, $shadow-ambient-opacity),
+                                0 5px 5px -3px rgba($black, $shadow-umbra-opacity) !default;
+
+$shadow-12dp:                   0 12px 17px 2px rgba($black, $shadow-penumbra-opacity),
+                                0 5px 22px 4px rgba($black, $shadow-ambient-opacity),
+                                0 7px 8px -4px rgba($black, $shadow-umbra-opacity) !default;
+
+$shadow-16dp:                   0 16px 24px 2px rgba($black, $shadow-penumbra-opacity),
+                                0  6px 30px 5px rgba($black, $shadow-ambient-opacity),
+                                0  8px 10px -5px rgba($black, $shadow-umbra-opacity) !default;
+
+$shadow-24dp:                   0  9px 46px  8px rgba($black, $shadow-penumbra-opacity),
+                                0 11px 15px -7px rgba($black, $shadow-ambient-opacity),
+                                0 24px 38px  3px rgba($black, $shadow-umbra-opacity) !default;
+
+// stylelint-disable
+$shadows: ();
+$shadows: map-merge((
+  "shadow-0dp":   $shadow-0dp,
+  "shadow-1dp":   $shadow-1dp,
+  "shadow-2dp":   $shadow-2dp,
+  "shadow-3dp":   $shadow-3dp,
+  "shadow-4dp":   $shadow-4dp,
+  "shadow-6dp":   $shadow-6dp,
+  "shadow-8dp":   $shadow-8dp,
+  "shadow-12dp":  $shadow-12dp,
+  "shadow-16dp":  $shadow-16dp,
+  "shadow-24dp":  $shadow-24dp
+), $shadows);
+// stylelint-enable
 
 
 // Components
