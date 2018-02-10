@@ -29,6 +29,7 @@
 
 - title: TODC Bootstrap
   pages:
+    - title: Typography
     - title: Buttons
     - title: Navbar
     - title: Migration
