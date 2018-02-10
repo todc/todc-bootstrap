@@ -103,8 +103,6 @@ Bootstrap v3 is now in maintenance mode and is closed off to new features.
 This is so that we can focus our efforts on Bootstrap v4, the future of the
 framework.
 
-**NOTE:** The `v4-dev` branch is not yet available.
-
 Before opening a feature request, please take a moment to find out whether your idea
 fits with the scope and aims of the project. It's up to *you* to make a strong
 case to convince the project's developers of the merits of this feature. Please
@@ -128,8 +126,6 @@ off to new features, so that we can focus our efforts on Bootstrap v4, the
 future of the theme. Pull requests that add new features should target
 [TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev)
 instead, where they will be welcomed and duly considered.
-
-**NOTE:** The `v4-dev` branch is not yet available.
 
 Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements

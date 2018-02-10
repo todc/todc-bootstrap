@@ -107,8 +107,6 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 Note that **feature requests must target [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev/),** because TODC Bootstrap v3 is now in maintenance mode and is closed off to new features. This is so that we can focus our efforts on TODC Bootstrap v4.
 
-**NOTE:** The `v4-dev` branch is not yet available.
-
 
 ## Documentation
 
@@ -146,8 +144,6 @@ Moreover, if your pull request contains JavaScript patches or features, you must
 **TODC Bootstrap v3 is now closed off to new features.** It has gone into maintenance mode so that we can focus our efforts on [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev), the future of the theme. Pull requests which add new features (rather than fix bugs) should target [TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev) instead.
 
 Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org/>.
-
-**NOTE:** The `v4-dev` branch is not yet available.
 
 
 ## Versioning
