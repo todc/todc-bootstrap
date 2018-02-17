@@ -92,11 +92,11 @@ fieldset:disabled a.btn {
 
     // Button Sizes
     &.btn-lg {
-      @include button-fab-size();
+      @include button-circle-size();
     }
 
     &.btn-sm {
-      @include button-fab-size($width: 2.5rem, $font-size: $font-size-sm);
+      @include button-circle-size($width: 2.5rem, $font-size: $font-size-sm);
     }
   }
 }
@@ -107,11 +107,11 @@ fieldset:disabled a.btn {
 
     // Button Sizes
     &.btn-lg {
-      @include button-fab-size($width: 3rem, $font-size: $font-size-sm);
+      @include button-circle-size($width: 3rem, $font-size: $font-size-sm);
     }
 
     &.btn-sm{
-      @include button-fab-size($width: 1.875rem, $font-size: $font-size-sm);
+      @include button-circle-size($width: 1.875rem, $font-size: $font-size-sm);
     }
   }
 }

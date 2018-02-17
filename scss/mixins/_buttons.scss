@@ -128,47 +128,37 @@
   }
 }
 
-@mixin button-fab-variant($background,  $hover-background: rgba($background, .8), $active-background: darken($background, 10%)) {
-  @include button-fab-size();
-  color: color-yiq($background);
-  text-align: center;
-  background-color: $background;
-  border-radius: 50%;
-  @include box-shadow($shadow-6dp);
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1);
+// @mixin button-fab-variant($background,  $hover-background: rgba($background, .8), $active-background: darken($background, 10%)) {
+//   @include button-circle-size();
+//   color: color-yiq($background);
+//   text-align: center;
+//   background-color: $background;
+//   border-radius: 50%;
+//   @include box-shadow($shadow-6dp);
+//   transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1);
 
-  &:hover {
-    // background-color: $hover-background;
-    background-color: if(lightness($background) > 90, rgba(color-yiq($background), .07), $hover-background);
-  }
+//   &:hover {
+//     // background-color: $hover-background;
+//     background-color: if(lightness($background) > 90, rgba(color-yiq($background), .07), $hover-background);
+//   }
 
-  &:hover,
-  &:focus,
-  &.focus {
-    @include box-shadow($shadow-8dp);
-  }
+//   &:hover,
+//   &:focus,
+//   &.focus {
+//     @include box-shadow($shadow-8dp);
+//   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    // background-color: rgba($background, .7);
-    background-color: if(lightness($background) > 90, rgba(color-yiq($background), .1), rgba($background, .7));
-    @include box-shadow($shadow-8dp);
-  }
-}
+//   &:not(:disabled):not(.disabled):active,
+//   &:not(:disabled):not(.disabled).active {
+//     // background-color: rgba($background, .7);
+//     background-color: if(lightness($background) > 90, rgba(color-yiq($background), .1), rgba($background, .7));
+//     @include box-shadow($shadow-8dp);
+//   }
+// }
 
-// Floating Action Button sizes
-@mixin button-fab-size($width: 3.5rem, $height: $width, $padding: 0, $font-size: 1.5rem, $line-height: 0) {
-  width: $width;
-  height: $height;
-  padding: $padding;
-  font-size: $font-size;
-  line-height: $line-height;
-  border-radius: 50%;
-}
-
-@mixin button-icon-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1)) {
-  @include button-fab-size($width: 2.5rem);
-  color: if(lightness($color) > 90, color-yiq($color), $color);
+@mixin button-circle-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1), $width: 3.5rem) {
+  @include button-circle-size($width: $width);
+  color: $color;
   text-align: center;
   background-color: $background;
   border-color: transparent;
@@ -190,4 +180,38 @@
     background-color: $active-background;
     // @include box-shadow(none);
   }
+}
+
+// Button sizes for the circle variant
+@mixin button-circle-size($width: 3.5rem, $height: $width, $padding: 0, $font-size: 1.5rem, $line-height: 0) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: 50%;
+}
+
+@mixin button-fab-variant($background,  $hover-background: if(lightness($background) > 90, rgba(color-yiq($background), .07), rgba($background, .8)), $active-background: if(lightness($background) > 90, rgba(color-yiq($background), .1), rgba($background, .7))) {
+  $color: color-yiq($background);
+
+  @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background);
+  @include box-shadow($shadow-6dp);
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1);
+
+  &:hover,
+  &:focus,
+  &.focus {
+    @include box-shadow($shadow-8dp);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow($shadow-8dp);
+  }
+}
+
+@mixin button-icon-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1)) {
+  $color: if(lightness($color) > 90, color-yiq($color), $color);
+  @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background, $width: 2.5rem);
 }
