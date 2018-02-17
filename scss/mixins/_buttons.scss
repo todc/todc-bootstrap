@@ -3,24 +3,103 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
+@mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 20%), $active-border: darken($border, 12.5%)) {
+  color: color-yiq($background);
+  background-color: if(lightness($background) > 90, rgba(color-yiq($background), .045), $background);
+  border-color: if(lightness($border) > 90, rgba(color-yiq($border), .045), $border);
+
+  &:hover {
+    color: color-yiq($hover-background);
+    background-color: $hover-background;
+  }
+
+  &:focus,
+  &.focus {
+    // // Avoid using mixin so we can pass custom focus shadow properly
+    // @if $enable-shadows {
+    //   box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
+    // } @else {
+    //   box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
+    // }
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    color: color-yiq($background);
+    background-color: $background;
+    border-color: $border;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: color-yiq($active-background);
+    background-color: $active-background;
+    // @if $enable-gradients {
+    //   background-image: none; // Remove the gradient for the pressed/active state
+    // }
+    border-color: $active-border;
+
+    &:focus {
+      // // Avoid using mixin so we can pass custom focus shadow properly
+      // @if $enable-shadows {
+      //   box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
+      // } @else {
+      //   box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
+      // }
+    }
+  }
+}
+
+@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+  $border-color: if(lightness($color) > 90, rgba(color-yiq($color), .295), $color);
+
+  @include button-flat-variant($color: $color, $active-border: $border-color);
+  // color: if(lightness($color) > 90, color-yiq($color), $color);
+  // background-color: transparent;
+  // background-image: none;
+  border-color: $border-color;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    border-color: $border-color;
+  }
+}
+
+@mixin button-raised-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 20%), $active-border: darken($border, 12.5%)) {
+  @include button-variant($background: $background, $border: $border);
+  @include box-shadow($btn-box-shadow);
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    @include box-shadow( $btn-active-box-shadow);
+  }
+}
+
 @mixin button-flat-variant($color, $color-hover: $color, $active-background: rgba($color, .16), $active-border: rgba($color, .16)) {
-  color: $color;
+  // color: $color;
+  color: if(lightness($color) > 90, color-yiq($color), $color);
   background-color: transparent;
   background-image: none;
   border-color: transparent;
-  @include box-shadow(none);
+  // @include box-shadow(none);
 
   &:hover {
-    color: $color-hover;
-    background-color: rgba($color, .04);
+    color: if(lightness($color-hover) > 90, color-yiq($color-hover), $color-hover);
+    // background-color: rgba($color, .04);
+    background-color: if(lightness($color) > 90, rgba(color-yiq($color), .04), rgba($color, .04));
     border-color: rgba($color, .04);
   }
 
   &:focus,
   &.focus {
-    background-color: rgba($color, .12);
+    // background-color: rgba($color, .12);
+    background-color: if(lightness($color) > 90, rgba(color-yiq($color), .12), rgba($color, .12));
     border-color: rgba($color, .04);
-    @include box-shadow(none);
+    // @include box-shadow(none);
   }
 
   &.disabled,
@@ -32,18 +111,83 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   .show > &.dropdown-toggle {
-    color: $color;
-    background-color: $active-background;
+    color: if(lightness($color) > 90, color-yiq($color), $color);
+    // background-color: $active-background;
+    background-color: if(lightness($active-background) > 90, rgba(color-yiq($color), .12), $active-background);
     border-color: $active-border;
-    @include box-shadow(none);
+    // @include box-shadow(none);
 
     &:focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows and $btn-active-box-shadow != none {
-        @include box-shadow(none);
-      } @else {
-        @include box-shadow(none);
-      }
+      // // Avoid using mixin so we can pass custom focus shadow properly
+      // @if $enable-shadows and $btn-active-box-shadow != none {
+      //   @include box-shadow(none);
+      // } @else {
+      //   @include box-shadow(none);
+      // }
     }
+  }
+}
+
+@mixin button-fab-variant($background,  $hover-background: rgba($background, .8), $active-background: darken($background, 10%)) {
+  @include button-fab-size();
+  color: color-yiq($background);
+  text-align: center;
+  background-color: $background;
+  border-radius: 50%;
+  @include box-shadow($shadow-6dp);
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1);
+
+  &:hover {
+    // background-color: $hover-background;
+    background-color: if(lightness($background) > 90, rgba(color-yiq($background), .07), $hover-background);
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    @include box-shadow($shadow-8dp);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    // background-color: rgba($background, .7);
+    background-color: if(lightness($background) > 90, rgba(color-yiq($background), .1), rgba($background, .7));
+    @include box-shadow($shadow-8dp);
+  }
+}
+
+// Floating Action Button sizes
+@mixin button-fab-size($width: 3.5rem, $height: $width, $padding: 0, $font-size: 1.5rem, $line-height: 0) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: 50%;
+}
+
+@mixin button-icon-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1)) {
+  @include button-fab-size($width: 2.5rem);
+  color: if(lightness($color) > 90, color-yiq($color), $color);
+  text-align: center;
+  background-color: $background;
+  border-color: transparent;
+  border-radius: 50%;
+  // @include box-shadow(none);
+  transition: background-color, opacity 100ms linear;
+
+  &:hover {
+    background-color: $hover-background;
+  }
+
+  &:focus,
+  &.focus {
+    // @include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-color: $active-background;
+    // @include box-shadow(none);
   }
 }
