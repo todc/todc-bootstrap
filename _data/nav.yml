@@ -31,6 +31,7 @@
   pages:
     - title: Typography
     - title: Buttons
+    - title: Forms
     - title: Navbar
     - title: Shadows
     - title: Migration
