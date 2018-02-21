@@ -4330,8 +4330,8 @@ tbody.collapse.show {
 
 .badge {
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 75%;
+  padding: 0.5em 0.5em;
+  font-size: 85%;
   font-weight: 700;
   line-height: 1;
   text-align: center;
@@ -4464,7 +4464,7 @@ tbody.collapse.show {
 
 .alert {
   position: relative;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.125rem;
@@ -4479,14 +4479,14 @@ tbody.collapse.show {
 }
 
 .alert-dismissible {
-  padding-right: 2.5rem;
+  padding-right: 4rem;
 }
 
 .alert-dismissible .close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1.25rem;
   color: inherit;
 }
 
