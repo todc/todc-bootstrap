@@ -192,7 +192,7 @@
   border-radius: 50%;
 }
 
-@mixin button-fab-variant($background,  $hover-background: if(lightness($background) > 90, rgba(color-yiq($background), .07), rgba($background, .8)), $active-background: if(lightness($background) > 90, rgba(color-yiq($background), .1), rgba($background, .7))) {
+@mixin button-fab-variant($background,  $hover-background: if(lightness($background) > 90, rgba(color-yiq($background), .07), rgba($background, .75)), $active-background: if(lightness($background) > 90, rgba(color-yiq($background), .125), rgba($background, .65))) {
   $color: color-yiq($background);
 
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background);

@@ -9849,11 +9849,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-primary:hover {
-  background-color: rgba(66, 133, 244, 0.8);
+  background-color: rgba(66, 133, 244, 0.75);
 }
 
 .btn-fab-primary:not(:disabled):not(.disabled):active, .btn-fab-primary:not(:disabled):not(.disabled).active {
-  background-color: rgba(66, 133, 244, 0.7);
+  background-color: rgba(66, 133, 244, 0.65);
 }
 
 .btn-fab-primary:hover, .btn-fab-primary:focus, .btn-fab-primary.focus {
@@ -9904,7 +9904,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-secondary:not(:disabled):not(.disabled):active, .btn-fab-secondary:not(:disabled):not(.disabled).active {
-  background-color: rgba(33, 33, 33, 0.1);
+  background-color: rgba(33, 33, 33, 0.125);
 }
 
 .btn-fab-secondary:hover, .btn-fab-secondary:focus, .btn-fab-secondary.focus {
@@ -9951,11 +9951,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-success:hover {
-  background-color: rgba(76, 175, 80, 0.8);
+  background-color: rgba(76, 175, 80, 0.75);
 }
 
 .btn-fab-success:not(:disabled):not(.disabled):active, .btn-fab-success:not(:disabled):not(.disabled).active {
-  background-color: rgba(76, 175, 80, 0.7);
+  background-color: rgba(76, 175, 80, 0.65);
 }
 
 .btn-fab-success:hover, .btn-fab-success:focus, .btn-fab-success.focus {
@@ -10002,11 +10002,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-info:hover {
-  background-color: rgba(0, 188, 212, 0.8);
+  background-color: rgba(0, 188, 212, 0.75);
 }
 
 .btn-fab-info:not(:disabled):not(.disabled):active, .btn-fab-info:not(:disabled):not(.disabled).active {
-  background-color: rgba(0, 188, 212, 0.7);
+  background-color: rgba(0, 188, 212, 0.65);
 }
 
 .btn-fab-info:hover, .btn-fab-info:focus, .btn-fab-info.focus {
@@ -10053,11 +10053,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-warning:hover {
-  background-color: rgba(255, 152, 0, 0.8);
+  background-color: rgba(255, 152, 0, 0.75);
 }
 
 .btn-fab-warning:not(:disabled):not(.disabled):active, .btn-fab-warning:not(:disabled):not(.disabled).active {
-  background-color: rgba(255, 152, 0, 0.7);
+  background-color: rgba(255, 152, 0, 0.65);
 }
 
 .btn-fab-warning:hover, .btn-fab-warning:focus, .btn-fab-warning.focus {
@@ -10104,11 +10104,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-danger:hover {
-  background-color: rgba(244, 67, 54, 0.8);
+  background-color: rgba(244, 67, 54, 0.75);
 }
 
 .btn-fab-danger:not(:disabled):not(.disabled):active, .btn-fab-danger:not(:disabled):not(.disabled).active {
-  background-color: rgba(244, 67, 54, 0.7);
+  background-color: rgba(244, 67, 54, 0.65);
 }
 
 .btn-fab-danger:hover, .btn-fab-danger:focus, .btn-fab-danger.focus {
@@ -10155,11 +10155,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-light:hover {
-  background-color: rgba(224, 224, 224, 0.8);
+  background-color: rgba(224, 224, 224, 0.75);
 }
 
 .btn-fab-light:not(:disabled):not(.disabled):active, .btn-fab-light:not(:disabled):not(.disabled).active {
-  background-color: rgba(224, 224, 224, 0.7);
+  background-color: rgba(224, 224, 224, 0.65);
 }
 
 .btn-fab-light:hover, .btn-fab-light:focus, .btn-fab-light.focus {
@@ -10206,11 +10206,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-fab-dark:hover {
-  background-color: rgba(33, 33, 33, 0.8);
+  background-color: rgba(33, 33, 33, 0.75);
 }
 
 .btn-fab-dark:not(:disabled):not(.disabled):active, .btn-fab-dark:not(:disabled):not(.disabled).active {
-  background-color: rgba(33, 33, 33, 0.7);
+  background-color: rgba(33, 33, 33, 0.65);
 }
 
 .btn-fab-dark:hover, .btn-fab-dark:focus, .btn-fab-dark.focus {
