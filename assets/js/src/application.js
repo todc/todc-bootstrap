@@ -19,6 +19,8 @@
     // Tooltip and popover demos
     $('.tooltip-demo').tooltip({
       selector: '[data-toggle="tooltip"]',
+      template: '<div class="tooltip" role="tooltip">' +
+                '<div class="tooltip-inner"></div></div>',
       container: 'body'
     })
 
