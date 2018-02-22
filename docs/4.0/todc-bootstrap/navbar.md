@@ -6,7 +6,6 @@ group: todc-bootstrap
 toc: true
 ---
 
-
 ### Sizes
 
 Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional sizes.

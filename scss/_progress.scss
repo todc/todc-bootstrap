@@ -1,0 +1,4 @@
+.progress-lg {
+  height: $progress-height-lg;
+  @include border-radius($progress-border-radius-lg);
+}
