@@ -24,7 +24,11 @@
       container: 'body'
     })
 
-    $('[data-toggle="popover"]').popover()
+    $('[data-toggle="popover"]').popover({
+      template: '<div class="popover" role="tooltip">' +
+                '<h3 class="popover-header"></h3>' +
+                '<div class="popover-body"></div></div>'
+    })
 
     // Demos within modals
     $('.tooltip-test').tooltip()
