@@ -4721,16 +4721,16 @@ tbody.collapse.show {
 
 .list-group-item-action:active {
   color: #212121;
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.16);
 }
 
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.925rem 1rem;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #e0e0e0;
 }
 
 .list-group-item:first-child {
@@ -4756,9 +4756,9 @@ tbody.collapse.show {
 
 .list-group-item.active {
   z-index: 2;
-  color: #fff;
-  background-color: #4285f4;
-  border-color: #4285f4;
+  color: #212121;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-color: transparent;
 }
 
 .list-group-flush .list-group-item {
