@@ -19,6 +19,12 @@ This list highlights key changes by component between v3.x.x and v4.0.0.
   - Flat buttons
     - The optional `.btn-flat` modifier class has been removed.
 
+### Navs
+
+  - Tabs
+    - `.nav-tabs-google` has been eliminated because we no longer have the
+      Bootstrp style tab.
+
 ### Navbar
 
   - Navbar Sizes

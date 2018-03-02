@@ -1,0 +1,49 @@
+// TODO: May make sense to move BS Nav to this file and not use the BS version
+//       This way we can cut down on duplication
+.nav-link {
+  color: $gray-600;
+
+  &:hover,
+  &:focus {
+    color: $gray-900;
+    background-color: $gray-100;
+  }
+
+  &.active,
+  .nav-item.show > & {
+    color: $gray-900;
+    background-color: $gray-200;
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+    background-color: transparent;
+  }
+}
+
+
+//
+// Tabs
+//
+
+.nav-tabs {
+  .nav-item.show .nav-link {
+    background-color: $gray-200;
+    border-bottom-color: transparent;
+  }
+}
+
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    .show > & {
+      color: $gray-900;
+      background-color: $gray-200;
+    }
+  }
+}
