@@ -21,7 +21,7 @@ This list highlights key changes by component between v3.x.x and v4.0.0.
 
 ### Navbar
 
-- Navbar Sizes
-  - `.navbar-lg` replaces `.navbar-masthead`
-  - `.navbar-sm` is the size of the old the `.navbar`
-  - `.navbar-toolbar` has been removed. The new mid size navbar is `.navbar`.
+  - Navbar Sizes
+    - `.navbar-masthead` has been replaced by `.navbar-lg`.
+    - `.navbar-sm` is the size of the old the `.navbar`.
+    - `.navbar-toolbar` has been removed. The new mid size navbar is `.navbar`.
