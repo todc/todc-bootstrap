@@ -86,7 +86,9 @@
     "url": "https://github.com/todc/todc-bootstrap/issues"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
   "peerDependencies": {
     "jquery": "^3.0.0",
     "popper.js": "^1.12.9"
