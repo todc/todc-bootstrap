@@ -46,3 +46,4 @@ twbsconfig.yml
 bootstrap
 bower_components
 node_modules
+js/coverage
