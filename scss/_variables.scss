@@ -731,7 +731,7 @@ $nav-divider-margin-y:              ($spacer / 2) !default;
 
 // Navbar
 
-$navbar-padding-y:                  map-get($spacers, 2) !default;
+$navbar-padding-y:                  .3rem !default;
 $navbar-padding-x:                  $spacer !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
@@ -747,9 +747,9 @@ $navbar-toggler-padding-x:           .75rem !default;
 $navbar-toggler-font-size:           $font-size-lg !default;
 $navbar-toggler-border-radius:       $btn-border-radius !default;
 
-$navbar-navbar-padding-y-lg:        ($spacer * .75) !default;
+$navbar-padding-y-lg:        ($spacer * .55) !default;
 
-$navbar-navbar-padding-y-sm:        ($spacer * .075) !default;
+$navbar-padding-y-sm:        ($spacer * .075) !default;
 
 $navbar-dark-color:                 rgba($white, .5) !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;

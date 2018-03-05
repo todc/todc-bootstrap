@@ -3,23 +3,27 @@
 //
 
 .navbar-lg {
-  @include navbar-size($navbar-navbar-padding-y-lg);
+  @include navbar-size($navbar-padding-y-lg);
 }
 
 .navbar-sm {
-  @include navbar-size($navbar-navbar-padding-y-sm);
+  @include navbar-size($navbar-padding-y-sm);
 
   font-size: $font-size-sm;
   line-height: 1.1;
 
   .btn,
   .form-control {
+    height: 1.625rem;
     padding-top: .1rem;
     padding-bottom: .1rem;
     font-size: $font-size-sm;
+    line-height: $line-height-sm;
   }
 
   .navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
     font-size: $font-size-base;
   }
 

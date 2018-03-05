@@ -3270,7 +3270,7 @@ tbody.collapse.show {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .navbar > .container,
@@ -10399,7 +10399,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-lg {
-  padding: 0.75rem 1rem;
+  padding: 0.55rem 1rem;
 }
 
 .navbar-sm {
@@ -10410,12 +10410,16 @@ input[type="button"].btn-block {
 
 .navbar-sm .btn,
 .navbar-sm .form-control {
+  height: 1.625rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
   font-size: 0.875rem;
+  line-height: 1;
 }
 
 .navbar-sm .navbar-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
   font-size: 1rem;
 }
 
