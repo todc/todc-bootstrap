@@ -90,11 +90,11 @@ $theme-colors: map-merge((
 $theme-color-interval:      8% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold: 150 !default;
+$yiq-contrasted-threshold:  150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-900 !default;
-$yiq-text-light: $white !default;
+$yiq-text-dark:             $gray-900 !default;
+$yiq-text-light:            $white !default;
 
 // Options
 //
@@ -583,19 +583,19 @@ $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+
 
 $custom-checkbox-indicator-checked-disabled-border-color: transparent !default;
 
-$custom-checkbox-indicator-indeterminate-bg:    $component-active-bg !default;
-$custom-checkbox-indicator-indeterminate-color: $custom-control-indicator-checked-color !default;
-$custom-checkbox-indicator-icon-indeterminate:  str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
-$custom-checkbox-indicator-indeterminate-box-shadow: none !default;
+$custom-checkbox-indicator-indeterminate-bg:          $component-active-bg !default;
+$custom-checkbox-indicator-indeterminate-color:       $custom-control-indicator-checked-color !default;
+$custom-checkbox-indicator-icon-indeterminate:        str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
+$custom-checkbox-indicator-indeterminate-box-shadow:  none !default;
 
-$custom-radio-indicator-size:                     1.25rem !default;
-$custom-radio-indicator-border-color:             rgba($black, .54) !default;
-$custom-radio-indicator-checked-border-color:     theme-color("primary") !default;
-$custom-radio-indicator-checked-color:            $custom-radio-indicator-checked-border-color !default;
-$custom-radio-indicator-checked-disabled-color:   $custom-control-indicator-checked-disabled-bg !default;
-$custom-radio-indicator-border-radius:            50% !default;
-$custom-radio-indicator-icon-checked:             str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
-$custom-radio-indicator-icon-checked-disabled:    str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-disabled-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-radio-indicator-size:                    1.25rem !default;
+$custom-radio-indicator-border-color:            rgba($black, .54) !default;
+$custom-radio-indicator-checked-border-color:    theme-color("primary") !default;
+$custom-radio-indicator-checked-color:           $custom-radio-indicator-checked-border-color !default;
+$custom-radio-indicator-checked-disabled-color:  $custom-control-indicator-checked-disabled-bg !default;
+$custom-radio-indicator-border-radius:           50% !default;
+$custom-radio-indicator-icon-checked:            str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-radio-indicator-icon-checked-disabled:   str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-disabled-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 $custom-select-padding-y:           .375rem !default;
 $custom-select-padding-x:           .5rem !default;
@@ -824,19 +824,19 @@ $card-columns-margin:               $card-spacer-y !default;
 
 // Tooltips
 
-$tooltip-font-size:           $font-size-sm !default;
-$tooltip-max-width:           200px !default;
-$tooltip-color:               $white !default;
-$tooltip-bg:                  $gray-700 !default;
-$tooltip-border-radius:       $border-radius !default;
-$tooltip-opacity:             .9 !default;
-$tooltip-padding-y:           .25rem !default;
-$tooltip-padding-x:           .5rem !default;
-$tooltip-margin:              0 !default;
+$tooltip-font-size:                 $font-size-sm !default;
+$tooltip-max-width:                 200px !default;
+$tooltip-color:                     $white !default;
+$tooltip-bg:                        $gray-700 !default;
+$tooltip-border-radius:             $border-radius !default;
+$tooltip-opacity:                   .9 !default;
+$tooltip-padding-y:                 .25rem !default;
+$tooltip-padding-x:                 .5rem !default;
+$tooltip-margin:                    0 !default;
 
-$tooltip-arrow-width:         .8rem !default;
-$tooltip-arrow-height:        .4rem !default;
-$tooltip-arrow-color:         $tooltip-bg !default;
+$tooltip-arrow-width:               .8rem !default;
+$tooltip-arrow-height:              .4rem !default;
+$tooltip-arrow-color:               $tooltip-bg !default;
 
 
 // Popovers
