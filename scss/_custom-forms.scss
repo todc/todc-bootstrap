@@ -5,7 +5,6 @@
 .custom-control-input {
   &:disabled {
     ~ .custom-control-label {
-      color: $custom-control-label-disabled-color;
       border-color: $custom-control-indicator-disabled-border-color;
 
       &::before {
@@ -21,23 +20,20 @@
 // Build the custom controls out of psuedo-elements.
 
 .custom-control-label {
+  margin-bottom: map-get($spacers, 2);
+  line-height: $custom-radio-indicator-size;
 
   // Background-color and (when enabled) gradient
   &::before {
-    top: (($line-height-base - $custom-control-indicator-size) / 2);
-    width: $custom-control-indicator-size;
-    height: $custom-control-indicator-size;
-    background-color: $custom-control-indicator-bg;
+    top: (($custom-radio-indicator-size - $custom-control-indicator-size) / 2);
     border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
     @include box-shadow($custom-control-indicator-box-shadow);
   }
 
   // Foreground (icon)
   &::after {
-    top: (($line-height-base - $custom-control-indicator-size) / 2);
-    width: $custom-control-indicator-size;
-    height: $custom-control-indicator-size;
-    background-size: $custom-control-indicator-bg-size;
+    top: ($custom-radio-indicator-size - $custom-control-indicator-size);
+    left: (($custom-radio-indicator-size - $custom-control-indicator-size) / 2);
   }
 }
 
@@ -47,35 +43,30 @@
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
-  .custom-control-label::before {
-    @include border-radius($custom-checkbox-indicator-border-radius);
-  }
-
   .custom-control-input:checked ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
 
-    &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
-    }
     &::after {
-      background-image: $custom-checkbox-indicator-icon-checked;
+      top: .0625rem;
+      left: 0;
     }
-  }
-
-  .custom-control-input:disabled:checked ~ .custom-control-indicator {
-    background-color: $custom-control-indicator-checked-disabled-bg;
-    border-color: $custom-checkbox-indicator-checked-disabled-border-color;
   }
 
   .custom-control-input:indeterminate ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
 
-    &::before {
-      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
-      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
-    }
     &::after {
-      background-image: $custom-checkbox-indicator-icon-indeterminate;
+      top: .0625rem;
+      left: 0;
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label {
+      border-color: $custom-checkbox-indicator-checked-disabled-border-color;
+    }
+    &:indeterminate ~ .custom-control-label {
+      border-color: $custom-checkbox-indicator-checked-disabled-border-color;
     }
   }
 }
@@ -90,25 +81,23 @@
     height: $custom-radio-indicator-size;
     background-color: $custom-control-indicator-bg;
     border: .125rem solid $custom-radio-indicator-border-color;
-    @include border-radius($custom-radio-indicator-border-radius);
-  }
-
-  .custom-control-input:disabled:checked ~ .custom-control-label {
-    border-color: $custom-control-indicator-checked-disabled-border-color;
-
-    &::after {
-      background-image: $custom-radio-indicator-icon-checked-disabled;
-    }
   }
 
   .custom-control-input:checked ~ .custom-control-label {
     border-color: $custom-radio-indicator-checked-border-color;
 
     &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
+      @include gradient-bg($custom-control-indicator-bg);
     }
-    &::after {
-      background-image: $custom-radio-indicator-icon-checked;
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label {
+      border-color: $custom-control-indicator-checked-disabled-border-color;
+
+      &::after {
+        background-image: $custom-radio-indicator-icon-checked-disabled;
+      }
     }
   }
 }
@@ -121,20 +110,8 @@
 //
 
 .custom-select {
-  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
-  // padding-right: $custom-select-padding-right;
-  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
-  background-size: $custom-select-bg-size;
-  border: $custom-select-border-width solid $custom-select-border-color;
-  @include border-radius($custom-select-border-radius);
-
   &:hover {
     border-color: $input-hover-border-color;
     box-shadow: $input-hover-box-shadow;
-  }
-
-  &:focus {
-    border-color: $custom-select-focus-border-color;
-    box-shadow: $custom-select-focus-box-shadow;
   }
 }
