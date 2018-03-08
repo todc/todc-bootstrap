@@ -115,3 +115,51 @@
     box-shadow: $input-hover-box-shadow;
   }
 }
+
+// Range
+//
+// Style range inputs the same across browsers. Vendor-specific rules for psuedo
+// elements cannot be mixed. As such, there are no shared styles for focus or
+// active states on prefixed selectors.
+
+.custom-range {
+
+  &::-webkit-slider-thumb {
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  &::-moz-range-thumb  {
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  &::-ms-thumb  {
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  &:focus:not(:active)::-webkit-slider-thumb {
+    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    transition: box-shadow .4s ease-in-out;
+  }
+
+  &:focus:not(:active)::-moz-range-thumb {
+    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    transition: box-shadow .4s ease-in-out;
+  }
+
+  &:focus:not(:active)::-ms-thumb {
+    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    transition: box-shadow 48s ease-in-out;
+  }
+
+  &:active::-webkit-slider-thumb {
+    transform: scale(1.5);
+  }
+
+  &:active::-moz-range-thumb {
+    transform: scale(1.5);
+  }
+
+  &:active::-ms-thumb {
+    transform: scale(1.5);
+  }
+}
