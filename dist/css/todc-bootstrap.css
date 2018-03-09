@@ -10273,7 +10273,7 @@ input[type="button"].btn-block {
 
 .custom-control-label {
   margin-bottom: 0.5rem;
-  line-height: 1.25rem;
+  line-height: 1.5;
 }
 
 .custom-control-label::before {

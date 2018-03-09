@@ -21,7 +21,7 @@
 
 .custom-control-label {
   margin-bottom: map-get($spacers, 2);
-  line-height: $custom-radio-indicator-size;
+  line-height: $line-height-lg;
 
   // Background-color and (when enabled) gradient
   &::before {
