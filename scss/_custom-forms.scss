@@ -125,30 +125,30 @@
 .custom-range {
 
   &::-webkit-slider-thumb {
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
   }
 
   &::-moz-range-thumb  {
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
   }
 
   &::-ms-thumb  {
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
+    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
   }
 
   &:focus:not(:active)::-webkit-slider-thumb {
     box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
-    transition: box-shadow .4s ease-in-out;
   }
 
   &:focus:not(:active)::-moz-range-thumb {
     box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
-    transition: box-shadow .4s ease-in-out;
   }
 
   &:focus:not(:active)::-ms-thumb {
     box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
-    transition: box-shadow 48s ease-in-out;
   }
 
   &:active::-webkit-slider-thumb {

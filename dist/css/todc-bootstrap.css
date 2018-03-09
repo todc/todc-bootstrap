@@ -10342,36 +10342,33 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-webkit-slider-thumb {
-  transition: -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-range::-moz-range-thumb {
-  transition: -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-range::-ms-thumb {
-  transition: -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-range:focus:not(:active)::-webkit-slider-thumb {
   box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.24);
-  transition: box-shadow .4s ease-in-out;
 }
 
 .custom-range:focus:not(:active)::-moz-range-thumb {
   box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.24);
-  transition: box-shadow .4s ease-in-out;
 }
 
 .custom-range:focus:not(:active)::-ms-thumb {
   box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.24);
-  transition: box-shadow 48s ease-in-out;
 }
 
 .custom-range:active::-webkit-slider-thumb {
