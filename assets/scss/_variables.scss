@@ -1,9 +1,9 @@
 // Local docs variables
 $bd-purple:        #3367d6 !default;
 $bd-purple-bright: darken($bd-purple, 10%) !default;
-$bd-purple-light:  #fff !default;
+$bd-purple-light:  $white !default;
 $bd-dark:          #2a2730 !default;
-$bd-download:      #fff !default;
+$bd-download:      $white !default;
 $bd-info:          #00bcd4 !default;
 $bd-warning:       #ff9800 !default;
 $bd-danger:        #f44336 !default;

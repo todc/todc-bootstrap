@@ -21,10 +21,10 @@
   text-align: center;
 }
 .bd-brand-item + .bd-brand-item {
-  border-top: 1px solid #fff;
+  border-top: 1px solid $white;
 }
 .bd-brand-logos .inverse {
-  color: #fff;
+  color: $white;
   background-color: #4285f4;
 }
 
@@ -45,7 +45,7 @@
 //   height: 30px;
 //   margin: 10px auto -10px;
 //   line-height: 30px;
-//   color: #fff;
+//   color: $white;
 //   border-radius: 50%;
 // }
 // .bd-brand-item .glyphicon-ok {
@@ -62,7 +62,7 @@
   }
   .bd-brand-item + .bd-brand-item {
     border-top: 0;
-    border-left: 1px solid #fff;
+    border-left: 1px solid $white;
   }
   .bd-brand-item h1 {
     font-size: 4rem;

@@ -53,7 +53,7 @@
   order: 0;
   font-size: 1rem;
   // background-color: #f5f2f9;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba($black, .1);
 
   @include media-breakpoint-up(md) {
     @supports (position: sticky) {
@@ -62,7 +62,7 @@
       z-index: 1000;
       height: calc(100vh - 4rem);
     }
-    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba($black, .1);
   }
 
   @include media-breakpoint-up(xl) {
@@ -94,7 +94,7 @@
   padding: 1rem 15px;
   margin-right: -15px;
   margin-left: -15px;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba($black, .05);
 
   .form-control:focus {
     border-color: $bd-purple-bright;
@@ -115,10 +115,10 @@
   display: block;
   padding: .25rem 1.5rem;
   font-weight: 500;
-  color: rgba(0, 0, 0, .65);
+  color: rgba($black, .65);
 
   &:hover {
-    color: rgba(0, 0, 0, .85);
+    color: rgba($black, .85);
     text-decoration: none;
   }
 }
@@ -132,7 +132,7 @@
     }
 
     > .bd-toc-link {
-      color: rgba(0, 0, 0, .85);
+      color: rgba($black, .85);
 
       &:hover {
         background-color: transparent;
@@ -150,11 +150,11 @@
   display: block;
   padding: .25rem 1.5rem;
   font-size: 90%;
-  color: rgba(0, 0, 0, .65);
+  color: rgba($black, .65);
 }
 
 .bd-sidebar .nav > li > a:hover {
-  color: rgba(0, 0, 0, .85);
+  color: rgba($black, .85);
   text-decoration: none;
   background-color: transparent;
 }
@@ -162,6 +162,6 @@
 .bd-sidebar .nav > .active > a,
 .bd-sidebar .nav > .active:hover > a {
   font-weight: 500;
-  color: rgba(0, 0, 0, .85);
+  color: rgba($black, .85);
   background-color: transparent;
 }

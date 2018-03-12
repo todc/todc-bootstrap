@@ -727,6 +727,7 @@ $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
+$nav-divider-color:                 $gray-200 !default;
 $nav-divider-margin-y:              ($spacer / 2) !default;
 
 // Navbar
@@ -998,6 +999,7 @@ $breadcrumb-active-color:           $gray-900 !default;
 $breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='24' width='24'%3E%3Cpath fill='#{$breadcrumb-divider-color}' d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
+
 
 // Carousel
 

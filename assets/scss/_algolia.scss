@@ -13,10 +13,10 @@
     min-width: 0 !important;
     max-width: none !important;
     padding: .75rem 0 !important;
-    background-color: #fff;
+    background-color: $white;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .175);
+    border: 1px solid rgba($black, .1);
+    box-shadow: 0 .5rem 1rem rgba($black, .175);
 
     @include media-breakpoint-up(md) {
       width: 175%;
@@ -82,7 +82,7 @@
       .algolia-docsearch-suggestion--category-header {
         padding-top: .75rem !important;
         margin-top: .75rem !important;
-        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba($black, .1);
       }
     }
 
@@ -115,7 +115,7 @@
     font-size: .75rem !important;
     line-height: 1 !important;
     color: #767676 !important;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba($black, .1);
   }
 
   .algolia-docsearch-footer--logo {
