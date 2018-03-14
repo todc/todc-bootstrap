@@ -40,17 +40,19 @@ Only one floating action button is recommended per screen to represent the most 
 {% endfor %}
 {% endexample %}
 
-{% callout info %}
+{% capture callout %}
 **Heads up!** The [Material Icons](https://material.io/icons/) are not included in the project. Please read the [Material Icons Guide](https://google.github.io/material-design-icons/) for an overview and how to include them with your project.
-{% endcallout %}
+{% endcapture %}
+{% include callout.html content=callout type="info" %}
 
 ### Sizes
 
 Fancy smaller buttons? Add `.btn-sm`.
 
-{% callout info %}
+{% capture callout %}
 **Heads up!** Floating Action Buttons do not support `.btn-lg`.
-{% endcallout %}
+{% endcapture %}
+{% include callout.html content=callout type="info" %}
 
 {% example html %}
 <button type="button" class="btn btn-fab-primary"><span class="material-icons">add</span></button>
