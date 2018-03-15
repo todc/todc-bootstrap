@@ -3,4 +3,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://todc.github.io/todc-bootstrap/sitemap.xml
+Sitemap: /todc-bootstrap/sitemap.xml
