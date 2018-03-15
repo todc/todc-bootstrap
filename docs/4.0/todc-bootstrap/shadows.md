@@ -20,15 +20,16 @@ In need of a shadow? Add one of the <code>.shadow-*dp</code> modifier classes.
 
 ### Alert
 
-{% example html %}
+{% capture example %}
 <div class="alert alert-primary shadow-6dp" role="alert">
   This is a primary alert—check it out!
 </div>
-{% endexample %}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Card
 
-{% example html %}
+{% capture example %}
 <div class="card shadow-8dp" style="width: 18rem;">
   <img class="card-img-top" src="holder.js/100px180/" alt="Card image cap">
   <div class="card-body">
@@ -37,4 +38,5 @@ In need of a shadow? Add one of the <code>.shadow-*dp</code> modifier classes.
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{% endexample %}
+{% endcapture %}
+{% include example.html content=example %}

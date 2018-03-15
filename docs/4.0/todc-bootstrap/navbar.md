@@ -12,7 +12,7 @@ Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional
 
 #### Large
 
-{% example html %}
+{% capture example %}
 <nav class="navbar navbar-lg navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +48,12 @@ Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional
     </form>
   </div>
 </nav>
-{% endexample %}
+{% endcapture %}
+{% include example.html content=example %}
 
 #### Small
 
-{% example html %}
+{% capture example %}
 <nav class="navbar navbar-sm navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,5 +89,6 @@ Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional
     </form>
   </div>
 </nav>
-{% endexample %}
+{% endcapture %}
+{% include example.html content=example %}
 
