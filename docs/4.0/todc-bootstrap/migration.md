@@ -22,8 +22,8 @@ This list highlights key changes by component between v3.x.x and v4.0.0.
 ### Navs
 
   - Tabs
-    - `.nav-tabs-google` has been eliminated because we no longer have the
-      Bootstrp style tab.
+    - `.nav-tabs-google` has been eliminated. This was done because we are no
+      maintaining two tab styles. The default Bootstrap style tab is gone.
 
 ### Navbar
 
