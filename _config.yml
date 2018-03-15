@@ -91,9 +91,9 @@ bs:
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css:              "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  css_hash:         "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  css_hash:         "sha384-2/Vddyb3leFVimkYjlQ1fCWGwXOERdF+4/qGXZVFqyJWdPiZR55Q6mFhWrlP9hl0"
   js:               "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  js_hash:          "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  js_hash:          "sha384-NgtDgAWiygXumhbHZomJY6ZSAGY1RQfRHat9x49J6Efe1CPezYVhGEYC771dvb5P"
   jquery:           "https://code.jquery.com/jquery-3.3.1.slim.min.js"
   jquery_hash:      "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   popper:           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
