@@ -121,7 +121,8 @@
         },
         transformData: function (hits) {
           return hits.map(function (hit) {
-            hit.url = hit.url.replace('https:///todc.github.io/todc-bootstrap', '/docs/4.0')
+            var baseurl = document.getElementById('search-input').getAttribute('data-baseurl')
+            hit.url = hit.url.replace('https:///todc.github.io/todc-bootstrap' + baseurl, baseurl)
             return hit
           })
         },
