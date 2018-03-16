@@ -1,19 +1,23 @@
-// TODO: look into merging the Bootstrap _breadcrumb into this file
-//       and commenting out @import "../bootstrap/scss/breadcrumb";
-//       in todc_bootstrap.scss. This will eliminate ome duplication
-//       in the generated css.
 .breadcrumb-item {
+
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   + .breadcrumb-item::before {
     position: relative;
-    top: 6px;
-    margin-top: -9px;
+    top: -.225rem;
+    padding-left: ($breadcrumb-item-padding / 2);
     vertical-align: top;
     content: $breadcrumb-divider;
   }
 
   > a {
+    padding: .0625rem .375rem;
+    margin-left: -.375rem;
     color: $breadcrumb-divider-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      background-color: $gray-200;
+    }
   }
 
   &.active {
