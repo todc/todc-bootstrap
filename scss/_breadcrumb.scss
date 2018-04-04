@@ -1,12 +1,14 @@
 .breadcrumb-item {
 
   // The separator between breadcrumbs (by default, a forward-slash: "/")
-  + .breadcrumb-item::before {
-    position: relative;
-    top: -.225rem;
-    padding-left: ($breadcrumb-item-padding / 2);
-    vertical-align: top;
-    content: $breadcrumb-divider;
+  + .breadcrumb-item {
+
+    &::before {
+      position: relative;
+      top: -.225rem;
+      padding-left: ($breadcrumb-item-padding / 2);
+      vertical-align: top;
+    }
   }
 
   > a {
