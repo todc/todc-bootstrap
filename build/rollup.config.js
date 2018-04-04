@@ -8,7 +8,7 @@ const pkg     = require(path.resolve(__dirname, '../package.json'))
 const BUNDLE  = process.env.BUNDLE === 'true'
 const year    = new Date().getFullYear()
 
-let fileDest  = 'todc-bootstrap.js'
+let fileDest  = 'bootstrap.js'
 const external = ['jquery', 'popper.js']
 const plugins = [
   babel({
@@ -17,6 +17,7 @@ const plugins = [
       'defineProperties',
       'createClass',
       'inheritsLoose',
+      'defineProperty',
       'objectSpread'
     ]
   })
@@ -27,7 +28,7 @@ const globals = {
 }
 
 if (BUNDLE) {
-  fileDest = 'todc-bootstrap.bundle.js'
+  fileDest = 'bootstrap.bundle.js'
   // Remove last entry in external array to bundle Popper
   external.pop()
   delete globals['popper.js']
@@ -38,14 +39,14 @@ module.exports = {
   input: path.resolve(__dirname, '../js/src/index.js'),
   output: {
     banner: `/*!
-  * TODC Bootstrap v${pkg.version} (${pkg.homepage})
+  * Bootstrap v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}
-  * Licensed under MIT (https://github.com/todc/todc-bootstrap/blob/master/LICENSE)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */`,
     file: path.resolve(__dirname, `../dist/js/${fileDest}`),
     format: 'umd',
     globals,
-    name: 'todc-bootstrap'
+    name: 'bootstrap'
   },
   external,
   plugins
