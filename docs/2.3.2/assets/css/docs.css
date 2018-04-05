@@ -39,9 +39,7 @@ body > .navbar .brand {
   font-weight: bold;
   color: #000;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-          transition: all .2s linear;
+  transition: all .2s linear;
 }
 body > .navbar .brand:hover {
   text-decoration: none;
@@ -73,9 +71,6 @@ section > ul li {
 hr.soften {
   height: 1px;
   margin: 70px 0;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   border: 0;
 }
@@ -93,17 +88,10 @@ hr.soften {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #020031; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #050f06 0%, #51a351 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#050f06), color-stop(100%,#51a351)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* IE10+ */
+  background: #020031; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
   background: linear-gradient(45deg,  #050f06 0%,#51a351 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050f06', endColorstr='#51a351',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 }
 .jumbotron h1 {
   font-size: 80px;
@@ -122,9 +110,7 @@ hr.soften {
 .jumbotron a {
   color: #fff;
   color: rgba(255,255,255,.5);
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 .jumbotron a:hover {
   color: #fff;
@@ -137,25 +123,15 @@ hr.soften {
   font-size: 24px;
   font-weight: 200;
   color: #fff; /* redeclare to override the `.jumbotron a` */
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+  transition: none;
 }
 .masthead .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
 }
 .masthead .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
 }
 
 
@@ -337,9 +313,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .show-grid [class*="span"] {
   background-color: #eee;
   text-align: center;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   min-height: 40px;
   line-height: 40px;
 }
@@ -366,12 +340,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 -------------------------------------------------- */
 .mini-layout {
   border: 1px solid #ddd;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
-          box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.075);
 }
 .mini-layout,
 .mini-layout .mini-layout-body,
@@ -383,9 +353,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding: 9px;
 }
 .mini-layout div {
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 .mini-layout .mini-layout-body {
   background-color: #dceaf4;
@@ -445,9 +413,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   line-height: 18px;
   color: #555;
   background-color: #f9f9f9;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   cursor: pointer;
 }
 .download .checkbox:hover {
@@ -489,9 +455,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   font-size: 30px;
   line-height: 1;
   text-align: center;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  border-radius: 6px;
 }
 
 
@@ -526,9 +490,7 @@ h2 + .row {
 /* Fake the :focus state to demo it */
 .focused {
   border: 1px solid #4D90FE !important;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
-     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
   outline: 0 !important;
 }
 
@@ -591,9 +553,7 @@ h2 + .row {
   *padding-top: 19px;
   background-color: #fff;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Echo out a label for the example */
@@ -608,9 +568,7 @@ h2 + .row {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-     -moz-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
 }
 
 /* Remove spacing between an example and it's code */
@@ -651,21 +609,15 @@ h2 + .row {
   margin-right: 0;
 }
 .bs-navbar-top-example {
-  -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .bs-navbar-top-example:after {
   top: auto;
   bottom: -1px;
-  -webkit-border-radius: 0 4px 0 4px;
-     -moz-border-radius: 0 4px 0 4px;
-          border-radius: 0 4px 0 4px;
+  border-radius: 0 4px 0 4px;
 }
 .bs-navbar-bottom-example {
-  -webkit-border-radius: 4px 4px 0 0;
-     -moz-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .bs-navbar-bottom-example .navbar {
   margin-bottom: 0;
@@ -765,9 +717,7 @@ form.bs-docs-example {
   color: #999;
   text-align: center;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 .responsive-utilities-test li + li {
   margin-left: 10px;
@@ -778,9 +728,7 @@ form.bs-docs-example {
   left:   -1px;
   right:  -1px;
   bottom: -1px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 .responsive-utilities-test span {
   color: #468847;
@@ -1062,3 +1010,5 @@ form.bs-docs-example {
     padding-bottom: 20px;
   }
 }
+
+/*# sourceMappingURL=docs.css.map */

@@ -6,6 +6,30 @@ group: todc-bootstrap
 toc: true
 ---
 
+## Custom
+
+TODC Bootstrap includes several predefined custom button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<button type="button" class="btn custom-btn-{{ color.name }}">{{ color.name | capitalize }}</button>
+{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
+{% include callout-warning-color-assistive-technologies.md %}
+
+## Outline buttons
+
+In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<button type="button" class="btn custom-btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>
+{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Raised
 
 {% capture example %}
