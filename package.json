@@ -28,7 +28,7 @@
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/todc-bootstrap.scss dist/css/todc-bootstrap.css",
     "css-compile-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 assets/scss/docs.scss assets/css/docs.min.css",
     "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
-    "css-lint-docs": "stylelint --syntax scss \"assets/scss/*.scss\" && stylelint \"docs/**/*.css\"",
+    "css-lint-docs": "stylelint --syntax scss \"assets/scss/*.scss\" && stylelint \"docs/**/*.css\" \"!docs/2.3.2/**/*.css\"",
     "css-lint-vars": "node build/lint-vars.js scss/ assets/scss/",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css-prefix-docs": "postcss --config build/postcss.config.js --replace \"assets/css/docs.min.css\" \"docs/**/*.css\"",
