@@ -136,10 +136,10 @@ project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
 **Do not edit `todc-bootstrap.css` directly!** That file is automatically generated.
-You should edit the source files in [`/todc-bootstrap/less/`](https://github.com/todc/todc-bootstrap/tree/master/less) instead.
+You should edit the source files in [`/todc-bootstrap/scss/`](https://github.com/todc/todc-bootstrap/tree/v4-dev/scss) instead.
 
 Similarly, when contributing to TODC Bootstrap's documentation, you should edit the
-documentation source files in [the `/todc-bootstrap/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/docs).
+documentation source files in [the `/todc-bootstrap/docs/4.0` directory of the `v4-dev` branch](https://github.com/todc/todc-bootstrap/tree/v4-dev/docs/4.0).
 **Do not edit the `gh-pages` branch.** That branch is generated from the documentation source files and is managed separately.
 
 Adhering to the following process is the best way to get your work
@@ -160,8 +160,8 @@ included in the project:
 2. If you cloned a while ago, get the latest changes from upstream:
 
    ```bash
-   git checkout master
-   git pull upstream master
+   git checkout v4-dev
+   git pull upstream v4-dev
    ```
 
 3. Create a new topic branch (off the main project development branch) to
@@ -180,7 +180,7 @@ included in the project:
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   git pull [--rebase] upstream master
+   git pull [--rebase] upstream v4-dev
    ```
 
 6. Push your topic branch up to your fork:
@@ -190,7 +190,7 @@ included in the project:
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `master` branch.
+    with a clear title and description against the `v4-dev` branch.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MIT License](LICENSE) (if it
@@ -240,9 +240,9 @@ By contributing to the documentation, you agree to license your contribution und
 
 1. Update version numbers using `npm run change-version old_version new_version`. Review the changes and stage them manually.
 2. Run `grunt` one last time.
-3. Push to `master` branch.
+3. Push to `v4-dev` branch.
 4. Run grunt prep-release.
-5. Merge `master` into `gh-pages`.
+5. Merge `v4-dev` into `gh-pages`.
 6. Create release on GitHub with `/dist/` folder and release notes.
 7. Push `gh-pages`.
 8. npm publish
