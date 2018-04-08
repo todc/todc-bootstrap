@@ -19,6 +19,7 @@ gems:
 
 # Custom vars
 current_version:  3.4.0-3.4.0
+docs_version:     3.4
 repo:             https://github.com/todc/todc-bootstrap
 
 download:
