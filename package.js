@@ -1,6 +1,6 @@
 // package metadata file for Meteor.js
 
-/* global Package:true */
+/* eslint-env meteor */
 
 Package.describe({
   name: 'todc:todc-bootstrap',  // https://atmospherejs.com/todc/todc-bootstrap
