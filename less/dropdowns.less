@@ -21,14 +21,14 @@
 
   // Links within the dropdown menu
   > li > a {
-    padding: 3px 30px;
     position: relative;
+    padding: 3px 30px;
 
     // icon within the menu item
     .glyphicon {
       position: absolute;
-      left: 7px;
       top: 4px;
+      left: 7px;
     }
   }
 }
@@ -87,7 +87,7 @@
 }
 
 // Caret to indicate there is a submenu
-.dropdown-submenu > a:after {
+.dropdown-submenu > a::after {
   position: absolute;
   right: 10px;
   &:extend(.caret-right);
@@ -101,6 +101,8 @@
 .dropdown-submenu.dropdown-menu-left {
   // Undo the float
   // Yes, this is awkward since .pull-left adds a float, but it sticks to our conventions elsewhere.
+
+  /* stylelint-disable-next-line declaration-no-important */
   float: none !important;
 
   // Positioning the submenu

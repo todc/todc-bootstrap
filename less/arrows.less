@@ -22,17 +22,17 @@
   position: relative;
   display: inline-block;
 
-  &:before,
-  &:after {
-    content: "";
+  &::before,
+  &::after {
     position: absolute;
     width: 0;
     height: 0;
+    content: "";
   }
-  &:before {
+  &::before {
     border: @total-size solid transparent;
   }
-  &:after {
+  &::after {
     border: @size solid transparent;
   }
 }
@@ -40,17 +40,17 @@
 .arrow(up; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
   @total-size: (@size + (@border-size * 2));
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     bottom: 50%;
     left: @offset;
   }
-  &:before {
+  &::before {
     margin-left: -@total-size;
     border-bottom: @total-size solid;
     border-bottom-color: @border-color;
   }
-  &:after {
+  &::after {
     margin-left: -@size;
     border-bottom: @size solid @color;
   }
@@ -59,17 +59,17 @@
 .arrow(right; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
   @total-size: (@size + (@border-size * 2));
 
-  &:before,
-  &:after {
-    left: 100%;
+  &::before,
+  &::after {
     top: @offset;
+    left: 100%;
   }
-  &:before {
+  &::before {
     margin-top: -@total-size;
     border-left: @total-size solid;
     border-left-color: @border-color;
   }
-  &:after {
+  &::after {
     margin-top: -@size;
     border-left: @size solid @color;
   }
@@ -78,17 +78,17 @@
 .arrow(down; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
   @total-size: (@size + (@border-size * 2));
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     top: 50%;
     left: @offset;
   }
-  &:before {
+  &::before {
     margin-left: -@total-size;
     border-top: @total-size solid;
     border-top-color: @border-color;
   }
-  &:after {
+  &::after {
     margin-left: -@size;
     border-top: @size solid @color;
   }
@@ -97,17 +97,17 @@
 .arrow(left; @size; @color; @offset; @border-size: 0; @border-color: inherit) {
   @total-size: (@size + (@border-size * 2));
 
-  &:before,
-  &:after {
-    right: 100%;
+  &::before,
+  &::after {
     top: @offset;
+    right: 100%;
   }
-  &:before {
+  &::before {
     margin-top: -@total-size;
     border-right: @total-size solid;
     border-right-color: @border-color;
   }
-  &:after {
+  &::after {
     margin-top: -@size;
     border-right: @size solid @color;
   }
@@ -122,7 +122,7 @@
 
 .chevron(@_; @size; @color: #fff; @offset; @border-size: 0; @border-color: inherit) {
   @total-size: (@size + (@border-size * 2));
-  &:before {
+  &::before {
     border-radius: (@total-size - 2px);
   }
 }

@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-qualifying-type */
+
 //
 // List groups
 // --------------------------------------------------
@@ -27,6 +29,27 @@
     padding: 5px 6px 5px 5px;
     color: @gray-darker;
   }
+
+  // Active class on item itself, not parent
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    font-weight: 700;
+    color: @list-group-active-color;
+    background-color: @list-group-active-bg;
+    border-color: @list-group-active-border;
+    border-left: 4px solid @list-group-active-color;
+    border-left-color: @list-group-active-color;
+
+    .list-group-item-text {
+      font-weight: 400;
+      color: @list-group-active-text-color;
+    }
+  }
+  &.active:hover,
+  &.active:focus {
+    background-color: @list-group-hover-bg;
+  }
 }
 
 // Interactive list items
@@ -43,35 +66,13 @@ button.list-group-item {
   }
 }
 
-.list-group-item {
-  // Active class on item itself, not parent
-  &.active,
-  &.active:hover,
-  &.active:focus {
-    color: @list-group-active-color;
-    font-weight: bold;
-    background-color: @list-group-active-bg;
-    border-color: @list-group-active-border;
-    border-left: 4px solid @list-group-active-color;
-    border-left-color: @list-group-active-color;
-
-    .list-group-item-text {
-      font-weight: normal;
-      color: @list-group-active-text-color;
-    }
-  }
-  &.active:hover,
-  &.active:focus {
-    background-color: @list-group-hover-bg;
-  }
-}
 a.list-group-item,
 li.list-group-item a {
   // Hover state
   &:hover,
   &:focus {
-    text-decoration: none;
     color: @list-group-link-hover-color;
+    text-decoration: none;
     background-color: @list-group-hover-bg;
   }
 }
@@ -80,10 +81,10 @@ li.list-group-item {
   margin-bottom: 0;
   border: 0 none;
   > a {
-    color: @gray-darker;
     display: block;
     padding: @padding-base-vertical 17px;
     margin: 0 0 0 14px;
+    color: @gray-darker;
   }
 
   &.active,
@@ -147,10 +148,10 @@ li.list-group-item {
   display: block;
   padding: 10px 30px 10px 15px;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: @line-height-base;
   color: @gray-light;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   text-transform: uppercase;
 
   li& {
@@ -192,20 +193,20 @@ li.list-group-item {
   width: 17px;
   height: 28px;
   margin-left: 14px;
-  &:before {
-    content: '';
+  &::before {
     position: absolute;
     top: 12px;
     left: 5px;
     margin-left: 0;
     &:extend(.caret);
+    content: "";
     border-bottom: 0 dotted;
   }
   &:hover {
     background-color: @gray-lighter;
   }
 
-  &.collapsed:before {
+  &.collapsed::before {
     top: 10px;
     left: 6px;
     &:extend(.caret-right);
@@ -215,11 +216,9 @@ li.list-group-item {
 // Dividers (basically an hr) within the list group
 .list-group .divider {
   .nav-divider();
-    margin-right: 15px;
-    margin-left: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
-
-
 
 
 // Sidebar list group

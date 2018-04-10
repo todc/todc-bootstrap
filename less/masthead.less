@@ -1,3 +1,5 @@
+/* stylelint-disable selector-max-type, selector-max-compound-selectors, selector-max-combinators, selector-max-class, declaration-no-important, selector-no-qualifying-type, no-duplicate-selectors */
+
 //
 // Masthead
 // --------------------------------------------------
@@ -39,9 +41,9 @@
 // Brand/project name
 
 .navbar-masthead .navbar-brand {
+  height: @navbar-masthead-height;
   padding: @navbar-masthead-padding-vertical @navbar-masthead-padding-horizontal;
   font-size: @navbar-masthead-brand-font-size;
-  height: @navbar-masthead-height;
 
   // Prevent Glyphicons from increasing height of navbar
   > .glyphicon {
@@ -96,9 +98,9 @@
 // our navbars.
 
 .navbar-masthead .navbar-form {
-  margin-left: -@navbar-masthead-padding-horizontal;
-  margin-right: -@navbar-masthead-padding-horizontal;
   padding: 10px @navbar-masthead-padding-horizontal;
+  margin-right: -@navbar-masthead-padding-horizontal;
+  margin-left: -@navbar-masthead-padding-horizontal;
 
   > .input-group .form-control {
     .navbar-vertical-align(@input-height-base, @navbar-masthead-height);
@@ -115,10 +117,10 @@
 
   // Undo 100% width for pull classes
   @media (min-width: @grid-float-breakpoint) {
-    margin-left: 0;
-    margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .form-control {
@@ -247,8 +249,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-masthead-default-link-active-bg;
         color: @navbar-masthead-default-link-active-color;
+        background-color: @navbar-masthead-default-link-active-bg;
       }
     }
 
@@ -342,7 +344,7 @@
     &:active,
     &.active,
     .open .dropdown-toggle& {
-      color: @btn-default-color
+      color: @btn-default-color;
     }
   }
 
@@ -408,8 +410,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-masthead-inverse-link-active-bg;
         color: @navbar-masthead-inverse-link-active-color;
+        background-color: @navbar-masthead-inverse-link-active-bg;
       }
     }
 

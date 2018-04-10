@@ -1,3 +1,5 @@
+/* stylelint-disable selector-max-type, selector-max-compound-selectors, selector-no-qualifying-type */
+
 //
 // Tables
 // --------------------------------------------------
@@ -14,7 +16,7 @@ caption {
 // Baseline styles
 
 .table {
-   margin-bottom: @line-height-computed;
+  margin-bottom: @line-height-computed;
   // Cells
   > thead,
   > tbody,
@@ -43,7 +45,6 @@ caption {
 }
 
 
-
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
@@ -63,7 +64,6 @@ caption {
 }
 
 
-
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
@@ -75,7 +75,6 @@ caption {
 }
 
 
-
 // Hover effect
 //
 // Placed here since it has to come after the potential zebra striping
@@ -85,7 +84,6 @@ caption {
     background-color: @table-bg-hover;
   }
 }
-
 
 
 // Table backgrounds
@@ -105,7 +103,7 @@ caption {
 
 .table-responsive {
   @media screen and (max-width: @screen-xs-max) {
-    margin-bottom: (@line-height-computed * 0.75);
+    margin-bottom: (@line-height-computed * .75);
     border: 1px solid @table-border-color;
   }
 }

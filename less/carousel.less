@@ -1,3 +1,5 @@
+/* stylelint-disable media-feature-name-no-unknown */
+
 //
 // Carousel
 // --------------------------------------------------
@@ -38,8 +40,8 @@
   // Toggles
   .icon-prev,
   .icon-next {
-    &:before {
-      content: '';
+    &::before {
+      content: "";
     }
   }
   .icon-prev {
@@ -50,8 +52,8 @@
   }
   .icon-next {
     .chevron(right, 19px, #f5f5f5, 8px, 1.5px, #777);
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       left: 50%;
     }
     position: absolute;
@@ -76,9 +78,9 @@
     border: 1px solid @carousel-indicator-border-color;
   }
   .active {
-    margin: 1px;
-    width:  10px;
+    width: 10px;
     height: 10px;
+    margin: 1px;
     background-color: @carousel-indicator-active-bg;
     border: 1px solid @carousel-indicator-active-bg;
   }

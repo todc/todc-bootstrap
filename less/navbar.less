@@ -1,3 +1,5 @@
+/* stylelint-disable selector-max-type, selector-max-compound-selectors, selector-max-combinators, selector-max-class, declaration-no-important, selector-no-qualifying-type, no-duplicate-selectors */
+
 //
 // Navbars
 // --------------------------------------------------
@@ -18,14 +20,13 @@
 }
 
 
-
 // Brand/project name
 
 .navbar-brand {
+  height: @navbar-height;
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
-  height: @navbar-height;
 
   // Prevent Glyphicons from increasing height of navbar
   > .glyphicon {
@@ -47,8 +48,8 @@
 // JavaScript plugin.
 
 .navbar-toggle {
-  margin-right: @navbar-padding-horizontal;
   padding: @padding-base-vertical 10px;
+  margin-right: @navbar-padding-horizontal;
   .navbar-vertical-align(@input-height-small);
   border-radius: @border-radius-base;
 }
@@ -63,7 +64,7 @@
   margin: floor((@navbar-padding-vertical / 2)) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top:    @navbar-padding-vertical;
+    padding-top: @navbar-padding-vertical;
     padding-bottom: @navbar-padding-vertical;
     line-height: @line-height-computed;
   }
@@ -83,7 +84,7 @@
 
     > li {
       > a {
-        padding-top:    @navbar-padding-vertical;
+        padding-top: @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
       }
     }
@@ -97,9 +98,9 @@
 // our navbars.
 
 .navbar-form {
-  margin-left: -@navbar-padding-horizontal;
-  margin-right: -@navbar-padding-horizontal;
   padding: 10px @navbar-padding-horizontal;
+  margin-right: -@navbar-padding-horizontal;
+  margin-left: -@navbar-padding-horizontal;
   .box-shadow(none);
 
   // Mixin behavior for optimum display
@@ -114,10 +115,10 @@
 
   // Undo 100% width for pull classes
   @media (min-width: @grid-float-breakpoint) {
-    margin-left: 0;
-    margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .form-control {
@@ -155,7 +156,7 @@
     &:hover,
     &:active,
     &.active {
-      color: @btn-default-color
+      color: @btn-default-color;
     }
   }
 }
@@ -245,8 +246,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-default-link-active-bg;
         color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
       }
     }
 
@@ -383,8 +384,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-inverse-link-active-bg;
         color: @navbar-inverse-link-active-color;
+        background-color: @navbar-inverse-link-active-bg;
       }
     }
 

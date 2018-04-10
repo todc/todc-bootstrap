@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-qualifying-type, selector-max-type */
+
 //
 // Navs
 // --------------------------------------------------
@@ -41,8 +43,8 @@
 
     // Actual tabs (as links)
     > a {
-      border-radius: @border-radius-base @border-radius-base 0 0;
       color: @nav-tabs-link-color;
+      border-radius: @border-radius-base @border-radius-base 0 0;
       &:hover {
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
       }
@@ -53,7 +55,7 @@
       &,
       &:hover,
       &:focus {
-        font-weight: bold;
+        font-weight: 700;
         color: @nav-tabs-active-link-hover-color;
       }
     }
@@ -70,12 +72,12 @@
     // Actual tabs (as links)
     > a {
       padding: @nav-tabs-google-link-padding-vertical @nav-tabs-google-link-padding-horizontal;
+      margin: @nav-tabs-google-link-margin-vertical @nav-tabs-google-link-margin-horizontal;
       line-height: @line-height-base;
       color: @nav-tabs-google-link-color;
       border: 3px solid transparent;
       border-width: 3px 0;
       border-radius: 0;
-      margin: @nav-tabs-google-link-margin-vertical @nav-tabs-google-link-margin-horizontal;
       &:first-of-type {
         margin-left: 0;
       }
@@ -102,9 +104,9 @@
       &,
       &:hover,
       &:focus {
+        color: @nav-tabs-google-link-active-color;
         border: 3px solid transparent;
         border-width: 3px 0;
-        color: @nav-tabs-google-link-active-color;
         border-bottom-color: @nav-tabs-google-link-selected-border-color;
       }
     }

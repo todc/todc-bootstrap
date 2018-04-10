@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-qualifying-type, property-no-vendor-prefix, media-feature-name-no-vendor-prefix, indentation, function-name-case */
+
 //
 // Forms
 // --------------------------------------------------
@@ -163,27 +165,25 @@ input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: relative;
   width: 13px;
+  width: 16px ~"\0"; // override styles for IE
   height: 13px;
-  background: white;
+  height: 16px ~"\0"; // override styles for IE
+  background: @input-bg;
   border: 1px solid #dcdcdc;
+  border: 1px solid transparent ~"\0"; // override styles for IE
   border-radius: 1px;
   -webkit-appearance: none;
 
-  // override styles for IE
-  width: 16px ~"\0";
-  height: 16px ~"\0";
-  border: 1px solid transparent ~"\0";
-
   &:focus {
-    outline: 0;
     border-color: @brand-primary;
+    outline: 0;
   }
 
   &:active {
-    border-color: #c6c6c6;
     background-color: #ebebeb;
     // override the bkgd color for IE
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffffff", endColorstr="#ffffffff", GradientType=0);
+    border-color: #c6c6c6;
   }
 
   &:checked {
@@ -193,22 +193,20 @@ input[type="checkbox"],
 input[type="radio"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
-  border-radius: 1em;
   width: 15px;
+  width: 18px ~"\0"; // override styles for IE
   height: 15px;
-
-  // override styles for IE
-  width: 18px ~"\0";
-  height: 18px ~"\0";
+  height: 18px ~"\0"; // override styles for IE
+  border-radius: 1em;
 
   &:checked::after {
-    content: '';
-    display: block;
     position: relative;
     top: 3px;
     left: 3px;
+    display: block;
     width: 7px;
     height: 7px;
+    content: "";
     background: #666;
     border-radius: 1em;
   }
@@ -225,11 +223,11 @@ input[type="checkbox"],
   }
 
   &:checked::after {
-    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtklEQVQ4y2P4//8/A7Ux1Q0cxoaCADIbCUgCMTvVXAoE5kA8CYidyXYpGrAH4iVAHIXiCwoMDQTimUBcBsRMlBrKCsTpUANzkC0j11BuIK6EGlgKsoAkQ4FgChD7AzELVI8YEDdDDawDYk6YQaQY6gg1oAqILYC4D8oHGcyLbBAphoJAKtQgGO4EYiHk2CLHUJAXm6AG9gCxNHoSIMdQEJCFGqiALaGSayjMxQwUGzq0S6nhZygA2ojsbh6J67kAAAAASUVORK5CYII=);
-    display: block;
     position: absolute;
     top: -6px;
     left: -5px;
+    display: block;
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtklEQVQ4y2P4//8/A7Ux1Q0cxoaCADIbCUgCMTvVXAoE5kA8CYidyXYpGrAH4iVAHIXiCwoMDQTimUBcBsRMlBrKCsTpUANzkC0j11BuIK6EGlgKsoAkQ4FgChD7AzELVI8YEDdDDawDYk6YQaQY6gg1oAqILYC4D8oHGcyLbBAphoJAKtQgGO4EYiHk2CLHUJAXm6AG9gCxNHoSIMdQEJCFGqiALaGSayjMxQwUGzq0S6nhZygA2ojsbh6J67kAAAAASUVORK5CYII=");
   }
 
   &:indeterminate {
@@ -249,9 +247,9 @@ input[type="checkbox"],
 
 .form-control-static {
   // Size it appropriately next to real form controls
+  min-height: (@line-height-computed + @font-size-base);
   padding-top: (@padding-base-vertical + 1);
   padding-bottom: (@padding-base-vertical + 1);
-  min-height: (@line-height-computed + @font-size-base);
 }
 
 
@@ -458,8 +456,8 @@ input[type="checkbox"],
     .radio input[type="radio"],
     .checkbox input[type="checkbox"] {
       position: relative;
-      margin-left: 0;
       margin-bottom: -2px;
+      margin-left: 0;
     }
 
     // Re-override the feedback icon.

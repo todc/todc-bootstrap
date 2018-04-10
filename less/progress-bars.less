@@ -1,3 +1,5 @@
+/* stylelint-disable at-rule-no-vendor-prefix */
+
 //
 // Progress bars
 // --------------------------------------------------
@@ -8,14 +10,14 @@
 
 // Outer container
 .progress {
-  border: 1px solid #999;
-  padding: 1px;
-  height: 14px;
-  font-size: @font-size-small;
+  // height: 14px;
   height: @line-height-computed;
+  padding: 1px;
   margin-bottom: @line-height-computed;
+  font-size: @font-size-small;
   background-color: transparent;
   background-image: none;
+  border: 1px solid #999;
   border-radius: @progress-border-radius;
   .box-shadow(none);
 }
@@ -38,7 +40,6 @@
   #gradient > .striped();
   background-size: 40px 40px;
 }
-
 
 
 // Variations

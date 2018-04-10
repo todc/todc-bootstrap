@@ -8,11 +8,20 @@
   > li {
     > a,
     > span {
-      color: @pagination-color;
       padding: @pagination-padding-vertical @pagination-padding-horizontal;
       line-height: @line-height-base;
+      color: @pagination-color;
       background-color: @pagination-bg;
       border: 1px solid @pagination-border;
+
+      &:hover,
+      &:focus {
+        color: @pagination-color;
+        background-color: @pagination-hover-bg;
+        border-color: @pagination-hover-border;
+
+        .box-shadow(0 1px 1px rgba(0,0,0,0.1));
+      }
     }
     &:first-child {
       > a,
@@ -29,17 +38,6 @@
     }
   }
 
-  > li > a,
-  > li > span {
-    &:hover,
-    &:focus {
-      color: @pagination-color;
-      background-color: @pagination-hover-bg;
-      border-color: @pagination-hover-border;
-
-      .box-shadow(0 1px 1px rgba(0,0,0,0.1));
-     }
-  }
   > li > a:active {
     #gradient > .vertical(@start-color: #f6f6f6; @end-color: #f1f1f1);
     .reset-filter();
@@ -67,14 +65,14 @@
     > a:hover,
     > a:focus {
       color: @pagination-disabled-color;
+      text-shadow: none;
+      background-color: @pagination-disabled-bg;
       border-color: @pagination-disabled-border;
 
       #gradient > .vertical(@start-color: #f5f5f5; @end-color: #f1f1f1);
       .reset-filter();
-      background-color: @pagination-disabled-bg;
 
       .box-shadow(none);
-      text-shadow: none;
     }
   }
 }

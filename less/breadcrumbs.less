@@ -14,13 +14,13 @@
       .chevron(right, 5px, @breadcrumb-bg, 9px, 1px, #777);
       margin-left: 20px;
     }
-    + li:before,
-    + li:after {
+    + li::before,
+    + li::after {
       left: -16px;
     }
-    + li:before {
-      content: "";
+    + li::before {
       color: @breadcrumb-color;
+      content: "";
     }
     > a {
       color: @breadcrumb-color;
@@ -43,8 +43,8 @@
     + li {
       .chevron(right, 5px, @breadcrumb-inverse-bg, 9px, 1px, #666);
     }
-    + li:before,
-    + li:after {
+    + li::before,
+    + li::after {
       left: -16px;
     }
     > a {
@@ -70,8 +70,8 @@
     + li {
       .chevron(right, 5px, @breadcrumb-small-bg, 9px, 1px, #666);
     }
-    + li:before,
-    + li:after {
+    + li::before,
+    + li::after {
       left: -16px;
     }
   }
@@ -79,14 +79,14 @@
   &.breadcrumb-inverse {
     background-color: @breadcrumb-inverse-bg;
 
-  > li {
-    + li {
-      .chevron(right, 5px, @breadcrumb-inverse-bg, 9px, 1px, #666);
-    }
-    + li:before,
-    + li:after {
-      left: -16px;
+    > li {
+      + li {
+        .chevron(right, 5px, @breadcrumb-inverse-bg, 9px, 1px, #666);
+      }
+      + li::before,
+      + li::after {
+        left: -16px;
+      }
     }
   }
-}
 }

@@ -1,3 +1,5 @@
+/* stylelint-disable no-duplicate-selectors */
+
 //
 // Tooltips
 // --------------------------------------------------
@@ -9,7 +11,7 @@
   // So reset our font and text properties to avoid inheriting weird values.
   .reset-text();
   font-size: @font-size-mini;
-  font-weight: bold;
+  font-weight: 700;
   line-height: @line-height-xs;
 
   word-break: break-word;
@@ -26,10 +28,10 @@
 }
 
 // Arrows
-.tooltip-arrow:before {
-  content: " ";
+.tooltip-arrow::before {
   position: absolute;
   z-index: -1;
+  content: " ";
   border: @tooltip-arrow-outer-width solid transparent;
 }
 // Note: Deprecated .top-left, .top-right, .bottom-left, and .bottom-right as of v3.3.1
@@ -39,7 +41,7 @@
   &.top-right .tooltip-arrow  {
     bottom: 1px;
     border-top-color: @tooltip-arrow-color;
-    &:before {
+    &::before {
       top: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
       border-top-color: @tooltip-arrow-outer-color;
@@ -49,7 +51,7 @@
   &.right .tooltip-arrow {
     left: 1px;
     border-right-color: @tooltip-arrow-color;
-    &:before {
+    &::before {
       top: -@tooltip-arrow-outer-width;
       right: -@tooltip-arrow-width;
       border-right-color: @tooltip-arrow-outer-color;
@@ -59,7 +61,7 @@
   &.left .tooltip-arrow {
     right: 1px;
     border-left-color: @tooltip-arrow-color;
-    &:before {
+    &::before {
       top: -@tooltip-arrow-outer-width;
       left: -@tooltip-arrow-width;
       border-right: 0 dotted;
@@ -71,7 +73,7 @@
   &.bottom-right .tooltip-arrow {
     top: 1px;
     border-bottom-color: @tooltip-arrow-color;
-    &:before {
+    &::before {
       bottom: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
       border-top: 0 dotted;

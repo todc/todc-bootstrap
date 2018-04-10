@@ -1,11 +1,13 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
+
 //
 // Scrollbars
 // --------------------------------------------------
 
 
 .scrollable::-webkit-scrollbar {
-  height: 16px;
   width: 10px;
+  height: 16px;
 
   &:hover {
     background-color: #f3f3f3;
@@ -14,14 +16,13 @@
 }
 .scrollable::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
-  background-color: transparent;
   display: block;
   height: 0;
+  background-color: transparent;
 }
 .scrollable::-webkit-scrollbar-track {
   background-clip: padding-box;
-  border: solid
-  transparent;
+  border: solid transparent;
   border-width: 0 0 0 4px;
 }
 .scrollable::-webkit-scrollbar-track-piece {
@@ -30,19 +31,19 @@
 }
 .scrollable::-webkit-scrollbar-thumb {
   background-color: #515151; //old browsers fallback (ie8 etc)
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, .2);
+  background-clip: padding-box;
   border: solid transparent;
   border-width: 0;
-  .box-shadow(~"inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07)");
-  background-clip: padding-box;
+  .box-shadow(~"inset 1px 1px 0 rgba(0, 0, 0, .10),inset 0 -1px 0 rgba(0, 0, 0, .07)");
 
   &:hover {
     background-color: #949494;
   }
   &:active {
     background-color: #3b3b3b; //old browsers fallback (ie8 etc)
-    background-color: rgba(0,0,0,0.5);
-    .box-shadow(inset 1px 1px 3px rgba(0,0,0,0.35));
+    background-color: rgba(0, 0, 0, .5);
+    .box-shadow(inset 1px 1px 3px rgba(0, 0, 0, .35));
   }
 
   &:vertical,

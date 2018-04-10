@@ -1,3 +1,5 @@
+/* stylelint-disable value-list-comma-newline-after, value-list-comma-space-after */
+
 //
 // Scaffolding
 // --------------------------------------------------
@@ -74,8 +76,8 @@ a {
 
 .caret-left {
   &:extend(.caret-right);
-  margin-left: 0;
   margin-right: 2px;
+  margin-left: 0;
   border-right: @caret-width-base solid;
   border-left: 0 dotted;
 }
@@ -85,20 +87,18 @@ a {
 .scrollable-shadow {
   background:
     // Shadow covers
-    linear-gradient(white 30%, rgba(255,255,255,0)),
-    linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
-
+    linear-gradient(#fff 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%,
     // Shadows
-    radial-gradient(50% 0, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
-    radial-gradient(50% 100%, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+    radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+    radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background:
     // Shadow covers
-    linear-gradient(white 30%, rgba(255,255,255,0)),
-    linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
-
+    linear-gradient(#fff 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%,
     // Shadows
-    radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
-    radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+    radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+    radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background-repeat: no-repeat;
   background-attachment: local, local, scroll, scroll; // Opera doesn't support this in the shorthand
   background-size: 100% 40px, 100% 40px, 100% 6px, 100% 6px;
