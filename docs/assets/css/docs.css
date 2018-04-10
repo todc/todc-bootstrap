@@ -4,27 +4,28 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
+/* stylelint-disable declaration-block-single-line-max-declarations */
 .hll {
-  background-color: #ffffcc;
+  background-color: #ffc;
 }
 .c {
   color: #999;
 }
 .err {
-  color: #AA0000;
-  background-color: #FFAAAA;
+  color: #a00;
+  background-color: #faa;
 }
 .k {
-  color: #006699;
+  color: #069;
 }
 .o {
-  color: #555555;
+  color: #555;
 }
 .cm {
   color: #999;
 }
 .cp {
-  color: #009999;
+  color: #099;
 }
 .c1 {
   color: #999;
@@ -33,54 +34,54 @@
   color: #999;
 }
 .gd {
-  background-color: #FFCCCC;
-  border: 1px solid #CC0000;
+  background-color: #fcc;
+  border: 1px solid #c00;
 }
 .ge {
   font-style: italic;
 }
 .gr {
-  color: #FF0000;
+  color: #f00;
 }
 .gh {
-  color: #003300;
+  color: #030;
 }
 .gi {
-  background-color: #CCFFCC;
-  border: 1px solid #00CC00;
+  background-color: #cfc;
+  border: 1px solid #0c0;
 }
 .go {
-  color: #AAAAAA;
+  color: #aaa;
 }
 .gp {
-  color: #000099;
+  color: #009;
 }
 .gu {
-  color: #003300;
+  color: #030;
 }
 .gt {
-  color: #99CC66;
+  color: #9c6;
 }
 .kc {
-  color: #006699;
+  color: #069;
 }
 .kd {
-  color: #006699;
+  color: #069;
 }
 .kn {
-  color: #006699;
+  color: #069;
 }
 .kp {
-  color: #006699;
+  color: #069;
 }
 .kr {
-  color: #006699;
+  color: #069;
 }
 .kt {
-  color: #007788;
+  color: #078;
 }
 .m {
-  color: #FF6600;
+  color: #f60;
 }
 .s {
   color: #d44950;
@@ -89,104 +90,104 @@
   color: #4f9fcf;
 }
 .nb {
-  color: #336666;
+  color: #366;
 }
 .nc {
-  color: #00AA88;
+  color: #0a8;
 }
 .no {
-  color: #336600;
+  color: #360;
 }
 .nd {
-  color: #9999FF;
+  color: #99f;
 }
 .ni {
-  color: #999999;
+  color: #999;
 }
 .ne {
-  color: #CC0000;
+  color: #c00;
 }
 .nf {
-  color: #CC00FF;
+  color: #c0f;
 }
 .nl {
-  color: #9999FF;
+  color: #99f;
 }
 .nn {
-  color: #00CCFF;
+  color: #0cf;
 }
 .nt {
   color: #2f6f9f;
 }
 .nv {
-  color: #003333;
+  color: #033;
 }
 .ow {
-  color: #000000;
+  color: #000;
 }
 .w {
-  color: #bbbbbb;
+  color: #bbb;
 }
 .mf {
-  color: #FF6600;
+  color: #f60;
 }
 .mh {
-  color: #FF6600;
+  color: #f60;
 }
 .mi {
-  color: #FF6600;
+  color: #f60;
 }
 .mo {
-  color: #FF6600;
+  color: #f60;
 }
 .sb {
-  color: #CC3300;
+  color: #c30;
 }
 .sc {
-  color: #CC3300;
+  color: #c30;
 }
 .sd {
-  color: #CC3300;
   font-style: italic;
+  color: #c30;
 }
 .s2 {
-  color: #CC3300;
+  color: #c30;
 }
 .se {
-  color: #CC3300;
+  color: #c30;
 }
 .sh {
-  color: #CC3300;
+  color: #c30;
 }
 .si {
-  color: #AA0000;
+  color: #a00;
 }
 .sx {
-  color: #CC3300;
+  color: #c30;
 }
 .sr {
-  color: #33AAAA;
+  color: #3aa;
 }
 .s1 {
-  color: #CC3300;
+  color: #c30;
 }
 .ss {
-  color: #FFCC33;
+  color: #fc3;
 }
 .bp {
-  color: #336666;
+  color: #366;
 }
 .vc {
-  color: #003333;
+  color: #033;
 }
 .vg {
-  color: #003333;
+  color: #033;
 }
 .vi {
-  color: #003333;
+  color: #033;
 }
 .il {
-  color: #FF6600;
+  color: #f60;
 }
 .css .o,
 .css .o + .nt,
@@ -217,6 +218,7 @@
   display: inline-block;
   padding-right: 45px;
 }
+/* stylelint-disable at-rule-no-vendor-prefix */
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
  * Copyright 2014-2015 Twitter, Inc.
@@ -231,6 +233,8 @@
 @viewport {
   width: device-width;
 }
+/* stylelint-disable value-keyword-case */
+/* stylelint-disable value-no-vendor-prefix, selector-max-id */
 .btn-outline {
   color: #4d90fe;
   background-color: transparent;
@@ -285,6 +289,7 @@
   background-color: transparent;
   border: 1px solid #cdbfe3;
 }
+/* stylelint-disable selector-max-id */
 #skippy {
   display: block;
   padding: 1em;
@@ -364,6 +369,7 @@
     margin-bottom: 0;
   }
 }
+/* stylelint-disable value-no-vendor-prefix, function-name-case */
 .bs-docs-masthead,
 .bs-docs-header {
   position: relative;
@@ -372,11 +378,11 @@
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #2d87e2;
-  background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1b6ec1), to(#2d87e2));
+  background-image: -webkit-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image: -o-linear-gradient(top, #1b6ec1 0%, #2d87e2 100%);
   background-image: linear-gradient(to bottom, #1b6ec1 0%, #2d87e2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6ec1', endColorstr='#2d87e2', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b6ec1", endColorstr="#2d87e2", GradientType=0);
   background-repeat: repeat-x;
 }
 .bs-docs-masthead .bs-docs-booticon {
@@ -394,7 +400,6 @@
 }
 .bs-docs-masthead .version {
   margin-top: -15px;
-  /*  margin-bottom: 30px;*/
   color: #b3d4f4;
 }
 .bs-docs-masthead .btn {
@@ -475,7 +480,7 @@
 .bs-docs-featurette-title {
   margin-bottom: 5px;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333;
 }
 .half-rule {
@@ -484,7 +489,7 @@
 }
 .bs-docs-featurette h3 {
   margin-bottom: 5px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333;
 }
 .bs-docs-featurette-img {
@@ -561,6 +566,7 @@
     padding-left: 10px;
   }
 }
+/* stylelint-disable selector-max-compound-selectors */
 .bs-docs-sidebar.affix {
   position: static;
 }
@@ -595,7 +601,7 @@
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #dd4b39;
   background-color: transparent;
   border-left: 2px solid #dd4b39;
@@ -609,7 +615,7 @@
   padding-bottom: 1px;
   padding-left: 30px;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400;
 }
 .bs-docs-sidebar .nav .nav > li > a:hover,
 .bs-docs-sidebar .nav .nav > li > a:focus {
@@ -672,6 +678,7 @@
     width: 263px;
   }
 }
+/* stylelint-disable property-no-vendor-prefix, selector-max-id, selector-no-qualifying-type */
 .show-grid {
   margin-bottom: 15px;
 }
@@ -693,12 +700,12 @@
   -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
 }
-.bs-example:after {
+.bs-example::after {
   position: absolute;
   top: 15px;
   left: 15px;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   color: #959595;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -832,7 +839,7 @@
 .bs-navbar-top-example {
   padding-bottom: 45px;
 }
-.bs-navbar-top-example:after {
+.bs-navbar-top-example::after {
   top: auto;
   bottom: 15px;
 }
@@ -927,12 +934,12 @@
   margin-bottom: 0;
 }
 #focusedInput {
-  border: 1px solid #4d90fe !important;
+  border-color: #cccccc;
+  border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
   outline: thin dotted \9;
-  /* IE6-9 */
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
 .bs-callout {
   padding: 20px;
@@ -1053,17 +1060,18 @@
   margin-right: 10px;
   border-radius: 4px;
 }
+/* stylelint-disable selector-no-qualifying-type, declaration-no-important */
 .table-responsive .highlight pre {
   white-space: normal;
 }
 .bs-table th small,
 .responsive-utilities th small {
   display: block;
-  font-weight: normal;
+  font-weight: 400;
   color: #999;
 }
 .responsive-utilities tbody th {
-  font-weight: normal;
+  font-weight: 400;
 }
 .responsive-utilities td {
   text-align: center;
@@ -1086,7 +1094,7 @@
   display: block;
   padding: 15px 10px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.1;
   text-align: center;
   border-radius: 4px;
@@ -1157,6 +1165,7 @@
     font-size: 12px;
   }
 }
+/* stylelint-disable property-no-vendor-prefix, selector-max-id, selector-no-qualifying-type */
 .bs-customizer .toggle {
   float: right;
   margin-top: 25px;
@@ -1191,7 +1200,7 @@
   font-size: 12px;
 }
 #less-section label {
-  font-weight: normal;
+  font-weight: 400;
 }
 .bs-customize-download .btn-outline {
   padding: 20px;
@@ -1247,7 +1256,7 @@
 }
 .bs-dropzone .lead {
   margin-bottom: 10px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333;
 }
 #import-manual-trigger {
@@ -1328,7 +1337,7 @@
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #e1e1e8;
-  border-radius: 0 4px 0 4px;
+  border-radius: 0 4px;
 }
 .btn-clipboard-hover {
   color: #fff;
@@ -1344,6 +1353,7 @@
     border-top-right-radius: 0;
   }
 }
+/* stylelint-disable property-no-vendor-prefix */
 .anchorjs-link {
   color: inherit;
 }
@@ -1363,6 +1373,7 @@
   text-decoration: none;
   opacity: 1;
 }
+/* stylelint-disable declaration-no-important, selector-attribute-quotes */
 .algolia-autocomplete {
   display: block !important;
 }
@@ -1373,6 +1384,7 @@
   padding: 10px 0 !important;
   background-color: #fff;
   background-clip: padding-box;
+  border: 1px solid #ddd;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.175);
 }
@@ -1426,7 +1438,7 @@
 .algolia-autocomplete .ds-suggestion:not(:first-child) .algolia-docsearch-suggestion--category-header {
   padding-top: 10px !important;
   margin-top: 10px !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #eee;
 }
 .algolia-autocomplete .ds-suggestion .algolia-docsearch-suggestion--subcategory-column {
   display: none !important;
@@ -1442,7 +1454,7 @@
   padding: 0 15px 8px !important;
   margin-top: -4px;
   font-size: 13px !important;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.25 !important;
 }
 .algolia-autocomplete .algolia-docsearch-footer {
@@ -1453,7 +1465,7 @@
   font-size: 10px !important;
   line-height: 1 !important;
   color: #767676 !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #eee;
 }
 .algolia-autocomplete .algolia-docsearch-footer--logo {
   display: inline !important;
@@ -1464,21 +1476,22 @@
 }
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
   color: #5f2dab;
-  background-color: rgba(154, 132, 187, 0.12);
+  background-color: #eee;
 }
 .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
   box-shadow: inset 0 -2px 0 0 rgba(95, 45, 171, 0.5) !important;
 }
 .algolia-autocomplete .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--content {
-  background-color: rgba(208, 189, 236, 0.15) !important;
+  background-color: #e5e5e5 !important;
 }
+/* stylelint-disable selector-max-type, selector-no-qualifying-type, declaration-no-important */
 body {
   position: relative;
   padding-top: 94px;
 }
 .table code {
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
 }
 h2 code,
 h3 code,
@@ -1523,7 +1536,7 @@ h1[id] {
   z-index: 1030;
   display: block;
   padding: 15px 20px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   text-align: center;
   background-color: #1b6ec1;
@@ -1535,7 +1548,7 @@ h1[id] {
 }
 /* Nullify ill-advised printing of hrefs; see #18711 */
 @media print {
-  a[href]:after {
+  a[href]::after {
     content: "" !important;
   }
 }
