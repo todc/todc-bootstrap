@@ -8,7 +8,7 @@
   <p align="center">
     A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
     <br>
-    <a href="https://todc.github.io/todc-bootstrap/docs/4.0/"><strong>Explore TODC Bootstrap docs »</strong></a>
+    <a href="https://todc.github.io/todc-bootstrap/docs/4.1/"><strong>Explore TODC Bootstrap docs »</strong></a>
     <br>
     <br>
     <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug.md">Report bug</a>
@@ -46,15 +46,15 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.3.7-3.3.13.zip).
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v4.1.0-4.1.0.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [npm](https://www.npmjs.com/): `npm install todc-bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap`
-- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap`.
+- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap@4.1.0-4.1.0`
+- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap:4.1.0-4.1.0`.
 
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
-Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/4.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/4.1/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
@@ -120,7 +120,7 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 
 ### Running documentation locally
 
-1. Run through the [tooling setup](https://github.com/todc/todc-bootstrap/blob/v4-dev/docs/4.0/getting-started/build-tools#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+1. Run through the [tooling setup](https://github.com/todc/todc-bootstrap/blob/v4-dev/docs/4.1/getting-started/build-tools#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 2. Run `npm install` to install Node.js dependencies.
 3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
 4. From the root `/todc-bootstrap` directory, run `npm run docs-serve` in the command line.
