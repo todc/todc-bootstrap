@@ -6,14 +6,11 @@
     &::before {
       position: relative;
       top: -.225rem;
-      padding-left: ($breadcrumb-item-padding / 2);
       vertical-align: top;
     }
   }
 
   > a {
-    padding: .0625rem .375rem;
-    margin-left: -.375rem;
     color: $breadcrumb-divider-color;
     text-decoration: none;
     &:hover {
