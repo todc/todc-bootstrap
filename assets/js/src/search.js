@@ -42,7 +42,6 @@
 }())
 
 
-
 // // Search
 // if (window.docsearch) {
 //   window.docsearch({
