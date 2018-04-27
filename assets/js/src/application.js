@@ -107,29 +107,6 @@
     anchors.add('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5')
     $('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5').wrapInner('<div></div>')
 
-    // Search
-    if (window.docsearch) {
-      window.docsearch({
-        apiKey: 'e733f93dbde231dec8e69a6c7f5ae8ac',
-        indexName: 'todc-bootstrap',
-        inputSelector: '#search-input',
-        handleSelected: function (input, event, suggestion) {
-          var url = suggestion.url
-          url = suggestion.isLvl1 ? url.split('#')[0] : url
-          // If it's a title we remove the anchor so it does not jump.
-          window.location.href = url
-        },
-        transformData: function (hits) {
-          return hits.map(function (hit) {
-            var baseurl = document.getElementById('search-input').getAttribute('data-baseurl')
-            hit.url = hit.url.replace('https:///todc.github.io/todc-bootstrap' + baseurl, baseurl)
-            return hit
-          })
-        },
-        debug: false // Set debug to true if you want to inspect the dropdown
-      })
-    }
-
     // Holder
     Holder.addTheme('gray', {
       bg: '#777',
