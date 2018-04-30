@@ -3074,7 +3074,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   bottom: 0;
   z-index: 3;
   display: block;
-  height: calc(2.5rem - 1px * 2);
+  height: 2.375rem;
   padding: 0 1rem;
   line-height: 2.375;
   color: #616161;
