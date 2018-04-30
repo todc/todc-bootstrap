@@ -645,6 +645,7 @@ $custom-range-thumb-focus-box-shadow: none !default;
 $custom-range-thumb-active-bg:        darken($component-active-bg, 20%) !default;
 
 $custom-file-height:                $input-height !default;
+$custom-file-height-inner:          $input-height-inner !default;
 $custom-file-focus-border-color:    $input-focus-border-color !default;
 $custom-file-focus-box-shadow:      0 0 0 .075rem $white, $input-btn-focus-box-shadow !default;
 
