@@ -53,15 +53,15 @@ social_image_path:  /assets/brand/todc-bootstrap-social.png
 social_logo_path:   /assets/brand/todc-bootstrap-social-logo.png
 
 # Custom variables
-current_version:      4.1.0-4.1.0-alpha
-current_ruby_version: 4.1.0-4.1.0-alpha
+current_version:      4.1.1-4.1.1-alpha
+current_ruby_version: 4.1.1-4.1.1-alpha
 docs_version:         4.1
 repo:                 https://github.com/todc/todc-bootstrap
 slack:                ""
 
 download:
-  source:         https://github.com/todc/todc-bootstrap/archive/v4.1.0-4.1.0-alpha.zip
-  dist:           https://github.com/todc/todc-bootstrap/releases/download/v4.1.0-4.1.0-alpha/todc-bootstrap-4.1.0-4.1.0-alpha-dist.zip
+  source:         https://github.com/todc/todc-bootstrap/archive/v4.1.1-4.1.1-alpha.zip
+  dist:           https://github.com/todc/todc-bootstrap/releases/download/v4.1.1-4.1.1-alpha/todc-bootstrap-4.1.1-4.1.1-alpha-dist.zip
 
 bs:
   # Social
@@ -72,8 +72,8 @@ bs:
   social_image_path:  /assets/brand/bootstrap-social.png
   social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
-  current_version:      4.1.0
-  current_ruby_version: 4.1.0
+  current_version:      4.1.1
+  current_ruby_version: 4.1.1
   docs_version:         4.1
   repo:                 "https://github.com/twbs/bootstrap"
   slack:                "https://bootstrap-slack.herokuapp.com"
@@ -84,15 +84,15 @@ bs:
 
   download:
     source:           "https://github.com/twbs/bootstrap/archive/v4.1.0.zip"
-    dist:             "https://github.com/twbs/bootstrap/releases/download/v4.1.0/bootstrap-4.1.0-dist.zip"
+    dist:             "https://github.com/twbs/bootstrap/releases/download/v4.1.1/bootstrap-4.1.1-dist.zip"
 
   docs:             http://getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
   css_hash:         "sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-  js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+  js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
   js_hash:          "sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
   jquery:           "https://code.jquery.com/jquery-3.3.1.slim.min.js"
   jquery_hash:      "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
