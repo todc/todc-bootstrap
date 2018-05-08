@@ -45,9 +45,9 @@
     transition: background .8s;
     // @include box-shadow($btn-active-box-shadow);
 
-    &:focus {
-      // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
+    // &:focus {
+    //   @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    // }
   }
 }
 
