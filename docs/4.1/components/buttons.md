@@ -13,7 +13,8 @@ Bootstrap includes several predefined button styles, each serving its own semant
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
-<button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+<button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>
+{% endfor %}
 
 <button type="button" class="btn btn-link">Link</button>
 {% endcapture %}
