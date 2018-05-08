@@ -52,8 +52,8 @@
   }
 }
 
-@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
-  $border-color: if(lightness($color) > 90, rgba(color-yiq($color), .295), $color);
+@mixin button-outline-variant($color, $color-hover: color-yiq($color), $border: $btn-outline-border-color, $active-background: $color, $active-border: $color) {
+  $border-color: if(lightness($border) > 90, rgba(color-yiq($border), .295), $border);
 
   @include button-flat-variant($color: $color, $active-border: $border-color);
   // color: if(lightness($color) > 90, color-yiq($color), $color);
