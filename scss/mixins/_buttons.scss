@@ -54,6 +54,7 @@
 
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $border: $btn-outline-border-color, $active-background: $color, $active-border: $color) {
   $border-color: if(lightness($border) > 90, rgba(color-yiq($border), .295), $border);
+  $hover-border-color: if(lightness($color) > 90, darken(saturate($border, .85), 4.9), lighten(saturate(adjust-hue($color, 2), 5.75), 40));
 
   @include button-flat-variant($color: $color, $active-border: $border-color);
   // color: if(lightness($color) > 90, color-yiq($color), $color);
@@ -64,7 +65,7 @@
   &:hover,
   &:focus,
   &.focus {
-    border-color: $border-color;
+    border-color: $hover-border-color;
   }
 }
 
