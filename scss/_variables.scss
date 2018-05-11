@@ -661,6 +661,14 @@ $custom-range-thumb-box-shadow:       none !default;
 $custom-range-thumb-focus-box-shadow: none !default;
 $custom-range-thumb-active-bg:        darken($component-active-bg, 20%) !default;
 
+$custom-input-bg:                     $gray-100 !default;
+$custom-input-transition:             border-color 180ms cubic-bezier(.4, 0, .2, 1) !default;
+$custom-input-bottom-line-transition: background 0s ease-out !default;
+$custom-input-border-color:           $custom-input-bg !default;
+
+// background for checkbox and radio buttons
+$custom-input-control-indicator-checked-bg: $gray-600 !default;
+
 $custom-file-height:                $input-height !default;
 $custom-file-height-inner:          $input-height-inner !default;
 $custom-file-focus-border-color:    $input-focus-border-color !default;

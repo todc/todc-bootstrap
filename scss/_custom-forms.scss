@@ -1,3 +1,5 @@
+// stylelint-disable selector-no-qualifying-type
+
 // Checkboxes and radios
 //
 // Base class takes care of all the key behavioral aspects.
@@ -116,6 +118,7 @@
   }
 }
 
+
 // Range
 //
 // Style range inputs the same across browsers. Vendor-specific rules for pseudo
@@ -161,5 +164,62 @@
 
   &:active::-ms-thumb {
     transform: scale(1.5);
+  }
+}
+
+//
+// Textual form controls
+//
+
+.custom-form-control {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+  background-color: $custom-input-bg;
+  border: none;
+  // border-bottom: $input-border-width solid $input-border-color;
+  border-radius: 0;
+  transition: $custom-input-transition;
+  appearance: none;
+
+  &:focus {
+    border-color: $input-focus-border-color;
+    outline: none;
+
+    &::placeholder {
+      color: $input-placeholder-focus-color;
+    }
+  }
+
+  &:focus ~ &-ripple-line {
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: .3s;
+  }
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+
+  &-ripple-line {
+    display: block;
+    height: $input-focus-border-width;
+    background: no-repeat center bottom, center calc(100% - 1px);
+    background-image: linear-gradient(to top, $input-focus-border-color $input-focus-border-width, fade-out($input-focus-border-color, 1) $input-focus-border-width), linear-gradient(to top, $custom-input-border-color $input-border-width, fade-out($custom-input-border-color, 1) $input-border-width);
+    background-size: 0 100%, 100% 100%;
+    @include transition($custom-input-bottom-line-transition);
+  }
+}
+
+select.custom-form-control {
+  &:not([size]):not([multiple]) {
+    background: $custom-input-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
+    background-size: $custom-select-bg-size;
   }
 }
