@@ -48,6 +48,10 @@
       // } @else {
       //   box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
       // }
+  &.btn-pill {
+    @include button-pill-variant($background: $background, $color: $color, $border: $border, $hover-background: $hover-background-color, $active-background: $active-background);
+  }
+}
     }
   }
 }
@@ -161,6 +165,28 @@
 //     @include box-shadow($shadow-8dp);
 //   }
 // }
+
+// TODO: This mixin should only color attributes. The rest should be in the class
+@mixin button-pill-variant($background: $btn-pill-bg, $color: $btn-pill-color, $border: transparent, $hover-background: $btn-pill-hover-bg, $active-background: $btn-pill-active-bg) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  // border-radius: $btn-pill-border-radius;
+  // box-shadow: $btn-pill-box-shadow;
+  // transition: $btn-pill-transition;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: $hover-background;
+    // box-shadow: $btn-pill-hover-box-shadow;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-color: $active-background;
+  }
+}
 
 @mixin button-circle-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1), $width: 3.5rem) {
   @include button-circle-size($width: $width);

@@ -186,3 +186,21 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+
+//
+// Button modifiers
+//
+
+.btn-pill {
+  border-radius: $btn-pill-border-radius;
+  box-shadow: $btn-pill-box-shadow;
+  transition: $btn-pill-transition;
+  @include button-pill-variant();
+
+  &:hover,
+  &:focus,
+  &.focus {
+    box-shadow: $btn-pill-hover-box-shadow;
+  }
+}

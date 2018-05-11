@@ -466,6 +466,21 @@ $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-transition:              box-shadow 280ms cubic-bezier(.4, 0, .2, 1) !default;
 
 
+// Buttons - Pill
+
+$btn-pill-bg:                 $white !default;
+$btn-pill-color:              #5f6368 !default;
+
+$btn-pill-border-radius:      1.5rem !default;
+$btn-pill-box-shadow:         0 1px 2px 0 rgba(60, 64, 67, .302), 0 1px 3px 1px rgba(60, 64, 67, .149) !default;
+$btn-pill-transition:         box-shadow .08s linear, min-width .15s cubic-bezier(.4, 0, .2, 1) !default;
+
+$btn-pill-hover-bg:           #fafafb !default;
+$btn-pill-hover-box-shadow:   0 1px 3px 0 rgba(60, 64, 67, .302), 0 4px 8px 3px rgba(60, 64, 67, .149) !default;
+
+$btn-pill-active-bg:          #f1f3f4 !default;
+
+
 // Forms
 
 $label-margin-bottom:                   .5rem !default;
