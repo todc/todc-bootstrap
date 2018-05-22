@@ -87,8 +87,8 @@ input[type="radio"].form-check-input {
 input[type="checkbox"].form-check-input {
   &:checked::after {
     position: absolute;
-    top: -6px;
-    left: -5px;
+    top: -.3125rem;
+    left: -.34375rem;
     display: block;
     width: 15px;
     height: 15px;

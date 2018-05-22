@@ -27,15 +27,8 @@
 
   // Background-color and (when enabled) gradient
   &::before {
-    top: (($custom-radio-indicator-size - $custom-control-indicator-size) / 2);
     border: $custom-control-indicator-border-radius solid $custom-control-indicator-border-color;
     @include box-shadow($custom-control-indicator-box-shadow);
-  }
-
-  // Foreground (icon)
-  &::after {
-    top: ($custom-radio-indicator-size - $custom-control-indicator-size);
-    left: (($custom-radio-indicator-size - $custom-control-indicator-size) / 2);
   }
 }
 
@@ -47,20 +40,10 @@
 .custom-checkbox {
   .custom-control-input:checked ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
-
-    &::after {
-      top: .0625rem;
-      left: 0;
-    }
   }
 
   .custom-control-input:indeterminate ~ .custom-control-label {
     border-color: $custom-control-indicator-checked-bg;
-
-    &::after {
-      top: .0625rem;
-      left: 0;
-    }
   }
 
   .custom-control-input:disabled {
@@ -90,6 +73,11 @@
 
     &::before {
       @include gradient-bg($custom-control-indicator-bg);
+    }
+
+    &::after {
+      top: .1rem;
+      left: -1.45rem;
     }
   }
 
