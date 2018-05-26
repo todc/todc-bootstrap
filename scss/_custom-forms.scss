@@ -116,42 +116,39 @@
 .custom-range {
 
   &::-webkit-slider-thumb {
-    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
+    @include transition($custom-range-thumb-transition);
   }
 
   &::-moz-range-thumb  {
-    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
+    @include transition($custom-range-thumb-transition);
   }
 
   &::-ms-thumb  {
-    // transition: transform .18s cubic-bezier(.4, 0, .2, 1);
-    transition: transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1);
+    @include transition($custom-range-thumb-transition);
   }
 
   &:focus:not(:active)::-webkit-slider-thumb {
-    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    @include box-shadow($custom-range-thumb-focus-not-active-bs);
   }
 
   &:focus:not(:active)::-moz-range-thumb {
-    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    @include box-shadow($custom-range-thumb-focus-not-active-bs);
   }
 
   &:focus:not(:active)::-ms-thumb {
-    box-shadow: 0 0 0 10px rgba($custom-range-thumb-bg, .24);
+    @include box-shadow($custom-range-thumb-focus-not-active-bs);
   }
 
   &:active::-webkit-slider-thumb {
-    transform: scale(1.5);
+    transform: $custom-range-thumb-active-transform;
   }
 
   &:active::-moz-range-thumb {
-    transform: scale(1.5);
+    transform: $custom-range-thumb-active-transform;
   }
 
   &:active::-ms-thumb {
-    transform: scale(1.5);
+    transform: $custom-range-thumb-active-transform;
   }
 }
 
@@ -170,7 +167,7 @@
   border: none;
   // border-bottom: $input-border-width solid $input-border-color;
   border-radius: 0;
-  transition: $custom-input-transition;
+  @include transition($custom-input-transition);
   appearance: none;
 
   &:focus {
