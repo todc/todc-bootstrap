@@ -1065,7 +1065,7 @@ $carousel-transition:               transform .6s ease !default; // Define trans
 $close-font-size:                   $font-size-base * 1.5 !default;
 $close-font-weight:                 $font-weight-normal !default;
 $close-color:                       $black !default;
-$close-text-shadow:                 0 1px 0 $white !default;
+$close-text-shadow:                 none !default;
 
 // Code
 
