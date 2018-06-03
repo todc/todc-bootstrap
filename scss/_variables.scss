@@ -8,61 +8,68 @@
 // Color system
 //
 
-// stylelint-disable
 $white:    #fff !default;
-$gray-50:  #fafafa;
-$gray-100: #f5f5f5;
-$gray-200: #eeeeee;
-$gray-300: #e0e0e0;
-$gray-400: #bdbdbd;
-$gray-500: #9e9e9e;
-$gray-600: #757575;
-$gray-700: #616161;
-$gray-800: #424242;
-$gray-900: #212121;
+$gray-50:  #fafafa !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #eee !default;
+$gray-300: #e0e0e0 !default;
+$gray-400: #bdbdbd !default;
+$gray-500: #9e9e9e !default;
+$gray-600: #757575 !default;
+$gray-700: #616161 !default;
+$gray-800: #424242 !default;
+$gray-900: #212121 !default;
 $black:    #000 !default;
 
-$grays: ();
-$grays: map-merge((
-  "50":  $gray-50,
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-), $grays);
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "50":  $gray-50,
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
 
-$blue:    #1a73e8;
-$indigo:  #3f51b5;
-$purple:  #a142f4;
-$pink:    #e91e63;
-$red:     #d93025;
-$orange:  #fa7b17;
-$yellow:  #f9edbe;
-$green:   #1e8e3e;
-$teal:    #009688;
-$cyan:    #00bcd4;
+$blue:    #1a73e8 !default;
+$indigo:  #3f51b5 !default;
+$purple:  #a142f4 !default;
+$pink:    #e91e63 !default;
+$red:     #d93025 !default;
+$orange:  #fa7b17 !default;
+$yellow:  #f9edbe !default;
+$green:   #1e8e3e !default;
+$teal:    #009688 !default;
+$cyan:    #00bcd4 !default;
 
-$colors: ();
-$colors: map-merge((
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-500,
-  "gray-dark":  $gray-800
-), $colors);
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-500,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
 
 $primary:       $blue !default;
 $secondary:     $white !default;
@@ -73,18 +80,21 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 
-$theme-colors: ();
-$theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-), $theme-colors);
-// stylelint-enable
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
@@ -117,28 +127,34 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// stylelint-disable
 $spacer: 1rem !default;
 $spacers: () !default;
-$spacers: map-merge((
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3)
-), $spacers);
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
-$sizes: map-merge((
-  25: 25%,
-  50: 50%,
-  75: 75%,
-  100: 100%,
-  auto: auto
-), $sizes);
-// stylelint-enable
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
 
 // Body
 //
@@ -255,21 +271,23 @@ $shadow-24dp:                   0  9px 46px  8px rgba($black, $shadow-penumbra-o
                                 0 11px 15px -7px rgba($black, $shadow-ambient-opacity),
                                 0 24px 38px  3px rgba($black, $shadow-umbra-opacity) !default;
 
-// stylelint-disable
-$shadows: ();
-$shadows: map-merge((
-  "shadow-0dp":   $shadow-0dp,
-  "shadow-1dp":   $shadow-1dp,
-  "shadow-2dp":   $shadow-2dp,
-  "shadow-3dp":   $shadow-3dp,
-  "shadow-4dp":   $shadow-4dp,
-  "shadow-6dp":   $shadow-6dp,
-  "shadow-8dp":   $shadow-8dp,
-  "shadow-12dp":  $shadow-12dp,
-  "shadow-16dp":  $shadow-16dp,
-  "shadow-24dp":  $shadow-24dp
-), $shadows);
-// stylelint-enable
+$shadows: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$shadows: map-merge(
+  (
+    "shadow-0dp":   $shadow-0dp,
+    "shadow-1dp":   $shadow-1dp,
+    "shadow-2dp":   $shadow-2dp,
+    "shadow-3dp":   $shadow-3dp,
+    "shadow-4dp":   $shadow-4dp,
+    "shadow-6dp":   $shadow-6dp,
+    "shadow-8dp":   $shadow-8dp,
+    "shadow-12dp":  $shadow-12dp,
+    "shadow-16dp":  $shadow-16dp,
+    "shadow-24dp":  $shadow-24dp
+  ),
+  $shadows
+);
 
 
 // Components
