@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://todc.github.io/todc-bootstrap/">
-    <img src="https://todc.github.io/todc-bootstrap/docs/4.1/assets/brand/todc-bootstrap-solid.svg" alt="Logo" width=72 height=72>
+    <img src="https://todc.github.io/todc-bootstrap/docs/4.1/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width=72 height=72>
   </a>
 
   <h3 align="center">TODC Bootstrap</h3>
@@ -121,7 +121,7 @@ Note that **feature requests must target [TODC Bootstrap v4](https://github.com/
 
 TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `assets/src/search.js` file.
+Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.1/assets/js/src/search.js` file.
 
 ### Running documentation locally
 
