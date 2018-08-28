@@ -63,7 +63,6 @@
     "coveralls": "shx cat js/coverage/lcov.info | coveralls",
     "docs": "npm-run-all --parallel css-docs js-docs --sequential docs-compile docs-lint",
     "docs-compile": "bundle exec jekyll build",
-    "docs-serve": "bundle exec jekyll serve",
     "postdocs-compile": "npm run docs-workbox-precache",
     "docs-github": "shx echo \"github: true\" > twbsconfig.yml && npm run docs-compile -- --config _config.yml,twbsconfig.yml && shx rm ./twbsconfig.yml",
     "docs-github-serve": "npm run docs-serve -- --skip-initial-build --no-watch",
