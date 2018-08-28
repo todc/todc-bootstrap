@@ -677,17 +677,17 @@ $custom-range-track-bg:             $gray-300 !default;
 $custom-range-track-border-radius:  1rem !default;
 $custom-range-track-box-shadow:     none !default;
 
-$custom-range-thumb-width:                .75rem !default;
-$custom-range-thumb-height:               $custom-range-thumb-width !default;
-$custom-range-thumb-bg:                   $component-active-bg !default;
-$custom-range-thumb-transition:           transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1) !default;
-$custom-range-thumb-border:               0 !default;
-$custom-range-thumb-border-radius:        1rem !default;
-$custom-range-thumb-box-shadow:           none !default;
-$custom-range-thumb-focus-box-shadow:     none !default;
-$custom-range-thumb-focus-not-active-bs:  0 0 0 10px rgba($custom-range-thumb-bg, .24) !default;
-$custom-range-thumb-active-bg:            darken($component-active-bg, 20%) !default;
-$custom-range-thumb-active-transform:     scale(1.5) !default;
+$custom-range-thumb-width:                  .75rem !default;
+$custom-range-thumb-height:                 $custom-range-thumb-width !default;
+$custom-range-thumb-bg:                     $component-active-bg !default;
+$custom-range-thumb-transition:             transform .18s cubic-bezier(.4, 0, .2, 1), border .18s cubic-bezier(.4, 0, .2, 1), box-shadow .18s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1) !default;
+$custom-range-thumb-border:                 0 !default;
+$custom-range-thumb-border-radius:          1rem !default;
+$custom-range-thumb-box-shadow:             none !default;
+$custom-range-thumb-focus-box-shadow:       none !default;
+$custom-range-thumb-focus-not-active-bs:    0 0 0 10px rgba($custom-range-thumb-bg, .24) !default;
+$custom-range-thumb-active-bg:              darken($component-active-bg, 20%) !default;
+$custom-range-thumb-active-transform:       scale(1.5) !default;
 
 $custom-input-bg:                     $gray-100 !default;
 $custom-input-transition:             border-color 180ms cubic-bezier(.4, 0, .2, 1) !default;
