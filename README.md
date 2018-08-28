@@ -46,11 +46,11 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v4.1.2-4.1.2.zip).
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/vv4.1.3-v4.1.3.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [npm](https://www.npmjs.com/): `npm install todc-bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap@4.1.2-4.1.2`
-- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap:4.1.2-4.1.2`.
+- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap@v4.1.3-v4.1.3`
+- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap:v4.1.3-v4.1.3`.
 
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
