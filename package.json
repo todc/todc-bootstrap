@@ -170,7 +170,7 @@
   "bundlesize": [
     {
       "path": "./dist/css/bootstrap-grid.css",
-      "maxSize": "6 kB"
+      "maxSize": "7 kB"
     },
     {
       "path": "./dist/css/bootstrap-grid.min.css",
@@ -190,7 +190,7 @@
     },
     {
       "path": "./dist/css/bootstrap.min.css",
-      "maxSize": "21 kB"
+      "maxSize": "22 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.js",
@@ -214,7 +214,7 @@
     },
     {
       "path": "./dist/css/todc-bootstrap.min.css",
-      "maxSize": "21 kB"
+      "maxSize": "22 kB"
     }
   ],
   "jspm": {
