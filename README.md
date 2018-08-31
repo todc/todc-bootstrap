@@ -23,6 +23,7 @@
 
 * [Overview](#overview)
 * [Quick start](#quick-start)
+* [Status](#status)
 * [Compatibility](#compatibility)
 * [Requirements](#requirements)
 * [Bugs and feature requests](#bugs-and-feature-requests)
@@ -30,6 +31,7 @@
 * [Contributing](#contributing)
 * [Versioning](#versioning)
 * [Creators](#creators)
+* [Thanks](#thanks)
 * [Copyright and license](#copyright-and-license)
 * [Acknowledgements](#acknowledgements)
 
@@ -55,6 +57,12 @@ Several quick start options are available:
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
 Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/4.1/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+
+## Status
+
+**TODO - Configure BrowserStack**
+
+[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)](https://www.browserstack.com/automate/public-build/SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)
 
 ### What's included
 
@@ -184,6 +192,12 @@ See [the Releases section of our GitHub project](https://github.com/todc/todc-bo
 
 * <https://github.com/todc>
 
+
+## Thanks
+
+<img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="490" height="106">
+
+Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
 
 ## Copyright and license
 
