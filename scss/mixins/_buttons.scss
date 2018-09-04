@@ -97,8 +97,6 @@
   $active-background-color: if(lightness($active-background) > 90, rgba(color-yiq($color), .12), $active-background);
 
   color: $color;
-  background-color: transparent;
-  background-image: none;
   border-color: transparent;
   // @include box-shadow(none);
 
