@@ -7,6 +7,7 @@
 .btn {
   display: inline-block;
   font-weight: $btn-font-weight;
+  color: $body-color;
   text-align: center;
   letter-spacing: $btn-letter-spacing;
   vertical-align: middle;
@@ -17,8 +18,8 @@
   @include transition($btn-transition);
 
   // Share hover and focus styles
-  &:hover,
-  &:focus {
+  @include hover-focus {
+    color: $body-color;
     text-decoration: none;
   }
 
