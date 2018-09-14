@@ -138,7 +138,7 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 3. Run `npm start` to compile CSS and JavaScript files, generate our docs, and watch for changes.
 4. Open `http://localhost:9002` in your browser, and voilà.
 
-Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/).
 
 ### Documentation for previous releases
 
