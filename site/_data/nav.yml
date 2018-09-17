@@ -83,14 +83,15 @@
 
 - title: Extend
   pages:
-    # - title: Approach
+    - title: Approach
     - title: Icons
 
 - title: Migration
 
 - title: About
   pages:
-    # - title: Overview
-    # - title: Brand
+    - title: Overview
+    - title: Team
+    - title: Brand
     - title: License
-    # - title: Translations
+    - title: Translations
