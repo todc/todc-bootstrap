@@ -4,9 +4,7 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 
-//
 // Color system
-//
 
 $white:    #fff !default;
 $gray-50:  #fafafa !default;
@@ -157,12 +155,14 @@ $sizes: map-merge(
   $sizes
 );
 
+
 // Body
 //
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
+
 
 // Links
 //
@@ -172,6 +172,7 @@ $link-color:                theme-color("primary") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
+
 
 // Paragraphs
 //
@@ -729,6 +730,7 @@ $custom-file-text: (
 
 
 // Form validation
+
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
 $form-feedback-valid-color:         theme-color("success") !default;
@@ -782,6 +784,7 @@ $zindex-modal:                      1050 !default;
 $zindex-popover:                    1060 !default;
 $zindex-tooltip:                    1070 !default;
 
+
 // Navs
 
 $nav-link-padding-y:                .85rem !default;
@@ -802,6 +805,7 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 
 $nav-divider-color:                 $gray-200 !default;
 $nav-divider-margin-y:              ($spacer / 2) !default;
+
 
 // Navbar
 
@@ -1026,6 +1030,7 @@ $progress-bar-transition:           width .6s ease !default;
 $progress-height-lg:                1rem !default;
 $progress-border-radius-lg:         $border-radius !default;
 
+
 // List group
 
 $list-group-bg:                     $white !default;
@@ -1115,6 +1120,7 @@ $close-font-weight:                 $font-weight-normal !default;
 $close-color:                       $black !default;
 $close-text-shadow:                 none !default;
 
+
 // Code
 
 $code-font-size:                    87.5% !default;
@@ -1131,5 +1137,6 @@ $pre-scrollable-max-height:         340px !default;
 
 
 // Printing
+
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
