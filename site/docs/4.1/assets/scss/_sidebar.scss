@@ -114,8 +114,8 @@
 .bd-toc-link {
   display: block;
   padding: .25rem 1.5rem;
-  font-weight: 500;
   color: rgba($black, .65);
+  font-weight: 600;
 
   &:hover {
     color: rgba($black, .85);
@@ -161,7 +161,7 @@
 
 .bd-sidebar .nav > .active > a,
 .bd-sidebar .nav > .active:hover > a {
-  font-weight: 500;
   color: rgba($black, .85);
+  font-weight: 600;
   background-color: transparent;
 }
