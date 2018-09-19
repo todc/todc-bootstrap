@@ -434,6 +434,7 @@ $table-caption-color:         $text-muted !default;
 
 $input-btn-padding-y:         0 !default;
 $input-btn-padding-x:         1rem !default;
+$input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       2.375 !default;
 
 $input-btn-focus-width:       .2rem !default;
@@ -442,10 +443,12 @@ $input-btn-focus-box-shadow:  $shadow-focus !default;
 
 $input-btn-padding-y-sm:      0 !default;
 $input-btn-padding-x-sm:      .5rem !default;
+$input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    2 !default;
 
 $input-btn-padding-y-lg:      0 !default;
 $input-btn-padding-x-lg:      .5rem !default;
+$input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    2.1 !default;
 
 $input-btn-border-width:      $border-width !default;
@@ -457,14 +460,17 @@ $input-btn-border-width:      $border-width !default;
 
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
+$btn-font-size:               $input-btn-font-size !default;
 $btn-line-height:             $input-btn-line-height !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-font-size-sm:            $input-btn-font-size-sm !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+$btn-font-size-lg:            $input-btn-font-size-lg !default;
 $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
@@ -508,16 +514,19 @@ $btn-pill-active-bg:          #f1f3f4 !default;
 
 $label-margin-bottom:                   .5rem !default;
 
-$input-padding-x:                       .5rem !default;
 $input-padding-y:                       .25rem !default;
+$input-padding-x:                       .5rem !default;
+$input-font-size:                       $input-btn-font-size !default;
 $input-line-height:                     $line-height-base !default;
 
 $input-padding-y-sm:                    0 !default;
 $input-padding-x-sm:                    $input-padding-x !default;
+$input-font-size-sm:                    $input-btn-font-size-sm !default;
 $input-line-height-sm:                  2 !default;
 
 $input-padding-y-lg:                    $input-padding-y !default;
 $input-padding-x-lg:                    $input-padding-x !default;
+$input-font-size-lg:                    $input-btn-font-size-lg !default;
 $input-line-height-lg:                  $input-line-height !default;
 
 $input-bg:                              $white !default;
@@ -552,13 +561,13 @@ $input-disabled-box-shadow:             none !default;
 
 $input-height-border:                   $input-border-width * 1 !default;
 
-$input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
+$input-height-inner:                    ($input-btn-font-size * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
 $input-height:                          2.5rem !default; // calc(#{$input-height-inner} + #{$input-height-border}) !default;
 
-$input-height-inner-sm:                 ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
+$input-height-inner-sm:                 ($input-btn-font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
 $input-height-sm:                       1.875rem !default; // calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
 
-$input-height-inner-lg:                 ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
+$input-height-inner-lg:                 ($input-btn-font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
 $input-height-lg:                       2.75rem !default; // calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -670,12 +679,12 @@ $custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .3) !default;
 
 $custom-select-padding-y-sm:        $input-btn-padding-y-sm !default;
 $custom-select-padding-x-sm:        $input-btn-padding-x-sm !default;
-$custom-select-font-size-sm:        $font-size-sm !default;
+$custom-select-font-size-sm:        $input-btn-font-size-sm !default;
 $custom-select-height-sm:           $input-height-sm !default;
 
 $custom-select-padding-y-lg:        $input-btn-padding-y-lg !default;
 $custom-select-padding-x-lg:        $input-btn-padding-x-lg !default;
-$custom-select-font-size-lg:        $font-size-lg !default;
+$custom-select-font-size-lg:        $input-btn-font-size-lg !default;
 $custom-select-height-lg:           $input-height-lg !default;
 
 $custom-range-track-width:          100% !default;
