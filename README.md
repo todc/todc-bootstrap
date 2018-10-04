@@ -165,7 +165,9 @@ Editor preferences are available in the [editor config](https://github.com/todc/
 
 ## Versioning
 
-TODC Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
+
+See [the Releases section of our GitHub project](https://github.com/todc/todc-bootstrap/releases) for changelogs for each release version of TODC Bootstrap.
 
 Releases will be numbered with the following format:
 
@@ -180,10 +182,6 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 * PATCH version when you make backwards-compatible bug fixes.
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-
-For more information on SemVer, please visit <https://semver.org/>.
-
-See [the Releases section of our GitHub project](https://github.com/todc/todc-bootstrap/releases) for changelogs for each release version of TODC Bootstrap.
 
 
 ## Creators
