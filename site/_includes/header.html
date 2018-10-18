@@ -13,7 +13,7 @@
 </title>
 
 <!-- TODC Bootstrap core CSS -->
-{% if site.github %}
+{% if jekyll.environment == "production" %}
 <link href="{{ site.baseurl }}/docs/{{ site.docs_version }}/dist/css/todc-bootstrap.min.css" rel="stylesheet">
 <!-- <link href="{{ site.baseurl }}/docs/{{ site.docs_version }}/dist/css/todc-bootstrap.min.css" rel="stylesheet" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous"> -->
 {% else %}
