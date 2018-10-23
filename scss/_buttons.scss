@@ -191,7 +191,7 @@ input[type="button"] {
 .btn-pill {
   border-radius: $btn-pill-border-radius;
   box-shadow: $btn-pill-box-shadow;
-  transition: $btn-pill-transition;
+  @include transition($btn-pill-transition);
   @include button-pill-variant();
 
   &:hover,

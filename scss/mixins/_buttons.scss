@@ -201,7 +201,7 @@
   border-color: transparent;
   border-radius: 50%;
   // @include box-shadow(none);
-  transition: background-color, opacity 100ms linear;
+  @include transition(background-color, opacity 100ms linear);
 
   &:hover {
     background-color: $hover-background;
@@ -234,7 +234,7 @@
 
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background);
   @include box-shadow($shadow-6dp);
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1);
+  @include transition(box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, .2, 1), -webkit-box-shadow 280ms cubic-bezier(.4, 0, .2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, .2, 1));
 
   &:hover,
   &:focus,
