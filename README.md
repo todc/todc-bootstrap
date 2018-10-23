@@ -114,7 +114,7 @@ The following projects are specifically designed for use with todc-bootstrap:
 
 ## Requirements ##
 
-* [LESS](http://lesscss.org/) - for compiling `.less` files into CSS
+* [SASS](http://sass-lang.com/) - for compiling `.scss` files into CSS
 * [Bootstrap](https://github.com/twbs/bootstrap/) - this will be automatically checked out, if necessary, during the build process
 
 
