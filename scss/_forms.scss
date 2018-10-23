@@ -73,7 +73,7 @@ input[type="radio"].form-check-input {
   }
 
   &:focus {
-    border-color: theme-color("primary");
+    border-color: $primary;
     outline: 0;
   }
 

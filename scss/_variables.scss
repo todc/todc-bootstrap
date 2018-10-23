@@ -168,7 +168,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
+$link-color:                $primary !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
@@ -311,7 +311,7 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         $primary !default;
 
 $caret-width:                 .3em !default;
 
@@ -611,11 +611,11 @@ $custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      initial !default;
 $custom-control-indicator-box-shadow:   none !default;
 
-$custom-control-indicator-border-color:         rgba($black, .54) !default; // $gray-600
-$custom-control-indicator-border-radius:        $border-radius !default;
+$custom-control-indicator-border-color:  rgba($black, .54) !default; // $gray-600
+$custom-control-indicator-border-radius: $border-radius !default;
 
-$custom-control-indicator-disabled-border-color:rgba($black, .26) !default; //$$gray-400
-$custom-control-indicator-disabled-bg:          $white !default;
+$custom-control-indicator-disabled-border-color: rgba($black, .26) !default; //$$gray-400
+$custom-control-indicator-disabled-bg:           $white !default;
 
 $custom-control-label-padding-left:             .5rem !default;
 $custom-control-label-disabled-color:           $gray-600 !default;
@@ -645,7 +645,7 @@ $custom-checkbox-indicator-indeterminate-box-shadow:  none !default;
 
 $custom-radio-indicator-size:                    1.25rem !default;
 $custom-radio-indicator-border-color:            rgba($black, .54) !default;
-$custom-radio-indicator-checked-border-color:    theme-color("primary") !default;
+$custom-radio-indicator-checked-border-color:    $primary !default;
 $custom-radio-indicator-checked-color:           $custom-radio-indicator-checked-border-color !default;
 $custom-radio-indicator-checked-disabled-color:  $custom-control-indicator-checked-disabled-bg !default;
 $custom-radio-indicator-border-radius:           50% !default;
@@ -742,8 +742,8 @@ $custom-file-text: (
 
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
-$form-feedback-valid-color:         theme-color("success") !default;
-$form-feedback-invalid-color:       theme-color("danger") !default;
+$form-feedback-valid-color:         $success !default;
+$form-feedback-invalid-color:       $danger !default;
 
 $form-feedback-icon-valid-color:    $form-feedback-valid-color !default;
 $form-feedback-icon-valid:          str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E"), "#", "%23") !default;
@@ -1043,7 +1043,7 @@ $progress-bg:                       $gray-200 !default;
 $progress-border-radius:            0 !default;
 $progress-box-shadow:               none !default;
 $progress-bar-color:                $white !default;
-$progress-bar-bg:                   theme-color("primary") !default;
+$progress-bar-bg:                   $primary !default;
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
 
