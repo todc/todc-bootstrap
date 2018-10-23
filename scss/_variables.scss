@@ -904,6 +904,7 @@ $card-border-radius:                $border-radius !default;
 $card-border-color:                 transparent !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       transparent !default;
+$card-cap-color:                    $body-color !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1rem !default;
