@@ -16,9 +16,13 @@ layout: home
         <!-- <p class="lead mb-4">
           TODC Bootstrap is an open source Google styled theme for Bootstrap.
         </p> -->
-        <div class="d-flex flex-column flex-md-row lead mb-3">
-          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3">Get started</a>
-          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary">Download</a>
+        <div class="row mx-n2">
+          <div class="col-md px-2">
+            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary w-100 mb-3">Get started</a>
+          </div>
+          <div class="col-md px-2">
+            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary w-100 mb-3">Download</a>
+          </div>
         </div>
         <p class="text-muted mb-0">
           Currently v{{ site.current_version }}
