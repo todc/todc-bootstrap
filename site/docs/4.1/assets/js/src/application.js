@@ -30,6 +30,12 @@
                 '<div class="popover-body"></div></div>'
     })
 
+    $('.toast')
+      .toast({
+        autohide: false
+      })
+      .toast('show')
+
     // Demos within modals
     $('.tooltip-test').tooltip()
     $('.popover-test').popover()
