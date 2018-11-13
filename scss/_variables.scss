@@ -453,6 +453,9 @@ $table-striped-order:         odd !default;
 
 $table-caption-color:         $text-muted !default;
 
+$table-bg-level:              -9 !default;
+$table-border-level:          -6 !default;
+
 
 // Buttons + Forms
 //
@@ -543,6 +546,7 @@ $label-margin-bottom:                   .5rem !default;
 $input-padding-y:                       .25rem !default;
 $input-padding-x:                       .5rem !default;
 $input-font-size:                       $input-btn-font-size !default;
+$input-font-weight:                     $font-weight-base !default;
 $input-line-height:                     $line-height-base !default;
 
 $input-padding-y-sm:                    0 !default;
@@ -634,10 +638,11 @@ $custom-control-spacer-x:               1rem !default;
 
 $custom-control-indicator-size:         1.125rem !default;
 $custom-control-indicator-bg:           $white !default;
-$custom-control-indicator-bg-size:      initial !default;
-$custom-control-indicator-box-shadow:   none !default;
 
+$custom-control-indicator-bg-size:       initial !default;
+$custom-control-indicator-box-shadow:    none !default;
 $custom-control-indicator-border-color:  rgba($black, .54) !default; // $gray-600
+$custom-control-indicator-border-width:  $input-border-width !default;
 $custom-control-indicator-border-radius: $border-radius !default;
 
 $custom-control-indicator-disabled-border-color: rgba($black, .26) !default; //$$gray-400
@@ -649,25 +654,29 @@ $custom-control-label-disabled-color:           $gray-600 !default;
 $custom-control-indicator-checked-color:        $component-active-color !default;
 $custom-control-indicator-checked-bg:           $component-active-bg !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
+$custom-control-indicator-checked-border-color: $custom-control-indicator-checked-bg !default;
 
 $custom-control-indicator-checked-disabled-border-color:  rgba($black, .26) !default;
 $custom-control-indicator-checked-disabled-bg:            rgba($black, .26) !default; //$$gray-400
 
 $custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
+$custom-control-indicator-focus-border-color:   $input-focus-border-color !default;
 
 $custom-control-indicator-active-color:         $component-active-color !default;
 $custom-control-indicator-active-bg:            lighten($component-active-bg, 35%) !default;
 $custom-control-indicator-active-box-shadow:    none !default;
+$custom-control-indicator-active-border-color:  $custom-control-indicator-active-bg !default;
 
 $custom-checkbox-indicator-border-radius:       $border-radius !default;
 $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='20' width='20' viewBox='0 0 24 24'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3e%3c/svg%3e"), "#", "%23") !default;
 
 $custom-checkbox-indicator-checked-disabled-border-color: transparent !default;
 
-$custom-checkbox-indicator-indeterminate-bg:          $component-active-bg !default;
-$custom-checkbox-indicator-indeterminate-color:       $custom-control-indicator-checked-color !default;
-$custom-checkbox-indicator-icon-indeterminate:        str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
-$custom-checkbox-indicator-indeterminate-box-shadow:  none !default;
+$custom-checkbox-indicator-indeterminate-bg:           $component-active-bg !default;
+$custom-checkbox-indicator-indeterminate-color:        $custom-control-indicator-checked-color !default;
+$custom-checkbox-indicator-icon-indeterminate:         str-replace(url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='#{$custom-control-indicator-checked-color}' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M19 13H5v-2h14v2z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"), "#", "%23") !default;
+$custom-checkbox-indicator-indeterminate-box-shadow:   none !default;
+$custom-checkbox-indicator-indeterminate-border-color: $custom-checkbox-indicator-indeterminate-bg !default;
 
 $custom-radio-indicator-size:                    1.25rem !default;
 $custom-radio-indicator-border-color:            rgba($black, .54) !default;
@@ -683,6 +692,7 @@ $custom-select-padding-x:           .5rem !default;
 $custom-select-padding-right:       $select-padding-right !default;
 $custom-select-height:              $input-height !default;
 $custom-select-indicator-padding:   1.5rem !default; // Extra padding to account for the presence of the background-image based indicator
+$custom-select-font-weight:         $input-font-weight !default;
 $custom-select-line-height:         $input-line-height !default;
 $custom-select-color:               $input-color !default;
 $custom-select-disabled-color:      $gray-600 !default;
@@ -755,6 +765,7 @@ $custom-file-disabled-bg:           $input-disabled-bg !default;
 $custom-file-padding-y:             $input-padding-y !default;
 $custom-file-padding-x:             $input-padding-x !default;
 $custom-file-line-height:           $input-line-height !default;
+$custom-file-font-weight:           $input-font-weight !default;
 $custom-file-color:                 $input-color !default;
 $custom-file-bg:                    $input-bg !default;
 $custom-file-border-width:          $input-border-width !default;
@@ -1160,6 +1171,8 @@ $breadcrumb-border-radius:          $border-radius !default;
 $carousel-control-color:             $white !default;
 $carousel-control-width:             15% !default;
 $carousel-control-opacity:           .5 !default;
+$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-transition:        opacity .15s ease !default;
 
 $carousel-indicator-width:           30px !default;
 $carousel-indicator-height:          3px !default;
