@@ -94,6 +94,7 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -2624,6 +2625,16 @@ textarea.form-control {
   border: 0;
 }
 
+.dropdown-item:first-child {
+  border-top-left-radius: calc(0.125rem - 1px);
+  border-top-right-radius: calc(0.125rem - 1px);
+}
+
+.dropdown-item:last-child {
+  border-bottom-right-radius: calc(0.125rem - 1px);
+  border-bottom-left-radius: calc(0.125rem - 1px);
+}
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #212121;
   text-decoration: none;
@@ -2672,8 +2683,8 @@ textarea.form-control {
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .btn-group > .btn:hover,
@@ -2924,28 +2935,43 @@ textarea.form-control {
   margin-top: 0;
 }
 
+.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .custom-select {
+  height: 2.75rem;
+}
+
 .input-group-lg > .form-control,
+.input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  height: 2.75rem;
   padding: 0.25rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1.2;
   border-radius: 0.125rem;
 }
 
+.input-group-sm > .form-control:not(textarea),
+.input-group-sm > .custom-select {
+  height: 1.875rem;
+}
+
 .input-group-sm > .form-control,
+.input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  height: 1.875rem;
   padding: 0 0.5rem;
   font-size: 0.875rem;
   line-height: 2;
   border-radius: 0.125rem;
+}
+
+.input-group-lg > .custom-select,
+.input-group-sm > .custom-select {
+  padding-right: 2rem;
 }
 
 .input-group > .input-group-prepend > .btn,
@@ -3944,7 +3970,7 @@ textarea.form-control {
 .card-header {
   padding: 1rem 1rem;
   margin-bottom: 0;
-  color: #212121;
+  color: inherit;
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
@@ -4883,7 +4909,7 @@ a.close.disabled {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.25rem;
+  border-radius: 0.125rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -5609,15 +5635,14 @@ a.close.disabled {
 }
 
 .spinner-border {
-  position: relative;
   display: inline-block;
   width: 2rem;
   height: 2rem;
   overflow: hidden;
   text-indent: -999em;
   vertical-align: text-bottom;
-  border: 0.25em solid;
-  border-color: currentColor transparent currentColor currentColor;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
   border-radius: 50%;
   -webkit-animation: spinner-border .75s linear infinite;
   animation: spinner-border .75s linear infinite;
@@ -5631,38 +5656,25 @@ a.close.disabled {
 
 @-webkit-keyframes spinner-grow {
   0% {
-    opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
   }
   50% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
   }
 }
 
 @keyframes spinner-grow {
   0% {
-    opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
   }
   50% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
 }
 
 .spinner-grow {
-  position: relative;
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -5671,6 +5683,7 @@ a.close.disabled {
   vertical-align: text-bottom;
   background-color: currentColor;
   border-radius: 50%;
+  opacity: 0;
   -webkit-animation: spinner-grow .75s linear infinite;
   animation: spinner-grow .75s linear infinite;
 }
@@ -9479,6 +9492,8 @@ input[type="radio"].form-check-input.position-static:checked::after {
   z-index: 0;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
   font-weight: 300;
