@@ -688,6 +688,10 @@ $custom-radio-indicator-border-radius:           50% !default;
 $custom-radio-indicator-icon-checked:            str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
 $custom-radio-indicator-icon-checked-disabled:   str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='#{$custom-radio-indicator-checked-disabled-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
 
+$custom-switch-width:                           $custom-control-indicator-size * 1.75 !default;
+$custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+$custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4}) !default;
+
 $custom-select-padding-y:           .375rem !default;
 $custom-select-padding-x:           .5rem !default;
 $custom-select-padding-right:       $select-padding-right !default;

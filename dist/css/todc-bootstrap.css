@@ -30,7 +30,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: Roboto, Noto Sans, sans-serif, "Noto Color Emoji";
+  --font-family-sans-serif: Roboto, "Noto Sans", sans-serif, "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -58,7 +58,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Roboto, Noto Sans, sans-serif, "Noto Color Emoji";
+  font-family: Roboto, "Noto Sans", sans-serif, "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
@@ -3110,6 +3110,45 @@ textarea.form-control {
   background-color: rgba(0, 0, 0, 0.26);
 }
 
+.custom-switch {
+  padding-left: 2.34375rem;
+}
+
+.custom-switch .custom-control-label::before {
+  left: -2.34375rem;
+  width: 1.96875rem;
+  pointer-events: all;
+  border-radius: 0.5625rem;
+}
+
+.custom-switch .custom-control-label::after {
+  top: calc(0.0375rem + 2px);
+  left: calc(-2.34375rem + 2px);
+  width: calc(1.125rem - 4px);
+  height: calc(1.125rem - 4px);
+  background-color: rgba(0, 0, 0, 0.54);
+  border-radius: 0.5625rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .custom-switch .custom-control-label::after {
+    transition: none;
+  }
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  -webkit-transform: translateX(0.84375rem);
+  transform: translateX(0.84375rem);
+}
+
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
 .custom-select {
   display: inline-block;
   width: 100%;
@@ -4902,7 +4941,6 @@ a.close.disabled {
 }
 
 .toast {
-  display: none;
   max-width: 350px;
   overflow: hidden;
   font-size: 0.875rem;
@@ -4913,14 +4951,24 @@ a.close.disabled {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  opacity: 0;
 }
 
-.toast + .toast {
-  margin-top: 0.75rem;
+.toast:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.toast.showing {
+  opacity: 1;
 }
 
 .toast.show {
   display: block;
+  opacity: 1;
+}
+
+.toast.hide {
+  display: none;
 }
 
 .toast-header {
@@ -5126,7 +5174,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Roboto, Noto Sans, sans-serif, "Noto Color Emoji";
+  font-family: Roboto, "Noto Sans", sans-serif, "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
@@ -5239,7 +5287,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Roboto, Noto Sans, sans-serif, "Noto Color Emoji";
+  font-family: Roboto, "Noto Sans", sans-serif, "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
@@ -5638,8 +5686,6 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  overflow: hidden;
-  text-indent: -999em;
   vertical-align: text-bottom;
   border: 0.25em solid currentColor;
   border-right-color: transparent;
@@ -5678,8 +5724,6 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  overflow: hidden;
-  text-indent: -999em;
   vertical-align: text-bottom;
   background-color: currentColor;
   border-radius: 50%;
