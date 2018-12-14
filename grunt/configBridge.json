@@ -11,6 +11,8 @@
       "/docs/3.4/assets/js/src/customizer.js"
     ],
     "docsJs": [
+      "/docs/3.4/assets/js/vendor/requestAnimationFrame-polyfill.js",
+      "/docs/3.4/assets/js/vendor/base64.js",
       "/docs/3.4/assets/js/vendor/holder.min.js",
       "/docs/3.4/assets/js/vendor/clipboard.min.js",
       "/docs/3.4/assets/js/vendor/anchor.min.js",
