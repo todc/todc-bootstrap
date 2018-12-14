@@ -89,7 +89,7 @@
   }
   > .active > a {
     font-weight: 700;
-    &::before {
+    &:before {
       position: absolute;
       bottom: -1px;
       left: 50%;
@@ -100,7 +100,7 @@
       border-bottom: 8px solid transparent;
       border-left: 8px solid transparent;
     }
-    &::after {
+    &:after {
       position: absolute;
       bottom: -1px;
       left: 50%;
@@ -252,10 +252,10 @@
         color: @navbar-toolbar-default-link-active-color;
         background-color: @navbar-toolbar-default-link-active-bg;
       }
-      &::before {
+      &:before {
         border-bottom: 8px solid @navbar-toolbar-default-border;
       }
-      &::after {
+      &:after {
         border-bottom: 7px solid @dropdown-bg;
       }
     }
@@ -419,10 +419,10 @@
         color: @navbar-toolbar-inverse-link-active-color;
         background-color: @navbar-toolbar-inverse-link-active-bg;
       }
-      &::before {
+      &:before {
         border-bottom: 8px solid @navbar-toolbar-inverse-border;
       }
-      &::after {
+      &:after {
         border-bottom: 7px solid @dropdown-bg;
       }
     }

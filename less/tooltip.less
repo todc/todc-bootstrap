@@ -28,7 +28,7 @@
 }
 
 // Arrows
-.tooltip-arrow::before {
+.tooltip-arrow:before {
   position: absolute;
   z-index: -1;
   content: " ";
@@ -41,7 +41,7 @@
   &.top-right .tooltip-arrow  {
     bottom: 1px;
     border-top-color: @tooltip-arrow-color;
-    &::before {
+    &:before {
       top: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
       border-top-color: @tooltip-arrow-outer-color;
@@ -51,7 +51,7 @@
   &.right .tooltip-arrow {
     left: 1px;
     border-right-color: @tooltip-arrow-color;
-    &::before {
+    &:before {
       top: -@tooltip-arrow-outer-width;
       right: -@tooltip-arrow-width;
       border-right-color: @tooltip-arrow-outer-color;
@@ -61,7 +61,7 @@
   &.left .tooltip-arrow {
     right: 1px;
     border-left-color: @tooltip-arrow-color;
-    &::before {
+    &:before {
       top: -@tooltip-arrow-outer-width;
       left: -@tooltip-arrow-width;
       border-right: 0 dotted;
@@ -73,7 +73,7 @@
   &.bottom-right .tooltip-arrow {
     top: 1px;
     border-bottom-color: @tooltip-arrow-color;
-    &::before {
+    &:before {
       bottom: -@tooltip-arrow-width;
       left: -@tooltip-arrow-outer-width;
       border-top: 0 dotted;
