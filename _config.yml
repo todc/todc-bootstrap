@@ -36,7 +36,6 @@ bs:
   blog:             http://blog.getbootstrap.com
   expo:             http://expo.getbootstrap.com
   themes:           http://themes.getbootstrap.com
-  jobs:             http://jobs.getbootstrap.com
   docs:             http://getbootstrap.com
 
 sass_repo:        https://github.com/twbs/bootstrap-sass
