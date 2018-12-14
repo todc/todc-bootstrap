@@ -33,12 +33,11 @@
             v{{ site.current_version }} <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="http://getbootstrap.com/docs/4.0/">Latest (4.x)</a></li>
-            <li><a href="https://v4-alpha.getbootstrap.com">v4 Alpha 6</a></li>
+            <li><a href="{{ site.url }}">Latest (4.x)</a></li>
             <li class="divider"></li>
-            <li class="active"><a href="{{ site.baseurl }}/{{ site.current_version }}/">v{{ site.current_version }}</a></li>
-            <li><a href="{{ site.baseurl }}/3.3/">v3.3.7</a></li>
-            <li><a href="{{ site.baseurl }}/2.3.2/">v2.3.2</a></li>
+            <li class="active"><a href="{{ site.url }}/docs/{{ site.docs_version }}/">v{{ site.docs_version }}</a></li>
+            <li><a href="{{ site.url }}/docs/3.3/">v3.3.7</a></li>
+            <li><a href="{{ site.url }}/docs/2.3.2/">v2.3.2</a></li>
           </ul>
         </li>
         <li><a href="{{ site.bs.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes')">Themes</a></li>

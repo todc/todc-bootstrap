@@ -14,7 +14,7 @@
     "theme",
     "google"
   ],
-  "homepage": "http://todc.github.com/todc-bootstrap/",
+  "homepage": "https://todc.github.com/todc-bootstrap/",
   "author": "Tim O'Donnell",
   "scripts": {
     "change-version": "node grunt/change-version.js",

@@ -28,12 +28,13 @@ Several quick start options are available:
 
 * [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.4.0-3.4.0.zip).
 * Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
-* Install with [Bower](http://bower.io): `bower install todc-bootstrap`.
-* Install with [Composer](https://getcomposer.org): `composer require todc/todc-bootstrap`.
+* Install with [Bower](https://bower.io/): `bower install todc-bootstrap`.
+* Install with [npm](https://www.npmjs.com/): `npm install todc-bootstrap@3`.
+* Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap`.
 
-**NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap) source.
+**NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
-Read the [Getting started page](https://todc.github.io/todc-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/3.4/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
@@ -67,7 +68,7 @@ todc-bootstrap/
     └── checkmark.png
 ```
 
-We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
+We provide compiled CSS and JS (`bootstrap.*, todc-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*, todc-bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map, todc-bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
 
 ## Compatibility ##
@@ -97,16 +98,16 @@ Note that **feature requests must target [TODC Bootstrap v4](https://github.com/
 
 ## Documentation
 
-TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
 ### Running documentation locally
 
-1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) and other Ruby dependencies with `bundle install`.
-   **Note for Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
+1. If necessary, [install Jekyll](https://jekyllrb.com/docs/installation/) and other Ruby dependencies with `bundle install`.
+   **Note for Windows users:** Read [this guide](https://jekyllrb.com/docs/installation/windows/) to get Jekyll up and running without problems.
 2. From the root `/todc-bootstrap` directory, run `bundle exec jekyll serve` in the command line.
 4. Open `http://localhost:9002` in your browser, and voilà.
 
-Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).
+Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
 
 ### Documentation for previous releases
 
@@ -125,7 +126,7 @@ Moreover, if your pull request contains JavaScript patches or features, you must
 
 **TODC Bootstrap v3 is now closed off to new features.** It has gone into maintenance mode so that we can focus our efforts on [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev), the future of the theme. Pull requests which add new features (rather than fix bugs) should target [TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev) instead.
 
-Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/todc/todc-bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 **NOTE:** The `v4-dev` branch is not yet available.
 
@@ -148,7 +149,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-For more information on SemVer, please visit <http://semver.org/>.
+For more information on SemVer, please visit <https://semver.org/>.
 
 See [the Releases section of our GitHub project](https://github.com/todc/todc-bootstrap/releases) for changelogs for each release version of TODC Bootstrap.
 
@@ -169,4 +170,4 @@ Copyright 2011-2018 Tim O'Donnell. Code released under [the MIT license](https:/
 
 ## Acknowledgements ##
 
-Inspired by [Bootstrap](http://getbootstrap.com/) and, of course, Google.
+Inspired by [Bootstrap](https://getbootstrap.com/) and, of course, Google.
