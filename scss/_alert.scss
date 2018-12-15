@@ -7,6 +7,6 @@
 
   // Adjust close link position
   .close {
-    padding: (($alert-padding-y) - .25rem) $alert-padding-x;
+    padding: ($alert-padding-y - .25rem) $alert-padding-x;
   }
 }
