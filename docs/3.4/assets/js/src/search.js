@@ -6,6 +6,7 @@
   'use strict'
 
   var inputElement = document.getElementById('search-input')
+  var siteDocsVersion = inputElement.getAttribute('data-docs-version')
 
   if (!window.docsearch || !inputElement) {
     return
@@ -28,11 +29,13 @@
     apiKey: 'e733f93dbde231dec8e69a6c7f5ae8ac',
     indexName: 'todc-bootstrap',
     inputSelector: '#search-input',
+    algoliaOptions: {
+      facetFilters: ['version:' + siteDocsVersion]
+    },
     transformData: function (hits) {
       return hits.map(function (hit) {
         var siteurl = getOrigin()
-        var urlRE = /^https?:\/\/todc\.github\.io/
-        // var urlRE = /^https?:\/\/todc\.github\.io/todc-bootstrap/
+        var urlRE = /^https?:\/\/todc\.github\.io\/todc-bootstrap/
 
         // When in production, return the result as is,
         // otherwise remove our url from it.
