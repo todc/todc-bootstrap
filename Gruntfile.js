@@ -407,4 +407,4 @@ module.exports = function (grunt) {
   grunt.registerTask('docs-github', ['jekyll:github', 'htmlmin']);
 
   grunt.registerTask('prep-release', ['dist', 'docs', 'jekyll:github']);
-
+};
