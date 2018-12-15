@@ -26,7 +26,7 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.4.0-3.4.0.zip).
+* [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v3.4.0-3.4.1.zip).
 * Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 * Install with [Bower](https://bower.io/): `bower install todc-bootstrap`.
 * Install with [npm](https://www.npmjs.com/): `npm install todc-bootstrap@3`.
