@@ -39,7 +39,8 @@ Thumbs.db
 docs/.jekyll-metadata
 
 # Folders to ignore
+/.bundle/
 bower_components
 node_modules
-
+/vendor/
 bootstrap/
