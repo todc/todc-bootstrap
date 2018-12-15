@@ -36,7 +36,7 @@
 <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"><\/script>')</script>
 
 {% if site.github %}
-<script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
 {% else %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
 {% endif %}
@@ -46,7 +46,7 @@
 {% endif %}
 
 {% if site.github %}
-<script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/docs.min.js"></script>
 {% else %}
   {% for file in site.data.configBridge.paths.docsJs %}
   <script src="{{ file | replace_first: '..', site.baseurl }}"></script>
