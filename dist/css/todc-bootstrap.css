@@ -44,12 +44,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-@-ms-viewport {
-  width: device-width;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -192,7 +187,6 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  -ms-overflow-style: scrollbar;
 }
 
 figure {
@@ -2998,7 +2992,7 @@ textarea.form-control {
   position: relative;
   display: block;
   min-height: 1.2rem;
-  padding-left: 1.5rem;
+  padding-left: 1.625rem;
 }
 
 .custom-control-inline {
@@ -3050,7 +3044,7 @@ textarea.form-control {
 .custom-control-label::before {
   position: absolute;
   top: 0.0375rem;
-  left: -1.5rem;
+  left: -1.625rem;
   display: block;
   width: 1.125rem;
   height: 1.125rem;
@@ -3063,7 +3057,7 @@ textarea.form-control {
 .custom-control-label::after {
   position: absolute;
   top: 0.0375rem;
-  left: -1.5rem;
+  left: -1.625rem;
   display: block;
   width: 1.125rem;
   height: 1.125rem;
@@ -3111,11 +3105,11 @@ textarea.form-control {
 }
 
 .custom-switch {
-  padding-left: 2.34375rem;
+  padding-left: 2.46875rem;
 }
 
 .custom-switch .custom-control-label::before {
-  left: -2.34375rem;
+  left: -2.46875rem;
   width: 1.96875rem;
   pointer-events: all;
   border-radius: 0.5625rem;
@@ -3123,7 +3117,7 @@ textarea.form-control {
 
 .custom-switch .custom-control-label::after {
   top: calc(0.0375rem + 2px);
-  left: calc(-2.34375rem + 2px);
+  left: calc(-2.46875rem + 2px);
   width: calc(1.125rem - 4px);
   height: calc(1.125rem - 4px);
   background-color: rgba(0, 0, 0, 0.54);
