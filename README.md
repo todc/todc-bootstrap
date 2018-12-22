@@ -146,7 +146,6 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 For v2.3.2: <https://todc.github.io/todc-bootstrap/2.3.2/>
 For v3.3.x: <https://todc.github.io/todc-bootstrap/docs/3.3/>
-For v4.0.x: <https://todc.github.io/todc-bootstrap/docs/4.0/>
 
 
 [Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
