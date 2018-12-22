@@ -144,8 +144,9 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 ### Documentation for previous releases
 
-For v2.3.2: <https://todc.github.io/todc-bootstrap/2.3.2/>
-For v3.3.x: <https://todc.github.io/todc-bootstrap/docs/3.3/>
+- For v2.3.2: <https://todc.github.io/todc-bootstrap/2.3.2/>
+- For v3.3.x: <https://todc.github.io/todc-bootstrap/docs/3.3/>
+- For v3.4.0: <https://todc.github.io/todc-bootstrap/docs/3.4/>
 
 
 [Previous releases](https://github.com/todc/todc-bootstrap/releases) and their documentation are also available for download.
