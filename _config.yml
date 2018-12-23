@@ -13,8 +13,8 @@ source:         "site"
 destination:    ./_gh_pages
 host:           "localhost"
 port:           9002
-baseurl:        ""
-url:            "http://todc.github.io/todc-bootstrap"
+baseurl:        "/todc-bootstrap"
+url:            "http://todc.github.io"
 encoding:       UTF-8
 exclude:
   - docs/4.2/assets/scss/
