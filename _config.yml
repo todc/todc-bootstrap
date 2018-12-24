@@ -70,11 +70,11 @@ bs:
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-  css_hash:         "sha384-srYWjX1no/7EXotk1eMWJxBQdVm7YfZ0gYyoClFBIP6r8k2/mxQtOgXnjQiHFEqp"
+  css_hash:         "sha384-N5764TvN9K8QrgsfDLach38mZZ5Mtjp2Vpe+t3Fgchr9Yqa74T9e//xbFVaFgt6O"
   js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-  js_hash:          "sha384-q+FG1CdTBZuyCRm3BZA+4dqo0385knUHMuBFgJAn89R1HuzTc3h13QvEPxA587cc"
+  js_hash:          "sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
   js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
-  js_bundle_hash:   "sha384-IahPl5cnS2uB0IGKCRzIxpieghHDFsPg5ez2LspHm50Pv65K+7rrhQJnjAk15n+B"
+  js_bundle_hash:   "sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
   jquery:           "https://code.jquery.com/jquery-3.3.1.slim.min.js"
   jquery_hash:      "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   popper:           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
