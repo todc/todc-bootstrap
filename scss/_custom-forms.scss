@@ -166,7 +166,7 @@
   background-color: $custom-input-bg;
   border: none;
   // border-bottom: $input-border-width solid $input-border-color;
-  border-radius: 0;
+  @include border-radius(0);
   @include transition($custom-input-transition);
   appearance: none;
 
