@@ -116,7 +116,7 @@ The following projects are specifically designed for use with todc-bootstrap:
 
 ## Requirements ##
 
-* [SASS](http://sass-lang.com/) - for compiling `.scss` files into CSS
+* [SASS](https://sass-lang.com/) - for compiling `.scss` files into CSS
 * [Bootstrap](https://github.com/twbs/bootstrap/) - this will be automatically checked out, if necessary, during the build process
 
 
@@ -129,7 +129,7 @@ Note that **feature requests must target [TODC Bootstrap v4](https://github.com/
 
 ## Documentation
 
-TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
+TODC Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://todc.github.io/todc-bootstrap/>. The docs may also be run locally.
 
 Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.2/assets/js/src/search.js` file.
 
@@ -210,4 +210,4 @@ Copyright 2011-2018 Tim O'Donnell. Code released under [the MIT license](https:/
 
 ## Acknowledgements ##
 
-Inspired by [Bootstrap](http://getbootstrap.com/) and, of course, Google.
+Inspired by [Bootstrap](https://getbootstrap.com/) and, of course, Google.

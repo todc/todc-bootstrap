@@ -181,7 +181,7 @@ $(function () {
 </script>
 {% endhighlight %}
 
-Want to see an example? [Check out this JS Bin demo](http://jsbin.com/OyaqoDO/2).
+Want to see an example? [Check out this JS Bin demo](https://jsbin.com/OyaqoDO/2).
 
 ## Validators
 
