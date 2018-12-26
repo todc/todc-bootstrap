@@ -71,7 +71,7 @@ bs:
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-  css_hash:         "sha384-Zl0gQrEiMtiA5BN2bdfTUmxaVdYQMdvaIi2UBnQJzZrUEUIwdkexH070gJVmaFF/"
+  css_hash:         "sha384-wFvVg0W4TzZVfSjmILxplcLwp3d7qJ8Q0PvHQ1TOqV/DkGTroKIGSenrLiaIOuqO"
   js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   js_hash:          "sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
   js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
