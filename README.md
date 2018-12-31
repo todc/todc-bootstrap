@@ -1,23 +1,22 @@
 <p align="center">
   <a href="https://todc.github.io/todc-bootstrap/">
-    <img src="https://todc.github.io/todc-bootstrap/docs/4.2/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width=72 height=72>
+    <img src="https://todc.github.io/todc-bootstrap/docs/4.2/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width="72" height="72">
   </a>
-
-  <h3 align="center">TODC Bootstrap</h3>
-
-  <p align="center">
-    A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
-    <br>
-    <a href="https://todc.github.io/todc-bootstrap/docs/4.2/"><strong>Explore TODC Bootstrap docs »</strong></a>
-    <br>
-    <br>
-    <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug.md">Report bug</a>
-    ·
-    <a href="https://github.com/todc/todc-bootstrap/issues/new?template=feature.md&labels=feature">Request feature</a>
-  </p>
 </p>
 
-<br>
+<h3 align="center">TODC Bootstrap</h3>
+
+<p align="center">
+  A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
+  <br>
+  <a href="https://todc.github.io/todc-bootstrap/docs/4.2/"><strong>Explore TODC Bootstrap docs »</strong></a>
+  <br>
+  <br>
+  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug.md">Report bug</a>
+  ·
+  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=feature.md&labels=feature">Request feature</a>
+</p>
+
 
 ## Table of contents
 
