@@ -699,6 +699,7 @@ $custom-switch-indicator-size:                  calc(#{$custom-control-indicator
 $custom-select-padding-y:           .375rem !default;
 $custom-select-padding-x:           .5rem !default;
 $custom-select-padding-right:       $select-padding-right !default;
+$custom-select-font-size:           $input-font-size !default;
 $custom-select-height:              $input-height !default;
 $custom-select-indicator-padding:   1.5rem !default; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-font-weight:         $input-font-weight !default;
@@ -728,12 +729,12 @@ $custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .3) !default;
 
 $custom-select-padding-y-sm:        $input-padding-y-sm !default;
 $custom-select-padding-x-sm:        $input-padding-x-sm !default;
-$custom-select-font-size-sm:        $input-btn-font-size-sm !default;
+$custom-select-font-size-sm:        $input-font-size-sm !default;
 $custom-select-height-sm:           $input-height-sm !default;
 
 $custom-select-padding-y-lg:        $input-padding-y-lg !default;
 $custom-select-padding-x-lg:        $input-padding-x-lg !default;
-$custom-select-font-size-lg:        $input-btn-font-size-lg !default;
+$custom-select-font-size-lg:        $input-font-size-lg !default;
 $custom-select-height-lg:           $input-height-lg !default;
 
 $custom-range-track-width:          100% !default;
