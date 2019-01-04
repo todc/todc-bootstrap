@@ -31,7 +31,7 @@ In need of a shadow? Add one of the <code>.shadow-*dp</code> modifier classes.
 
 {% capture example %}
 <div class="card shadow-8dp" style="width: 18rem;">
-  <img class="card-img-top" src="holder.js/100px180/" alt="Card image cap">
+  {% include icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
