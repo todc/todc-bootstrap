@@ -254,11 +254,22 @@ select {
   text-transform: none;
 }
 
+select {
+  word-wrap: normal;
+}
+
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
 }
 
 button::-moz-focus-inner,
@@ -2205,7 +2216,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center right calc(2.375rem / 4);
   background-size: calc(2.375rem / 2) calc(2.375rem / 2);
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93025' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93025' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d93025' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
 }
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
@@ -2227,7 +2238,7 @@ textarea.form-control {
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
   border-color: #d93025;
   padding-right: 3.78125rem;
-  background: url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23212121' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e") no-repeat right 0.5rem center/initial, url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93025' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E") no-repeat center right 2rem/1.1875rem 1.1875rem;
+  background: url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23212121' height='24' width='24' viewBox='0 0 24 24'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e") no-repeat right 0.5rem center/initial, url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93025' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d93025' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E") no-repeat center right 2rem/1.1875rem 1.1875rem;
 }
 
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
@@ -3153,6 +3164,7 @@ textarea.form-control {
   width: 100%;
   height: 2.5rem;
   padding: 0.375rem 2rem 0.375rem 0.5rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
   color: #616161;
@@ -3625,10 +3637,6 @@ textarea.form-control {
 
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
-}
-
-.navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
 }
 
 .navbar-toggler-icon {
@@ -4266,10 +4274,6 @@ textarea.form-control {
   z-index: 2;
   outline: 0;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.page-link:not(:disabled):not(.disabled) {
-  cursor: pointer;
 }
 
 .page-item:first-child .page-link {
@@ -4941,10 +4945,6 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close:hover {
   color: #000;
   text-decoration: none;
-}
-
-.close:not(:disabled):not(.disabled) {
-  cursor: pointer;
 }
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
@@ -9610,10 +9610,6 @@ input[type="radio"].form-check-input.position-static:checked::after {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
@@ -12351,7 +12347,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-primary.dropdown-toggle {
   color: #fff;
   background-color: #1567d3;
-  border-color: #19447c;
+  border-color: #173e71;
   background-image: linear-gradient(to bottom, #1c7dfd 0%, #2460ae 100%);
   background-repeat: repeat-x;
 }
@@ -12385,7 +12381,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-secondary.dropdown-toggle {
   color: #212121;
   background-color: #e8e8e8;
-  border-color: #909090;
+  border-color: #8c8c8c;
   background-image: linear-gradient(to bottom, white 0%, #e7e7e7 100%);
   background-repeat: repeat-x;
 }
@@ -12419,7 +12415,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-success.dropdown-toggle {
   color: #fff;
   background-color: #1a7935;
-  border-color: #102f19;
+  border-color: #0c2614;
   background-image: linear-gradient(to bottom, #12b13f 0%, #205c31 100%);
   background-repeat: repeat-x;
 }
@@ -12453,7 +12449,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-info.dropdown-toggle {
   color: #fff;
   background-color: #00a5bb;
-  border-color: #08555f;
+  border-color: #074b53;
   background-image: linear-gradient(to bottom, #00d0eb 0%, #0e8796 100%);
   background-repeat: repeat-x;
 }
@@ -12487,7 +12483,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-warning.dropdown-toggle {
   color: #fff;
   background-color: #f26e05;
-  border-color: #944a10;
+  border-color: #89440e;
   background-image: linear-gradient(to bottom, #ff8729 0%, #ca6617 100%);
   background-repeat: repeat-x;
 }
@@ -12521,7 +12517,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-danger.dropdown-toggle {
   color: #fff;
   background-color: #c32b21;
-  border-color: #8d130e;
+  border-color: #81120d;
   background-image: linear-gradient(to bottom, #e53328 0%, #c7241c 100%);
   background-repeat: repeat-x;
 }
@@ -12555,7 +12551,7 @@ fieldset:disabled a.btn {
 .show > .btn-legacy-light.dropdown-toggle {
   color: #212121;
   background-color: #e4e4e4;
-  border-color: #868686;
+  border-color: #828282;
   background-image: linear-gradient(to bottom, white 0%, #dddddd 100%);
   background-repeat: repeat-x;
 }
