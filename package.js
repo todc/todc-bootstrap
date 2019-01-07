@@ -1,9 +1,7 @@
 // package metadata file for Meteor.js
 
-/* eslint-env meteor */
-
 Package.describe({
-  name: 'todc:todc-bootstrap',  // https://atmospherejs.com/todc/todc-bootstrap
+  name: 'todc:todc-bootstrap', // https://atmospherejs.com/todc/todc-bootstrap
   summary: 'Google-styled theme for Bootstrap.',
   version: '4.2.1-4.2.1-alpha',
   git: 'https://github.com/todc/todc-bootstrap.git'

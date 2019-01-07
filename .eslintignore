@@ -3,3 +3,5 @@
 **/vendor/
 /_gh_pages/
 /docs/2.3.2/
+/js/coverage/
+/package.js
