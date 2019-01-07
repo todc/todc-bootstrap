@@ -182,11 +182,11 @@
     },
     {
       "path": "./dist/css/bootstrap.css",
-      "maxSize": "25 kB"
+      "maxSize": "25.5 kB"
     },
     {
       "path": "./dist/css/bootstrap.min.css",
-      "maxSize": "22.7 kB"
+      "maxSize": "23.5 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.js",
@@ -206,11 +206,11 @@
     },
     {
       "path": "./dist/css/todc-bootstrap.css",
-      "maxSize": "31 kB"
+      "maxSize": "31.5 kB"
     },
     {
       "path": "./dist/css/todc-bootstrap.min.css",
-      "maxSize": "29 kB"
+      "maxSize": "29.5 kB"
     }
   ],
   "jspm": {
