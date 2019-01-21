@@ -896,6 +896,7 @@ $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .5rem !default; // .125rem !default;
 $dropdown-font-size:                $font-size-sm !default;
+$dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             rgba($black, .15) !default;
 $dropdown-border-radius:            $border-radius !default;
@@ -954,6 +955,7 @@ $pagination-disabled-border-color:  transparent !default;
 // Jumbotron
 
 $jumbotron-padding:                 2rem !default;
+$jumbotron-color:                   null !default;
 $jumbotron-bg:                      $gray-200 !default;
 
 
@@ -967,6 +969,7 @@ $card-border-color:                 transparent !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       transparent !default;
 $card-cap-color:                    null !default;
+$card-color:                        null !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1rem !default;
@@ -1035,6 +1038,7 @@ $toast-max-width:                   350px !default;
 $toast-padding-x:                   .75rem !default;
 $toast-padding-y:                   .25rem !default;
 $toast-font-size:                   .875rem !default;
+$toast-color:                       null !default;
 $toast-background-color:            rgba($white, .85) !default;
 $toast-border-width:                1px !default;
 $toast-border-color:                rgba(0, 0, 0, .1) !default;
@@ -1073,6 +1077,7 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
 
+$modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .333) !default; // #aaa
 $modal-content-border-width:        $border-width !default;
@@ -1134,6 +1139,7 @@ $progress-border-radius-lg:         $border-radius !default;
 
 // List group
 
+$list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
 $list-group-border-color:           $gray-300 !default;
 $list-group-border-width:           $border-width !default;
