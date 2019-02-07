@@ -4,8 +4,6 @@
 //
 
 .form-control {
-  height: $input-height;
-
   &:hover {
     border-color: $input-hover-border-color;
     @include box-shadow($input-hover-box-shadow);
