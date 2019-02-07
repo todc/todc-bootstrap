@@ -26,7 +26,7 @@ Copy-paste the stylesheet `<link>` into your `<head>` before all other styleshee
 
 ### JS
 
-Many of our components require the use of JavaScript to function. Specifically, they require [jQuery](https://jquery.com), [Popper.js](https://popper.js.org/), and our own JavaScript plugins. Place the following `<script>`s near the end of your pages, right before the closing `</body>` tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.
+Many of our components require the use of JavaScript to function. Specifically, they require [jQuery](https://jquery.com/), [Popper.js](https://popper.js.org/), and our own JavaScript plugins. Place the following `<script>`s near the end of your pages, right before the closing `</body>` tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.
 
 We use [jQuery's slim build](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/), but the full version is also supported.
 
@@ -136,11 +136,11 @@ For improved cross-browser rendering, we use [Reboot]({{ site.baseurl }}/docs/{{
 
 Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
 
-- Follow [@getbootstrap on Twitter](https://twitter.com/{{ site.bs.twitter }}).
-- Read and subscribe to [The Official Bootstrap Blog]({{ site.bs.blog }}/).
-- Join [the official Slack room]({{ site.bs.slack }}/).
+- Follow [@getbootstrap on Twitter](https://twitter.com/{{ site.twitter }}).
+- Read and subscribe to [The Official Bootstrap Blog]({{ site.blog }}/).
+- Join [the official Slack room]({{ site.slack }}/).
 - Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
 - Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
 - Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
 
-You can also follow [@getbootstrap on Twitter](https://twitter.com/{{ site.bs.twitter }}) for the latest gossip and awesome music videos.
+You can also follow [@getbootstrap on Twitter](https://twitter.com/{{ site.twitter }}) for the latest gossip and awesome music videos.
