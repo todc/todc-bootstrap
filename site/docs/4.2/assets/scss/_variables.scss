@@ -7,3 +7,9 @@ $bd-download:      $white !default;
 $bd-info:          #00bcd4 !default;
 $bd-warning:       #fa7b17 !default;
 $bd-danger:        #d93025 !default;
+
+// Enable responsive font sizes for font sizes defined in the docs
+// The weird if test is made as a workaround to prevent a false fusv error.
+//
+// stylelint-disable-next-line scss/dollar-variable-default
+$enable-responsive-font-sizes: if($enable-responsive-font-sizes, true, true);
