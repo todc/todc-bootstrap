@@ -1,5 +1,5 @@
 %font-setting-base {
-  font-size: $font-size-sm;
+  @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
 }
 
@@ -7,7 +7,7 @@
 // Type styles compatible with Google's Material Design
 .display4 {
   margin: -1rem 0 3.5rem -.085em;
-  font-size: 7rem; // 112sp
+  @include font-size(7rem); // 112sp
   font-weight: $font-weight-light;
   line-height: 7rem; // 112sp
   color: $gray-600;
@@ -18,7 +18,7 @@
 
 .display3 {
   margin: -8px 0 64px -.07em;
-  font-size: 3.5rem; // 56px
+  @include font-size(3.5rem); // 56px
   font-weight: $font-weight-regular;
   line-height: 3.5rem; // 56px
   color: $gray-600;
@@ -29,7 +29,7 @@
 
 .display2 {
   margin: -.5rem 0 4rem -.07em;
-  font-size: 2.8125rem; // 45px
+  @include font-size(2.8125rem); // 45px
   font-weight: $font-weight-regular;
   line-height: 3rem; // 48px
   color: $gray-600;
@@ -40,7 +40,7 @@
 
 .display1 {
   margin: -.5rem 0 4rem -.07em;
-  font-size: 2.125rem; // 34sp
+  @include font-size(2.125rem); // 34sp
   font-weight: $font-weight-regular;
   line-height: 2.5rem; // 40sp
   color: $gray-600;
@@ -51,7 +51,7 @@
 
 .headline {
   margin: -.5rem 0 1rem -.06em;
-  font-size: 1.5rem; // 24px
+  @include font-size(1.5rem); // 24px
   font-weight: $font-weight-regular;
   line-height: 2rem; // 32px
   color: $gray-900;
@@ -62,7 +62,7 @@
 
 .title {
   margin: -.5rem 0 1rem -.05em;
-  font-size: 1.25rem; // 20px
+  @include font-size(1.25rem); // 20px
   font-weight: $font-weight-medium;
   line-height: 2rem; // 32px/
   color: $gray-900;
@@ -73,7 +73,7 @@
 
 .subheading2 {
   margin: -.5rem 0 1rem -.06em;
-  font-size: 1rem; // 16px
+  @include font-size(1rem); // 16px
   font-weight: $font-weight-regular;
   line-height: 1.75rem; // 28px
   color: $gray-900;
@@ -84,7 +84,7 @@
 
 .subheading1 {
   margin: -.313rem 0 .813rem -.06em;
-  font-size: .938rem; // 15px
+  @include font-size(.938rem); // 15px
   font-weight: $font-weight-regular;
   line-height: 1.5rem; // 24px
   color: $gray-900;
@@ -95,7 +95,7 @@
 
 .body2 {
   margin: -.25rem 0 .75rem 0;
-  font-size: $font-size-sm; // 14px
+  @include font-size($font-size-sm); // 14px
   font-weight: $font-weight-medium;
   line-height: 1.5rem; // 24px
   color: $gray-900;
@@ -106,7 +106,7 @@
 
 .body1 {
   margin: -.25rem 0 .75rem 0;
-  font-size: $font-size-sm; // 14px
+  @include font-size($font-size-sm); // 14px
   font-weight: $font-weight-regular;
   line-height: 1.25rem; // 20px
   color: $gray-900;
@@ -117,7 +117,7 @@
 
 .caption {
   margin: -.5rem 0 1rem -.04em;
-  font-size: .75rem; // 12px
+  @include font-size(.75rem); // 12px
   font-weight: $font-weight-regular;
   line-height: 1.25rem; // 20px
   color: $gray-600;
@@ -128,7 +128,7 @@
 
 .button {
   margin: inherit;
-  font-size: $font-size-sm; // 14px
+  @include font-size($font-size-sm); // 14px
   font-weight: $font-weight-medium;
   line-height: 2.25rem; // 36px
   color: $gray-900;

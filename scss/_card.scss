@@ -8,12 +8,12 @@
 }
 
 .card-title {
-  font-size: $h4-font-size;
+  @include font-size($h4-font-size);
   font-weight: $font-weight-normal;
 }
 
 .card-subtitle {
   margin-top: -$card-spacer-y / 1.5;
-  font-size: $font-size-sm;
+  @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
 }

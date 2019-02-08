@@ -224,7 +224,7 @@
   width: $width;
   height: $height;
   padding: $padding;
-  font-size: $font-size;
+  @include font-size($font-size);
   line-height: $line-height;
   border-radius: 50%;
 }
