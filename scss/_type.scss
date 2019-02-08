@@ -94,7 +94,7 @@
 }
 
 .body2 {
-  margin: -.25rem 0 .75rem 0;
+  margin: -.25rem 0 .75rem;
   @include font-size($font-size-sm); // 14px
   font-weight: $font-weight-medium;
   line-height: 1.5rem; // 24px
@@ -105,7 +105,7 @@
 }
 
 .body1 {
-  margin: -.25rem 0 .75rem 0;
+  margin: -.25rem 0 .75rem;
   @include font-size($font-size-sm); // 14px
   font-weight: $font-weight-regular;
   line-height: 1.25rem; // 20px
