@@ -15,7 +15,7 @@
 <link rel="canonical" href="https://todc.github.io/docs/4.3/components/popovers/">
 
 <!-- TODC Bootstrap core CSS -->
-<link href="/todc-bootstrap/docs/4.3/dist/css/todc-bootstrap.min.css" rel="stylesheet" integrity="sha384-QA2WObkJ1LGuNadjNZ+3bZTpBE0ql3Z5pj20+mIEX8+z7r3C70H1BJWGTHxhBtIz" crossorigin="anonymous">
+<link href="/todc-bootstrap/docs/4.3/dist/css/todc-bootstrap.min.css" rel="stylesheet" integrity="sha384-c/nA/z5bPFyFyi7nCz2xkFkdPRD7BjOgpF1MUbr5Em27tdZpVGLabpRfaMKThy/h" crossorigin="anonymous">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -640,6 +640,10 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
 
 <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-animation=""</code>.</p>
 
+<div class="bd-callout bd-callout-warning">
+<p>Note that for security reasons the <code class="highlighter-rouge">sanitize</code>, <code class="highlighter-rouge">sanitizeFn</code> and <code class="highlighter-rouge">whiteList</code> options cannot be supplied using data attributes.</p>
+</div>
+
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -749,6 +753,24 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
       <td>string | element</td>
       <td>'scrollParent'</td>
       <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</a>.</td>
+    </tr>
+    <tr>
+      <td>sanitize</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>Enable or disable the sanitization. If activated <code>'template'</code>, <code>'content'</code> and <code>'title'</code> options will be sanitized.</td>
+    </tr>
+    <tr>
+      <td>whiteList</td>
+      <td>object</td>
+      <td><a href="/todc-bootstrap/docs/4.3/getting-started/javascript/#sanitizer">Default value</a></td>
+      <td>Object which contains allowed attributes and tags</td>
+    </tr>
+    <tr>
+      <td>sanitizeFn</td>
+      <td>null | function</td>
+      <td>null</td>
+      <td>Here you can supply your own sanitize function. This can be useful if you prefer to use a dedicated library to perform sanitization.</td>
     </tr>
   </tbody>
 </table>
@@ -864,6 +886,6 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/todc-bootstrap/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/todc-bootstrap/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-VoPFvGr9GxhDT3n8vqqZ46twP5lgex+raTCfICQy73NLhN7ZqSfCtfSn4mLA2EFA" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/todc-bootstrap/docs/4.3/assets/js/docs.min.js"></script>
+<script>window.jQuery || document.write('<script src="/todc-bootstrap/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/todc-bootstrap/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/todc-bootstrap/docs/4.3/assets/js/docs.min.js"></script>
   </body>
 </html>
