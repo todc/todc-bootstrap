@@ -10,7 +10,7 @@
   }
 
   // Customize the `:focus` state to imitate native WebKit styles.
-  @include form-control-focus();
+  @include form-control-focus($ignore-warning: true);
 
   // Disabled and read-only inputs
   //
