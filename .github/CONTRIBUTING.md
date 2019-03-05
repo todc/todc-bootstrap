@@ -41,10 +41,8 @@ Good bug reports are extremely helpful, so thanks!
 
 Guidelines for bug reports:
 
-0. **Validate and lint your code** &mdash; [validate your HTML](https://html5.validator.nu/)
-   and [lint your HTML](https://github.com/twbs/bootlint) to ensure your
-   problem isn't caused by a simple error in your own code. **Note** - bootlint will not find
-   issues with todc-bootstrap specific components.
+0. **[validate your HTML](https://html5.validator.nu/)** to ensure your
+   problem isn't caused by a simple error in your own code.
 
 1. **Use the GitHub issue search** &mdash; check if the issue has already been
    reported.
@@ -120,23 +118,19 @@ implementing features, refactoring code, porting to a different language),
 otherwise you risk spending a lot of time working on something that the
 project's developers might not want to merge into the project.
 
-In particular, **pull requests that add new features to Bootstrap v3 will be
-rejected.** Bootstrap v3 is now in maintenance mode and is therefore closed
-off to new features, so that we can focus our efforts on Bootstrap v4, the
-future of the theme. Pull requests that add new features should target
-[TODC Bootstrap v4 (the `v4-dev` git branch)](https://github.com/todc/todc-bootstrap/tree/v4-dev)
-instead, where they will be welcomed and duly considered.
-
 Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
-**Do not edit `todc-bootstrap.css` directly!** That file is automatically generated.
-You should edit the source files in [`/todc-bootstrap/less/`](https://github.com/todc/todc-bootstrap/tree/master/less) instead.
+**Do not edit `bootstrap.css`, or `bootstrap.js`
+directly!** Those files are automatically generated. You should edit the
+source files in [`/todc-bootstrap/scss/`](https://github.com/todc/todc-bootstrap/tree/master/scss) instead.
 
 Similarly, when contributing to TODC Bootstrap's documentation, you should edit the
-documentation source files in [the `/todc-bootstrap/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/docs).
-**Do not edit the `gh-pages` branch.** That branch is generated from the documentation source files and is managed separately.
+documentation source files in
+[the `/todc-bootstrap/site/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/site/docs).
+**Do not edit the `gh-pages` branch.** That branch is generated from the
+documentation source files and is managed separately by the TODC Bootstrap Core Team.
 
 Adhering to the following process is the best way to get your work
 included in the project:
@@ -191,7 +185,7 @@ included in the project:
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MIT License](LICENSE) (if it
 includes code changes) and under the terms of the
-[Creative Commons Attribution 3.0 Unported License](docs/LICENSE)
+[Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)
 (if it includes documentation changes).
 
 
@@ -228,7 +222,7 @@ Run `npm run test` before committing to ensure your changes follow our coding st
 ## License
 
 By contributing your code, you agree to license your contribution under the [MIT License](LICENSE).
-By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](docs/LICENSE).
+By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
 
 
