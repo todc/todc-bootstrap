@@ -102,7 +102,6 @@
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
-    "jquery": "1.9.1 - 3",
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
@@ -212,22 +211,19 @@
   ],
   "jspm": {
     "registry": "npm",
-    "main": "js/todc-bootstrap",
+    "main": "js/bootstrap",
     "directories": {
       "lib": "dist"
     },
     "shim": {
-      "js/todc-bootstrap": {
+      "js/bootstrap": {
         "deps": [
-          "jquery",
           "popper.js"
-        ],
-        "exports": "$"
+        ]
       }
     },
     "dependencies": {},
     "peerDependencies": {
-      "jquery": "1.9.1 - 3",
       "popper.js": "^1.14.7"
     }
   }
