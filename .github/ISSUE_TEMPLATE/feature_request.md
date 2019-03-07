@@ -7,7 +7,7 @@ about: Suggest an idea for a new feature in TODC Bootstrap.
 Before opening:
 
 - [Search for duplicate or closed issues](https://github.com/todc/todc-bootstrap/issues?utf8=%E2%9C%93&q=is%3Aissue)
-- Read the [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/CONTRIBUTING.md)
+- Read the [contributing guidelines](https://github.com/todc/todc-bootstrap/blob/master/.github/CONTRIBUTING.md)
 
 Feature requests must include:
 
