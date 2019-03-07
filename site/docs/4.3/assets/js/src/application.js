@@ -17,7 +17,7 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     // Tooltip and popover demos
-    var tooltipDemoList = document.querySelectorAll('.tooltip-demo')
+    var tooltipDemoList = [].slice.call(document.querySelectorAll('.tooltip-demo'))
     tooltipDemoList.forEach(function (tooltip) {
       new bootstrap.Tooltip(tooltip, {
         selector: '[data-toggle="tooltip"]',
@@ -26,7 +26,8 @@
         container: 'body'
       })
     })
-    var popoverList = document.querySelectorAll('[data-toggle="popover"]')
+
+    var popoverList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
     popoverList.forEach(function (popover) {
       new bootstrap.Popover(popover, {
         template: '<div class="popover" role="tooltip">' +
@@ -42,24 +43,24 @@
       .toast('show')
 
     // Demos within modals
-    var tooltipTestList = document.querySelectorAll('.tooltip-test')
+    var tooltipTestList = [].slice.call(document.querySelectorAll('.tooltip-test'))
     tooltipTestList.forEach(function (tooltip) {
       new bootstrap.Tooltip(tooltip)
     })
 
-    var popoverTestList = document.querySelectorAll('.popover-test')
+    var popoverTestList = [].slice.call(document.querySelectorAll('.popover-test'))
     popoverTestList.forEach(function (popover) {
       new bootstrap.Popover(popover)
     })
 
     // Indeterminate checkbox example
-    var indeterminateCheckboxList = document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+    var indeterminateCheckboxList = [].slice.call(document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]'))
     indeterminateCheckboxList.forEach(function (checkbox) {
       checkbox.indeterminate = true
     })
 
     // Disable empty links in docs examples
-    var emptyLinkList = document.querySelectorAll('.bd-content [href="#"]')
+    var emptyLinkList = [].slice.call(document.querySelectorAll('.bd-content [href="#"]'))
     emptyLinkList.forEach(function (link) {
       link.addEventListener('click', function (e) {
         e.preventDefault()
@@ -84,7 +85,7 @@
     }
 
     // Activate animated progress bar
-    var animatedProgressBarList = document.querySelectorAll('.bd-toggle-animated-progress > .progress-bar-striped')
+    var animatedProgressBarList = [].slice.call(document.querySelectorAll('.bd-toggle-animated-progress > .progress-bar-striped'))
     animatedProgressBarList.forEach(function (progressBar) {
       progressBar.addEventListener('click', function () {
         if (progressBar.classList.contains('progress-bar-animated')) {
@@ -96,9 +97,8 @@
     })
 
     // Insert copy to clipboard button before .highlight
-    var hightList = [].slice.call(document.querySelectorAll('figure.highlight, div.highlight'))
     var btnHtml = '<div class="bd-clipboard"><button type="button" class="btn-clipboard" title="Copy to clipboard">Copy</button></div>'
-    hightList.forEach(function (element) {
+    var hightList = [].slice.call(document.querySelectorAll('figure.highlight, div.highlight')).forEach(function (element) {
       element.insertAdjacentHTML('beforebegin', btnHtml)
     })
 
