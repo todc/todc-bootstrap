@@ -5,7 +5,12 @@
 //
 
 .btn {
-  display: inline-block;
+  position: relative;
+  z-index: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // display: inline-block;
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   color: $body-color;
@@ -15,8 +20,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
-  @include transition($btn-transition);
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
 
   @include hover {
     color: $body-color;
@@ -26,25 +30,17 @@
   &:focus,
   &.focus {
     outline: 0;
-    // box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
-    // @include box-shadow(none);
   }
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-    background-image: none;
-    transition: background .8s;
-    // @include box-shadow($btn-active-box-shadow);
-
-    // &:focus {
-    //   @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    // }
+    // background-image: none;
   }
 }
 
@@ -113,6 +109,12 @@ fieldset:disabled a.btn {
   }
 }
 
+@each $color, $value in $theme-colors {
+  .btn-legacy-#{$color} {
+    @include button-legacy-variant($color);
+  }
+}
+
 
 //
 // Link buttons
@@ -138,6 +140,7 @@ fieldset:disabled a.btn {
   &:disabled,
   &.disabled {
     color: $btn-link-disabled-color;
+    background-color: transparent;
   }
 
   // No need for an active state here
@@ -149,11 +152,11 @@ fieldset:disabled a.btn {
 //
 
 .btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
 
@@ -186,14 +189,23 @@ input[type="button"] {
 //
 
 .btn-pill {
-  border-radius: $btn-pill-border-radius;
+  @include border-radius($btn-pill-border-radius);
   box-shadow: $btn-pill-box-shadow;
   @include transition($btn-pill-transition);
   @include button-pill-variant();
+
+  &::before {
+    @include border-radius($btn-pill-border-radius);
+  }
 
   &:hover,
   &:focus,
   &.focus {
     box-shadow: $btn-pill-hover-box-shadow;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    box-shadow: $btn-pill-box-shadow;
   }
 }
