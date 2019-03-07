@@ -732,16 +732,9 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
 {% capture callout %}
 ##### Caveat with anchors
 
-By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#disabled-state) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Internet Explorer 10, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
+By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`.
 {% endcapture %}
 {% include callout.html content=callout type="warning" %}
-
-{% capture callout %}
-#### Cross-browser compatibility
-
-While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the `disabled` attribute on a `<fieldset>`. Use custom JavaScript to disable the fieldset in these browsers.
-{% endcapture %}
-{% include callout.html content=callout type="danger" %}
 
 ## Validation
 
@@ -759,13 +752,13 @@ Here's how form validation works with Bootstrap:
 - HTML form validation is applied via CSS's two pseudo-classes, `:invalid` and `:valid`. It applies to `<input>`, `<select>`, and `<textarea>` elements.
 - Bootstrap scopes the `:invalid` and `:valid` styles to parent `.was-validated` class, usually applied to the `<form>`. Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is attempted).
 - To reset the appearance of the form (for instance, in the case of dynamic form submissions using AJAX), remove the `.was-validated` class from the `<form>` again after submission.
-- As a fallback, `.is-invalid` and `.is-valid` classes may be used instead of the pseudo-classes for [server side validation](#server-side). They do not require a `.was-validated` parent class.
+- As a fallback, `.is-invalid` and `.is-valid` classes may be used instead of the pseudo-classes for [server-side validation](#server-side). They do not require a `.was-validated` parent class.
 - Due to constraints in how CSS works, we cannot (at present) apply styles to a `<label>` that comes before a form control in the DOM without the help of custom JavaScript.
 - All modern browsers support the [constraint validation API](https://www.w3.org/TR/html5/sec-forms.html#the-constraint-validation-api), a series of JavaScript methods for validating form controls.
 - Feedback messages may utilize the [browser defaults](#browser-defaults) (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.
 - You may provide custom validity messages with `setCustomValidity` in JavaScript.
 
-With that in mind, consider the following demos for our custom form validation styles, optional server side classes, and browser defaults.
+With that in mind, consider the following demos for our custom form validation styles, optional server-side classes, and browser defaults.
 
 ### Custom styles
 
@@ -1171,10 +1164,9 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class when manual
   </div>
 </div>
 
-If you're using jQuery, something like this should suffice:
-
 {% highlight js %}
-$('.your-checkbox').prop('indeterminate', true)
+var checkbox = document.querySelector('.your-checkbox')
+checkbox.indeterminate = true
 {% endhighlight %}
 
 #### Radios
@@ -1297,7 +1289,7 @@ As is the `size` attribute:
 
 ### Range
 
-Create custom `<input type="range">` controls with `.custom-range`. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only IE and Firefox support "filling" their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.
+Create custom `<input type="range">` controls with `.custom-range`. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports "filling" their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.
 
 {% capture example %}
 <label for="customRange1">Example range</label>
