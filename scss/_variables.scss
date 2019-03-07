@@ -505,7 +505,8 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             300 !default;
 $btn-letter-spacing:          .009375rem !default;
 $btn-box-shadow:              $shadow-2dp !default;
 $btn-focus-width:             $input-btn-focus-width !default;
@@ -523,7 +524,16 @@ $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              box-shadow 280ms cubic-bezier(.4, 0, .2, 1) !default;
+// $btn-transition:              transform .15s cubic-bezier(.4, 0, .2, 1), opacity .15s cubic-bezier(.4, 0, .2, 1) !default;
 
+
+// Buttons - Outline
+
+$btn-outline-border-color:    #dadce0 !default;
+
+// Buttons - Raised
+
+$btn-raised-hover-box-shadow:  $shadow-4dp !default;
 
 // Buttons - Pill
 
@@ -538,6 +548,127 @@ $btn-pill-hover-bg:           #fafafb !default;
 $btn-pill-hover-box-shadow:   0 1px 3px 0 rgba(60, 64, 67, .302), 0 4px 8px 3px rgba(60, 64, 67, .149) !default;
 
 $btn-pill-active-bg:          #f1f3f4 !default;
+
+$btn-pill-transition:         box-shadow .08s linear, min-width .15s cubic-bezier(.4, 0, .2, 1) !default;
+
+
+// Buttons - Legacy
+
+$btn-legacy-primary-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-primary-colors: map-merge(
+  map-merge(
+    btn-legacy-default-color-map($primary),
+    (
+      // "border-color":       #3079ed,
+      // "end-color":          #4787ed,
+      // "hover-border-color": #2f5bb7,
+      // "hover-end-color":    #357ae8
+    )
+  ),
+  $btn-legacy-primary-colors
+);
+
+
+$btn-legacy-secondary-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-secondary-colors: map-merge(
+  map-merge(
+    btn-legacy-default-color-map($secondary),
+    (
+      "border-color": darken($secondary, 14%),
+      "end-color": darken($secondary, 4%)
+    )
+  ),
+  $btn-legacy-secondary-colors
+);
+
+$btn-legacy-success-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-success-colors: map-merge(
+  (
+    btn-legacy-default-color-map($success)
+  ),
+  $btn-legacy-success-colors
+);
+
+$btn-legacy-info-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-info-colors: map-merge(
+  (
+    btn-legacy-default-color-map($info)
+  ),
+  $btn-legacy-info-colors
+);
+
+$btn-legacy-warning-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-warning-colors: map-merge(
+  (
+    btn-legacy-default-color-map($warning)
+  ),
+  $btn-legacy-warning-colors
+);
+
+// Legacy danger: #d14836
+$btn-legacy-danger-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-danger-colors: map-merge(
+  map-merge(
+    btn-legacy-default-color-map($danger),
+    (
+      "border-color":       transparent,
+      "start-color":        lighten(saturate($danger, 7.94), 2.94), // #dd4b39,
+      "hover-border-color": darken(saturate(adjust-hue($danger, -1), 11.5), 11.96), // #b0281a,
+      "hover-start-color":  lighten(saturate($danger, 7.94), 2.94), // #dd4b39,
+      "hover-end-color":    darken(saturate(adjust-hue($danger, -1), 4.2), 5.29), // #c53727,
+      "active-start-color": lighten(saturate($danger, 7.94), 2.94), // #dd4b39,
+      "active-end-color":   darken(saturate(adjust-hue($danger, -1), 11.5), 11.96) // #b0281a
+    )
+  ),
+  $btn-legacy-danger-colors
+);
+
+$btn-legacy-light-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-light-colors: map-merge(
+  map-merge(
+    btn-legacy-default-color-map($light),
+    (
+      "border-color": darken($light, 14%),
+      "end-color": #f1f1f1
+    )
+  ),
+  $btn-legacy-light-colors
+);
+
+$btn-legacy-dark-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-dark-colors: map-merge(
+  map-merge(
+    btn-legacy-default-color-map($dark),
+    (
+      "hover-start-color":    lighten($dark, 14%)
+    )
+  ),
+  $btn-legacy-dark-colors
+);
+
+$btn-legacy-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-legacy-colors: map-merge(
+  (
+    "primary":    $btn-legacy-primary-colors,
+    "secondary":  $btn-legacy-secondary-colors,
+    "success":    $btn-legacy-success-colors,
+    "info":       $btn-legacy-info-colors,
+    "warning":    $btn-legacy-warning-colors,
+    "danger":     $btn-legacy-danger-colors,
+    "light":      $btn-legacy-light-colors,
+    "dark":       $btn-legacy-dark-colors
+  ),
+  $btn-legacy-colors
+);
 
 
 // Forms

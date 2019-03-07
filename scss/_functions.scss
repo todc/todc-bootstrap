@@ -1,1 +1,30 @@
+// TODC Bootstrap functions
+//
 // Utility mixins and functions for evaluating source code across our variables, maps, and mixins.
+
+@function btn-legacy-default-color-map($color) {
+  // stylelint-disable
+  $btn-color-map: ();
+  $btn-color-map: map-merge((
+    "background":         $color,
+    "border-color":       darken(desaturate(adjust-hue($color, -1), 15.12), 19.02),
+    "start-color":        lighten(saturate($color, 16.70), 4.51),
+    "end-color":          $color,
+    "hover-border-color": darken(desaturate($color, 14.88), 13.92),
+    "hover-start-color":  lighten(saturate($color, 16.70), 4.51),
+    "hover-end-color":    darken(desaturate($color, 16.50), 9.41),
+    "active-start-color": lighten(saturate($color, 16.70), 4.51),
+    "active-end-color":   darken(desaturate($color, 17.06), 14.51)
+  ), $btn-color-map);
+  // stylelint-enable
+
+  @return $btn-color-map;
+}
+
+@function btn-legacy-color-map($btn-color) {
+  @return map-get($btn-legacy-colors, $btn-color);
+}
+
+@function btn-legacy-color-key($btn-legacy-color-map, $key) {
+  @return map-get($btn-legacy-color-map, $key);
+}
