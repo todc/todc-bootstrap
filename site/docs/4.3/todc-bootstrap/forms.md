@@ -18,7 +18,7 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 <form>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="custom-form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="custom-form-control" id="exampleFormControlInput1">
     <span class="custom-form-control-ripple-line"></span>
   </div>
   <div class="form-group">
