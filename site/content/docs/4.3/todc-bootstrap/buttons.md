@@ -36,7 +36,7 @@ In need of a button, but you'd like something flatter? Replace the default modif
 {{< example >}}
 {{< buttons.inline >}}
 {{- range (index $.Site.Data "theme-colors") }}
-<button type="button" class="btn btn-flat-{{ .name }}">{{ color.name | capitalize }}</button>
+<button type="button" class="btn btn-flat-{{ .name }}">{{ .name | title }}</button>
 {{- end -}}
 {{< /buttons.inline >}}
 {{< /example >}}
@@ -85,7 +85,7 @@ Shaped like a circled icon floating above the UI, it changes color upon focus an
 
 Only one floating action button is recommended per screen to represent the most common action.
 
-{< example >}}
+{{< example >}}
 {{< buttons.inline >}}
 {{- range (index $.Site.Data "theme-colors") }}
 <button type="button" class="btn btn-fab-{{ .name }}"><span class="material-icons">add</span></button>
@@ -117,7 +117,7 @@ No disabled styles are defined for FABs. The FAB promotes action, and should not
 
 ## Icon
 
-{< example >}}
+{{< example >}}
 {{< buttons.inline >}}
 {{- range (index $.Site.Data "theme-colors") }}
 <button type="button" class="btn btn-icon-{{ .name }}"><span class="material-icons">close</span></button>
@@ -129,12 +129,12 @@ No disabled styles are defined for FABs. The FAB promotes action, and should not
 
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
-{< example >}}
+{{< example >}}
 <button type="button" class="btn btn-icon-primary btn-lg"><span class="material-icons">menu</span></button>
 <button type="button" class="btn btn-icon-secondary btn-lg"><span class="material-icons">menu</span></button>
 {{< /example >}}
 
-{< example >}}
+{{< example >}}
 <button type="button" class="btn btn-icon-primary btn-sm"><span class="material-icons">menu</span></button>
 <button type="button" class="btn btn-icon-secondary btn-sm"><span class="material-icons">menu</span></button>
 {{< /example >}}
