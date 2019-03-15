@@ -128,7 +128,7 @@ source files in [`/todc-bootstrap/scss/`](https://github.com/todc/todc-bootstrap
 
 Similarly, when contributing to TODC Bootstrap's documentation, you should edit the
 documentation source files in
-[the `/todc-bootstrap/site/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/site/docs).
+[the `/todc-bootstrap/site/content/docs/` directory of the `master` branch](https://github.com/todc/todc-bootstrap/tree/master/site/content/docs).
 **Do not edit the `gh-pages` branch.** That branch is generated from the
 documentation source files and is managed separately by the TODC Bootstrap Core Team.
 
