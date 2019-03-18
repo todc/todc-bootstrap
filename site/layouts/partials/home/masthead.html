@@ -5,7 +5,7 @@
         {{ partial "icons/bootstrap-stack.svg" (dict "class" "img-fluid mb-3 mb-md-0" "width" "512" "height" "430") }}
       </div>
       <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-        <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
+        <h1 class="mb-3 bd-text-purple-bright">TODC Bootstrap</h1>
         <p class="lead">
            TODC Bootstrap is an open source Google styled theme for Bootstrap. It’s hosted, developed, and maintained on GitHub.
         </p>
@@ -22,6 +22,9 @@
         </div>
         <p class="text-muted mb-0">
           Currently v{{ .Site.Params.current_version }}
+        </p>
+        <p class="text-muted mb-0">
+          Currently v{{ .Site.Params.bs.params.current_version }} for Bootstrap
         </p>
       </div>
     </div>
