@@ -34,12 +34,15 @@
     },
     transformData: function (hits) {
       return hits.map(function (hit) {
-        var siteurl = getOrigin()
-        var urlRE = /^https?:\/\/todc\.github\.io\/todc-bootstrap/
+        var currentUrl = getOrigin()
+        var liveUrl = 'https://todc.github.io/todc-bootstrap'
 
         // When in production, return the result as is,
         // otherwise remove our url from it.
-        hit.url = siteurl.match(urlRE) ? hit.url : hit.url.replace(urlRE, '')
+        // eslint-disable-next-line no-negated-condition
+        hit.url = currentUrl.indexOf(liveUrl) !== -1 ?
+          hit.url :
+          hit.url.replace(liveUrl, '')
 
         // Prevent jumping to first header
         if (hit.anchor === 'content') {
@@ -50,6 +53,7 @@
         return hit
       })
     },
-    debug: false // Set debug to true if you want to inspect the dropdown
+    // Set debug to `true` if you want to inspect the dropdown
+    debug: false
   })
 })()
