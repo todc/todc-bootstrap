@@ -24,6 +24,8 @@
 // Happy Bootstrapping!
 
 // Load Bootstrap variables and mixins
+@import "../../../../../../bootstrap/scs/functions";
+@import "../../../../../../bootstrap/scs/mixins";
 @import "../../../../../../scss/functions";
 @import "../../../../../../scss/variables";
 @import "../../../../../../scss/mixins";
