@@ -224,6 +224,11 @@ $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
 
 
+// Container padding
+
+$container-padding-x: $grid-gutter-width / 2 !default;
+
+
 // Shadows
 // Values from Material Components, https://material.io/components/web/
 
