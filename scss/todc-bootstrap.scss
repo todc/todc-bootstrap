@@ -4,13 +4,17 @@
  * Licensed under MIT (https://github.com/todc/todc-bootstrap/blob/master/LICENSE)
  */
 
+// Configuration
 
 @import "../bootstrap/scss/functions";
 @import "functions";
 @import "variables";
-
-// @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/utilities";
+
+
+// Layout & components
+
 @import "../bootstrap/scss/root";
 @import "../bootstrap/scss/reboot";
 @import "../bootstrap/scss/type";
@@ -19,7 +23,7 @@
 @import "../bootstrap/scss/grid";
 @import "../bootstrap/scss/tables";
 @import "../bootstrap/scss/forms";
-// @import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/buttons";
 @import "../bootstrap/scss/transitions";
 @import "../bootstrap/scss/dropdown";
 @import "../bootstrap/scss/button-group";
@@ -42,14 +46,33 @@
 @import "../bootstrap/scss/popover";
 @import "../bootstrap/scss/carousel";
 @import "../bootstrap/scss/spinners";
-@import "../bootstrap/scss/utilities";
+
+
+// Helpers
+
+@import "../bootstrap/scss/helpers";
+
+
+// Utilities
+
+@import "../bootstrap/scss/utilities/api";
+@import "../bootstrap/scss/utilities/sizing";
+@import "../bootstrap/scss/utilities/text";
+@import "../bootstrap/scss/utilities/visibility";
 
 
 // Extend the default Bootstrap functionality
 
+// Configuration
+
 // @import "functions";
 // @import "variables";
 @import "mixins";
+@import "utilities";
+
+
+// Layout & components
+
 // @import "root";
 @import "reboot";
 @import "type";
@@ -81,4 +104,16 @@
 // @import "popover";
 // @import "carousel";
 // @import "spinners";
-@import "utilities";
+
+
+// Helpers
+
+// @import "helpers";
+
+
+// Utilities
+
+// @import "utilities/api";
+// @import "utilities/sizing";
+// @import "utilities/text";
+// @import "utilities/visibility";
