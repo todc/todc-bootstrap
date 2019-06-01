@@ -1217,6 +1217,7 @@ $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .333) !default; // #aaa
 $modal-content-border-width:        $border-width !default;
 $modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-inner-border-radius: calc(#{$modal-content-border-radius} - #{$modal-content-border-width}) !default;
 $modal-content-box-shadow-xs:       0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
 $modal-content-box-shadow-sm-up:    0 .25rem 1.143rem rgba($black, .2) !default; // #ccc
 
