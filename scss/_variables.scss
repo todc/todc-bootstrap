@@ -310,6 +310,7 @@ $rounded-pill:                50rem !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            none !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
@@ -706,7 +707,7 @@ $input-disabled-bg:                     $gray-100 !default;
 $input-color:                           $gray-700 !default;
 $input-border-color:                    rgba($black, .12) !default; // $gray-300
 $input-border-width:                    $border-width !default;
-$input-box-shadow:                      none !default;
+$input-box-shadow:                      $box-shadow-inset !default;
 $input-btn-border-width:                $border-width !default; // For form controls and buttons
 
 $input-border-radius:                   $border-radius !default;
