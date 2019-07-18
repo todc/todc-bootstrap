@@ -4,4 +4,5 @@
 /_gh_pages/
 /docs/2.3.2/
 /js/coverage/
+/site/static/sw.js
 /package.js
