@@ -1,5 +1,0 @@
-@mixin select-indicator($fill-bg: $select-indicator-color, $opacity: .54) {
-  background: $select-bg $select-indicator no-repeat right $select-padding-x center;
-  background-clip: padding-box;
-  background-size: $select-bg-size;
-}

@@ -12,8 +12,6 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links and 
 
 Dropdowns are built on a third party library, [Popper.js](https://popper.js.org/), which provides dynamic positioning and viewport detection. Be sure to include [popper.min.js]({{< param "cdn.popper" >}}) before Bootstrap's JavaScript or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js. Popper.js isn't used to position dropdowns in navbars though as dynamic positioning isn't required.
 
-If you're building our JavaScript from source, it [requires `util.js`]({{< docsref "/getting-started/javascript#util" >}}).
-
 ## Accessibility
 
 The [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/TR/wai-aria/) standard defines an actual [`role="menu"` widget](https://www.w3.org/WAI/PF/aria/roles#menu), but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
@@ -813,7 +811,7 @@ Regardless of whether you call your dropdown via JavaScript or instead use the d
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-offset=""`.
 
-<table class="table table-bordered table-striped">
+<table class="table">
   <thead>
     <tr>
       <th style="width: 100px;">Name</th>
@@ -864,26 +862,100 @@ Note when `boundary` is set to any value other than `'scrollParent'`, the style 
 
 ### Methods
 
-| Method | Description |
-| --- | --- |
-| `toggle` | Toggles the dropdown menu of a given navbar or tabbed navigation. |
-| `show` | Shows the dropdown menu of a given navbar or tabbed navigation. |
-| `hide` | Hides the dropdown menu of a given navbar or tabbed navigation. |
-| `update` | Updates the position of an element's dropdown. |
-| `dispose` | Destroys an element's dropdown. |
-| `_getInstance` | *Static* method which allows you to get the dropdown instance associated with a DOM element |
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>toggle</code></td>
+      <td>
+        Toggles the dropdown menu of a given navbar or tabbed navigation.
+      </td>
+    </tr>
+    <tr>
+      <td><code>show</code></td>
+      <td>
+        Shows the dropdown menu of a given navbar or tabbed navigation.
+      </td>
+    </tr>
+    <tr>
+      <td><code>hide</code></td>
+      <td>
+        Hides the dropdown menu of a given navbar or tabbed navigation.
+      </td>
+    </tr>
+    <tr>
+      <td><code>update</code></td>
+      <td>
+        Updates the position of an element's dropdown.
+      </td>
+    </tr>
+    <tr>
+      <td><code>dispose</code></td>
+      <td>
+        Destroys an element's dropdown.
+      </td>
+    </tr>
+    <tr>
+      <td><code>_getInstance</code></td>
+      <td>
+        Static method which allows you to get the dropdown instance associated with a DOM element.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Events
 
 All dropdown events are fired at the `.dropdown-menu`'s parent element and have a `relatedTarget` property, whose value is the toggling anchor element.
-`hide.bs.dropdown` and `hidden.bs.dropdown` events have a `clickEvent` property (only when the original event type is `click`) that contains an Event Object for the click event.
+`hide.bs.dropdown` and `hidden.bs.dropdown` events have a `clickEvent` property (only when the original Event type is `click`) that contains an Event Object for the click event.
 
-| Event | Description |
-| --- | --- |
-| `show.bs.dropdown` | This event fires immediately when the show instance method is called. |
-| `shown.bs.dropdown` | This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete). |
-| `hide.bs.dropdown` | This event is fired immediately when the hide instance method has been called. |
-| `hidden.bs.dropdown`| This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete). |
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>show.bs.dropdown</code>
+      </td>
+      <td>
+        Fires immediately when the show instance method is called.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>shown.bs.dropdown</code>
+      </td>
+      <td>
+        Fired when the dropdown has been made visible to the user and CSS transitions have completed.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>hide.bs.dropdown</code>
+      </td>
+      <td>
+        Fires immediately when the hide instance method has been called.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>hidden.bs.dropdown</code>
+      </td>
+      <td>
+        Fired when the dropdown has finished being hidden from the user and CSS transitions have completed.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 {{< highlight js >}}
 var myDropdown = document.getElementById('myDropdown')
