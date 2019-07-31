@@ -41,6 +41,7 @@ Changes to our source Sass files and compiled CSS.
 Changes to our source and compiled JavaScript files.
 
 - Dropped jQuery dependency and rewrote plugins to be in regular JavaScript.
+- Removed underscore from public static methods like `_getInstance()` → `getInstance()`.
 
 ## Grid and layout
 
@@ -57,6 +58,7 @@ Changes to Reboot, typography, tables, and more.
 - **Todo:** Make RFS enabled by default
 - Reset default horizontal `padding-left` on `<ul>` and `<ol>` elements from browser default `40px` to `2rem`.
 - Simplified table styles (no more 2px border on `thead > th` elements) and tightened cell padding.
+- Dropped `.pre-scrollable` class. [See #29135](https://github.com/twbs/bootstrap/pull/29135)
 
 ## Forms
 
