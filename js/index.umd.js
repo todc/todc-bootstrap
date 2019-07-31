@@ -15,7 +15,7 @@ import Popover from '../bootstrap/js/src/popover/popover'
 import ScrollSpy from '../bootstrap/js/src/scrollspy'
 import Tab from '../bootstrap/js/src/tab'
 import Toast from '../bootstrap/js/src/toast/toast'
-import Tooltip from '../bootstrap/js/src/tooltip'
+import Tooltip from '../bootstrap/js/src/tooltip/tooltip'
 
 export default {
   Alert,
