@@ -7,7 +7,7 @@
 
 import Alert from '../bootstrap/js/src/alert/alert'
 import Button from '../bootstrap/js/src/button/button'
-import Carousel from '../bootstrap/js/src/carousel'
+import Carousel from '../bootstrap/js/src/carousel/carousel'
 import Collapse from '../bootstrap/js/src/collapse'
 import Dropdown from '../bootstrap/js/src/dropdown'
 import Modal from '../bootstrap/js/src/modal'

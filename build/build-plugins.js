@@ -34,7 +34,7 @@ const bsPlugins = {
   SelectorEngine: path.resolve(__dirname, '../bootstrap/js/src/dom/selector-engine.js'),
   Alert: path.resolve(__dirname, '../bootstrap/js/src/alert/alert.js'),
   Button: path.resolve(__dirname, '../bootstrap/js/src/button/button.js'),
-  Carousel: path.resolve(__dirname, '../bootstrap/js/src/carousel.js'),
+  Carousel: path.resolve(__dirname, '../bootstrap/js/src/carousel/carousel.js'),
   Collapse: path.resolve(__dirname, '../bootstrap/js/src/collapse.js'),
   Dropdown: path.resolve(__dirname, '../bootstrap/js/src/dropdown.js'),
   Modal: path.resolve(__dirname, '../bootstrap/js/src/modal.js'),
