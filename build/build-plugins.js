@@ -41,7 +41,7 @@ const bsPlugins = {
   Popover: path.resolve(__dirname, '../bootstrap/js/src/popover.js'),
   ScrollSpy: path.resolve(__dirname, '../bootstrap/js/src/scrollspy.js'),
   Tab: path.resolve(__dirname, '../bootstrap/js/src/tab.js'),
-  Toast: path.resolve(__dirname, '../bootstrap/js/src/toast.js'),
+  Toast: path.resolve(__dirname, '../bootstrap/js/src/toast/toast.js'),
   Tooltip: path.resolve(__dirname, '../bootstrap/js/src/tooltip.js')
 }
 const rootPath = '../js/dist/'

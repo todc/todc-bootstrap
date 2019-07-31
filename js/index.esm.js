@@ -14,7 +14,7 @@ import Modal from '../bootstrap/js/src/modal'
 import Popover from '../bootstrap/js/src/popover'
 import ScrollSpy from '../bootstrap/js/src/scrollspy'
 import Tab from '../bootstrap/js/src/tab'
-import Toast from '../bootstrap/js/src/toast'
+import Toast from '../bootstrap/js/src/toast/toast'
 import Tooltip from '../bootstrap/js/src/tooltip'
 
 export {
