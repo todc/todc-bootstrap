@@ -17,6 +17,14 @@
       "maxSize": "2 kB"
     },
     {
+      "path": "./dist/css/bootstrap-utilities.css",
+      "maxSize": "8 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-utilities.min.css",
+      "maxSize": "7 kB"
+    },
+    {
       "path": "./dist/css/bootstrap.css",
       "maxSize": "25 kB"
     },
@@ -47,6 +55,14 @@
     {
       "path": "./dist/js/bootstrap.min.js",
       "maxSize": "17.5 kB"
+    },
+    {
+      "path": "./dist/css/todc-bootstrap-utilities.css",
+      "maxSize": "8 kB"
+    },
+    {
+      "path": "./dist/css/todc-bootstrap-utilities.min.css",
+      "maxSize": "7 kB"
     },
     {
       "path": "./dist/css/todc-bootstrap.css",
