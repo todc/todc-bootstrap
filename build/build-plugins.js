@@ -38,7 +38,7 @@ const bsPlugins = {
   Collapse: path.resolve(__dirname, '../bootstrap/js/src/collapse/collapse.js'),
   Dropdown: path.resolve(__dirname, '../bootstrap/js/src/dropdown/dropdown.js'),
   Modal: path.resolve(__dirname, '../bootstrap/js/src/modal/modal.js'),
-  Popover: path.resolve(__dirname, '../bootstrap/js/src/popover.js'),
+  Popover: path.resolve(__dirname, '../bootstrap/js/src/popover/popover.js'),
   ScrollSpy: path.resolve(__dirname, '../bootstrap/js/src/scrollspy.js'),
   Tab: path.resolve(__dirname, '../bootstrap/js/src/tab.js'),
   Toast: path.resolve(__dirname, '../bootstrap/js/src/toast/toast.js'),
