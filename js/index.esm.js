@@ -13,7 +13,7 @@ import Dropdown from '../bootstrap/js/src/dropdown/dropdown'
 import Modal from '../bootstrap/js/src/modal/modal'
 import Popover from '../bootstrap/js/src/popover/popover'
 import ScrollSpy from '../bootstrap/js/src/scrollspy/scrollspy'
-import Tab from '../bootstrap/js/src/tab'
+import Tab from '../bootstrap/js/src/tab/tab'
 import Toast from '../bootstrap/js/src/toast/toast'
 import Tooltip from '../bootstrap/js/src/tooltip/tooltip'
 
