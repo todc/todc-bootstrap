@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-import Alert from '../bootstrap/js/src/alert'
+import Alert from '../bootstrap/js/src/alert/alert'
 import Button from '../bootstrap/js/src/button'
 import Carousel from '../bootstrap/js/src/carousel'
 import Collapse from '../bootstrap/js/src/collapse'
