@@ -1053,6 +1053,8 @@ $pagination-line-height:            1.25 !default;
 $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
+$pagination-border-radius:          $border-radius !default;
+$pagination-margin-left:            -$pagination-border-width !default;
 $pagination-border-color:           transparent !default;
 
 $pagination-focus-box-shadow:       $shadow-1dp !default;
