@@ -3,6 +3,8 @@ title:                  "TODC Bootstrap"
 baseURL:                "https://todc.github.io/todc-bootstrap"
 enableInlineShortcodes: true
 
+# canonifyURLs:           true
+
 pygmentsUseClasses:     true
 # you can use ```lang if you want too
 pygmentsCodeFences:     true
@@ -31,6 +33,10 @@ module:
       target:           layouts
     - source:           site/static
       target:           static
+    - source:           site/static/docs/4.3/assets/img/favicons/apple-touch-icon.png
+      target:           static/apple-touch-icon.png
+    - source:           site/static/docs/4.3/assets/img/favicons/favicon.ico
+      target:           static/favicon.ico
 
 params:
   description:          "Google-styled theme for Bootstrap."
