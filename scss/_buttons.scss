@@ -17,6 +17,7 @@
   text-align: center;
   letter-spacing: $btn-letter-spacing;
   vertical-align: middle;
+  cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
