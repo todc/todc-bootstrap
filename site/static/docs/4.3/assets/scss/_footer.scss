@@ -3,11 +3,7 @@
 //
 
 .bd-footer {
-  @include font-size(100%);
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: .04em;
-  background-color: #f7f7f7;
+  @include font-size(.875rem);
 
   a {
     font-weight: 600;
@@ -21,10 +17,6 @@
 
   p {
     margin-bottom: 0;
-  }
-
-  @include media-breakpoint-up(sm) {
-    text-align: left;
   }
 }
 
