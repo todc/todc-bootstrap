@@ -24,11 +24,11 @@
 // Happy Bootstrapping!
 
 // Load Bootstrap variables and mixins
-@import "../../../../../../bootstrap/scss/functions";
-@import "../../../../../../bootstrap/scss/mixins";
-@import "../../../../../../scss/functions";
-@import "../../../../../../scss/variables";
-@import "../../../../../../scss/mixins";
+@import "../../../bootstrap/scss/functions";
+@import "../../../bootstrap/scss/mixins";
+@import "../../../scss/functions";
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
 
 // Load docs components
 @import "variables";
