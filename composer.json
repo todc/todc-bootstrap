@@ -24,12 +24,7 @@
     "issues": "https://github.com/todc/todc-bootstrap/issues"
   },
   "license": "MIT",
-  "extra": {
-    "branch-alias": {
-      "dev-master": "3.3.x-dev"
-    }
-  },
   "replace": {
-    "twitter/bootstrap": "self.version"
+    "todc/todc-bootstrap": "self.version"
   }
 }
