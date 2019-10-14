@@ -3,8 +3,15 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-@mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: transparent, $active-background: $background, $active-border: transparent) {
-  $color: color-yiq($background);
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-yiq($background),
+  $hover-background: darken($background, 7.5%),
+  $hover-border: transparent,
+  $active-background: $background,
+  $active-border: transparent
+) {
   $before-background-color: if(lightness($background) < 90, $white, #202124);
   $hover-bg-color-lightened: lighten(desaturate(adjust-hue($background, -.1094), 2.6665), 2.549);
   $hover-background-color: if(lightness($background) < 90, $hover-bg-color-lightened, $hover-background);
@@ -154,11 +161,17 @@
   }
 }
 
-@mixin button-outline-variant($color, $color-hover: color-yiq($color), $border: $btn-outline-border-color, $active-background: $color, $active-border: $color) {
+@mixin button-outline-variant(
+  $color,
+  $color-hover: color-yiq($color),
+  $border: $btn-outline-border-color,
+  $active-background: $color,
+  $active-color: $color
+) {
   $border-color: if(lightness($border) > 90, rgba(color-yiq($border), .295), $border);
   $hover-border-color: if(lightness($color) > 90, darken(saturate($border, .85), 4.9), lighten(saturate(adjust-hue($color, 2), 5.75), 40));
 
-  @include button-flat-variant($color: $color, $active-border: $border-color);
+  @include button-flat-variant($color: $color, $active-color: $border-color);
   border-color: $border-color;
 
   &:hover,
@@ -168,7 +181,14 @@
   }
 }
 
-@mixin button-raised-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 20%), $active-border: darken($border, 12.5%)) {
+@mixin button-raised-variant(
+  $background,
+  $border,
+  $hover-background: darken($background, 7.5%),
+  $hover-border: darken($border, 10%),
+  $active-background: darken($background, 20%),
+  $active-border: darken($border, 12.5%)
+) {
   @include button-variant($background: $background, $border: $border);
   @include box-shadow($btn-box-shadow);
 
@@ -183,7 +203,12 @@
   }
 }
 
-@mixin button-flat-variant($color, $color-hover: $color, $active-background: rgba($color, .16), $active-border: rgba($color, .16)) {
+@mixin button-flat-variant(
+  $color,
+  $color-hover: $color,
+  $active-background: rgba($color, .16),
+  $active-border: rgba($color, .16)
+) {
   $color: if(lightness($color) < 90, $color, color-yiq($color));
   $hover-background-color: if(lightness($color) > 90, rgba(color-yiq($color), .04), rgba($color, .04));
   $active-background-color: if(lightness($active-background) > 90, rgba($color, .12), $active-background);
@@ -223,7 +248,13 @@
 }
 
 // TODO: This mixin should only color attributes. The rest should be in the class
-@mixin button-pill-variant($background: $btn-pill-bg, $color: $btn-pill-color, $border: transparent, $hover-background: $btn-pill-hover-bg, $active-background: $btn-pill-active-bg) {
+@mixin button-pill-variant(
+  $background: $btn-pill-bg,
+  $color: $btn-pill-color,
+  $border: transparent,
+  $hover-background: $btn-pill-hover-bg,
+  $active-background: $btn-pill-active-bg
+) {
   color: $color;
   background-color: $background;
   border-color: $border;
@@ -240,7 +271,13 @@
   }
 }
 
-@mixin button-circle-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1), $width: 3.5rem) {
+@mixin button-circle-variant(
+  $color,
+  $background: $white,
+  $hover-background: rgba($black, .07),
+  $active-background: rgba($black, .1),
+  $width: 3.5rem
+) {
   @include button-circle-size($width: $width);
   color: $color;
   text-align: center;
@@ -260,7 +297,12 @@
 }
 
 // Button sizes for the circle variant
-@mixin button-circle-size($width: 3.5rem, $height: $width, $padding: 0, $font-size: 1.5rem) {
+@mixin button-circle-size(
+  $width: 3.5rem,
+  $height: $width,
+  $padding: 0,
+  $font-size: 1.5rem
+) {
   width: $width;
   height: $height;
   padding: $padding;
@@ -268,7 +310,15 @@
   @include border-radius(50%);
 }
 
-@mixin button-fab-variant($background,  $hover-background: if(lightness($background) > 90, rgba(color-yiq($background), .07), rgba($background, .75)), $active-background: if(lightness($background) > 90, rgba(color-yiq($background), .125), rgba($background, .65))) {
+@mixin button-fab-variant(
+  $background,
+  $hover-background: if(lightness($background) > 90,
+  rgba(color-yiq($background), .07),
+  rgba($background, .75)),
+  $active-background: if(lightness($background) > 90,
+  rgba(color-yiq($background), .125),
+  rgba($background, .65))
+) {
   $color: color-yiq($background);
 
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background);
@@ -287,7 +337,12 @@
   }
 }
 
-@mixin button-icon-variant($color, $background: $white,  $hover-background: rgba($black, .07), $active-background: rgba($black, .1)) {
+@mixin button-icon-variant(
+  $color,
+  $background: $white,
+  $hover-background: rgba($black, .07),
+  $active-background: rgba($black, .1)
+) {
   $color: if(lightness($color) > 90, color-yiq($color), $color);
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background, $width: 2.5rem);
 }
