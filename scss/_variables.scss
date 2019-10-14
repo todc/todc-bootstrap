@@ -303,9 +303,6 @@ $shadows: map-merge(
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-sm:              1 !default;
-$line-height-lg:              1.5 !default;
-
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
@@ -383,7 +380,10 @@ $font-weight-bolder:          bolder !default;
 $font-weight-black:           900 !default;
 
 $font-weight-base:            $font-weight-normal !default;
+
 $line-height-base:            1.2 !default;
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
