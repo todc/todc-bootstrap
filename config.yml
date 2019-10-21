@@ -56,6 +56,7 @@ params:
   blog:                 " "
   expo:                 " "
   themes:               " "
+  icons:                "https://icons.getbootstrap.com/"
 
   download:
     source:             "https://github.com/todc/todc-bootstrap/archive/v4.3.1-4.3.1-alpha.zip"
