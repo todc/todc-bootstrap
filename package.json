@@ -110,7 +110,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-unicorn": "^12.1.0",
     "find-unused-sass-variables": "^0.6.0",
-    "fs-extra": "^5.0.0",
+    "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
     "hammer-simulator": "0.0.1",
     "hugo-bin": "^0.47.0",
