@@ -70,8 +70,8 @@ params:
     js_hash:          "sha384-u1WgC0J4DjCaowk/0fpsG/8pLnBBWiGCpk7+tg4LA6D3PpBpcpCvNXmWw5+qixAe"
     js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     js_bundle_hash:   "sha384-RFaZ3GjIVARx4amrbP1rGV9DmaP2zLUCLcYMeF5nD8r07hNHsGnj9PfHulpe+JBU"
-    popper:           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
-    popper_hash:      "sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
+    popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    popper_hash:      "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 
   bs:
     title:                  "Bootstrap"
