@@ -172,5 +172,9 @@
     "peerDependencies": {
       "popper.js": "^1.16.0"
     }
+  },
+  "funding": {
+    "type": "",
+    "url": ""
   }
 }
