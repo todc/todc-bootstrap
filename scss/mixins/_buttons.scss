@@ -207,7 +207,8 @@
   $color,
   $color-hover: $color,
   $active-background: rgba($color, .16),
-  $active-border: rgba($color, .16)
+  $active-border: rgba($color, .16),
+  $active-color: if(lightness($color) > 90, color-yiq($color), $color)
 ) {
   $color: if(lightness($color) < 90, $color, color-yiq($color));
   $hover-background-color: if(lightness($color) > 90, rgba(color-yiq($color), .04), rgba($color, .04));
@@ -237,7 +238,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   .show > &.dropdown-toggle {
-    color: if(lightness($color) > 90, color-yiq($color), $color);
+    color: $active-color;
     background-color: $active-background-color;
     border-color: $active-border;
   }
