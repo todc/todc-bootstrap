@@ -65,11 +65,11 @@ params:
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
     css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    css_hash:         "sha384-vvibzJJdbzjUAgANcLgozW4q5KNSwmWXJwjUDrDKcF40pRurqf/+yokJy6E9R0Bp"
+    css_hash:         "sha384-eRsfMZuRwmaiTbRuwjVuRofg6J6u1NaJZBs6bhpA/8uWRU1PWwMc2fZhkdfNe5nV"
     js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    js_hash:          "sha384-u1WgC0J4DjCaowk/0fpsG/8pLnBBWiGCpk7+tg4LA6D3PpBpcpCvNXmWw5+qixAe"
+    js_hash:          "sha384-0UcHeLqNMYbeXIpGn487WCRzfpNwaFZAYZ9sp2svQhLfLJIa5+c9cbDJcMYjnL6K"
     js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-RFaZ3GjIVARx4amrbP1rGV9DmaP2zLUCLcYMeF5nD8r07hNHsGnj9PfHulpe+JBU"
+    js_bundle_hash:   "sha384-aevUQ+4yWZ6ZlKI7YujmahyAWRCGUPEvW1/mgA+vXxy61jIvzTuk7VjcOqBuPJjn"
     popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     popper_hash:      "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 
