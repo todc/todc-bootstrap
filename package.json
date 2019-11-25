@@ -123,7 +123,7 @@
     "karma-jasmine": "^2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "karma-rollup-preprocessor": "^7.0.2",
-    "linkinator": "^1.7.3",
+    "linkinator": "^1.8.0",
     "node-sass": "^4.13.0",
     "nodegit": "^0.26.2",
     "nodemon": "^1.19.4",
