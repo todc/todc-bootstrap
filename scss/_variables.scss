@@ -1183,10 +1183,13 @@ $pagination-disabled-border-color:  transparent !default;
 
 $card-spacer-y:                     1rem !default;
 $card-spacer-x:                     1rem !default;
+$card-title-spacer-y:               .75rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 transparent !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:                .75rem !default;
+$card-cap-padding-x:                1.25rem !default;
 $card-cap-bg:                       transparent !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;

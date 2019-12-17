@@ -13,7 +13,7 @@
 }
 
 .card-subtitle {
-  margin-top: -$card-spacer-y / 1.5;
+  margin-top: -$card-title-spacer-y / 1.5;
   @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
 }
