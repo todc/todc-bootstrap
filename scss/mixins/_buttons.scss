@@ -56,24 +56,39 @@
     box-shadow: 0 1px 2px 0 rgba($background, .302), 0 1px 3px 1px rgba($background, .149);
   }
 
-  // Disabled comes first so active can properly restyle
-  // TODO: Have this change based on $background
-  &.disabled,
-  &:disabled {
-    color: rgba(60, 64, 67, .38);
-    cursor: default;
-    background-color: #f1f3f4;
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
+  &:active,
+  &.active,
   .show > &.dropdown-toggle {
+    color: $active-color;
+    background-color: $active-background;
+    @if $enable-gradients {
+      background-image: none; // Remove the gradient for the pressed/active state
+    }
+    border-color: $active-border;
+
+    &:focus {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $enable-shadows and $btn-active-box-shadow != none {
+        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+      } @else {
+        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+      }
+    }
 
     &::before {
       opacity: .12;
       transform: scale(1);
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    // Remove CSS gradients if they're enabled
+    @if $enable-gradients {
+      background-image: none;
     }
   }
 
@@ -229,18 +244,27 @@
     border-color: rgba($color, .04);
   }
 
-  &.disabled,
-  &:disabled {
-    color: $color;
-    background-color: transparent;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
+  &:active,
+  &.active,
   .show > &.dropdown-toggle {
     color: $active-color;
-    background-color: $active-background-color;
+    background-color: $active-background;
     border-color: $active-border;
+
+    &:focus {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $enable-shadows and $btn-active-box-shadow != none {
+        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5);
+      } @else {
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $color;
+    background-color: transparent;
   }
 
   &.btn-pill {

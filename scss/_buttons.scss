@@ -35,22 +35,22 @@
     outline: 0;
   }
 
-  // Disabled comes first so active can properly restyle
+  &:active,
+  &.active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+
+  &:disabled,
   &.disabled,
-  &:disabled {
+  fieldset:disabled & { // stylelint-disable-line selector-no-qualifying-type
+    pointer-events: none;
     opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
   }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    // background-image: none;
-  }
-}
-
-// Future-proof disabling of clicks on `<a>` elements
-a.btn.disabled,
-fieldset:disabled a.btn {
-  pointer-events: none;
 }
 
 
