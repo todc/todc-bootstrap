@@ -203,7 +203,7 @@ Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infras
 
 ## Copyright and license
 
-Copyright 2011-2019 Tim O'Donnell. Code released under [the MIT license](https://github.com/todc/todc-bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Copyright 2011-2020 Tim O'Donnell. Code released under [the MIT license](https://github.com/todc/todc-bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 
 **NOTE** This project was previously and incorrectly licensed under the Public Domain. It has now been changed to be compatible with Bootstrap's current license.
 
