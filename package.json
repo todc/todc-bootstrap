@@ -147,9 +147,6 @@
     "terser": "^4.5.1",
     "vnu-jar": "20.1.2"
   },
-  "engines": {
-    "node": ">=10"
-  },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
     "js/{src,dist}/**/*.{js,map}",
