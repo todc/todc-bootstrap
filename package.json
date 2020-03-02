@@ -130,7 +130,7 @@
     "linkinator": "^2.0.1",
     "lockfile-lint": "^4.0.0",
     "node-sass": "^4.13.1",
-    "nodegit": "^0.26.4",
+    "nodegit": "^0.26.5",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.1",
