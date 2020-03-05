@@ -16,6 +16,7 @@
   line-height: $btn-line-height;
   color: $body-color;
   text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
   white-space: $btn-white-space;
   letter-spacing: $btn-letter-spacing;
   vertical-align: middle;
