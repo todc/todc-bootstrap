@@ -18,9 +18,8 @@ Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
       <li class="nav-item active">
         <a class="nav-link" aria-current="page" href="#">Home</a>
       </li>
@@ -42,9 +41,9 @@ Fancy larger or smaller navbars? Add `.navbar-lg` or `.navbar-sm` for additional
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="d-flex">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
 </nav>
