@@ -115,7 +115,7 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "hammer-simulator": "0.0.1",
-    "hugo-bin": "^0.54.0",
+    "hugo-bin": "^0.55.1",
     "ip": "^1.1.5",
     "karma": "^4.3.0",
     "karma-browserstack-launcher": "1.5.1",
