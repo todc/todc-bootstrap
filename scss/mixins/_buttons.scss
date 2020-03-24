@@ -43,7 +43,7 @@
   &:hover,
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     color: color-yiq($hover-background);
     background-color: $hover-background-color;
     border-color: $hover-border;
@@ -58,7 +58,7 @@
 
   &:active,
   &.active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     color: $active-color;
     background-color: $active-background;
     background-image: if($enable-gradients, none, null);
@@ -95,7 +95,7 @@
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
-    .show > &.dropdown-toggle {
+    &.dropdown-toggle.show {
       background-color: $hover-background-color;
       border-color: $hover-border;
     }
@@ -127,7 +127,7 @@
   &.focus,
   &:active,
   &.active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     color: color-yiq($background);
     background-color: darken($end-color, 5%);
     @if $color == "secondary" or $color == "light" {
@@ -161,7 +161,7 @@
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     color: color-yiq($active-end-color);
     @include gradient-y($start-color: $active-start-color, $end-color: $active-end-color);
 
@@ -210,7 +210,7 @@
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     @include box-shadow( $btn-active-box-shadow);
   }
 }
@@ -243,7 +243,7 @@
 
   &:active,
   &.active,
-  .show > &.dropdown-toggle {
+  &.dropdown-toggle.show {
     color: $active-color;
     background-color: $active-background;
     border-color: $active-border;
