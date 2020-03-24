@@ -6,7 +6,7 @@
 @mixin button-variant(
   $background,
   $border,
-  $color: color-yiq($background),
+  $color: color-contrast($background),
   $hover-background: darken($background, 7.5%),
   $hover-border: transparent,
   $active-background: $background,
@@ -44,7 +44,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.dropdown-toggle.show {
-    color: color-yiq($hover-background);
+    color: color-contrast($hover-background);
     background-color: $hover-background-color;
     border-color: $hover-border;
     box-shadow: 0 1px 2px 0 rgba($background, .451), 0 1px 3px 1px rgba($background, .302);
@@ -116,7 +116,7 @@
   $active-start-color: btn-legacy-color-key($btn-color-map, "active-start-color");
   $active-end-color:   btn-legacy-color-key($btn-color-map, "active-end-color");
 
-  color: color-yiq($background);
+  color: color-contrast($background);
   background-color: $background;
   border-color: $border-color;
 
@@ -128,7 +128,7 @@
   &:active,
   &.active,
   &.dropdown-toggle.show {
-    color: color-yiq($background);
+    color: color-contrast($background);
     background-color: darken($end-color, 5%);
     @if $color == "secondary" or $color == "light" {
       // border-color: $gray-500;
@@ -162,7 +162,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.dropdown-toggle.show {
-    color: color-yiq($active-end-color);
+    color: color-contrast($active-end-color);
     @include gradient-y($start-color: $active-start-color, $end-color: $active-end-color);
 
     @if $color == "secondary" or $color == "light" {
@@ -175,12 +175,12 @@
 
 @mixin button-outline-variant(
   $color,
-  $color-hover: color-yiq($color),
+  $color-hover: color-contrast($color),
   $border: $btn-outline-border-color,
   $active-background: $color,
   $active-color: $color
 ) {
-  $border-color: if(lightness($border) > 90, rgba(color-yiq($border), .295), $border);
+  $border-color: if(lightness($border) > 90, rgba(color-contrast($border), .295), $border);
   $hover-border-color: if(lightness($color) > 90, darken(saturate($border, .85), 4.9), lighten(saturate(adjust-hue($color, 2), 5.75), 40));
 
   @include button-flat-variant($color: $color, $active-color: $border-color);
@@ -220,24 +220,24 @@
   $color-hover: $color,
   $active-background: rgba($color, .16),
   $active-border: rgba($color, .16),
-  $active-color: if(lightness($color) > 90, color-yiq($color), $color)
+  $active-color: if(lightness($color) > 90, color-contrast($color), $color)
 ) {
-  $color: if(lightness($color) < 90, $color, color-yiq($color));
-  $hover-background-color: if(lightness($color) > 90, rgba(color-yiq($color), .04), rgba($color, .04));
+  $color: if(lightness($color) < 90, $color, color-contrast($color));
+  $hover-background-color: if(lightness($color) > 90, rgba(color-contrast($color), .04), rgba($color, .04));
   $active-background-color: if(lightness($active-background) > 90, rgba($color, .12), $active-background);
 
   color: $color;
   border-color: transparent;
 
   &:hover {
-    color: if(lightness($color-hover) > 90, color-yiq($color-hover), $color-hover);
+    color: if(lightness($color-hover) > 90, color-contrast($color-hover), $color-hover);
     background-color: $hover-background-color;
     border-color: rgba($color, .04);
   }
 
   &:focus,
   &.focus {
-    background-color: if(lightness($color) > 90, rgba(color-yiq($color), .12), rgba($color, .12));
+    background-color: if(lightness($color) > 90, rgba(color-contrast($color), .12), rgba($color, .12));
     border-color: rgba($color, .04);
   }
 
@@ -335,13 +335,13 @@
 @mixin button-fab-variant(
   $background,
   $hover-background: if(lightness($background) > 90,
-  rgba(color-yiq($background), .07),
+  rgba(color-contrast($background), .07),
   rgba($background, .75)),
   $active-background: if(lightness($background) > 90,
-  rgba(color-yiq($background), .125),
+  rgba(color-contrast($background), .125),
   rgba($background, .65))
 ) {
-  $color: color-yiq($background);
+  $color: color-contrast($background);
 
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background);
   @include box-shadow($shadow-6dp);
@@ -365,6 +365,6 @@
   $hover-background: rgba($black, .07),
   $active-background: rgba($black, .1)
 ) {
-  $color: if(lightness($color) > 90, color-yiq($color), $color);
+  $color: if(lightness($color) > 90, color-contrast($color), $color);
   @include button-circle-variant($color: $color, $background: $background,  $hover-background: $hover-background, $active-background: $active-background, $width: 2.5rem);
 }
