@@ -127,7 +127,7 @@
     "karma-jasmine-html-reporter": "^1.5.3",
     "karma-rollup-preprocessor": "^7.0.5",
     "linkinator": "^2.0.4",
-    "lockfile-lint": "^4.1.0",
+    "lockfile-lint": "^4.2.2",
     "node-sass": "^4.13.1",
     "nodegit": "^0.26.5",
     "nodemon": "^2.0.2",
