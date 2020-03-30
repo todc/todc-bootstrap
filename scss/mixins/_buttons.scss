@@ -10,7 +10,8 @@
   $hover-background: darken($background, 7.5%),
   $hover-border: transparent,
   $active-background: $background,
-  $active-border: transparent
+  $active-border: transparent,
+  $active-color: color-contrast($active-background)
 ) {
   $before-background-color: if(lightness($background) < 90, $white, #202124);
   $hover-bg-color-lightened: lighten(desaturate(adjust-hue($background, -.1094), 2.6665), 2.549);
