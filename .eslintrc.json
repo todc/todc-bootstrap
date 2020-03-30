@@ -47,7 +47,6 @@
     "unicorn/prefer-node-remove": "off",
     "unicorn/prefer-number-properties": "off",
     "unicorn/prefer-query-selector": "off",
-    "unicorn/prefer-text-content": "off",
     "unicorn/prefer-set-has": "off",
     "unicorn/prevent-abbreviations": "off"
   }
