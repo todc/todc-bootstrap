@@ -786,7 +786,11 @@ $btn-legacy-colors: map-merge(
 
 // Forms
 
-$label-margin-bottom:                   .5rem !default;
+$form-label-margin-bottom:              .5rem !default;
+$form-label-font-size:                  null !default;
+$form-label-font-style:                 null !default;
+$form-label-font-weight:                null !default;
+$form-label-color:                      null !default;
 
 $input-padding-y:                       .25rem !default;
 $input-padding-x:                       .5rem !default;
