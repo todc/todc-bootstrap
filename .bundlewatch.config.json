@@ -72,5 +72,11 @@
       "path": "./dist/css/todc-bootstrap.min.css",
       "maxSize": "29.6 kB"
     }
-  ]
+  ],
+  "ci": {
+    "trackBranches": [
+      "master",
+      "v4-dev"
+    ]
+  }
 }
