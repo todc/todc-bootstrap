@@ -11,7 +11,7 @@
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .05);
   }
 
-  .dropdown-item.active {
+  .dropdown-item.current {
     font-weight: 600;
     color: $gray-900;
     background-color: transparent;
@@ -41,6 +41,5 @@
 }
 
 .bd-search-docs-toggle {
-  line-height: 1;
   color: $gray-900;
 }
