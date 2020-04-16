@@ -799,7 +799,7 @@ $btn-legacy-colors: map-merge(
 // Forms
 
 $form-text-margin-top:                  .25rem !default;
-$form-text-font-size:                   null !default;
+$form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-color:                       $text-muted !default;
 
@@ -1014,7 +1014,8 @@ $form-file-height-lg:             $input-height-lg !default;
 // Form validation
 
 $form-feedback-margin-top:          $form-text-margin-top !default;
-$form-feedback-font-size:           $small-font-size !default;
+$form-feedback-font-size:           $form-text-font-size !default;
+$form-feedback-font-style:          $form-text-font-style !default;
 $form-feedback-valid-color:         $success !default;
 $form-feedback-invalid-color:       $danger !default;
 
