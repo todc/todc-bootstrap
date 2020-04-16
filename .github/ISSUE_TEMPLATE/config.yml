@@ -1,0 +1,4 @@
+contact_links:
+  - name: Ask a question
+    url: https://github.com/todc/todc-bootstrap/discussions/new
+    about: Ask and discuss questions with other TODC Bootstrap community members
