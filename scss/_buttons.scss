@@ -20,7 +20,7 @@
   white-space: $btn-white-space;
   letter-spacing: $btn-letter-spacing;
   vertical-align: middle;
-  cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+  cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
