@@ -44,6 +44,7 @@ $green:   #1e8e3e !default;
 $teal:    #009688 !default;
 $cyan:    #00bcd4 !default;
 
+// scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
   "indigo":     $indigo,
@@ -59,6 +60,7 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
+// scss-docs-end colors-map
 
 $primary:       $blue !default;
 $secondary:     $white !default;
@@ -69,6 +71,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 
+// scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -79,6 +82,7 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark
 ) !default;
+// scss-docs-end theme-colors-map
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
