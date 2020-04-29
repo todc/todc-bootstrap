@@ -60,7 +60,7 @@
     "docs-serve-only": "serve _gh_pages --listen 9002",
     "lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "update-deps": "ncu -u -x karma-browserstack-launcher,popper.js && npm update && echo Manually update site/assets/js/vendor",
-    "release": "npm-run-all dist release-sri release-zip docs-build",
+    "release": "npm-run-all dist release-sri docs-build release-zip*",
     "release-sri": "node build/generate-sri.js",
     "release-version": "node build/change-version.js",
     "release-zip": "cross-env-shell \"rm -rf todc-bootstrap-$npm_package_version-dist && cp -r dist/ todc-bootstrap-$npm_package_version-dist && zip -r9 todc-bootstrap-$npm_package_version-dist.zip todc-bootstrap-$npm_package_version-dist && rm -rf todc-bootstrap-$npm_package_version-dist\"",

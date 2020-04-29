@@ -65,6 +65,7 @@ params:
   download:
     source:             "https://github.com/todc/todc-bootstrap/archive/v4.3.1-4.3.1-alpha.zip"
     dist:               "https://github.com/todc/todc-bootstrap/releases/download/v4.3.1-4.3.1-alpha/todc-bootstrap-4.3.1-4.3.1-alpha-dist.zip"
+    dist_examples:      "https://github.com/todc/todc-bootstrap/releases/download/v4.3.1/todc-bootstrap-4.3.1-examples.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
@@ -103,3 +104,4 @@ params:
       download:
         source:             "https://github.com/twbs/bootstrap/archive/v4.3.1.zip"
         dist:               "https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip"
+        dist_examples:      "https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-examples.zip"

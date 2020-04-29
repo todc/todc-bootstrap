@@ -15,8 +15,8 @@
       <h1 class="bd-title mt-0">{{ .Title | markdownify }}</h1>
       <p class="bd-lead">{{ .Page.Params.Description | markdownify }}</p>
       {{ if eq .Title "Examples" }}
-      <a href="{{ .Site.Params.download.source }}" class="btn btn-lg btn-bd-primary"
-        >Download source code</a>
+      <a href="{{ .Site.Params.download.source }}" class="btn btn-lg btn-bd-primary">Download source code</a>
+        <a href="{{ .Site.Params.download.dist_examples }}" class="btn btn-lg btn-bd-primary mt-3 mt-sm-0 ml-sm-3 ml-md-5">Download Examples</a>
       {{ end }}
       <!-- {{ partial "ads" . }} -->
     </div>
