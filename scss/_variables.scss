@@ -235,8 +235,8 @@ $enable-important-utilities:  true !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer / 4,
+  2: $spacer / 2,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -1203,8 +1203,8 @@ $pagination-disabled-border-color:  transparent !default;
 
 // Cards
 
-$card-spacer-y:                     1rem !default;
-$card-spacer-x:                     1rem !default;
+$card-spacer-y:                     $spacer !default;
+$card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               .75rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
@@ -1218,7 +1218,7 @@ $card-height:                       null !default;
 $card-color:                        null !default;
 $card-bg:                           $white !default;
 
-$card-img-overlay-padding:          1rem !default;
+$card-img-overlay-padding:          $spacer !default;
 
 $card-group-margin:                 $grid-gutter-width / 2 !default;
 
@@ -1231,8 +1231,8 @@ $tooltip-color:                     $white !default;
 $tooltip-bg:                        $gray-700 !default;
 $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
+$tooltip-padding-y:                 $spacer / 4 !default;
+$tooltip-padding-x:                 $spacer / 2 !default;
 $tooltip-margin:                    0 !default;
 
 $tooltip-arrow-width:               .8rem !default;
@@ -1261,15 +1261,15 @@ $popover-box-shadow:                0 2px 10px rgba($black, .2) !default;
 
 $popover-header-bg:                 $gray-200 !default;
 $popover-header-color:              $headings-color !default;
-$popover-header-padding-y:          .5rem !default;
+$popover-header-padding-y:          $spacer / 2 !default;
 $popover-header-padding-x:          .75rem !default;
 
 $popover-body-color:                $body-color !default;
 $popover-body-padding-y:            $popover-header-padding-y !default;
 $popover-body-padding-x:            $popover-header-padding-x !default;
 
-$popover-arrow-width:               1rem !default;
-$popover-arrow-height:              .5rem !default;
+$popover-arrow-width:               $spacer !default;
+$popover-arrow-height:              $spacer / 2 !default;
 $popover-arrow-color:               $popover-bg !default;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
@@ -1305,12 +1305,12 @@ $badge-border-radius:               $border-radius !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               1rem !default;
+$modal-inner-padding:               $spacer !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
-$modal-footer-margin-between:       .5rem !default;
+$modal-footer-margin-between:       $spacer / 2 !default;
 
-$modal-dialog-margin:               .5rem !default;
+$modal-dialog-margin:               $spacer / 2 !default;
 $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
@@ -1330,8 +1330,8 @@ $modal-header-border-color:         $gray-200 !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            1rem !default;
-$modal-header-padding-x:            1rem !default;
+$modal-header-padding-y:            $modal-inner-padding !default;
+$modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-sm:                          300px !default;
@@ -1349,9 +1349,9 @@ $modal-scale-transform:             scale(1.02) !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:                   1rem !default;
+$alert-padding-y:                   $spacer !default;
 $alert-padding-x:                   1.25rem !default;
-$alert-margin-bottom:               1rem !default;
+$alert-margin-bottom:               $spacer !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
@@ -1386,7 +1386,7 @@ $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
 $list-group-item-padding-y:         .925rem !default;
-$list-group-item-padding-x:         1rem !default;
+$list-group-item-padding-x:         $spacer !default;
 $list-group-item-bg-level:          -9 !default;
 $list-group-item-color-level:       6 !default;
 
@@ -1424,19 +1424,15 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 $breadcrumb-font-size:              null !default;
-
 $breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding-x:           .5rem !default;
-
-$breadcrumb-margin-bottom:          1rem !default;
-
+$breadcrumb-padding-x:              $spacer !default;
+$breadcrumb-item-padding-x:         $spacer / 2 !default;
+$breadcrumb-margin-bottom:          $spacer !default;
 $breadcrumb-bg:                     transparent !default; // $gray-200
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-font-weight:     500 !default;
 $breadcrumb-active-color:           $gray-900 !default;
 $breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='24' width='24'%3E%3Cpath fill='#{$breadcrumb-divider-color}' d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3C/svg%3E"), "#", "%23") !default;
-
 $breadcrumb-border-radius:          $border-radius !default;
 
 
