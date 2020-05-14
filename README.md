@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://todc.github.io/todc-bootstrap/">
-    <img src="https://todc.github.io/todc-bootstrap/docs/4.3/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width="72" height="72">
+    <img src="https://todc.github.io/todc-bootstrap/docs/5.0/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width="72" height="72">
   </a>
 </p>
 
@@ -9,7 +9,7 @@
 <p align="center">
   A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
   <br>
-  <a href="https://todc.github.io/todc-bootstrap/docs/4.3/"><strong>Explore TODC Bootstrap docs »</strong></a>
+  <a href="https://todc.github.io/todc-bootstrap/docs/5.0/"><strong>Explore TODC Bootstrap docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug.md">Report bug</a>
@@ -47,15 +47,15 @@ TODC Bootstrap was created by [Tim O'Donnell](https://github.com/todc), and main
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v4.3.1-4.3.1.zip).
+- [Download the latest release](https://github.com/todc/todc-bootstrap/archive/v5.0.0-5.0.0-alpha1.zip).
 - Clone the repo: `git clone https://github.com/todc/todc-bootstrap.git`.
 - Install with [npm](https://www.npmjs.com/): `npm install todc-bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap@4.3.1-4.3.1`
-- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap:4.3.1-4.3.1`.
+- Install with [yarn](https://yarnpkg.com/): `yarn add todc-bootstrap@5.0.0-5.0.0-alpha1`
+- Install with [Composer](https://getcomposer.org/): `composer require todc/todc-bootstrap:5.0.0-5.0.0-alpha1`.
 
 **NOTE** - After cloning/installing todc-bootstrap you must run `grunt checkout-bootstrap` from the todc-bootstrap directory. This will download the correct version of the [Bootstrap](https://github.com/twbs/bootstrap/) source.
 
-Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/4.3/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://todc.github.io/todc-bootstrap/docs/5.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 
 ## Status
