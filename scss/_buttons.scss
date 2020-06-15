@@ -17,8 +17,8 @@
   color: $body-color;
   text-align: center;
   text-decoration: if($link-decoration == none, null, none);
-  white-space: $btn-white-space;
   letter-spacing: $btn-letter-spacing;
+  white-space: $btn-white-space;
   vertical-align: middle;
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;

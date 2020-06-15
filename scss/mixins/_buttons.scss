@@ -85,9 +85,8 @@
   &.disabled {
     color: $color;
     background-color: $background;
-    border-color: $border;
-    // Remove CSS gradients if they're enabled
     background-image: if($enable-gradients, none, null);
+    // Remove CSS gradients if they're enabled
     border-color: $border;
   }
 
