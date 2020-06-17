@@ -31,11 +31,13 @@
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 
-  &:focus,
-  &.focus {
+  .btn-check:focus + &,
+  &:focus {
     outline: 0;
   }
 
+  .btn-check:checked + &,
+  .btn-check:active + &,
   &:active,
   &.active {
     @include box-shadow($btn-active-box-shadow);
@@ -135,8 +137,7 @@
     text-decoration: $link-hover-decoration;
   }
 
-  &:focus,
-  &.focus {
+  &:focus {
     text-decoration: $link-hover-decoration;
   }
 
