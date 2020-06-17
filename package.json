@@ -93,7 +93,9 @@
     "type": "",
     "url": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
+  },
   "peerDependencies": {
     "popper.js": "^1.16.1"
   },
