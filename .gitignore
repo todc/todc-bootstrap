@@ -46,7 +46,7 @@ Thumbs.db
 *.komodoproject
 
 # Folders to ignore
-# /bootstrap/
+/bootstrap/
 /bower_components/
 /docs/2.3.2/
 /docs/3.3/
