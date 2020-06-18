@@ -12,9 +12,9 @@
   <a href="https://todc.github.io/todc-bootstrap/docs/5.0/"><strong>Explore TODC Bootstrap docs »</strong></a>
   <br>
   <br>
-  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug.md">Report bug</a>
+  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=bug_report.md">Report bug</a>
   ·
-  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=feature.md&labels=feature">Request feature</a>
+  <a href="https://github.com/todc/todc-bootstrap/issues/new?template=feature_request.md">Request feature</a>
 </p>
 
 
