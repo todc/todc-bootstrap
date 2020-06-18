@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://todc.github.io/todc-bootstrap/">
-    <img src="https://todc.github.io/todc-bootstrap/docs/5.0/assets/brand/todc-bootstrap-solid.svg" alt="TODC Bootstrap logo" width="72" height="72">
+    <img src="https://todc.github.io/todc-bootstrap/docs/5.0/assets/brand/todc-bootstrap-logo-shadow.png" alt="TODC Bootstrap logo" width="200" height="165">
   </a>
 </p>
 
