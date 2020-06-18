@@ -7,7 +7,7 @@
 <h3 align="center">TODC Bootstrap</h3>
 
 <p align="center">
-  A Google-styled theme for <a href="https://getbootstrap.com/">Bootstrap</a>.
+  A Google-styled theme for <a href="https://v5.getbootstrap.com/">Bootstrap</a>.
   <br>
   <a href="https://todc.github.io/todc-bootstrap/docs/5.0/"><strong>Explore TODC Bootstrap docs »</strong></a>
   <br>
@@ -210,4 +210,4 @@ Copyright 2011-2020 Tim O'Donnell. Code released under [the MIT license](https:/
 
 ## Acknowledgements ##
 
-Inspired by [Bootstrap](https://getbootstrap.com/) and, of course, Google.
+Inspired by [Bootstrap](https://v5.getbootstrap.com/) and, of course, Google.

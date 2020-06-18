@@ -80,7 +80,7 @@ params:
 
   bs:
     title:                  "Bootstrap"
-    baseURL:                "https://getbootstrap.com"
+    baseURL:                "https://v5.getbootstrap.com"
 
     params:
       description:          "The most popular HTML, CSS, and JS library in the world."
