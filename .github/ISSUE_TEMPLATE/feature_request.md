@@ -1,6 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for a new feature in TODC Bootstrap.
+title: ''
+labels: feature
+assignees: ''
 
 ---
 
