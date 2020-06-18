@@ -1,8 +1,11 @@
 // stylelint-disable scss/dollar-variable-default
 
 // Local docs variables
-$bd-purple:        #366ad3;
-$bd-purple-bright: darken($bd-purple, 10%);
+// $bd-purple:        #366ad3;
+// $bd-purple-bright: darken($bd-purple, 10%);
+// #1f61ca
+$bd-purple:        #1a73e8;
+$bd-purple-bright: $bd-purple;
 $bd-purple-light:  $white;
 $bd-dark:          #2a2730;
 $bd-download:      $white;
