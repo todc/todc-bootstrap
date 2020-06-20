@@ -46,8 +46,8 @@ module:
 params:
   description:          "Google-styled theme for Bootstrap."
   authors:              "Tim O'Donnell, and the TODC Bootstrap contributors"
-  social_image_path:    /docs/5.0/assets/brand/bootstrap-social.png
-  social_logo_path:     /docs/5.0/assets/brand/bootstrap-social-logo.png
+  social_image_path:    /docs/5.0/assets/brand/todc-bootstrap-social.png
+  social_logo_path:     /docs/5.0/assets/brand/todc-bootstrap-social-logo.png
 
   current_version:      "5.0.0-5.0.0-alpha1"
   current_ruby_version: "5.0.0-5.0.0-alpha1"
@@ -85,8 +85,8 @@ params:
     params:
       description:          "The most popular HTML, CSS, and JS library in the world."
       authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
-      social_image_path:    /docs/5.0/assets/brand/todc-bootstrap-social.png
-      social_logo_path:     /docs/5.0/assets/brand/todc-bootstrap-social-logo.png
+      social_image_path:    /docs/5.0/assets/brand/bootstrap-social.png
+      social_logo_path:     /docs/5.0/assets/brand/bootstrap-social-logo.png
 
       current_version:      "5.0.0-alpha1"
       current_ruby_version: "5.0.0-alpha1"
