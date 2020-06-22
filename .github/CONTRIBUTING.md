@@ -96,8 +96,8 @@ Sometimes bugs reported to us are actually caused by bugs in the browser(s) them
 
 Feature requests are welcome, but please note that they **must target
 [TODC Bootstrap v4](https://github.com/todc/todc-bootstrap/tree/v4-dev),** because
-Bootstrap v3 is now in maintenance mode and is closed off to new features.
-This is so that we can focus our efforts on Bootstrap v4, the future of the
+TODC Bootstrap v3 is now in maintenance mode and is closed off to new features.
+This is so that we can focus our efforts on TODC Bootstrap v5, the future of the
 framework.
 
 Before opening a feature request, please take a moment to find out whether your idea
@@ -121,7 +121,7 @@ Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
-**Do not edit `bootstrap.css`, or `bootstrap.js`
+**Do not edit `todc-bootstrap.css`, or `bootstrap.js`
 directly!** Those files are automatically generated. You should edit the
 source files in [`/todc-bootstrap/scss/`](https://github.com/todc/todc-bootstrap/tree/main/scss) instead.
 
