@@ -5,7 +5,7 @@
 /*!
  * Script to clone and checkout Bootstrap.
  * Copyright 2011-2020 The TODC Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
 /* global Set */
@@ -16,7 +16,7 @@ const newLine = '\n'
 const bootstrapDir = path.resolve('./bootstrap')
 const bootstrapGit = 'https://github.com/twbs/bootstrap.git'
 // const bootstrapVersion = 'refs/tags/v4.0.0'
-const bootstrapVersion = 'master'
+const bootstrapVersion = 'mail'
 
 const checkoutBranch = function (repository) {
   return repository.getReference(bootstrapVersion)
