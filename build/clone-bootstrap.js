@@ -16,7 +16,7 @@ const newLine = '\n'
 const bootstrapDir = path.resolve('./bootstrap')
 const bootstrapGit = 'https://github.com/twbs/bootstrap.git'
 // const bootstrapVersion = 'refs/tags/v4.0.0'
-const bootstrapVersion = 'mail'
+const bootstrapVersion = 'main'
 
 const checkoutBranch = function (repository) {
   return repository.getReference(bootstrapVersion)
