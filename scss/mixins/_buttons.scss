@@ -11,7 +11,10 @@
   $hover-border: transparent,
   $active-background: $background,
   $active-border: transparent,
-  $active-color: color-contrast($active-background)
+  $active-color: color-contrast($active-background),
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)
 ) {
   $before-background-color: if(lightness($background) < 90, $white, #202124);
   $hover-bg-color-lightened: lighten(desaturate(adjust-hue($background, -.1094), 2.6665), 2.549);
@@ -85,11 +88,11 @@
 
   &:disabled,
   &.disabled {
-    color: $color;
-    background-color: $background;
-    background-image: if($enable-gradients, none, null);
+    color: $disabled-color;
+    background-color: $disabled-background;
     // Remove CSS gradients if they're enabled
-    border-color: $border;
+    background-image: if($enable-gradients, none, null);
+    border-color: $disabled-border;
   }
 
   &.btn-pill {
