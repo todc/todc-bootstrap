@@ -7,7 +7,7 @@
   $background,
   $border,
   $color: color-contrast($background),
-  $hover-background: darken($background, 7.5%),
+  $hover-background: if($color == $color-contrast-light, darken($background, 7.5%), lighten($background, 7.5%)),
   $hover-border: transparent,
   $active-background: $background,
   $active-border: transparent,
