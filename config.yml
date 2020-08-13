@@ -50,7 +50,7 @@ params:
   social_logo_path:     /docs/5.0/assets/brand/todc-bootstrap-social-logo.png
 
   current_version:      "5.0.0-5.0.0-alpha1"
-  current_ruby_version: "5.0.0-5.0.0-alpha1"
+  current_ruby_version: "5.0.0-5.0.0.alpha1"
   rfs_version:          "9.0.3"
   docs_version:         "5.0"
   repo:                 "https://github.com/todc/todc-bootstrap"
@@ -89,7 +89,7 @@ params:
       social_logo_path:     /docs/5.0/assets/brand/bootstrap-social-logo.png
 
       current_version:      "5.0.0-alpha1"
-      current_ruby_version: "5.0.0-alpha1"
+      current_ruby_version: "5.0.0.alpha1"
       rfs_version:          "9.0.3"
       docs_version:         "5.0"
       github_org:           "https://github.com/twbs"
