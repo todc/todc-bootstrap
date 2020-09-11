@@ -1,5 +1,5 @@
 <div class="container masthead-followup px-4 px-md-3">
-  <div class="row mb-5 pb-md-4 align-items-center">
+  <section class="row mb-5 pb-md-4 align-items-center">
     <div class="col-md-5">
       <div class="masthead-followup-icon d-inline-block mb-2 text-white bg-success">
         {{ partial "icons/code.svg" (dict "width" "32" "height" "32") }}
@@ -14,9 +14,9 @@
     <div class="col-md-7 pl-md-5">
       {{ highlight "npm install todc-bootstrap" "sh" "" }}
     </div>
-  </div>
+  </section>
 
-  <div class="row mb-5 pb-md-4 align-items-center">
+  <section class="row mb-5 pb-md-4 align-items-center">
     <div class="col-md-5">
       <div class="masthead-followup-icon d-inline-block mb-2 text-white bd-bg-purple-bright">
         {{ partial "icons/circle-square.svg" (dict "width" "32" "height" "32") }}
@@ -36,5 +36,5 @@
                                                src="/docs/{{ .Site.Params.docs_version }}/assets/img/bootstrap-icons.png"
                                                alt="Bootstrap Icons" width="966" height="600" loading="lazy">
     </div>
-  </div>
+  </section>
 </div>
