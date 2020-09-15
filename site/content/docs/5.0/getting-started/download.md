@@ -40,13 +40,14 @@ Skip the download with [BootstrapCDN](https://www.bootstrapcdn.com/) to deliver 
 
 {{< highlight html >}}
 <link rel="stylesheet" href="{{< param "cdn.css" >}}" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
-<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
+<script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
 {{< /highlight >}}
 
-If you're using our compiled JavaScript, don't forget to include Popper.js, via a CDN preferably, before our JS.
+If you're using our compiled JavaScript and prefer to include Popper.js separately, add Popper.js before our JS, via a CDN preferably.
 
 {{< highlight html >}}
 <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
+<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
 {{< /highlight >}}
 
 ## Package managers
@@ -74,7 +75,7 @@ Bootstrap's `package.json` contains some additional metadata under the following
 Install Bootstrap in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
 
 {{< highlight sh >}}
-yarn add bootstrap
+yarn add bootstrap@next
 {{< /highlight >}}
 
 ### RubyGems
@@ -91,7 +92,7 @@ Alternatively, if you're not using Bundler, you can install the gem by running t
 gem install bootstrap -v {{< param current_ruby_version >}}
 {{< /highlight >}}
 
-[See the gem's README](https://github.com/twbs/bootstrap-rubygem/blob/main/README.md) for further details.
+[See the gem's README](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md) for further details.
 
 ### Composer
 
