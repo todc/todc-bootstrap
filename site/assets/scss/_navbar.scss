@@ -21,11 +21,13 @@
       &:hover,
       &:focus {
         color: $white;
+        background-color: rgba(255, 255, 255, .25);
       }
 
       &.active {
         font-weight: 600;
         color: $white;
+        background-color: rgba(255, 255, 255, .25);
       }
     }
   }
