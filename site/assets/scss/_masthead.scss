@@ -2,10 +2,6 @@
   padding: 3rem 0;
   background: linear-gradient(165deg, lighten($bd-purple-light, 16%) 50%, $white 50%);
 
-  @include media-breakpoint-up(sm) {
-    padding: 5rem 0;
-  }
-
   h1 {
     @include font-size(4rem);
     line-height: 1;
@@ -33,7 +29,7 @@
 .masthead-followup-icon {
   padding: .75rem;
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .01));
-  @include border-radius(.25rem);
+  @include border-radius(.75rem);
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1);
 }
 

@@ -53,6 +53,7 @@ params:
   current_ruby_version: "5.0.0-5.0.0.alpha1"
   rfs_version:          "9.0.3"
   docs_version:         "5.0"
+  github_org:           "https://github.com/todc"
   repo:                 "https://github.com/todc/todc-bootstrap"
   twitter:              " "
   slack:                " "
