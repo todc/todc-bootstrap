@@ -1,7 +1,7 @@
 {
   "name": "todc-bootstrap",
   "description": "Google-styled theme for Bootstrap.",
-  "version": "5.0.0-5.0.0-alpha1",
+  "version": "5.0.0-5.0.0-alpha2",
   "version_short": "5.0",
   "keywords": [
     "bootstrap",
@@ -94,7 +94,7 @@
     "url": ""
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1"
+    "bootstrap": "^5.0.0-alpha2"
   },
   "peerDependencies": {
     "popper.js": "^1.16.1"

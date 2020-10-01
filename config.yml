@@ -49,8 +49,8 @@ params:
   social_image_path:    /docs/5.0/assets/brand/todc-bootstrap-social.png
   social_logo_path:     /docs/5.0/assets/brand/todc-bootstrap-social-logo.png
 
-  current_version:      "5.0.0-5.0.0-alpha1"
-  current_ruby_version: "5.0.0-5.0.0.alpha1"
+  current_version:      "5.0.0-5.0.0-alpha2"
+  current_ruby_version: "5.0.0-5.0.0.alpha2"
   rfs_version:          "9.0.3"
   docs_version:         "5.0"
   github_org:           "https://github.com/todc"
@@ -64,17 +64,17 @@ params:
   icons:                "https://icons.getbootstrap.com/"
 
   download:
-    source:             "https://github.com/todc/todc-bootstrap/archive/v5.0.0-5.0.0-alpha1.zip"
-    dist:               "https://github.com/todc/todc-bootstrap/releases/download/v5.0.0-5.0.0-alpha1/todc-bootstrap-5.0.0-5.0.0-alpha1-dist.zip"
-    dist_examples:      "https://github.com/todc/todc-bootstrap/releases/download/v5.0.0-alpha1/todc-bootstrap-5.0.0-alpha1-examples.zip"
+    source:             "https://github.com/todc/todc-bootstrap/archive/v5.0.0-5.0.0-alpha2.zip"
+    dist:               "https://github.com/todc/todc-bootstrap/releases/download/v5.0.0-5.0.0-alpha2/todc-bootstrap-5.0.0-5.0.0-alpha2-dist.zip"
+    dist_examples:      "https://github.com/todc/todc-bootstrap/releases/download/v5.0.0-alpha2/todc-bootstrap-5.0.0-alpha2-examples.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    css:              "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
     css_hash:         "sha384-LOn2KR3+0yryDs1XHCRoYjlIzS5FnQlv+eX68vU985bI1WMIpMmPfD3uVnCqITxe"
-    js:               "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    js:               "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
     js_hash:          "sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"
+    js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
     js_bundle_hash:   "sha384-DBjhmceckmzwrnMMrjI7BvG2FmRuxQVaTfFYHgfnrdfqMhxKt445b7j3KBQLolRl"
     popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     popper_hash:      "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -89,8 +89,8 @@ params:
       social_image_path:    /docs/5.0/assets/brand/bootstrap-social.png
       social_logo_path:     /docs/5.0/assets/brand/bootstrap-social-logo.png
 
-      current_version:      "5.0.0-alpha1"
-      current_ruby_version: "5.0.0.alpha1"
+      current_version:      "5.0.0-alpha2"
+      current_ruby_version: "5.0.0.alpha2"
       rfs_version:          "9.0.3"
       docs_version:         "5.0"
       github_org:           "https://github.com/twbs"
@@ -103,6 +103,6 @@ params:
       themes:               "https://themes.getbootstrap.com/"
 
       download:
-        source:             "https://github.com/twbs/bootstrap/archive/v5.0.0-alpha1.zip"
-        dist:               "https://github.com/twbs/bootstrap/releases/download/v5.0.0-alpha1/bootstrap-5.0.0-alpha1-dist.zip"
-        dist_examples:      "https://github.com/twbs/bootstrap/releases/download/v5.0.0-alpha1/bootstrap-5.0.0-alpha1-examples.zip"
+        source:             "https://github.com/twbs/bootstrap/archive/v5.0.0-alpha2.zip"
+        dist:               "https://github.com/twbs/bootstrap/releases/download/v5.0.0-alpha2/bootstrap-5.0.0-alpha2-dist.zip"
+        dist_examples:      "https://github.com/twbs/bootstrap/releases/download/v5.0.0-alpha2/bootstrap-5.0.0-alpha2-examples.zip"
