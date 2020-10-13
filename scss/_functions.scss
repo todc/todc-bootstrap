@@ -7,14 +7,14 @@
   $btn-color-map: ();
   $btn-color-map: map-merge((
     "background":         $color,
-    "border-color":       darken(desaturate(adjust-hue($color, -1), 15.12), 19.02),
-    "start-color":        lighten(saturate($color, 16.70), 4.51),
+    "border-color":       shade-color(desaturate(adjust-hue($color, -1), 15.12), 38.04),
+    "start-color":        tint-color(saturate($color, 16.70), 9.02),
     "end-color":          $color,
-    "hover-border-color": darken(desaturate($color, 14.88), 13.92),
-    "hover-start-color":  lighten(saturate($color, 16.70), 4.51),
-    "hover-end-color":    darken(desaturate($color, 16.50), 9.41),
-    "active-start-color": lighten(saturate($color, 16.70), 4.51),
-    "active-end-color":   darken(desaturate($color, 17.06), 14.51)
+    "hover-border-color": shade-color(desaturate($color, 14.88), 27.84),
+    "hover-start-color":  tint-color(saturate($color, 16.70), 9.02),
+    "hover-end-color":    shade-color(desaturate($color, 16.50), 18.82),
+    "active-start-color": tint-color(saturate($color, 16.70), 9.02),
+    "active-end-color":   shade-color(desaturate($color, 17.06), 29.02)
   ), $btn-color-map);
   // stylelint-enable
 

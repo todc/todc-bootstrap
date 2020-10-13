@@ -2,7 +2,7 @@
 
 // Local docs variables
 // $bd-purple:        #366ad3;
-// $bd-purple-bright: darken($bd-purple, 10%);
+// $bd-purple-bright: shade-color($bd-purple, 20%);
 // #1f61ca
 $bd-purple:        #1a73e8;
 $bd-purple-bright: $bd-purple;

@@ -7,7 +7,7 @@
   $background,
   $border,
   $color: color-contrast($background),
-  $hover-background: if($color == $color-contrast-light, darken($background, 7.5%), lighten($background, 7.5%)),
+  $hover-background: if($color == $color-contrast-light, shade-color($background, 15%), tint-color($background, 15%)),
   $hover-border: transparent,
   $active-background: $background,
   $active-border: transparent,
@@ -17,10 +17,10 @@
   $disabled-color: color-contrast($disabled-background)
 ) {
   $before-background-color: if(lightness($background) < 90, $white, #202124);
-  $hover-bg-color-lightened: lighten(desaturate(adjust-hue($background, -.1094), 2.6665), 2.549);
+  $hover-bg-color-lightened: tint-color(desaturate(adjust-hue($background, -.1094), 2.6665), 5.098);
   $hover-background-color: if(lightness($background) < 90, $hover-bg-color-lightened, $hover-background);
-  $focus-bg-color-lightened: lighten(desaturate(adjust-hue($background, -.0649), .3989), 11.5686);
-  $focus-background-color: if(lightness($background) < 90, $focus-bg-color-lightened, darken($background, 5.5%));
+  $focus-bg-color-lightened: tint-color(desaturate(adjust-hue($background, -.0649), .3989), 23.1372);
+  $focus-background-color: if(lightness($background) < 90, $focus-bg-color-lightened, shade-color($background, 11%));
 
   color: $color;
   background-color: $background;
@@ -108,7 +108,7 @@
   }
 }
 
-// @mixin button-legacy-variant($background, $border: transparent, $hover-background: darken($background, 7.5%), $hover-border: darken($value, 18%), $active-background: darken($background, 20%), $active-border: darken($border, 12.5%)) {
+// @mixin button-legacy-variant($background, $border: transparent, $hover-background: shade-color($background, 15%), $hover-border: shade-color($value, 36%), $active-background: shade-color($background, 40%), $active-border: shade-color($border, 25%)) {
 @mixin button-legacy-variant($color) {
   $btn-color-map: btn-legacy-color-map($color);
 
@@ -135,12 +135,12 @@
   &.active,
   &.dropdown-toggle.show {
     color: color-contrast($background);
-    background-color: darken($end-color, 5%);
+    background-color: shade-color($end-color, 10%);
     @if $color == "secondary" or $color == "light" {
       // border-color: $gray-500;
-      border-color: darken($hover-border-color, 31%);
+      border-color: shade-color($hover-border-color, 62%);
     } @else {
-      border-color: darken($hover-border-color, 10%);
+      border-color: shade-color($hover-border-color, 20%);
     }
     @include gradient-y($start-color: $hover-start-color, $end-color: $hover-end-color);
   }
@@ -151,9 +151,9 @@
   &.active {
     @if $color == "secondary" or $color == "light" {
       // border-color: $gray-700;
-      border-color: darken($hover-border-color, 48%);
+      border-color: shade-color($hover-border-color, 96%);
     } @else {
-      border-color: darken($hover-border-color, 10%);
+      border-color: shade-color($hover-border-color, 20%);
     }
   }
 
@@ -187,7 +187,7 @@
   $active-color: $color
 ) {
   $border-color: if(lightness($border) > 90, rgba(color-contrast($border), .295), $border);
-  $hover-border-color: if(lightness($color) > 90, darken(saturate($border, .85), 4.9), lighten(saturate(adjust-hue($color, 2), 5.75), 40));
+  $hover-border-color: if(lightness($color) > 90, shade-color(saturate($border, .85), 9.8), shade-color(saturate(adjust-hue($color, 2), 5.75), 80));
 
   @include button-flat-variant($color: $color, $active-color: $border-color);
   border-color: $border-color;
@@ -202,10 +202,10 @@
 @mixin button-raised-variant(
   $background,
   $border,
-  $hover-background: darken($background, 7.5%),
-  $hover-border: darken($border, 10%),
-  $active-background: darken($background, 20%),
-  $active-border: darken($border, 12.5%)
+  $hover-background: shade-color($background, 15%),
+  $hover-border: shade-color($border, 20%),
+  $active-background: shade-color($background, 40%),
+  $active-border: shade-color($border, 25%)
 ) {
   @include button-variant($background: $background, $border: $border);
   @include box-shadow($btn-box-shadow);
