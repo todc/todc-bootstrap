@@ -105,7 +105,7 @@
     "@babel/preset-env": "^7.12.11",
     "@rollup/plugin-babel": "^5.2.2",
     "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^11.1.0",
     "autoprefixer": "^10.2.1",
     "bundlewatch": "0.3.1",
     "clean-css-cli": "^4.3.0",
