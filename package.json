@@ -108,7 +108,7 @@
     "@rollup/plugin-node-resolve": "^13.0.5",
     "autoprefixer": "^10.3.6",
     "bundlewatch": "0.3.2",
-    "clean-css-cli": "^5.3.3",
+    "clean-css-cli": "^5.4.1",
     "cross-env": "^7.0.3",
     "eslint": "7.32.0",
     "eslint-config-xo": "^0.39.0",
