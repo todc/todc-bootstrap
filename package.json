@@ -123,7 +123,7 @@
     "jquery": "^3.6.0",
     "karma": "^6.3.17",
     "karma-browserstack-launcher": "1.6.0",
-    "karma-chrome-launcher": "^3.1.0",
+    "karma-chrome-launcher": "^3.1.1",
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-detect-browsers": "^2.3.3",
     "karma-firefox-launcher": "^2.1.2",
