@@ -114,7 +114,7 @@
     "eslint-config-xo": "^0.40.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^42.0.0",
-    "find-unused-sass-variables": "^4.0.3",
+    "find-unused-sass-variables": "^4.0.4",
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
     "hammer-simulator": "0.0.1",
