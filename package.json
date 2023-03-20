@@ -118,7 +118,7 @@
     "fs-extra": "^11.1.0",
     "glob": "^9.3.0",
     "hammer-simulator": "0.0.1",
-    "hugo-bin": "^0.99.3",
+    "hugo-bin": "^0.101.2",
     "ip": "^1.1.8",
     "jquery": "^3.6.4",
     "karma": "^6.4.1",
