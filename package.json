@@ -145,7 +145,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-twbs-bootstrap": "^2.2.4",
     "terser": "^5.16.8",
-    "vnu-jar": "22.9.29"
+    "vnu-jar": "23.4.10"
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
