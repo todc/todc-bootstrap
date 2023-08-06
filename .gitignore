@@ -55,3 +55,4 @@ Thumbs.db
 /docs/3.3/
 /js/coverage/
 /node_modules/
+/.nova/
