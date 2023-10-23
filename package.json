@@ -139,7 +139,7 @@
     "popper.js": "^1.16.1",
     "postcss-cli": "^10.1.0",
     "rollup": "^4.1.4",
-    "rollup-plugin-istanbul": "^4.0.0",
+    "rollup-plugin-istanbul": "^5.0.0",
     "shelljs": "^0.8.5",
     "sirv-cli": "^2.0.2",
     "stylelint": "^15.11.0",
