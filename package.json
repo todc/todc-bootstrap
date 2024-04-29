@@ -138,7 +138,7 @@
     "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.1",
     "postcss-cli": "^11.0.0",
-    "rollup": "^4.16.1",
+    "rollup": "^4.17.1",
     "rollup-plugin-istanbul": "^5.0.0",
     "shelljs": "^0.8.5",
     "sirv-cli": "^2.0.2",
