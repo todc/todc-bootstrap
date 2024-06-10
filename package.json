@@ -104,7 +104,7 @@
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "autoprefixer": "^10.4.19",
     "bundlewatch": "0.3.3",
