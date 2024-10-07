@@ -112,7 +112,7 @@
     "cross-env": "^7.0.3",
     "eslint": "8.57.1",
     "eslint-config-xo": "^0.45.0",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-unicorn": "^56.0.0",
     "find-unused-sass-variables": "^6.0.0",
     "fs-extra": "^11.2.0",
