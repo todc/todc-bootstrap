@@ -144,7 +144,7 @@
     "sirv-cli": "^3.0.0",
     "stylelint": "^16.14.1",
     "stylelint-config-twbs-bootstrap": "^15.1.0",
-    "terser": "^5.38.1",
+    "terser": "^5.39.0",
     "vnu-jar": "24.10.17"
   },
   "files": [
