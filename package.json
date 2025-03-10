@@ -140,7 +140,7 @@
     "postcss-cli": "^11.0.0",
     "rollup": "^4.35.0",
     "rollup-plugin-istanbul": "^5.0.0",
-    "shelljs": "^0.8.5",
+    "shelljs": "^0.9.1",
     "sirv-cli": "^3.0.1",
     "stylelint": "^16.15.0",
     "stylelint-config-twbs-bootstrap": "^16.0.0",
