@@ -143,7 +143,7 @@
     "shelljs": "^0.8.5",
     "sirv-cli": "^3.0.1",
     "stylelint": "^16.15.0",
-    "stylelint-config-twbs-bootstrap": "^15.1.0",
+    "stylelint-config-twbs-bootstrap": "^16.0.0",
     "terser": "^5.39.0",
     "vnu-jar": "24.10.17"
   },
