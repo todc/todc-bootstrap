@@ -94,7 +94,7 @@
     "url": ""
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.5"
   },
   "peerDependencies": {
     "popper.js": "^1.16.1"
