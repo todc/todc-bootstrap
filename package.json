@@ -113,7 +113,7 @@
     "eslint": "9.35.0",
     "eslint-config-xo": "^0.49.0",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-unicorn": "^60.0.0",
+    "eslint-plugin-unicorn": "^61.0.2",
     "find-unused-sass-variables": "^6.1.0",
     "fs-extra": "^11.3.1",
     "glob": "^11.0.3",
