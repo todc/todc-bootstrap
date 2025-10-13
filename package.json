@@ -103,7 +103,7 @@
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
-    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-babel": "^6.1.0",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "autoprefixer": "^10.4.21",
