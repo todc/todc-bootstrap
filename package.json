@@ -111,9 +111,9 @@
     "clean-css-cli": "^5.6.3",
     "cross-env": "^10.1.0",
     "eslint": "10.5.0",
-    "eslint-config-xo": "^0.52.0",
+    "eslint-config-xo": "^0.53.2",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-unicorn": "^66.0.0",
+    "eslint-plugin-unicorn": "^68.0.0",
     "find-unused-sass-variables": "^6.2.1",
     "fs-extra": "^11.3.5",
     "glob": "^13.0.6",
@@ -138,14 +138,14 @@
     "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.1",
     "postcss-cli": "^11.0.1",
-    "rollup": "^4.62.0",
+    "rollup": "^4.62.2",
     "rollup-plugin-istanbul": "^5.0.0",
     "shelljs": "^0.10.0",
     "sirv-cli": "^3.0.1",
     "stylelint": "^17.13.0",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "terser": "^5.48.0",
-    "vnu-jar": "26.6.14"
+    "vnu-jar": "26.6.20"
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
