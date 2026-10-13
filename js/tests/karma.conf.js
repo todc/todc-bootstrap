@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 const path = require('path')
 const ip = require('ip')
 const { babel } = require('@rollup/plugin-babel')
