@@ -86,10 +86,7 @@ export default defineConfig([
       ecmaVersion: 5,
       sourceType: 'script',
     },
-    plugins: {import: importPlugin},
     rules: {
-      ...importPlugin.configs.errors.rules,
-      ...importPlugin.configs.warnings.rules,
       'capitalized-comments': 'off',
       indent: ['error', 2, {MemberExpression: 'off', SwitchCase: 1}],
       'multiline-ternary': ['error', 'always-multiline'],
