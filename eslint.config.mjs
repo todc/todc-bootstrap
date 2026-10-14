@@ -24,6 +24,17 @@ const nodeGlobals = normalizeGlobals(
     .find(config => config.name === 'xo/base')
     .languageOptions.globals,
 )
+const browserGlobals = normalizeGlobals(
+  browserConfig.find(config => config.name === 'xo/base').languageOptions.globals,
+)
+const nodeScopeGlobals = {
+  ...Object.fromEntries(
+    Object.keys(browserGlobals)
+      .filter(name => !Object.hasOwn(nodeGlobals, name))
+      .map(name => [name, 'off']),
+  ),
+  ...nodeGlobals,
+}
 
 const rootRules = {
   'capitalized-comments': 'off',
@@ -62,6 +73,7 @@ export default defineConfig([
       '**/dist/**',
       '**/vendor/**',
       '**/*.{css,scss,html,md,json,jsonc,json5}',
+      '**/.babelrc.js',
       '_gh_pages/**',
       'docs/2.3.2/**',
       'js/coverage/**',
@@ -105,10 +117,10 @@ export default defineConfig([
     },
   },
   {
-    files: ['build/**/*.js'],
+    files: ['build/**/*.js', 'js/tests/**/*.js'],
     languageOptions: {
       sourceType: 'script',
-      globals: nodeGlobals,
+      globals: nodeScopeGlobals,
     },
     rules: {
       'no-console': 'off',
